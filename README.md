@@ -2,6 +2,23 @@
 
 A comprehensive, modern web application for **mastering SAFe (Scaled Agile Framework) certifications** with advanced learning features, progress tracking, and personalized study tools. This platform provides high-quality practice questions, adaptive learning systems, and detailed analytics to help you achieve certification success.
 
+## 🆕 **Latest Updates (October 2025)**
+
+### 🔥 **Multi-Select Question System**
+- **25% Multi-Select Distribution** - Realistic certification practice with advanced question types
+- **Partial Credit Scoring** - Proportional points system for multi-select answers
+- **Enhanced Results Analysis** - Detailed breakdown of multi-select performance
+
+### ⏱️ **Per-Question Timing Analytics** 
+- **Real-Time Timing Display** - Live per-question timer with visual progress indicators
+- **Comprehensive Session Analysis** - Detailed timing breakdown for every question
+- **Timing Analytics Page** - Dedicated dashboard for analyzing timing performance across sessions
+
+### 🧪 **Production-Ready Testing Framework**
+- **Jest 29.7.0 + React Testing Library** - Comprehensive test suite with modern testing practices
+- **Complete Coverage** - Multi-select questions, timing system, exam filtering, and integration tests
+- **CI/CD Ready** - Production-quality testing infrastructure for continuous deployment
+
 ### 📱 **NEW: Progressive Web App (PWA)**
 1. **Install to Home Screen** - Native app-like experience with offline capabilities
 2. **Push Notifications** - Smart study reminders and achievement celebrations  
@@ -46,6 +63,19 @@ A comprehensive, modern web application for **mastering SAFe (Scaled Agile Frame
 - **Smart Review** - Personalized study modes based on your performance data
 - **Session Analytics** - Detailed tracking of accuracy, speed, and improvement patterns
 
+### 🔥 **Multi-Select Question System** (NEW!)
+- **Hybrid Question Types** - 25% multi-select questions across all exams for realistic certification practice
+- **Partial Credit Scoring** - Advanced scoring system with proportional points for multi-select answers
+- **Practice & Exam Modes** - Both modes include strategic multi-select distribution matching real SAFe exams
+- **Enhanced Results** - Detailed breakdown showing multi-select performance and partial credit analytics
+
+### ⏱️ **Per-Question Timing Analytics** (NEW!)
+- **Real-Time Timing Display** - Live per-question timer with visual progress indicators
+- **Comprehensive Session Analysis** - Detailed timing breakdown for every question in each exam session
+- **Performance Insights** - Average time per question, fastest/slowest questions, and timing patterns
+- **Timing Analytics Page** - Dedicated page for analyzing timing performance across all exam sessions
+- **Local Storage Persistence** - All timing data preserved across browser sessions
+
 ### ⏱️ **Adaptive Timer System**
 - **Certification Mode** (≤45 questions): 90 minutes - matches real exam conditions
 - **Practice Mode** (46-100 questions): 2 minutes per question for focused practice
@@ -68,12 +98,19 @@ A comprehensive, modern web application for **mastering SAFe (Scaled Agile Frame
 
 ## 🛠️ Technology Stack
 
-- **React 18** - Modern functional components with hooks and Context API
+- **React 19.1.1** - Modern functional components with hooks and Context API
 - **Vite** - Fast build tool and development server with hot module replacement
 - **CSS Modules** - Component-scoped styling with themed designs
 - **Context API** - Advanced state management for themes, progress tracking, and achievements
 - **localStorage** - Persistent data storage for progress and achievement tracking
 - **Responsive Design** - Mobile-first approach with professional UI/UX
+
+### 🧪 **Comprehensive Testing Framework** (NEW!)
+- **Jest 29.7.0** - Modern JavaScript testing framework with advanced mocking capabilities
+- **React Testing Library** - User-centric testing with realistic DOM interactions
+- **jsdom Environment** - Browser-like testing environment for component behavior validation
+- **Babel Configuration** - Modern JavaScript support with JSX transformation
+- **Complete Test Coverage** - Multi-select questions, timing system, exam filtering, and integration tests
 
 ## 📱 **NEW: Enhanced Learning Features**
 
@@ -106,6 +143,7 @@ A comprehensive, modern web application for **mastering SAFe (Scaled Agile Frame
 - Program Increment (PI) planning
 - Agile Release Train (ART) implementation
 - DevOps and continuous delivery
+- **25% Multi-Select Questions** - Realistic exam simulation with partial credit scoring
 - **Comprehensive explanations** for every question and answer option
 
 ### SAFe for Teams 6.0 (185 Questions)
@@ -114,6 +152,7 @@ A comprehensive, modern web application for **mastering SAFe (Scaled Agile Frame
 - Continuous Integration/Deployment
 - Built-in quality practices
 - Value stream participation
+- **25% Multi-Select Questions** - Advanced question types matching real certification exams
 - **Detailed learning content** with practical examples
 
 ## 🏁 Getting Started
@@ -214,6 +253,11 @@ npm run build        # Build for production
 npm run preview      # Preview production build locally
 npm run lint         # Run ESLint for code quality
 
+# Testing (NEW!)
+npm run test         # Run comprehensive test suite with Jest and React Testing Library
+npm run test:watch   # Run tests in watch mode for development
+npm run test:coverage # Generate detailed test coverage reports
+
 # Analysis (Advanced)
 npm run analyze      # Analyze question bank statistics
 npm run validate     # Validate question bank integrity
@@ -223,17 +267,32 @@ npm run validate     # Validate question bank integrity
 
 ```
 src/
-├── App.jsx                     # Main application with routing
+├── App.jsx                     # Main application with routing and timing analytics navigation
 ├── contexts/
 │   ├── ThemeContext.jsx        # Theme management (light/dark mode)
-│   └── ProgressContext.jsx     # Advanced progress tracking & analytics
+│   ├── ProgressContext.jsx     # Advanced progress tracking & analytics
+│   └── NotificationContext.jsx # Browser-based notification system with reminders
 ├── components/
 │   ├── Dashboard/              # Performance analytics dashboard
 │   ├── Achievements/           # Achievement system with 25+ badges  
 │   ├── SmartReview/           # Personalized review system
-│   ├── LeadingSAFe6/          # Leading SAFe 6.0 (200 questions)
-│   ├── SAFeTeams6/            # SAFe Teams 6.0 (185 questions)
-│   └── shared/                # Reusable UI components
+│   ├── LeadingSAFe6/          # Leading SAFe 6.0 (200 questions with 25% multi-select)
+│   ├── SAFeTeams6/            # SAFe Teams 6.0 (185 questions with 25% multi-select)
+│   ├── NotificationSettings/   # Comprehensive notification preferences management
+│   └── shared/                # Reusable UI components + Timing Analytics
+│       ├── Results.jsx        # Enhanced results with multi-select scoring
+│       ├── TimingAnalytics.jsx # Modal timing analysis component
+│       └── TimingAnalyticsPage.jsx # Full-page timing analytics with consistent UI
+├── __tests__/                 # Comprehensive test suite (NEW!)
+│   ├── multiSelectQuestions.test.jsx    # Multi-select question system tests
+│   ├── timingSystem.test.jsx            # Per-question timing system tests
+│   ├── examModeFiltering.test.jsx       # Practice/Exam mode filtering tests
+│   ├── timingAnalytics.test.jsx         # Timing analytics component tests
+│   └── integration.test.jsx             # End-to-end integration tests
+├── __mocks__/                 # Jest mocks for testing
+├── setupTests.js              # Jest configuration with localStorage mocks
+├── babel.config.json          # Babel configuration for modern JavaScript
+├── jest.config.js             # Jest testing framework configuration
 └── StudyMaterials.jsx         # Curated learning resources
 ```
 
@@ -271,11 +330,28 @@ src/
 - **🎨 Brand Coherence**: Consistent messaging throughout the application and documentation
 - **📱 User Experience**: Improved clarity about the platform's specific SAFe certification focus
 
+### **Enhancement 6: Multi-Select Questions & Advanced Timing** ✅ (NEW - October 2025!)
+- **🔥 Multi-Select Question System**: 25% distribution across both exams with partial credit scoring
+- **⏱️ Per-Question Timing Analytics**: Real-time timing display with comprehensive session analysis
+- **📊 Timing Analytics Page**: Dedicated full-page timing analysis with consistent UI design
+- **🎯 Hybrid Practice/Exam Modes**: Both modes include strategic multi-select distribution
+- **💾 Enhanced Data Persistence**: Timing data and multi-select performance stored locally
+- **🧪 Comprehensive Testing**: Complete Jest framework with React Testing Library integration
+
+### **Enhancement 7: Production-Ready Testing Framework** ✅ (NEW - October 2025!)
+- **🧪 Jest Testing Suite**: Modern JavaScript testing with 29.7.0 framework
+- **⚛️ React Testing Library**: User-centric component testing with realistic interactions
+- **🌐 jsdom Environment**: Browser-like testing environment for accurate DOM simulation
+- **🔧 Babel Integration**: Modern JavaScript and JSX support in test environment
+- **📋 Complete Test Coverage**: Multi-select, timing, filtering, analytics, and integration tests
+- **🏗️ CI/CD Ready**: Production-ready testing infrastructure for continuous deployment
+
 ### **Technical Improvements** ✅
 - **🔧 Enhanced ProgressContext**: Advanced state management with achievement calculations
 - **🎨 Professional UI/UX**: CSS Modules with responsive design and smooth animations
 - **📱 Mobile Optimization**: Touch-friendly interface optimized for all device sizes
 - **🚀 Performance Optimizations**: Efficient rendering and optimized component structure
+- **⚡ React 19.1.1 Upgrade**: Latest React features with improved performance and developer experience
 
 ## 🛠️ **Development Journey & Feature Evolution**
 
@@ -314,17 +390,34 @@ src/
 - ✅ **User Clarity**: Improved messaging clarity about platform's specific SAFe certification focus
 - ✅ **Production Testing**: Full build verification and unit testing for seamless deployment
 
+### **Phase 6: Multi-Select Questions & Advanced Analytics** (Completed - October 2025)
+- ✅ **Multi-Select Question Implementation**: 25% distribution across both Leading SAFe 6.0 and SAFe Teams 6.0 exams
+- ✅ **Partial Credit Scoring System**: Advanced scoring with proportional points for multi-select answers
+- ✅ **Per-Question Timing System**: Real-time timing display with comprehensive session analysis
+- ✅ **Timing Analytics Dashboard**: Dedicated full-page analytics with detailed performance insights
+- ✅ **Enhanced Results Component**: Multi-select performance breakdown and timing analysis integration
+
+### **Phase 7: Production Testing & Quality Assurance** (Completed - October 2025) 
+- ✅ **Comprehensive Test Suite**: Jest 29.7.0 with React Testing Library for complete coverage
+- ✅ **Multi-Select Testing**: Thorough validation of question types, scoring, and user interactions
+- ✅ **Timing System Testing**: Complete testing of per-question timing and analytics features
+- ✅ **Integration Testing**: End-to-end validation of exam flow with timing and multi-select features
+- ✅ **Browser Compatibility**: Testing across modern browsers with localStorage and timing APIs
+
 ## 📊 **Key Metrics & Statistics**
 
 - **📚 Total Questions**: 385 high-quality practice questions with intelligent tracking
+- **🔥 Multi-Select Questions**: 25% distribution (96 multi-select questions) across both exams with partial credit
 - **🏆 Achievement Badges**: 25+ badges across 5 categories with progress analytics
 - **📈 Analytics Tracking**: Comprehensive performance metrics and predictive trends
 - **⏱️ Timer Modes**: 3 adaptive timing modes for different learning objectives
+- **⏱️ Timing Analytics**: Per-question timing with session analysis and performance insights
 - **🎯 Passing Scores**: Realistic thresholds (77% Leading SAFe, 73% SAFe Teams)  
 - **📱 Device Support**: Fully responsive PWA across desktop, tablet, and mobile devices
 - **🧠 AI Features**: Pass probability prediction, spaced repetition, and personalized recommendations
 - **🔬 Learning Science**: SM-2 algorithm, retention analysis, and performance optimization
 - **📲 PWA Capabilities**: Offline functionality, push notifications, and native app experience
+- **🧪 Test Coverage**: Comprehensive Jest test suite with React Testing Library integration
 
 ## �📄 License
 
