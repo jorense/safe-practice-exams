@@ -7,20 +7,15 @@ const DATA_CACHE_NAME = 'safe-exams-data-v1.0.0';
 // Resources to cache for offline functionality
 const STATIC_CACHE_URLS = [
   '/',
-  '/index.html',
-  '/static/js/bundle.js',
-  '/static/css/main.css',
   '/manifest.json',
-  // New PNG Favicon Files
+  '/pwa-init.js',
+  // Favicon Files (only existing ones)
   '/favicon.ico',
   '/favicon-16x16.png',
   '/favicon-32x32.png',
   '/apple-touch-icon.png',
   '/android-chrome-192x192.png',
   '/android-chrome-512x512.png',
-  // Legacy SVG Fallbacks
-  '/icon-192x192.png',
-  '/icon-512x512.png',
   '/icon-192x192.svg',
   '/icon-512x512.svg',
   '/icon-192x192-maskable.svg',
@@ -45,10 +40,23 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE_NAME)
       .then((cache) => {
         console.log('[SW] Pre-caching static assets');
-        return cache.addAll(STATIC_CACHE_URLS);
+        // In development, cache assets one by one to avoid failing on missing files
+        return Promise.allSettled(
+          STATIC_CACHE_URLS.map(url => 
+            fetch(url).then(response => {
+              if (response.ok) {
+                return cache.put(url, response);
+              } else {
+                console.warn('[SW] Skipping unavailable asset:', url);
+              }
+            }).catch(error => {
+              console.warn('[SW] Failed to cache asset:', url, error.message);
+            })
+          )
+        );
       })
       .then(() => {
-        console.log('[SW] Static assets cached successfully');
+        console.log('[SW] Static assets caching attempted');
         return self.skipWaiting(); // Force activation
       })
       .catch((error) => {
