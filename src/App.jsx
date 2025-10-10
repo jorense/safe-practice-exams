@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { ThemeProvider, useTheme } from './contexts/ThemeContext.jsx'
 import { ProgressProvider, useProgress } from './contexts/ProgressContext.jsx'
+import { StudyIntelligenceProvider } from './contexts/StudyIntelligenceContext.jsx'
+import { NotificationProvider } from './contexts/NotificationContext.jsx'
 import LeadingSAFe6Exam from './components/LeadingSAFe6/LeadingSAFe6Exam.jsx'
 import LeadingSAFe6ExamQuiz from './components/LeadingSAFe6/LeadingSAFe6ExamQuiz.jsx'
 import SAFeTeams6Exam from './components/SAFeTeams6/SAFeTeams6Exam.jsx'
@@ -8,15 +10,22 @@ import SAFeTeams6ExamQuiz from './components/SAFeTeams6/SAFeTeams6ExamQuiz.jsx'
 import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Achievements from './components/Achievements/Achievements.jsx'
 import SmartReview from './components/SmartReview/SmartReview.jsx'
+import StudyCompanion from './components/StudyCompanion/StudyCompanion.jsx'
+import NotificationSettings from './components/NotificationSettings/NotificationSettings.jsx'
 import AchievementNotification from './components/Achievements/AchievementNotification.jsx'
 import StudyMaterials from './StudyMaterials.jsx'
 import './App.css'
+import './pwa-styles.css'
 
 function App() {
   return (
     <ThemeProvider>
       <ProgressProvider>
-        <AppContent />
+        <StudyIntelligenceProvider>
+          <NotificationProvider>
+            <AppContent />
+          </NotificationProvider>
+        </StudyIntelligenceProvider>
       </ProgressProvider>
     </ThemeProvider>
   )
@@ -96,6 +105,14 @@ function AppContent() {
 
   const goToSmartReview = () => {
     setCurrentPage('smart-review')
+  }
+
+  const goToStudyCompanion = () => {
+    setCurrentPage('study-companion')
+  }
+
+  const goToNotifications = () => {
+    setCurrentPage('notifications')
   }
 
   const goToExams = () => {
@@ -190,6 +207,23 @@ function AppContent() {
     return <SmartReview onGoHome={goHome} onStartExam={startExam} />
   }
 
+  if (currentPage === 'study-companion') {
+    return <StudyCompanion 
+      examType={studyExamType === 'Leading SAFe 6' ? 'leadingsafe' : 'safeteams'}
+      onStartRecommendedSession={(config) => {
+        setNumberOfQuestions(config.questionCount);
+        goHome();
+      }}
+      onGoHome={goHome}
+      onGoToDashboard={goToDashboard}
+      onGoToSettings={goToSettings}
+    />
+  }
+
+  if (currentPage === 'notifications') {
+    return <NotificationSettings onGoHome={goHome} />
+  }
+
   // Settings Page
   if (currentPage === 'settings') {
     return (
@@ -203,7 +237,12 @@ function AppContent() {
               <div className="tagline">Practice Exams - Settings</div>
             </div>
             <nav className="nav">
-              <button onClick={goHome} className="nav-button">← Back to Home</button>
+              <button onClick={goToNotifications} className="nav-button">
+                <span className="nav-icon">🔔</span><span>Notifications</span>
+              </button>
+              <button onClick={goHome} className="nav-button">
+                <span className="nav-icon">🏠</span><span>Home</span>
+              </button>
             </nav>
           </div>
         </header>
@@ -309,8 +348,12 @@ function AppContent() {
               <div className="tagline">Practice Exams</div>
             </div>
             <nav className="nav">
-            <button onClick={goHome} className="nav-button">Home</button>
-            <button onClick={goToSettings} className="nav-button settings-button">⚙️ Settings</button>
+            <button onClick={goHome} className="nav-button">
+              <span className="nav-icon">🏠</span><span>Home</span>
+            </button>
+            <button onClick={goToSettings} className="nav-button settings-button">
+              <span className="nav-icon">⚙️</span><span>Settings</span>
+            </button>
           </nav>
           </div>
         </header>
@@ -393,20 +436,36 @@ function AppContent() {
             <div className="tagline">Practice Exams</div>
           </div>
           <nav className="nav">
-            <button onClick={goToExams} className="nav-button">Exams</button>
-            <button onClick={goToDashboard} className="nav-button dashboard-button">📊 Dashboard</button>
-            <button onClick={goToAchievements} className="nav-button achievements-button">🏆 Achievements</button>
-            <button onClick={goToSmartReview} className="nav-button smart-review-button">🎯 Smart Review</button>
-            <button onClick={goToSettings} className="nav-button settings-button">⚙️ Settings</button>
+            <button onClick={goToExams} className="nav-button">
+              <span className="nav-icon">📋</span><span>Exams</span>
+            </button>
+            <button onClick={goToDashboard} className="nav-button dashboard-button">
+              <span className="nav-icon">📊</span><span>Dashboard</span>
+            </button>
+            <button onClick={goToAchievements} className="nav-button achievements-button">
+              <span className="nav-icon">🏆</span><span>Achievements</span>
+            </button>
+            <button onClick={goToSmartReview} className="nav-button smart-review-button">
+              <span className="nav-icon">🎯</span><span>Review</span>
+            </button>
+            <button onClick={goToStudyCompanion} className="nav-button study-companion-button">
+              <span className="nav-icon">🧠</span><span>AI</span>
+            </button>
+            <button onClick={goToNotifications} className="nav-button notifications-button">
+              <span className="nav-icon">🔔</span><span>Alerts</span>
+            </button>
+            <button onClick={goToSettings} className="nav-button settings-button">
+              <span className="nav-icon">⚙️</span><span>Settings</span>
+            </button>
           </nav>
         </div>
       </header>
 
       <main className="main-content">
         <div className="hero-section">
-          <h1>Master Your Agile & Scrum Certifications</h1>
+          <h1>Master Your SAFe Certifications</h1>
           <p className="hero-subtitle">
-            Prepare for success with our comprehensive practice exams designed by Agile experts
+            Prepare for success with our comprehensive practice exams designed by SAFe experts
           </p>
 
           <div className="featured-exams-section">

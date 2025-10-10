@@ -3,9 +3,11 @@ import styles from './LeadingSAFe6ExamQuiz.module.css'
 import { leadingSAFe6Questions } from './LeadingSAFe6Questions.js'
 import Results from '../shared/Results.jsx'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
+import { useStudyIntelligence } from '../../contexts/StudyIntelligenceContext.jsx'
 
 function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, autoShowExplanation = false }) {
   const { recordSession } = useProgress()
+  const { updateSpacedRepetition } = useStudyIntelligence()
 
   // Adaptive timer calculation function
   const calculateTimerDuration = (questionCount) => {
@@ -154,6 +156,11 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
     shuffledQuestions.forEach((question) => {
       const isCorrect = selectedAnswers[question.id] === question.correctAnswer
       if (isCorrect) correctAnswers++
+      
+      // Update spaced repetition for each question
+      const questionId = `leadingsafe_${question.id}`;
+      const performance = isCorrect ? 1.0 : 0.2; // High performance if correct, low if incorrect
+      updateSpacedRepetition(questionId, Math.floor(performance * 5)); // Convert to 0-5 scale
       
       // Track domain performance
       const domain = question.domain || 'General'
