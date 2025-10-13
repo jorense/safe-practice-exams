@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // Configure for GitHub Pages deployment
-  // Change '/safe-practice-exams/' to match your actual repository name
-  base: process.env.NODE_ENV === 'production' ? '/lace-studio-exam-app/' : '/',
+  // Repository name: safe-practice-exams
+  base: process.env.NODE_ENV === 'production' ? '/safe-practice-exams/' : '/',
   build: {
     // Ensure proper asset paths for GitHub Pages
     assetsDir: 'assets',
