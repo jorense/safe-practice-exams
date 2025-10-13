@@ -66,3 +66,21 @@ ehthumbs.db
 .vscode/launch.json
 *.sublime-*
 *.code-workspace
+
+# Local issue-resolution / scratch documentation (kept local only)
+COMPLETE_ISSUE_RESOLUTION.md
+CONSOLE_ERRORS_FIX.md
+FLICKERING_SOLUTION_SUMMARY.md
+HOOK_ERRORS_FIX.md
+NOTIFICATION_FIX.md
+UI_FIXES_SUMMARY.md
+UI_UX_REVIEW_COMPLETE.md
+
+# Local scratch / experimental source files
+src/App.jsx.backup
+src/TestApp.jsx
+src/test/
+test-fixes.js
+
+# Generic backup pattern
+*.backup
