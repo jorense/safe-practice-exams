@@ -164,6 +164,7 @@ function SAFeTeams6Exam({
           <div className={styles.examActions}>
             <button 
               className={`${styles.actionButton} ${styles.primary}`}
+              data-testid="safe-teams-start-quiz"
               onClick={onStartQuiz}
             >
               🚀 Start Practice Exam

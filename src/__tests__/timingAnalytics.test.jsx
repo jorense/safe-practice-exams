@@ -1,15 +1,18 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { vi } from 'vitest';
 import TimingAnalytics from '../components/shared/TimingAnalytics';
 
 // Mock CSS modules
-jest.mock('../components/shared/TimingAnalytics.module.css', () => ({}));
+vi.mock('../components/shared/TimingAnalytics.module.css', () => ({
+  default: {}
+}));
 
 describe('TimingAnalytics Component Tests', () => {
-  const mockOnClose = jest.fn();
+  const mockOnClose = vi.fn();
 
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
     localStorage.clear();
   });
 
@@ -185,7 +188,7 @@ describe('TimingAnalytics Component Tests', () => {
     test('should delete individual exam session', async () => {
       const user = userEvent.setup();
       // Mock window.confirm to return true
-      window.confirm = jest.fn().mockReturnValue(true);
+      window.confirm = vi.fn().mockReturnValue(true);
       
       render(<TimingAnalytics onClose={mockOnClose} />);
       
@@ -206,7 +209,7 @@ describe('TimingAnalytics Component Tests', () => {
 
     test('should clear all data when clear all is clicked', async () => {
       const user = userEvent.setup();
-      window.confirm = jest.fn().mockReturnValue(true);
+      window.confirm = vi.fn().mockReturnValue(true);
       
       render(<TimingAnalytics onClose={mockOnClose} />);
       
@@ -225,7 +228,7 @@ describe('TimingAnalytics Component Tests', () => {
 
     test('should cancel deletion when user clicks cancel', async () => {
       const user = userEvent.setup();
-      window.confirm = jest.fn().mockReturnValue(false);
+      window.confirm = vi.fn().mockReturnValue(false);
       
       render(<TimingAnalytics onClose={mockOnClose} />);
       
@@ -319,3 +322,4 @@ describe('TimingAnalytics Component Tests', () => {
     });
   });
 });
+

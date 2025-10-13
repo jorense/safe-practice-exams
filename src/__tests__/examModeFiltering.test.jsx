@@ -1,30 +1,31 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { vi } from 'vitest';
 import LeadingSAFe6ExamQuiz from '../components/LeadingSAFe6/LeadingSAFe6ExamQuiz';
 import SAFeTeams6ExamQuiz from '../components/SAFeTeams6/SAFeTeams6ExamQuiz';
 
 // Mock the contexts
-const mockRecordSession = jest.fn();
-const mockUpdateSpacedRepetition = jest.fn();
+const mockRecordSession = vi.fn();
+const mockUpdateSpacedRepetition = vi.fn();
 
-jest.mock('../contexts/ProgressContext', () => ({
+vi.mock('../contexts/ProgressContext', () => ({
   useProgress: () => ({
     recordSession: mockRecordSession
   })
 }));
 
-jest.mock('../contexts/StudyIntelligenceContext', () => ({
+vi.mock('../contexts/StudyIntelligenceContext', () => ({
   useStudyIntelligence: () => ({
     updateSpacedRepetition: mockUpdateSpacedRepetition
   })
 }));
 
 // Mock CSS modules
-jest.mock('../components/LeadingSAFe6/LeadingSAFe6ExamQuiz.module.css', () => ({}));
-jest.mock('../components/SAFeTeams6/SAFeTeams6ExamQuiz.module.css', () => ({}));
+vi.mock('../components/LeadingSAFe6/LeadingSAFe6ExamQuiz.module.css', () => ({}));
+vi.mock('../components/SAFeTeams6/SAFeTeams6ExamQuiz.module.css', () => ({}));
 
 // Mock mixed questions for LeadingSAFe6
-jest.mock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
+vi.mock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
   leadingSAFe6Questions: [
     {
       id: 1,
@@ -79,7 +80,7 @@ jest.mock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
 }));
 
 // Mock mixed questions for SAFeTeams6
-jest.mock('../components/SAFeTeams6/SAFeTeams6Questions.js', () => ({
+vi.mock('../components/SAFeTeams6/SAFeTeams6Questions.js', () => ({
   safeTeams6Questions: [
     {
       id: 1,
@@ -114,11 +115,11 @@ jest.mock('../components/SAFeTeams6/SAFeTeams6Questions.js', () => ({
 }));
 
 describe('Exam Mode Filtering Tests', () => {
-  const mockOnGoHome = jest.fn();
-  const mockOnGoBackToExam = jest.fn();
+  const mockOnGoHome = vi.fn();
+  const mockOnGoBackToExam = vi.fn();
 
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
     localStorage.clear();
   });
 
@@ -472,3 +473,4 @@ describe('Exam Mode Filtering Tests', () => {
     });
   });
 });
+

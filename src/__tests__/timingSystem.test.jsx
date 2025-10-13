@@ -1,40 +1,41 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { vi } from 'vitest';
 import LeadingSAFe6ExamQuiz from '../components/LeadingSAFe6/LeadingSAFe6ExamQuiz';
 
 // Mock the contexts
-const mockRecordSession = jest.fn();
-const mockUpdateSpacedRepetition = jest.fn();
+const mockRecordSession = vi.fn();
+const mockUpdateSpacedRepetition = vi.fn();
 
-jest.mock('../contexts/ProgressContext', () => ({
+vi.mock('../contexts/ProgressContext', () => ({
   useProgress: () => ({
     recordSession: mockRecordSession
   })
 }));
 
-jest.mock('../contexts/StudyIntelligenceContext', () => ({
+vi.mock('../contexts/StudyIntelligenceContext', () => ({
   useStudyIntelligence: () => ({
     updateSpacedRepetition: mockUpdateSpacedRepetition
   })
 }));
 
 // Mock CSS modules
-jest.mock('../components/LeadingSAFe6/LeadingSAFe6ExamQuiz.module.css', () => ({}));
-jest.mock('../components/shared/Results.module.css', () => ({}));
+vi.mock('../components/LeadingSAFe6/LeadingSAFe6ExamQuiz.module.css', () => ({}));
+vi.mock('../components/shared/Results.module.css', () => ({}));
 
 describe('Timing System Tests', () => {
-  const mockOnGoHome = jest.fn();
-  const mockOnGoBackToExam = jest.fn();
+  const mockOnGoHome = vi.fn();
+  const mockOnGoBackToExam = vi.fn();
   
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
     localStorage.clear();
     // Reset Date.now to known value
-    jest.spyOn(Date, 'now').mockReturnValue(1609459200000); // 2021-01-01 00:00:00
+    vi.spyOn(Date, 'now').mockReturnValue(1609459200000); // 2021-01-01 00:00:00
   });
 
   afterEach(() => {
-    jest.restoreAllMocks();
+    vi.restoreAllMocks();
   });
 
   describe('Per-Question Timing', () => {
@@ -54,8 +55,8 @@ describe('Timing System Tests', () => {
     });
 
     test('should update question timer every second', async () => {
-      jest.useFakeTimers();
-      const mockDateNow = jest.spyOn(Date, 'now');
+      vi.useFakeTimers();
+      const mockDateNow = vi.spyOn(Date, 'now');
       
       render(
         <LeadingSAFe6ExamQuiz
@@ -73,13 +74,13 @@ describe('Timing System Tests', () => {
 
       // Simulate 5 seconds passing
       mockDateNow.mockReturnValue(1609459205000); // +5 seconds
-      jest.advanceTimersByTime(5000);
+      vi.advanceTimersByTime(5000);
 
       await waitFor(() => {
         expect(screen.getByText(/Time on question: 0:05/)).toBeInTheDocument();
       });
 
-      jest.useRealTimers();
+      vi.useRealTimers();
     });
 
     test('should track timing when navigating between questions', async () => {
@@ -151,7 +152,7 @@ describe('Timing System Tests', () => {
 
     test('should store correct timing data structure', async () => {
       const user = userEvent.setup();
-      localStorage.setItem = jest.fn();
+      localStorage.setItem = vi.fn();
 
       render(
         <LeadingSAFe6ExamQuiz
@@ -216,8 +217,8 @@ describe('Timing System Tests', () => {
   describe('Question Timer Reset', () => {
     test('should reset timer when navigating between questions', async () => {
       const user = userEvent.setup();
-      jest.useFakeTimers();
-      const mockDateNow = jest.spyOn(Date, 'now');
+      vi.useFakeTimers();
+      const mockDateNow = vi.spyOn(Date, 'now');
       
       render(
         <LeadingSAFe6ExamQuiz
@@ -234,7 +235,7 @@ describe('Timing System Tests', () => {
 
       // Simulate 10 seconds on first question
       mockDateNow.mockReturnValue(1609459210000);
-      jest.advanceTimersByTime(10000);
+      vi.advanceTimersByTime(10000);
 
       await waitFor(() => {
         expect(screen.getByText(/Time on question: 0:10/)).toBeInTheDocument();
@@ -252,7 +253,7 @@ describe('Timing System Tests', () => {
         expect(screen.getByText(/Time on question: 0:00/)).toBeInTheDocument();
       });
 
-      jest.useRealTimers();
+      vi.useRealTimers();
     });
 
     test('should reset all timing states on exam retake', async () => {
@@ -292,3 +293,4 @@ describe('Timing System Tests', () => {
     });
   });
 });
+

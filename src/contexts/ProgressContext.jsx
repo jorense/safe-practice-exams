@@ -92,7 +92,15 @@ export const ProgressProvider = ({ children }) => {
       questionResults: sessionData.questionResults || []
     };
 
-    setSessionHistory(prev => [session, ...prev].slice(0, 100)); // Keep last 100 sessions
+    setSessionHistory(prev => {
+      const newHistory = [session, ...prev].slice(0, 100); // Keep last 100 sessions
+      
+      // Track total session count for PWA install prompt
+      localStorage.setItem('lace-studio-sessions-count', newHistory.length.toString());
+      
+      return newHistory;
+    });
+    
     updateStreaks();
     updateQuestionPerformance(session.questionResults, session.examType);
     checkAchievements(session);

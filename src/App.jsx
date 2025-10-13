@@ -3,6 +3,8 @@ import { ThemeProvider, useTheme } from './contexts/ThemeContext.jsx'
 import { ProgressProvider, useProgress } from './contexts/ProgressContext.jsx'
 import { StudyIntelligenceProvider } from './contexts/StudyIntelligenceContext.jsx'
 import { NotificationProvider } from './contexts/NotificationContext.jsx'
+import { AutosaveProvider } from './contexts/AutosaveContext.jsx'
+import { AnalyticsProvider } from './contexts/AnalyticsContext.jsx'
 import LeadingSAFe6Exam from './components/LeadingSAFe6/LeadingSAFe6Exam.jsx'
 import LeadingSAFe6ExamQuiz from './components/LeadingSAFe6/LeadingSAFe6ExamQuiz.jsx'
 import SAFeTeams6Exam from './components/SAFeTeams6/SAFeTeams6Exam.jsx'
@@ -14,19 +16,26 @@ import StudyCompanion from './components/StudyCompanion/StudyCompanion.jsx'
 import NotificationSettings from './components/NotificationSettings/NotificationSettings.jsx'
 import AchievementNotification from './components/Achievements/AchievementNotification.jsx'
 import TimingAnalyticsPage from './components/shared/TimingAnalyticsPage.jsx'
+import AdvancedDashboard from './components/analytics/AdvancedDashboard.jsx'
 import StudyMaterials from './StudyMaterials.jsx'
+import HamburgerMenu from './components/navigation/HamburgerMenu.jsx'
 import './App.css'
 import './pwa-styles.css'
 
 function App() {
+  // Re-introduce only the providers required for current visible features.
   return (
     <ThemeProvider>
       <ProgressProvider>
-        <StudyIntelligenceProvider>
-          <NotificationProvider>
-            <AppContent />
-          </NotificationProvider>
-        </StudyIntelligenceProvider>
+        <NotificationProvider>
+          <StudyIntelligenceProvider>
+            <AutosaveProvider>
+              <AnalyticsProvider>
+                <AppContent />
+              </AnalyticsProvider>
+            </AutosaveProvider>
+          </StudyIntelligenceProvider>
+        </NotificationProvider>
       </ProgressProvider>
     </ThemeProvider>
   )
@@ -38,17 +47,29 @@ function AppContent() {
   const [currentPage, setCurrentPage] = useState('home')
   const [studyExamType, setStudyExamType] = useState('Leading SAFe 6')
   const [achievementNotification, setAchievementNotification] = useState(null)
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
   const [numberOfQuestions, setNumberOfQuestions] = useState(() => {
     const savedQuestionCount = localStorage.getItem('lace-studio-question-count')
     const count = savedQuestionCount ? Number(savedQuestionCount) : 45
     // Migration: Update old default of 40 to new default of 45
     return count === 40 ? 45 : count
   })
+  
+  // Add exam mode state management
+  const [examMode, setExamMode] = useState(() => {
+    const savedExamMode = localStorage.getItem('lace-studio-exam-mode')
+    return savedExamMode || 'exam'
+  })
 
   // Save numberOfQuestions to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('lace-studio-question-count', numberOfQuestions.toString())
   }, [numberOfQuestions])
+
+  // Save examMode to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('lace-studio-exam-mode', examMode)
+  }, [examMode])
 
   // One-time migration effect to update localStorage for migrated users
   useEffect(() => {
@@ -62,7 +83,6 @@ function AppContent() {
   useEffect(() => {
     const newAchievements = getNewAchievements()
     if (newAchievements.length > 0) {
-      // Show the first new achievement
       setAchievementNotification(newAchievements[0])
     }
   }, [achievements, getNewAchievements])
@@ -113,15 +133,54 @@ function AppContent() {
   }
 
   const goToNotifications = () => {
-    setCurrentPage('notifications')
+    // Guard: only navigate if NotificationProvider is mounted (window flag set below)
+    if (window.__NOTIFICATION_PROVIDER_READY__) {
+      setCurrentPage('notifications')
+    } else {
+      console.warn('Notifications provider not ready yet.')
+      // Optional: add a transient local notification substitute later
+    }
   }
 
   const goToTiming = () => {
     setCurrentPage('timing')
   }
 
+  const goToAdvancedAnalytics = () => {
+    setCurrentPage('advanced-analytics')
+  }
+
   const goToExams = () => {
     setCurrentPage('exams')
+  }
+
+  // Hamburger menu handlers
+  const toggleHamburgerMenu = () => {
+    setIsHamburgerOpen(!isHamburgerOpen)
+  }
+
+  const closeHamburgerMenu = () => {
+    setIsHamburgerOpen(false)
+  }
+
+  // Navigation structure for hamburger menu
+  const navigationItems = {
+    primary: [
+      { key: 'home', icon: '🏠', label: 'Home', action: 'home' },
+      { key: 'exams', icon: '📋', label: 'Exams', action: 'exams' }
+    ],
+    secondary: [
+      { key: 'dashboard', icon: '📊', label: 'Dashboard', action: 'dashboard' },
+      { key: 'achievements', icon: '🏆', label: 'Achievements', action: 'achievements' },
+      { key: 'smart-review', icon: '🎯', label: 'Smart Review', action: 'smart-review' },
+      { key: 'study-companion', icon: '🧠', label: 'AI Study Companion', action: 'study-companion' },
+      { key: 'timing', icon: '⏱️', label: 'Timing Analytics', action: 'timing' },
+      { key: 'advanced-analytics', icon: '📈', label: 'Advanced Analytics', action: 'advanced-analytics' }
+    ],
+    utility: [
+      { key: 'notifications', icon: '🔔', label: 'Notifications', action: 'notifications' },
+      { key: 'settings', icon: '⚙️', label: 'Settings', action: 'settings' }
+    ]
   }
 
   const goBackToExam = () => {
@@ -151,6 +210,8 @@ function AppContent() {
         autoShowExplanation={autoShowExplanation}
         onNumberOfQuestionsChange={setNumberOfQuestions}
         onAutoShowExplanationChange={setAutoShowExplanation}
+        examMode={examMode}
+        onExamModeChange={setExamMode}
       />
     )
   }
@@ -163,6 +224,7 @@ function AppContent() {
         onGoBackToExam={goBackToLeadingSAFe6} 
         numberOfQuestions={numberOfQuestions} 
         autoShowExplanation={autoShowExplanation} 
+        examMode={examMode}
       />
     )
   }
@@ -178,6 +240,8 @@ function AppContent() {
         autoShowExplanation={autoShowExplanation}
         onNumberOfQuestionsChange={setNumberOfQuestions}
         onAutoShowExplanationChange={setAutoShowExplanation}
+        examMode={examMode}
+        onExamModeChange={setExamMode}
       />
     )
   }
@@ -190,6 +254,7 @@ function AppContent() {
         onGoBackToExam={goBackToSAFeTeams6} 
         numberOfQuestions={numberOfQuestions} 
         autoShowExplanation={autoShowExplanation} 
+        examMode={examMode}
       />
     )
   }
@@ -234,6 +299,11 @@ function AppContent() {
     return <TimingAnalyticsPage onGoHome={goHome} />
   }
 
+  // Advanced Analytics Dashboard
+  if (currentPage === 'advanced-analytics') {
+    return <AdvancedDashboard onGoHome={goHome} />
+  }
+
   // Settings Page
   if (currentPage === 'settings') {
     return (
@@ -254,6 +324,50 @@ function AppContent() {
                 <span className="nav-icon">🏠</span><span>Home</span>
               </button>
             </nav>
+            <HamburgerMenu
+              isOpen={isHamburgerOpen}
+              onToggle={toggleHamburgerMenu}
+              onClose={closeHamburgerMenu}
+              navigationItems={navigationItems}
+              currentPage={currentPage}
+              onNavigate={(page) => {
+                switch (page) {
+                  case 'home':
+                    goHome();
+                    break;
+                  case 'exams':
+                    goToExams();
+                    break;
+                  case 'dashboard':
+                    goToDashboard();
+                    break;
+                  case 'achievements':
+                    goToAchievements();
+                    break;
+                  case 'smart-review':
+                    goToSmartReview();
+                    break;
+                  case 'study-companion':
+                    goToStudyCompanion();
+                    break;
+                  case 'timing':
+                    goToTiming();
+                    break;
+                  case 'notifications':
+                    goToNotifications();
+                    break;
+                  case 'advanced-analytics':
+                    goToAdvancedAnalytics();
+                    break;
+                  case 'settings':
+                    goToSettings();
+                    break;
+                  default:
+                    break;
+                }
+                closeHamburgerMenu();
+              }}
+            />
           </div>
         </header>
 
@@ -365,6 +479,50 @@ function AppContent() {
               <span className="nav-icon">⚙️</span><span>Settings</span>
             </button>
           </nav>
+          <HamburgerMenu
+            isOpen={isHamburgerOpen}
+            onToggle={toggleHamburgerMenu}
+            onClose={closeHamburgerMenu}
+            navigationItems={navigationItems}
+            currentPage={currentPage}
+            onNavigate={(page) => {
+              switch (page) {
+                case 'home':
+                  goHome();
+                  break;
+                case 'exams':
+                  goToExams();
+                  break;
+                case 'dashboard':
+                  goToDashboard();
+                  break;
+                case 'achievements':
+                  goToAchievements();
+                  break;
+                case 'smart-review':
+                  goToSmartReview();
+                  break;
+                case 'study-companion':
+                  goToStudyCompanion();
+                  break;
+                case 'timing':
+                  goToTiming();
+                  break;
+                case 'notifications':
+                  goToNotifications();
+                  break;
+                case 'advanced-analytics':
+                  goToAdvancedAnalytics();
+                  break;
+                case 'settings':
+                  goToSettings();
+                  break;
+                default:
+                  break;
+              }
+              closeHamburgerMenu();
+            }}
+          />
           </div>
         </header>
 
@@ -381,6 +539,7 @@ function AppContent() {
                 <div className="exam-buttons agile-exams">
                   <button
                     className="cta-button leading-safe-6 recommended"
+                    data-testid="start-leading-safe-exams"
                     onClick={() => startExam('Leading SAFe 6')}
                   >
                     <span className="button-content">
@@ -390,6 +549,7 @@ function AppContent() {
                   </button>
                   <button
                     className="cta-button safe-teams-6 recommended"
+                    data-testid="start-safe-teams-exams"
                     onClick={() => startExam('SAFe for Teams 6.0')}
                   >
                     <span className="button-content">
@@ -446,31 +606,78 @@ function AppContent() {
             <div className="tagline">Practice Exams</div>
           </div>
           <nav className="nav">
-            <button onClick={goToExams} className="nav-button">
+            <button onClick={goToExams} className="nav-button" data-testid="nav-exams">
               <span className="nav-icon">📋</span><span>Exams</span>
             </button>
-            <button onClick={goToDashboard} className="nav-button dashboard-button">
+            <button onClick={goToDashboard} className="nav-button dashboard-button" data-testid="nav-dashboard">
               <span className="nav-icon">📊</span><span>Dashboard</span>
             </button>
-            <button onClick={goToAchievements} className="nav-button achievements-button">
+            <button onClick={goToAchievements} className="nav-button achievements-button" data-testid="nav-achievements">
               <span className="nav-icon">🏆</span><span>Achievements</span>
             </button>
-            <button onClick={goToSmartReview} className="nav-button smart-review-button">
+            <button onClick={goToSmartReview} className="nav-button smart-review-button" data-testid="nav-review">
               <span className="nav-icon">🎯</span><span>Review</span>
             </button>
-            <button onClick={goToStudyCompanion} className="nav-button study-companion-button">
+            <button onClick={goToStudyCompanion} className="nav-button study-companion-button" data-testid="nav-ai">
               <span className="nav-icon">🧠</span><span>AI</span>
             </button>
-            <button onClick={goToTiming} className="nav-button timing-button">
+            <button onClick={goToTiming} className="nav-button timing-button" data-testid="nav-timing">
               <span className="nav-icon">⏱️</span><span>Timing</span>
             </button>
-            <button onClick={goToNotifications} className="nav-button notifications-button">
+            <button onClick={goToAdvancedAnalytics} className="nav-button advanced-analytics-button" data-testid="nav-analytics">
+              <span className="nav-icon">📈</span><span>Analytics</span>
+            </button>
+            <button onClick={goToNotifications} className="nav-button notifications-button" data-testid="nav-alerts">
               <span className="nav-icon">🔔</span><span>Alerts</span>
             </button>
-            <button onClick={goToSettings} className="nav-button settings-button">
+            <button onClick={goToSettings} className="nav-button settings-button" data-testid="nav-settings">
               <span className="nav-icon">⚙️</span><span>Settings</span>
             </button>
           </nav>
+          <HamburgerMenu
+            isOpen={isHamburgerOpen}
+            onToggle={toggleHamburgerMenu}
+            onClose={closeHamburgerMenu}
+            navigationItems={navigationItems}
+            currentPage={currentPage}
+            onNavigate={(page) => {
+              switch (page) {
+                case 'home':
+                  goHome();
+                  break;
+                case 'exams':
+                  goToExams();
+                  break;
+                case 'dashboard':
+                  goToDashboard();
+                  break;
+                case 'achievements':
+                  goToAchievements();
+                  break;
+                case 'smart-review':
+                  goToSmartReview();
+                  break;
+                case 'study-companion':
+                  goToStudyCompanion();
+                  break;
+                case 'timing':
+                  goToTiming();
+                  break;
+                case 'notifications':
+                  goToNotifications();
+                  break;
+                case 'advanced-analytics':
+                  goToAdvancedAnalytics();
+                  break;
+                case 'settings':
+                  goToSettings();
+                  break;
+                default:
+                  break;
+              }
+              closeHamburgerMenu();
+            }}
+          />
         </div>
       </header>
 
@@ -492,7 +699,7 @@ function AppContent() {
                     className="featured-exam-button leading-safe-6"
                     onClick={() => startExam('Leading SAFe 6')}
                   >
-                    <div className="featured-exam-content">
+                      <div className="featured-exam-content" data-testid="start-leading-safe-home">
                       <h3>Leading SAFe 6</h3>
                       <p>Scaled Agile Framework</p>
                       <span className="featured-badge available">Available</span>
@@ -505,7 +712,7 @@ function AppContent() {
                     className="featured-exam-button safe-teams-6"
                     onClick={() => startExam('SAFe for Teams 6.0')}
                   >
-                    <div className="featured-exam-content">
+                      <div className="featured-exam-content" data-testid="start-safe-teams-home">
                       <h3>SAFe for Teams 6.0</h3>
                       <p>Team-Level SAFe Certification</p>
                       <span className="featured-badge available">Available</span>
@@ -563,10 +770,12 @@ function AppContent() {
       </footer>
 
       {/* Achievement Notification */}
-      <AchievementNotification
-        achievement={achievementNotification}
-        onClose={() => setAchievementNotification(null)}
-      />
+        <div data-testid="achievement-notification-wrapper">
+          <AchievementNotification
+            achievement={achievementNotification}
+            onClose={() => setAchievementNotification(null)}
+          />
+        </div>
     </>
   )
 }

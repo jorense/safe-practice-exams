@@ -4,10 +4,16 @@ import { ProgressContext } from './ProgressContext';
 const NotificationContext = createContext();
 
 export const NotificationProvider = ({ children }) => {
-  const [permission, setPermission] = useState(Notification.permission);
+  const [permission, setPermission] = useState(() => {
+    // Check if we're in a browser environment and Notification API is available
+    if (typeof window !== 'undefined' && 'Notification' in window) {
+      return Notification.permission;
+    }
+    return 'default';
+  });
   const [subscription, setSubscription] = useState(null);
   const [notifications, setNotifications] = useState([]);
-  const { progress } = useContext(ProgressContext);
+  const progressData = useContext(ProgressContext);
 
   useEffect(() => {
     // Check if service worker and push messaging are supported
@@ -345,9 +351,9 @@ export const NotificationProvider = ({ children }) => {
 
   // Auto-scheduling based on study patterns
   useEffect(() => {
-    if (permission === 'granted' && progress) {
+    if (permission === 'granted' && progressData) {
       const now = new Date();
-      const studyHistory = progress.studyHistory || [];
+      const studyHistory = progressData.sessionHistory || [];
       
       // Schedule study reminders based on user's typical study times
       const typicalStudyHour = getTypicalStudyHour(studyHistory);
@@ -357,8 +363,8 @@ export const NotificationProvider = ({ children }) => {
       }
       
       // Check for achievements to celebrate
-      if (progress.achievements) {
-        const newAchievements = progress.achievements.filter(a => 
+      if (progressData.achievements) {
+        const newAchievements = progressData.achievements.filter(a => 
           a.unlockedAt && 
           Date.now() - new Date(a.unlockedAt).getTime() < 5000 // Within last 5 seconds
         );
@@ -368,7 +374,7 @@ export const NotificationProvider = ({ children }) => {
         });
       }
     }
-  }, [progress, permission]);
+  }, [progressData, permission]);
 
   const getTypicalStudyHour = (history) => {
     if (history.length < 3) return null;
@@ -423,10 +429,21 @@ export const NotificationProvider = ({ children }) => {
 
   return (
     <NotificationContext.Provider value={contextValue}>
+      {/* Mark provider ready for guarded navigations */}
+      <ProviderReadyFlag />
       {children}
     </NotificationContext.Provider>
   );
 };
+
+// Small component to set global flag once provider renders.
+function ProviderReadyFlag() {
+  useEffect(() => {
+    window.__NOTIFICATION_PROVIDER_READY__ = true;
+    return () => { delete window.__NOTIFICATION_PROVIDER_READY__; };
+  }, []);
+  return null;
+}
 
 export const useNotifications = () => {
   const context = useContext(NotificationContext);

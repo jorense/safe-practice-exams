@@ -1,28 +1,29 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { vi } from 'vitest';
 import LeadingSAFe6ExamQuiz from '../components/LeadingSAFe6/LeadingSAFe6ExamQuiz';
 
 // Mock the contexts
-const mockRecordSession = jest.fn();
-const mockUpdateSpacedRepetition = jest.fn();
+const mockRecordSession = vi.fn();
+const mockUpdateSpacedRepetition = vi.fn();
 
-jest.mock('../contexts/ProgressContext', () => ({
+vi.mock('../contexts/ProgressContext', () => ({
   useProgress: () => ({
     recordSession: mockRecordSession
   })
 }));
 
-jest.mock('../contexts/StudyIntelligenceContext', () => ({
+vi.mock('../contexts/StudyIntelligenceContext', () => ({
   useStudyIntelligence: () => ({
     updateSpacedRepetition: mockUpdateSpacedRepetition
   })
 }));
 
 // Mock CSS modules
-jest.mock('../components/LeadingSAFe6/LeadingSAFe6ExamQuiz.module.css', () => ({}));
+vi.mock('../components/LeadingSAFe6/LeadingSAFe6ExamQuiz.module.css', () => ({}));
 
 // Mock questions with multi-select for testing - arranged so multi-select comes first
-jest.mock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
+vi.mock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
   leadingSAFe6Questions: [
     {
       id: 2,
@@ -61,7 +62,7 @@ jest.mock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
 // Mock Math.random to make shuffling deterministic
 let mockMathRandom;
 beforeAll(() => {
-  mockMathRandom = jest.spyOn(Math, 'random');
+  mockMathRandom = vi.spyOn(Math, 'random');
   mockMathRandom.mockReturnValue(0.5); // Always return 0.5 to make shuffle deterministic
 });
 
@@ -70,11 +71,11 @@ afterAll(() => {
 });
 
 describe('Multi-Select Questions Tests', () => {
-  const mockOnGoHome = jest.fn();
-  const mockOnGoBackToExam = jest.fn();
+  const mockOnGoHome = vi.fn();
+  const mockOnGoBackToExam = vi.fn();
 
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
     localStorage.clear();
   });
 
@@ -425,3 +426,4 @@ describe('Multi-Select Questions Tests', () => {
     });
   });
 });
+

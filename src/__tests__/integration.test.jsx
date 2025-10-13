@@ -1,18 +1,19 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { vi } from 'vitest';
 import App from '../App';
 
 // Mock CSS modules
-jest.mock('../App.css', () => ({}));
-jest.mock('../StudyMaterials.css', () => ({}));
-jest.mock('../components/LeadingSAFe6/LeadingSAFe6Exam.module.css', () => ({}));
-jest.mock('../components/LeadingSAFe6/LeadingSAFe6ExamQuiz.module.css', () => ({}));
-jest.mock('../components/SAFeTeams6/SAFeTeams6ExamQuiz.module.css', () => ({}));
-jest.mock('../components/shared/TimingAnalytics.module.css', () => ({}));
-jest.mock('../components/shared/Results.module.css', () => ({}));
+vi.mock('../App.css', () => ({}));
+vi.mock('../StudyMaterials.css', () => ({}));
+vi.mock('../components/LeadingSAFe6/LeadingSAFe6Exam.module.css', () => ({}));
+vi.mock('../components/LeadingSAFe6/LeadingSAFe6ExamQuiz.module.css', () => ({}));
+vi.mock('../components/SAFeTeams6/SAFeTeams6ExamQuiz.module.css', () => ({}));
+vi.mock('../components/shared/TimingAnalytics.module.css', () => ({}));
+vi.mock('../components/shared/Results.module.css', () => ({}));
 
 // Mock smaller question sets for faster testing
-jest.mock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
+vi.mock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
   leadingSAFe6Questions: [
     {
       id: 1,
@@ -37,7 +38,7 @@ jest.mock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
   ]
 }));
 
-jest.mock('../components/SAFeTeams6/SAFeTeams6Questions.js', () => ({
+vi.mock('../components/SAFeTeams6/SAFeTeams6Questions.js', () => ({
   safeTeams6Questions: [
     {
       id: 1,
@@ -53,15 +54,15 @@ jest.mock('../components/SAFeTeams6/SAFeTeams6Questions.js', () => ({
 
 describe('Quiz Integration Tests', () => {
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
     localStorage.clear();
   });
 
   describe('Full Exam Flow with Timing', () => {
     test('should complete full exam with timing and analytics', async () => {
       const user = userEvent.setup();
-      jest.useFakeTimers();
-      const mockDateNow = jest.spyOn(Date, 'now');
+      vi.useFakeTimers();
+      const mockDateNow = vi.spyOn(Date, 'now');
       
       render(<App />);
 
@@ -89,7 +90,7 @@ describe('Quiz Integration Tests', () => {
 
       // Simulate time passing on first question
       mockDateNow.mockReturnValue(1609459230000); // +30 seconds
-      jest.advanceTimersByTime(30000);
+      vi.advanceTimersByTime(30000);
 
       await waitFor(() => {
         expect(screen.getByText(/Time on question: 0:30/)).toBeInTheDocument();
@@ -117,7 +118,7 @@ describe('Quiz Integration Tests', () => {
 
       // Simulate time on second question
       mockDateNow.mockReturnValue(1609459275000); // +45 seconds
-      jest.advanceTimersByTime(45000);
+      vi.advanceTimersByTime(45000);
 
       await waitFor(() => {
         expect(screen.getByText(/Time on question: 0:45/)).toBeInTheDocument();
@@ -162,7 +163,7 @@ describe('Quiz Integration Tests', () => {
         expect(screen.getByText(/Questions: 2/)).toBeInTheDocument();
       });
 
-      jest.useRealTimers();
+      vi.useRealTimers();
     });
 
     test('should handle exam mode filtering correctly', async () => {
@@ -275,7 +276,7 @@ describe('Quiz Integration Tests', () => {
   describe('Error Handling and Edge Cases', () => {
     test('should handle empty question sets gracefully', async () => {
       // Mock empty question set
-      jest.doMock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
+      vi.doMock('../components/LeadingSAFe6/LeadingSAFe6Questions.js', () => ({
         leadingSAFe6Questions: []
       }));
 
@@ -314,7 +315,7 @@ describe('Quiz Integration Tests', () => {
 
     test('should handle rapid question navigation without timing errors', async () => {
       const user = userEvent.setup();
-      jest.useFakeTimers();
+      vi.useFakeTimers();
       
       render(<App />);
 
@@ -335,15 +336,15 @@ describe('Quiz Integration Tests', () => {
       
       for (let i = 0; i < 5; i++) {
         await user.click(nextButton);
-        jest.advanceTimersByTime(100);
+        vi.advanceTimersByTime(100);
         await user.click(prevButton);
-        jest.advanceTimersByTime(100);
+        vi.advanceTimersByTime(100);
       }
 
       // Should still function correctly
       expect(screen.getByText(/Time on question:/)).toBeInTheDocument();
 
-      jest.useRealTimers();
+      vi.useRealTimers();
     });
   });
 
@@ -408,3 +409,4 @@ describe('Quiz Integration Tests', () => {
     });
   });
 });
+

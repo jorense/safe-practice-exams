@@ -81,15 +81,17 @@ export default function Results({
       }
     })
 
-    const score = Math.round((correct / total) * 100)
+  // Round aggregate correct to 2 decimals for partial credit visibility while avoiding long floats
+  const roundedCorrect = Math.round(correct * 100) / 100
+  const score = Math.round((roundedCorrect / total) * 100)
     const passed = score >= passThreshold
     const timeUsed = totalTimeSec
     const timeUsedFormatted = formatTime(timeUsed)
 
     return {
       total,
-      correct,
-      incorrect: total - correct,
+  correct: roundedCorrect,
+  incorrect: Math.round((total - correct) * 100) / 100,
       score,
       passed,
       timeUsed,
@@ -127,28 +129,28 @@ export default function Results({
             <h1>{title}</h1>
             
             <div className={styles.scoreDisplay}>
-              <div className={`${styles.scoreCircle} ${attempt.passed ? styles.passed : styles.failed}`}>
-                <div className={styles.scoreNumber}>{attempt.score}%</div>
-                <div className={styles.scoreLabel}>
+              <div className={`${styles.scoreCircle} ${attempt.passed ? styles.passed : styles.failed}`} data-testid="results-score-circle">
+                <div className={styles.scoreNumber} data-testid="results-score">{attempt.score}%</div>
+                <div className={styles.scoreLabel} data-testid="results-pass-status">
                   {attempt.passed ? 'PASSED' : 'FAILED'}
                 </div>
               </div>
             </div>
 
             <div className={styles.scoreDetails}>
-              <div className={styles.scoreItem}>
-                <span className={styles.scoreValue}>{attempt.correct}</span>
+              <div className={styles.scoreItem} data-testid="results-correct">
+                <span className={styles.scoreValue}>{Number(attempt.correct.toFixed(2))}</span>
                 <span className={styles.scoreText}>Correct</span>
               </div>
-              <div className={styles.scoreItem}>
-                <span className={styles.scoreValue}>{attempt.incorrect}</span>
+              <div className={styles.scoreItem} data-testid="results-incorrect">
+                <span className={styles.scoreValue}>{Number(attempt.incorrect.toFixed(2))}</span>
                 <span className={styles.scoreText}>Incorrect</span>
               </div>
-              <div className={styles.scoreItem}>
+              <div className={styles.scoreItem} data-testid="results-total">
                 <span className={styles.scoreValue}>{attempt.total}</span>
                 <span className={styles.scoreText}>Total</span>
               </div>
-              <div className={styles.scoreItem}>
+              <div className={styles.scoreItem} data-testid="results-time-used">
                 <span className={styles.scoreValue}>{attempt.timeUsedFormatted}</span>
                 <span className={styles.scoreText}>Time Used</span>
               </div>
@@ -166,7 +168,7 @@ export default function Results({
                     <div className={styles.domainScore}>
                       <span className={styles.domainPercentage}>{percentage}%</span>
                       <span className={styles.domainFraction}>
-                        ({result.correct}/{result.total})
+                        ({(Math.round(result.correct * 100) / 100).toFixed(2)}/{result.total})
                       </span>
                     </div>
                     <div className={styles.domainBar}>

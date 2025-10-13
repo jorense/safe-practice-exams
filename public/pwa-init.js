@@ -22,33 +22,96 @@ window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
   
-  // Show custom install button/banner
-  const installBanner = document.createElement('div');
-  installBanner.innerHTML = `
-    <div style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: #667eea; color: white; padding: 15px; border-radius: 8px; z-index: 1000; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-      <p style="margin: 0 0 10px; font-weight: bold;">Install SAFe Practice Exams</p>
-      <p style="margin: 0 0 15px; font-size: 14px;">Get the full experience with offline access and push notifications</p>
-      <button id="install-btn" style="background: white; color: #667eea; border: none; padding: 8px 16px; border-radius: 4px; font-weight: bold; cursor: pointer; margin-right: 10px;">Install</button>
-      <button id="dismiss-btn" style="background: transparent; color: white; border: 1px solid white; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Later</button>
-    </div>
-  `;
+  // Check if PWA prompts are disabled
+  const pwaPromptsDisabled = localStorage.getItem('lace-studio-disable-pwa-prompt') === 'true';
+  if (pwaPromptsDisabled) {
+    console.log('PWA install prompts are disabled');
+    return;
+  }
   
-  document.body.appendChild(installBanner);
+  // Only show install prompt if user hasn't dismissed it before and has used the app
+  const hasUsedApp = localStorage.getItem('lace-studio-sessions-count');
+  const hasDismissedInstall = localStorage.getItem('lace-studio-dismissed-install');
+  const dismissTime = localStorage.getItem('lace-studio-dismiss-time');
   
-  document.getElementById('install-btn').addEventListener('click', () => {
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the install prompt');
+  // Don't show again for 7 days after dismissal
+  if (hasDismissedInstall && dismissTime) {
+    const daysSinceDismiss = (Date.now() - parseInt(dismissTime)) / (1000 * 60 * 60 * 24);
+    if (daysSinceDismiss < 7) {
+      return;
+    }
+  }
+  
+  // Only show after user has taken at least 3 exams to ensure engagement
+  if (!hasDismissedInstall && hasUsedApp && parseInt(hasUsedApp) >= 3) {
+    // Delay showing the prompt to avoid interrupting user flow
+    setTimeout(() => {
+      // Don't show if user is in the middle of an exam
+      const isInExam = window.location.pathname.includes('quiz') || 
+                       document.querySelector('[class*="exam"]') ||
+                       document.querySelector('[class*="question"]');
+      
+      if (isInExam) {
+        return;
       }
-      deferredPrompt = null;
-      document.body.removeChild(installBanner);
-    });
-  });
-  
-  document.getElementById('dismiss-btn').addEventListener('click', () => {
-    document.body.removeChild(installBanner);
-  });
+      
+      const installBanner = document.createElement('div');
+      installBanner.id = 'pwa-install-banner';
+      installBanner.innerHTML = `
+        <div style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 15px; border-radius: 12px; z-index: 999; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.2); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; backdrop-filter: blur(10px); animation: slideUp 0.3s ease;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-size: 18px;">📱</span>
+            <button id="close-btn" style="background: none; border: none; color: rgba(255,255,255,0.7); font-size: 18px; cursor: pointer; padding: 0; line-height: 1;">×</button>
+          </div>
+          <p style="margin: 0 0 6px; font-weight: 600; font-size: 13px;">Install SAFe Practice Exams</p>
+          <p style="margin: 0 0 12px; font-size: 11px; opacity: 0.85; line-height: 1.3;">Quick access, offline practice, and better performance</p>
+          <div style="display: flex; gap: 8px; justify-content: center;">
+            <button id="install-btn" style="background: white; color: #667eea; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 12px; flex: 1; max-width: 80px;">Install</button>
+            <button id="dismiss-btn" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 12px; flex: 1; max-width: 80px;">Later</button>
+          </div>
+        </div>
+        <style>
+          @keyframes slideUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+          }
+        </style>
+      `;
+      
+      document.body.appendChild(installBanner);
+      
+      document.getElementById('install-btn').addEventListener('click', () => {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the install prompt');
+          }
+          deferredPrompt = null;
+          if (document.getElementById('pwa-install-banner')) {
+            document.body.removeChild(installBanner);
+          }
+        });
+      });
+      
+      const dismissHandler = () => {
+        localStorage.setItem('lace-studio-dismissed-install', 'true');
+        localStorage.setItem('lace-studio-dismiss-time', Date.now().toString());
+        if (document.getElementById('pwa-install-banner')) {
+          document.body.removeChild(installBanner);
+        }
+      };
+      
+      document.getElementById('dismiss-btn').addEventListener('click', dismissHandler);
+      document.getElementById('close-btn').addEventListener('click', dismissHandler);
+      
+      // Auto-dismiss after 15 seconds if no interaction
+      setTimeout(() => {
+        if (document.getElementById('pwa-install-banner')) {
+          document.body.removeChild(installBanner);
+        }
+      }, 15000);
+    }, 8000); // Wait 8 seconds before showing to let user settle
+  }
 });
 
 // PWA Status Detection
