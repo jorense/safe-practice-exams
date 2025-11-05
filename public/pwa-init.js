@@ -1,3 +1,28 @@
+// PWA Update Handling
+function showUpdateBanner(registration) {
+  const banner = document.createElement('div');
+  banner.id = 'pwa-update-banner';
+  banner.innerHTML = `
+    <p>A new version is available. Refresh to update.</p>
+    <button id="pwa-reload-button">Reload</button>
+  `;
+  document.body.appendChild(banner);
+
+  document.getElementById('pwa-reload-button').addEventListener('click', () => {
+    const worker = registration.waiting;
+    if (worker) {
+      worker.postMessage({ type: 'SKIP_WAITING' });
+      worker.addEventListener('statechange', (e) => {
+        if (e.target.state === 'activated') {
+          window.location.reload();
+        }
+      });
+    } else {
+      window.location.reload();
+    }
+  });
+}
+
 // PWA Service Worker Registration
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
@@ -7,6 +32,23 @@ if ('serviceWorker' in navigator) {
       .then((registration) => {
         console.log('SW registered: ', registration);
         console.log('SW scope: ', registration.scope);
+
+        registration.onupdatefound = () => {
+          const installingWorker = registration.installing;
+          if (installingWorker == null) {
+            return;
+          }
+          installingWorker.onstatechange = () => {
+            if (installingWorker.state === 'installed') {
+              if (navigator.serviceWorker.controller) {
+                console.log('New content is available and will be used when all tabs for this page are closed. Showing update prompt.');
+                showUpdateBanner(registration);
+              } else {
+                console.log('Content is cached for offline use.');
+              }
+            }
+          };
+        };
       })
       .catch((registrationError) => {
         console.log('SW registration failed: ', registrationError);
@@ -70,15 +112,17 @@ window.addEventListener('beforeinstallprompt', (e) => {
             <button id="dismiss-btn" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 12px; flex: 1; max-width: 80px;">Later</button>
           </div>
         </div>
-        <style>
-          @keyframes slideUp {
-            from { transform: translateY(100%); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-          }
-        </style>
       `;
       
-      document.body.appendChild(installBanner);
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes slideUp {
+          from { transform: translateY(100%); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
+        }
+      `;
+      
+      document.head.appendChild(style);
       
       document.getElementById('install-btn').addEventListener('click', () => {
         deferredPrompt.prompt();
