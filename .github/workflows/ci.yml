@@ -1,60 +1,45 @@
-name: CI
+# Workflow for building and deploying the application to GitHub Pages
+name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build-test:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Node
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: 'npm'
-
+          node-version: 20
+          cache: "npm"
       - name: Install dependencies
-        run: npm ci
-
-      - name: Run unit & integration tests (Vitest)
-        run: npm test -- --run
-
+        run: npm install
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
-
-      - name: Run E2E tests (Chromium + mobile + Firefox + WebKit)
+      - name: Run Vitest unit tests
+        run: npx vitest run --globals --environment jsdom --include "src/**/*.{test,spec}.{js,ts,jsx,tsx}" --setup-files ./src/setupTests.js
+      - name: Run Playwright e2e tests
         run: npx playwright test
-        env:
-          CI: '1'
-
-      - name: Upload Playwright report (only on failure)
-        if: failure()
-        uses: actions/upload-artifact@v4
+      - name: Build application
+        run: npm run build:github
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: playwright-report
-          path: playwright-report
-
-      - name: Upload test-results traces/videos (only on failure)
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: playwright-test-results
-          path: test-results
-
-      - name: Build production bundle
-        if: success()
-        run: npm run build
-
-      - name: Upload production dist (artifact)
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist
-          path: dist
+          path: "./dist"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
