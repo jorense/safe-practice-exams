@@ -9,6 +9,8 @@ import LeadingSAFe6Exam from './components/LeadingSAFe6/LeadingSAFe6Exam.jsx'
 import LeadingSAFe6ExamQuiz from './components/LeadingSAFe6/LeadingSAFe6ExamQuiz.jsx'
 import SAFeTeams6Exam from './components/SAFeTeams6/SAFeTeams6Exam.jsx'
 import SAFeTeams6ExamQuiz from './components/SAFeTeams6/SAFeTeams6ExamQuiz.jsx'
+import PSM2Exam from './components/PSM2/PSM2Exam.jsx'
+import PSM2ExamQuiz from './components/PSM2/PSM2ExamQuiz.jsx'
 import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Achievements from './components/Achievements/Achievements.jsx'
 import SmartReview from './components/SmartReview/SmartReview.jsx'
@@ -92,6 +94,8 @@ function AppContent() {
       setCurrentPage('leading-safe-6')
     } else if (examType === 'SAFe for Teams 6.0') {
       setCurrentPage('safe-teams-6')
+    } else if (examType === 'PSM II') {
+      setCurrentPage('psm-2')
     }
   }
 
@@ -101,6 +105,10 @@ function AppContent() {
 
   const startSAFeTeams6Quiz = () => {
     setCurrentPage('safe-teams-6-quiz')
+  }
+
+  const startPSM2Quiz = () => {
+    setCurrentPage('psm-2-quiz')
   }
 
   const goToStudyMaterials = (examType = 'Leading SAFe 6') => {
@@ -199,6 +207,10 @@ function AppContent() {
     setCurrentPage('safe-teams-6')
   }
 
+  const goBackToPSM2 = () => {
+    setCurrentPage('psm-2')
+  }
+
   // Leading SAFe 6 Exam Page
   if (currentPage === 'leading-safe-6') {
     return (
@@ -252,6 +264,36 @@ function AppContent() {
       <SAFeTeams6ExamQuiz 
         onGoHome={goHome} 
         onGoBackToExam={goBackToSAFeTeams6} 
+        numberOfQuestions={numberOfQuestions} 
+        autoShowExplanation={autoShowExplanation} 
+        examMode={examMode}
+      />
+    )
+  }
+
+  // PSM II Exam Page
+  if (currentPage === 'psm-2') {
+    return (
+      <PSM2Exam 
+        onGoHome={goHome} 
+        onGoToStudyMaterials={() => goToStudyMaterials('PSM II')} 
+        onStartQuiz={startPSM2Quiz} 
+        numberOfQuestions={numberOfQuestions} 
+        autoShowExplanation={autoShowExplanation}
+        onNumberOfQuestionsChange={setNumberOfQuestions}
+        onAutoShowExplanationChange={setAutoShowExplanation}
+        examMode={examMode}
+        onExamModeChange={setExamMode}
+      />
+    )
+  }
+
+  // PSM II Quiz Page
+  if (currentPage === 'psm-2-quiz') {
+    return (
+      <PSM2ExamQuiz 
+        onGoHome={goHome} 
+        onGoBackToExam={goBackToPSM2} 
         numberOfQuestions={numberOfQuestions} 
         autoShowExplanation={autoShowExplanation} 
         examMode={examMode}
@@ -557,21 +599,22 @@ function AppContent() {
                       <span className="recommended-badge">Available</span>
                     </span>
                   </button>
+                  <button
+                    className="cta-button psm-2 recommended"
+                    data-testid="start-psm2-exams"
+                    onClick={() => startExam('PSM II')}
+                  >
+                    <span className="button-content">
+                      Start PSM II Practice Exam
+                      <span className="recommended-badge">Available</span>
+                    </span>
+                  </button>
                 </div>
               </div>
 
               <div className="exam-group coming-soon-group">
                 <h2 className="exam-group-title">Coming Soon</h2>
                 <div className="exam-buttons coming-soon-exams">
-                  <button
-                    className="cta-button coming-soon-button psm-2"
-                    disabled
-                  >
-                    <span className="button-content">
-                      PSM II Practice Exam
-                      <span className="coming-soon-badge">Coming Soon</span>
-                    </span>
-                  </button>
                   <button
                     className="cta-button coming-soon-button pspo-1"
                     disabled
@@ -715,6 +758,19 @@ function AppContent() {
                       <div className="featured-exam-content" data-testid="start-safe-teams-home">
                       <h3>SAFe for Teams 6.0</h3>
                       <p>Team-Level SAFe Certification</p>
+                      <span className="featured-badge available">Available</span>
+                    </div>
+                  </button>
+                </div>
+
+                <div className="featured-exam-item">
+                  <button
+                    className="featured-exam-button psm-2"
+                    onClick={() => startExam('PSM II')}
+                  >
+                      <div className="featured-exam-content" data-testid="start-psm2-home">
+                      <h3>PSM II</h3>
+                      <p>Professional Scrum Master II</p>
                       <span className="featured-badge available">Available</span>
                     </div>
                   </button>

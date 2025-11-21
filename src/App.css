@@ -364,6 +364,10 @@ body {
   background: linear-gradient(135deg, #1e40af, #3b82f6);
 }
 
+.featured-exam-button.psm-2 {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+}
+
 .featured-exam-content {
   text-align: left;
 }
@@ -518,12 +522,24 @@ body {
   background: linear-gradient(135deg, #1e40af, #3b82f6);
 }
 
+.cta-button.psm-2 {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+}
+
 .cta-button.safe-teams-6:hover {
   background: linear-gradient(135deg, #1d4ed8, #2563eb);
 }
 
+.cta-button.psm-2:hover {
+  background: linear-gradient(135deg, #6d28d9, #9333ea);
+}
+
 .featured-exam-button.safe-teams-6:hover {
   background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+.featured-exam-button.psm-2:hover {
+  background: linear-gradient(135deg, #6d28d9, #9333ea);
 }
 
 .button-content {
