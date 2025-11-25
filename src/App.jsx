@@ -11,6 +11,8 @@ import SAFeTeams6Exam from './components/SAFeTeams6/SAFeTeams6Exam.jsx'
 import SAFeTeams6ExamQuiz from './components/SAFeTeams6/SAFeTeams6ExamQuiz.jsx'
 import PSM2Exam from './components/PSM2/PSM2Exam.jsx'
 import PSM2ExamQuiz from './components/PSM2/PSM2ExamQuiz.jsx'
+import PSPO1Exam from './components/PSPO1/PSPO1Exam.jsx'
+import PSPO1ExamQuiz from './components/PSPO1/PSPO1ExamQuiz.jsx'
 import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Achievements from './components/Achievements/Achievements.jsx'
 import SmartReview from './components/SmartReview/SmartReview.jsx'
@@ -96,6 +98,8 @@ function AppContent() {
       setCurrentPage('safe-teams-6')
     } else if (examType === 'PSM II') {
       setCurrentPage('psm-2')
+    } else if (examType === 'PSPO I') {
+      setCurrentPage('pspo-1')
     }
   }
 
@@ -109,6 +113,10 @@ function AppContent() {
 
   const startPSM2Quiz = () => {
     setCurrentPage('psm-2-quiz')
+  }
+
+  const startPSPO1Quiz = () => {
+    setCurrentPage('pspo-1-quiz')
   }
 
   const goToStudyMaterials = (examType = 'Leading SAFe 6') => {
@@ -211,6 +219,10 @@ function AppContent() {
     setCurrentPage('psm-2')
   }
 
+  const goBackToPSPO1 = () => {
+    setCurrentPage('pspo-1')
+  }
+
   // Leading SAFe 6 Exam Page
   if (currentPage === 'leading-safe-6') {
     return (
@@ -294,6 +306,36 @@ function AppContent() {
       <PSM2ExamQuiz 
         onGoHome={goHome} 
         onGoBackToExam={goBackToPSM2} 
+        numberOfQuestions={numberOfQuestions} 
+        autoShowExplanation={autoShowExplanation} 
+        examMode={examMode}
+      />
+    )
+  }
+
+  // PSPO I Exam Page
+  if (currentPage === 'pspo-1') {
+    return (
+      <PSPO1Exam 
+        onGoHome={goHome} 
+        onGoToStudyMaterials={() => goToStudyMaterials('PSPO I')} 
+        onStartQuiz={startPSPO1Quiz} 
+        numberOfQuestions={numberOfQuestions} 
+        autoShowExplanation={autoShowExplanation}
+        onNumberOfQuestionsChange={setNumberOfQuestions}
+        onAutoShowExplanationChange={setAutoShowExplanation}
+        examMode={examMode}
+        onExamModeChange={setExamMode}
+      />
+    )
+  }
+
+  // PSPO I Quiz Page
+  if (currentPage === 'pspo-1-quiz') {
+    return (
+      <PSPO1ExamQuiz 
+        onGoHome={goHome} 
+        onGoBackToExam={goBackToPSPO1} 
         numberOfQuestions={numberOfQuestions} 
         autoShowExplanation={autoShowExplanation} 
         examMode={examMode}
@@ -616,12 +658,13 @@ function AppContent() {
                 <h2 className="exam-group-title">Coming Soon</h2>
                 <div className="exam-buttons coming-soon-exams">
                   <button
-                    className="cta-button coming-soon-button pspo-1"
-                    disabled
+                    className="cta-button pspo-1 recommended"
+                    data-testid="start-pspo1-exams"
+                    onClick={() => startExam('PSPO I')}
                   >
                     <span className="button-content">
-                      PSPO 1 Practice Exam
-                      <span className="coming-soon-badge">Coming Soon</span>
+                      Start PSPO I Practice Exam
+                      <span className="recommended-badge">Available</span>
                     </span>
                   </button>
                 </div>
@@ -778,13 +821,13 @@ function AppContent() {
 
                 <div className="featured-exam-item">
                   <button
-                    className="featured-exam-button pspo-1 coming-soon"
-                    disabled
+                    className="featured-exam-button pspo-1"
+                    onClick={() => startExam('PSPO I')}
                   >
-                    <div className="featured-exam-content">
-                      <h3>PSPO 1</h3>
+                    <div className="featured-exam-content" data-testid="start-pspo1-home">
+                      <h3>PSPO I</h3>
                       <p>Professional Scrum Product Owner I</p>
-                      <span className="featured-badge coming-soon-badge">Coming Soon</span>
+                      <span className="featured-badge available">Available</span>
                     </div>
                   </button>
                 </div>
