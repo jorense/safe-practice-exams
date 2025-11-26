@@ -720,10 +720,50 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
                 )}
                 
                 {examMode === 'practice' && (
-                  <div className={styles.explanationHeader}>
-                    <span className={styles.explanationIcon}>💡</span>
-                    <span className={styles.explanationTitle}>Explanation</span>
-                  </div>
+                  <>
+                    {/* Show feedback based on whether answer is correct */}
+                    {(() => {
+                      const isMultiSelect = currentQ.questionType === 'multiple'
+                      const userAnswer = selectedAnswers[currentQ.id]
+                      let isAnswerCorrect = false
+                      
+                      if (isMultiSelect) {
+                        const userSelections = userAnswer || []
+                        const correctAnswers = currentQ.correctAnswers || []
+                        isAnswerCorrect = userSelections.length === correctAnswers.length &&
+                          userSelections.every(ans => correctAnswers.includes(ans))
+                      } else {
+                        isAnswerCorrect = userAnswer === currentQ.correctAnswer
+                      }
+                      
+                      return (
+                        <div className={isAnswerCorrect ? styles.correctFeedback : styles.incorrectFeedback}>
+                          <div className={styles.feedbackHeader}>
+                            <span className={styles.feedbackIcon}>
+                              {isAnswerCorrect ? '✅' : '❌'}
+                            </span>
+                            <span className={styles.feedbackTitle}>
+                              {isAnswerCorrect ? 'Correct Answer!' : 'Incorrect Answer'}
+                            </span>
+                          </div>
+                          {!isAnswerCorrect && (
+                            <div className={styles.feedbackText}>
+                              {isMultiSelect ? (
+                                <p>The correct answers are: <strong>{currentQ.correctAnswers.map(idx => String.fromCharCode(65 + idx)).join(', ')}</strong></p>
+                              ) : (
+                                <p>The correct answer is: <strong>{String.fromCharCode(65 + currentQ.correctAnswer)}</strong></p>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      )
+                    })()}
+                    
+                    <div className={styles.explanationHeader}>
+                      <span className={styles.explanationIcon}>💡</span>
+                      <span className={styles.explanationTitle}>Explanation</span>
+                    </div>
+                  </>
                 )}
                 
                 {(examMode === 'practice' || !isExplanationCollapsed) && (
