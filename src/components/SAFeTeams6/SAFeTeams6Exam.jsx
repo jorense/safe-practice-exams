@@ -113,29 +113,32 @@ function SAFeTeams6Exam({
                   className={styles.settingSelect}
                 >
                   <option value="exam">🎓 Exam Mode (Realistic Simulation)</option>
-                  <option value="practice">📚 Practice Mode (Enhanced Learning)</option>
+                  <option value="practice">📚 Practice Mode (Instant Feedback)</option>
                 </select>
                 <p className={styles.settingDescription}>
                   {examMode === 'exam' 
-                    ? 'Single-select questions only (matches real SAFe exam format)' 
-                    : 'Mix of single-select (70%) and multi-select (30%) questions for deeper learning'}
+                    ? 'Single-select questions only. No feedback until you check your answer.' 
+                    : 'Instant feedback when you select an answer. Explanation shown immediately for enhanced learning.'}
                 </p>
               </div>
               <div className={styles.settingCard}>
-                <h4>Auto-Show Explanations</h4>
+                <h4>Auto-Show Explanations {examMode === 'practice' && <span style={{color: 'var(--text-secondary)', fontSize: '0.875rem'}}>(Exam Mode only)</span>}</h4>
                 <label className={styles.checkboxLabel}>
                   <input 
                     type="checkbox" 
                     checked={autoShowExplanation}
                     onChange={(e) => onAutoShowExplanationChange && onAutoShowExplanationChange(e.target.checked)}
                     className={styles.settingCheckbox}
+                    disabled={examMode === 'practice'}
                   />
                   <span className={styles.checkboxText}>
-                    Automatically show detailed explanations
+                    Automatically expand explanations in Exam Mode
                   </span>
                 </label>
                 <p className={styles.settingDescription}>
-                  When enabled, explanations are shown automatically for each question
+                  {examMode === 'practice' 
+                    ? 'Practice Mode always shows explanations automatically' 
+                    : 'When enabled, explanations expand automatically after checking your answer'}
                 </p>
               </div>
               {/* 4th tile: Local progress / persistence notice */}

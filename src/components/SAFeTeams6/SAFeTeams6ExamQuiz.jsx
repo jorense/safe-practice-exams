@@ -201,16 +201,32 @@ function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, 
       }))
     }
     
-    setRevealedAnswers(prev => ({
-      ...prev,
-      [question.id]: true
-    }))
-
-    if (autoShowExplanation) {
+    // Practice mode: Show instant feedback
+    // Exam mode: No feedback until "Check Answer" is clicked
+    if (examMode === 'practice') {
+      setRevealedAnswers(prev => ({
+        ...prev,
+        [question.id]: true
+      }))
+      
+      // Auto-expand explanation in practice mode
       setCollapsedExplanations(prev => ({
         ...prev,
         [question.id]: false
       }))
+    } else if (examMode === 'exam') {
+      // Exam mode: Only reveal if autoShowExplanation is enabled
+      if (autoShowExplanation) {
+        setRevealedAnswers(prev => ({
+          ...prev,
+          [question.id]: true
+        }))
+        
+        setCollapsedExplanations(prev => ({
+          ...prev,
+          [question.id]: false
+        }))
+      }
     }
   }
 
@@ -530,14 +546,23 @@ function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, 
 
             {isRevealed && (
               <div className={styles.explanationSection}>
-                <button
-                  className={styles.explanationToggle}
-                  onClick={() => toggleExplanation(currentQ.id)}
-                >
-                  {isExplanationCollapsed ? '▼' : '▲'} Explanation
-                </button>
+                {examMode === 'exam' && (
+                  <button
+                    className={styles.explanationToggle}
+                    onClick={() => toggleExplanation(currentQ.id)}
+                  >
+                    {isExplanationCollapsed ? '▼' : '▲'} Explanation
+                  </button>
+                )}
                 
-                {!isExplanationCollapsed && (
+                {examMode === 'practice' && (
+                  <div className={styles.explanationHeader}>
+                    <span className={styles.explanationIcon}>💡</span>
+                    <span className={styles.explanationTitle}>Explanation</span>
+                  </div>
+                )}
+                
+                {(examMode === 'practice' || !isExplanationCollapsed) && (
                   <div className={styles.explanationContent}>
                     <p>{currentQ.explanation}</p>
                   </div>

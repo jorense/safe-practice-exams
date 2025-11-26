@@ -710,14 +710,23 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
 
             {isRevealed && (
               <div className={styles.explanationSection}>
-                <button
-                  className={styles.explanationToggle}
-                  onClick={() => toggleExplanation(currentQ.id)}
-                >
-                  {isExplanationCollapsed ? '▼' : '▲'} Explanation
-                </button>
+                {examMode === 'exam' && (
+                  <button
+                    className={styles.explanationToggle}
+                    onClick={() => toggleExplanation(currentQ.id)}
+                  >
+                    {isExplanationCollapsed ? '▼' : '▲'} Explanation
+                  </button>
+                )}
                 
-                {!isExplanationCollapsed && (
+                {examMode === 'practice' && (
+                  <div className={styles.explanationHeader}>
+                    <span className={styles.explanationIcon}>💡</span>
+                    <span className={styles.explanationTitle}>Explanation</span>
+                  </div>
+                )}
+                
+                {(examMode === 'practice' || !isExplanationCollapsed) && (
                   <div className={styles.explanationContent}>
                     <p>{currentQ.explanation}</p>
                   </div>
