@@ -3,8 +3,9 @@ import styles from './SAFeTeams6ExamQuiz.module.css'
 import { safeTeams6Questions } from './SAFeTeams6Questions'
 import Results from '../shared/Results.jsx'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
+import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
-function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, autoShowExplanation = false, examMode = 'exam' }) {
+function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, autoShowExplanation = false, examMode = 'exam', includeSeenQuestions = true }) {
   const { recordSession } = useProgress()
 
   // Adaptive timer calculation function
@@ -87,12 +88,23 @@ function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, 
     }
     // Practice mode: include all questions (single-select + multi-select)
     
-    const shuffled = shuffleArray(availableQuestions)
+    // Filter based on seen/unseen preference
+    const filteredQuestions = filterQuestions(availableQuestions, 'safeteams6', includeSeenQuestions)
+    
+    // If not enough unseen questions, fall back to all questions
+    const questionsToUse = filteredQuestions.length >= numberOfQuestions 
+      ? filteredQuestions 
+      : availableQuestions
+    
+    // Prioritize unseen questions
+    const prioritized = prioritizeQuestions(questionsToUse, 'safeteams6')
+    const shuffled = shuffleArray(prioritized)
     const selectedQuestions = shuffled.slice(0, numberOfQuestions)
+    
     // Shuffle the options for each question to prevent visual patterns
     const questionsWithShuffledOptions = selectedQuestions.map(shuffleQuestionOptions)
     setShuffledQuestions(questionsWithShuffledOptions)
-  }, [numberOfQuestions, examMode])
+  }, [numberOfQuestions, examMode, includeSeenQuestions])
 
   // Track per-question timing - start timing when question changes
   useEffect(() => {

@@ -10,8 +10,9 @@ import { useProgress } from '../../contexts/ProgressContext.jsx'
 import { useStudyIntelligence } from '../../contexts/StudyIntelligenceContext.jsx'
 import { useAutosave } from '../../contexts/AutosaveContext.jsx'
 import { useExamTiming } from '../../hooks/useExamTiming.js'
+import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
-function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, autoShowExplanation = false, examMode = 'exam', scheduler }) {
+function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, autoShowExplanation = false, examMode = 'exam', scheduler, includeSeenQuestions = true }) {
   const { recordSession } = useProgress()
   const { updateSpacedRepetition } = useStudyIntelligence()
   const { saveExamState, loadExamState, clearExamState, AUTOSAVE_INTERVAL, DEBOUNCE_DELAY } = useAutosave()
@@ -107,8 +108,19 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
       }
       // Practice mode: include all questions (single-select + multi-select)
       
-      const shuffled = shuffleArray(availableQuestions)
+      // Filter based on seen/unseen preference
+      const filteredQuestions = filterQuestions(availableQuestions, 'leadingsafe6', includeSeenQuestions)
+      
+      // If not enough unseen questions, fall back to all questions
+      const questionsToUse = filteredQuestions.length >= numberOfQuestions 
+        ? filteredQuestions 
+        : availableQuestions
+      
+      // Prioritize unseen questions
+      const prioritized = prioritizeQuestions(questionsToUse, 'leadingsafe6')
+      const shuffled = shuffleArray(prioritized)
       const selectedQuestions = shuffled.slice(0, numberOfQuestions)
+      
       // Shuffle the options for each question to prevent visual patterns
       const questionsWithShuffledOptions = selectedQuestions.map(shuffleQuestionOptions)
       setShuffledQuestions(questionsWithShuffledOptions)
@@ -132,7 +144,7 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
       // Rethrow so React error overlay still shows in dev (optional)
       // console.error(err)
     }
-  }, [numberOfQuestions, examMode])
+  }, [numberOfQuestions, examMode, includeSeenQuestions])
 
   // Session recovery and autosave initialization
   useEffect(() => {

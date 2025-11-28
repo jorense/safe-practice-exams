@@ -1,4 +1,6 @@
 import { useTheme } from '../../contexts/ThemeContext.jsx';
+import { getExamStats, resetExamHistory } from '../../utils/questionHistory.js';
+import { leadingSAFe6Questions } from './LeadingSAFe6Questions.js';
 import styles from './LeadingSAFe6Exam.module.css'
 import DataPersistenceNotice from '../autosave/DataPersistenceNotice.jsx'
 
@@ -11,9 +13,21 @@ function LeadingSAFe6Exam({
   onNumberOfQuestionsChange,
   onAutoShowExplanationChange,
   examMode = 'exam',
-  onExamModeChange
+  onExamModeChange,
+  includeSeenQuestions = true,
+  onIncludeSeenQuestionsChange
 }) {
   const { theme } = useTheme();
+  
+  // Get exam statistics
+  const examStats = getExamStats('leadingsafe6', leadingSAFe6Questions.length);
+
+  const handleResetHistory = () => {
+    if (window.confirm('Are you sure you want to reset your practice history? This will clear all tracked questions and cannot be undone.')) {
+      resetExamHistory('leadingsafe6');
+      window.location.reload(); // Reload to update stats
+    }
+  };
 
   // Calculate timer information based on question count
   const getTimerInfo = () => {
@@ -142,6 +156,50 @@ function LeadingSAFe6Exam({
                     : 'When enabled, explanations expand automatically after checking your answer'}
                 </p>
               </div>
+              
+              {/* Question History Settings */}
+              <div className={styles.settingCard}>
+                <h4>Question History</h4>
+                <label className={styles.checkboxLabel}>
+                  <input 
+                    type="checkbox" 
+                    checked={includeSeenQuestions}
+                    onChange={(e) => onIncludeSeenQuestionsChange && onIncludeSeenQuestionsChange(e.target.checked)}
+                    className={styles.settingCheckbox}
+                  />
+                  <span className={styles.checkboxText}>
+                    Include previously seen questions
+                  </span>
+                </label>
+                <p className={styles.settingDescription}>
+                  {includeSeenQuestions 
+                    ? 'All questions will be available, including ones you\'ve practiced before' 
+                    : 'Only show questions you haven\'t seen yet'}
+                </p>
+                <div className={styles.historyStats}>
+                  <div className={styles.statItem}>
+                    <span className={styles.statValue}>{examStats.totalSeen}</span>
+                    <span className={styles.statLabel}>Practiced</span>
+                  </div>
+                  <div className={styles.statItem}>
+                    <span className={styles.statValue}>{examStats.totalRemaining}</span>
+                    <span className={styles.statLabel}>Remaining</span>
+                  </div>
+                  <div className={styles.statItem}>
+                    <span className={styles.statValue}>{examStats.masteryPercentage}%</span>
+                    <span className={styles.statLabel}>Mastery</span>
+                  </div>
+                </div>
+                {examStats.totalSeen > 0 && (
+                  <button 
+                    onClick={handleResetHistory}
+                    className={styles.resetButton}
+                  >
+                    🔄 Reset Practice History
+                  </button>
+                )}
+              </div>
+              
               {/* 4th tile: Local progress / persistence notice */}
               <div className={styles.settingCard} data-testid="leading-safe-storage-tile">
                 <h4>Local Progress Storage</h4>

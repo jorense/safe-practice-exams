@@ -3,8 +3,9 @@ import styles from './PSPO1ExamQuiz.module.css'
 import { pspo1Questions } from './PSPO1Questions'
 import Results from '../shared/Results.jsx'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
+import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
-function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoShowExplanation = false, examMode = 'exam' }) {
+function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoShowExplanation = false, examMode = 'exam', includeSeenQuestions = true }) {
   const { recordSession } = useProgress()
 
   // Adaptive timer calculation function
@@ -87,12 +88,23 @@ function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoS
     }
     // Practice mode: include all questions (single-select + multi-select)
     
-    const shuffled = shuffleArray(availableQuestions)
+    // Filter based on seen/unseen preference
+    const filteredQuestions = filterQuestions(availableQuestions, 'pspo1', includeSeenQuestions)
+    
+    // If not enough unseen questions, fall back to all questions
+    const questionsToUse = filteredQuestions.length >= numberOfQuestions 
+      ? filteredQuestions 
+      : availableQuestions
+    
+    // Prioritize unseen questions
+    const prioritized = prioritizeQuestions(questionsToUse, 'pspo1')
+    const shuffled = shuffleArray(prioritized)
     const selectedQuestions = shuffled.slice(0, numberOfQuestions)
+    
     // Shuffle the options for each question to prevent visual patterns
     const questionsWithShuffledOptions = selectedQuestions.map(shuffleQuestionOptions)
     setShuffledQuestions(questionsWithShuffledOptions)
-  }, [numberOfQuestions, examMode])
+  }, [numberOfQuestions, examMode, includeSeenQuestions])
 
   // Track per-question timing - start timing when question changes
   useEffect(() => {
@@ -353,7 +365,7 @@ function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoS
 
     // Record the session
     recordSession({
-      examType: 'PSM II',
+      examType: 'PSPO I',
       score: score,
       totalQuestions: shuffledQuestions.length,
       correctAnswers: effectiveCorrectAnswers,
@@ -363,6 +375,28 @@ function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoS
       incorrectQuestions: incorrectQuestions,
       date: new Date().toISOString()
     })
+
+    // Record question attempts in history
+    const questionResults = shuffledQuestions.map((question) => {
+      const userAnswer = selectedAnswers[question.id]
+      let isCorrect = false
+      
+      if (question.questionType === 'multiple') {
+        const userSelections = userAnswer || []
+        const correctAnswers = question.correctAnswers || []
+        isCorrect = userSelections.length === correctAnswers.length &&
+          userSelections.every(ans => correctAnswers.includes(ans))
+      } else {
+        isCorrect = userAnswer === question.correctAnswer
+      }
+      
+      return {
+        id: question.id,
+        isCorrect: isCorrect
+      }
+    })
+    
+    recordQuestionAttempts('pspo1', questionResults)
 
     setExamSubmitted(true)
   }
@@ -474,6 +508,11 @@ function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoS
               <div className={styles.questionMeta}>
                 <span className={styles.domain}>{currentQ.domain}</span>
                 <span className={styles.difficulty}>{currentQ.difficulty}</span>
+                {isQuestionSeen('pspo1', currentQ.id) ? (
+                  <span className={styles.seenBadge}>🔄 Seen</span>
+                ) : (
+                  <span className={styles.newBadge}>✨ New</span>
+                )}
                 <span className={styles.questionTimer}>
                   Time on question: {formatMilliseconds(currentQuestionTime)}
                 </span>

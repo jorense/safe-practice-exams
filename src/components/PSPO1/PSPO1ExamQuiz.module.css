@@ -211,7 +211,9 @@
 
 .domain,
 .difficulty,
-.questionTimer {
+.questionTimer,
+.seenBadge,
+.newBadge {
   background: var(--background-gray);
   color: var(--text-secondary);
   padding: 0.25rem 0.75rem;
@@ -229,6 +231,18 @@
 .difficulty {
   background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
   color: #7c3aed;
+}
+
+.seenBadge {
+  background: linear-gradient(135deg, #fed7aa, #fdba74);
+  color: #9a3412;
+  font-weight: 600;
+}
+
+.newBadge {
+  background: linear-gradient(135deg, #a7f3d0, #6ee7b7);
+  color: #065f46;
+  font-weight: 600;
 }
 
 .questionTimer {

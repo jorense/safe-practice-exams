@@ -3,8 +3,9 @@ import styles from './PSM2ExamQuiz.module.css'
 import { psm2Questions } from './PSM2Questions'
 import Results from '../shared/Results.jsx'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
+import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
-function PSM2ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoShowExplanation = false, examMode = 'exam' }) {
+function PSM2ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoShowExplanation = false, examMode = 'exam', includeSeenQuestions = true }) {
   const { recordSession } = useProgress()
 
   // Adaptive timer calculation function
@@ -87,12 +88,23 @@ function PSM2ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
     }
     // Practice mode: include all questions (single-select + multi-select)
     
-    const shuffled = shuffleArray(availableQuestions)
+    // Filter based on seen/unseen preference
+    const filteredQuestions = filterQuestions(availableQuestions, 'psm2', includeSeenQuestions)
+    
+    // If not enough unseen questions, fall back to all questions
+    const questionsToUse = filteredQuestions.length >= numberOfQuestions 
+      ? filteredQuestions 
+      : availableQuestions
+    
+    // Prioritize unseen questions
+    const prioritized = prioritizeQuestions(questionsToUse, 'psm2')
+    const shuffled = shuffleArray(prioritized)
     const selectedQuestions = shuffled.slice(0, numberOfQuestions)
+    
     // Shuffle the options for each question to prevent visual patterns
     const questionsWithShuffledOptions = selectedQuestions.map(shuffleQuestionOptions)
     setShuffledQuestions(questionsWithShuffledOptions)
-  }, [numberOfQuestions, examMode])
+  }, [numberOfQuestions, examMode, includeSeenQuestions])
 
   // Track per-question timing - start timing when question changes
   useEffect(() => {
@@ -364,6 +376,28 @@ function PSM2ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
       date: new Date().toISOString()
     })
 
+    // Record question attempts in history
+    const questionResults = shuffledQuestions.map((question) => {
+      const userAnswer = selectedAnswers[question.id]
+      let isCorrect = false
+      
+      if (question.questionType === 'multiple') {
+        const userSelections = userAnswer || []
+        const correctAnswers = question.correctAnswers || []
+        isCorrect = userSelections.length === correctAnswers.length &&
+          userSelections.every(ans => correctAnswers.includes(ans))
+      } else {
+        isCorrect = userAnswer === question.correctAnswer
+      }
+      
+      return {
+        id: question.id,
+        isCorrect: isCorrect
+      }
+    })
+    
+    recordQuestionAttempts('psm2', questionResults)
+
     setExamSubmitted(true)
   }
 
@@ -474,6 +508,11 @@ function PSM2ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
               <div className={styles.questionMeta}>
                 <span className={styles.domain}>{currentQ.domain}</span>
                 <span className={styles.difficulty}>{currentQ.difficulty}</span>
+                {isQuestionSeen('psm2', currentQ.id) ? (
+                  <span className={styles.seenBadge}>🔄 Seen</span>
+                ) : (
+                  <span className={styles.newBadge}>✨ New</span>
+                )}
                 <span className={styles.questionTimer}>
                   Time on question: {formatMilliseconds(currentQuestionTime)}
                 </span>

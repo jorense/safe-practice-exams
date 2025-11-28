@@ -65,6 +65,12 @@ function AppContent() {
     return savedExamMode || 'exam'
   })
 
+  // Add question filtering state management
+  const [includeSeenQuestions, setIncludeSeenQuestions] = useState(() => {
+    const savedPreference = localStorage.getItem('lace-studio-include-seen')
+    return savedPreference ? savedPreference === 'true' : true
+  })
+
   // Save numberOfQuestions to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('lace-studio-question-count', numberOfQuestions.toString())
@@ -74,6 +80,11 @@ function AppContent() {
   useEffect(() => {
     localStorage.setItem('lace-studio-exam-mode', examMode)
   }, [examMode])
+
+  // Save includeSeenQuestions to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('lace-studio-include-seen', includeSeenQuestions.toString())
+  }, [includeSeenQuestions])
 
   // One-time migration effect to update localStorage for migrated users
   useEffect(() => {
@@ -236,6 +247,8 @@ function AppContent() {
         onAutoShowExplanationChange={setAutoShowExplanation}
         examMode={examMode}
         onExamModeChange={setExamMode}
+        includeSeenQuestions={includeSeenQuestions}
+        onIncludeSeenQuestionsChange={setIncludeSeenQuestions}
       />
     )
   }
@@ -249,6 +262,7 @@ function AppContent() {
         numberOfQuestions={numberOfQuestions} 
         autoShowExplanation={autoShowExplanation} 
         examMode={examMode}
+        includeSeenQuestions={includeSeenQuestions}
       />
     )
   }
@@ -266,6 +280,8 @@ function AppContent() {
         onAutoShowExplanationChange={setAutoShowExplanation}
         examMode={examMode}
         onExamModeChange={setExamMode}
+        includeSeenQuestions={includeSeenQuestions}
+        onIncludeSeenQuestionsChange={setIncludeSeenQuestions}
       />
     )
   }
@@ -279,6 +295,7 @@ function AppContent() {
         numberOfQuestions={numberOfQuestions} 
         autoShowExplanation={autoShowExplanation} 
         examMode={examMode}
+        includeSeenQuestions={includeSeenQuestions}
       />
     )
   }
@@ -296,6 +313,8 @@ function AppContent() {
         onAutoShowExplanationChange={setAutoShowExplanation}
         examMode={examMode}
         onExamModeChange={setExamMode}
+        includeSeenQuestions={includeSeenQuestions}
+        onIncludeSeenQuestionsChange={setIncludeSeenQuestions}
       />
     )
   }
@@ -309,6 +328,7 @@ function AppContent() {
         numberOfQuestions={numberOfQuestions} 
         autoShowExplanation={autoShowExplanation} 
         examMode={examMode}
+        includeSeenQuestions={includeSeenQuestions}
       />
     )
   }
@@ -326,6 +346,8 @@ function AppContent() {
         onAutoShowExplanationChange={setAutoShowExplanation}
         examMode={examMode}
         onExamModeChange={setExamMode}
+        includeSeenQuestions={includeSeenQuestions}
+        onIncludeSeenQuestionsChange={setIncludeSeenQuestions}
       />
     )
   }
@@ -339,6 +361,7 @@ function AppContent() {
         numberOfQuestions={numberOfQuestions} 
         autoShowExplanation={autoShowExplanation} 
         examMode={examMode}
+        includeSeenQuestions={includeSeenQuestions}
       />
     )
   }
