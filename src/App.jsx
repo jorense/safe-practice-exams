@@ -68,7 +68,7 @@ function AppContent() {
   // Add question filtering state management
   const [includeSeenQuestions, setIncludeSeenQuestions] = useState(() => {
     const savedPreference = localStorage.getItem('lace-studio-include-seen')
-    return savedPreference ? savedPreference === 'true' : true
+    return savedPreference ? savedPreference === 'true' : false // Default to false: exclude seen questions
   })
 
   // Save numberOfQuestions to localStorage whenever it changes

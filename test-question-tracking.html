@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Tracking Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .test-section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .test-section h2 {
+      color: #333;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    button.danger {
+      background: #dc3545;
+    }
+    button.danger:hover {
+      background: #c82333;
+    }
+    .output {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      padding: 15px;
+      border-radius: 4px;
+      margin-top: 10px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .success { color: #28a745; }
+    .error { color: #dc3545; }
+    .warning { color: #ffc107; }
+  </style>
+</head>
+<body>
+  <h1>🧪 Question History Tracking Test Suite</h1>
+
+  <div class="test-section">
+    <h2>1. Current localStorage State</h2>
+    <button onclick="showCurrentState()">Show Current State</button>
+    <button onclick="clearAllHistory()" class="danger">Clear All History</button>
+    <div id="current-state" class="output"></div>
+  </div>
+
+  <div class="test-section">
+    <h2>2. Test Question Recording</h2>
+    <button onclick="simulateExamSession()">Simulate Exam Session (10 questions)</button>
+    <button onclick="simulateMultipleSessions()">Simulate 3 Sessions</button>
+    <div id="recording-test" class="output"></div>
+  </div>
+
+  <div class="test-section">
+    <h2>3. Test Question Filtering</h2>
+    <button onclick="testFilteringLogic()">Test Filter Logic</button>
+    <button onclick="testPrioritization()">Test Prioritization</button>
+    <div id="filtering-test" class="output"></div>
+  </div>
+
+  <div class="test-section">
+    <h2>4. Test Bug Scenario</h2>
+    <button onclick="testDuplicateScenario()">Reproduce Duplicate Bug</button>
+    <div id="bug-test" class="output"></div>
+  </div>
+
+  <script type="module">
+    // Import the utility functions (simulated here for testing)
+    const STORAGE_KEY = 'practice-exam-history'
+
+    const getHistory = () => {
+      try {
+        const data = localStorage.getItem(STORAGE_KEY)
+        return data ? JSON.parse(data) : {}
+      } catch (error) {
+        console.error('Error reading question history:', error)
+        return {}
+      }
+    }
+
+    const saveHistory = (history) => {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(history))
+      } catch (error) {
+        console.error('Error saving question history:', error)
+      }
+    }
+
+    const getExamHistory = (examType) => {
+      const history = getHistory()
+      return history[examType] || {
+        seenQuestions: [],
+        answeredCorrectly: [],
+        answeredIncorrectly: [],
+        lastPracticed: null,
+        totalAttempts: 0
+      }
+    }
+
+    const recordQuestionAttempts = (examType, questionResults) => {
+      const history = getHistory()
+      const examHistory = history[examType] || {
+        seenQuestions: [],
+        answeredCorrectly: [],
+        answeredIncorrectly: [],
+        lastPracticed: null,
+        totalAttempts: 0
+      }
+
+      questionResults.forEach(({ id, isCorrect }) => {
+        if (!examHistory.seenQuestions.includes(id)) {
+          examHistory.seenQuestions.push(id)
+        }
+
+        if (isCorrect) {
+          if (!examHistory.answeredCorrectly.includes(id)) {
+            examHistory.answeredCorrectly.push(id)
+          }
+          examHistory.answeredIncorrectly = examHistory.answeredIncorrectly.filter(qId => qId !== id)
+        } else {
+          if (!examHistory.answeredIncorrectly.includes(id)) {
+            examHistory.answeredIncorrectly.push(id)
+          }
+        }
+      })
+
+      examHistory.lastPracticed = new Date().toISOString()
+      examHistory.totalAttempts += 1
+
+      history[examType] = examHistory
+      saveHistory(history)
+    }
+
+    const filterQuestions = (questions, examType, includeSeenQuestions) => {
+      if (includeSeenQuestions) {
+        return questions
+      }
+
+      const examHistory = getExamHistory(examType)
+      return questions.filter(q => !examHistory.seenQuestions.includes(q.id))
+    }
+
+    const prioritizeQuestions = (questions, examType) => {
+      const examHistory = getExamHistory(examType)
+      
+      const unseen = []
+      const incorrect = []
+      const correct = []
+      
+      questions.forEach(q => {
+        if (!examHistory.seenQuestions.includes(q.id)) {
+          unseen.push(q)
+        } else if (examHistory.answeredIncorrectly.includes(q.id)) {
+          incorrect.push(q)
+        } else {
+          correct.push(q)
+        }
+      })
+      
+      return [...unseen, ...incorrect, ...correct]
+    }
+
+    // Mock question pool
+    const mockQuestions = Array.from({ length: 50 }, (_, i) => ({
+      id: i + 1,
+      question: `Question ${i + 1}`,
+      options: ['A', 'B', 'C', 'D'],
+      correctAnswer: 0
+    }))
+
+    // Global functions for buttons
+    window.showCurrentState = function() {
+      const history = getHistory()
+      const output = document.getElementById('current-state')
+      output.innerHTML = '<strong>localStorage State:</strong>\n' + JSON.stringify(history, null, 2)
+    }
+
+    window.clearAllHistory = function() {
+      localStorage.removeItem(STORAGE_KEY)
+      document.getElementById('current-state').innerHTML = '<span class="success">✓ All history cleared</span>'
+    }
+
+    window.simulateExamSession = function() {
+      const output = document.getElementById('recording-test')
+      output.innerHTML = '<strong>Simulating exam session...</strong>\n\n'
+
+      // Simulate selecting 10 random questions
+      const selectedQuestions = mockQuestions.slice(0, 10)
+      output.innerHTML += `Selected questions: ${selectedQuestions.map(q => q.id).join(', ')}\n\n`
+
+      // Simulate answering them (5 correct, 5 incorrect)
+      const results = selectedQuestions.map((q, idx) => ({
+        id: q.id,
+        isCorrect: idx < 5
+      }))
+
+      recordQuestionAttempts('psm2', results)
+
+      output.innerHTML += '<span class="success">✓ Session recorded</span>\n\n'
+      
+      const history = getExamHistory('psm2')
+      output.innerHTML += `Seen questions: ${history.seenQuestions.join(', ')}\n`
+      output.innerHTML += `Correct: ${history.answeredCorrectly.join(', ')}\n`
+      output.innerHTML += `Incorrect: ${history.answeredIncorrectly.join(', ')}\n`
+    }
+
+    window.simulateMultipleSessions = function() {
+      const output = document.getElementById('recording-test')
+      output.innerHTML = '<strong>Simulating 3 exam sessions...</strong>\n\n'
+
+      for (let session = 1; session <= 3; session++) {
+        const start = (session - 1) * 10
+        const selectedQuestions = mockQuestions.slice(start, start + 10)
+        
+        const results = selectedQuestions.map((q, idx) => ({
+          id: q.id,
+          isCorrect: Math.random() > 0.5
+        }))
+
+        recordQuestionAttempts('psm2', results)
+        output.innerHTML += `Session ${session}: Questions ${selectedQuestions.map(q => q.id).join(', ')}\n`
+      }
+
+      output.innerHTML += '\n<span class="success">✓ All sessions recorded</span>\n\n'
+      
+      const history = getExamHistory('psm2')
+      output.innerHTML += `Total seen: ${history.seenQuestions.length} questions\n`
+      output.innerHTML += `Seen IDs: ${history.seenQuestions.join(', ')}\n`
+    }
+
+    window.testFilteringLogic = function() {
+      const output = document.getElementById('filtering-test')
+      output.innerHTML = '<strong>Testing filter logic...</strong>\n\n'
+
+      const history = getExamHistory('psm2')
+      output.innerHTML += `Currently seen: ${history.seenQuestions.length} questions\n`
+      output.innerHTML += `Seen IDs: ${history.seenQuestions.join(', ')}\n\n`
+
+      // Test with includeSeenQuestions = false
+      const filtered = filterQuestions(mockQuestions, 'psm2', false)
+      output.innerHTML += `<strong>Filter with includeSeenQuestions=false:</strong>\n`
+      output.innerHTML += `Filtered result: ${filtered.length} questions (should exclude seen ones)\n`
+      output.innerHTML += `IDs returned: ${filtered.slice(0, 20).map(q => q.id).join(', ')}...\n\n`
+
+      // Test with includeSeenQuestions = true
+      const unfiltered = filterQuestions(mockQuestions, 'psm2', true)
+      output.innerHTML += `<strong>Filter with includeSeenQuestions=true:</strong>\n`
+      output.innerHTML += `Unfiltered result: ${unfiltered.length} questions (should return all)\n\n`
+
+      if (filtered.length === mockQuestions.length - history.seenQuestions.length) {
+        output.innerHTML += '<span class="success">✓ Filter logic working correctly</span>\n'
+      } else {
+        output.innerHTML += '<span class="error">✗ Filter logic has issues!</span>\n'
+        output.innerHTML += `Expected ${mockQuestions.length - history.seenQuestions.length}, got ${filtered.length}\n`
+      }
+    }
+
+    window.testPrioritization = function() {
+      const output = document.getElementById('filtering-test')
+      output.innerHTML = '<strong>Testing prioritization...</strong>\n\n'
+
+      const prioritized = prioritizeQuestions(mockQuestions, 'psm2')
+      const history = getExamHistory('psm2')
+
+      output.innerHTML += `Total questions: ${prioritized.length}\n\n`
+      
+      // Check first 10 questions
+      const first10 = prioritized.slice(0, 10)
+      const unseenCount = first10.filter(q => !history.seenQuestions.includes(q.id)).length
+      
+      output.innerHTML += `First 10 questions:\n`
+      output.innerHTML += first10.map(q => {
+        const status = !history.seenQuestions.includes(q.id) ? '✨ NEW' :
+                      history.answeredIncorrectly.includes(q.id) ? '❌ INCORRECT' : '✓ CORRECT'
+        return `  Q${q.id}: ${status}`
+      }).join('\n')
+
+      output.innerHTML += '\n\n'
+      if (unseenCount === 10 || history.seenQuestions.length >= mockQuestions.length - 10) {
+        output.innerHTML += '<span class="success">✓ Prioritization working correctly (unseen first)</span>\n'
+      } else {
+        output.innerHTML += '<span class="warning">⚠ Prioritization may have issues</span>\n'
+      }
+    }
+
+    window.testDuplicateScenario = function() {
+      const output = document.getElementById('bug-test')
+      output.innerHTML = '<strong>Reproducing duplicate question bug...</strong>\n\n'
+
+      // Clear history first
+      localStorage.removeItem(STORAGE_KEY)
+      output.innerHTML += 'Step 1: Cleared history\n\n'
+
+      // Session 1: Take 10 questions
+      output.innerHTML += 'Step 2: First session - taking 10 questions\n'
+      const session1Questions = mockQuestions.slice(0, 10)
+      const results1 = session1Questions.map(q => ({ id: q.id, isCorrect: true }))
+      recordQuestionAttempts('psm2', results1)
+      output.innerHTML += `  Answered questions: ${session1Questions.map(q => q.id).join(', ')}\n\n`
+
+      // Session 2: Request 10 NEW questions with includeSeenQuestions = false
+      output.innerHTML += 'Step 3: Second session - requesting 10 NEW questions (includeSeenQuestions=false)\n'
+      const filteredForSession2 = filterQuestions(mockQuestions, 'psm2', false)
+      output.innerHTML += `  Available unseen questions: ${filteredForSession2.length}\n`
+      
+      const session2Questions = filteredForSession2.slice(0, 10)
+      output.innerHTML += `  Selected for session 2: ${session2Questions.map(q => q.id).join(', ')}\n\n`
+
+      // Check for duplicates
+      const session1Ids = new Set(session1Questions.map(q => q.id))
+      const duplicates = session2Questions.filter(q => session1Ids.has(q.id))
+
+      if (duplicates.length > 0) {
+        output.innerHTML += `<span class="error">✗ BUG FOUND: ${duplicates.length} duplicate questions!</span>\n`
+        output.innerHTML += `  Duplicate IDs: ${duplicates.map(q => q.id).join(', ')}\n\n`
+      } else {
+        output.innerHTML += '<span class="success">✓ No duplicates found - feature working correctly!</span>\n\n'
+      }
+
+      // Session 2: Answer the questions
+      const results2 = session2Questions.map(q => ({ id: q.id, isCorrect: true }))
+      recordQuestionAttempts('psm2', results2)
+
+      // Final state
+      const finalHistory = getExamHistory('psm2')
+      output.innerHTML += `Final state:\n`
+      output.innerHTML += `  Total seen: ${finalHistory.seenQuestions.length} questions\n`
+      output.innerHTML += `  Seen IDs: ${finalHistory.seenQuestions.join(', ')}\n`
+    }
+
+    // Auto-load current state on page load
+    window.addEventListener('load', () => {
+      showCurrentState()
+    })
+  </script>
+</body>
+</html>

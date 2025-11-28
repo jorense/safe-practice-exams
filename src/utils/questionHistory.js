@@ -153,6 +153,7 @@ export const filterQuestions = (questions, examType, includeSeenQuestions) => {
 
 /**
  * Prioritize unseen questions, then incorrect, then correct
+ * Each group is shuffled internally to prevent patterns
  * @param {Array} questions - All available questions
  * @param {string} examType - Exam identifier
  */
@@ -173,6 +174,16 @@ export const prioritizeQuestions = (questions, examType) => {
     }
   })
   
-  // Return unseen first, then incorrect, then correct
-  return [...unseen, ...incorrect, ...correct]
+  // Shuffle each group internally to add randomness while maintaining priority
+  const shuffleArray = (array) => {
+    const shuffled = [...array]
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    }
+    return shuffled
+  }
+  
+  // Return unseen first (shuffled), then incorrect (shuffled), then correct (shuffled)
+  return [...shuffleArray(unseen), ...shuffleArray(incorrect), ...shuffleArray(correct)]
 }

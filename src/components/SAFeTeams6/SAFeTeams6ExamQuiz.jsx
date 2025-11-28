@@ -96,10 +96,11 @@ function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, 
       ? filteredQuestions 
       : availableQuestions
     
-    // Prioritize unseen questions
+    // Prioritize unseen questions (this function now handles internal shuffling)
     const prioritized = prioritizeQuestions(questionsToUse, 'safeteams6')
-    const shuffled = shuffleArray(prioritized)
-    const selectedQuestions = shuffled.slice(0, numberOfQuestions)
+    
+    // Take the requested number of questions (already prioritized and shuffled)
+    const selectedQuestions = prioritized.slice(0, numberOfQuestions)
     
     // Shuffle the options for each question to prevent visual patterns
     const questionsWithShuffledOptions = selectedQuestions.map(shuffleQuestionOptions)
