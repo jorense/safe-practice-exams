@@ -23,6 +23,7 @@ import TimingAnalyticsPage from './components/shared/TimingAnalyticsPage.jsx'
 import AdvancedDashboard from './components/analytics/AdvancedDashboard.jsx'
 import StudyMaterials from './StudyMaterials.jsx'
 import HamburgerMenu from './components/navigation/HamburgerMenu.jsx'
+import MigrationNotice from './components/shared/MigrationNotice.jsx'
 import './App.css'
 import './pwa-styles.css'
 
@@ -68,7 +69,16 @@ function AppContent() {
   // Add question filtering state management
   const [includeSeenQuestions, setIncludeSeenQuestions] = useState(() => {
     const savedPreference = localStorage.getItem('lace-studio-include-seen')
-    return savedPreference ? savedPreference === 'true' : false // Default to false: exclude seen questions
+    
+    // If user has explicitly set a preference, respect it
+    if (savedPreference !== null) {
+      return savedPreference === 'true'
+    }
+    
+    // For new users (no history): default to false (exclude seen questions)
+    // For existing users (has history): default to true (preserve old behavior)
+    const hasExistingHistory = localStorage.getItem('practice-exam-history')
+    return hasExistingHistory ? true : false
   })
 
   // Save numberOfQuestions to localStorage whenever it changes
@@ -890,6 +900,9 @@ function AppContent() {
       <footer className="footer">
         <p>&copy; 2025 LACE Studio Practice Exams. Empowering Agile professionals worldwide.</p>
       </footer>
+
+      {/* Migration Notice for Existing Users */}
+      <MigrationNotice />
 
       {/* Achievement Notification */}
         <div data-testid="achievement-notification-wrapper">
