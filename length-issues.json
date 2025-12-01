@@ -1,0 +1,963 @@
+[
+  {
+    "id": 421,
+    "type": "TOO_LONG",
+    "correctLength": 122,
+    "avgLength": 74,
+    "percentage": 65,
+    "correctIdx": 3,
+    "question": "A Scrum Team builds healthcare products that must comply with 'algorithmic trans...",
+    "options": [
+      {
+        "text": "Choose explainable AI models even if less accurate than black-box models",
+        "length": 72,
+        "isCorrect": false
+      },
+      {
+        "text": "Build audit trails and explanation interfaces",
+        "length": 45,
+        "isCorrect": false
+      },
+      {
+        "text": "Include explainability requirements in Definition of Done",
+        "length": 57,
+        "isCorrect": false
+      },
+      {
+        "text": "Choose explainable models, build audit trails and explanation interfaces, and include explainability in Definition of Done",
+        "length": 122,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 422,
+    "type": "TOO_LONG",
+    "correctLength": 118,
+    "avgLength": 73,
+    "percentage": 62,
+    "correctIdx": 3,
+    "question": "A Product Owner wants to implement 'contextual AI' that changes product behavior...",
+    "options": [
+      {
+        "text": "This creates complex testing scenarios across different contexts",
+        "length": 64,
+        "isCorrect": false
+      },
+      {
+        "text": "Privacy implications of collecting and using contextual data",
+        "length": 60,
+        "isCorrect": false
+      },
+      {
+        "text": "The technical complexity of context-aware systems",
+        "length": 49,
+        "isCorrect": false
+      },
+      {
+        "text": "Recognize complex testing scenarios, address privacy implications of context data, and understand technical complexity",
+        "length": 118,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 323,
+    "type": "TOO_LONG",
+    "correctLength": 100,
+    "avgLength": 62,
+    "percentage": 61,
+    "correctIdx": 3,
+    "question": "A Scrum Master observes that the Development Team works excessive overtime every...",
+    "options": [
+      {
+        "text": "Praise the team's commitment and dedication",
+        "length": 43,
+        "isCorrect": false
+      },
+      {
+        "text": "Investigate why sustainable pace is not being maintained",
+        "length": 56,
+        "isCorrect": false
+      },
+      {
+        "text": "Work with the Product Owner to reduce Sprint scope",
+        "length": 50,
+        "isCorrect": false
+      },
+      {
+        "text": "Investigate why sustainable pace is not being maintained; also, Work with the Product Owner to re...",
+        "length": 100,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 315,
+    "type": "TOO_LONG",
+    "correctLength": 100,
+    "avgLength": 63,
+    "percentage": 60,
+    "correctIdx": 3,
+    "question": "During Daily Scrum, team members frequently say they have nothing to report. Wha...",
+    "options": [
+      {
+        "text": "The team is highly aligned and needs less coordination",
+        "length": 54,
+        "isCorrect": false
+      },
+      {
+        "text": "Team members don't understand the purpose of the Daily Scrum",
+        "length": 60,
+        "isCorrect": false
+      },
+      {
+        "text": "The work is not collaborative enough",
+        "length": 36,
+        "isCorrect": false
+      },
+      {
+        "text": "Team members don't understand the purpose of the Daily Scrum; also, The work is not collaborative...",
+        "length": 100,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 414,
+    "type": "TOO_LONG",
+    "correctLength": 111,
+    "avgLength": 70,
+    "percentage": 60,
+    "correctIdx": 3,
+    "question": "A Scrum Team builds products that must comply with multiple AI regulations (EU A...",
+    "options": [
+      {
+        "text": "Add regulatory compliance requirements to the Definition of Done",
+        "length": 64,
+        "isCorrect": false
+      },
+      {
+        "text": "Include compliance validation in their Sprint work",
+        "length": 50,
+        "isCorrect": false
+      },
+      {
+        "text": "Collaborate with legal and compliance teams as needed",
+        "length": 53,
+        "isCorrect": false
+      },
+      {
+        "text": "Add compliance to Done, include validation in Sprints, and collaborate with organizational compliance resources",
+        "length": 111,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 409,
+    "type": "TOO_LONG",
+    "correctLength": 119,
+    "avgLength": 76,
+    "percentage": 57,
+    "correctIdx": 3,
+    "question": "A Development Team wants to use 'GitOps' where all infrastructure and deployment...",
+    "options": [
+      {
+        "text": "Ensure the team develops infrastructure-as-code skills",
+        "length": 54,
+        "isCorrect": false
+      },
+      {
+        "text": "Infrastructure changes should be reviewed and tested like application code",
+        "length": 74,
+        "isCorrect": false
+      },
+      {
+        "text": "This can improve deployment reliability and transparency",
+        "length": 56,
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure infrastructure-as-code skills, apply code review standards to infrastructure, and recognize improved reliability",
+        "length": 119,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 411,
+    "type": "TOO_LONG",
+    "correctLength": 125,
+    "avgLength": 81,
+    "percentage": 55,
+    "correctIdx": 3,
+    "question": "The organization wants to adopt 'Open Telemetry' standards for observability acr...",
+    "options": [
+      {
+        "text": "Support standardization as it enables better organizational visibility",
+        "length": 70,
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure the team has agency in how they implement the standard",
+        "length": 61,
+        "isCorrect": false
+      },
+      {
+        "text": "Help the team understand benefits of shared observability practices",
+        "length": 67,
+        "isCorrect": false
+      },
+      {
+        "text": "Support standardization benefits while ensuring implementation autonomy and helping the team understand shared practice value",
+        "length": 125,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 416,
+    "type": "TOO_LONG",
+    "correctLength": 128,
+    "avgLength": 84,
+    "percentage": 53,
+    "correctIdx": 3,
+    "question": "A Development Team member wants to use 'AI-powered test generation' to automatic...",
+    "options": [
+      {
+        "text": "This can improve test coverage if used thoughtfully",
+        "length": 51,
+        "isCorrect": false
+      },
+      {
+        "text": "AI-generated tests still need human review for quality and relevance",
+        "length": 68,
+        "isCorrect": false
+      },
+      {
+        "text": "The team maintains accountability for test quality regardless of how tests are generated",
+        "length": 88,
+        "isCorrect": false
+      },
+      {
+        "text": "Support thoughtful use for coverage, require human review for quality, and maintain team accountability regardless of generation",
+        "length": 128,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 423,
+    "type": "TOO_LONG",
+    "correctLength": 113,
+    "avgLength": 74,
+    "percentage": 53,
+    "correctIdx": 3,
+    "question": "A Development Team wants to use 'remote pair programming' with AI assistance whe...",
+    "options": [
+      {
+        "text": "This represents innovative use of AI tools",
+        "length": 42,
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure the human developers maintain understanding and control",
+        "length": 62,
+        "isCorrect": false
+      },
+      {
+        "text": "Monitor whether this actually improves outcomes or creates over-reliance on AI",
+        "length": 78,
+        "isCorrect": false
+      },
+      {
+        "text": "Support innovative AI use while ensuring developers maintain understanding and control, measuring actual outcomes",
+        "length": 113,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 403,
+    "type": "TOO_LONG",
+    "correctLength": 116,
+    "avgLength": 77,
+    "percentage": 52,
+    "correctIdx": 3,
+    "question": "A Scrum Team's product includes both mobile app development and large language m...",
+    "options": [
+      {
+        "text": "Split into specialized sub-teams (app team and ML team)",
+        "length": 55,
+        "isCorrect": false
+      },
+      {
+        "text": "Develop cross-functional skills so everyone can contribute to both",
+        "length": 66,
+        "isCorrect": false
+      },
+      {
+        "text": "Use pairing and mob programming to share knowledge across specialties",
+        "length": 69,
+        "isCorrect": false
+      },
+      {
+        "text": "Develop cross-functional skills and use pairing and mob programming to maintain knowledge sharing across specialties",
+        "length": 116,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 337,
+    "type": "TOO_LONG",
+    "correctLength": 76,
+    "avgLength": 50,
+    "percentage": 51,
+    "correctIdx": 2,
+    "question": "During Sprint Planning, the Development Team identifies significant risks to ach...",
+    "options": [
+      {
+        "text": "Document the risks and proceed with the Sprint plan",
+        "length": 51,
+        "isCorrect": false
+      },
+      {
+        "text": "Reduce scope to minimize risk",
+        "length": 29,
+        "isCorrect": false
+      },
+      {
+        "text": "Discuss the risks with the Product Owner and adjust the plan collaboratively",
+        "length": 76,
+        "isCorrect": true
+      },
+      {
+        "text": "Select a different Sprint Goal with less risk",
+        "length": 45,
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 330,
+    "type": "TOO_LONG",
+    "correctLength": 97,
+    "avgLength": 65,
+    "percentage": 49,
+    "correctIdx": 2,
+    "question": "How should a Scrum Master respond when a Development Team wants to adopt a pract...",
+    "options": [
+      {
+        "text": "Support the team's technical autonomy and let them proceed",
+        "length": 58,
+        "isCorrect": false
+      },
+      {
+        "text": "Block the practice to maintain organizational compliance",
+        "length": 56,
+        "isCorrect": false
+      },
+      {
+        "text": "Understand both the team's rationale and the organizational standard, then work toward resolution",
+        "length": 97,
+        "isCorrect": true
+      },
+      {
+        "text": "Escalate the decision to organizational leadership",
+        "length": 50,
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 310,
+    "type": "TOO_LONG",
+    "correctLength": 114,
+    "avgLength": 77,
+    "percentage": 48,
+    "correctIdx": 3,
+    "question": "A Development Team wants to adopt trunk-based development but the organization m...",
+    "options": [
+      {
+        "text": "Support the team in following organizational mandates",
+        "length": 53,
+        "isCorrect": false
+      },
+      {
+        "text": "Help the team implement trunk-based development within policy constraints",
+        "length": 73,
+        "isCorrect": false
+      },
+      {
+        "text": "Work with leadership to understand and potentially evolve the policy",
+        "length": 68,
+        "isCorrect": false
+      },
+      {
+        "text": "Help implement trunk-based development within policy constraints while working with leadership on policy evolution",
+        "length": 114,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 404,
+    "type": "TOO_LONG",
+    "correctLength": 117,
+    "avgLength": 79,
+    "percentage": 48,
+    "correctIdx": 3,
+    "question": "The organization wants all teams to adopt 'FinOps' practices to optimize cloud c...",
+    "options": [
+      {
+        "text": "Help the team include cost optimization in their Definition of Done",
+        "length": 67,
+        "isCorrect": false
+      },
+      {
+        "text": "Facilitate the team understanding and monitoring their infrastructure costs",
+        "length": 75,
+        "isCorrect": false
+      },
+      {
+        "text": "Support the team making cost-conscious technical decisions",
+        "length": 58,
+        "isCorrect": false
+      },
+      {
+        "text": "Include cost optimization in Done, facilitate cost understanding and monitoring, and support cost-conscious decisions",
+        "length": 117,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 405,
+    "type": "TOO_LONG",
+    "correctLength": 122,
+    "avgLength": 82,
+    "percentage": 48,
+    "correctIdx": 3,
+    "question": "A Product Owner wants to use 'predictive analytics' to forecast which customers ...",
+    "options": [
+      {
+        "text": "Support this as retention is valuable for the product",
+        "length": 53,
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure the team builds the analytics capabilities and feature delivery mechanisms",
+        "length": 81,
+        "isCorrect": false
+      },
+      {
+        "text": "Question the ethics of differential treatment based on predicted behavior",
+        "length": 73,
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure the team builds required capabilities while questioning ethical implications of predictive behavior-based treatment",
+        "length": 122,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 424,
+    "type": "TOO_LONG",
+    "correctLength": 116,
+    "avgLength": 79,
+    "percentage": 48,
+    "correctIdx": 3,
+    "question": "The organization implements 'Green Software Engineering' principles to minimize ...",
+    "options": [
+      {
+        "text": "Help the team understand carbon-aware computing and efficient algorithms",
+        "length": 72,
+        "isCorrect": false
+      },
+      {
+        "text": "Include energy efficiency considerations in technical decision-making",
+        "length": 69,
+        "isCorrect": false
+      },
+      {
+        "text": "Add environmental impact metrics to the team's visibility",
+        "length": 57,
+        "isCorrect": false
+      },
+      {
+        "text": "Help understand carbon-aware computing, include efficiency in decisions, and add environmental metrics to visibility",
+        "length": 116,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 344,
+    "type": "TOO_LONG",
+    "correctLength": 101,
+    "avgLength": 69,
+    "percentage": 46,
+    "correctIdx": 0,
+    "question": "A Scrum Master notices the Development Team is self-organizing around individual...",
+    "options": [
+      {
+        "text": "Coach the team on the benefits of collaboration and help them experiment with collaborative practices",
+        "length": 101,
+        "isCorrect": true
+      },
+      {
+        "text": "Accept this as the team's choice in how they self-organize",
+        "length": 58,
+        "isCorrect": false
+      },
+      {
+        "text": "Reorganize work assignments to require collaboration",
+        "length": 52,
+        "isCorrect": false
+      },
+      {
+        "text": "Mandate pair programming or mob programming to force collaboration",
+        "length": 66,
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 387,
+    "type": "TOO_LONG",
+    "correctLength": 122,
+    "avgLength": 84,
+    "percentage": 45,
+    "correctIdx": 3,
+    "question": "A Product Owner uses synthetic user data generated by AI for testing instead of ...",
+    "options": [
+      {
+        "text": "Support this as it addresses legitimate privacy concerns",
+        "length": 56,
+        "isCorrect": false
+      },
+      {
+        "text": "Question whether synthetic data accurately represents real user behavior and edge cases",
+        "length": 87,
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure the team understands the limitations and risks of synthetic data",
+        "length": 71,
+        "isCorrect": false
+      },
+      {
+        "text": "Use synthetic data addressing privacy concerns while understanding limitations and validating with real data when possible",
+        "length": 122,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 321,
+    "type": "TOO_LONG",
+    "correctLength": 100,
+    "avgLength": 70,
+    "percentage": 44,
+    "correctIdx": 3,
+    "question": "A Development Team delivers high-quality increments but is slower than other tea...",
+    "options": [
+      {
+        "text": "Work with the team to improve their velocity",
+        "length": 44,
+        "isCorrect": false
+      },
+      {
+        "text": "Educate management on the dangers of comparing teams",
+        "length": 52,
+        "isCorrect": false
+      },
+      {
+        "text": "Investigate whether the team's practices or definition support sustainable quality",
+        "length": 82,
+        "isCorrect": false
+      },
+      {
+        "text": "Educate management on the dangers of comparing teams; also, Investigate whether the team's practi...",
+        "length": 100,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 331,
+    "type": "TOO_LONG",
+    "correctLength": 100,
+    "avgLength": 70,
+    "percentage": 44,
+    "correctIdx": 3,
+    "question": "A Development Team consistently reports no impediments to the Scrum Master. What...",
+    "options": [
+      {
+        "text": "Celebrate the team's maturity and effectiveness",
+        "length": 47,
+        "isCorrect": false
+      },
+      {
+        "text": "Investigate whether the team understands what impediments are",
+        "length": 61,
+        "isCorrect": false
+      },
+      {
+        "text": "Observe the team's work to identify impediments they may not recognize",
+        "length": 70,
+        "isCorrect": false
+      },
+      {
+        "text": "Investigate whether the team understands what impediments are; also, Observe the team's work to i...",
+        "length": 100,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 346,
+    "type": "TOO_LONG",
+    "correctLength": 100,
+    "avgLength": 70,
+    "percentage": 44,
+    "correctIdx": 3,
+    "question": "A Product Owner wants to measure the success of features after release but doesn...",
+    "options": [
+      {
+        "text": "Help implement measurement systems and analytics",
+        "length": 48,
+        "isCorrect": false
+      },
+      {
+        "text": "Coach the Product Owner on defining success metrics and measuring value",
+        "length": 71,
+        "isCorrect": false
+      },
+      {
+        "text": "Connect the Product Owner with resources on product metrics",
+        "length": 59,
+        "isCorrect": false
+      },
+      {
+        "text": "Coach the Product Owner on defining success metrics and measuring value; also, Connect the Produc...",
+        "length": 100,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 254,
+    "type": "TOO_LONG",
+    "correctLength": 94,
+    "avgLength": 66,
+    "percentage": 43,
+    "correctIdx": 3,
+    "question": "A Product Owner complains that Sprint Reviews feel like a waste of time because ...",
+    "options": [
+      {
+        "text": "Stakeholders are satisfied, which is the goal of Sprint Review",
+        "length": 62,
+        "isCorrect": false
+      },
+      {
+        "text": "The Product Owner is not inviting the right stakeholders",
+        "length": 56,
+        "isCorrect": false
+      },
+      {
+        "text": "The Increment is not demonstrating meaningful value",
+        "length": 51,
+        "isCorrect": false
+      },
+      {
+        "text": "The Sprint Review is not being used as an opportunity to inspect and adapt the Product Backlog",
+        "length": 94,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 266,
+    "type": "TOO_LONG",
+    "correctLength": 92,
+    "avgLength": 65,
+    "percentage": 43,
+    "correctIdx": 2,
+    "question": "How should a Scrum Master approach a Development Team that consistently over-com...",
+    "options": [
+      {
+        "text": "Coach the team on more accurate estimation techniques",
+        "length": 53,
+        "isCorrect": false
+      },
+      {
+        "text": "Help the team understand the consequences of over-commitment",
+        "length": 60,
+        "isCorrect": false
+      },
+      {
+        "text": "Facilitate discussion about what's driving over-commitment and how to forecast more reliably",
+        "length": 92,
+        "isCorrect": true
+      },
+      {
+        "text": "Work with the Product Owner to reduce Sprint pressure",
+        "length": 53,
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 294,
+    "type": "TOO_LONG",
+    "correctLength": 100,
+    "avgLength": 70,
+    "percentage": 43,
+    "correctIdx": 3,
+    "question": "A Development Team is consistently discovering significant technical issues late...",
+    "options": [
+      {
+        "text": "Whether the team is doing adequate technical design upfront",
+        "length": 59,
+        "isCorrect": false
+      },
+      {
+        "text": "Whether Product Backlog items are sufficiently refined",
+        "length": 54,
+        "isCorrect": false
+      },
+      {
+        "text": "Whether the team is using effective development practices like TDD",
+        "length": 66,
+        "isCorrect": false
+      },
+      {
+        "text": "Whether the team is doing adequate technical design upfront; Whether Product Backlog items are su...",
+        "length": 100,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 399,
+    "type": "TOO_LONG",
+    "correctLength": 104,
+    "avgLength": 73,
+    "percentage": 43,
+    "correctIdx": 3,
+    "question": "A Development Team wants to use 'AI code review' tools that automatically review...",
+    "options": [
+      {
+        "text": "This improves efficiency and should be adopted",
+        "length": 46,
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure human review still happens for context, design, and business logic validation",
+        "length": 84,
+        "isCorrect": false
+      },
+      {
+        "text": "AI tools can supplement but not replace peer code review",
+        "length": 56,
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure human review for context and design while using AI to supplement but not replace peer code review",
+        "length": 104,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 400,
+    "type": "TOO_LONG",
+    "correctLength": 111,
+    "avgLength": 78,
+    "percentage": 43,
+    "correctIdx": 3,
+    "question": "A Scrum Team works on a 'zero trust security' architecture requiring every inter...",
+    "options": [
+      {
+        "text": "Security complexity should be included in estimation and Definition of Done",
+        "length": 75,
+        "isCorrect": false
+      },
+      {
+        "text": "The team may need to develop new security skills and practices",
+        "length": 62,
+        "isCorrect": false
+      },
+      {
+        "text": "This reflects modern security requirements and teams must adapt",
+        "length": 63,
+        "isCorrect": false
+      },
+      {
+        "text": "Include security complexity in planning and Done, develop new security skills, and adapt to modern requirements",
+        "length": 111,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 306,
+    "type": "TOO_LONG",
+    "correctLength": 100,
+    "avgLength": 70,
+    "percentage": 42,
+    "correctIdx": 3,
+    "question": "During Sprint Retrospective, the team identifies that organizational policies ar...",
+    "options": [
+      {
+        "text": "Document the impediment and focus on what the team can control",
+        "length": 62,
+        "isCorrect": false
+      },
+      {
+        "text": "Work with organizational leadership to address the policies",
+        "length": 59,
+        "isCorrect": false
+      },
+      {
+        "text": "Help the team find workarounds that comply with the policies",
+        "length": 60,
+        "isCorrect": false
+      },
+      {
+        "text": "Work with organizational leadership to address the policies; also, Help the team find workarounds...",
+        "length": 100,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 408,
+    "type": "TOO_LONG",
+    "correctLength": 117,
+    "avgLength": 83,
+    "percentage": 41,
+    "correctIdx": 3,
+    "question": "A Product Owner wants to implement 'personalization at scale' using AI to custom...",
+    "options": [
+      {
+        "text": "This creates significant technical complexity that affects Sprint planning",
+        "length": 74,
+        "isCorrect": false
+      },
+      {
+        "text": "The team needs capabilities in ML, experimentation, and large-scale data processing",
+        "length": 83,
+        "isCorrect": false
+      },
+      {
+        "text": "Consider privacy implications and user consent requirements",
+        "length": 59,
+        "isCorrect": false
+      },
+      {
+        "text": "Consider technical complexity, develop required ML capabilities, and address privacy implications with proper consent",
+        "length": 117,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 413,
+    "type": "TOO_LONG",
+    "correctLength": 117,
+    "avgLength": 83,
+    "percentage": 41,
+    "correctIdx": 3,
+    "question": "A Development Team wants to adopt 'trunk-based development' but some members are...",
+    "options": [
+      {
+        "text": "Support the team experimenting with the practice",
+        "length": 48,
+        "isCorrect": false
+      },
+      {
+        "text": "Help them understand trunk-based development requires strong testing and CI/CD",
+        "length": 78,
+        "isCorrect": false
+      },
+      {
+        "text": "Facilitate discussion about practices that maintain quality with trunk-based development",
+        "length": 88,
+        "isCorrect": false
+      },
+      {
+        "text": "Support experimentation, explain quality requirements, and facilitate discussions about maintaining quality practices",
+        "length": 117,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 420,
+    "type": "TOO_LONG",
+    "correctLength": 105,
+    "avgLength": 74,
+    "percentage": 41,
+    "correctIdx": 3,
+    "question": "A Development Team wants to use 'Infrastructure as Code' (IaC) security scanning...",
+    "options": [
+      {
+        "text": "This improves security and should be supported",
+        "length": 46,
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure blocked deployments become visible impediments to address",
+        "length": 64,
+        "isCorrect": false
+      },
+      {
+        "text": "The team should include IaC security in their Definition of Done to prevent blocks",
+        "length": 82,
+        "isCorrect": false
+      },
+      {
+        "text": "Make blocked deployments visible impediments and include IaC security in Done to prevent recurring blocks",
+        "length": 105,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 412,
+    "type": "TOO_LONG",
+    "correctLength": 117,
+    "avgLength": 84,
+    "percentage": 40,
+    "correctIdx": 3,
+    "question": "A Product Owner wants to implement 'progressive disclosure' in the UI to reduce ...",
+    "options": [
+      {
+        "text": "Facilitate discussion about the value-complexity tradeoff",
+        "length": 57,
+        "isCorrect": false
+      },
+      {
+        "text": "Help the team explore approaches that make progressive disclosure more manageable",
+        "length": 81,
+        "isCorrect": false
+      },
+      {
+        "text": "Ensure the team and Product Owner understand each other's constraints and goals",
+        "length": 79,
+        "isCorrect": false
+      },
+      {
+        "text": "Facilitate value-complexity discussion, explore manageable approaches, and ensure mutual understanding of constraints",
+        "length": 117,
+        "isCorrect": true
+      }
+    ]
+  }
+]

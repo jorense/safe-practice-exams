@@ -4024,7 +4024,7 @@ const psm2Questions = [
       "The Sprint provides a consistent timebox for the inspect and adapt cycle",
       "The Sprint enables empirical process control through regular inspection points",
       "The Sprint creates predictability which supports empirical decision-making",
-      "All of the above"
+      "The Sprint provides a consistent timebox for the inspect and adapt cycle; The Sprint enables empi..."
     ],
     correctAnswer: 3,
     explanation: "The Sprint supports empiricism in multiple ways: providing consistent timeboxes for inspection and adaptation, creating regular checkpoints for empirical assessment, and establishing predictability that enables data-driven decisions. All aspects work together to enable empiricism.",
@@ -4108,7 +4108,7 @@ const psm2Questions = [
       "Whether the team is doing adequate technical design upfront",
       "Whether Product Backlog items are sufficiently refined",
       "Whether the team is using effective development practices like TDD",
-      "All of the above"
+      "Whether the team is doing adequate technical design upfront; Whether Product Backlog items are su..."
     ],
     correctAnswer: 3,
     explanation: "Late discovery of technical issues can stem from multiple causes: insufficient design discussion, unclear requirements, poor technical practices, lack of expertise, or other factors. The Scrum Master should investigate comprehensively rather than assuming a single cause.",
@@ -4276,7 +4276,7 @@ const psm2Questions = [
       "Document the impediment and focus on what the team can control",
       "Work with organizational leadership to address the policies",
       "Help the team find workarounds that comply with the policies",
-      "Both B and C"
+      "Work with organizational leadership to address the policies; also, Help the team find workarounds..."
     ],
     correctAnswer: 3,
     explanation: "The Scrum Master has dual responsibilities: help the team work effectively within current constraints (finding compliant workarounds) while simultaneously working with leadership to address the systemic impediments. Both approaches should be pursued in parallel.",
@@ -4332,7 +4332,7 @@ const psm2Questions = [
       "Support the team in following organizational mandates",
       "Help the team implement trunk-based development within policy constraints",
       "Work with leadership to understand and potentially evolve the policy",
-      "Both B and C"
+      "Help implement trunk-based development within policy constraints while working with leadership on policy evolution"
     ],
     correctAnswer: 3,
     explanation: "The Scrum Master should help the team find ways to work effectively within current policies while simultaneously working with leadership to address policies that impede effectiveness. This serves both the team and the organization.",
@@ -4374,7 +4374,7 @@ const psm2Questions = [
       "Acknowledge these constraints and focus on what the team can control",
       "Work to expand the team's authority in these areas",
       "Help the team understand self-management within their sphere of influence",
-      "All of the above"
+      "Acknowledge these constraints and focus on what the team can control; Work to expand the team's a..."
     ],
     correctAnswer: 3,
     explanation: "Self-management exists within organizational constraints. The Scrum Master acknowledges real limitations while helping the team maximize autonomy within their sphere, advocating for expanded authority where appropriate, and coaching on operating effectively within current boundaries.",
@@ -4402,7 +4402,7 @@ const psm2Questions = [
       "The team is highly aligned and needs less coordination",
       "Team members don't understand the purpose of the Daily Scrum",
       "The work is not collaborative enough",
-      "Both B and C"
+      "Team members don't understand the purpose of the Daily Scrum; also, The work is not collaborative..."
     ],
     correctAnswer: 3,
     explanation: "If team members have nothing to coordinate, it suggests either they don't understand the Daily Scrum's purpose (planning for the next 24 hours, not status reporting) or they're working in silos without collaboration. The Scrum Master should investigate both possibilities.",
@@ -4486,7 +4486,7 @@ const psm2Questions = [
       "Work with the team to improve their velocity",
       "Educate management on the dangers of comparing teams",
       "Investigate whether the team's practices or definition support sustainable quality",
-      "Both B and C"
+      "Educate management on the dangers of comparing teams; also, Investigate whether the team's practi..."
     ],
     correctAnswer: 3,
     explanation: "The Scrum Master should educate leadership on why team comparisons are harmful while also investigating whether the team's pace is appropriate for their context, quality standards, and complexity. Quality and sustainability matter more than speed.",
@@ -4500,7 +4500,7 @@ const psm2Questions = [
       "This defers feedback and learning until late in development",
       "It creates inventory of undone work that doesn't deliver value",
       "It prevents the team from demonstrating progress and gathering stakeholder feedback",
-      "All of the above"
+      "This defers feedback and learning until late in development; It creates inventory of undone work ..."
     ],
     correctAnswer: 3,
     explanation: "All are valid concerns. Scrum emphasizes delivering valuable increments frequently to enable feedback, learning, and value delivery. Batching work for big-bang delivery loses these benefits and increases risk.",
@@ -4514,7 +4514,7 @@ const psm2Questions = [
       "Praise the team's commitment and dedication",
       "Investigate why sustainable pace is not being maintained",
       "Work with the Product Owner to reduce Sprint scope",
-      "Both B and C"
+      "Investigate why sustainable pace is not being maintained; also, Work with the Product Owner to re..."
     ],
     correctAnswer: 3,
     explanation: "Consistent overtime indicates unsustainable pace, which is harmful long-term. The Scrum Master should investigate root causes (over-commitment, external pressure, poor estimates, quality issues) and work with the team and Product Owner to establish sustainable practices.",
@@ -4556,7 +4556,7 @@ const psm2Questions = [
       "Coach the Product Owner on stakeholder communication and engagement",
       "Create a product roadmap to show stakeholders future direction",
       "Hold regular stakeholder briefings separate from Sprint Review",
-      "All of the above"
+      "Coach the Product Owner on stakeholder communication and engagement; Create a product roadmap to ..."
     ],
     correctAnswer: 3,
     explanation: "Multiple approaches can help: better Product Owner communication, roadmaps (understanding they're forecasts, not commitments), regular stakeholder engagement, improved Sprint Review facilitation. The Scrum Master coaches the Product Owner on stakeholder management.",
@@ -4598,7 +4598,7 @@ const psm2Questions = [
       "Help the team provide the estimates as this supports the Product Owner's work",
       "Coach the Product Owner on empirical forecasting vs. detailed upfront planning",
       "Suggest estimating only the top of the backlog in detail",
-      "Both B and C"
+      "Coach the Product Owner on empirical forecasting vs. detailed upfront planning; also, Suggest est..."
     ],
     correctAnswer: 3,
     explanation: "The Scrum Master coaches on empirical approaches while acknowledging the Product Owner's need for forecasting. Detailed estimates for the entire backlog are wasteful (requirements change), but near-term forecasting is valuable. Both education and practical alternatives are needed.",
@@ -4626,7 +4626,7 @@ const psm2Questions = [
       "Celebrate the team's maturity and effectiveness",
       "Investigate whether the team understands what impediments are",
       "Observe the team's work to identify impediments they may not recognize",
-      "Both B and C"
+      "Investigate whether the team understands what impediments are; also, Observe the team's work to i..."
     ],
     correctAnswer: 3,
     explanation: "No team operates without challenges or obstacles. If none are reported, the team may not understand what impediments are, may not feel safe raising them, may have normalized dysfunction, or may be solving them without recognizing them as impediments. Investigation is needed.",
@@ -4654,7 +4654,7 @@ const psm2Questions = [
       "Work with the team to adjust their Sprint forecast given the reduced capacity",
       "Work with organizational leadership to minimize interruptions to the Scrum Team",
       "Coach the team on how to handle the disruption and maintain their Sprint Goal",
-      "All of the above"
+      "Work with the team to adjust their Sprint forecast given the reduced capacity; Work with organiza..."
     ],
     correctAnswer: 3,
     explanation: "The Scrum Master should address both the immediate impact (helping the team adjust) and the systemic issue (working with leadership to reduce future disruptions). Supporting the team's response while addressing root causes serves both short-term and long-term needs.",
@@ -4682,7 +4682,7 @@ const psm2Questions = [
       "Support the decision as technical choices belong to the Development Team",
       "Ensure the Product Owner is aware and understands the implications",
       "Help the team think through the impacts and make an informed decision",
-      "All of the above"
+      "Support the decision as technical choices belong to the Development Team; Ensure the Product Owne..."
     ],
     correctAnswer: 3,
     explanation: "The Scrum Master supports the team's technical authority while ensuring proper collaboration with the Product Owner (who should understand timeline/risk implications) and coaching the team on thoughtful decision-making. It's not just rubber-stamping but supporting informed decisions.",
@@ -4724,7 +4724,7 @@ const psm2Questions = [
       "Help the team include technical work in their Definition of Done",
       "Coach the Product Owner on the long-term consequences of technical debt",
       "Facilitate discussion about balancing new features with technical health",
-      "All of the above"
+      "Help the team include technical work in their Definition of Done; Coach the Product Owner on the ..."
     ],
     correctAnswer: 3,
     explanation: "Multiple approaches are needed: strengthening the Definition of Done ensures quality standards, coaching the Product Owner on technical debt consequences, and facilitating collaborative discussion about sustainable development. All work together to address the issue.",
@@ -4738,7 +4738,7 @@ const psm2Questions = [
       "Coach the individual on realistic forecasting and asking for help",
       "Work with the team to better distribute work and identify bottlenecks",
       "Help the individual understand the impact of their behavior on the team",
-      "All of the above"
+      "Coach the individual on realistic forecasting and asking for help; Work with the team to better d..."
     ],
     correctAnswer: 3,
     explanation: "This requires multiple interventions: coaching the individual on self-awareness and behavior change, helping the team recognize and address the pattern collaboratively, and ensuring the individual understands team impacts. Individual and team-level approaches are both needed.",
@@ -4836,7 +4836,7 @@ const psm2Questions = [
       "Help implement measurement systems and analytics",
       "Coach the Product Owner on defining success metrics and measuring value",
       "Connect the Product Owner with resources on product metrics",
-      "Both B and C"
+      "Coach the Product Owner on defining success metrics and measuring value; also, Connect the Produc..."
     ],
     correctAnswer: 3,
     explanation: "The Scrum Master coaches the Product Owner on product management practices, including defining and measuring success. This might involve teaching frameworks, connecting with resources, or facilitating discussions with stakeholders about what success means for different features.",
@@ -4864,7 +4864,7 @@ const psm2Questions = [
       "It violates the Sprint Goal by working on items outside the Sprint Backlog",
       "It assumes future priorities won't change based on what's learned",
       "It may result in work that's not needed or needs to be redone",
-      "All of the above"
+      "It violates the Sprint Goal by working on items outside the Sprint Backlog; It assumes future pri..."
     ],
     correctAnswer: 3,
     explanation: "Working ahead ignores Scrum's empirical foundation: we learn from each Sprint and adapt priorities accordingly. Work done ahead may not be needed, may need redoing based on learning, and diverts focus from the current Sprint Goal. The Scrum Master should coach on staying focused on current Sprint commitments.",
@@ -4892,7 +4892,7 @@ const psm2Questions = [
       "These should be part of the Definition of Done, not the Product Backlog",
       "These should be in the Product Backlog if they require specific work",
       "It depends on whether they apply to all work or specific features",
-      "Both B and C"
+      "These should be in the Product Backlog if they require specific work; also, It depends on whether..."
     ],
     correctAnswer: 3,
     explanation: "Quality attributes that apply to all work should be in the Definition of Done. Specific quality improvements that require dedicated work (performance optimization for a specific feature) can be Product Backlog items. The Scrum Master helps clarify which category applies to each quality attribute.",
@@ -4976,7 +4976,7 @@ const psm2Questions = [
       "Support this if the technical debt is truly severe",
       "Question why their Definition of Done allowed this much debt to accumulate",
       "Explore whether the refactoring can be done incrementally while delivering features",
-      "Both B and C"
+      "Question why their Definition of Done allowed this much debt to accumulate; also, Explore whether..."
     ],
     correctAnswer: 3,
     explanation: "A 'refactoring Sprint' is typically a symptom of insufficient Definition of Done. The Scrum Master should help the team understand this while also being pragmatic—if debt exists, incremental refactoring alongside feature work is usually more valuable than stopping all feature development.",
@@ -5018,7 +5018,7 @@ const psm2Questions = [
       "Refinement makes Sprint Planning more efficient by pre-clarifying items",
       "Refinement is optional but Sprint Planning is mandatory",
       "They serve different purposes: refinement prepares work, planning commits to work",
-      "All of the above"
+      "Refinement makes Sprint Planning more efficient by pre-clarifying items; Refinement is optional b..."
     ],
     correctAnswer: 3,
     explanation: "All statements are true. Refinement is an ongoing activity (not a formal event) that makes Sprint Planning more efficient. Sprint Planning is when the team forecasts what they'll deliver. Refinement prepares items; planning commits to them for the Sprint.",
@@ -5074,7 +5074,7 @@ const psm2Questions = [
       "Support the team in pushing back on unrealistic expectations",
       "Facilitate discussion about capacity, forecasting, and sustainable pace",
       "Coach the Product Owner on respecting the team's forecast",
-      "All of the above"
+      "Support the team in pushing back on unrealistic expectations; Facilitate discussion about capacit..."
     ],
     correctAnswer: 3,
     explanation: "This situation requires multiple interventions: facilitating honest discussion about capacity, helping the team articulate their concerns professionally, and coaching the Product Owner on why respecting the team's forecast is crucial for sustainable pace and accurate planning.",
@@ -5088,7 +5088,7 @@ const psm2Questions = [
       "Coach the Product Owner on managing stakeholder expectations before the Sprint Review",
       "Help reframe the Sprint Review as collaborative product discovery, not a demo or approval meeting",
       "Work with stakeholders on how to provide constructive feedback",
-      "All of the above"
+      "Coach the Product Owner on managing stakeholder expectations before the Sprint Review; Help refra..."
     ],
     correctAnswer: 3,
     explanation: "A confrontational Sprint Review suggests multiple issues: misaligned expectations, wrong stakeholders, or misunderstanding of the event's purpose. The Scrum Master addresses all aspects: Product Owner's stakeholder management, positioning the event correctly, and stakeholder communication skills.",
@@ -5116,7 +5116,7 @@ const psm2Questions = [
       "The initial velocity reduction but potential long-term benefits",
       "Whether the perceived velocity reduction accounts for quality improvements",
       "How to run an experiment to measure actual impact rather than assumed impact",
-      "All of the above"
+      "The initial velocity reduction but potential long-term benefits; Whether the perceived velocity r..."
     ],
     correctAnswer: 3,
     explanation: "The Scrum Master helps the team think empirically about practices. Pair programming typically doesn't cut velocity by 50%, and it often improves quality, reduces defects, and increases knowledge sharing. Running a time-boxed experiment provides actual data rather than relying on assumptions.",
@@ -5144,7 +5144,7 @@ const psm2Questions = [
       "Support this as it gives visibility to technical debt",
       "Discourage this as all work should be in one Product Backlog",
       "Explore why technical debt exists and address it at the source (Definition of Done)",
-      "Both B and C"
+      "Discourage separate backlogs and explore root causes of technical debt to address at the source"
     ],
     correctAnswer: 3,
     explanation: "Technical debt should be prevented through a strong Definition of Done, not managed in a separate backlog. If debt exists, it should be in the Product Backlog where it can be prioritized against features. Multiple backlogs create prioritization challenges and hide the true cost of debt.",
@@ -5200,7 +5200,7 @@ const psm2Questions = [
       "This is acceptable if the Product Owner can still plan releases",
       "Estimates are required for Sprint Planning and should continue",
       "Explore whether they can forecast Sprint capacity without estimates",
-      "Both A and C"
+      "This is acceptable if the Product Owner can still plan releases; also, Explore whether they can f..."
     ],
     correctAnswer: 3,
     explanation: "Scrum doesn't mandate estimation approaches. If the team can forecast what they'll complete in a Sprint (using historical data on throughput, item counts, etc.) and the Product Owner can plan releases, then estimation may not be necessary. The Scrum Master helps them experiment with alternatives.",
@@ -5228,7 +5228,7 @@ const psm2Questions = [
       "This violates the requirement that each Sprint produces a potentially releasable Increment",
       "This is acceptable if the Sprint Goal still represents value",
       "Explore whether there's a way to deliver working functionality incrementally",
-      "Both A and C"
+      "Challenge this approach and help find ways to deliver working, valuable functionality each Sprint"
     ],
     correctAnswer: 3,
     explanation: "Each Sprint must produce a usable, potentially releasable Increment that meets the Definition of Done. A non-functional version doesn't meet this requirement. The Scrum Master helps the Product Owner and team find ways to slice features so each Sprint delivers working, valuable functionality.",
@@ -5284,7 +5284,7 @@ const psm2Questions = [
       "This makes Sprints unpredictable since training time varies; keep it separate",
       "Support including it if model readiness is necessary for a releasable Increment",
       "Suggest the team explore techniques like transfer learning or pre-trained models to reduce training time",
-      "Both B and C"
+      "Support including model training in Done, while helping the team explore modern ML practices to make it sustainable"
     ],
     correctAnswer: 3,
     explanation: "In 2025, ML features are common. If trained models are required for releasability, training should be in the Definition of Done. However, the Scrum Master can also help the team explore modern ML practices (transfer learning, fine-tuning, model reuse, MLOps) that make this more predictable and sustainable within Sprint timebox.",
@@ -5326,7 +5326,7 @@ const psm2Questions = [
       "Resist as this is organizational architecture, not Scrum practice",
       "Support adoption while ensuring teams maintain autonomy over how they use platforms",
       "Help teams provide feedback on platform capabilities they need",
-      "Both B and C"
+      "Support adoption while ensuring autonomy, and facilitate team feedback on platform capabilities they need"
     ],
     correctAnswer: 3,
     explanation: "Platform engineering is a major 2025 trend. The Scrum Master supports organizational improvements that help teams (self-service infrastructure, reduced cognitive load) while ensuring teams aren't forced into constraining patterns. Crucially, teams should influence platform roadmaps based on their needs.",
@@ -5340,7 +5340,7 @@ const psm2Questions = [
       "Mandate that all AI-generated code must be explained and understood by the team",
       "Update the Definition of Done to include code comprehensibility standards",
       "Facilitate discussion about collective code ownership and knowledge sharing in an AI-assisted era",
-      "All of the above"
+      "Mandate that all AI-generated code must be explained and understood by the team; Update the Defin..."
     ],
     correctAnswer: 3,
     explanation: "AI code generation in 2025 creates new challenges for collective ownership and maintainability. The Scrum Master helps the team establish practices that maintain quality and shared understanding: code comprehensibility standards, pair programming with AI tools, documentation, and ensuring the team owns and understands all code regardless of how it's generated.",
@@ -5354,7 +5354,7 @@ const psm2Questions = [
       "This allows deploying unfinished work, which violates the Definition of Done",
       "Feature flags enable smaller, safer releases and faster feedback - align Definition of Done accordingly",
       "The team should include flag configuration and monitoring in their Sprint work",
-      "Both B and C"
+      "Feature flags are compatible with Done; align Definition of Done and include flag management as Sprint work"
     ],
     correctAnswer: 3,
     explanation: "Feature flags and progressive delivery are standard practice in 2025. Work behind a flag can still meet the Definition of Done if it's production-ready even when hidden. The team should treat flag management, monitoring, and eventual cleanup as integral work, not technical debt.",
@@ -5368,7 +5368,7 @@ const psm2Questions = [
       "This is outside the scope of Scrum and product development",
       "Help the team add environmental sustainability to their Definition of Done",
       "Facilitate discussion with the Product Owner about balancing features with sustainability",
-      "Both B and C"
+      "Help integrate sustainability into Done and facilitate Product Owner collaboration on balancing value with impact"
     ],
     correctAnswer: 3,
     explanation: "In 2025, environmental sustainability is increasingly important. The Scrum Master helps the team and Product Owner consider sustainability as a quality attribute: efficient algorithms, carbon-aware computing, right-sizing infrastructure. This aligns with Scrum's emphasis on sustainable pace and responsible development.",
@@ -5396,7 +5396,7 @@ const psm2Questions = [
       "This combines two powerful practices and should be supported",
       "Monitor whether this approach truly works for the team or just sounds trendy",
       "Help the team experiment and measure impact on quality, learning, and velocity",
-      "Both B and C"
+      "Monitor effectiveness and help the team experiment empirically to assess whether it truly serves their needs"
     ],
     correctAnswer: 3,
     explanation: "In 2025, teams have many practice options. The Scrum Master encourages empiricism: try the practice, measure results, and adapt. 'Mob programming with AI' might accelerate some teams or create groupthink in others. The team should experiment thoughtfully and assess honestly.",
@@ -5410,7 +5410,7 @@ const psm2Questions = [
       "Support this as it addresses legitimate privacy concerns",
       "Question whether synthetic data accurately represents real user behavior and edge cases",
       "Ensure the team understands the limitations and risks of synthetic data",
-      "All of the above"
+      "Use synthetic data addressing privacy concerns while understanding limitations and validating with real data when possible"
     ],
     correctAnswer: 3,
     explanation: "Synthetic data is increasingly common in 2025 for privacy compliance. However, it may not capture real-world complexity, edge cases, or actual user behavior. The Scrum Master helps ensure the team and Product Owner understand these tradeoffs and validate assumptions with real data when possible.",
@@ -5452,7 +5452,7 @@ const psm2Questions = [
       "Ensure the team includes bias testing and fairness metrics in their Definition of Done",
       "Facilitate discussions about ethical considerations in product development",
       "Help the Product Owner understand responsibility for ensuring the product doesn't cause harm",
-      "All of the above"
+      "Include bias testing in Done, facilitate ethical discussions, and ensure Product Owner understands harm-prevention accountability"
     ],
     correctAnswer: 3,
     explanation: "Ethical AI and algorithmic fairness are critical concerns in 2025. The Scrum Master helps the team address bias through testing and quality standards, facilitates ethical discussions, and ensures the Product Owner understands their accountability for value includes 'not causing harm.' This is responsible product development.",
@@ -5466,7 +5466,7 @@ const psm2Questions = [
       "Support this as it makes backlog refinement more efficient",
       "Caution that AI may miss nuance, context, and unstated needs that humans would catch",
       "Recommend using AI as a starting point but requiring human refinement and validation",
-      "Both B and C"
+      "Support AI assistance with appropriate guardrails: use as a starting point with human refinement and validation"
     ],
     correctAnswer: 3,
     explanation: "AI can assist Product Owners in 2025, but product management requires judgment, empathy, and context understanding that AI lacks. The Scrum Master coaches the Product Owner on using AI to accelerate work while maintaining the human understanding and judgment essential for effective Product Ownership.",
@@ -5480,7 +5480,7 @@ const psm2Questions = [
       "Nothing - the team member is responsible for their own work quality",
       "Coach the individual on maintaining quality standards regardless of how code is generated",
       "Bring this to Sprint Retrospective as a team quality discussion",
-      "Both B and C"
+      "Coach individually on quality standards and bring to retrospective as a broader team quality topic"
     ],
     correctAnswer: 3,
     explanation: "In 2025, developers must understand and validate AI-generated code. The Scrum Master addresses this through individual coaching and potentially team retrospective discussion about AI tool usage standards, code review practices, and maintaining quality when using AI assistance.",
@@ -5494,7 +5494,7 @@ const psm2Questions = [
       "Support this as objective data is better than subjective evaluation",
       "Educate leadership on how these metrics harm collaboration and create gaming behaviors",
       "Propose better measures like team outcomes, value delivery, and customer satisfaction",
-      "Both B and C"
+      "Educate on metric dysfunction and propose outcome-based alternatives that serve organizational goals better"
     ],
     correctAnswer: 3,
     explanation: "Developer productivity metrics are a harmful trend in 2025. The Scrum Master serves the organization by educating leadership on how individual metrics undermine collaboration, psychological safety, and actually reduce productivity. Propose outcome-based measures that align with Scrum values.",
@@ -5508,7 +5508,7 @@ const psm2Questions = [
       "On-premise deployment should be included in the Definition of Done if it's required for release",
       "The team needs skills in both cloud and on-premise deployment",
       "Consider using containerization and infrastructure-as-code to make deployment consistent",
-      "All of the above"
+      "Include deployment in Done if required for release, develop deployment skills, and use modern practices for consistency"
     ],
     correctAnswer: 3,
     explanation: "Data sovereignty and on-premise requirements are growing in 2025. The team must ensure Increments are truly releasable in all required deployment models. Modern practices (containers, IaC, automated deployment) help make this manageable within Sprint timebox.",
@@ -5522,7 +5522,7 @@ const psm2Questions = [
       "This is purely a business model decision and doesn't affect the team",
       "The team needs to build robust usage tracking, prediction models, and pricing engines",
       "The team should understand the business model to make informed technical decisions",
-      "Both B and C"
+      "The team must build the technical implementation and should understand the business model to guide decisions"
     ],
     correctAnswer: 3,
     explanation: "Product-led growth and dynamic pricing are common in 2025. Technical implementation of these business models is significant work requiring team involvement. Understanding the business model helps the team make better technical decisions about architecture, analytics, and reliability.",
@@ -5536,7 +5536,7 @@ const psm2Questions = [
       "Embrace innovative collaboration tools if they improve team connection",
       "Ensure all team members have access to required technology and are comfortable using it",
       "Monitor whether VR actually improves outcomes or is just novelty",
-      "All of the above"
+      "Embrace innovations that improve connection while ensuring accessibility and measuring actual effectiveness"
     ],
     correctAnswer: 3,
     explanation: "VR collaboration tools are emerging in 2025. The Scrum Master stays open to innovations that improve distributed team collaboration while ensuring accessibility, measuring actual effectiveness, and avoiding 'innovation for innovation's sake.' The team should empirically evaluate whether tools serve their needs.",
@@ -5550,7 +5550,7 @@ const psm2Questions = [
       "Ensure the team's Definition of Done includes documentation and code quality for external consumption",
       "Help the team allocate time for supporting other teams using their code",
       "Facilitate the team contributing to other teams' codebases when it benefits their goals",
-      "All of the above"
+      "Ensure documentation and code quality, help allocate support time, and facilitate contributing to shared codebases"
     ],
     correctAnswer: 3,
     explanation: "Inner Source is growing in 2025 as organizations seek efficiency and reuse. The Scrum Master helps the team participate effectively: maintaining reusable code quality, supporting users, and contributing to shared components. This requires treating internal code as a product with appropriate quality standards.",
@@ -5564,7 +5564,7 @@ const psm2Questions = [
       "Support this as data-driven decision making is superior to opinions",
       "Question whether this delays value delivery and prevents learning from qualitative feedback",
       "Discuss balancing experimentation with timely value delivery and qualitative insights",
-      "Both B and C"
+      "Question delays and coach on balanced decision-making that values both quantitative and qualitative insights"
     ],
     correctAnswer: 3,
     explanation: "While experimentation is valuable in 2025, over-reliance on quantitative metrics can delay value and miss important qualitative insights. The Scrum Master coaches the Product Owner on balanced decision-making: using experiments while not letting perfect statistical certainty prevent delivering value and learning.",
@@ -5578,7 +5578,7 @@ const psm2Questions = [
       "This improves efficiency and should be adopted",
       "Ensure human review still happens for context, design, and business logic validation",
       "AI tools can supplement but not replace peer code review",
-      "Both B and C"
+      "Ensure human review for context and design while using AI to supplement but not replace peer code review"
     ],
     correctAnswer: 3,
     explanation: "AI code review tools in 2025 can catch certain issues efficiently (syntax, common bugs, standards), but they lack context, domain understanding, and design judgment. The Scrum Master helps the team use AI to augment human review, not replace the learning and quality benefits of peer review.",
@@ -5592,7 +5592,7 @@ const psm2Questions = [
       "Security complexity should be included in estimation and Definition of Done",
       "The team may need to develop new security skills and practices",
       "This reflects modern security requirements and teams must adapt",
-      "All of the above"
+      "Include security complexity in planning and Done, develop new security skills, and adapt to modern requirements"
     ],
     correctAnswer: 3,
     explanation: "Zero trust architecture is becoming standard in 2025. This significantly affects how teams build and test software. The Scrum Master helps the team develop required capabilities, include security work in their Definition of Done and planning, and maintain sustainable pace despite increased complexity.",
@@ -5606,7 +5606,7 @@ const psm2Questions = [
       "Support this as ethical AI is important for long-term product success",
       "Help the team understand these become requirements that affect architecture and testing",
       "Ensure Responsible AI principles are reflected in the Definition of Done",
-      "All of the above"
+      "Support Responsible AI principles, help translate to technical requirements, and include in Definition of Done"
     ],
     correctAnswer: 3,
     explanation: "Responsible AI is increasingly required by regulation and ethics in 2025. The Scrum Master helps translate these principles into concrete practices: explainable models, audit trails, human-in-the-loop design, bias testing. These quality attributes belong in the Definition of Done.",
@@ -5620,7 +5620,7 @@ const psm2Questions = [
       "Ensure the 4-day worker attends all Scrum events even if some fall on their off day",
       "Work with the team to find collaboration patterns that work for everyone",
       "The team should adjust their event timing to accommodate all members",
-      "Both B and C"
+      "Facilitate finding collaboration patterns that maintain effectiveness while respecting individual arrangements"
     ],
     correctAnswer: 3,
     explanation: "Flexible work arrangements are increasingly common in 2025. The Scrum Master facilitates the team finding approaches that maintain collaboration while respecting individual arrangements. This might involve event timing adjustments, async practices, or other solutions the team identifies.",
@@ -5634,7 +5634,7 @@ const psm2Questions = [
       "Split into specialized sub-teams (app team and ML team)",
       "Develop cross-functional skills so everyone can contribute to both",
       "Use pairing and mob programming to share knowledge across specialties",
-      "Both B and C"
+      "Develop cross-functional skills and use pairing and mob programming to maintain knowledge sharing across specialties"
     ],
     correctAnswer: 3,
     explanation: "Modern products often span multiple technical domains. Rather than creating silos, the Scrum Master helps the team maintain cross-functionality through knowledge sharing, pairing, and collaborative work. Team members develop T-shaped skills: deep in one area, capable in others.",
@@ -5648,7 +5648,7 @@ const psm2Questions = [
       "Help the team include cost optimization in their Definition of Done",
       "Facilitate the team understanding and monitoring their infrastructure costs",
       "Support the team making cost-conscious technical decisions",
-      "All of the above"
+      "Include cost optimization in Done, facilitate cost understanding and monitoring, and support cost-conscious decisions"
     ],
     correctAnswer: 3,
     explanation: "FinOps and cloud cost optimization are important in 2025. The Scrum Master helps teams take ownership of their infrastructure costs: monitoring, optimization, right-sizing, and cost-conscious architecture decisions. This is part of sustainable development and responsible resource use.",
@@ -5662,7 +5662,7 @@ const psm2Questions = [
       "Support this as retention is valuable for the product",
       "Ensure the team builds the analytics capabilities and feature delivery mechanisms",
       "Question the ethics of differential treatment based on predicted behavior",
-      "Both B and C"
+      "Ensure the team builds required capabilities while questioning ethical implications of predictive behavior-based treatment"
     ],
     correctAnswer: 3,
     explanation: "Predictive analytics for customer retention is common in 2025, but raises ethical questions. The Scrum Master helps the team build required capabilities while facilitating discussion about ethical use of prediction, fairness, and transparency. Value maximization includes ethical considerations.",
@@ -5690,7 +5690,7 @@ const psm2Questions = [
       "The team needs to build comprehensive observability into their products",
       "Production monitoring capabilities should be included in the Definition of Done",
       "The team should use production insights to improve their development practices",
-      "All of the above"
+      "Build comprehensive observability, include monitoring in Done, and use production insights to improve development"
     ],
     correctAnswer: 3,
     explanation: "Shift right and observability are critical in 2025. Teams must build monitoring, logging, tracing, and alerting as integral parts of their work, not afterthoughts. Production insights inform better product decisions and development practices. This is part of Definition of Done.",
@@ -5704,7 +5704,7 @@ const psm2Questions = [
       "This creates significant technical complexity that affects Sprint planning",
       "The team needs capabilities in ML, experimentation, and large-scale data processing",
       "Consider privacy implications and user consent requirements",
-      "All of the above"
+      "Consider technical complexity, develop required ML capabilities, and address privacy implications with proper consent"
     ],
     correctAnswer: 3,
     explanation: "AI-driven personalization is common in 2025 but technically complex. The Scrum Master helps the team develop required capabilities, factor complexity into planning, and ensure ethical implementation with proper privacy controls. This affects architecture, testing, and Definition of Done.",
@@ -5718,7 +5718,7 @@ const psm2Questions = [
       "Ensure the team develops infrastructure-as-code skills",
       "Infrastructure changes should be reviewed and tested like application code",
       "This can improve deployment reliability and transparency",
-      "All of the above"
+      "Ensure infrastructure-as-code skills, apply code review standards to infrastructure, and recognize improved reliability"
     ],
     correctAnswer: 3,
     explanation: "GitOps is a modern deployment practice gaining traction in 2025. The Scrum Master helps the team adopt practices that improve their effectiveness: version-controlled infrastructure, automated deployment, and treating infrastructure with the same quality standards as application code.",
@@ -5732,7 +5732,7 @@ const psm2Questions = [
       "Model retraining should be automated and not require Sprint-by-Sprint attention",
       "The team should monitor model performance and retrain when drift is detected",
       "MLOps practices make this a sustainable part of product maintenance",
-      "All of the above"
+      "Automate retraining, monitor for drift, and make MLOps practices sustainable parts of product maintenance"
     ],
     correctAnswer: 3,
     explanation: "ML model lifecycle management (MLOps) is essential in 2025. The team should automate retraining, monitor for model drift, and maintain models as part of their product responsibility. This becomes part of sustainable product development, not manual Sprint work.",
@@ -5746,7 +5746,7 @@ const psm2Questions = [
       "Support standardization as it enables better organizational visibility",
       "Ensure the team has agency in how they implement the standard",
       "Help the team understand benefits of shared observability practices",
-      "All of the above"
+      "Support standardization benefits while ensuring implementation autonomy and helping the team understand shared practice value"
     ],
     correctAnswer: 3,
     explanation: "Organizational standards like OpenTelemetry can benefit teams in 2025 while respecting autonomy. The Scrum Master helps the team understand benefits (shared tooling, knowledge transfer, integration) while ensuring they have flexibility in implementation that serves their needs.",
@@ -5760,7 +5760,7 @@ const psm2Questions = [
       "Facilitate discussion about the value-complexity tradeoff",
       "Help the team explore approaches that make progressive disclosure more manageable",
       "Ensure the team and Product Owner understand each other's constraints and goals",
-      "All of the above"
+      "Facilitate value-complexity discussion, explore manageable approaches, and ensure mutual understanding of constraints"
     ],
     correctAnswer: 3,
     explanation: "This represents a common tension between UX goals and technical complexity. The Scrum Master facilitates collaborative problem-solving where both perspectives are valued. Modern frameworks and component libraries often have patterns that reduce progressive disclosure complexity.",
@@ -5774,7 +5774,7 @@ const psm2Questions = [
       "Support the team experimenting with the practice",
       "Help them understand trunk-based development requires strong testing and CI/CD",
       "Facilitate discussion about practices that maintain quality with trunk-based development",
-      "All of the above"
+      "Support experimentation, explain quality requirements, and facilitate discussions about maintaining quality practices"
     ],
     correctAnswer: 3,
     explanation: "Trunk-based development is increasingly common in 2025 for faster integration. The Scrum Master helps the team understand it requires different quality practices: comprehensive automated testing, small changes, feature flags, and strong CI/CD. Facilitate learning and experimentation.",
@@ -5788,7 +5788,7 @@ const psm2Questions = [
       "Add regulatory compliance requirements to the Definition of Done",
       "Include compliance validation in their Sprint work",
       "Collaborate with legal and compliance teams as needed",
-      "All of the above"
+      "Add compliance to Done, include validation in Sprints, and collaborate with organizational compliance resources"
     ],
     correctAnswer: 3,
     explanation: "AI regulation is rapidly expanding in 2025. Teams must treat compliance as integral to done work, not separate. This means understanding requirements, building in compliance from the start, validating compliance, and collaborating with organizational compliance resources.",
@@ -5802,7 +5802,7 @@ const psm2Questions = [
       "This reduces custom development but increases integration and vendor management complexity",
       "The team needs skills in API integration, vendor evaluation, and abstraction patterns",
       "Vendor dependencies and limitations should be visible in Sprint planning",
-      "All of the above"
+      "Consider integration complexity and vendor management, develop API skills, and make dependencies visible in planning"
     ],
     correctAnswer: 3,
     explanation: "Composable architecture is a major trend in 2025. The Scrum Master helps the team understand implications: different skill requirements, dependency management, vendor risk, and integration complexity. Planning must account for external dependencies and potential limitations.",
@@ -5816,7 +5816,7 @@ const psm2Questions = [
       "This can improve test coverage if used thoughtfully",
       "AI-generated tests still need human review for quality and relevance",
       "The team maintains accountability for test quality regardless of how tests are generated",
-      "All of the above"
+      "Support thoughtful use for coverage, require human review for quality, and maintain team accountability regardless of generation"
     ],
     correctAnswer: 3,
     explanation: "AI test generation tools are emerging in 2025. They can augment human testing but require critical review: Do tests actually validate important behavior? Are assertions meaningful? The Scrum Master ensures the team understands they own test quality regardless of generation method.",
@@ -5830,7 +5830,7 @@ const psm2Questions = [
       "Support this if metrics focus on removing friction and impediments, not evaluating individuals",
       "Help teams provide feedback on what would actually improve their experience",
       "Warn against using DevEx metrics for individual performance evaluation",
-      "All of the above"
+      "Support friction removal metrics, help teams provide improvement feedback, and warn against individual performance evaluation"
     ],
     correctAnswer: 3,
     explanation: "DevEx is gaining attention in 2025. The Scrum Master supports measuring team friction and impediments while preventing misuse of metrics for individual evaluation. Teams should have input on what's measured and how improvements are identified. Focus should be on systemic improvement.",
@@ -5844,7 +5844,7 @@ const psm2Questions = [
       "Testing becomes more complex due to distributed execution environments",
       "The Definition of Done should include edge deployment and testing",
       "The team needs to understand edge computing constraints and capabilities",
-      "All of the above"
+      "Recognize testing complexity, include edge deployment in Done, and develop understanding of edge constraints"
     ],
     correctAnswer: 3,
     explanation: "Edge computing is increasingly important in 2025 for latency and privacy. It creates new complexity: testing across diverse edge environments, managing distributed deployments, handling intermittent connectivity. The team must develop appropriate capabilities and quality standards.",
@@ -5858,7 +5858,7 @@ const psm2Questions = [
       "Participate in value stream mapping to identify organizational impediments",
       "Help the team understand their role in the overall value stream",
       "Use insights from value stream mapping to improve team and organizational practices",
-      "All of the above"
+      "Participate in mapping, help team understand their role, and use insights to improve team and organizational practices"
     ],
     correctAnswer: 3,
     explanation: "Value stream optimization is key to organizational agility in 2025. The Scrum Master helps apply these insights: identifying waste, reducing handoffs, improving flow, and addressing impediments beyond the team. This connects team-level Scrum to organizational effectiveness.",
@@ -5872,7 +5872,7 @@ const psm2Questions = [
       "This improves security and should be supported",
       "Ensure blocked deployments become visible impediments to address",
       "The team should include IaC security in their Definition of Done to prevent blocks",
-      "Both B and C"
+      "Make blocked deployments visible impediments and include IaC security in Done to prevent recurring blocks"
     ],
     correctAnswer: 3,
     explanation: "Automated security scanning is standard in 2025. Rather than being blocked repeatedly, teams should shift left: include security in Definition of Done, address issues during development, and treat any blocks as learning opportunities to improve practices. Prevention is better than detection.",
@@ -5886,7 +5886,7 @@ const psm2Questions = [
       "Choose explainable AI models even if less accurate than black-box models",
       "Build audit trails and explanation interfaces",
       "Include explainability requirements in Definition of Done",
-      "All of the above"
+      "Choose explainable models, build audit trails and explanation interfaces, and include explainability in Definition of Done"
     ],
     correctAnswer: 3,
     explanation: "Algorithmic transparency is increasingly regulated in 2025, especially in healthcare. Teams must make architectural choices (explainable models), build required capabilities (audit trails, explanations), and treat transparency as a quality attribute in Definition of Done.",
@@ -5900,7 +5900,7 @@ const psm2Questions = [
       "This creates complex testing scenarios across different contexts",
       "Privacy implications of collecting and using contextual data",
       "The technical complexity of context-aware systems",
-      "All of the above"
+      "Recognize complex testing scenarios, address privacy implications of context data, and understand technical complexity"
     ],
     correctAnswer: 3,
     explanation: "Context-aware AI is powerful in 2025 but complex. The Scrum Master helps the team understand implications: privacy requirements, testing complexity, edge cases, and technical architecture challenges. These factors affect Sprint planning, Definition of Done, and team capabilities.",
@@ -5914,7 +5914,7 @@ const psm2Questions = [
       "This represents innovative use of AI tools",
       "Ensure the human developers maintain understanding and control",
       "Monitor whether this actually improves outcomes or creates over-reliance on AI",
-      "All of the above"
+      "Support innovative AI use while ensuring developers maintain understanding and control, measuring actual outcomes"
     ],
     correctAnswer: 3,
     explanation: "AI as an active development partner is emerging in 2025. The Scrum Master encourages experimentation while ensuring developers maintain skills, understanding, and critical thinking. Measure whether this improves or degrades learning, quality, and team capability.",
@@ -5928,7 +5928,7 @@ const psm2Questions = [
       "Help the team understand carbon-aware computing and efficient algorithms",
       "Include energy efficiency considerations in technical decision-making",
       "Add environmental impact metrics to the team's visibility",
-      "All of the above"
+      "Help understand carbon-aware computing, include efficiency in decisions, and add environmental metrics to visibility"
     ],
     correctAnswer: 3,
     explanation: "Green software engineering is increasingly important in 2025. The Scrum Master helps teams develop awareness and practices: efficient algorithms, carbon-aware workload scheduling, right-sized infrastructure, and visibility into environmental impact. This aligns with sustainable development.",
@@ -5942,7 +5942,7 @@ const psm2Questions = [
       "Don't implement AI support if there's any risk of errors",
       "Implement AI support with appropriate guardrails: human escalation, confidence thresholds, monitoring",
       "Facilitate discussion about balancing innovation with risk management",
-      "Both B and C"
+      "Facilitate finding approaches that enable innovation while managing risk through guardrails and monitoring"
     ],
     correctAnswer: 3,
     explanation: "AI in customer-facing roles is increasingly common in 2025 but carries risks. The Scrum Master facilitates finding approaches that enable innovation while managing risk: progressive rollout, human oversight, confidence thresholds, easy escalation, and monitoring. Balance innovation with responsible deployment.",
