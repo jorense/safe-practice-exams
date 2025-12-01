@@ -5951,4 +5951,5 @@ const psm2Questions = [
   }
 ];
 
+export { psm2Questions };
 export default psm2Questions;
