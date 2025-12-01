@@ -1,19 +1,14 @@
-// Professional Scrum Master II (PSM 2) Practice Exam Questions
-// Comprehensive question bank with length bias prevention and professional-grade content
-// Domain Distribution: Scrum Theory & Principles (25%), Self-Managing Teams (25%), 
-// Facilitating Events (20%), Product Value (20%), Organizational Design (10%)
-
-export const psm2Questions = [
+const psm2Questions = [
   {
     id: 1,
     question: "A Development Team member tells the Scrum Master that another team member is not pulling their weight. How should the Scrum Master respond?",
     options: [
-      "Schedule a private meeting with the underperforming team member to discuss performance concerns directly",
       "Encourage the team member to raise the concern during the Sprint Retrospective for team discussion",
       "Document the concern and escalate it to management for appropriate corrective action",
-      "Reassign work from the underperforming member to more productive team members"
+      "Reassign work from the underperforming member to more productive team members",
+      "Schedule a private meeting with the underperforming team member to discuss performance concerns directly"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master should facilitate team self-management by encouraging the team member to bring concerns to the Retrospective. This respects the team's autonomy to address their own dynamics while providing a safe forum for discussion. The Scrum Master coaches the team on how to have difficult conversations rather than solving problems for them.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -22,12 +17,12 @@ export const psm2Questions = [
     id: 2,
     question: "During Sprint Planning, the Product Owner wants to add an urgent item that wasn't in the Product Backlog. What should happen?",
     options: [
-      "The Development Team should accommodate the urgent request to maintain stakeholder relationships",
       "The Product Owner adds it to the Product Backlog and discusses it with the Development Team",
       "The Scrum Master should reject the addition to protect the team from scope creep",
-      "The item should be deferred automatically until the next Sprint Planning session"
+      "The item should be deferred automatically until the next Sprint Planning session",
+      "The Development Team should accommodate the urgent request to maintain stakeholder relationships"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner can add items to the Product Backlog at any time. During Sprint Planning, if this item is truly valuable, the Product Owner can discuss it with the Development Team. The team then decides if they can include it in the Sprint Backlog based on their capacity and Sprint Goal, respecting their self-management.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -50,12 +45,12 @@ export const psm2Questions = [
     id: 4,
     question: "A Product Owner is struggling to engage stakeholders in Product Backlog refinement. How should the Scrum Master help?",
     options: [
-      "Take over stakeholder communication to ensure consistent engagement with Product Backlog activities",
       "Coach the Product Owner on techniques to better engage and collaborate with stakeholders",
       "Schedule mandatory stakeholder meetings and enforce attendance policies across the organization",
-      "Recommend replacing the Product Owner with someone who has stronger stakeholder relationships"
+      "Recommend replacing the Product Owner with someone who has stronger stakeholder relationships",
+      "Take over stakeholder communication to ensure consistent engagement with Product Backlog activities"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master serves the Product Owner by coaching them on effective stakeholder engagement techniques. This builds the Product Owner's capability rather than creating dependency. The Scrum Master facilitates understanding but doesn't take over the Product Owner's accountabilities.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -78,12 +73,12 @@ export const psm2Questions = [
     id: 6,
     question: "What should a Scrum Master do when a Development Team wants to skip the Sprint Retrospective because they feel there's nothing to improve?",
     options: [
-      "Allow the team to skip the event since Scrum Teams are self-managing entities",
       "Facilitate the Retrospective and help the team discover continuous improvement opportunities",
       "Replace the Retrospective with additional refinement time to maximize productivity",
-      "Schedule the Retrospective but make it optional for team members to attend"
+      "Schedule the Retrospective but make it optional for team members to attend",
+      "Allow the team to skip the event since Scrum Teams are self-managing entities"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Sprint Retrospective is mandatory in Scrum. The belief that there's nothing to improve indicates a lack of inspection mindset. The Scrum Master should facilitate the event and use techniques to help the team discover improvement opportunities, reinforcing the continuous improvement pillar of Scrum.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -92,12 +87,12 @@ export const psm2Questions = [
     id: 7,
     question: "A Development Team is having difficulty creating a meaningful Sprint Goal. What is the best approach for the Scrum Master?",
     options: [
-      "Create the Sprint Goal for the team based on the Sprint Backlog items selected",
       "Coach the team on creating cohesive Sprint Goals that provide focus and flexibility",
       "Suggest postponing Sprint Planning until the Product Owner provides clearer direction",
-      "Recommend selecting fewer items so the team can more easily identify a goal"
+      "Recommend selecting fewer items so the team can more easily identify a goal",
+      "Create the Sprint Goal for the team based on the Sprint Backlog items selected"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master should coach the Development Team on crafting meaningful Sprint Goals. A good Sprint Goal provides coherence and focus while allowing flexibility in implementation. The Scrum Master facilitates understanding of how the Sprint Goal guides the team's work throughout the Sprint.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -134,12 +129,12 @@ export const psm2Questions = [
     id: 10,
     question: "What is the most important consideration when a Scrum Team is deciding whether to adopt additional practices beyond Scrum?",
     options: [
-      "Whether the practice is approved by industry standards or certification bodies",
       "Whether the practice helps the team achieve their goals without contradicting Scrum",
       "Whether other successful Scrum Teams in the organization use the practice",
-      "Whether the practice can be implemented without additional training costs"
+      "Whether the practice can be implemented without additional training costs",
+      "Whether the practice is approved by industry standards or certification bodies"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Teams can add practices that help them achieve their goals as long as they don't contradict Scrum's principles and framework. The key is empiricism—the team should experiment, inspect, and adapt based on what helps them deliver value effectively within Scrum's accountabilities and events.",
     domain: "Scrum Theory & Principles",
     difficulty: "Foundation"
@@ -218,12 +213,12 @@ export const psm2Questions = [
     id: 16,
     question: "What is the primary purpose of the Daily Scrum from the Scrum Master's perspective?",
     options: [
+      "To ensure all team members are working on their assigned tasks daily",
       "To collect status updates that can be reported to management and stakeholders",
       "To enable the Development Team to synchronize work and replan for the next day",
-      "To identify impediments that the Scrum Master needs to resolve for the team",
-      "To ensure all team members are working on their assigned tasks daily"
+      "To identify impediments that the Scrum Master needs to resolve for the team"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Daily Scrum's purpose is for the Development Team to inspect progress toward the Sprint Goal and adapt their plan for the next 24 hours. It's the team's planning meeting, not a status report. The Scrum Master ensures the team understands this purpose.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -302,12 +297,12 @@ export const psm2Questions = [
     id: 22,
     question: "How should a Scrum Master help a team that struggles with creating a useful Definition of Done?",
     options: [
-      "Provide the team with industry standard Definition of Done templates to adopt immediately",
       "Facilitate discussions about quality and help the team define their own standards",
       "Require the team to adopt the organizational Definition of Done without modifications",
-      "Create the Definition of Done based on the Scrum Master's experience with other teams"
+      "Create the Definition of Done based on the Scrum Master's experience with other teams",
+      "Provide the team with industry standard Definition of Done templates to adopt immediately"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master facilitates the team's creation of their Definition of Done by helping them think through quality standards, dependencies, and organizational requirements. The team must own their Definition of Done for commitment to quality, though it must meet organizational standards as a baseline.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -414,12 +409,12 @@ export const psm2Questions = [
     id: 30,
     question: "What should a Scrum Master do when multiple teams are working on the same product with separate Product Owners?",
     options: [
-      "Maintain the current structure and facilitate coordination between Product Owners",
       "Coach the organization that a product should have one Product Owner accountable for value",
       "Create a Product Owner committee to make collaborative decisions about the product",
-      "Assign each team their own product area to eliminate coordination needs"
+      "Assign each team their own product area to eliminate coordination needs",
+      "Maintain the current structure and facilitate coordination between Product Owners"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "One product should have one Product Owner accountable for maximizing value. Multiple Product Owners create conflicting priorities and diffuse accountability. The Scrum Master should coach the organization on this principle, though the Product Owner may delegate authority or work with subject matter experts.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -456,12 +451,12 @@ export const psm2Questions = [
     id: 33,
     question: "What should a Scrum Master do when a Development Team treats the Sprint Backlog as a contract that cannot change?",
     options: [
-      "Support the team's commitment to completing everything they planned during Sprint Planning",
       "Coach the team that the Sprint Backlog is a flexible plan that can adapt during Sprint",
       "Work with the Product Owner to reduce scope changes that disrupt team plans",
-      "Suggest shorter Sprints to reduce the impact of changing requirements on commitments"
+      "Suggest shorter Sprints to reduce the impact of changing requirements on commitments",
+      "Support the team's commitment to completing everything they planned during Sprint Planning"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Sprint Backlog is a living artifact that the Development Team can update as they learn more during the Sprint. While the Sprint Goal remains fixed, how the team achieves it can adapt. The Scrum Master coaches on balancing commitment to the Sprint Goal with flexibility in implementation.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -540,12 +535,12 @@ export const psm2Questions = [
     id: 39,
     question: "A Development Team wants to use pair programming but management objects to 'two people doing one person's work.' What should the Scrum Master do?",
     options: [
-      "Support management's concern and discourage pair programming to maximize individual productivity",
       "Educate management on how pair programming improves quality and knowledge sharing",
       "Allow the team to pair program without informing management to avoid conflict",
-      "Suggest the team try pair programming only for complex work to compromise"
+      "Suggest the team try pair programming only for complex work to compromise",
+      "Support management's concern and discourage pair programming to maximize individual productivity"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master should educate management about the benefits of pair programming: improved quality, knowledge sharing, reduced defects, and better design. This helps management understand that the Development Team should be empowered to choose their practices based on effectiveness.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -554,12 +549,12 @@ export const psm2Questions = [
     id: 40,
     question: "How should a Scrum Master handle a situation where a Development Team wants to cancel the Daily Scrum when everyone is remote?",
     options: [
-      "Allow cancellation as remote work makes Daily Scrums less effective and valuable",
-      "Coach the team on maintaining Daily Scrum regardless of location for synchronization",
       "Suggest replacing Daily Scrum with asynchronous written status updates instead",
-      "Recommend scheduling Daily Scrum only on days when coordination is needed"
+      "Recommend scheduling Daily Scrum only on days when coordination is needed",
+      "Allow cancellation as remote work makes Daily Scrums less effective and valuable",
+      "Coach the team on maintaining Daily Scrum regardless of location for synchronization"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Daily Scrum is even more important for remote teams as it provides regular synchronization. The Scrum Master should help the team understand its value and find effective ways to conduct it remotely. Location doesn't change the need for daily planning and coordination.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -624,12 +619,12 @@ export const psm2Questions = [
     id: 45,
     question: "A Development Team wants to create comprehensive documentation for every feature. How should the Scrum Master respond?",
     options: [
-      "Discourage this as comprehensive documentation contradicts agile principles",
       "Help the team define what documentation is valuable and part of Done",
       "Support the initiative as documentation improves long-term maintainability",
-      "Suggest creating documentation only for complex features to save time"
+      "Suggest creating documentation only for complex features to save time",
+      "Discourage this as comprehensive documentation contradicts agile principles"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master helps the team think about documentation as part of their Definition of Done. If documentation is valuable, it should be included. The team decides what level of documentation is necessary and valuable, not following a blanket rule of more or less documentation.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -638,12 +633,12 @@ export const psm2Questions = [
     id: 46,
     question: "How should a Scrum Master handle a Development Team that wants to work in specialized silos rather than collaboratively?",
     options: [
-      "Allow specialization if it increases individual productivity and technical excellence",
       "Coach the team on cross-functional collaboration and shared ownership benefits",
       "Reorganize the team to group similar specialists together for better efficiency",
-      "Create rotation schedules to force specialists to work in different areas"
+      "Create rotation schedules to force specialists to work in different areas",
+      "Allow specialization if it increases individual productivity and technical excellence"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master coaches on the benefits of cross-functional collaboration: knowledge sharing, reduced bottlenecks, flexibility, and collective ownership. Rather than forcing or preventing specialization, they help the team understand how collaboration improves outcomes and sustainability.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -694,12 +689,12 @@ export const psm2Questions = [
     id: 50,
     question: "What should a Scrum Master do when management asks them to work with multiple Scrum Teams simultaneously?",
     options: [
+      "Suggest hiring additional Scrum Masters to maintain one-to-one team ratios",
       "Accept the assignment as Scrum Masters can effectively serve multiple teams",
       "Evaluate capacity and discuss trade-offs with management about effectiveness",
-      "Decline the request as one Scrum Master should only serve one team",
-      "Suggest hiring additional Scrum Masters to maintain one-to-one team ratios"
+      "Decline the request as one Scrum Master should only serve one team"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Scrum Master should be honest about their capacity and discuss with management how serving multiple teams might impact effectiveness. While one Scrum Master can serve multiple teams, it depends on team maturity, organizational impediments, and the Scrum Master's experience. The conversation should focus on effectiveness over arbitrary ratios.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -722,12 +717,12 @@ export const psm2Questions = [
     id: 52,
     question: "How should a Scrum Master handle a Product Owner who equates story points with hours worked?",
     options: [
-      "Support this approach as it provides clear metrics for tracking team productivity",
       "Educate the Product Owner that story points represent complexity, not time",
       "Suggest the team switch to hour-based estimation for clearer communication",
-      "Have the team stop using story points and estimate in t-shirt sizes instead"
+      "Have the team stop using story points and estimate in t-shirt sizes instead",
+      "Support this approach as it provides clear metrics for tracking team productivity"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Story points represent relative complexity, effort, and risk—not time. The Scrum Master should educate the Product Owner on this distinction to prevent misuse of velocity and story points as productivity metrics, which undermines their value as planning tools.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -806,12 +801,12 @@ export const psm2Questions = [
     id: 58,
     question: "What should a Scrum Master do when a Development Team member consistently arrives late to Daily Scrums?",
     options: [
+      "Report the behavior to management for disciplinary action",
       "Privately address the behavior with the individual team member about commitment",
       "Facilitate the team discussing and establishing their own Daily Scrum agreements",
-      "Start Daily Scrums later to accommodate the team member's schedule",
-      "Report the behavior to management for disciplinary action"
+      "Start Daily Scrums later to accommodate the team member's schedule"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Daily Scrum belongs to the Development Team. The Scrum Master should facilitate the team discussing their working agreements, including punctuality. This builds team self-management rather than the Scrum Master enforcing rules or addressing individuals directly.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -890,12 +885,12 @@ export const psm2Questions = [
     id: 64,
     question: "A Product Owner wants to use the Sprint Review to evaluate individual team member performance. What should the Scrum Master do?",
     options: [
+      "Facilitate a discussion where team members can respond to Product Owner assessments",
       "Allow this as Product Owner feedback helps team members improve their skills",
       "Explain that Sprint Review focuses on the product, not individual performance",
-      "Suggest the Product Owner provide individual feedback in private one-on-one meetings",
-      "Facilitate a discussion where team members can respond to Product Owner assessments"
+      "Suggest the Product Owner provide individual feedback in private one-on-one meetings"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Sprint Review is about inspecting the product increment and adapting the Product Backlog, not evaluating individuals. The Scrum Master should educate the Product Owner on the purpose of Sprint Review and help redirect focus to product and value delivery.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -918,12 +913,12 @@ export const psm2Questions = [
     id: 66,
     question: "A Development Team is spending more than 10% of their Sprint capacity on Product Backlog refinement. What should the Scrum Master advise?",
     options: [
-      "Immediately reduce refinement time to stay within the recommended 10% guideline",
       "Explore why more time is needed and help the team find more efficient approaches",
       "Suggest the Product Owner do more refinement independently to reduce team time",
-      "Accept this as necessary if it helps the team better understand upcoming work"
+      "Accept this as necessary if it helps the team better understand upcoming work",
+      "Immediately reduce refinement time to stay within the recommended 10% guideline"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The 10% guideline isn't a strict rule. If a team needs more time, the Scrum Master should help them understand why and find more efficient approaches. However, excessive refinement time might indicate unclear requirements, lack of Product Owner availability, or inefficient refinement practices.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -946,12 +941,12 @@ export const psm2Questions = [
     id: 68,
     question: "What should a Scrum Master do when the Development Team and Product Owner disagree about whether work meets the Definition of Done?",
     options: [
-      "Make a final decision based on objective assessment of the Definition of Done",
       "Facilitate discussion to ensure shared understanding of the Definition of Done",
       "Side with the Development Team as they own the Definition of Done",
-      "Allow the Product Owner to make the final determination about quality"
+      "Allow the Product Owner to make the final determination about quality",
+      "Make a final decision based on objective assessment of the Definition of Done"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Disagreement suggests lack of shared understanding about the Definition of Done. The Scrum Master should facilitate discussion to clarify the definition and how it applies to the specific work. The goal is consensus on what Done means, not adjudication.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -1002,12 +997,12 @@ export const psm2Questions = [
     id: 72,
     question: "What should a Scrum Master do when multiple teams working on the same product have different Definitions of Done?",
     options: [
+      "Standardize on the most rigorous Definition of Done across all teams",
       "Allow each team to maintain their own Definition of Done for flexibility",
       "Facilitate creating a shared Definition of Done that all teams must meet",
-      "Have teams create a minimal shared baseline with team-specific additions",
-      "Standardize on the most rigorous Definition of Done across all teams"
+      "Have teams create a minimal shared baseline with team-specific additions"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "When multiple teams work on the same product, they need a shared Definition of Done to ensure integration and consistent quality. The Scrum Master should facilitate creating this shared understanding, though teams can have additional standards beyond the baseline.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -1030,12 +1025,12 @@ export const psm2Questions = [
     id: 74,
     question: "A Product Owner wants to change the Definition of Done mid-Sprint to exclude certain quality criteria. What should the Scrum Master do?",
     options: [
-      "Allow the change to help the team meet their Sprint Goal",
       "Explain that the Definition of Done shouldn't be lowered during a Sprint",
       "Facilitate a team discussion about whether to accept the change",
-      "Suggest creating a separate Definition of Done for this Sprint only"
+      "Suggest creating a separate Definition of Done for this Sprint only",
+      "Allow the change to help the team meet their Sprint Goal"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Definition of Done represents the organization's quality standard and shouldn't be lowered mid-Sprint. If the Sprint Goal is at risk, the team should discuss reducing scope or potentially canceling the Sprint, but maintaining quality standards is essential.",
     domain: "Scrum Theory & Principles",
     difficulty: "Foundation"
@@ -1044,12 +1039,12 @@ export const psm2Questions = [
     id: 75,
     question: "What should a Scrum Master do when a Development Team member refuses to participate in Retrospectives?",
     options: [
-      "Make attendance mandatory and escalate non-compliance to management",
       "Understand why they're refusing and address underlying concerns",
       "Allow them to skip Retrospectives if they don't have improvement suggestions",
-      "Ask the team to vote on whether attendance should be optional"
+      "Ask the team to vote on whether attendance should be optional",
+      "Make attendance mandatory and escalate non-compliance to management"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Refusal to attend suggests underlying issues—lack of psychological safety, previous negative experiences, or misunderstanding of purpose. The Scrum Master should understand these concerns and work to address them, creating conditions for willing participation.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -1058,12 +1053,12 @@ export const psm2Questions = [
     id: 76,
     question: "How should a Scrum Master handle requests from other departments for the Development Team to do 'quick favors'?",
     options: [
+      "Create a separate backlog for these requests to manage them transparently",
       "Politely decline all requests to protect the team's Sprint commitment",
       "Coach the organization on working through the Product Owner for prioritization",
-      "Allow small requests that take less than a day of team effort",
-      "Create a separate backlog for these requests to manage them transparently"
+      "Allow small requests that take less than a day of team effort"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "All work should flow through the Product Backlog and Product Owner for prioritization. The Scrum Master should educate the organization on this principle while helping the Product Owner manage stakeholder expectations and requests effectively.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -1086,12 +1081,12 @@ export const psm2Questions = [
     id: 78,
     question: "What should a Scrum Master do when the Product Owner and stakeholders use the Sprint Review as a status meeting?",
     options: [
+      "Have the team demonstrate only completed work without discussion",
       "Allow this as it keeps stakeholders informed about progress",
       "Facilitate the Sprint Review to focus on product inspection and adaptation",
-      "Suggest separate status meetings to address stakeholder information needs",
-      "Have the team demonstrate only completed work without discussion"
+      "Suggest separate status meetings to address stakeholder information needs"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Sprint Review is for inspecting the increment and adapting the Product Backlog through collaboration. The Scrum Master should facilitate the event to encourage interaction, feedback, and collaborative planning rather than passive status reporting.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -1156,12 +1151,12 @@ export const psm2Questions = [
     id: 83,
     question: "How should a Scrum Master handle a Product Owner who consistently prioritizes new features over fixing known defects?",
     options: [
+      "Allocate a fixed percentage of each Sprint to defect fixes automatically",
       "Respect Product Owner authority and don't interfere with prioritization decisions",
       "Coach the Product Owner on the long-term consequences of accumulating technical debt",
-      "Have the Development Team fix defects without Product Owner knowledge",
-      "Allocate a fixed percentage of each Sprint to defect fixes automatically"
+      "Have the Development Team fix defects without Product Owner knowledge"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Scrum Master should coach the Product Owner on understanding how defects impact future velocity, quality, and customer satisfaction. This helps the Product Owner make informed prioritization decisions that balance new features with sustainability.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1170,12 +1165,12 @@ export const psm2Questions = [
     id: 84,
     question: "A Development Team wants to adopt test-driven development but lacks the skills. What should the Scrum Master do?",
     options: [
+      "Recommend postponing TDD until team members gain more experience",
       "Hire consultants to implement test-driven development for the team",
       "Help the team acquire skills through training, coaching, or pairing with experts",
-      "Suggest they focus on automated testing after development instead",
-      "Recommend postponing TDD until team members gain more experience"
+      "Suggest they focus on automated testing after development instead"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Scrum Master should help the team acquire needed skills rather than postponing improvements or having others do the work. This might involve arranging training, finding mentors, facilitating learning time, or bringing in coaches who can teach while doing.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -1198,12 +1193,12 @@ export const psm2Questions = [
     id: 86,
     question: "How should a Scrum Master respond when the Development Team wants to spend a Sprint on technical exploration without delivering features?",
     options: [
-      "Support this as teams should be empowered to manage technical work",
       "Help the team articulate the value to the Product Owner for prioritization",
       "Suggest they do exploration work outside of Sprint time instead",
-      "Limit exploration to 20% of Sprint capacity to ensure feature delivery"
+      "Limit exploration to 20% of Sprint capacity to ensure feature delivery",
+      "Support this as teams should be empowered to manage technical work"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Technical exploration should be in the Product Backlog and prioritized like other work. The Scrum Master should help the Development Team articulate the value (risk reduction, better solutions, informed decisions) so the Product Owner can make prioritization decisions.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1212,12 +1207,12 @@ export const psm2Questions = [
     id: 87,
     question: "A Development Team member says the Daily Scrum is a waste of time because everyone already knows what everyone is doing. What should the Scrum Master do?",
     options: [
-      "Make Daily Scrum optional since the team is already well-coordinated",
       "Explore whether the team is truly synchronized or just assumes they are",
       "Replace Daily Scrum with an online status board to save time",
-      "Reduce Daily Scrum frequency to three times per week instead of daily"
+      "Reduce Daily Scrum frequency to three times per week instead of daily",
+      "Make Daily Scrum optional since the team is already well-coordinated"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master should explore whether the team is genuinely synchronized or making assumptions. Even well-coordinated teams benefit from daily replanning. If truly unnecessary, it might indicate team size or other issues, but removing synchronization usually reveals hidden coordination gaps.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -1226,12 +1221,12 @@ export const psm2Questions = [
     id: 88,
     question: "What should a Scrum Master do when management wants to standardize Sprint length across all teams in the organization?",
     options: [
-      "Support standardization as it simplifies organizational planning and coordination",
-      "Advocate for teams to choose Sprint length based on their specific context",
       "Suggest a compromise Sprint length that works reasonably well for most teams",
-      "Implement the standard length but allow exceptions for special circumstances"
+      "Implement the standard length but allow exceptions for special circumstances",
+      "Support standardization as it simplifies organizational planning and coordination",
+      "Advocate for teams to choose Sprint length based on their specific context"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Sprint length should be determined by each team based on their context, feedback needs, and ability to deliver Done increments. The Scrum Master should help the organization understand that team autonomy in this decision supports effectiveness, though synchronized cadence can help with coordination.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -1254,12 +1249,12 @@ export const psm2Questions = [
     id: 90,
     question: "How should a Scrum Master handle a Development Team that wants to eliminate their Definition of Done to move faster?",
     options: [
+      "Escalate to management to decide whether quality standards can be reduced",
       "Allow this temporarily to help the team catch up on overdue commitments",
       "Explain why Definition of Done is essential for maintaining sustainable quality",
-      "Suggest simplifying the Definition of Done rather than eliminating it completely",
-      "Escalate to management to decide whether quality standards can be reduced"
+      "Suggest simplifying the Definition of Done rather than eliminating it completely"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Definition of Done ensures transparency and prevents technical debt accumulation. The Scrum Master should coach the team on how eliminating it creates future problems and help them find other ways to address speed concerns, such as improving practices or adjusting forecasting.",
     domain: "Scrum Theory & Principles",
     difficulty: "Foundation"
@@ -1282,12 +1277,12 @@ export const psm2Questions = [
     id: 92,
     question: "A Development Team wants to create a 'technical debt Sprint' to address accumulated quality issues. What should the Scrum Master advise?",
     options: [
-      "Support this approach as dedicated time helps address technical debt effectively",
       "Coach the team on addressing technical debt incrementally within regular Sprints",
       "Suggest technical debt Sprints quarterly to maintain quality sustainably",
-      "Have the team create a separate technical debt backlog for tracking"
+      "Have the team create a separate technical debt backlog for tracking",
+      "Support this approach as dedicated time helps address technical debt effectively"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Technical debt should be addressed continuously within regular Sprints as part of sustainable development. Separate technical debt Sprints suggest the Definition of Done isn't being met. The Scrum Master should help the team build quality in rather than defer it.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -1324,12 +1319,12 @@ export const psm2Questions = [
     id: 95,
     question: "What should a Scrum Master do when a Development Team treats their velocity as a target to achieve?",
     options: [
+      "Use velocity targets but avoid making them part of performance evaluations",
       "Support this as velocity targets help teams improve performance consistently",
       "Coach the team that velocity is a planning tool, not a performance target",
-      "Set realistic velocity improvement goals based on historical trends",
-      "Use velocity targets but avoid making them part of performance evaluations"
+      "Set realistic velocity improvement goals based on historical trends"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Treating velocity as a target encourages gaming the numbers through inflated estimates or reduced quality. The Scrum Master should coach that velocity is a planning tool for forecasting, and the focus should be on delivering value, not hitting numbers.",
     domain: "Scrum Theory & Principles",
     difficulty: "Foundation"
@@ -1338,12 +1333,12 @@ export const psm2Questions = [
     id: 96,
     question: "How should a Scrum Master handle pressure from management to increase the Development Team's velocity?",
     options: [
-      "Work with the team to identify improvement opportunities that increase velocity",
       "Educate management that velocity is relative and not a performance metric",
       "Suggest hiring additional team members to increase overall capacity",
-      "Help the team inflate story point estimates to show velocity improvement"
+      "Help the team inflate story point estimates to show velocity improvement",
+      "Work with the team to identify improvement opportunities that increase velocity"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Velocity is team-specific and relative. The Scrum Master should educate management on focusing on value delivery and outcomes rather than velocity. Pressure to increase velocity typically leads to inflated estimates or reduced quality without actually improving delivery.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -1422,12 +1417,12 @@ export const psm2Questions = [
     id: 102,
     question: "How should a Scrum Master handle a Product Owner who creates detailed technical designs for every Product Backlog item?",
     options: [
+      "Suggest the Product Owner hire technical architects to create better designs",
       "Support this as it provides clarity and reduces ambiguity for the team",
       "Coach the Product Owner to focus on outcomes and let the team design solutions",
-      "Have the Development Team ignore the designs and implement as they see fit",
-      "Suggest the Product Owner hire technical architects to create better designs"
+      "Have the Development Team ignore the designs and implement as they see fit"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should define the what and why (outcomes and value), while the Development Team determines how (technical implementation). The Scrum Master coaches the Product Owner on trusting the team's expertise and focusing on value rather than solutions.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1436,12 +1431,12 @@ export const psm2Questions = [
     id: 103,
     question: "What should a Scrum Master do when the Development Team wants to rewrite legacy code instead of adding new features?",
     options: [
+      "Schedule the rewrite for after current feature commitments are complete",
       "Support the team's technical judgment and approve the rewrite Sprint",
       "Help the team present the business case to the Product Owner for prioritization",
-      "Suggest incremental refactoring alongside feature development instead",
-      "Schedule the rewrite for after current feature commitments are complete"
+      "Suggest incremental refactoring alongside feature development instead"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Large rewrites should be in the Product Backlog and prioritized by the Product Owner based on value. The Scrum Master helps the Development Team articulate the business value (reduced risk, faster future delivery, better quality) so informed prioritization decisions can be made.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1464,12 +1459,12 @@ export const psm2Questions = [
     id: 105,
     question: "How should a Scrum Master respond when a Development Team member is also serving as Scrum Master for another team?",
     options: [
-      "Allow this as it promotes knowledge sharing across teams in the organization",
       "Discuss the potential conflicts and impacts on both roles with the individual",
       "Require the person to choose one role to avoid conflicts of interest",
-      "Support dual roles but ensure clear time allocation between responsibilities"
+      "Support dual roles but ensure clear time allocation between responsibilities",
+      "Allow this as it promotes knowledge sharing across teams in the organization"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Being both a Development Team member and Scrum Master for different teams can create conflicts, divided attention, and challenges. The Scrum Master should facilitate discussion about these impacts with the individual and organization to find the best approach.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -1478,12 +1473,12 @@ export const psm2Questions = [
     id: 106,
     question: "A Product Owner wants to pay the Development Team bonuses for completing more story points. What should the Scrum Master advise?",
     options: [
-      "Support incentives that motivate the team to increase productivity and performance",
-      "Explain how this will likely lead to inflated estimates and gaming the system",
       "Suggest team-based bonuses rather than individual story point achievements",
-      "Recommend bonuses based on stakeholder satisfaction scores instead"
+      "Recommend bonuses based on stakeholder satisfaction scores instead",
+      "Support incentives that motivate the team to increase productivity and performance",
+      "Explain how this will likely lead to inflated estimates and gaming the system"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Paying for story points incentivizes gaming the estimation system through inflation rather than genuine improvement. The Scrum Master should educate on how this undermines the usefulness of estimates and damages collaboration by creating competitive dynamics.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -1520,12 +1515,12 @@ export const psm2Questions = [
     id: 109,
     question: "A Development Team wants to create separate 'dev' and 'test' roles within the team. What should the Scrum Master advise?",
     options: [
-      "Support role specialization if it improves efficiency and quality",
       "Coach the team that everyone is responsible for quality and testing",
       "Allow separation but require regular role rotation between team members",
-      "Suggest hiring dedicated testers to join the Development Team"
+      "Suggest hiring dedicated testers to join the Development Team",
+      "Support role specialization if it improves efficiency and quality"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "In Scrum, quality is everyone's responsibility, not relegated to specific roles. The Scrum Master should coach the team on shared ownership of quality and testing as part of their Definition of Done, preventing the creation of mini-waterfalls within Sprints.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -1534,12 +1529,12 @@ export const psm2Questions = [
     id: 110,
     question: "What should a Scrum Master do when the organization wants to evaluate Scrum Masters based on team velocity?",
     options: [
-      "Accept this metric as it reflects the Scrum Master's effectiveness",
       "Educate that velocity isn't comparable across teams or a measure of Scrum Master performance",
       "Suggest using velocity improvement trends rather than absolute numbers",
-      "Propose alternative metrics like Sprint Goal achievement rates"
+      "Propose alternative metrics like Sprint Goal achievement rates",
+      "Accept this metric as it reflects the Scrum Master's effectiveness"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Velocity is team-specific and influenced by many factors beyond Scrum Master effectiveness. Evaluating Scrum Masters on velocity creates perverse incentives. The Scrum Master should educate on focusing on team health, impediment removal, and organizational change outcomes instead.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -1562,12 +1557,12 @@ export const psm2Questions = [
     id: 112,
     question: "How should a Scrum Master handle a Product Owner who never says no to stakeholder requests?",
     options: [
-      "Respect the Product Owner's authority and don't interfere with stakeholder management",
       "Coach the Product Owner on the importance of prioritization and trade-offs",
       "Have the Development Team push back on unrealistic expectations directly",
-      "Create a stakeholder request queue with automatic acceptance criteria"
+      "Create a stakeholder request queue with automatic acceptance criteria",
+      "Respect the Product Owner's authority and don't interfere with stakeholder management"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "A Product Owner who never says no isn't effectively prioritizing or managing scope. The Scrum Master should coach them on making trade-off decisions, saying no to low-value work, and focusing on outcomes rather than satisfying all requests.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1618,12 +1613,12 @@ export const psm2Questions = [
     id: 116,
     question: "What should a Scrum Master do when the Product Owner wants to split the Product Backlog into 'must-haves' and 'nice-to-haves'?",
     options: [
-      "Support this approach as it clarifies priorities for the Development Team",
       "Coach the Product Owner that the backlog order itself represents priorities",
       "Suggest using MoSCoW prioritization with four categories instead of two",
-      "Allow categorization but ensure each category has its own ordering"
+      "Allow categorization but ensure each category has its own ordering",
+      "Support this approach as it clarifies priorities for the Development Team"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Backlog is already ordered by priority. The Scrum Master should help the Product Owner understand that creating categories can obscure true priorities and that continuous ordering provides clearer prioritization and flexibility.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1632,12 +1627,12 @@ export const psm2Questions = [
     id: 117,
     question: "A Development Team wants to work from home two days per week. How should the Scrum Master respond?",
     options: [
-      "Establish a policy requiring all team members to be present in the office",
       "Support the team's self-management in determining their working arrangements",
       "Allow remote work only for individual tasks, not collaborative work",
-      "Require Product Owner approval for any remote work arrangements"
+      "Require Product Owner approval for any remote work arrangements",
+      "Establish a policy requiring all team members to be present in the office"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Self-managing teams decide how they work. The Scrum Master should support the team determining their working arrangements while ensuring they maintain effectiveness in collaboration and communication. Remote work is compatible with Scrum when well-executed.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -1646,12 +1641,12 @@ export const psm2Questions = [
     id: 118,
     question: "How should a Scrum Master handle a Product Owner who changes priorities multiple times during a Sprint?",
     options: [
+      "Have the team refuse work on changed priorities until next Sprint",
       "Protect the Sprint by preventing any priority changes until the next Sprint",
       "Facilitate discussion about impact on the Sprint Goal with each change",
-      "Allow changes but require the Product Owner to notify stakeholders",
-      "Have the team refuse work on changed priorities until next Sprint"
+      "Allow changes but require the Product Owner to notify stakeholders"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The key consideration is the Sprint Goal. The Scrum Master should facilitate discussions about whether priority changes affect Sprint Goal achievement. If the goal becomes obsolete, Sprint cancellation might be appropriate. Otherwise, the team adapts their plan while maintaining Sprint Goal focus.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -1674,12 +1669,12 @@ export const psm2Questions = [
     id: 120,
     question: "A Development Team member complains that Sprint Retrospectives never lead to actual changes. What should the Scrum Master do?",
     options: [
-      "Take ownership of implementing the improvement actions identified in Retrospectives",
       "Facilitate better follow-through on improvement actions by the team",
       "Stop having Retrospectives until the team is ready to commit to changes",
-      "Document all improvements and report lack of progress to management"
+      "Document all improvements and report lack of progress to management",
+      "Take ownership of implementing the improvement actions identified in Retrospectives"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master should help the team improve their ability to follow through on identified improvements. This might involve better action identification, tracking, or addressing impediments to implementation. The team must own and act on improvements, not just identify them.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -1716,12 +1711,12 @@ export const psm2Questions = [
     id: 123,
     question: "A Product Owner insists on attending the entire Sprint Retrospective. What should the Scrum Master advise?",
     options: [
+      "Have separate Retrospectives with and without Product Owner attendance",
       "The Product Owner is part of the Scrum Team and should attend Retrospectives",
       "Explain benefits of Product Owner attendance while allowing team input on participation",
-      "Exclude the Product Owner to ensure the team can speak freely about issues",
-      "Have separate Retrospectives with and without Product Owner attendance"
+      "Exclude the Product Owner to ensure the team can speak freely about issues"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner is part of the Scrum Team and typically should attend Retrospectives. However, if their presence inhibits open discussion, the Scrum Master should facilitate this conversation with the team and Product Owner to find approaches that work for everyone.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -1744,12 +1739,12 @@ export const psm2Questions = [
     id: 125,
     question: "What should a Scrum Master do when a Development Team wants to adopt Kanban practices within their Sprint?",
     options: [
-      "Discourage this as it conflicts with Scrum's time-boxed iteration approach",
       "Support the team experimenting with Kanban practices if they find value",
       "Suggest the team switch fully to Kanban instead of mixing frameworks",
-      "Allow Kanban only for operational work, not feature development"
+      "Allow Kanban only for operational work, not feature development",
+      "Discourage this as it conflicts with Scrum's time-boxed iteration approach"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Teams can supplement Scrum with complementary practices like Kanban visualization, WIP limits, and flow metrics if they find them valuable. The Scrum Master should support experimentation while ensuring Scrum's accountabilities and events remain intact.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -1758,12 +1753,12 @@ export const psm2Questions = [
     id: 126,
     question: "A stakeholder complains that the Development Team is not responsive enough to urgent production issues. How should the Scrum Master respond?",
     options: [
-      "Have the team drop everything immediately when production issues arise",
       "Facilitate discussion about balancing new work with production support appropriately",
       "Create a separate on-call rotation that doesn't affect Sprint commitments",
-      "Explain that Sprint commitments take priority over production support"
+      "Explain that Sprint commitments take priority over production support",
+      "Have the team drop everything immediately when production issues arise"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master should facilitate conversations about appropriate balance between Sprint work and production support. This might involve capacity planning, response time expectations, or organizational changes. The goal is sustainable approaches that serve both needs.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -1786,12 +1781,12 @@ export const psm2Questions = [
     id: 128,
     question: "What should a Scrum Master do when the Development Team wants to create a 'Definition of Ready' for Product Backlog items?",
     options: [
-      "Discourage this as it creates handoffs and gates that contradict agile principles",
-      "Support the team defining when items are ready for Sprint Planning",
       "Explain that Definition of Done is sufficient without needing Definition of Ready",
-      "Allow Definition of Ready but ensure it doesn't create delays or bottlenecks"
+      "Allow Definition of Ready but ensure it doesn't create delays or bottlenecks",
+      "Discourage this as it creates handoffs and gates that contradict agile principles",
+      "Support the team defining when items are ready for Sprint Planning"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Definition of Ready can help teams communicate what preparation is needed for effective Sprint Planning. The Scrum Master should support this while ensuring it doesn't become a rigid gate or excuse for poor Product Owner-team collaboration during refinement.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1828,12 +1823,12 @@ export const psm2Questions = [
     id: 131,
     question: "What should a Scrum Master do when a Development Team wants to demo the same increment in multiple Sprint Reviews?",
     options: [
-      "Allow this as it gives more stakeholders opportunity to provide feedback",
       "Explain that Sprint Review should focus on new work completed in the Sprint",
       "Support repeated demos if different stakeholder groups need to see the work",
-      "Suggest recording the demo once and sharing it instead of multiple reviews"
+      "Suggest recording the demo once and sharing it instead of multiple reviews",
+      "Allow this as it gives more stakeholders opportunity to provide feedback"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Sprint Review is about inspecting the increment created during that Sprint and adapting the Product Backlog. While stakeholders who missed it might need to see previous work, the Sprint Review should focus on the current Sprint's increment and forward-looking adaptation.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -1898,12 +1893,12 @@ export const psm2Questions = [
     id: 136,
     question: "How should a Scrum Master respond when a Development Team complains about too much time spent in Product Backlog refinement?",
     options: [
+      "Reduce refinement time even if it means less prepared items for Sprint Planning",
       "Limit refinement to exactly 10% of Sprint capacity as the guideline recommends",
       "Investigate why refinement is taking excessive time and help improve efficiency",
-      "Have the Product Owner do more refinement independently before involving the team",
-      "Reduce refinement time even if it means less prepared items for Sprint Planning"
+      "Have the Product Owner do more refinement independently before involving the team"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Scrum Master should understand why refinement takes excessive time—unclear requirements, poor Product Owner preparation, ineffective techniques, or complexity. Then help improve refinement effectiveness rather than simply reducing time, which might harm Sprint Planning quality.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1912,12 +1907,12 @@ export const psm2Questions = [
     id: 137,
     question: "What should a Scrum Master do when stakeholders want more detailed progress reports than Sprint Reviews provide?",
     options: [
+      "Implement automated dashboards showing real-time team progress",
       "Create detailed status reports to supplement Sprint Review information",
       "Help stakeholders understand what transparency Scrum already provides",
-      "Have the Product Owner provide additional reporting to stakeholders",
-      "Implement automated dashboards showing real-time team progress"
+      "Have the Product Owner provide additional reporting to stakeholders"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Scrum Master should help stakeholders understand the transparency Scrum provides through Sprint Reviews, Product Backlog visibility, and Definition of Done. If genuine information gaps exist, address those rather than creating additional reporting overhead.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -1940,12 +1935,12 @@ export const psm2Questions = [
     id: 139,
     question: "How should a Scrum Master handle a Product Owner who spends most of their time on future roadmap planning instead of current Sprint support?",
     options: [
-      "Accept this as appropriate strategic focus for the Product Owner role",
       "Coach the Product Owner on the importance of being available during Sprints",
       "Have the Development Team escalate concerns about Product Owner availability",
-      "Suggest the Product Owner delegate current Sprint support to a proxy"
+      "Suggest the Product Owner delegate current Sprint support to a proxy",
+      "Accept this as appropriate strategic focus for the Product Owner role"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "While strategic planning is important, Product Owner availability during Sprints is crucial for answering questions, providing feedback, and collaborating with the team. The Scrum Master should coach on balancing strategic and tactical responsibilities effectively.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1954,12 +1949,12 @@ export const psm2Questions = [
     id: 140,
     question: "What should a Scrum Master do when the Development Team wants to create extensive documentation for compliance requirements?",
     options: [
-      "Discourage documentation as it contradicts the agile principle of working software over documentation",
       "Help the team integrate compliance documentation into their Definition of Done",
       "Suggest hiring technical writers so developers can focus on coding",
-      "Negotiate with compliance to reduce documentation requirements for agile teams"
+      "Negotiate with compliance to reduce documentation requirements for agile teams",
+      "Discourage documentation as it contradicts the agile principle of working software over documentation"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "If documentation is necessary for compliance, it should be part of the Definition of Done. The Scrum Master helps the team create documentation efficiently while meeting requirements, rather than treating it as separate from Done work or trying to avoid compliance obligations.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -2024,12 +2019,12 @@ export const psm2Questions = [
     id: 145,
     question: "How should a Scrum Master respond when management wants to add a new member to a high-performing Development Team?",
     options: [
+      "Allow the addition but provide extra coaching during the transition period",
       "Support adding the member as more people increase delivery capacity",
       "Explain how adding people temporarily disrupts team performance and dynamics",
-      "Suggest the new member join a different team to avoid disrupting this one",
-      "Allow the addition but provide extra coaching during the transition period"
+      "Suggest the new member join a different team to avoid disrupting this one"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Scrum Master should educate management that adding people to established teams creates onboarding overhead and can temporarily reduce performance. Help them understand team dynamics and consider whether the disruption is worth the eventual benefit.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -2052,12 +2047,12 @@ export const psm2Questions = [
     id: 147,
     question: "A Product Owner wants to use the Sprint Retrospective to discuss product strategy. What should the Scrum Master advise?",
     options: [
-      "Support this as product strategy affects how the team works",
       "Explain that Retrospective focuses on process improvement, not product discussions",
       "Allow strategy discussion if time permits after process improvement topics",
-      "Suggest scheduling a separate product strategy session outside Retrospective"
+      "Suggest scheduling a separate product strategy session outside Retrospective",
+      "Support this as product strategy affects how the team works"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Sprint Retrospective is for the Scrum Team to inspect how they work together and plan improvements. Product strategy discussions belong in Sprint Planning, refinement, or separate sessions. The Scrum Master should protect the Retrospective's focus on team process improvement.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -2094,12 +2089,12 @@ export const psm2Questions = [
     id: 150,
     question: "A Development Team wants to eliminate Sprint Goals because they just do whatever items they select. What should the Scrum Master do?",
     options: [
+      "Focus on improving Sprint Planning to create better Sprint Goals",
       "Allow this as teams are self-managing and can choose their practices",
       "Coach the team on the purpose and value of cohesive Sprint Goals",
-      "Suggest using a generic goal like 'complete selected backlog items'",
-      "Focus on improving Sprint Planning to create better Sprint Goals"
+      "Suggest using a generic goal like 'complete selected backlog items'"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Sprint Goals provide coherence, focus, and flexibility. The Scrum Master should coach the team on creating meaningful goals that represent the Sprint's purpose beyond just completing items. This helps the team see sprints as coherent increments of value rather than arbitrary collections of tasks.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -2150,12 +2145,12 @@ export const psm2Questions = [
     id: 154,
     question: "How should a Scrum Master handle a Development Team that creates very detailed task breakdowns that take hours to maintain?",
     options: [
+      "Mandate simpler task tracking to reduce planning overhead for the team",
       "Support detailed task tracking as it improves transparency and accountability",
       "Help the team evaluate whether the task detail provides value worth the effort",
-      "Suggest using a tool to automate task tracking and reduce manual effort",
-      "Mandate simpler task tracking to reduce planning overhead for the team"
+      "Suggest using a tool to automate task tracking and reduce manual effort"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Scrum Master should facilitate the team's reflection on whether their task tracking provides value proportional to the effort. Teams should find the right level of detail that helps them coordinate without becoming burdensome overhead.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -2164,12 +2159,12 @@ export const psm2Questions = [
     id: 155,
     question: "What should a Scrum Master do when the Product Owner wants to lock down the Product Backlog order for an entire quarter?",
     options: [
-      "Support this as it provides predictability and stability for planning",
       "Explain that the Product Backlog should remain adaptable based on learning",
       "Allow locked ordering but require quarterly reviews to adjust priorities",
-      "Suggest locking near-term items while keeping longer-term items flexible"
+      "Suggest locking near-term items while keeping longer-term items flexible",
+      "Support this as it provides predictability and stability for planning"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Backlog should be continuously refined and reordered based on learning and changing circumstances. The Scrum Master should coach the Product Owner on maintaining adaptability while acknowledging the need for reasonable short-term stability.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2178,12 +2173,12 @@ export const psm2Questions = [
     id: 156,
     question: "A Development Team asks the Scrum Master to make all their external communications and handle stakeholder interactions. What should the Scrum Master do?",
     options: [
-      "Accept this responsibility to shield the team and let them focus on development",
       "Coach the team on building their own communication skills and stakeholder relationships",
       "Share communication responsibilities with willing team members",
-      "Have the Product Owner handle all external communications instead"
+      "Have the Product Owner handle all external communications instead",
+      "Accept this responsibility to shield the team and let them focus on development"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master should coach the team toward building their own communication capabilities rather than creating dependency. While the Scrum Master can facilitate and support, teams should develop the ability to communicate effectively with stakeholders.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -2192,12 +2187,12 @@ export const psm2Questions = [
     id: 157,
     question: "How should a Scrum Master respond when management wants to standardize tools across all Scrum Teams?",
     options: [
-      "Support standardization as it simplifies training and cross-team collaboration",
       "Advocate for teams choosing their own tools based on their needs",
       "Suggest a standard toolset but allow exceptions for justified cases",
-      "Implement standard tools but let teams customize them extensively"
+      "Implement standard tools but let teams customize them extensively",
+      "Support standardization as it simplifies training and cross-team collaboration"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Self-managing teams should choose tools that work for them. While the Scrum Master can share information about trade-offs, teams should make their own tool decisions. However, in some organizational contexts, reasonable standardization might be necessary—the key is team input in those decisions.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -2262,12 +2257,12 @@ export const psm2Questions = [
     id: 162,
     question: "A Development Team wants to adopt continuous deployment but the Product Owner is concerned about losing control. How should the Scrum Master help?",
     options: [
+      "Suggest a trial period where the team deploys automatically but Product Owner can rollback",
       "Support the Product Owner's concern and discourage continuous deployment",
       "Facilitate discussion about how continuous deployment works with Product Owner authority",
-      "Explain that continuous deployment is a team decision the Product Owner can't block",
-      "Suggest a trial period where the team deploys automatically but Product Owner can rollback"
+      "Explain that continuous deployment is a team decision the Product Owner can't block"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Scrum Master should facilitate understanding between the Development Team and Product Owner about how continuous deployment can work while maintaining Product Owner control over releases. This might involve feature toggles, release strategies, or deployment vs. release distinctions.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2290,12 +2285,12 @@ export const psm2Questions = [
     id: 164,
     question: "What should a Scrum Master do when stakeholders bypass the Product Owner and pressure the Development Team to work on specific items?",
     options: [
-      "Allow this when stakeholders have urgent or important requests for the team",
       "Coach stakeholders and team on working through the Product Owner for prioritization",
       "Have the team document stakeholder requests and forward them to Product Owner",
-      "Create an escalation process for stakeholder requests that bypass normal channels"
+      "Create an escalation process for stakeholder requests that bypass normal channels",
+      "Allow this when stakeholders have urgent or important requests for the team"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "All work should flow through the Product Owner for prioritization. The Scrum Master coaches stakeholders on why this is important and helps the Development Team redirect requests appropriately while maintaining positive stakeholder relationships.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -2388,12 +2383,12 @@ export const psm2Questions = [
     id: 171,
     question: "A stakeholder complains that Scrum creates too much uncertainty compared to waterfall planning. How should the Scrum Master respond?",
     options: [
-      "Agree to create more detailed upfront plans to reduce perceived uncertainty",
       "Explain that Scrum makes uncertainty visible rather than creating it",
       "Suggest the organization return to waterfall if predictability is essential",
-      "Demonstrate how empirical forecasting provides probabilistic predictions"
+      "Demonstrate how empirical forecasting provides probabilistic predictions",
+      "Agree to create more detailed upfront plans to reduce perceived uncertainty"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Scrum doesn't create uncertainty—it makes existing uncertainty visible through transparency. The Scrum Master should educate stakeholders that traditional plans often hide uncertainty with false precision, while Scrum enables adaptation to reality.",
     domain: "Scrum Theory & Principles",
     difficulty: "Foundation"
@@ -2402,12 +2397,12 @@ export const psm2Questions = [
     id: 172,
     question: "How should a Scrum Master handle a Product Owner who wants all Product Backlog items fully specified before any development starts?",
     options: [
+      "Allow full specification but help the team provide input on what's needed",
       "Support this as complete specifications reduce ambiguity and rework",
       "Coach the Product Owner on progressive elaboration and just-in-time refinement",
-      "Suggest the Product Owner hire business analysts to create specifications",
-      "Allow full specification but help the team provide input on what's needed"
+      "Suggest the Product Owner hire business analysts to create specifications"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Product Backlog items should be refined progressively as they approach Sprint Planning. The Scrum Master should coach the Product Owner on just-in-time refinement that reduces waste from detailed specifications of work that might change or never be done.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2472,12 +2467,12 @@ export const psm2Questions = [
     id: 177,
     question: "What should a Scrum Master do when a Product Owner wants to add technical tasks to the Product Backlog?",
     options: [
+      "Suggest the team maintain a separate technical backlog for such items",
       "Discourage this as technical tasks belong in the Sprint Backlog, not Product Backlog",
       "Help the Product Owner understand whether these represent value or implementation details",
-      "Allow technical tasks if they're important to the Development Team",
-      "Suggest the team maintain a separate technical backlog for such items"
+      "Allow technical tasks if they're important to the Development Team"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Product Backlog items should represent value. The Scrum Master helps distinguish between valuable technical work (refactoring for speed, architectural improvements) that belongs in the Product Backlog and implementation details that the Development Team manages in their Sprint Backlog.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2486,12 +2481,12 @@ export const psm2Questions = [
     id: 178,
     question: "How should a Scrum Master handle a Development Team that wants to declare technical bankruptcy and start over?",
     options: [
+      "Facilitate a technical review with external experts before deciding",
       "Support the team's technical judgment and approve a complete rewrite",
       "Help the team articulate the business case and risks to the Product Owner",
-      "Suggest incremental improvement rather than complete rewrites",
-      "Facilitate a technical review with external experts before deciding"
+      "Suggest incremental improvement rather than complete rewrites"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Major technical decisions like complete rewrites should be understood by the Product Owner who must weigh the costs, benefits, and opportunity costs. The Scrum Master helps the team articulate the value proposition and risks so informed prioritization decisions can be made.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2514,12 +2509,12 @@ export const psm2Questions = [
     id: 180,
     question: "What should a Scrum Master do when team members ask for individual career development plans?",
     options: [
+      "Suggest self-directed learning paths based on industry best practices",
       "Create individual development plans based on skill gaps and career goals",
       "Facilitate team discussions about growth opportunities within team context",
-      "Refer team members to HR or management for career planning support",
-      "Suggest self-directed learning paths based on industry best practices"
+      "Refer team members to HR or management for career planning support"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "While individuals own their development, the Scrum Master can facilitate team discussions about growth, learning opportunities, and skill development within the team's context. This balances individual growth with team needs and creates peer support for development.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -2542,12 +2537,12 @@ export const psm2Questions = [
     id: 182,
     question: "A Development Team wants to skip retrospectives when they had a 'good' Sprint. What should the Scrum Master do?",
     options: [
-      "Allow this as there's nothing to improve when Sprints go well",
       "Facilitate the retrospective to capture what went well and sustain it",
       "Suggest shorter retrospectives for Sprints that went smoothly",
-      "Have the team vote on whether each retrospective is necessary"
+      "Have the team vote on whether each retrospective is necessary",
+      "Allow this as there's nothing to improve when Sprints go well"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Retrospectives are valuable even after good Sprints to understand what made them successful and how to sustain those conditions. The Scrum Master should facilitate reflection on successes, not just problems, to reinforce positive patterns.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -2626,12 +2621,12 @@ export const psm2Questions = [
     id: 188,
     question: "A Product Owner asks the Scrum Master to ensure the team delivers specific features by quarter-end. What should the Scrum Master do?",
     options: [
-      "Work with the team to commit to the quarter-end deadline for those features",
       "Explain that teams can forecast but not guarantee delivery of specific scope by dates",
       "Help the Product Owner understand what could realistically be completed",
-      "Suggest the Product Owner negotiate deadline extensions if needed"
+      "Suggest the Product Owner negotiate deadline extensions if needed",
+      "Work with the team to commit to the quarter-end deadline for those features"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master should educate that in complex work, teams can forecast probabilistically but cannot guarantee specific scope by specific dates. Help both Product Owner and team communicate about forecasts, uncertainty, and what trade-offs might be possible.",
     domain: "Scrum Theory & Principles",
     difficulty: "Foundation"
@@ -2640,12 +2635,12 @@ export const psm2Questions = [
     id: 189,
     question: "What should a Scrum Master do when the Development Team wants to implement every possible software engineering practice they've heard about?",
     options: [
-      "Support comprehensive adoption of industry best practices for quality",
       "Help the team prioritize which practices address their most important challenges",
       "Suggest starting with basics like version control and automated testing",
-      "Allow the team to decide which practices to adopt through experimentation"
+      "Allow the team to decide which practices to adopt through experimentation",
+      "Support comprehensive adoption of industry best practices for quality"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master helps the team think strategically about practices that address their specific challenges rather than adopting everything. Encourage focus on high-value improvements, experimentation, and learning what works in their context.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -2696,12 +2691,12 @@ export const psm2Questions = [
     id: 193,
     question: "How should a Scrum Master respond when management wants to standardize Sprint ceremonies across all teams?",
     options: [
+      "Implement standards but gather feedback for potential adjustments",
       "Support standardization as it creates consistency and enables knowledge sharing",
       "Advocate for teams adapting Scrum events to their specific context",
-      "Suggest standard durations but allow flexibility in facilitation approaches",
-      "Implement standards but gather feedback for potential adjustments"
+      "Suggest standard durations but allow flexibility in facilitation approaches"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "While Scrum events are timeboxed and required, how they're facilitated should fit each team's context. The Scrum Master advocates for team autonomy in adapting practices while ensuring the events serve their purposes effectively.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -2710,12 +2705,12 @@ export const psm2Questions = [
     id: 194,
     question: "A Product Owner wants to include 'stretch goals' that aren't part of the Sprint Goal. What should the Scrum Master advise?",
     options: [
+      "Allow stretch goals but clarify they're optional, not commitments",
       "Support stretch goals if they motivate the team toward higher performance",
       "Explain how stretch goals can undermine focus on the Sprint Goal",
-      "Suggest keeping stretch goals private and only discussing if capacity exists",
-      "Allow stretch goals but clarify they're optional, not commitments"
+      "Suggest keeping stretch goals private and only discussing if capacity exists"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Stretch goals can undermine commitment to the Sprint Goal by implying the forecast isn't genuine or creating pressure for unsustainable pace. The Scrum Master coaches on focusing on the Sprint Goal, with the team pulling additional work if capacity exists.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -2724,12 +2719,12 @@ export const psm2Questions = [
     id: 195,
     question: "What should a Scrum Master do when a Development Team wants to demonstrate only 'impressive' features in Sprint Review?",
     options: [
-      "Support this as it creates better stakeholder impressions of team capability",
       "Coach the team that Sprint Review should show all Done work for transparency",
       "Allow selective demonstration if it keeps stakeholders more engaged",
-      "Suggest the team present all work but emphasize the impressive features"
+      "Suggest the team present all work but emphasize the impressive features",
+      "Support this as it creates better stakeholder impressions of team capability"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Sprint Review should transparently show all Done work. Selective demonstration undermines transparency and stakeholder understanding of actual progress. The Scrum Master coaches on the value of honest representation over impression management.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -2752,12 +2747,12 @@ export const psm2Questions = [
     id: 197,
     question: "A Development Team wants to work overtime regularly to meet aggressive deadlines. What should the Scrum Master do?",
     options: [
-      "Support the team's commitment and dedication to meeting their goals",
       "Coach the team on sustainable pace and help address root causes of pressure",
       "Negotiate with management for more reasonable deadlines or additional resources",
-      "Allow occasional overtime but discourage making it a regular practice"
+      "Allow occasional overtime but discourage making it a regular practice",
+      "Support the team's commitment and dedication to meeting their goals"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Regular overtime indicates unsustainable pace and systemic issues with planning, expectations, or capacity. The Scrum Master coaches on sustainable pace and works to address root causes like unrealistic forecasts or external pressure rather than normalizing overtime.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -2850,12 +2845,12 @@ export const psm2Questions = [
     id: 204,
     question: "Multiple Scrum Teams are working on the same product. They have different Definitions of Done. What is the best approach?",
     options: [
+      "Create a minimum Definition of Done that all teams must meet or exceed",
       "Allow each team their own Definition of Done to respect their autonomy",
       "Work toward a shared Definition of Done that all teams use for integration",
-      "The team with the highest standards should set the Definition for everyone",
-      "Create a minimum Definition of Done that all teams must meet or exceed"
+      "The team with the highest standards should set the Definition for everyone"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "When multiple teams work on the same product, they should have a shared Definition of Done to ensure the integrated product meets consistent quality standards. This enables proper integration and maintains product quality across all teams' work.",
     domain: "Scrum Theory & Principles",
     difficulty: "Advanced"
@@ -2920,12 +2915,12 @@ export const psm2Questions = [
     id: 209,
     question: "What is the relationship between technical debt and the Definition of Done?",
     options: [
-      "Technical debt is inevitable and should be tracked separately from the Definition of Done",
-      "Technical debt accumulates when work doesn't meet the Definition of Done",
       "The Definition of Done should include time for paying down technical debt",
-      "Technical debt is a Product Owner concern and doesn't affect the Definition of Done"
+      "Technical debt is a Product Owner concern and doesn't affect the Definition of Done",
+      "Technical debt is inevitable and should be tracked separately from the Definition of Done",
+      "Technical debt accumulates when work doesn't meet the Definition of Done"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Technical debt accumulates when work is declared 'done' without meeting the Definition of Done or when the Definition of Done is insufficient. Maintaining a strong Definition of Done prevents technical debt accumulation by ensuring quality standards are met.",
     domain: "Scrum Theory & Principles",
     difficulty: "Advanced"
@@ -2962,12 +2957,12 @@ export const psm2Questions = [
     id: 212,
     question: "A Scrum Team works in an open office environment where noise and interruptions are constant. What should the Scrum Master do?",
     options: [
-      "Mandate quiet hours during core working times to minimize disruptions",
       "Work with the organization to provide a better working environment",
       "Teach the team time management techniques to handle interruptions",
-      "Accept this as a normal working condition and focus on other impediments"
+      "Accept this as a normal working condition and focus on other impediments",
+      "Mandate quiet hours during core working times to minimize disruptions"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master serves the organization by identifying and helping remove impediments to productivity. A disruptive work environment is an organizational impediment that the Scrum Master should work to address with appropriate stakeholders and leadership.",
     domain: "Organizational Design",
     difficulty: "Foundation"
@@ -3018,12 +3013,12 @@ export const psm2Questions = [
     id: 216,
     question: "A Development Team wants to improve quality but claims they don't have time due to feature pressure. How should the Scrum Master respond?",
     options: [
-      "Negotiate with the Product Owner to dedicate sprints specifically to quality improvement",
       "Help the team understand that quality is not negotiable and must be part of every Sprint",
       "Create a 'quality backlog' for the team to work on between feature sprints",
-      "Accept that quality must sometimes be sacrificed for business needs"
+      "Accept that quality must sometimes be sacrificed for business needs",
+      "Negotiate with the Product Owner to dedicate sprints specifically to quality improvement"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Quality is inherent in the Definition of Done, not something to sacrifice for features. The Scrum Master helps the team understand that sustainable development requires quality to be built-in, not treated as separate work. This may mean slowing feature delivery initially.",
     domain: "Scrum Theory & Principles",
     difficulty: "Advanced"
@@ -3116,12 +3111,12 @@ export const psm2Questions = [
     id: 223,
     question: "A Development Team consistently delivers high-quality increments but stakeholders complain that the wrong features are being built. What is the root issue?",
     options: [
+      "The Sprint Review is not being used effectively for inspection and adaptation",
       "The Development Team is not understanding requirements correctly",
       "The Product Owner is not effectively managing the Product Backlog",
-      "Stakeholders need more involvement in Sprint Planning",
-      "The Sprint Review is not being used effectively for inspection and adaptation"
+      "Stakeholders need more involvement in Sprint Planning"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "If the team delivers quality work but it's the wrong features, the Product Owner is not effectively ordering the Product Backlog based on value, stakeholder needs, and market changes. The Scrum Master should coach the Product Owner on product management and stakeholder engagement.",
     domain: "Product Value",
     difficulty: "Advanced"
@@ -3186,12 +3181,12 @@ export const psm2Questions = [
     id: 228,
     question: "Multiple teams are working on the same product but holding separate Sprint Reviews. What problem does this create?",
     options: [
-      "It wastes stakeholder time by having multiple review meetings",
       "It prevents integrated product inspection and holistic feedback",
       "It creates competition between teams for stakeholder attention",
-      "It violates the Scrum framework which requires a single Sprint Review"
+      "It violates the Scrum framework which requires a single Sprint Review",
+      "It wastes stakeholder time by having multiple review meetings"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "When multiple teams work on the same product, separate Sprint Reviews prevent stakeholders from seeing the integrated product and providing holistic feedback. A shared Sprint Review enables proper product-level inspection and ensures all teams hear the same feedback.",
     domain: "Facilitating Events",
     difficulty: "Advanced"
@@ -3242,12 +3237,12 @@ export const psm2Questions = [
     id: 232,
     question: "How should a Scrum Master handle a Development Team member who consistently arrives late to Scrum events?",
     options: [
-      "Start all events on time regardless of who is present",
       "Have a private coaching conversation about the impact on the team",
       "Bring it up in the Sprint Retrospective for team discussion",
-      "Report the behavior to the team member's manager"
+      "Report the behavior to the team member's manager",
+      "Start all events on time regardless of who is present"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master should first have a private coaching conversation to understand the root cause and help the individual see the impact on the team. If the behavior continues despite coaching, it may become a topic for Retrospective or escalation, but private coaching is the appropriate first step.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -3270,12 +3265,12 @@ export const psm2Questions = [
     id: 234,
     question: "During Sprint Planning, the Development Team realizes a critical dependency on another team. What should they do?",
     options: [
-      "Proceed with planning and address the dependency during the Sprint",
       "Discuss the dependency and consider its impact on the Sprint Goal and Sprint Backlog",
       "Cancel Sprint Planning and reschedule once the dependency is resolved",
-      "Escalate the dependency to management for resolution"
+      "Escalate the dependency to management for resolution",
+      "Proceed with planning and address the dependency during the Sprint"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Dependencies should be identified and addressed during Sprint Planning. The team and Product Owner should discuss the impact on what can be achieved and may need to adjust their Sprint Goal or Sprint Backlog accordingly. This is part of creating a realistic plan.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -3340,12 +3335,12 @@ export const psm2Questions = [
     id: 239,
     question: "A Product Owner wants to attend all Daily Scrums to stay informed. What should the Scrum Master advise?",
     options: [
-      "The Product Owner should attend to maintain close collaboration with the team",
       "The Product Owner can attend but should not participate in planning the daily work",
       "The Product Owner should not attend as the Daily Scrum is only for the Development Team",
-      "The Product Owner can attend but the Scrum Master should facilitate to prevent interference"
+      "The Product Owner can attend but the Scrum Master should facilitate to prevent interference",
+      "The Product Owner should attend to maintain close collaboration with the team"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Daily Scrum is for the Developers to plan their work toward the Sprint Goal. The Product Owner and others can attend but should not actively participate unless invited by the Developers. Attendance without participation allows observation while respecting the event's purpose.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -3410,12 +3405,12 @@ export const psm2Questions = [
     id: 244,
     question: "A Development Team member is working on a critical item and misses several Daily Scrums. What should the Scrum Master do?",
     options: [
-      "Speak to the team member about the importance of attending Daily Scrums",
       "Check with the team to see if they feel the absence is impacting their ability to plan",
       "Report the absence to management as it's a violation of Scrum",
-      "Nothing - the team member is self-managing and focused on valuable work"
+      "Nothing - the team member is self-managing and focused on valuable work",
+      "Speak to the team member about the importance of attending Daily Scrums"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Daily Scrum is for the Developers to plan their work together. If a team member's absence is impacting the team's ability to plan, it's a team issue. The Scrum Master should check with the team first, as they may have already adapted, before coaching the individual.",
     domain: "Facilitating Events",
     difficulty: "Advanced"
@@ -3466,12 +3461,12 @@ export const psm2Questions = [
     id: 248,
     question: "What is the Scrum Master's accountability when organizational structure prevents effective Scrum implementation?",
     options: [
-      "Implement Scrum as best as possible within the existing structure",
       "Work with leadership to identify and address structural impediments",
       "Document the structural issues and accept them as constraints",
-      "Focus on what the team can control and ignore organizational issues"
+      "Focus on what the team can control and ignore organizational issues",
+      "Implement Scrum as best as possible within the existing structure"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Part of the Scrum Master's service to the organization is helping leadership understand and remove organizational impediments to Scrum effectiveness. This includes working on organizational structure, policies, and culture that prevent teams from being effective.",
     domain: "Organizational Design",
     difficulty: "Advanced"
@@ -3704,12 +3699,12 @@ export const psm2Questions = [
     id: 265,
     question: "A Scrum Team delivers Increments every Sprint but never releases anything to users. What is the primary concern?",
     options: [
-      "Users are not receiving value from the team's work",
       "The team is not getting feedback to validate their assumptions",
       "The Product Owner is not fulfilling their release decision accountability",
-      "The organization is not realizing return on investment"
+      "The organization is not realizing return on investment",
+      "Users are not receiving value from the team's work"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "While all options are concerns, the primary issue is lack of feedback. Scrum is based on empiricism—inspection and adaptation based on real-world use. Without releases, the team operates on assumptions rather than validated learning, making it impossible to know if they're building the right thing.",
     domain: "Product Value",
     difficulty: "Advanced"
@@ -3802,12 +3797,12 @@ export const psm2Questions = [
     id: 272,
     question: "A Development Team wants to rewrite their entire codebase during a single Sprint. What should the Scrum Master consider?",
     options: [
-      "Support this as the team controls technical decisions",
       "Question whether this creates a valuable Increment for that Sprint",
       "Suggest spreading the rewrite across multiple Sprints",
-      "Work with the Product Owner to understand the business case"
+      "Work with the Product Owner to understand the business case",
+      "Support this as the team controls technical decisions"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Each Sprint should produce a valuable Increment. A complete rewrite typically doesn't deliver user value in a single Sprint. The Scrum Master helps the team think about how to deliver value incrementally, perhaps refactoring in smaller chunks while continuing to deliver features.",
     domain: "Product Value",
     difficulty: "Advanced"
@@ -3844,12 +3839,12 @@ export const psm2Questions = [
     id: 275,
     question: "During Sprint Retrospective, the team identifies that the Definition of Done is insufficient. What should they do?",
     options: [
-      "Update the Definition of Done immediately and apply it starting with the current Sprint",
       "Propose changes to the Definition of Done to be adopted in the next Sprint",
       "Create action items to meet the current Definition of Done before changing it",
-      "Escalate to the organization to approve Definition of Done changes"
+      "Escalate to the organization to approve Definition of Done changes",
+      "Update the Definition of Done immediately and apply it starting with the current Sprint"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The team should propose strengthening the Definition of Done based on their learning. Changes typically apply starting with the next Sprint to avoid disrupting current commitments. However, if the current Definition is causing serious quality issues, immediate changes might be warranted.",
     domain: "Scrum Theory & Principles",
     difficulty: "Advanced"
@@ -3886,12 +3881,12 @@ export const psm2Questions = [
     id: 278,
     question: "During Sprint Planning, the Development Team realizes they need to learn a new technology to complete the selected work. What should happen?",
     options: [
-      "Remove items requiring the new technology from the Sprint Backlog",
       "Include learning time in the Sprint plan and adjust the forecast accordingly",
       "Schedule learning outside of Sprint time to avoid reducing Sprint capacity",
-      "Assign the work to team members who already know the technology"
+      "Assign the work to team members who already know the technology",
+      "Remove items requiring the new technology from the Sprint Backlog"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Learning is part of development work and should be included in Sprint planning and forecasting. The team should estimate learning time as part of their work and adjust their Sprint forecast accordingly. This maintains transparency and realistic planning.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -3956,12 +3951,12 @@ export const psm2Questions = [
     id: 283,
     question: "A Product Owner wants to create separate Product Backlogs for different stakeholder groups. What should the Scrum Master advise?",
     options: [
-      "Support this as it provides better stakeholder visibility",
       "Coach on having a single Product Backlog with transparent ordering",
       "Suggest creating different views of the same backlog for different stakeholders",
-      "Allow it if it helps the Product Owner manage stakeholder relationships"
+      "Allow it if it helps the Product Owner manage stakeholder relationships",
+      "Support this as it provides better stakeholder visibility"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "A product should have a single Product Backlog to ensure transparent prioritization and clear trade-offs. Multiple backlogs hide priority decisions and create confusion. The Scrum Master coaches on maintaining one backlog while using other means to communicate with different stakeholder groups.",
     domain: "Product Value",
     difficulty: "Advanced"
@@ -3998,12 +3993,12 @@ export const psm2Questions = [
     id: 286,
     question: "A Product Owner complains that stakeholders constantly change their minds about priorities. What coaching might help?",
     options: [
-      "Teach the Product Owner to push back and hold stakeholders accountable",
       "Help the Product Owner understand that change is expected and build systems to handle it",
       "Suggest longer Sprints to reduce the frequency of priority changes",
-      "Facilitate stakeholder alignment sessions to create stable priorities"
+      "Facilitate stakeholder alignment sessions to create stable priorities",
+      "Teach the Product Owner to push back and hold stakeholders accountable"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "In complex environments, change is inevitable. Rather than fighting it, the Product Owner should embrace it as information about the market and build systems (frequent engagement, clear value communication, stakeholder education) to handle change effectively.",
     domain: "Product Value",
     difficulty: "Advanced"
@@ -4194,12 +4189,12 @@ export const psm2Questions = [
     id: 300,
     question: "During Sprint Review, stakeholders request a demo of work that isn't part of the current Increment. What should happen?",
     options: [
-      "The team should demo what stakeholders request to maintain relationships",
       "The Product Owner explains what's in the current Increment and facilitates discussion",
       "The Scrum Master redirects stakeholders to focus on the current Increment",
-      "Schedule a separate demo for the requested work outside Sprint Review"
+      "Schedule a separate demo for the requested work outside Sprint Review",
+      "The team should demo what stakeholders request to maintain relationships"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Sprint Review is for inspecting the current Increment. The Product Owner should explain what's in the Increment and facilitate productive discussion about it. If stakeholders want to see other work, that's a separate conversation, but Sprint Review should focus on the current Increment.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -4208,12 +4203,12 @@ export const psm2Questions = [
     id: 301,
     question: "A Scrum Master observes that the Development Team avoids difficult conversations and defers decisions. What should they do?",
     options: [
-      "Make decisions for the team to keep work moving forward",
       "Facilitate decision-making processes and coach on having difficult conversations",
       "Escalate decisions to the Product Owner or management",
-      "Accept this as the team's choice and respect their process"
+      "Accept this as the team's choice and respect their process",
+      "Make decisions for the team to keep work moving forward"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master coaches the team on self-management, which includes making decisions and having difficult conversations. They facilitate decision-making processes, create psychological safety for discussions, and coach on conversation skills rather than making decisions for the team.",
     domain: "Self-Managing Teams",
     difficulty: "Advanced"
@@ -4222,12 +4217,12 @@ export const psm2Questions = [
     id: 302,
     question: "What is the primary indicator that a Scrum Team is successfully implementing empiricism?",
     options: [
-      "They hold all Scrum events consistently",
       "They make decisions based on what is observed rather than predicted",
       "They have transparent artifacts and processes",
-      "They regularly inspect and adapt their practices"
+      "They regularly inspect and adapt their practices",
+      "They hold all Scrum events consistently"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "While all options support empiricism, the primary indicator is making decisions based on observation and experience rather than speculation and upfront planning. This demonstrates the fundamental shift to empirical process control.",
     domain: "Scrum Theory & Principles",
     difficulty: "Advanced"
@@ -4236,12 +4231,12 @@ export const psm2Questions = [
     id: 303,
     question: "A Development Team consistently delivers all Sprint Backlog items but stakeholders feel they're not getting value. What is the likely root cause?",
     options: [
-      "Stakeholders don't understand the value being delivered",
       "The Product Owner is not effectively ordering the Product Backlog by value",
       "The Sprint Goal is not aligned with stakeholder needs",
-      "The Development Team is building the wrong things"
+      "The Development Team is building the wrong things",
+      "Stakeholders don't understand the value being delivered"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "If work is completed but doesn't deliver value, the Product Owner is likely not effectively ordering the Product Backlog or understanding stakeholder needs. The Scrum Master should coach the Product Owner on stakeholder engagement, value identification, and prioritization.",
     domain: "Product Value",
     difficulty: "Advanced"
@@ -4348,12 +4343,12 @@ export const psm2Questions = [
     id: 311,
     question: "What is the relationship between the Sprint Review and the Product Backlog?",
     options: [
+      "There is no direct relationship between them",
       "The Sprint Review reviews what's next in the Product Backlog",
       "The Product Backlog is updated based on Sprint Review feedback",
-      "The Sprint Review validates that the Product Backlog was followed",
-      "There is no direct relationship between them"
+      "The Sprint Review validates that the Product Backlog was followed"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Sprint Review is specifically designed to inspect the Increment and adapt the Product Backlog based on what was learned. Stakeholder feedback from the Review should result in Product Backlog changes, reordering, or additions.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
@@ -4432,12 +4427,12 @@ export const psm2Questions = [
     id: 317,
     question: "What should a Scrum Master do when they observe the Product Owner making promises to stakeholders that the Development Team hasn't committed to?",
     options: [
-      "Inform the Development Team so they can adjust their plans",
       "Coach the Product Owner on collaborating with the team on forecasts",
       "Immediately correct the Product Owner with stakeholders present",
-      "Document the promises as risks to the product"
+      "Document the promises as risks to the product",
+      "Inform the Development Team so they can adjust their plans"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master should coach the Product Owner privately on the importance of collaborating with the Development Team on forecasts and commitments. Making promises without team input undermines trust and sets unrealistic expectations. Private coaching is more effective than public correction.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -4810,12 +4805,12 @@ export const psm2Questions = [
     id: 344,
     question: "A Scrum Master notices the Development Team is self-organizing around individual work rather than collaborative team work. What should they do?",
     options: [
-      "Mandate pair programming or mob programming to force collaboration",
       "Coach the team on the benefits of collaboration and help them experiment with collaborative practices",
       "Accept this as the team's choice in how they self-organize",
-      "Reorganize work assignments to require collaboration"
+      "Reorganize work assignments to require collaboration",
+      "Mandate pair programming or mob programming to force collaboration"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Scrum Master coaches on the benefits of collaboration (knowledge sharing, quality, shared ownership) and helps the team experiment with collaborative practices. The team should discover the value themselves rather than having collaboration mandated.",
     domain: "Self-Managing Teams",
     difficulty: "Advanced"
@@ -4936,12 +4931,12 @@ export const psm2Questions = [
     id: 353,
     question: "A Product Owner is frustrated that the Development Team won't commit to specific delivery dates. How should the Scrum Master respond?",
     options: [
+      "Help the team improve their estimation accuracy to enable date commitments",
       "Pressure the team to provide date commitments to satisfy the Product Owner",
       "Coach the Product Owner on probabilistic forecasting using velocity and backlog",
-      "Explain that Scrum doesn't support delivery date commitments",
-      "Help the team improve their estimation accuracy to enable date commitments"
+      "Explain that Scrum doesn't support delivery date commitments"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Scrum Master educates the Product Owner on empirical forecasting: using historical velocity, current Product Backlog ordering, and understanding of scope to create probabilistic forecasts. This is more honest and useful than false certainty of committed dates.",
     domain: "Product Value",
     difficulty: "Advanced"
@@ -5034,12 +5029,12 @@ export const psm2Questions = [
     id: 360,
     question: "A Scrum Team consistently creates technically excellent Increments but user adoption is low. What's the likely issue?",
     options: [
-      "The marketing and sales teams aren't doing their job",
       "The Product Owner isn't validating value assumptions with users early enough",
       "The team needs to focus more on user experience and design",
-      "The organization needs better change management for new features"
+      "The organization needs better change management for new features",
+      "The marketing and sales teams aren't doing their job"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "If technically excellent work isn't adopted, there's a value discovery problem. The Product Owner should be validating value hypotheses earlier—through user research, prototypes, alpha/beta releases—rather than waiting until full implementation to discover users don't want what was built.",
     domain: "Product Value",
     difficulty: "Advanced"
@@ -5160,12 +5155,12 @@ export const psm2Questions = [
     id: 369,
     question: "During Sprint Retrospective, the team identifies that they need training on a new technology. What should happen next?",
     options: [
-      "The Scrum Master arranges the training immediately",
       "The team adds it to their improvement backlog and plans when to do it",
       "The Product Owner decides if training time can be allocated",
-      "The organization's learning and development team handles it"
+      "The organization's learning and development team handles it",
+      "The Scrum Master arranges the training immediately"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The team identified the improvement, and they should plan how to address it. This might involve learning during the Sprint, dedicating time in upcoming Sprints, or external training. The team, potentially with Scrum Master facilitation, decides how to act on their insight.",
     domain: "Self-Managing Teams",
     difficulty: "Foundation"
@@ -5216,12 +5211,12 @@ export const psm2Questions = [
     id: 373,
     question: "How should a Scrum Master approach a Development Team that never disagrees or challenges each other's ideas?",
     options: [
-      "Celebrate the team's harmony and lack of conflict",
       "Investigate whether the team feels psychologically safe to express disagreement",
       "Introduce conflict deliberately to make them more resilient",
-      "Accept this as a sign of team maturity and strong relationships"
+      "Accept this as a sign of team maturity and strong relationships",
+      "Celebrate the team's harmony and lack of conflict"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Healthy teams have respectful disagreements and challenge ideas constructively. Absence of disagreement might indicate lack of psychological safety, groupthink, disengagement, or power dynamics preventing honest discussion. The Scrum Master should investigate and work to create an environment where healthy conflict is safe.",
     domain: "Self-Managing Teams",
     difficulty: "Advanced"
@@ -5253,6 +5248,706 @@ export const psm2Questions = [
     explanation: "This requires collaborative problem-solving. Options include selecting different work, planning time for learning, pairing with someone who knows the technology, bringing in temporary expertise, or other solutions. The team and Product Owner should discuss openly to find the best approach for achieving a valuable Sprint Goal.",
     domain: "Facilitating Events",
     difficulty: "Foundation"
+  },
+  {
+    id: 376,
+    question: "A Development Team wants to use AI-powered code generation tools (like GitHub Copilot) but the Product Owner is concerned about code quality and intellectual property. How should the Scrum Master facilitate this?",
+    options: [
+      "Support the team's technical decision to use modern development tools",
+      "Side with the Product Owner as quality and IP are critical concerns",
+      "Facilitate discussion about guardrails: code review standards, license checking, and quality gates",
+      "Defer to the organization's legal and security teams for a decision"
+    ],
+    correctAnswer: 2,
+    explanation: "AI coding tools are becoming standard in 2025, but they require thoughtful adoption. The Scrum Master facilitates collaborative problem-solving to address legitimate concerns (IP, quality, security) while not blocking valuable tools. Solutions might include strengthened Definition of Done, license scanning, enhanced review processes, and usage policies.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 377,
+    question: "A distributed Scrum Team spans multiple time zones with only 2 hours of daily overlap. What should the Scrum Master consider for Daily Scrum?",
+    options: [
+      "Hold Daily Scrum during the overlap time, which may be inconvenient for some",
+      "Use asynchronous updates (Slack, async video) instead of synchronous Daily Scrum",
+      "Facilitate the team exploring different approaches that maintain transparency and planning",
+      "Split into regional sub-teams that each have their own Daily Scrum"
+    ],
+    correctAnswer: 2,
+    explanation: "Global distributed teams are increasingly common in 2025. The Scrum Master helps the team experiment with formats that serve the purpose (daily planning, transparency, impediment surfacing) while respecting human factors like sleep schedules and work-life balance. Solutions might blend synchronous and asynchronous elements.",
+    domain: "Facilitating Events",
+    difficulty: "Advanced"
+  },
+  {
+    id: 378,
+    question: "The Development Team wants to include 'AI model training time' in their Definition of Done for ML-powered features. What should the Scrum Master consider?",
+    options: [
+      "This makes Sprints unpredictable since training time varies; keep it separate",
+      "Support including it if model readiness is necessary for a releasable Increment",
+      "Suggest the team explore techniques like transfer learning or pre-trained models to reduce training time",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "In 2025, ML features are common. If trained models are required for releasability, training should be in the Definition of Done. However, the Scrum Master can also help the team explore modern ML practices (transfer learning, fine-tuning, model reuse, MLOps) that make this more predictable and sustainable within Sprint timebox.",
+    domain: "Scrum Theory & Principles",
+    difficulty: "Advanced"
+  },
+  {
+    id: 379,
+    question: "A Product Owner wants to use AI analytics to automatically prioritize the Product Backlog based on user behavior data. What should the Scrum Master advise?",
+    options: [
+      "Support this as AI-driven prioritization is more objective than human judgment",
+      "Discourage this as Product Owner judgment and stakeholder input are irreplaceable",
+      "Coach the Product Owner on using AI insights as input while maintaining human accountability for decisions",
+      "Recommend testing it on a subset of the backlog first"
+    ],
+    correctAnswer: 2,
+    explanation: "AI can provide valuable insights in 2025, but Product Ownership requires human judgment about value, strategy, ethics, and context that AI cannot provide. The Scrum Master coaches the Product Owner on using AI as a tool for better-informed decisions while maintaining their accountability for prioritization and value maximization.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 380,
+    question: "A Scrum Team's work includes both traditional software development and prompt engineering for LLM integrations. How does this affect their practice?",
+    options: [
+      "Prompt engineering is so different it should be a separate team",
+      "Include prompt engineering in the Definition of Done like any other technical work",
+      "Treat prompts as configuration, not as code requiring version control and review",
+      "The team should develop expertise in both traditional and AI development practices"
+    ],
+    correctAnswer: 3,
+    explanation: "In 2025, prompt engineering is a legitimate technical skill. Cross-functional teams should develop capabilities in both traditional development and AI integration, including prompt design, testing, versioning, and refinement. Prompts should be treated as critical code artifacts with appropriate quality standards.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 381,
+    question: "The organization wants all Scrum Teams to adopt platform engineering practices with internal developer platforms. How should the Scrum Master approach this?",
+    options: [
+      "Resist as this is organizational architecture, not Scrum practice",
+      "Support adoption while ensuring teams maintain autonomy over how they use platforms",
+      "Help teams provide feedback on platform capabilities they need",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "Platform engineering is a major 2025 trend. The Scrum Master supports organizational improvements that help teams (self-service infrastructure, reduced cognitive load) while ensuring teams aren't forced into constraining patterns. Crucially, teams should influence platform roadmaps based on their needs.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 382,
+    question: "A Development Team member uses AI to generate most of their code but others on the team can't understand or maintain it. What should the Scrum Master do?",
+    options: [
+      "Mandate that all AI-generated code must be explained and understood by the team",
+      "Update the Definition of Done to include code comprehensibility standards",
+      "Facilitate discussion about collective code ownership and knowledge sharing in an AI-assisted era",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "AI code generation in 2025 creates new challenges for collective ownership and maintainability. The Scrum Master helps the team establish practices that maintain quality and shared understanding: code comprehensibility standards, pair programming with AI tools, documentation, and ensuring the team owns and understands all code regardless of how it's generated.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 383,
+    question: "A Product Owner wants to implement real-time feature flagging to control feature rollout percentages and A/B test in production. How does this affect Scrum practice?",
+    options: [
+      "This allows deploying unfinished work, which violates the Definition of Done",
+      "Feature flags enable smaller, safer releases and faster feedback - align Definition of Done accordingly",
+      "The team should include flag configuration and monitoring in their Sprint work",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "Feature flags and progressive delivery are standard practice in 2025. Work behind a flag can still meet the Definition of Done if it's production-ready even when hidden. The team should treat flag management, monitoring, and eventual cleanup as integral work, not technical debt.",
+    domain: "Scrum Theory & Principles",
+    difficulty: "Advanced"
+  },
+  {
+    id: 384,
+    question: "A Scrum Team's carbon footprint metrics show their AI model training and cloud usage have significant environmental impact. What should the Scrum Master do?",
+    options: [
+      "This is outside the scope of Scrum and product development",
+      "Help the team add environmental sustainability to their Definition of Done",
+      "Facilitate discussion with the Product Owner about balancing features with sustainability",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "In 2025, environmental sustainability is increasingly important. The Scrum Master helps the team and Product Owner consider sustainability as a quality attribute: efficient algorithms, carbon-aware computing, right-sizing infrastructure. This aligns with Scrum's emphasis on sustainable pace and responsible development.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 385,
+    question: "The organization implements 'Shift Left Security' requiring security testing earlier in development. How should this affect the Development Team?",
+    options: [
+      "Add security testing to the Definition of Done",
+      "Include security engineers as Developers in the Scrum Team",
+      "Ensure Developers develop security testing capabilities",
+      "All of the above are possible approaches"
+    ],
+    correctAnswer: 3,
+    explanation: "DevSecOps and shift-left security are standard in 2025. The team must ensure security is addressed, which might involve strengthening Definition of Done, developing team capabilities, or including security specialists. The approach depends on context, but security can't be deferred.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 386,
+    question: "A Development Team wants to use 'mob programming with AI' where the whole team codes together using AI assistance. What should the Scrum Master consider?",
+    options: [
+      "This combines two powerful practices and should be supported",
+      "Monitor whether this approach truly works for the team or just sounds trendy",
+      "Help the team experiment and measure impact on quality, learning, and velocity",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "In 2025, teams have many practice options. The Scrum Master encourages empiricism: try the practice, measure results, and adapt. 'Mob programming with AI' might accelerate some teams or create groupthink in others. The team should experiment thoughtfully and assess honestly.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 387,
+    question: "A Product Owner uses synthetic user data generated by AI for testing instead of real user data due to privacy concerns. What should the Scrum Master consider?",
+    options: [
+      "Support this as it addresses legitimate privacy concerns",
+      "Question whether synthetic data accurately represents real user behavior and edge cases",
+      "Ensure the team understands the limitations and risks of synthetic data",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Synthetic data is increasingly common in 2025 for privacy compliance. However, it may not capture real-world complexity, edge cases, or actual user behavior. The Scrum Master helps ensure the team and Product Owner understand these tradeoffs and validate assumptions with real data when possible.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 388,
+    question: "The organization mandates that all production incidents must be resolved within 2 hours. How should the Scrum Master help the team respond to this?",
+    options: [
+      "Reserve capacity in each Sprint for incident response",
+      "Establish an on-call rotation among team members",
+      "Facilitate discussion about sustainable incident response and prevention strategies",
+      "Push back on the mandate as it undermines Sprint focus"
+    ],
+    correctAnswer: 2,
+    explanation: "In 2025, production reliability is critical, but reactive incident response isn't sustainable. The Scrum Master facilitates the team finding approaches that balance Sprint focus with operational needs: incident rotation, capacity reservation, automated recovery, or improved monitoring and prevention. The team needs agency in solving this problem.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 389,
+    question: "A Development Team wants to adopt 'continuous deployment' where every commit automatically deploys to production after passing tests. What should the Scrum Master consider?",
+    options: [
+      "This conflicts with Sprint-based release planning and should be discouraged",
+      "This requires extremely strong automated testing and Definition of Done",
+      "The Product Owner must still decide what gets released and when",
+      "Both B and C are important considerations"
+    ],
+    correctAnswer: 3,
+    explanation: "Continuous deployment is common in 2025 and compatible with Scrum. However, it requires comprehensive automated testing, robust Definition of Done, feature flags for release control, and clear understanding that 'deployed' doesn't mean 'released to users.' The Product Owner maintains release decision authority.",
+    domain: "Scrum Theory & Principles",
+    difficulty: "Advanced"
+  },
+  {
+    id: 390,
+    question: "A Scrum Team works on a product that uses machine learning models that can exhibit algorithmic bias. How should the Scrum Master address this?",
+    options: [
+      "Ensure the team includes bias testing and fairness metrics in their Definition of Done",
+      "Facilitate discussions about ethical considerations in product development",
+      "Help the Product Owner understand responsibility for ensuring the product doesn't cause harm",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Ethical AI and algorithmic fairness are critical concerns in 2025. The Scrum Master helps the team address bias through testing and quality standards, facilitates ethical discussions, and ensures the Product Owner understands their accountability for value includes 'not causing harm.' This is responsible product development.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 391,
+    question: "A Product Owner wants to use generative AI to create user stories from stakeholder interviews. What should the Scrum Master advise?",
+    options: [
+      "Support this as it makes backlog refinement more efficient",
+      "Caution that AI may miss nuance, context, and unstated needs that humans would catch",
+      "Recommend using AI as a starting point but requiring human refinement and validation",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "AI can assist Product Owners in 2025, but product management requires judgment, empathy, and context understanding that AI lacks. The Scrum Master coaches the Product Owner on using AI to accelerate work while maintaining the human understanding and judgment essential for effective Product Ownership.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 392,
+    question: "A Development Team member uses AI pair programming tools but never reviews the generated code, just accepts and commits it. What should the Scrum Master do?",
+    options: [
+      "Nothing - the team member is responsible for their own work quality",
+      "Coach the individual on maintaining quality standards regardless of how code is generated",
+      "Bring this to Sprint Retrospective as a team quality discussion",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "In 2025, developers must understand and validate AI-generated code. The Scrum Master addresses this through individual coaching and potentially team retrospective discussion about AI tool usage standards, code review practices, and maintaining quality when using AI assistance.",
+    domain: "Self-Managing Teams",
+    difficulty: "Foundation"
+  },
+  {
+    id: 393,
+    question: "The organization wants to measure 'Developer Productivity' using AI-powered analytics of code commits, PRs, and activity. How should the Scrum Master respond?",
+    options: [
+      "Support this as objective data is better than subjective evaluation",
+      "Educate leadership on how these metrics harm collaboration and create gaming behaviors",
+      "Propose better measures like team outcomes, value delivery, and customer satisfaction",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "Developer productivity metrics are a harmful trend in 2025. The Scrum Master serves the organization by educating leadership on how individual metrics undermine collaboration, psychological safety, and actually reduce productivity. Propose outcome-based measures that align with Scrum values.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 394,
+    question: "A Scrum Team builds B2B SaaS products where customers demand on-premise deployment for data sovereignty. How does this affect their practice?",
+    options: [
+      "On-premise deployment should be included in the Definition of Done if it's required for release",
+      "The team needs skills in both cloud and on-premise deployment",
+      "Consider using containerization and infrastructure-as-code to make deployment consistent",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Data sovereignty and on-premise requirements are growing in 2025. The team must ensure Increments are truly releasable in all required deployment models. Modern practices (containers, IaC, automated deployment) help make this manageable within Sprint timebox.",
+    domain: "Scrum Theory & Principles",
+    difficulty: "Advanced"
+  },
+  {
+    id: 395,
+    question: "A Product Owner wants to implement 'usage-based pricing' where product pricing dynamically adjusts based on AI-predicted customer value. How might this affect the Scrum Team?",
+    options: [
+      "This is purely a business model decision and doesn't affect the team",
+      "The team needs to build robust usage tracking, prediction models, and pricing engines",
+      "The team should understand the business model to make informed technical decisions",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "Product-led growth and dynamic pricing are common in 2025. Technical implementation of these business models is significant work requiring team involvement. Understanding the business model helps the team make better technical decisions about architecture, analytics, and reliability.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 396,
+    question: "A distributed Development Team uses virtual reality meetings for Sprint Planning and Retrospectives. What should the Scrum Master consider?",
+    options: [
+      "Embrace innovative collaboration tools if they improve team connection",
+      "Ensure all team members have access to required technology and are comfortable using it",
+      "Monitor whether VR actually improves outcomes or is just novelty",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "VR collaboration tools are emerging in 2025. The Scrum Master stays open to innovations that improve distributed team collaboration while ensuring accessibility, measuring actual effectiveness, and avoiding 'innovation for innovation's sake.' The team should empirically evaluate whether tools serve their needs.",
+    domain: "Facilitating Events",
+    difficulty: "Advanced"
+  },
+  {
+    id: 397,
+    question: "The organization implements 'Inner Source' practices where teams share code internally like open source. How should the Scrum Master support this?",
+    options: [
+      "Ensure the team's Definition of Done includes documentation and code quality for external consumption",
+      "Help the team allocate time for supporting other teams using their code",
+      "Facilitate the team contributing to other teams' codebases when it benefits their goals",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Inner Source is growing in 2025 as organizations seek efficiency and reuse. The Scrum Master helps the team participate effectively: maintaining reusable code quality, supporting users, and contributing to shared components. This requires treating internal code as a product with appropriate quality standards.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 398,
+    question: "A Product Owner uses A/B testing to make all product decisions, refusing to release features until they prove statistical significance. What should the Scrum Master consider?",
+    options: [
+      "Support this as data-driven decision making is superior to opinions",
+      "Question whether this delays value delivery and prevents learning from qualitative feedback",
+      "Discuss balancing experimentation with timely value delivery and qualitative insights",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "While experimentation is valuable in 2025, over-reliance on quantitative metrics can delay value and miss important qualitative insights. The Scrum Master coaches the Product Owner on balanced decision-making: using experiments while not letting perfect statistical certainty prevent delivering value and learning.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 399,
+    question: "A Development Team wants to use 'AI code review' tools that automatically review and approve pull requests. What should the Scrum Master consider?",
+    options: [
+      "This improves efficiency and should be adopted",
+      "Ensure human review still happens for context, design, and business logic validation",
+      "AI tools can supplement but not replace peer code review",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "AI code review tools in 2025 can catch certain issues efficiently (syntax, common bugs, standards), but they lack context, domain understanding, and design judgment. The Scrum Master helps the team use AI to augment human review, not replace the learning and quality benefits of peer review.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 400,
+    question: "A Scrum Team works on a 'zero trust security' architecture requiring every internal service call to be authenticated and authorized. How does this affect their practice?",
+    options: [
+      "Security complexity should be included in estimation and Definition of Done",
+      "The team may need to develop new security skills and practices",
+      "This reflects modern security requirements and teams must adapt",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Zero trust architecture is becoming standard in 2025. This significantly affects how teams build and test software. The Scrum Master helps the team develop required capabilities, include security work in their Definition of Done and planning, and maintain sustainable pace despite increased complexity.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 401,
+    question: "A Product Owner wants to implement 'Responsible AI' principles including explainability, transparency, and human oversight for ML features. What should the Scrum Master do?",
+    options: [
+      "Support this as ethical AI is important for long-term product success",
+      "Help the team understand these become requirements that affect architecture and testing",
+      "Ensure Responsible AI principles are reflected in the Definition of Done",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Responsible AI is increasingly required by regulation and ethics in 2025. The Scrum Master helps translate these principles into concrete practices: explainable models, audit trails, human-in-the-loop design, bias testing. These quality attributes belong in the Definition of Done.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 402,
+    question: "A Development Team member works a '4-day workweek' while others work 5 days. How should the Scrum Master handle this regarding team collaboration?",
+    options: [
+      "Ensure the 4-day worker attends all Scrum events even if some fall on their off day",
+      "Work with the team to find collaboration patterns that work for everyone",
+      "The team should adjust their event timing to accommodate all members",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "Flexible work arrangements are increasingly common in 2025. The Scrum Master facilitates the team finding approaches that maintain collaboration while respecting individual arrangements. This might involve event timing adjustments, async practices, or other solutions the team identifies.",
+    domain: "Self-Managing Teams",
+    difficulty: "Foundation"
+  },
+  {
+    id: 403,
+    question: "A Scrum Team's product includes both mobile app development and large language model fine-tuning. How should they organize their work?",
+    options: [
+      "Split into specialized sub-teams (app team and ML team)",
+      "Develop cross-functional skills so everyone can contribute to both",
+      "Use pairing and mob programming to share knowledge across specialties",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "Modern products often span multiple technical domains. Rather than creating silos, the Scrum Master helps the team maintain cross-functionality through knowledge sharing, pairing, and collaborative work. Team members develop T-shaped skills: deep in one area, capable in others.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 404,
+    question: "The organization wants all teams to adopt 'FinOps' practices to optimize cloud costs. How should the Scrum Master approach this?",
+    options: [
+      "Help the team include cost optimization in their Definition of Done",
+      "Facilitate the team understanding and monitoring their infrastructure costs",
+      "Support the team making cost-conscious technical decisions",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "FinOps and cloud cost optimization are important in 2025. The Scrum Master helps teams take ownership of their infrastructure costs: monitoring, optimization, right-sizing, and cost-conscious architecture decisions. This is part of sustainable development and responsible resource use.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 405,
+    question: "A Product Owner wants to use 'predictive analytics' to forecast which customers will churn and proactively offer them features. What should the Scrum Master consider?",
+    options: [
+      "Support this as retention is valuable for the product",
+      "Ensure the team builds the analytics capabilities and feature delivery mechanisms",
+      "Question the ethics of differential treatment based on predicted behavior",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "Predictive analytics for customer retention is common in 2025, but raises ethical questions. The Scrum Master helps the team build required capabilities while facilitating discussion about ethical use of prediction, fairness, and transparency. Value maximization includes ethical considerations.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 406,
+    question: "A Development Team uses 'chaos engineering' to intentionally inject failures into production. The Product Owner is concerned about user impact. How should this be resolved?",
+    options: [
+      "Chaos engineering is a technical practice; the Product Owner shouldn't interfere",
+      "The team should only do chaos engineering in non-production environments",
+      "Facilitate discussion about controlled chaos experiments with appropriate safeguards",
+      "The benefits of improved resilience justify some risk of user impact"
+    ],
+    correctAnswer: 2,
+    explanation: "Chaos engineering is increasingly important in 2025 for building resilient systems. The Scrum Master facilitates finding approaches that achieve resilience testing while managing risk: gradual rollout, safeguards, monitoring, and Product Owner involvement in risk-value tradeoffs.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 407,
+    question: "The organization mandates 'shift right testing' with extensive production monitoring and observability. How does this affect the Development Team?",
+    options: [
+      "The team needs to build comprehensive observability into their products",
+      "Production monitoring capabilities should be included in the Definition of Done",
+      "The team should use production insights to improve their development practices",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Shift right and observability are critical in 2025. Teams must build monitoring, logging, tracing, and alerting as integral parts of their work, not afterthoughts. Production insights inform better product decisions and development practices. This is part of Definition of Done.",
+    domain: "Scrum Theory & Principles",
+    difficulty: "Advanced"
+  },
+  {
+    id: 408,
+    question: "A Product Owner wants to implement 'personalization at scale' using AI to customize the product experience for each user. What should the Scrum Master consider?",
+    options: [
+      "This creates significant technical complexity that affects Sprint planning",
+      "The team needs capabilities in ML, experimentation, and large-scale data processing",
+      "Consider privacy implications and user consent requirements",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "AI-driven personalization is common in 2025 but technically complex. The Scrum Master helps the team develop required capabilities, factor complexity into planning, and ensure ethical implementation with proper privacy controls. This affects architecture, testing, and Definition of Done.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 409,
+    question: "A Development Team wants to use 'GitOps' where all infrastructure and deployment is managed through Git commits. How should the Scrum Master support this?",
+    options: [
+      "Ensure the team develops infrastructure-as-code skills",
+      "Infrastructure changes should be reviewed and tested like application code",
+      "This can improve deployment reliability and transparency",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "GitOps is a modern deployment practice gaining traction in 2025. The Scrum Master helps the team adopt practices that improve their effectiveness: version-controlled infrastructure, automated deployment, and treating infrastructure with the same quality standards as application code.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 410,
+    question: "A Scrum Team's AI-powered product feature requires 'continuous model retraining' based on new user data. How does this affect their Sprint work?",
+    options: [
+      "Model retraining should be automated and not require Sprint-by-Sprint attention",
+      "The team should monitor model performance and retrain when drift is detected",
+      "MLOps practices make this a sustainable part of product maintenance",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "ML model lifecycle management (MLOps) is essential in 2025. The team should automate retraining, monitor for model drift, and maintain models as part of their product responsibility. This becomes part of sustainable product development, not manual Sprint work.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 411,
+    question: "The organization wants to adopt 'Open Telemetry' standards for observability across all teams. How should the Scrum Master approach this?",
+    options: [
+      "Support standardization as it enables better organizational visibility",
+      "Ensure the team has agency in how they implement the standard",
+      "Help the team understand benefits of shared observability practices",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Organizational standards like OpenTelemetry can benefit teams in 2025 while respecting autonomy. The Scrum Master helps the team understand benefits (shared tooling, knowledge transfer, integration) while ensuring they have flexibility in implementation that serves their needs.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 412,
+    question: "A Product Owner wants to implement 'progressive disclosure' in the UI to reduce cognitive load, but developers are concerned about implementation complexity. What should the Scrum Master do?",
+    options: [
+      "Facilitate discussion about the value-complexity tradeoff",
+      "Help the team explore approaches that make progressive disclosure more manageable",
+      "Ensure the team and Product Owner understand each other's constraints and goals",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "This represents a common tension between UX goals and technical complexity. The Scrum Master facilitates collaborative problem-solving where both perspectives are valued. Modern frameworks and component libraries often have patterns that reduce progressive disclosure complexity.",
+    domain: "Product Value",
+    difficulty: "Foundation"
+  },
+  {
+    id: 413,
+    question: "A Development Team wants to adopt 'trunk-based development' but some members are concerned about code quality without long-lived feature branches. What should the Scrum Master do?",
+    options: [
+      "Support the team experimenting with the practice",
+      "Help them understand trunk-based development requires strong testing and CI/CD",
+      "Facilitate discussion about practices that maintain quality with trunk-based development",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Trunk-based development is increasingly common in 2025 for faster integration. The Scrum Master helps the team understand it requires different quality practices: comprehensive automated testing, small changes, feature flags, and strong CI/CD. Facilitate learning and experimentation.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 414,
+    question: "A Scrum Team builds products that must comply with multiple AI regulations (EU AI Act, state laws, industry standards). How should they handle this?",
+    options: [
+      "Add regulatory compliance requirements to the Definition of Done",
+      "Include compliance validation in their Sprint work",
+      "Collaborate with legal and compliance teams as needed",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "AI regulation is rapidly expanding in 2025. Teams must treat compliance as integral to done work, not separate. This means understanding requirements, building in compliance from the start, validating compliance, and collaborating with organizational compliance resources.",
+    domain: "Scrum Theory & Principles",
+    difficulty: "Advanced"
+  },
+  {
+    id: 415,
+    question: "A Product Owner wants to use 'composable architecture' where the product is assembled from third-party components and APIs. What should the Scrum Master consider?",
+    options: [
+      "This reduces custom development but increases integration and vendor management complexity",
+      "The team needs skills in API integration, vendor evaluation, and abstraction patterns",
+      "Vendor dependencies and limitations should be visible in Sprint planning",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Composable architecture is a major trend in 2025. The Scrum Master helps the team understand implications: different skill requirements, dependency management, vendor risk, and integration complexity. Planning must account for external dependencies and potential limitations.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 416,
+    question: "A Development Team member wants to use 'AI-powered test generation' to automatically create test cases. What should the Scrum Master consider?",
+    options: [
+      "This can improve test coverage if used thoughtfully",
+      "AI-generated tests still need human review for quality and relevance",
+      "The team maintains accountability for test quality regardless of how tests are generated",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "AI test generation tools are emerging in 2025. They can augment human testing but require critical review: Do tests actually validate important behavior? Are assertions meaningful? The Scrum Master ensures the team understands they own test quality regardless of generation method.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 417,
+    question: "The organization wants to implement 'Developer Experience (DevEx) metrics' to measure and improve team effectiveness. How should the Scrum Master respond?",
+    options: [
+      "Support this if metrics focus on removing friction and impediments, not evaluating individuals",
+      "Help teams provide feedback on what would actually improve their experience",
+      "Warn against using DevEx metrics for individual performance evaluation",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "DevEx is gaining attention in 2025. The Scrum Master supports measuring team friction and impediments while preventing misuse of metrics for individual evaluation. Teams should have input on what's measured and how improvements are identified. Focus should be on systemic improvement.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 418,
+    question: "A Scrum Team's product uses 'edge computing' where processing happens on user devices or edge nodes instead of centralized servers. How does this affect their work?",
+    options: [
+      "Testing becomes more complex due to distributed execution environments",
+      "The Definition of Done should include edge deployment and testing",
+      "The team needs to understand edge computing constraints and capabilities",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Edge computing is increasingly important in 2025 for latency and privacy. It creates new complexity: testing across diverse edge environments, managing distributed deployments, handling intermittent connectivity. The team must develop appropriate capabilities and quality standards.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 419,
+    question: "A Product Owner wants to implement 'value stream mapping' to optimize flow from idea to customer value. How should the Scrum Master support this?",
+    options: [
+      "Participate in value stream mapping to identify organizational impediments",
+      "Help the team understand their role in the overall value stream",
+      "Use insights from value stream mapping to improve team and organizational practices",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Value stream optimization is key to organizational agility in 2025. The Scrum Master helps apply these insights: identifying waste, reducing handoffs, improving flow, and addressing impediments beyond the team. This connects team-level Scrum to organizational effectiveness.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 420,
+    question: "A Development Team wants to use 'Infrastructure as Code' (IaC) security scanning that blocks deployments if security issues are found. What should the Scrum Master consider?",
+    options: [
+      "This improves security and should be supported",
+      "Ensure blocked deployments become visible impediments to address",
+      "The team should include IaC security in their Definition of Done to prevent blocks",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "Automated security scanning is standard in 2025. Rather than being blocked repeatedly, teams should shift left: include security in Definition of Done, address issues during development, and treat any blocks as learning opportunities to improve practices. Prevention is better than detection.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 421,
+    question: "A Scrum Team builds healthcare products that must comply with 'algorithmic transparency' requirements showing how AI makes decisions. How does this affect their work?",
+    options: [
+      "Choose explainable AI models even if less accurate than black-box models",
+      "Build audit trails and explanation interfaces",
+      "Include explainability requirements in Definition of Done",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Algorithmic transparency is increasingly regulated in 2025, especially in healthcare. Teams must make architectural choices (explainable models), build required capabilities (audit trails, explanations), and treat transparency as a quality attribute in Definition of Done.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 422,
+    question: "A Product Owner wants to implement 'contextual AI' that changes product behavior based on user context (location, time, activity). What should the Scrum Master consider?",
+    options: [
+      "This creates complex testing scenarios across different contexts",
+      "Privacy implications of collecting and using contextual data",
+      "The technical complexity of context-aware systems",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Context-aware AI is powerful in 2025 but complex. The Scrum Master helps the team understand implications: privacy requirements, testing complexity, edge cases, and technical architecture challenges. These factors affect Sprint planning, Definition of Done, and team capabilities.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 423,
+    question: "A Development Team wants to use 'remote pair programming' with AI assistance where the AI actively participates like a third programmer. What should the Scrum Master consider?",
+    options: [
+      "This represents innovative use of AI tools",
+      "Ensure the human developers maintain understanding and control",
+      "Monitor whether this actually improves outcomes or creates over-reliance on AI",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "AI as an active development partner is emerging in 2025. The Scrum Master encourages experimentation while ensuring developers maintain skills, understanding, and critical thinking. Measure whether this improves or degrades learning, quality, and team capability.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 424,
+    question: "The organization implements 'Green Software Engineering' principles to minimize environmental impact. How should the Scrum Master help the team adopt this?",
+    options: [
+      "Help the team understand carbon-aware computing and efficient algorithms",
+      "Include energy efficiency considerations in technical decision-making",
+      "Add environmental impact metrics to the team's visibility",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Green software engineering is increasingly important in 2025. The Scrum Master helps teams develop awareness and practices: efficient algorithms, carbon-aware workload scheduling, right-sized infrastructure, and visibility into environmental impact. This aligns with sustainable development.",
+    domain: "Self-Managing Teams",
+    difficulty: "Advanced"
+  },
+  {
+    id: 425,
+    question: "A Product Owner wants to implement 'AI-powered customer support' but the Development Team is concerned about AI making mistakes that harm customer relationships. How should this be resolved?",
+    options: [
+      "Don't implement AI support if there's any risk of errors",
+      "Implement AI support with appropriate guardrails: human escalation, confidence thresholds, monitoring",
+      "Facilitate discussion about balancing innovation with risk management",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "AI in customer-facing roles is increasingly common in 2025 but carries risks. The Scrum Master facilitates finding approaches that enable innovation while managing risk: progressive rollout, human oversight, confidence thresholds, easy escalation, and monitoring. Balance innovation with responsible deployment.",
+    domain: "Product Value",
+    difficulty: "Advanced"
   }
 ];
 
