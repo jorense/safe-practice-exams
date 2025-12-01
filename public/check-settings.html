@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Question History Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #333;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #667eea;
+      margin-top: 30px;
+    }
+    .setting {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    .setting-name {
+      font-weight: 600;
+      color: #333;
+    }
+    .setting-value {
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .setting-value.true {
+      background: #fef3c7;
+      color: #78350f;
+    }
+    .setting-value.false {
+      background: #d1fae5;
+      color: #065f46;
+    }
+    .setting-value.null {
+      background: #e5e7eb;
+      color: #6b7280;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .stat-box {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+    .stat-label {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+    .warning {
+      background: #fef2f2;
+      border-left: 4px solid #dc2626;
+      padding: 15px 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    .warning-title {
+      font-weight: 700;
+      color: #991b1b;
+      margin-bottom: 8px;
+    }
+    .info {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 15px 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    .info-title {
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 8px;
+    }
+    button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      margin: 5px;
+      font-size: 14px;
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+    button.danger {
+      background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    }
+    .actions {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 2px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🔍 Question History Settings Checker</h1>
+    
+    <h2>Current Settings</h2>
+    <div class="setting">
+      <span class="setting-name">Include Previously Seen Questions</span>
+      <span class="setting-value" id="include-seen-value">Loading...</span>
+    </div>
+    <div class="setting">
+      <span class="setting-name">Has Seen Migration Notice</span>
+      <span class="setting-value" id="migration-notice-value">Loading...</span>
+    </div>
+
+    <div id="warning-container"></div>
+    
+    <h2>Practice History Statistics</h2>
+    <div class="stats" id="stats-container">
+      Loading...
+    </div>
+
+    <h2>Question Details by Exam</h2>
+    <div id="exam-details"></div>
+
+    <div class="actions">
+      <h2>Actions</h2>
+      <button onclick="fixSetting()">✅ Fix: Set to Exclude Seen Questions (Recommended)</button>
+      <button onclick="clearMigrationNotice()">🔔 Reset Migration Notice</button>
+      <button onclick="location.reload()">🔄 Refresh Data</button>
+      <button onclick="clearAllHistory()" class="danger">⚠️ Clear All History</button>
+    </div>
+  </div>
+
+  <script>
+    function loadData() {
+      // Check include seen questions setting
+      const includeSeen = localStorage.getItem('lace-studio-include-seen')
+      const includeSeenElem = document.getElementById('include-seen-value')
+      
+      if (includeSeen === null) {
+        includeSeenElem.textContent = 'Not Set (Using Default)'
+        includeSeenElem.className = 'setting-value null'
+      } else {
+        includeSeenElem.textContent = includeSeen === 'true' ? 'TRUE (Shows All)' : 'FALSE (Shows Only New)'
+        includeSeenElem.className = `setting-value ${includeSeen}`
+      }
+
+      // Check migration notice
+      const migrationNotice = localStorage.getItem('question-history-migration-notice')
+      const migrationElem = document.getElementById('migration-notice-value')
+      migrationElem.textContent = migrationNotice === 'true' ? 'Seen' : 'Not Seen'
+      migrationElem.className = `setting-value ${migrationNotice === 'true' ? 'true' : 'false'}`
+
+      // Check if there's a problem
+      const history = localStorage.getItem('practice-exam-history')
+      const warningContainer = document.getElementById('warning-container')
+      
+      if (history && (includeSeen === 'true' || includeSeen === null)) {
+        const hasExistingHistory = !!history
+        const defaultWouldBeTrue = hasExistingHistory
+        
+        warningContainer.innerHTML = `
+          <div class="warning">
+            <div class="warning-title">⚠️ This is Why You're Seeing Duplicate Questions!</div>
+            <p><strong>Current Setting:</strong> "Include Previously Seen Questions" is ${includeSeen === 'true' ? '<strong>TRUE</strong>' : '<strong>NOT SET (defaulting to TRUE for existing users)</strong>'}</p>
+            <p><strong>Impact:</strong> You're seeing ALL questions, including ones you've already practiced.</p>
+            <p><strong>Solution:</strong> Click the "Fix: Set to Exclude Seen Questions" button below to see only NEW questions.</p>
+          </div>
+        `
+      } else if (includeSeen === 'false') {
+        warningContainer.innerHTML = `
+          <div class="info">
+            <div class="info-title">✅ Settings Look Good!</div>
+            <p>You're set to see only NEW questions. If you're still seeing duplicates, it might be a browser cache issue.</p>
+            <p>Try: Close all tabs of the app, clear browser cache, and reopen.</p>
+          </div>
+        `
+      }
+
+      // Load practice history
+      if (history) {
+        const historyData = JSON.parse(history)
+        const exams = ['psm2', 'pspo1', 'leadingsafe6', 'safeteams6']
+        const examNames = {
+          psm2: 'PSM II',
+          pspo1: 'PSPO I',
+          leadingsafe6: 'Leading SAFe 6',
+          safeteams6: 'SAFe for Teams 6'
+        }
+
+        let totalSeen = 0
+        let totalCorrect = 0
+        let totalIncorrect = 0
+
+        exams.forEach(exam => {
+          if (historyData[exam]) {
+            totalSeen += historyData[exam].seenQuestions?.length || 0
+            totalCorrect += historyData[exam].answeredCorrectly?.length || 0
+            totalIncorrect += historyData[exam].answeredIncorrectly?.length || 0
+          }
+        })
+
+        document.getElementById('stats-container').innerHTML = `
+          <div class="stat-box">
+            <div class="stat-label">Total Questions Seen</div>
+            <div class="stat-value">${totalSeen}</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Answered Correctly</div>
+            <div class="stat-value">${totalCorrect}</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Answered Incorrectly</div>
+            <div class="stat-value">${totalIncorrect}</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Mastery</div>
+            <div class="stat-value">${totalSeen > 0 ? Math.round((totalCorrect / totalSeen) * 100) : 0}%</div>
+          </div>
+        `
+
+        // Exam details
+        let detailsHTML = ''
+        exams.forEach(exam => {
+          if (historyData[exam]) {
+            const data = historyData[exam]
+            const seen = data.seenQuestions?.length || 0
+            const correct = data.answeredCorrectly?.length || 0
+            const incorrect = data.answeredIncorrectly?.length || 0
+            const mastery = seen > 0 ? Math.round((correct / seen) * 100) : 0
+
+            detailsHTML += `
+              <div class="setting">
+                <span class="setting-name"><strong>${examNames[exam]}</strong></span>
+                <span>Seen: ${seen} | Correct: ${correct} | Incorrect: ${incorrect} | Mastery: ${mastery}%</span>
+              </div>
+            `
+          }
+        })
+        document.getElementById('exam-details').innerHTML = detailsHTML || '<p>No exam history found.</p>'
+      } else {
+        document.getElementById('stats-container').innerHTML = '<p>No practice history found.</p>'
+        document.getElementById('exam-details').innerHTML = '<p>No exam history found.</p>'
+      }
+    }
+
+    function fixSetting() {
+      localStorage.setItem('lace-studio-include-seen', 'false')
+      alert('✅ Setting updated!\n\n"Include Previously Seen Questions" is now FALSE.\n\nYou will now see only NEW questions by default.\n\nReload the page to see the updated setting.')
+      location.reload()
+    }
+
+    function clearMigrationNotice() {
+      localStorage.removeItem('question-history-migration-notice')
+      alert('🔔 Migration notice cleared. You\'ll see it again on next visit.')
+      location.reload()
+    }
+
+    function clearAllHistory() {
+      if (confirm('⚠️ Are you sure you want to clear ALL practice history?\n\nThis will delete all your progress and cannot be undone!')) {
+        localStorage.removeItem('practice-exam-history')
+        localStorage.removeItem('lace-studio-include-seen')
+        localStorage.removeItem('question-history-migration-notice')
+        alert('✅ All history cleared!')
+        location.reload()
+      }
+    }
+
+    // Load data on page load
+    loadData()
+  </script>
+</body>
+</html>
