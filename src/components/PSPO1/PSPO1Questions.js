@@ -1,19 +1,14 @@
-// Professional Scrum Product Owner I (PSPO 1) Practice Exam Questions
-// Comprehensive question bank with length bias prevention and professional-grade content
-// Domain Distribution: Product Backlog Management (30%), Product Value (25%), 
-// Scrum Framework (25%), Stakeholder Management (20%)
-
-export const pspo1Questions = [
+const pspo1Questions = [
   {
     id: 1,
     question: "What is the primary way a Product Owner can maximize the value of a product?",
     options: [
-      "By writing detailed requirements for each Product Backlog item before Sprint Planning",
       "By ordering the Product Backlog to optimize the work of the Development Team",
       "By spending more time with stakeholders than with the Development Team",
-      "By attending all Development Team meetings to provide immediate clarifications"
+      "By attending all Development Team meetings to provide immediate clarifications",
+      "By writing detailed requirements for each Product Backlog item before Sprint Planning"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner maximizes value primarily through effective Product Backlog ordering based on value, risk, dependencies, and learning opportunities. This enables the Development Team to deliver the most valuable work first and adapt based on feedback and changing conditions.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -22,12 +17,12 @@ export const pspo1Questions = [
     id: 2,
     question: "Who is responsible for monitoring progress toward a Product Goal?",
     options: [
-      "The Scrum Master tracks progress and reports to stakeholders",
       "The Development Team measures their velocity and forecasts completion",
       "The Product Owner is accountable for tracking progress toward the Product Goal",
-      "Stakeholders review progress at Sprint Reviews and provide guidance"
+      "Stakeholders review progress at Sprint Reviews and provide guidance",
+      "The Scrum Master tracks progress and reports to stakeholders"
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: "The Product Owner is accountable for tracking and communicating progress toward the Product Goal. While progress is made transparent at Sprint Review, the Product Owner owns the responsibility for monitoring whether the product is moving toward its goal.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -36,12 +31,12 @@ export const pspo1Questions = [
     id: 3,
     question: "When should the Product Backlog be refined?",
     options: [
+      "During the Sprint Review when stakeholders provide feedback",
       "Only during dedicated refinement sessions scheduled in advance",
       "Continuously throughout the Sprint as an ongoing activity",
-      "Only at Sprint Planning when items are being selected for the Sprint",
-      "During the Sprint Review when stakeholders provide feedback"
+      "Only at Sprint Planning when items are being selected for the Sprint"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Product Backlog refinement is an ongoing activity throughout the Sprint, not confined to specific events. The Product Owner and Development Team collaborate to clarify, estimate, and add detail to items as needed to prepare for future Sprints.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -50,12 +45,12 @@ export const pspo1Questions = [
     id: 4,
     question: "The Product Owner is not collaborating with the Development Team during the Sprint. What is the most likely impact?",
     options: [
-      "The team becomes more self-organizing and makes better technical decisions",
-      "The Sprint Goal may not be achieved or the Increment may not be valuable",
       "The Development Team has more time to focus on technical excellence",
-      "Sprint Planning becomes more efficient in subsequent Sprints"
+      "Sprint Planning becomes more efficient in subsequent Sprints",
+      "The team becomes more self-organizing and makes better technical decisions",
+      "The Sprint Goal may not be achieved or the Increment may not be valuable"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Product Owner collaboration during the Sprint is essential for clarifying requirements, answering questions, and ensuring the team is building the right thing. Without collaboration, the team may build something that doesn't meet stakeholder needs or achieve the Sprint Goal.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -64,12 +59,12 @@ export const pspo1Questions = [
     id: 5,
     question: "What happens when multiple Scrum Teams work on the same product?",
     options: [
-      "Each team should have their own Product Owner and Product Backlog",
       "They should all work from a single Product Backlog with one Product Owner",
       "The teams should alternate Sprints to avoid conflicts and dependencies",
-      "Each team's Product Owner should coordinate through a chief Product Owner"
+      "Each team's Product Owner should coordinate through a chief Product Owner",
+      "Each team should have their own Product Owner and Product Backlog"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Multiple teams working on the same product work from a single Product Backlog with one Product Owner. This ensures unified prioritization and a cohesive product vision. The Product Owner may delegate ordering authority but remains accountable.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -106,12 +101,12 @@ export const pspo1Questions = [
     id: 8,
     question: "What should a Product Owner do when the Development Team identifies significant technical debt?",
     options: [
+      "Allocate a fixed percentage of each Sprint to technical debt reduction",
       "Defer technical debt work until all feature work is complete",
       "Create a separate technical backlog managed by the Development Team",
-      "Work with the team to understand the impact and consider it in Product Backlog ordering",
-      "Allocate a fixed percentage of each Sprint to technical debt reduction"
+      "Work with the team to understand the impact and consider it in Product Backlog ordering"
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: "The Product Owner should understand the impact of technical debt on future development speed, quality, and risk. Technical debt work should be considered alongside other work in Product Backlog ordering, not isolated or given automatic allocation.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -120,12 +115,12 @@ export const pspo1Questions = [
     id: 9,
     question: "When is a Sprint Goal created?",
     options: [
-      "Before Sprint Planning by the Product Owner based on stakeholder priorities",
       "During Sprint Planning through collaboration between Product Owner and Development Team",
       "After Sprint Planning once the team knows what they can deliver",
-      "During the previous Sprint's Review to guide upcoming Sprint Planning"
+      "During the previous Sprint's Review to guide upcoming Sprint Planning",
+      "Before Sprint Planning by the Product Owner based on stakeholder priorities"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Sprint Goal is crafted during Sprint Planning through collaboration. The Product Owner proposes objectives, and the Development Team provides input on what's achievable, resulting in a shared commitment that provides coherence for the Sprint.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -148,12 +143,12 @@ export const pspo1Questions = [
     id: 11,
     question: "How should a Product Owner handle conflicting priorities from different stakeholders?",
     options: [
+      "Alternate between stakeholder requests to keep everyone satisfied",
       "Implement a voting system where stakeholders collectively decide priorities",
       "Use the Product Owner's authority to make final decisions based on their understanding",
-      "Escalate conflicts to senior management for resolution",
-      "Alternate between stakeholder requests to keep everyone satisfied"
+      "Escalate conflicts to senior management for resolution"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner has final authority over Product Backlog ordering. They should listen to all stakeholders, understand different perspectives, but ultimately use their judgment and understanding of product strategy to make prioritization decisions.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -162,12 +157,12 @@ export const pspo1Questions = [
     id: 12,
     question: "What is the relationship between the Product Goal and Sprint Goals?",
     options: [
-      "Sprint Goals are created independently and don't necessarily relate to Product Goals",
-      "Each Sprint Goal should be a step toward achieving the Product Goal",
       "The Product Goal is achieved when enough Sprint Goals have been completed",
-      "Sprint Goals focus on technical work while Product Goals focus on business value"
+      "Sprint Goals focus on technical work while Product Goals focus on business value",
+      "Sprint Goals are created independently and don't necessarily relate to Product Goals",
+      "Each Sprint Goal should be a step toward achieving the Product Goal"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Sprint Goals should coherently move the product toward its Product Goal. While not every Sprint must directly advance the Product Goal, over time the Sprint Goals should represent progress toward the longer-term product objective.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -176,12 +171,12 @@ export const pspo1Questions = [
     id: 13,
     question: "During Sprint Review, stakeholders request significant changes to what was just demoed. What should happen?",
     options: [
-      "The Product Owner should reject changes to maintain the current Sprint plan",
-      "The Development Team should implement the changes immediately in the current Sprint",
       "The Product Owner considers the feedback and may adjust the Product Backlog accordingly",
-      "Changes should be deferred until the next Sprint Review for proper evaluation"
+      "Changes should be deferred until the next Sprint Review for proper evaluation",
+      "The Product Owner should reject changes to maintain the current Sprint plan",
+      "The Development Team should implement the changes immediately in the current Sprint"
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: "Sprint Review is an opportunity to inspect the Increment and adapt the Product Backlog. Stakeholder feedback may lead to Product Backlog changes, reprioritization, or new items. The Product Owner decides how to incorporate this learning.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -204,12 +199,12 @@ export const pspo1Questions = [
     id: 15,
     question: "A Product Owner wants to maximize the Development Team's output. What is the best approach?",
     options: [
+      "Provide detailed specifications upfront to prevent questions during development",
       "Minimize Product Owner availability to let the team work without interruptions",
       "Focus on Product Backlog ordering to ensure the team works on the most valuable items",
-      "Add more items to each Sprint to keep the team fully utilized",
-      "Provide detailed specifications upfront to prevent questions during development"
+      "Add more items to each Sprint to keep the team fully utilized"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner maximizes value, not output. Working on the right things (through effective ordering) is more important than working on more things. The focus should be on outcomes and value delivered, not activity or quantity.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -218,12 +213,12 @@ export const pspo1Questions = [
     id: 16,
     question: "When should the Product Owner be available to the Development Team?",
     options: [
-      "Only during Sprint Planning and Sprint Review to respect focus time",
-      "Throughout the Sprint to answer questions and provide clarification as needed",
       "During scheduled office hours to balance availability with other responsibilities",
-      "Only when specifically requested by the Scrum Master"
+      "Only when specifically requested by the Scrum Master",
+      "Only during Sprint Planning and Sprint Review to respect focus time",
+      "Throughout the Sprint to answer questions and provide clarification as needed"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner should be available throughout the Sprint to provide clarifications, answer questions, and collaborate with the Development Team. This availability is essential for the team to deliver valuable Increments that meet stakeholder needs.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -232,12 +227,12 @@ export const pspo1Questions = [
     id: 17,
     question: "What should a Product Owner do when market conditions change significantly mid-Sprint?",
     options: [
-      "Cancel the Sprint immediately to re-plan based on new conditions",
-      "Wait until Sprint Review to discuss the changes with stakeholders",
       "Work with the team to consider whether the Sprint Goal is still valid",
-      "Update the Product Backlog but let the current Sprint continue unchanged"
+      "Update the Product Backlog but let the current Sprint continue unchanged",
+      "Cancel the Sprint immediately to re-plan based on new conditions",
+      "Wait until Sprint Review to discuss the changes with stakeholders"
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: "Significant market changes may affect the Sprint Goal's validity. The Product Owner should discuss with the Development Team whether the Sprint Goal is still achievable and valuable. Only if the Sprint Goal becomes obsolete should Sprint cancellation be considered.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -260,12 +255,12 @@ export const pspo1Questions = [
     id: 19,
     question: "Who is responsible for estimating Product Backlog items?",
     options: [
+      "Business analysts or technical leads provide estimates before Sprint Planning",
       "The Product Owner estimates based on their understanding of value and complexity",
       "The Development Team provides estimates as they will do the work",
-      "The Scrum Master facilitates estimation sessions to ensure accuracy",
-      "Business analysts or technical leads provide estimates before Sprint Planning"
+      "The Scrum Master facilitates estimation sessions to ensure accuracy"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Development Team is responsible for estimating Product Backlog items because they will do the work and are best positioned to understand the effort involved. The Product Owner may provide input on value, but the team estimates effort.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -274,12 +269,12 @@ export const pspo1Questions = [
     id: 20,
     question: "What should a Product Owner do when stakeholders bypass them and go directly to the Development Team with requests?",
     options: [
-      "Allow it as it improves communication and reduces bottlenecks",
-      "Ask the team to redirect stakeholders to the Product Owner for backlog decisions",
       "Create a formal change request process to control stakeholder access",
-      "Let the Development Team decide whether to accept stakeholder requests"
+      "Let the Development Team decide whether to accept stakeholder requests",
+      "Allow it as it improves communication and reduces bottlenecks",
+      "Ask the team to redirect stakeholders to the Product Owner for backlog decisions"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner is accountable for the Product Backlog and its ordering. While stakeholders can communicate with the team, backlog decisions should go through the Product Owner to ensure coherent prioritization. The team should redirect prioritization discussions appropriately.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -288,12 +283,12 @@ export const pspo1Questions = [
     id: 21,
     question: "How should a Product Owner measure success?",
     options: [
-      "By the number of features delivered per Sprint or release",
-      "By stakeholder satisfaction scores collected after each Sprint Review",
       "By the value delivered and progress toward the Product Goal",
-      "By the Development Team's velocity and predictability trends"
+      "By the Development Team's velocity and predictability trends",
+      "By the number of features delivered per Sprint or release",
+      "By stakeholder satisfaction scores collected after each Sprint Review"
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: "A Product Owner's success should be measured by value delivered and progress toward the Product Goal, not by output metrics like features delivered or velocity. The focus is on outcomes and impact, not activity or quantity.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -302,12 +297,12 @@ export const pspo1Questions = [
     id: 22,
     question: "What is the Product Owner's role during the Daily Scrum?",
     options: [
-      "They should attend to provide clarifications and remove impediments",
       "They should participate to ensure alignment on Sprint Goal progress",
       "They may attend but should not interfere with team self-organization",
-      "They should attend only if specifically invited by the Development Team"
+      "They should attend only if specifically invited by the Development Team",
+      "They should attend to provide clarifications and remove impediments"
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: "The Daily Scrum is for the Development Team to inspect progress and adapt their plan. The Product Owner may attend as an observer but should not actively participate or direct the team's planning unless invited to provide specific input.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -316,12 +311,12 @@ export const pspo1Questions = [
     id: 23,
     question: "A Development Team says they need more time for a Product Backlog item. What should the Product Owner do?",
     options: [
+      "Add more people to the team to increase capacity",
       "Push the team to work faster to meet the original timeline",
       "Accept the team's estimate and consider the impact on priorities",
-      "Reduce the scope to fit the original time estimate",
-      "Add more people to the team to increase capacity"
+      "Reduce the scope to fit the original time estimate"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should respect the Development Team's estimates and self-organization. If an item takes more time than expected, the Product Owner can re-evaluate priorities, consider scope adjustments, or accept the timeline, but shouldn't pressure the team to work faster.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -330,12 +325,12 @@ export const pspo1Questions = [
     id: 24,
     question: "When should the Product Backlog be updated?",
     options: [
-      "Only during Sprint Planning when items are selected for the Sprint",
-      "At any time by the Product Owner as they learn and priorities change",
       "Only after Sprint Review when stakeholder feedback is incorporated",
-      "During dedicated backlog refinement sessions scheduled weekly"
+      "During dedicated backlog refinement sessions scheduled weekly",
+      "Only during Sprint Planning when items are selected for the Sprint",
+      "At any time by the Product Owner as they learn and priorities change"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Backlog is a living artifact that the Product Owner can update at any time as they learn, priorities change, or new information emerges. It's not constrained to specific events or timeboxes, though changes are often discussed during refinement.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -344,12 +339,12 @@ export const pspo1Questions = [
     id: 25,
     question: "What is the best way for a Product Owner to prepare for Sprint Planning?",
     options: [
-      "Create detailed specifications for all items that might be discussed",
       "Ensure top Product Backlog items are clear, ordered, and refined",
       "Pre-select specific items for the Sprint to streamline planning",
-      "Meet individually with each team member to understand their capacity"
+      "Meet individually with each team member to understand their capacity",
+      "Create detailed specifications for all items that might be discussed"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner prepares by ensuring the top of the Product Backlog is clear, ordered by value, and sufficiently refined so the Development Team can understand and select items. Pre-selecting items or over-detailing undermines collaborative Sprint Planning.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -372,12 +367,12 @@ export const pspo1Questions = [
     id: 27,
     question: "What should a Product Owner do when the Development Team cannot complete everything they selected for the Sprint?",
     options: [
+      "Accept partial features as Done if most of the work is complete",
       "Require the team to work overtime to meet their Sprint commitment",
       "Collaborate with the team to determine what can be completed and what moves back",
-      "Cancel the Sprint and re-plan with a more realistic scope",
-      "Accept partial features as Done if most of the work is complete"
+      "Cancel the Sprint and re-plan with a more realistic scope"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner and Development Team collaborate to determine what can realistically be completed within the Sprint. Incomplete items return to the Product Backlog for future consideration. This is normal adaptation based on learning during the Sprint.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -386,12 +381,12 @@ export const pspo1Questions = [
     id: 28,
     question: "How should a Product Owner work with multiple stakeholder groups with competing interests?",
     options: [
-      "Give each group equal time and resources to ensure fairness",
-      "Understand each group's needs and make informed trade-offs based on product strategy",
       "Create a stakeholder committee that makes prioritization decisions collectively",
-      "Focus primarily on the stakeholder group that funds the product"
+      "Focus primarily on the stakeholder group that funds the product",
+      "Give each group equal time and resources to ensure fairness",
+      "Understand each group's needs and make informed trade-offs based on product strategy"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner should understand all stakeholder perspectives but make informed decisions based on product strategy, value, and goals. They balance competing interests rather than trying to satisfy everyone equally or deferring to any single group.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -400,12 +395,12 @@ export const pspo1Questions = [
     id: 29,
     question: "What is the purpose of a Product Backlog item's acceptance criteria?",
     options: [
-      "To create a contract between the Product Owner and Development Team",
       "To provide shared understanding of what Done means for that item",
       "To define the minimum acceptable quality for the item",
-      "To specify exactly how the Development Team should implement the item"
+      "To specify exactly how the Development Team should implement the item",
+      "To create a contract between the Product Owner and Development Team"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Acceptance criteria create shared understanding between the Product Owner and Development Team about what needs to be true for an item to be considered complete. They clarify intent and enable verification, but aren't a contract or implementation specification.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -428,12 +423,12 @@ export const pspo1Questions = [
     id: 31,
     question: "How should a Product Owner respond when executives demand detailed multi-year roadmaps?",
     options: [
+      "Create high-level roadmaps but note they're estimates subject to change",
       "Create the roadmaps as requested to maintain executive support",
       "Explain empirical planning and offer alternative approaches like Product Goal and ordering",
-      "Delegate roadmap creation to business analysts or product managers",
-      "Create high-level roadmaps but note they're estimates subject to change"
+      "Delegate roadmap creation to business analysts or product managers"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should educate stakeholders on empirical planning in complex environments. While long-term vision (Product Goal) is valuable, detailed multi-year plans create false certainty. The Product Owner offers transparency through backlog ordering and regular inspection.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -442,12 +437,12 @@ export const pspo1Questions = [
     id: 32,
     question: "What happens to incomplete Product Backlog items at the end of a Sprint?",
     options: [
-      "They are moved to a 'technical debt' backlog for future cleanup",
-      "They return to the Product Backlog for the Product Owner to re-order",
       "They automatically move to the next Sprint to ensure continuity",
-      "They are split into smaller items that can be completed quickly"
+      "They are split into smaller items that can be completed quickly",
+      "They are moved to a 'technical debt' backlog for future cleanup",
+      "They return to the Product Backlog for the Product Owner to re-order"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Incomplete items return to the Product Backlog where the Product Owner re-orders them based on priorities. They don't automatically carry forward—they compete with other backlog items for prioritization in future Sprint Planning.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -456,12 +451,12 @@ export const pspo1Questions = [
     id: 33,
     question: "A stakeholder wants metrics on team productivity and velocity. How should the Product Owner respond?",
     options: [
-      "Share velocity data as it demonstrates team performance",
-      "Explain that velocity is a planning tool, not a productivity metric",
       "Provide velocity trends but emphasize value delivered over output",
-      "Decline to share internal team metrics with external stakeholders"
+      "Decline to share internal team metrics with external stakeholders",
+      "Share velocity data as it demonstrates team performance",
+      "Explain that velocity is a planning tool, not a productivity metric"
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: "Velocity is a planning tool, not a performance metric. While the Product Owner can share velocity trends with context, they should emphasize value and outcomes over output. The focus should be on what's delivered and its impact, not numerical productivity measures.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -484,12 +479,12 @@ export const pspo1Questions = [
     id: 35,
     question: "What is the Product Owner's role in Sprint Retrospective?",
     options: [
+      "They observe without participating to respect team self-organization",
       "They should not attend as it's only for the Development Team",
       "They participate as a member of the Scrum Team to improve collaboration",
-      "They attend only when invited by the team to discuss specific issues",
-      "They observe without participating to respect team self-organization"
+      "They attend only when invited by the team to discuss specific issues"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner participates in Sprint Retrospective as a member of the Scrum Team. The Retrospective is for the entire Scrum Team to inspect and adapt their process, relationships, and practices—not just the Development Team.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -498,12 +493,12 @@ export const pspo1Questions = [
     id: 36,
     question: "How should a Product Owner decide when to declare a Product Goal achieved?",
     options: [
-      "When all Product Backlog items have been completed",
-      "When the product achieves the intended outcome or objective",
       "After a predetermined time period or number of Sprints",
-      "When stakeholders collectively agree the goal has been met"
+      "When stakeholders collectively agree the goal has been met",
+      "When all Product Backlog items have been completed",
+      "When the product achieves the intended outcome or objective"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "A Product Goal is achieved when the intended outcome or objective is realized, not necessarily when all work is done. The Product Owner assesses whether the product has achieved its goal and then either establishes a new Product Goal or considers the product complete.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -512,12 +507,12 @@ export const pspo1Questions = [
     id: 37,
     question: "What should a Product Owner do when the market changes and the current Product Goal is no longer valuable?",
     options: [
-      "Complete the current Product Goal before considering alternatives",
       "Work with stakeholders to define a new Product Goal that reflects current needs",
       "Continue with the current goal but adjust Product Backlog priorities",
-      "Cancel all Sprints until a new strategic direction is established"
+      "Cancel all Sprints until a new strategic direction is established",
+      "Complete the current Product Goal before considering alternatives"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "If a Product Goal becomes obsolete due to market changes, the Product Owner should work with stakeholders to establish a new Product Goal that reflects current needs. The Product Goal should guide work, so it must remain relevant and valuable.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -526,12 +521,12 @@ export const pspo1Questions = [
     id: 38,
     question: "How should a Product Owner balance new features with maintenance work?",
     options: [
-      "Allocate a fixed percentage of each Sprint to maintenance activities",
       "Focus exclusively on new features; maintenance is a technical concern",
       "Order the backlog considering the value and impact of both new work and maintenance",
-      "Alternate Sprints between new features and maintenance work"
+      "Alternate Sprints between new features and maintenance work",
+      "Allocate a fixed percentage of each Sprint to maintenance activities"
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: "The Product Owner should understand how maintenance work impacts future development speed, quality, and risk, then order the backlog accordingly. Both new features and maintenance should be evaluated based on their value and impact, not given automatic allocation.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -540,12 +535,12 @@ export const pspo1Questions = [
     id: 39,
     question: "A stakeholder suggests the Product Owner is prioritizing the wrong things. What should the Product Owner do?",
     options: [
+      "Ask the Scrum Master to mediate the disagreement",
       "Defend their prioritization decisions and maintain their current approach",
       "Listen to the stakeholder's perspective and explain their prioritization rationale",
-      "Change priorities to maintain stakeholder support and satisfaction",
-      "Ask the Scrum Master to mediate the disagreement"
+      "Change priorities to maintain stakeholder support and satisfaction"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should listen to stakeholder concerns and understand their perspective, then explain their prioritization rationale and strategy. This doesn't mean changing priorities to please stakeholders, but engaging in informed dialogue about trade-offs and strategy.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -554,12 +549,12 @@ export const pspo1Questions = [
     id: 40,
     question: "What should be the Product Owner's primary focus during Sprint execution?",
     options: [
-      "Planning for future Sprints and engaging with stakeholders",
-      "Being available to the Development Team and clarifying Product Backlog items",
       "Monitoring team progress and ensuring they stay on schedule",
-      "Attending all team meetings to maintain alignment and coordination"
+      "Attending all team meetings to maintain alignment and coordination",
+      "Planning for future Sprints and engaging with stakeholders",
+      "Being available to the Development Team and clarifying Product Backlog items"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "During Sprint execution, the Product Owner's primary focus should be availability to the Development Team for clarifications and collaboration, while also refining upcoming backlog items and engaging stakeholders. The emphasis is on enabling the team's success in the current Sprint.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -568,12 +563,12 @@ export const pspo1Questions = [
     id: 41,
     question: "How should a Product Owner handle pressure to commit to fixed scope and dates?",
     options: [
-      "Commit to what stakeholders request to maintain trust and relationships",
       "Explain empirical forecasting and uncertainty in complex work",
       "Provide estimates but label them as highly uncertain and unreliable",
-      "Delegate commitment decisions to the Development Team"
+      "Delegate commitment decisions to the Development Team",
+      "Commit to what stakeholders request to maintain trust and relationships"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should educate stakeholders on empirical forecasting and the inherent uncertainty in complex work. Rather than false commitments, they provide transparency through Product Backlog ordering, regular inspection at Sprint Reviews, and probabilistic forecasting.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -596,12 +591,12 @@ export const pspo1Questions = [
     id: 43,
     question: "A Product Owner notices the Development Team is not improving their practices. What should they do?",
     options: [
-      "Raise concerns in Sprint Retrospective for team discussion",
-      "Focus on their own accountabilities and let the Scrum Master address team improvement",
       "Provide specific guidance on practices the team should adopt",
-      "Request management intervention to mandate practice improvements"
+      "Request management intervention to mandate practice improvements",
+      "Raise concerns in Sprint Retrospective for team discussion",
+      "Focus on their own accountabilities and let the Scrum Master address team improvement"
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: "The Product Owner can raise concerns about team practices in Retrospective as a Scrum Team member. While the Scrum Master facilitates improvement, the entire team collaborates on identifying and implementing improvements. The Product Owner has a voice in team process.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -610,12 +605,12 @@ export const pspo1Questions = [
     id: 44,
     question: "How detailed should a Product Owner's vision for the product be?",
     options: [
-      "Extremely detailed with specific features and timelines defined upfront",
-      "Clear enough to provide direction while allowing for emergence and adaptation",
       "High-level and abstract to provide maximum flexibility for the team",
-      "Detailed for short-term but vague for long-term to acknowledge uncertainty"
+      "Detailed for short-term but vague for long-term to acknowledge uncertainty",
+      "Extremely detailed with specific features and timelines defined upfront",
+      "Clear enough to provide direction while allowing for emergence and adaptation"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The product vision should provide clear direction and purpose while allowing for adaptation as the team learns. It should be compelling and directional without being overly prescriptive about solutions, enabling the team and stakeholders to collaborate on how to achieve it.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -624,12 +619,12 @@ export const pspo1Questions = [
     id: 45,
     question: "What should a Product Owner do when the Development Team requests significant time for learning new technologies?",
     options: [
-      "Approve learning time as it's necessary for team effectiveness",
       "Understand the value and consider it in Product Backlog prioritization",
       "Suggest the team learn outside of Sprint time to maximize delivery",
-      "Allocate a fixed percentage of each Sprint for learning activities"
+      "Allocate a fixed percentage of each Sprint for learning activities",
+      "Approve learning time as it's necessary for team effectiveness"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should understand how learning improves future development speed, quality, or capabilities, then consider learning activities in Product Backlog prioritization. Learning should be weighed against other work based on its value and impact.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -652,12 +647,12 @@ export const pspo1Questions = [
     id: 47,
     question: "What should a Product Owner do when they don't have all the answers stakeholders need?",
     options: [
+      "Redirect detailed questions to the Development Team for technical answers",
       "Defer questions until they can research and provide complete answers",
       "Be transparent about what they know and don't know while committing to learn more",
-      "Provide educated guesses to maintain credibility and stakeholder confidence",
-      "Redirect detailed questions to the Development Team for technical answers"
+      "Provide educated guesses to maintain credibility and stakeholder confidence"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Transparency is a Scrum value. The Product Owner should be honest about what they know and don't know, while showing commitment to learning and getting answers. This builds trust more than pretending to have all answers or deferring engagement.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -666,12 +661,12 @@ export const pspo1Questions = [
     id: 48,
     question: "How should a Product Owner handle a Product Backlog item that the Development Team says is impossible to implement?",
     options: [
-      "Remove the item from the backlog as it's not feasible",
-      "Explore alternatives with the team to achieve the underlying goal",
       "Get a second opinion from technical experts outside the team",
-      "Reduce the scope until the team agrees it's achievable"
+      "Reduce the scope until the team agrees it's achievable",
+      "Remove the item from the backlog as it's not feasible",
+      "Explore alternatives with the team to achieve the underlying goal"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner should collaborate with the Development Team to understand why something seems impossible and explore alternative approaches to achieve the underlying goal. The conversation should focus on the problem to solve, not the specific solution initially proposed.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -680,12 +675,12 @@ export const pspo1Questions = [
     id: 49,
     question: "What is the Product Owner's role in ensuring Definition of Done is met?",
     options: [
-      "They inspect work during the Sprint to verify Definition of Done compliance",
       "They trust the Development Team's professionalism in meeting the Definition of Done",
       "They conduct acceptance testing at Sprint end to validate each item",
-      "They verify Definition of Done during Sprint Review before accepting work"
+      "They verify Definition of Done during Sprint Review before accepting work",
+      "They inspect work during the Sprint to verify Definition of Done compliance"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Development Team is responsible for ensuring work meets the Definition of Done. The Product Owner trusts the team's professionalism and quality standards. During Sprint Review, the Product Owner focuses on whether the Increment meets their product expectations, not policing the Definition of Done.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -708,12 +703,12 @@ export const pspo1Questions = [
     id: 51,
     question: "A Product Owner has limited availability due to other responsibilities. What should happen?",
     options: [
+      "A proxy Product Owner should be appointed to handle day-to-day decisions",
       "This is acceptable if they communicate priorities clearly at Sprint Planning",
       "The organization should address this as Product Owner availability is essential",
-      "The Development Team should become more self-sufficient to compensate",
-      "A proxy Product Owner should be appointed to handle day-to-day decisions"
+      "The Development Team should become more self-sufficient to compensate"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Product Owner availability is critical for Scrum Team success. If a Product Owner cannot provide necessary availability, the organization should address this through workload adjustment, support, or reconsidering the assignment. A part-time, unavailable Product Owner undermines value delivery.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -722,12 +717,12 @@ export const pspo1Questions = [
     id: 52,
     question: "What should a Product Owner do when technical architecture decisions might impact future product direction?",
     options: [
-      "Let the Development Team make all technical decisions independently",
-      "Engage with the team to understand implications for product strategy and flexibility",
       "Make the architectural decisions based on product strategy requirements",
-      "Require detailed technical documentation before any architecture changes"
+      "Require detailed technical documentation before any architecture changes",
+      "Let the Development Team make all technical decisions independently",
+      "Engage with the team to understand implications for product strategy and flexibility"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner should engage with the Development Team to understand how technical decisions impact product flexibility, future options, and strategic direction. While the team decides 'how', the Product Owner should understand implications for the product's future.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -736,12 +731,12 @@ export const pspo1Questions = [
     id: 53,
     question: "How should a Product Owner handle a situation where stakeholders want different products serving different markets?",
     options: [
-      "Create multiple Product Backlogs, one for each market segment",
       "Work with stakeholders to align on a single Product Goal or separate the products",
       "Let the Development Team decide how to organize their work",
-      "Alternate Sprints between different market needs"
+      "Alternate Sprints between different market needs",
+      "Create multiple Product Backlogs, one for each market segment"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "If stakeholders want fundamentally different products, the Product Owner should work to either align on a unified Product Goal or recognize these as separate products needing separate Product Backlogs and potentially separate Scrum Teams.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -750,12 +745,12 @@ export const pspo1Questions = [
     id: 54,
     question: "What should a Product Owner do when they realize a recently completed feature provides less value than expected?",
     options: [
+      "Investigate who made the prioritization error to prevent recurrence",
       "Accept it as learning and adjust future priorities accordingly",
       "Ask the Development Team to enhance the feature in the next Sprint",
-      "Remove the feature from the product to avoid supporting low-value functionality",
-      "Investigate who made the prioritization error to prevent recurrence"
+      "Remove the feature from the product to avoid supporting low-value functionality"
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: "This is normal learning in complex product development. The Product Owner should accept the learning, potentially adjust the Product Backlog based on new understanding, and move forward. Empiricism expects that we learn as we go and adapt based on evidence.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -764,12 +759,12 @@ export const pspo1Questions = [
     id: 55,
     question: "How should a Product Owner prepare stakeholders for Sprint Review?",
     options: [
+      "Share completed work in advance so stakeholders can prepare questions",
       "Send detailed agenda and demo script so stakeholders know what to expect",
       "Provide context about Sprint Goal and what will be inspected, emphasizing collaboration",
-      "No preparation needed; Sprint Review should be spontaneous and unscripted",
-      "Share completed work in advance so stakeholders can prepare questions"
+      "No preparation needed; Sprint Review should be spontaneous and unscripted"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should set context about the Sprint Goal and what will be inspected, emphasizing that Sprint Review is collaborative, not just a demo. This helps stakeholders prepare for meaningful engagement without over-scripting the event or sharing work prematurely.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -778,12 +773,12 @@ export const pspo1Questions = [
     id: 56,
     question: "What should a Product Owner do when market research suggests a pivot in product strategy?",
     options: [
-      "Immediately change the Product Backlog to reflect new strategic direction",
-      "Discuss findings with stakeholders and Scrum Team to inform Product Goal evolution",
       "Wait until the current Sprint completes before considering strategic changes",
-      "Commission additional research to validate findings before any changes"
+      "Commission additional research to validate findings before any changes",
+      "Immediately change the Product Backlog to reflect new strategic direction",
+      "Discuss findings with stakeholders and Scrum Team to inform Product Goal evolution"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Significant market research should be discussed with stakeholders and the Scrum Team to inform Product Goal and backlog evolution. This ensures informed decision-making while respecting the collaborative nature of product development and the expertise of the team.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -820,12 +815,12 @@ export const pspo1Questions = [
     id: 59,
     question: "How should a Product Owner approach experimentation and validation of assumptions?",
     options: [
+      "Conduct all experiments before Sprint Planning to inform priorities",
       "Minimize experimentation to focus resources on known valuable features",
       "Include experiments in the Product Backlog when learning is valuable",
-      "Delegate experimentation to a separate innovation team outside Scrum",
-      "Conduct all experiments before Sprint Planning to inform priorities"
+      "Delegate experimentation to a separate innovation team outside Scrum"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Experimentation and validation can be valuable Product Backlog items when learning reduces risk or informs important decisions. The Product Owner should order experiments alongside other work based on the value of learning versus other priorities.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -834,12 +829,12 @@ export const pspo1Questions = [
     id: 60,
     question: "What is the most important characteristic of a Product Owner?",
     options: [
+      "Availability to the Development Team throughout the Sprint",
       "Deep technical knowledge to make informed prioritization decisions",
       "Strong stakeholder management skills to balance competing demands",
-      "Clear decision-making authority and accountability for product value",
-      "Availability to the Development Team throughout the Sprint"
+      "Clear decision-making authority and accountability for product value"
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: "While technical knowledge, stakeholder skills, and availability are important, the most critical characteristic is clear authority and accountability for maximizing product value. Without authority to make final decisions on the Product Backlog, the Product Owner cannot effectively fulfill their role.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -848,12 +843,12 @@ export const pspo1Questions = [
     id: 61,
     question: "How should a Product Owner handle a situation where the Development Team wants to rewrite significant portions of the codebase?",
     options: [
-      "Support technical decisions as the team knows what's best for the code",
       "Understand the business case and opportunity cost, then prioritize accordingly",
       "Reject rewrites as they don't deliver new features to users",
-      "Allow incremental refactoring but discourage large-scale rewrites"
+      "Allow incremental refactoring but discourage large-scale rewrites",
+      "Support technical decisions as the team knows what's best for the code"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should understand why the rewrite is proposed, what benefits it provides, and what opportunity costs exist (other work that won't get done). Then they prioritize the rewrite against other work in the Product Backlog based on its value proposition.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -890,12 +885,12 @@ export const pspo1Questions = [
     id: 64,
     question: "What should a Product Owner do when regulatory changes require immediate product modifications?",
     options: [
+      "Request management to allocate separate resources for regulatory compliance",
       "Interrupt the current Sprint to implement regulatory changes immediately",
       "Add regulatory work to the Product Backlog and prioritize it appropriately",
-      "Work with the team to determine if the Sprint Goal is still valid",
-      "Request management to allocate separate resources for regulatory compliance"
+      "Work with the team to determine if the Sprint Goal is still valid"
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: "Urgent regulatory changes may make the current Sprint Goal obsolete. The Product Owner should discuss with the Development Team whether the Sprint Goal is still achievable and valuable. If the Sprint Goal becomes obsolete, the Sprint might be cancelled, but this should be determined collaboratively.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -904,12 +899,12 @@ export const pspo1Questions = [
     id: 65,
     question: "How should a Product Owner handle pressure to deliver features that conflict with the product vision?",
     options: [
-      "Deliver what stakeholders request to maintain support and relationships",
-      "Stand firm on the product vision and decline conflicting features",
       "Engage in dialogue about how the request fits or challenges the current vision",
-      "Escalate the conflict to senior leadership for resolution"
+      "Escalate the conflict to senior leadership for resolution",
+      "Deliver what stakeholders request to maintain support and relationships",
+      "Stand firm on the product vision and decline conflicting features"
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: "The Product Owner should engage stakeholders in dialogue about the product vision and how requests align or conflict with it. This might lead to vision evolution, understanding why the request doesn't fit, or finding ways to achieve stakeholder goals that align with the vision.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -946,12 +941,12 @@ export const pspo1Questions = [
     id: 68,
     question: "What should a Product Owner do when stakeholders want visibility into the Development Team's Sprint Backlog?",
     options: [
-      "Provide full transparency as openness is a Scrum value",
-      "Explain that Sprint Backlog is owned by the Development Team for their planning",
       "Create a simplified version of the Sprint Backlog for stakeholder consumption",
-      "Allow stakeholders to observe Daily Scrums for transparency"
+      "Allow stakeholders to observe Daily Scrums for transparency",
+      "Provide full transparency as openness is a Scrum value",
+      "Explain that Sprint Backlog is owned by the Development Team for their planning"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Sprint Backlog is owned by the Development Team for their planning purposes. While transparency is important, the Sprint Backlog is a planning artifact for the team. Stakeholders can see progress through the Product Increment at Sprint Review, not through monitoring the team's plan.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -960,12 +955,12 @@ export const pspo1Questions = [
     id: 69,
     question: "How should a Product Owner respond when competitors release features that aren't in the product roadmap?",
     options: [
-      "Immediately add competitive features to the Product Backlog as high priority",
       "Assess whether competitive features align with product strategy before prioritizing",
       "Ignore competitors and stay focused on the current product vision",
-      "Conduct market research before making any Product Backlog changes"
+      "Conduct market research before making any Product Backlog changes",
+      "Immediately add competitive features to the Product Backlog as high priority"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should assess whether competitive features align with product strategy and provide value to users. Competitive moves are important information, but shouldn't trigger automatic prioritization. The Product Owner makes informed decisions based on strategy, not just competitive reactions.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -974,12 +969,12 @@ export const pspo1Questions = [
     id: 70,
     question: "What should a Product Owner do when the Development Team says a Product Backlog item is too large?",
     options: [
+      "Assign it to multiple Sprints to accommodate the large size",
       "Work with the team to split it into smaller, valuable items",
       "Keep it as-is and let the team break it down during Sprint Planning",
-      "Remove it from the backlog until it can be properly sized",
-      "Assign it to multiple Sprints to accommodate the large size"
+      "Remove it from the backlog until it can be properly sized"
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: "The Product Owner should collaborate with the Development Team to split large items into smaller items that each provide value. This enables better prioritization, faster feedback, and more flexible planning. Splitting should happen during backlog refinement, not wait until Sprint Planning.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1002,12 +997,12 @@ export const pspo1Questions = [
     id: 72,
     question: "What should a Product Owner do when the Development Team wants to adopt a new development practice that will temporarily slow delivery?",
     options: [
-      "Approve the change as the team decides how they work",
-      "Understand the long-term benefits and factor short-term slowdown into expectations",
       "Suggest waiting until after high-priority work is completed",
-      "Allow the change but monitor velocity closely to assess impact"
+      "Allow the change but monitor velocity closely to assess impact",
+      "Approve the change as the team decides how they work",
+      "Understand the long-term benefits and factor short-term slowdown into expectations"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "While the Development Team decides how they work, the Product Owner should understand implications for delivery timing and product plans. If the team believes a practice improves long-term effectiveness, the Product Owner should factor temporary slowdown into stakeholder expectations.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1016,12 +1011,12 @@ export const pspo1Questions = [
     id: 73,
     question: "How should a Product Owner respond when asked to guarantee that specific features will be in the next release?",
     options: [
-      "Commit to features to maintain stakeholder trust and relationships",
       "Explain that ordering provides high probability but not guarantees in complex work",
       "Have the Development Team commit to the features on behalf of the Product Owner",
-      "Provide guarantees only for small, well-understood features"
+      "Provide guarantees only for small, well-understood features",
+      "Commit to features to maintain stakeholder trust and relationships"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "In complex work, the Product Owner cannot guarantee specific features by specific dates. They can order the Product Backlog to maximize probability that important work is done soon, and provide empirical forecasts, but should not make guarantees that create false certainty.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -1044,12 +1039,12 @@ export const pspo1Questions = [
     id: 75,
     question: "How should a Product Owner prepare for their role on a new Scrum Team?",
     options: [
+      "Wait for the first Sprint Planning to collaborate with the team on direction",
       "Create a detailed product roadmap and backlog before the first Sprint",
       "Establish a clear Product Goal and initial Product Backlog ordering",
-      "Focus on stakeholder relationships and let the team suggest backlog items",
-      "Wait for the first Sprint Planning to collaborate with the team on direction"
+      "Focus on stakeholder relationships and let the team suggest backlog items"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "A new Product Owner should establish a clear Product Goal that provides direction and create initial Product Backlog ordering based on current understanding. This gives the team something to work with while acknowledging it will evolve through collaboration, inspection, and adaptation.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1058,12 +1053,12 @@ export const pspo1Questions = [
     id: 76,
     question: "What should a Product Owner do when development on a product is complete and there are no more features to add?",
     options: [
-      "Disband the Scrum Team as the product is finished",
-      "Move the team to work on a different product or establish a new Product Goal",
       "Transition the product to maintenance mode with reduced team capacity",
-      "Continue running Sprints to maintain the product and fix bugs"
+      "Continue running Sprints to maintain the product and fix bugs",
+      "Disband the Scrum Team as the product is finished",
+      "Move the team to work on a different product or establish a new Product Goal"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "When a Product Goal is achieved and there's no further development needed, the Product Owner should either establish a new Product Goal for the same product or move the team to work on a different product. The team might be disbanded if there's truly no more valuable work to do.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1072,12 +1067,12 @@ export const pspo1Questions = [
     id: 77,
     question: "How should a Product Owner handle a situation where the Development Team delivers exactly what was asked for, but it doesn't solve the user problem?",
     options: [
-      "Hold the team accountable for not understanding the requirements properly",
       "Accept responsibility for insufficient clarity and add new items to address the gap",
       "Ask the team to fix the solution without counting it toward Sprint velocity",
-      "Escalate to management about the team's lack of business understanding"
+      "Escalate to management about the team's lack of business understanding",
+      "Hold the team accountable for not understanding the requirements properly"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner is accountable for ensuring Product Backlog items are clearly understood. If the delivered work doesn't solve the problem, the Product Owner should accept responsibility for unclear requirements and work with the team to add new backlog items that address the actual need.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1100,12 +1095,12 @@ export const pspo1Questions = [
     id: 79,
     question: "How should a Product Owner respond when users complain that requested features take too long to deliver?",
     options: [
+      "Commit to specific delivery dates to manage user expectations",
       "Pressure the Development Team to work faster and increase their velocity",
       "Explore whether the backlog can be ordered differently to deliver value sooner",
-      "Add more developers to the team to increase delivery capacity",
-      "Commit to specific delivery dates to manage user expectations"
+      "Add more developers to the team to increase delivery capacity"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should explore whether value can be delivered sooner through different ordering, breaking items into smaller pieces, or finding ways to deliver partial functionality. Pressuring the team or making commitments doesn't address the underlying issue and may reduce quality.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1114,12 +1109,12 @@ export const pspo1Questions = [
     id: 80,
     question: "What should a Product Owner do when a stakeholder wants a specific technical implementation approach?",
     options: [
-      "Direct the Development Team to implement using the stakeholder's approach",
-      "Share the stakeholder's input with the team but let them decide the implementation",
       "Evaluate the technical approach and approve it if it seems reasonable",
-      "Defer the decision to the Scrum Master who manages technical processes"
+      "Defer the decision to the Scrum Master who manages technical processes",
+      "Direct the Development Team to implement using the stakeholder's approach",
+      "Share the stakeholder's input with the team but let them decide the implementation"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner should share stakeholder input with the Development Team, but the team decides how to implement solutions. The Product Owner focuses on what and why; the Development Team decides how. Stakeholder suggestions are input, not directives.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -1128,12 +1123,12 @@ export const pspo1Questions = [
     id: 81,
     question: "How should a Product Owner handle competing priorities from two equally important stakeholders?",
     options: [
-      "Split development capacity 50/50 between both stakeholders' priorities",
       "Make a decision based on product strategy and explain the rationale to both",
       "Let the Development Team vote on which priority to pursue first",
-      "Alternate Sprints to ensure each stakeholder gets equal attention"
+      "Alternate Sprints to ensure each stakeholder gets equal attention",
+      "Split development capacity 50/50 between both stakeholders' priorities"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner has final authority over Product Backlog ordering. They should make decisions based on product strategy, value, and goals, then explain the rationale to stakeholders. The goal is optimizing overall product value, not satisfying stakeholders equally.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -1156,12 +1151,12 @@ export const pspo1Questions = [
     id: 83,
     question: "How should a Product Owner communicate when they realize a previous prioritization decision was wrong?",
     options: [
+      "Blame changing market conditions rather than admit an error",
       "Quietly adjust priorities without acknowledging the mistake",
       "Be transparent about the learning and adjust the Product Backlog accordingly",
-      "Continue with the current plan to maintain credibility with stakeholders",
-      "Blame changing market conditions rather than admit an error"
+      "Continue with the current plan to maintain credibility with stakeholders"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Transparency is a Scrum value. The Product Owner should openly acknowledge when priorities need to change based on learning, market changes, or previous misjudgment. This builds trust and demonstrates empiricism in action.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1170,12 +1165,12 @@ export const pspo1Questions = [
     id: 84,
     question: "What should a Product Owner do when the Development Team consistently overestimates effort?",
     options: [
-      "Challenge the team's estimates and push for lower numbers",
-      "Accept the estimates and adjust forecasts based on actual delivery patterns",
       "Replace high-estimating team members with more optimistic ones",
-      "Create estimates independently to provide more accurate forecasts"
+      "Create estimates independently to provide more accurate forecasts",
+      "Challenge the team's estimates and push for lower numbers",
+      "Accept the estimates and adjust forecasts based on actual delivery patterns"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Development Team owns estimation. If they consistently overestimate, actual velocity data will reflect this, and forecasts will naturally adjust. The Product Owner should trust the team's professionalism while using empirical evidence for planning.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1184,12 +1179,12 @@ export const pspo1Questions = [
     id: 85,
     question: "How should a Product Owner handle a situation where marketing wants to announce features before they're complete?",
     options: [
-      "Provide marketing with estimated delivery dates for their announcements",
       "Explain the risks of announcing incomplete work and suggest alternatives",
       "Allow announcements but disclaim responsibility if delivery is delayed",
-      "Commit the Development Team to specific dates to support marketing"
+      "Commit the Development Team to specific dates to support marketing",
+      "Provide marketing with estimated delivery dates for their announcements"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should help marketing understand the risks of announcing incomplete work in complex development. Rather than providing false certainty, explore alternatives like announcing capabilities when they're Done or using probabilistic language.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -1212,12 +1207,12 @@ export const pspo1Questions = [
     id: 87,
     question: "How should a Product Owner respond when stakeholders want quarterly business reviews instead of Sprint Reviews?",
     options: [
+      "Delegate Sprint Reviews to the Scrum Master to free up time for business reviews",
       "Replace Sprint Reviews with quarterly business reviews to satisfy stakeholders",
       "Maintain Sprint Reviews and offer additional quarterly summaries if valuable",
-      "Compromise by holding Sprint Reviews only once per quarter",
-      "Delegate Sprint Reviews to the Scrum Master to free up time for business reviews"
+      "Compromise by holding Sprint Reviews only once per quarter"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Sprint Review is a required Scrum event that provides regular inspection and adaptation opportunities. The Product Owner should maintain Sprint Reviews while potentially providing additional quarterly summaries if they add value. Frequent inspection is fundamental to empiricism.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -1226,12 +1221,12 @@ export const pspo1Questions = [
     id: 88,
     question: "What should a Product Owner do when the Development Team delivers an Increment but wants to add 'just one more thing' before showing stakeholders?",
     options: [
-      "Allow the additional work since it's minor and improves the demonstration",
-      "Remind the team that work meeting Definition of Done should be demonstrated as-is",
       "Assess whether the addition is valuable enough to delay the Sprint Review",
-      "Let the team decide since they're self-organizing"
+      "Let the team decide since they're self-organizing",
+      "Allow the additional work since it's minor and improves the demonstration",
+      "Remind the team that work meeting Definition of Done should be demonstrated as-is"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "If work meets the Definition of Done, it should be demonstrated as-is at Sprint Review. Additional work should go through normal Product Backlog prioritization. The Sprint Review is for inspecting what's Done, not for last-minute additions.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -1240,12 +1235,12 @@ export const pspo1Questions = [
     id: 89,
     question: "How should a Product Owner handle feedback that their communication style is too directive?",
     options: [
-      "Maintain their style since Product Owners have decision authority",
       "Reflect on their approach and work toward more collaborative communication",
       "Explain that stakeholders need clear direction, not collaboration",
-      "Delegate communication to the Scrum Master to avoid conflict"
+      "Delegate communication to the Scrum Master to avoid conflict",
+      "Maintain their style since Product Owners have decision authority"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "While Product Owners have decision authority, effective Product Ownership involves collaboration, not command. The Product Owner should reflect on feedback and adjust their communication style to be more collaborative while still providing clear direction.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -1268,12 +1263,12 @@ export const pspo1Questions = [
     id: 91,
     question: "How should a Product Owner approach pricing decisions for the product?",
     options: [
+      "Use competitor pricing as the primary input for pricing decisions",
       "Leave pricing decisions entirely to sales and marketing teams",
       "Collaborate with business stakeholders while considering product value and market",
-      "Set prices based on development costs to ensure profitability",
-      "Use competitor pricing as the primary input for pricing decisions"
+      "Set prices based on development costs to ensure profitability"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "While the Product Owner may not have sole authority over pricing, they should collaborate with stakeholders on pricing decisions, bringing their understanding of product value, market positioning, and customer needs to the discussion.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1282,12 +1277,12 @@ export const pspo1Questions = [
     id: 92,
     question: "What should a Product Owner do when the Development Team wants to pause feature development for a quality improvement Sprint?",
     options: [
-      "Reject the idea as all Sprints must deliver new user-facing features",
-      "Understand the business case and consider quality work in backlog prioritization",
       "Allow one quality Sprint but require features in all subsequent Sprints",
-      "Agree to the quality Sprint but reduce the team's velocity rating"
+      "Agree to the quality Sprint but reduce the team's velocity rating",
+      "Reject the idea as all Sprints must deliver new user-facing features",
+      "Understand the business case and consider quality work in backlog prioritization"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "There's no such thing as a 'quality Sprint'—quality work should be ongoing. However, if the team proposes significant quality improvements, the Product Owner should understand the business case and prioritize that work in the Product Backlog like any other valuable work.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1296,12 +1291,12 @@ export const pspo1Questions = [
     id: 93,
     question: "How should a Product Owner handle a situation where competitors release a superior product?",
     options: [
-      "Immediately pivot to copy competitor features",
       "Assess whether the Product Goal still serves users or needs evolution",
       "Stay the course to demonstrate commitment to the vision",
-      "Commission market research before considering any changes"
+      "Commission market research before considering any changes",
+      "Immediately pivot to copy competitor features"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Competitive changes should trigger reflection on whether the current Product Goal still serves users and the market. This doesn't mean copying competitors, but it does mean honestly assessing whether the product strategy needs to evolve based on changing competitive dynamics.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1324,12 +1319,12 @@ export const pspo1Questions = [
     id: 95,
     question: "How should a Product Owner respond when the Development Team wants to experiment with new technologies?",
     options: [
+      "Allow experimentation during refinement time but not during Sprints",
       "Support experimentation as it's part of professional development",
       "Understand the value proposition and consider experiments in backlog ordering",
-      "Discourage experimentation that doesn't deliver user-facing features",
-      "Allow experimentation during refinement time but not during Sprints"
+      "Discourage experimentation that doesn't deliver user-facing features"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Technology experiments can be valuable if they improve future development speed, quality, or capabilities. The Product Owner should understand the value proposition and prioritize experiments in the Product Backlog based on their potential return, like any other work.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1338,12 +1333,12 @@ export const pspo1Questions = [
     id: 96,
     question: "What should a Product Owner do when team morale is low due to constant reprioritization?",
     options: [
-      "Stop reprioritizing to provide stability and improve morale",
-      "Explain why adaptation is necessary while being empathetic to team concerns",
       "Let the Scrum Master handle team morale issues",
-      "Commit to stability for a fixed period to rebuild trust"
+      "Commit to stability for a fixed period to rebuild trust",
+      "Stop reprioritizing to provide stability and improve morale",
+      "Explain why adaptation is necessary while being empathetic to team concerns"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner should acknowledge team concerns while explaining why adaptation and reprioritization are necessary in complex work. Collaboration and transparency about decision-making can help, but the Product Owner shouldn't sacrifice needed adaptation to preserve morale.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -1352,12 +1347,12 @@ export const pspo1Questions = [
     id: 97,
     question: "How should a Product Owner handle a Product Backlog that has grown to hundreds of items?",
     options: [
-      "Continue maintaining all items as they all represent potential value",
       "Review and remove items that are no longer valuable or relevant",
       "Create sub-backlogs organized by theme or feature area",
-      "Archive old items into a separate list for potential future consideration"
+      "Archive old items into a separate list for potential future consideration",
+      "Continue maintaining all items as they all represent potential value"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should regularly review and remove Product Backlog items that are no longer valuable, relevant, or aligned with the Product Goal. Maintaining a large backlog of outdated items creates waste and obscures what's truly important.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1380,12 +1375,12 @@ export const pspo1Questions = [
     id: 99,
     question: "How should a Product Owner respond when the Development Team says they need more Product Owner time than is available?",
     options: [
+      "Implement asynchronous communication to maximize efficiency of limited time",
       "Reduce the team's Sprint commitment to match available Product Owner time",
       "Work with the organization to address Product Owner availability as a constraint",
-      "Train team members to make Product Owner decisions in their absence",
-      "Implement asynchronous communication to maximize efficiency of limited time"
+      "Train team members to make Product Owner decisions in their absence"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "If a Product Owner cannot provide necessary availability, this is an organizational impediment that should be addressed. Solutions might include adjusting other responsibilities, providing support, or reconsidering team size. Adequate Product Owner availability is essential for success.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -1394,12 +1389,12 @@ export const pspo1Questions = [
     id: 100,
     question: "What should a Product Owner do when users love a feature but it's expensive to maintain?",
     options: [
+      "Let the Development Team decide whether to continue supporting it",
       "Remove the feature since maintenance costs outweigh benefits",
       "Keep the feature since user satisfaction is the primary metric",
-      "Evaluate ongoing value versus maintenance costs and make an informed decision",
-      "Let the Development Team decide whether to continue supporting it"
+      "Evaluate ongoing value versus maintenance costs and make an informed decision"
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: "The Product Owner should evaluate the ongoing value users derive from the feature against its maintenance costs, considering both quantitative and qualitative factors. This might lead to keeping, improving, simplifying, or removing the feature based on net value.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1408,12 +1403,12 @@ export const pspo1Questions = [
     id: 101,
     question: "How should a Product Owner handle stakeholders who want influence over the Product Backlog without accountability?",
     options: [
-      "Give them influence since stakeholder input is valuable",
       "Clarify that accountability for backlog decisions rests with the Product Owner",
       "Create a stakeholder committee that shares Product Owner authority",
-      "Let them provide input but ignore it if they won't accept accountability"
+      "Let them provide input but ignore it if they won't accept accountability",
+      "Give them influence since stakeholder input is valuable"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should welcome stakeholder input while clarifying that accountability for Product Backlog ordering rests with the Product Owner. Stakeholders can influence decisions through input and collaboration, but final accountability cannot be shared or distributed.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -1436,12 +1431,12 @@ export const pspo1Questions = [
     id: 103,
     question: "How should a Product Owner approach integration with third-party systems?",
     options: [
+      "Defer integration decisions to enterprise architects",
       "Treat integrations as technical work for the Development Team to decide",
       "Consider integrations in backlog ordering based on value and strategic importance",
-      "Always prioritize integrations since they unlock future capabilities",
-      "Defer integration decisions to enterprise architects"
+      "Always prioritize integrations since they unlock future capabilities"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Integrations represent Product Backlog items that should be ordered based on their value, strategic importance, and impact on the Product Goal. The Product Owner should work with the Development Team to understand implications while making prioritization decisions.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1450,12 +1445,12 @@ export const pspo1Questions = [
     id: 104,
     question: "What should a Product Owner do when the Development Team wants to refactor code that 'works fine'?",
     options: [
-      "Reject refactoring since the code works and users don't see the benefit",
-      "Understand how the refactoring impacts future development speed and flexibility",
       "Allow refactoring but insist it happens outside of Sprint time",
-      "Approve minor refactoring but discourage major restructuring"
+      "Approve minor refactoring but discourage major restructuring",
+      "Reject refactoring since the code works and users don't see the benefit",
+      "Understand how the refactoring impacts future development speed and flexibility"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner should understand the business case for refactoring—how it affects future development speed, flexibility, defect rates, or risk. Refactoring that improves future capabilities should be considered in backlog ordering based on its value proposition.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1464,12 +1459,12 @@ export const pspo1Questions = [
     id: 105,
     question: "How should a Product Owner handle pressure to deliver features faster at the expense of quality?",
     options: [
-      "Accept the trade-off since speed to market creates competitive advantage",
       "Explain how quality degradation impacts long-term value delivery",
       "Let the Development Team decide what quality standards to maintain",
-      "Negotiate a balanced approach with some quality trade-offs"
+      "Negotiate a balanced approach with some quality trade-offs",
+      "Accept the trade-off since speed to market creates competitive advantage"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should help stakeholders understand how quality degradation creates technical debt that slows future development, increases defects, and ultimately reduces value delivery. Short-term speed gains often lead to long-term slowdowns and reduced product value.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1492,12 +1487,12 @@ export const pspo1Questions = [
     id: 107,
     question: "How should a Product Owner respond when the Development Team delivers more than forecast in a Sprint?",
     options: [
+      "Increase Sprint commitments to match the team's demonstrated capacity",
       "Celebrate and encourage the team to maintain the higher pace",
       "Accept it as variance and adjust future forecasts based on trends",
-      "Investigate whether quality was compromised to deliver more",
-      "Increase Sprint commitments to match the team's demonstrated capacity"
+      "Investigate whether quality was compromised to deliver more"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Occasional over-delivery is normal variance. The Product Owner should accept it without pressuring the team to sustain an unsustainable pace. Forecasts should be based on long-term trends, not individual Sprint variance. The focus should be on sustainable, quality delivery.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -1506,12 +1501,12 @@ export const pspo1Questions = [
     id: 108,
     question: "What should a Product Owner do when new regulations require immediate product changes?",
     options: [
-      "Cancel the Sprint to immediately address regulatory requirements",
-      "Add regulatory items to the Product Backlog and assess Sprint Goal impact",
       "Direct the team to work on regulatory changes outside of Sprint commitments",
-      "Request a separate team to handle regulatory compliance"
+      "Request a separate team to handle regulatory compliance",
+      "Cancel the Sprint to immediately address regulatory requirements",
+      "Add regulatory items to the Product Backlog and assess Sprint Goal impact"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Regulatory requirements should be added to the Product Backlog and prioritized. If they make the Sprint Goal obsolete, Sprint cancellation should be considered. However, most regulatory work can be incorporated through normal backlog management without Sprint cancellation.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1520,12 +1515,12 @@ export const pspo1Questions = [
     id: 109,
     question: "How should a Product Owner handle conflicting technical opinions from team members during Sprint Planning?",
     options: [
-      "Make the technical decision to keep Sprint Planning moving forward",
       "Allow the team time to resolve technical discussions themselves",
       "Suggest the team defer implementation decisions until during the Sprint",
-      "Ask the Scrum Master to facilitate resolution of technical disagreements"
+      "Ask the Scrum Master to facilitate resolution of technical disagreements",
+      "Make the technical decision to keep Sprint Planning moving forward"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Development Team is self-organizing regarding technical decisions. The Product Owner should allow them time to discuss and resolve technical disagreements during Sprint Planning, intervening only if discussions prevent Sprint Planning from achieving its purpose.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -1548,12 +1543,12 @@ export const pspo1Questions = [
     id: 111,
     question: "How should a Product Owner approach measuring product success?",
     options: [
+      "Let stakeholders define success metrics for the product",
       "Focus primarily on velocity and output metrics",
       "Define meaningful outcome and value metrics aligned with the Product Goal",
-      "Use industry-standard metrics like user acquisition and revenue",
-      "Let stakeholders define success metrics for the product"
+      "Use industry-standard metrics like user acquisition and revenue"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should define meaningful outcome and value metrics aligned with the Product Goal, not just output metrics. What constitutes success depends on the product's purpose—generic or stakeholder-defined metrics may not reflect actual value delivery.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1562,12 +1557,12 @@ export const pspo1Questions = [
     id: 112,
     question: "What should a Product Owner do when the Development Team wants formal approval for every design decision?",
     options: [
-      "Provide formal approvals to ensure accountability for decisions",
-      "Coach the team toward self-organization and design autonomy",
       "Create design guidelines that eliminate the need for approvals",
-      "Delegate design approvals to a senior developer or architect"
+      "Delegate design approvals to a senior developer or architect",
+      "Provide formal approvals to ensure accountability for decisions",
+      "Coach the team toward self-organization and design autonomy"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Requiring approval for every design decision undermines Development Team self-organization. The Product Owner should coach the team toward greater autonomy while being available for consultation on business impact or trade-offs, not approval of implementation details.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -1576,12 +1571,12 @@ export const pspo1Questions = [
     id: 113,
     question: "How should a Product Owner handle a situation where delivered features don't get adopted by users?",
     options: [
-      "Blame users for not understanding the features' value",
       "Investigate why adoption is low and what that reveals about user needs",
       "Improve marketing and communication about the features",
-      "Remove underutilized features to simplify the product"
+      "Remove underutilized features to simplify the product",
+      "Blame users for not understanding the features' value"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Low feature adoption should trigger investigation into why. It might indicate poor usability, lack of actual need, inadequate communication, or timing issues. Understanding the why informs whether to improve, better communicate, or acknowledge the feature missed the mark.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1604,12 +1599,12 @@ export const pspo1Questions = [
     id: 115,
     question: "How should a Product Owner respond when the Development Team wants to implement automated deployment pipelines?",
     options: [
+      "Support it only if it doesn't impact feature delivery timelines",
       "Approve it as technical infrastructure that doesn't need prioritization",
       "Understand the value and prioritize it in the Product Backlog accordingly",
-      "Defer to the team's technical judgment without involvement",
-      "Support it only if it doesn't impact feature delivery timelines"
+      "Defer to the team's technical judgment without involvement"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Automated deployment pipelines can provide significant value through faster feedback, reduced risk, and increased deployment frequency. The Product Owner should understand the value proposition and prioritize this work in the Product Backlog based on its expected return.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1618,12 +1613,12 @@ export const pspo1Questions = [
     id: 116,
     question: "What should a Product Owner do when the product vision conflicts with emerging user needs?",
     options: [
-      "Stay true to the vision despite user feedback",
-      "Evolve the vision based on learning about actual user needs",
       "Separate the product into different versions for different user needs",
-      "Survey more users to determine which direction has majority support"
+      "Survey more users to determine which direction has majority support",
+      "Stay true to the vision despite user feedback",
+      "Evolve the vision based on learning about actual user needs"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Product vision should guide decisions but isn't immutable. When learning reveals that user needs differ from initial vision assumptions, the Product Owner should evolve the vision accordingly. Empiricism means adapting based on evidence, including about the vision itself.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1632,12 +1627,12 @@ export const pspo1Questions = [
     id: 117,
     question: "How should a Product Owner handle a Development Team that wants to implement every item perfectly?",
     options: [
-      "Support perfectionism as it ensures high-quality outcomes",
       "Help the team understand trade-offs between perfection and value delivery",
       "Set time limits on work to force completion within constraints",
-      "Accept perfection-seeking as part of professional development culture"
+      "Accept perfection-seeking as part of professional development culture",
+      "Support perfectionism as it ensures high-quality outcomes"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should help the Development Team understand that value comes from delivering useful functionality, not perfection. They should collaborate on defining 'good enough' through the Definition of Done and acceptance criteria, balancing quality with timely value delivery.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1660,12 +1655,12 @@ export const pspo1Questions = [
     id: 119,
     question: "How should a Product Owner respond when the Development Team wants to use new frameworks or technologies?",
     options: [
+      "Require the team to prove the technology's value before adopting it",
       "Approve or reject based on personal technical preferences",
       "Understand how the change impacts delivery timelines and future development",
-      "Let the team decide all technical choices without Product Owner input",
-      "Require the team to prove the technology's value before adopting it"
+      "Let the team decide all technical choices without Product Owner input"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "While the Development Team decides how to build, the Product Owner should understand implications for delivery timelines, learning curves, and future development. This informs discussions about whether adoption should happen now or be deferred based on competing priorities.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1674,12 +1669,12 @@ export const pspo1Questions = [
     id: 120,
     question: "What should a Product Owner do when user research contradicts their intuition about priorities?",
     options: [
-      "Trust their intuition as it's based on deep product understanding",
-      "Give weight to research while also considering their expertise and judgment",
       "Always defer to research since it's based on actual user data",
-      "Commission additional research to resolve the contradiction"
+      "Commission additional research to resolve the contradiction",
+      "Trust their intuition as it's based on deep product understanding",
+      "Give weight to research while also considering their expertise and judgment"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Both research and intuition are valuable inputs. The Product Owner should consider research seriously while also applying their judgment, understanding of strategy, and domain expertise. The goal is informed decision-making that considers multiple perspectives, not automatic deference to any single input.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1688,12 +1683,12 @@ export const pspo1Questions = [
     id: 121,
     question: "How should a Product Owner handle Development Team concerns about unsustainable pace?",
     options: [
-      "Acknowledge concerns but maintain current priorities due to business pressure",
       "Work with the team and organization to address pace and workload issues",
       "Suggest the team improve their efficiency to handle the workload",
-      "Defer pace concerns to the Scrum Master as a team health issue"
+      "Defer pace concerns to the Scrum Master as a team health issue",
+      "Acknowledge concerns but maintain current priorities due to business pressure"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Unsustainable pace threatens long-term value delivery. The Product Owner should take team concerns seriously and work with the team and organization to address root causes—whether unrealistic expectations, too much work in progress, or insufficient capacity.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -1716,12 +1711,12 @@ export const pspo1Questions = [
     id: 123,
     question: "How should a Product Owner approach splitting a large Product Backlog item?",
     options: [
+      "Keep it whole until Sprint Planning when the team can break it down",
       "Split it into technical components that can be developed independently",
       "Split it into thin vertical slices that each deliver value",
-      "Split it by team member expertise to parallelize development",
-      "Keep it whole until Sprint Planning when the team can break it down"
+      "Split it by team member expertise to parallelize development"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Product Backlog items should be split into thin vertical slices that each deliver value and can be independently released. This enables better prioritization, faster feedback, and more flexibility than splitting by technical layer or waiting until Sprint Planning.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1730,12 +1725,12 @@ export const pspo1Questions = [
     id: 124,
     question: "What should a Product Owner do when market share is declining despite regular product updates?",
     options: [
-      "Increase release frequency to demonstrate product momentum",
-      "Investigate whether updates align with what users actually value",
       "Focus on marketing rather than product changes",
-      "Copy competitors' features to regain market position"
+      "Copy competitors' features to regain market position",
+      "Increase release frequency to demonstrate product momentum",
+      "Investigate whether updates align with what users actually value"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Declining market share despite updates suggests a disconnect between what's being delivered and what users value. The Product Owner should investigate whether the product addresses real user needs and competitive advantages, not just increase activity or copy competitors.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1744,12 +1739,12 @@ export const pspo1Questions = [
     id: 125,
     question: "How should a Product Owner handle a Development Team that wants to remove technical debt before adding new features?",
     options: [
-      "Insist on continuous feature delivery to maintain stakeholder satisfaction",
       "Understand the impact of technical debt and make informed trade-off decisions",
       "Allocate a fixed percentage of each Sprint to technical debt reduction",
-      "Let the team decide when to address technical debt without Product Owner input"
+      "Let the team decide when to address technical debt without Product Owner input",
+      "Insist on continuous feature delivery to maintain stakeholder satisfaction"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should understand how technical debt impacts future development speed, risk, and quality, then make informed prioritization decisions. This might mean prioritizing technical debt work highly, but it's a value-based decision, not an automatic allocation or team decision.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1772,12 +1767,12 @@ export const pspo1Questions = [
     id: 127,
     question: "How should a Product Owner respond when compliance requirements conflict with user experience?",
     options: [
+      "Escalate the conflict to legal and executive leadership",
       "Prioritize compliance since it's non-negotiable",
       "Find creative ways to meet compliance while minimizing UX impact",
-      "Prioritize user experience and accept compliance risks",
-      "Escalate the conflict to legal and executive leadership"
+      "Prioritize user experience and accept compliance risks"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should work with the Development Team to find creative solutions that meet compliance requirements while minimizing negative user experience impact. Compliance is typically non-negotiable, but how it's implemented offers opportunities for better user experience.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1786,12 +1781,12 @@ export const pspo1Questions = [
     id: 128,
     question: "What should a Product Owner do when the Development Team's Definition of Done differs from organizational standards?",
     options: [
-      "Support the team's Definition of Done as they're self-organizing",
-      "Ensure the Definition of Done meets organizational standards at minimum",
       "Negotiate a compromise between team preferences and organizational standards",
-      "Escalate to management to enforce organizational standards"
+      "Escalate to management to enforce organizational standards",
+      "Support the team's Definition of Done as they're self-organizing",
+      "Ensure the Definition of Done meets organizational standards at minimum"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Definition of Done must meet organizational standards at minimum. While the Development Team can have a more stringent Definition of Done, they cannot have a weaker one that violates organizational quality standards or compliance requirements.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -1814,12 +1809,12 @@ export const pspo1Questions = [
     id: 130,
     question: "What should a Product Owner do when team velocity drops significantly after a major release?",
     options: [
+      "Adjust forecasts downward based on the new velocity pattern",
       "Investigate the cause and address it if it represents a systemic issue",
       "Accept it as normal post-release slowdown and let velocity recover naturally",
-      "Challenge the team to return to previous velocity levels",
-      "Adjust forecasts downward based on the new velocity pattern"
+      "Challenge the team to return to previous velocity levels"
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: "Significant velocity drops warrant investigation. They might indicate technical debt accumulation, burnout, process issues, or other problems that need addressing. While some post-release slowdown can be normal, significant drops should be understood and addressed if they represent systemic issues.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1828,12 +1823,12 @@ export const pspo1Questions = [
     id: 131,
     question: "How should a Product Owner approach Product Backlog items that have been pending for many Sprints?",
     options: [
+      "Ask the Development Team why these items haven't been selected",
       "Keep them in the backlog as they represent potential future value",
       "Review them and remove items that are no longer relevant or valuable",
-      "Lower their priority to make room for more current items",
-      "Ask the Development Team why these items haven't been selected"
+      "Lower their priority to make room for more current items"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Items that remain unselected for many Sprints may no longer be relevant, valuable, or aligned with current strategy. The Product Owner should review them and remove items that don't justify keeping in the backlog, keeping the Product Backlog focused on current strategy.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1842,12 +1837,12 @@ export const pspo1Questions = [
     id: 132,
     question: "What should a Product Owner do when stakeholders want features that serve only a small segment of users?",
     options: [
-      "Reject niche features to focus on majority user needs",
-      "Evaluate the value of serving that segment versus other priorities",
       "Build niche features only if they don't delay mainstream features",
-      "Let the Development Team decide whether niche features are worthwhile"
+      "Let the Development Team decide whether niche features are worthwhile",
+      "Reject niche features to focus on majority user needs",
+      "Evaluate the value of serving that segment versus other priorities"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner should evaluate whether serving a small segment delivers sufficient value—considering factors like revenue, strategic importance, competitive positioning, or brand impact. Small segments might represent high value, or they might not justify the investment.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1856,12 +1851,12 @@ export const pspo1Questions = [
     id: 133,
     question: "How should a Product Owner handle a situation where the Development Team wants to rebuild a major component from scratch?",
     options: [
-      "Reject rebuilds as they don't deliver new user-facing value",
       "Understand the business case for rebuilding versus incremental improvement",
       "Allow rebuilding during off-Sprint time to maintain feature delivery",
-      "Approve rebuilding only if competitors are also rebuilding similar components"
+      "Approve rebuilding only if competitors are also rebuilding similar components",
+      "Reject rebuilds as they don't deliver new user-facing value"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should understand why rebuilding is proposed and what benefits it offers versus incremental improvement. Major rewrites represent significant opportunity cost, so the business case should be clear. Sometimes rebuilding is the right choice; other times incremental improvement is better.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1884,12 +1879,12 @@ export const pspo1Questions = [
     id: 135,
     question: "How should a Product Owner respond when the Development Team wants to slow down to improve their development practices?",
     options: [
+      "Allow practice improvement only during low-priority work",
       "Support the slowdown since better practices improve long-term delivery",
       "Understand the expected improvement and make risk-informed decisions",
-      "Suggest improving practices outside of Sprint time",
-      "Allow practice improvement only during low-priority work"
+      "Suggest improving practices outside of Sprint time"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should understand what improvement is expected from changing practices and make an informed decision about the trade-off between short-term slowdown and long-term improvement. This requires collaboration between Product Owner and team, not automatic approval or rejection.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1898,12 +1893,12 @@ export const pspo1Questions = [
     id: 136,
     question: "What should a Product Owner do when Sprint Reviews reveal stakeholders have different expectations about the product direction?",
     options: [
-      "Try to satisfy all stakeholder expectations equally",
-      "Facilitate alignment around a coherent Product Goal and strategy",
       "Let stakeholder disagreements resolve themselves over time",
-      "Focus on the stakeholder with the most organizational authority"
+      "Focus on the stakeholder with the most organizational authority",
+      "Try to satisfy all stakeholder expectations equally",
+      "Facilitate alignment around a coherent Product Goal and strategy"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Divergent stakeholder expectations indicate lack of alignment on Product Goal and strategy. The Product Owner should facilitate discussions to create alignment, not try to satisfy everyone or let conflicts persist. A coherent product strategy requires stakeholder alignment.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -1912,12 +1907,12 @@ export const pspo1Questions = [
     id: 137,
     question: "How should a Product Owner handle Development Team requests for training on new technologies?",
     options: [
-      "Support training as professional development that benefits the product",
       "Evaluate training value and consider it in prioritization decisions",
       "Suggest team members pursue training outside work hours",
-      "Approve training only after all high-priority features are delivered"
+      "Approve training only after all high-priority features are delivered",
+      "Support training as professional development that benefits the product"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Training can be valuable if it improves the team's ability to deliver the product effectively. The Product Owner should understand the value proposition and consider training in Product Backlog prioritization based on expected return, like any investment in team capability.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -1940,12 +1935,12 @@ export const pspo1Questions = [
     id: 139,
     question: "How should a Product Owner respond when the Development Team wants to adopt mob programming or pair programming?",
     options: [
+      "Allow experimentation but monitor velocity closely",
       "Support the practice change as it's within team self-organization",
       "Understand how the practice affects velocity and delivery patterns",
-      "Reject practices that reduce individual productivity",
-      "Allow experimentation but monitor velocity closely"
+      "Reject practices that reduce individual productivity"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "While the Development Team decides how they work, the Product Owner should understand how practice changes affect delivery patterns, velocity, and quality. This informs stakeholder communication and expectations without requiring Product Owner approval for how the team works.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -1954,12 +1949,12 @@ export const pspo1Questions = [
     id: 140,
     question: "What should a Product Owner do when stakeholders want the product to serve multiple distinct market segments?",
     options: [
-      "Try to serve all segments within a single product",
-      "Evaluate whether a single product can effectively serve multiple segments",
       "Focus on the largest segment and deprioritize others",
-      "Create separate versions of the product for different segments"
+      "Create separate versions of the product for different segments",
+      "Try to serve all segments within a single product",
+      "Evaluate whether a single product can effectively serve multiple segments"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner should evaluate whether a single product can effectively serve multiple segments or whether trying to serve everyone results in serving no one well. This might lead to focusing on specific segments, creating separate products, or finding ways to serve multiple segments effectively.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1968,12 +1963,12 @@ export const pspo1Questions = [
     id: 141,
     question: "How should a Product Owner handle a situation where actual user behavior contradicts stated user preferences?",
     options: [
-      "Trust user behavior data over stated preferences",
       "Investigate the discrepancy to understand what it reveals",
       "Trust stated preferences as they represent conscious user intentions",
-      "A/B test to determine which should guide prioritization"
+      "A/B test to determine which should guide prioritization",
+      "Trust user behavior data over stated preferences"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Discrepancies between stated preferences and actual behavior warrant investigation. They might reveal usability issues, unmet needs, or gaps between what users think they want and what they actually value. Understanding the why behind the discrepancy informs better prioritization decisions.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -1996,12 +1991,12 @@ export const pspo1Questions = [
     id: 143,
     question: "How should a Product Owner respond when users request features that exist but are hard to find?",
     options: [
-      "Improve feature discoverability rather than adding new features",
-      "Add the requested features since users don't find existing ones valuable",
       "Educate users about existing features through documentation",
-      "Redesign the interface to make all features equally prominent"
+      "Redesign the interface to make all features equally prominent",
+      "Improve feature discoverability rather than adding new features",
+      "Add the requested features since users don't find existing ones valuable"
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: "When users request features that exist but are undiscoverable, the problem is discoverability, not missing functionality. The Product Owner should prioritize improving findability rather than building redundant features or assuming users will read documentation.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2010,12 +2005,12 @@ export const pspo1Questions = [
     id: 144,
     question: "What should a Product Owner do when the Development Team says they need to focus on automated testing?",
     options: [
-      "Support automated testing as it's a technical practice decision",
-      "Understand how automated testing impacts quality and development speed",
       "Suggest manual testing to avoid slowing feature delivery",
-      "Allow automated testing only after core features are complete"
+      "Allow automated testing only after core features are complete",
+      "Support automated testing as it's a technical practice decision",
+      "Understand how automated testing impacts quality and development speed"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "While the Development Team decides how to ensure quality, the Product Owner should understand how automated testing affects future development speed, quality, and confidence in releases. This informs expectations and communication without requiring Product Owner approval of technical practices.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2024,12 +2019,12 @@ export const pspo1Questions = [
     id: 145,
     question: "How should a Product Owner handle pressure from sales to customize the product for individual customers?",
     options: [
-      "Reject customization to maintain product consistency",
       "Evaluate whether customization or configurability should be in the product strategy",
       "Allow customization only for high-value customers",
-      "Create a separate customization backlog managed by sales"
+      "Create a separate customization backlog managed by sales",
+      "Reject customization to maintain product consistency"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should evaluate whether customer-specific customization, configurable features, or product personalization should be part of the product strategy. This strategic decision considers scalability, market approach, and how the product creates value.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2052,12 +2047,12 @@ export const pspo1Questions = [
     id: 147,
     question: "How should a Product Owner respond when stakeholders want to see progress through burndown charts?",
     options: [
+      "Delegate burndown chart creation to the Scrum Master",
       "Provide burndown charts since they're standard Scrum artifacts",
       "Explain that Product Backlog and Sprint Reviews show more meaningful progress",
-      "Create burndown charts in addition to Sprint Reviews",
-      "Delegate burndown chart creation to the Scrum Master"
+      "Create burndown charts in addition to Sprint Reviews"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Progress is best shown through working Increments at Sprint Reviews, not burndown charts. The Product Owner should educate stakeholders that inspecting actual working product provides more meaningful transparency than charts showing remaining work estimates.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -2066,12 +2061,12 @@ export const pspo1Questions = [
     id: 148,
     question: "What should a Product Owner do when the Development Team wants to standardize on specific coding practices?",
     options: [
-      "Support standardization as it improves code consistency",
-      "Stay uninvolved as coding practices are technical team decisions",
       "Ensure standardization doesn't slow feature delivery",
-      "Evaluate whether standardization time should be a backlog item"
+      "Evaluate whether standardization time should be a backlog item",
+      "Support standardization as it improves code consistency",
+      "Stay uninvolved as coding practices are technical team decisions"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Coding practices are technical decisions within Development Team self-organization. The Product Owner doesn't need to be involved unless the team seeks input about trade-offs or business impact. The team decides how to build; the Product Owner focuses on what and why.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -2080,12 +2075,12 @@ export const pspo1Questions = [
     id: 149,
     question: "How should a Product Owner handle situations where quick wins conflict with strategic initiatives?",
     options: [
-      "Always prioritize quick wins to demonstrate value",
       "Balance quick wins with strategic work based on product context",
       "Focus exclusively on strategic initiatives for long-term success",
-      "Alternate between quick wins and strategic work each Sprint"
+      "Alternate between quick wins and strategic work each Sprint",
+      "Always prioritize quick wins to demonstrate value"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should balance quick wins with strategic work based on product context, competitive environment, and stakeholder needs. Sometimes quick wins build momentum and stakeholder confidence; sometimes they distract from important strategic work. Context determines the right balance.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2108,12 +2103,12 @@ export const pspo1Questions = [
     id: 151,
     question: "How should a Product Owner handle a Development Team that delivers features but doesn't seem to understand the user problems they're solving?",
     options: [
+      "Focus on their own problem understanding rather than the team's",
       "Accept feature delivery as long as it meets acceptance criteria",
       "Involve the team more in user research and problem understanding",
-      "Provide more detailed specifications to prevent misunderstanding",
-      "Focus on their own problem understanding rather than the team's"
+      "Provide more detailed specifications to prevent misunderstanding"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "When the Development Team doesn't understand user problems, they miss opportunities to suggest better solutions and make poor implementation decisions. The Product Owner should involve them in user research, Sprint Reviews, and problem discussions to build shared understanding.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -2122,12 +2117,12 @@ export const pspo1Questions = [
     id: 152,
     question: "What should a Product Owner do when organizational leadership wants to shift from project to product funding?",
     options: [
-      "Maintain current practices until the funding model officially changes",
-      "Support the shift and help leadership understand product-centric value delivery",
       "Request additional resources to support both models during transition",
-      "Focus solely on delivering outcomes regardless of funding model"
+      "Focus solely on delivering outcomes regardless of funding model",
+      "Maintain current practices until the funding model officially changes",
+      "Support the shift and help leadership understand product-centric value delivery"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Product Owners are well-positioned to help organizations understand product-centric thinking. They should support the shift to product funding by demonstrating how continuous value delivery and adaptation differ from project-based approaches.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2136,12 +2131,12 @@ export const pspo1Questions = [
     id: 153,
     question: "How should a Product Owner respond when the Development Team wants to implement feature flags for gradual rollouts?",
     options: [
-      "Support feature flags as they enable better value delivery control",
       "Understand the implications and collaborate on rollout strategies",
       "Reject feature flags as they add unnecessary technical complexity",
-      "Delegate feature flag decisions entirely to the Development Team"
+      "Delegate feature flag decisions entirely to the Development Team",
+      "Support feature flags as they enable better value delivery control"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Feature flags can enable progressive delivery, A/B testing, and risk management. The Product Owner should understand the implications for their role in release decisions and collaborate with the team on rollout strategies that balance learning with user experience.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2164,12 +2159,12 @@ export const pspo1Questions = [
     id: 155,
     question: "How should a Product Owner handle a situation where the Development Team wants to attend industry conferences?",
     options: [
+      "Allow conference attendance only during low-priority periods",
       "Support conference attendance as professional development",
       "Evaluate the value and impact on delivery timelines",
-      "Suggest the team attend conferences on personal time",
-      "Allow conference attendance only during low-priority periods"
+      "Suggest the team attend conferences on personal time"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Conference attendance can provide valuable learning, networking, and exposure to new practices. The Product Owner should understand the expected value and consider the impact on delivery timelines, making informed decisions about whether and when conference attendance makes sense.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2178,12 +2173,12 @@ export const pspo1Questions = [
     id: 156,
     question: "What should a Product Owner do when stakeholders want to add 'nice to have' features to every Sprint?",
     options: [
-      "Include nice-to-have features to maintain stakeholder relationships",
-      "Focus Sprint content on Sprint Goal achievement rather than feature lists",
       "Create a separate backlog for nice-to-have items",
-      "Allow nice-to-have features only after all high-priority work is complete"
+      "Allow nice-to-have features only after all high-priority work is complete",
+      "Include nice-to-have features to maintain stakeholder relationships",
+      "Focus Sprint content on Sprint Goal achievement rather than feature lists"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Sprint Planning should focus on achieving a coherent Sprint Goal, not maximizing feature count. The Product Owner should help stakeholders understand that Sprints work toward goals, and every item should contribute to that goal rather than being nice-to-have additions.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -2192,12 +2187,12 @@ export const pspo1Questions = [
     id: 157,
     question: "How should a Product Owner respond when the Development Team wants to reduce technical complexity before adding new features?",
     options: [
-      "Prioritize new features since complexity reduction isn't user-visible",
       "Understand how complexity impacts future development and make informed trade-offs",
       "Allow complexity reduction during refinement time only",
-      "Support complexity reduction as it's a technical decision"
+      "Support complexity reduction as it's a technical decision",
+      "Prioritize new features since complexity reduction isn't user-visible"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Technical complexity can slow development, increase defects, and reduce flexibility. The Product Owner should understand how complexity reduction enables future value delivery and make informed prioritization decisions, treating it as valuable work rather than overhead.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2206,12 +2201,12 @@ export const pspo1Questions = [
     id: 158,
     question: "What should a Product Owner do when different stakeholder groups measure success differently?",
     options: [
+      "Let each stakeholder group define success for their domain",
       "Establish unified success metrics aligned with the Product Goal",
       "Track separate metrics for each stakeholder group",
-      "Focus on revenue metrics as the ultimate measure of success",
-      "Let each stakeholder group define success for their domain"
+      "Focus on revenue metrics as the ultimate measure of success"
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: "Different success metrics across stakeholder groups create competing priorities and confusion. The Product Owner should facilitate alignment on unified success metrics tied to the Product Goal, ensuring everyone understands how value and success are measured.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2220,12 +2215,12 @@ export const pspo1Questions = [
     id: 159,
     question: "How should a Product Owner handle Development Team concerns about insufficient security expertise?",
     options: [
+      "Accept security risks as a constraint of current team composition",
       "Hire security specialists to join the Development Team",
       "Work with the team and organization to address security capability gaps",
-      "Deprioritize security-sensitive features until expertise is available",
-      "Accept security risks as a constraint of current team composition"
+      "Deprioritize security-sensitive features until expertise is available"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Security capability gaps are organizational impediments that need addressing. The Product Owner should work with the team and organization to address gaps through training, consulting, hiring, or other means rather than accepting security risks or avoiding security work.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2234,12 +2229,12 @@ export const pspo1Questions = [
     id: 160,
     question: "What should a Product Owner do when Sprint Reviews reveal that delivered features don't match stakeholder mental models?",
     options: [
-      "Improve specifications to better communicate requirements upfront",
-      "Involve stakeholders earlier in refinement and development",
       "Accept mismatches as inevitable in complex development",
-      "Have stakeholders approve designs before development begins"
+      "Have stakeholders approve designs before development begins",
+      "Improve specifications to better communicate requirements upfront",
+      "Involve stakeholders earlier in refinement and development"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Mismatches between delivered features and stakeholder expectations suggest insufficient collaboration during development. The Product Owner should involve stakeholders earlier through refinement participation, progress reviews, and feedback opportunities rather than trying to perfect upfront specifications.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -2248,12 +2243,12 @@ export const pspo1Questions = [
     id: 161,
     question: "How should a Product Owner respond when users want features that would compromise their own privacy?",
     options: [
-      "Build the features since users are requesting them",
       "Balance user requests with ethical considerations and privacy protection",
       "Let users decide what privacy trade-offs they're willing to make",
-      "Reject privacy-compromising features regardless of user demand"
+      "Reject privacy-compromising features regardless of user demand",
+      "Build the features since users are requesting them"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Product Owners should consider ethical implications and long-term consequences, not just immediate user requests. Privacy protection may involve educating users about implications, providing informed choices, or declining to build features that create significant privacy risks.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2262,12 +2257,12 @@ export const pspo1Questions = [
     id: 162,
     question: "What should a Product Owner do when the Development Team identifies a more efficient way to build multiple planned features?",
     options: [
-      "Support the efficient approach even if it delays some individual features",
       "Maintain the original plan to ensure predictable feature delivery",
       "Evaluate the trade-offs and make an informed prioritization decision",
-      "Let the Development Team decide the implementation approach"
+      "Let the Development Team decide the implementation approach",
+      "Support the efficient approach even if it delays some individual features"
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: "The Product Owner should evaluate trade-offs between efficiency gains and timing changes. Sometimes building foundational capabilities first enables faster delivery of multiple features; other times sequential delivery provides value sooner. Context determines the right choice.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2276,12 +2271,12 @@ export const pspo1Questions = [
     id: 163,
     question: "How should a Product Owner handle stakeholders who want to see every detail of what the Development Team is working on?",
     options: [
+      "Invite stakeholders to observe Daily Scrums for visibility",
       "Provide full transparency by sharing all team artifacts and communications",
       "Explain appropriate transparency through Sprint Reviews and Product Backlog",
-      "Create stakeholder-specific reports that summarize team activities",
-      "Invite stakeholders to observe Daily Scrums for visibility"
+      "Create stakeholder-specific reports that summarize team activities"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Transparency in Scrum comes through Sprint Reviews (working Increment) and the Product Backlog (upcoming work), not through observing internal team processes. The Product Owner should help stakeholders understand appropriate transparency boundaries that inform without micromanaging.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -2290,12 +2285,12 @@ export const pspo1Questions = [
     id: 164,
     question: "What should a Product Owner do when competitive pressure demands faster delivery than the team can sustain?",
     options: [
-      "Push the team to increase velocity to meet competitive needs",
-      "Focus on highest-value features and manage stakeholder expectations realistically",
       "Add more people to the Development Team to increase capacity",
-      "Reduce quality standards temporarily to accelerate delivery"
+      "Reduce quality standards temporarily to accelerate delivery",
+      "Push the team to increase velocity to meet competitive needs",
+      "Focus on highest-value features and manage stakeholder expectations realistically"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Competitive pressure doesn't change what's sustainable or possible. The Product Owner should focus on delivering the highest-value features and help stakeholders understand realistic timelines rather than creating unsustainable pressure or compromising quality.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2304,12 +2299,12 @@ export const pspo1Questions = [
     id: 165,
     question: "How should a Product Owner respond when the Development Team wants to conduct a technical spike?",
     options: [
-      "Approve spikes as they're technical investigations within team autonomy",
       "Understand the uncertainty being investigated and its impact on prioritization",
       "Reject spikes as they don't deliver user-facing value",
-      "Allow spikes only during refinement time, not in Sprints"
+      "Allow spikes only during refinement time, not in Sprints",
+      "Approve spikes as they're technical investigations within team autonomy"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Spikes investigate uncertainty that affects prioritization and planning. The Product Owner should understand what uncertainty exists, why it matters, and how investigation results will inform decisions. Spikes can be valuable Product Backlog items when learning reduces risk.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2332,12 +2327,12 @@ export const pspo1Questions = [
     id: 167,
     question: "How should a Product Owner handle a situation where delivered value doesn't translate to improved business metrics?",
     options: [
+      "Focus on output metrics instead of outcome metrics",
       "Continue delivering features and trust that metrics will eventually improve",
       "Investigate whether the right value is being delivered or measured correctly",
-      "Shift to delivering features that competitors have proven successful",
-      "Focus on output metrics instead of outcome metrics"
+      "Shift to delivering features that competitors have proven successful"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "When delivered features don't improve business metrics, it suggests either the wrong things are being built or success is being measured incorrectly. The Product Owner should investigate the disconnect rather than assuming metrics will eventually follow.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2346,12 +2341,12 @@ export const pspo1Questions = [
     id: 168,
     question: "What should a Product Owner do when the Development Team says they can't estimate certain Product Backlog items?",
     options: [
-      "Provide estimates based on the Product Owner's understanding",
-      "Work with the team to reduce uncertainty through spikes or splitting",
       "Remove unestimatable items from the Product Backlog",
-      "Proceed with Sprint Planning using the Product Owner's priority judgment alone"
+      "Proceed with Sprint Planning using the Product Owner's priority judgment alone",
+      "Provide estimates based on the Product Owner's understanding",
+      "Work with the team to reduce uncertainty through spikes or splitting"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Inability to estimate indicates uncertainty or size issues. The Product Owner should work with the Development Team to reduce uncertainty through investigation or split large items into smaller, more estimatable pieces. Estimation belongs to the Development Team.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2360,12 +2355,12 @@ export const pspo1Questions = [
     id: 169,
     question: "How should a Product Owner respond when stakeholders want them to make all decisions without team input?",
     options: [
-      "Accept decision authority as it's the Product Owner's accountability",
       "Explain how collaboration with the team improves decision quality",
       "Delegate technical decisions to the team and keep business decisions separate",
-      "Make quick decisions independently to demonstrate decisiveness"
+      "Make quick decisions independently to demonstrate decisiveness",
+      "Accept decision authority as it's the Product Owner's accountability"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "While the Product Owner has decision authority, better decisions come from collaboration with the Development Team, who understand technical implications, effort, and alternative approaches. The Product Owner should educate stakeholders on how collaboration improves outcomes.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -2388,12 +2383,12 @@ export const pspo1Questions = [
     id: 171,
     question: "How should a Product Owner handle a Development Team that wants detailed acceptance criteria for every item?",
     options: [
+      "Have the team write their own acceptance criteria for approval",
       "Provide comprehensive acceptance criteria as requested",
       "Collaborate on appropriate detail levels that enable team autonomy",
-      "Insist on minimal criteria to preserve flexibility",
-      "Have the team write their own acceptance criteria for approval"
+      "Insist on minimal criteria to preserve flexibility"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The right level of detail depends on context, item complexity, and team maturity. The Product Owner should collaborate with the team to find appropriate detail levels that provide clarity without over-specifying, supporting their growth toward greater autonomy.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2402,12 +2397,12 @@ export const pspo1Questions = [
     id: 172,
     question: "What should a Product Owner do when they discover that a completed feature has negative unintended consequences?",
     options: [
-      "Accept it as an unavoidable outcome of complex development",
-      "Add work to the Product Backlog to address the unintended consequences",
       "Roll back the feature immediately to prevent further negative impact",
-      "Communicate the consequences to users and let them decide on usage"
+      "Communicate the consequences to users and let them decide on usage",
+      "Accept it as an unavoidable outcome of complex development",
+      "Add work to the Product Backlog to address the unintended consequences"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Unintended negative consequences should be addressed through normal backlog prioritization. Whether to address immediately, eventually, or roll back depends on severity and impact. The Product Owner evaluates the situation and prioritizes appropriately.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2416,12 +2411,12 @@ export const pspo1Questions = [
     id: 173,
     question: "How should a Product Owner respond when the Development Team wants to implement monitoring and observability tools?",
     options: [
-      "Support monitoring as it's technical infrastructure the team manages",
       "Understand how monitoring enables better product decisions and value delivery",
       "Defer monitoring until after core features are complete",
-      "Evaluate monitoring as a cost versus feature delivery"
+      "Evaluate monitoring as a cost versus feature delivery",
+      "Support monitoring as it's technical infrastructure the team manages"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Monitoring and observability enable better understanding of user behavior, system health, and value delivery. The Product Owner should understand how these capabilities inform product decisions and prioritize them based on their expected value, not defer them as technical overhead.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2444,12 +2439,12 @@ export const pspo1Questions = [
     id: 175,
     question: "How should a Product Owner handle situations where early adopters want different features than the broader market?",
     options: [
+      "Transition from early adopter focus to broader market features",
       "Focus on early adopters who provide direct feedback",
       "Evaluate which features serve the long-term product strategy best",
-      "Build features for both groups in parallel",
-      "Transition from early adopter focus to broader market features"
+      "Build features for both groups in parallel"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should evaluate which features align with long-term product strategy and sustainable business model. Early adopters are important but may not represent the broader market. Strategic decisions should consider both segments' needs and the product's ultimate direction.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2458,12 +2453,12 @@ export const pspo1Questions = [
     id: 176,
     question: "What should a Product Owner do when the Development Team wants to establish coding standards?",
     options: [
-      "Approve standards that align with product quality goals",
-      "Stay uninvolved as coding standards are technical team decisions",
       "Ensure standards don't slow feature delivery",
-      "Require standards to be documented before implementation"
+      "Require standards to be documented before implementation",
+      "Approve standards that align with product quality goals",
+      "Stay uninvolved as coding standards are technical team decisions"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Coding standards are technical practices within Development Team self-organization. The Product Owner doesn't need involvement unless the team seeks input about trade-offs. The team decides how to maintain code quality and consistency.",
     domain: "Scrum Framework",
     difficulty: "Foundation"
@@ -2472,12 +2467,12 @@ export const pspo1Questions = [
     id: 177,
     question: "How should a Product Owner respond when stakeholders want to add features without understanding their complexity?",
     options: [
-      "Add features as requested since stakeholders define value",
       "Facilitate discussions that help stakeholders understand complexity and trade-offs",
       "Have the Development Team explain technical complexity to stakeholders",
-      "Make prioritization decisions based on the Product Owner's understanding of complexity"
+      "Make prioritization decisions based on the Product Owner's understanding of complexity",
+      "Add features as requested since stakeholders define value"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "The Product Owner should help stakeholders understand complexity and trade-offs so they can make informed input about priorities. This doesn't mean stakeholders estimate effort, but understanding that 'simple' requests might be complex helps inform better prioritization discussions.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -2500,12 +2495,12 @@ export const pspo1Questions = [
     id: 179,
     question: "How should a Product Owner handle a situation where the Product Goal seems too easy to achieve?",
     options: [
+      "Start planning for the next Product Goal while completing the current one",
       "Celebrate and maintain the achievable goal to ensure success",
       "Evolve the Product Goal to be more ambitious and stretch the team",
-      "Add more features to the Product Backlog to extend the timeline",
-      "Start planning for the next Product Goal while completing the current one"
+      "Add more features to the Product Backlog to extend the timeline"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Product Goals should be challenging and meaningful. If a goal seems too easy, the Product Owner should work with stakeholders to evolve it to something more ambitious that drives the product forward and motivates the team, rather than settling for easy achievement.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2514,12 +2509,12 @@ export const pspo1Questions = [
     id: 180,
     question: "What should a Product Owner do when the Development Team delivers features that work differently than the Product Owner expected?",
     options: [
-      "Reject the work and have it redone according to expectations",
-      "Explore whether the delivered approach might be better than expected",
       "Accept the work but add backlog items to align it with expectations",
-      "Improve specification detail to prevent future misalignment"
+      "Improve specification detail to prevent future misalignment",
+      "Reject the work and have it redone according to expectations",
+      "Explore whether the delivered approach might be better than expected"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "When features work differently than expected, the Product Owner should explore whether the team's approach might be superior. Development Teams often identify better implementation approaches. If the work meets the intent, different execution might be an improvement worth accepting.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2528,12 +2523,12 @@ export const pspo1Questions = [
     id: 181,
     question: "How should a Product Owner respond when users want the product to do everything competitors do?",
     options: [
-      "Build feature parity to remain competitive",
-      "Focus on differentiation rather than copying competitor features",
       "Add competitor features to the backlog for evaluation",
-      "Explain that matching competitors dilutes product focus"
+      "Explain that matching competitors dilutes product focus",
+      "Build feature parity to remain competitive",
+      "Focus on differentiation rather than copying competitor features"
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: "The Product Owner should add competitor features to the Product Backlog for evaluation but not automatically build them. Some might represent necessary parity; others might not align with product strategy. Each should be evaluated based on value and strategic fit.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2556,12 +2551,12 @@ export const pspo1Questions = [
     id: 183,
     question: "How should a Product Owner handle Development Team requests for dedicated time to learn new domain knowledge?",
     options: [
+      "Provide domain knowledge through detailed specifications instead",
       "Support domain learning as it improves feature implementation",
       "Evaluate domain learning value and prioritize it in the Product Backlog",
-      "Suggest team members learn domain knowledge outside work hours",
-      "Provide domain knowledge through detailed specifications instead"
+      "Suggest team members learn domain knowledge outside work hours"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Domain knowledge improves the team's ability to build appropriate solutions, suggest improvements, and work autonomously. The Product Owner should evaluate the value of domain learning and consider it in backlog prioritization based on expected improvement in product outcomes.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2570,12 +2565,12 @@ export const pspo1Questions = [
     id: 184,
     question: "What should a Product Owner do when market research suggests the product serves the wrong target audience?",
     options: [
-      "Continue serving the current audience and ignore market research",
-      "Evaluate whether to pivot to the right audience or refine the current approach",
       "Expand the product to serve multiple audiences simultaneously",
-      "Commission additional research before making any changes"
+      "Commission additional research before making any changes",
+      "Continue serving the current audience and ignore market research",
+      "Evaluate whether to pivot to the right audience or refine the current approach"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Research suggesting wrong target audience is significant learning that deserves serious consideration. The Product Owner should evaluate whether to pivot toward the right audience, refine understanding of the current audience, or acknowledge the product might serve a different market than intended.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2584,12 +2579,12 @@ export const pspo1Questions = [
     id: 185,
     question: "How should a Product Owner respond when the Development Team wants to replace manual testing with automated tests?",
     options: [
-      "Support test automation as it's a technical practice decision",
       "Understand the investment required and benefits gained from automation",
       "Maintain manual testing to avoid slowing feature delivery",
-      "Require the team to automate tests outside Sprint time"
+      "Require the team to automate tests outside Sprint time",
+      "Support test automation as it's a technical practice decision"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Test automation requires investment but can dramatically improve feedback speed, quality confidence, and development efficiency. The Product Owner should understand the business case and consider automation work in backlog prioritization based on its expected return.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2612,12 +2607,12 @@ export const pspo1Questions = [
     id: 187,
     question: "How should a Product Owner handle a situation where the Development Team's architecture decisions limit future product options?",
     options: [
+      "Bring in external architects to review and approve team decisions",
       "Accept architectural constraints as technical decisions outside Product Owner domain",
       "Discuss with the team how architectural choices impact product flexibility",
-      "Require the team to maintain maximum flexibility in all architectural decisions",
-      "Bring in external architects to review and approve team decisions"
+      "Require the team to maintain maximum flexibility in all architectural decisions"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "While the Development Team makes architectural decisions, the Product Owner should understand how those choices impact product flexibility, future capabilities, and strategic options. This enables informed discussion about trade-offs between current efficiency and future flexibility.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2626,12 +2621,12 @@ export const pspo1Questions = [
     id: 188,
     question: "What should a Product Owner do when they don't understand the technical implications of a Product Backlog item?",
     options: [
-      "Trust the Development Team's technical judgment completely",
-      "Seek to understand enough about implications to make informed prioritization decisions",
       "Delegate technical items to the Development Team for prioritization",
-      "Avoid prioritizing items with complex technical implications"
+      "Avoid prioritizing items with complex technical implications",
+      "Trust the Development Team's technical judgment completely",
+      "Seek to understand enough about implications to make informed prioritization decisions"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "The Product Owner doesn't need deep technical expertise but should understand implications enough to make informed value-based decisions. This might mean learning basics, asking clarifying questions, or having the team explain implications in business terms.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2640,12 +2635,12 @@ export const pspo1Questions = [
     id: 189,
     question: "How should a Product Owner respond when users want offline functionality that significantly increases complexity?",
     options: [
-      "Build offline functionality since users are requesting it",
       "Evaluate whether the value of offline access justifies the complexity",
       "Reject offline functionality due to implementation complexity",
-      "Deliver a simplified offline mode that's easier to implement"
+      "Deliver a simplified offline mode that's easier to implement",
+      "Build offline functionality since users are requesting it"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Offline functionality can be valuable but often adds significant complexity. The Product Owner should evaluate whether the value it provides (for which users, in which situations) justifies the investment and ongoing complexity burden.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2668,12 +2663,12 @@ export const pspo1Questions = [
     id: 191,
     question: "How should a Product Owner handle stakeholders who want to micromanage the Development Team's work?",
     options: [
+      "Ask stakeholders to direct all input through the Product Owner",
       "Allow stakeholder involvement as they have legitimate interest in the product",
       "Protect the team's autonomy while helping stakeholders understand appropriate boundaries",
-      "Have the Scrum Master intervene to shield the team from stakeholders",
-      "Ask stakeholders to direct all input through the Product Owner"
+      "Have the Scrum Master intervene to shield the team from stakeholders"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "The Product Owner should protect team autonomy while helping stakeholders understand appropriate ways to engage—through Sprint Reviews, backlog input, and the Product Owner—rather than micromanaging implementation. This requires clear communication about roles and boundaries.",
     domain: "Stakeholder Management",
     difficulty: "Foundation"
@@ -2682,12 +2677,12 @@ export const pspo1Questions = [
     id: 192,
     question: "What should a Product Owner do when the product gains unexpected users who use it differently than intended?",
     options: [
-      "Ignore unexpected users and focus on the intended audience",
-      "Investigate the unexpected usage and evaluate strategic implications",
       "Pivot immediately to serve the unexpected user base",
-      "Add features specifically for unexpected users"
+      "Add features specifically for unexpected users",
+      "Ignore unexpected users and focus on the intended audience",
+      "Investigate the unexpected usage and evaluate strategic implications"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Unexpected usage patterns might reveal new markets, unmet needs, or product capabilities not previously recognized. The Product Owner should investigate this learning and evaluate strategic implications—whether to serve these users, what it means for product direction, and market opportunities.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2696,12 +2691,12 @@ export const pspo1Questions = [
     id: 193,
     question: "How should a Product Owner respond when the Development Team wants to consolidate similar features into a unified design?",
     options: [
-      "Support consolidation as it improves consistency and usability",
       "Evaluate the consolidation proposal and make informed prioritization decisions",
       "Maintain separate features to preserve user familiarity",
-      "Let the team decide feature consolidation as it's a design decision"
+      "Let the team decide feature consolidation as it's a design decision",
+      "Support consolidation as it improves consistency and usability"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Feature consolidation can improve usability and maintainability but might disrupt familiar workflows. The Product Owner should evaluate the proposal, considering user impact, consistency benefits, and effort required, then make informed prioritization decisions.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2724,12 +2719,12 @@ export const pspo1Questions = [
     id: 195,
     question: "How should a Product Owner handle a Development Team that wants to refactor code continuously?",
     options: [
+      "Reject refactoring that doesn't deliver user-visible improvements",
       "Support continuous refactoring as it maintains code health",
       "Discuss how refactoring fits within the Definition of Done and Sprint work",
-      "Limit refactoring to specific Sprints or time allocations",
-      "Reject refactoring that doesn't deliver user-visible improvements"
+      "Limit refactoring to specific Sprints or time allocations"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Refactoring can be part of Done (maintaining quality) or separate backlog work (major restructuring). The Product Owner should discuss with the team how refactoring fits within their workflow and Definition of Done, ensuring quality maintenance while also delivering value.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2738,12 +2733,12 @@ export const pspo1Questions = [
     id: 196,
     question: "What should a Product Owner do when stakeholders want product features that serve internal convenience rather than user value?",
     options: [
-      "Reject features that don't serve users directly",
-      "Evaluate whether internal efficiency enables better user value delivery",
       "Build internal features only after all user features are complete",
-      "Have internal stakeholders create a separate product backlog"
+      "Have internal stakeholders create a separate product backlog",
+      "Reject features that don't serve users directly",
+      "Evaluate whether internal efficiency enables better user value delivery"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Some internal features enable better customer service, faster issue resolution, or better operations that indirectly benefit users. The Product Owner should evaluate whether internal features enable better value delivery and prioritize them accordingly, not automatically reject them.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2752,12 +2747,12 @@ export const pspo1Questions = [
     id: 197,
     question: "How should a Product Owner respond when the Development Team wants to participate in open source communities?",
     options: [
-      "Support open source participation as professional development",
       "Evaluate how participation benefits the product and prioritize time accordingly",
       "Suggest participation happens outside work hours",
-      "Allow participation only in communities directly related to current work"
+      "Allow participation only in communities directly related to current work",
+      "Support open source participation as professional development"
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "Open source participation can provide learning, community support, and improvements to tools the team uses. The Product Owner should understand the value proposition and consider time for participation in prioritization based on its expected benefit to product development.",
     domain: "Product Backlog Management",
     difficulty: "Foundation"
@@ -2780,12 +2775,12 @@ export const pspo1Questions = [
     id: 199,
     question: "How should a Product Owner handle a situation where the Development Team wants to slow down to reduce bugs?",
     options: [
+      "Add separate quality assurance resources to find bugs",
       "Support slowing down if it improves long-term quality",
       "Investigate root causes of bugs and address them systematically",
-      "Maintain current pace and accept bugs as inevitable",
-      "Add separate quality assurance resources to find bugs"
+      "Maintain current pace and accept bugs as inevitable"
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "Simply slowing down doesn't necessarily reduce bugs. The Product Owner should work with the team to investigate root causes—whether they need better practices, clearer requirements, improved testing, or different approaches—and address systemic issues rather than just adjusting pace.",
     domain: "Product Value",
     difficulty: "Foundation"
@@ -2794,12 +2789,12 @@ export const pspo1Questions = [
     id: 200,
     question: "What should a Product Owner do when they realize they've been optimizing for the wrong success metric?",
     options: [
-      "Continue with the current metric to maintain consistency",
-      "Acknowledge the learning and adjust to more meaningful success measures",
       "Track both metrics during a transition period",
-      "Validate the better metric with stakeholders before changing"
+      "Validate the better metric with stakeholders before changing",
+      "Continue with the current metric to maintain consistency",
+      "Acknowledge the learning and adjust to more meaningful success measures"
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Recognizing that success is being measured incorrectly is valuable learning. The Product Owner should acknowledge this and adjust to more meaningful metrics that better reflect actual value and product success, even if it means past optimization was misdirected.",
     domain: "Product Value",
     difficulty: "Foundation"

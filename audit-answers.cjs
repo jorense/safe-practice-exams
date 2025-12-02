@@ -8,8 +8,8 @@ function auditQuestions(filePath, examName) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
     
-    // Extract questions array
-    const match = content.match(/const \w+Questions = \[([\s\S]*?)\];/);
+    // Extract questions array - handle both 'const' and 'export const'
+    const match = content.match(/(?:export )?const \w+Questions = \[([\s\S]*?)\];/);
     if (!match) {
       console.log(`❌ Could not parse questions from ${examName}`);
       return null;
