@@ -3333,4 +3333,5 @@ const safeTeams6Questions = [
   }
 ];
 
+export { safeTeams6Questions };
 export default safeTeams6Questions;

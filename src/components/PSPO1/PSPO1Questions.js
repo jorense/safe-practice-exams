@@ -2801,4 +2801,5 @@ const pspo1Questions = [
   }
 ];
 
+export { pspo1Questions };
 export default pspo1Questions;
