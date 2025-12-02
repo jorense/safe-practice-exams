@@ -8,15 +8,19 @@ function auditQuestions(filePath, examName) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
     
-    // Extract questions array - handle both 'const' and 'export const'
-    const match = content.match(/(?:export )?const \w+Questions = \[([\s\S]*?)\];/);
+    // Extract questions array - handle both 'const' and 'export const', with or without semicolon
+    let match = content.match(/(?:export )?const \w+Questions = \[([\s\S]*?)\];/);
+    if (!match) {
+      // Try without semicolon (for Leading SAFe 6)
+      match = content.match(/(?:export )?const \w+Questions = (\[[\s\S]*?\n\])/);
+    }
     if (!match) {
       console.log(`❌ Could not parse questions from ${examName}`);
       return null;
     }
 
     // Parse questions using eval (safe in this context)
-    const questions = eval(`[${match[1]}]`);
+    const questions = eval(match[1] || `[${match[1]}]`);
     
     const issues = [];
     let correctAnswerPositions = [0, 0, 0, 0];
@@ -28,6 +32,9 @@ function auditQuestions(filePath, examName) {
       const questionNum = q.id;
       const options = q.options;
       const correctIdx = q.correctAnswer;
+      
+      // Skip multi-answer questions (they have correctAnswers array instead)
+      if (q.correctAnswers !== undefined) return;
       
       if (!options || options.length !== 4) return;
       
