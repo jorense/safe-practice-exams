@@ -98,181 +98,204 @@ function PALIExam({
           {/* Exam Settings Panel */}
           <div className={styles.examSettings}>
             <h2>⚙️ Exam Settings</h2>
-            
-            <div className={styles.settingGroup}>
-              <label htmlFor="questionCount">
-                Number of Questions:
-                <span className={styles.settingValue}>{numberOfQuestions}</span>
-              </label>
-              <input
-                id="questionCount"
-                type="range"
-                min="10"
-                max={paliQuestions.length}
-                step="5"
-                value={numberOfQuestions}
-                onChange={(e) => onNumberOfQuestionsChange(parseInt(e.target.value))}
-                className={styles.slider}
-              />
-              <div className={styles.rangeLabels}>
-                <span>10</span>
-                <span>{paliQuestions.length}</span>
+            <div className={styles.settingsGrid}>
+              <div className={styles.settingCard}>
+                <h4>Number of Questions</h4>
+                <select 
+                  value={numberOfQuestions} 
+                  onChange={(e) => onNumberOfQuestionsChange && onNumberOfQuestionsChange(Number(e.target.value))}
+                  className={styles.settingSelect}
+                >
+                  <option value={10}>10 Questions</option>
+                  <option value={20}>20 Questions</option>
+                  <option value={30}>30 Questions (Certification)</option>
+                  <option value={50}>50 Questions</option>
+                  <option value={75}>75 Questions</option>
+                  <option value={100}>100 Questions</option>
+                  <option value={150}>150 Questions</option>
+                  <option value={200}>200 Questions</option>
+                  <option value={300}>300 Questions (All)</option>
+                </select>
+                <p className={styles.settingDescription}>
+                  Choose how many questions you want to practice with
+                </p>
               </div>
-            </div>
-
-            <div className={styles.settingGroup}>
-              <label className={styles.checkboxLabel}>
-                <input
-                  type="checkbox"
-                  checked={autoShowExplanation}
-                  onChange={(e) => onAutoShowExplanationChange(e.target.checked)}
-                  className={styles.checkbox}
-                />
-                <span>Auto-show explanations after answering</span>
-              </label>
-              <p className={styles.settingDescription}>
-                When enabled, explanations appear automatically after each answer
-              </p>
-            </div>
-
-            <div className={styles.settingGroup}>
-              <label>Exam Mode:</label>
-              <div className={styles.radioGroup}>
-                <label className={styles.radioLabel}>
-                  <input
-                    type="radio"
-                    name="examMode"
-                    value="exam"
-                    checked={examMode === 'exam'}
-                    onChange={(e) => onExamModeChange(e.target.value)}
-                  />
-                  <span>Exam Mode</span>
-                </label>
-                <label className={styles.radioLabel}>
-                  <input
-                    type="radio"
-                    name="examMode"
-                    value="practice"
-                    checked={examMode === 'practice'}
-                    onChange={(e) => onExamModeChange(e.target.value)}
-                  />
-                  <span>Practice Mode</span>
-                </label>
+              <div className={styles.settingCard}>
+                <h4>Exam Mode</h4>
+                <select 
+                  value={examMode} 
+                  onChange={(e) => onExamModeChange && onExamModeChange(e.target.value)}
+                  className={styles.settingSelect}
+                >
+                  <option value="exam">🎓 Exam Mode (Realistic Simulation)</option>
+                  <option value="practice">📚 Practice Mode (Instant Feedback)</option>
+                </select>
+                <p className={styles.settingDescription}>
+                  {examMode === 'exam' 
+                    ? 'Single-select questions only. No feedback until you check your answer.' 
+                    : 'Instant feedback when you select an answer. Explanation shown immediately for enhanced learning.'}
+                </p>
               </div>
-              <p className={styles.settingDescription}>
-                {examMode === 'exam' 
-                  ? 'Exam mode: Timed, review at the end'
-                  : 'Practice mode: Untimed, immediate feedback'}
-              </p>
-            </div>
-
-            <div className={styles.settingGroup}>
-              <label className={styles.checkboxLabel}>
-                <input
-                  type="checkbox"
-                  checked={includeSeenQuestions}
-                  onChange={(e) => onIncludeSeenQuestionsChange(e.target.checked)}
-                  className={styles.checkbox}
-                />
-                <span>Include previously seen questions</span>
-              </label>
-              <p className={styles.settingDescription}>
-                When disabled, you'll only see questions you haven't encountered yet
-              </p>
+              <div className={styles.settingCard}>
+                <h4>Auto-Show Explanations {examMode === 'practice' && <span style={{color: 'var(--text-secondary)', fontSize: '0.875rem'}}>(Exam Mode only)</span>}</h4>
+                <label className={styles.checkboxLabel}>
+                  <input 
+                    type="checkbox" 
+                    checked={autoShowExplanation}
+                    onChange={(e) => onAutoShowExplanationChange && onAutoShowExplanationChange(e.target.checked)}
+                    className={styles.settingCheckbox}
+                    disabled={examMode === 'practice'}
+                  />
+                  <span className={styles.checkboxText}>
+                    Automatically expand explanations in Exam Mode
+                  </span>
+                </label>
+                <p className={styles.settingDescription}>
+                  {examMode === 'practice' 
+                    ? 'Practice Mode always shows explanations automatically' 
+                    : 'When enabled, explanations expand automatically after checking your answer'}
+                </p>
+              </div>
+              
+              {/* Question History Settings */}
+              <div className={styles.settingCard}>
+                <h4>Question History</h4>
+                <label className={styles.checkboxLabel}>
+                  <input 
+                    type="checkbox" 
+                    checked={includeSeenQuestions}
+                    onChange={(e) => onIncludeSeenQuestionsChange && onIncludeSeenQuestionsChange(e.target.checked)}
+                    className={styles.settingCheckbox}
+                  />
+                  <span className={styles.checkboxText}>
+                    Include previously seen questions
+                  </span>
+                </label>
+                <p className={styles.settingDescription}>
+                  {includeSeenQuestions 
+                    ? 'All questions will be available, including ones you\'ve practiced before' 
+                    : 'Only show questions you haven\'t seen yet'}
+                </p>
+                <div className={styles.historyStats}>
+                  <div className={styles.statItem}>
+                    <span className={styles.statValue}>{examStats.totalSeen}</span>
+                    <span className={styles.statLabel}>Practiced</span>
+                  </div>
+                  <div className={styles.statItem}>
+                    <span className={styles.statValue}>{examStats.totalRemaining}</span>
+                    <span className={styles.statLabel}>Remaining</span>
+                  </div>
+                  <div className={styles.statItem}>
+                    <span className={styles.statValue}>{examStats.masteryPercentage}%</span>
+                    <span className={styles.statLabel}>Mastery</span>
+                  </div>
+                </div>
+                {examStats.totalSeen > 0 && (
+                  <button 
+                    onClick={handleResetHistory}
+                    className={styles.resetButton}
+                  >
+                    🔄 Reset Practice History
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 
-          {/* Practice History Stats */}
-          <div className={styles.statsPanel}>
-            <h2>📊 Your Practice History</h2>
-            <div className={styles.statsGrid}>
-              <div className={styles.statCard}>
-                <div className={styles.statValue}>{examStats.totalSeen}</div>
-                <div className={styles.statLabel}>Questions Seen</div>
+          <div className={styles.examDomains}>
+            <h2>Exam Domains</h2>
+            <div className={styles.domainsGrid}>
+              <div className={styles.domainCard}>
+                <h3>Agile Leadership Mindset</h3>
+                <p>Understanding servant leadership, coaching mindset, and creating conditions for success</p>
+                <span className={styles.domainWeight}>25%</span>
               </div>
-              <div className={styles.statCard}>
-                <div className={styles.statValue}>{examStats.percentageSeen}%</div>
-                <div className={styles.statLabel}>Coverage</div>
+              <div className={styles.domainCard}>
+                <h3>Creating High-Performing Teams</h3>
+                <p>Team dynamics, psychological safety, self-organization, and continuous improvement</p>
+                <span className={styles.domainWeight}>20%</span>
               </div>
-              <div className={styles.statCard}>
-                <div className={styles.statValue}>{examStats.unseenCount}</div>
-                <div className={styles.statLabel}>Questions Remaining</div>
+              <div className={styles.domainCard}>
+                <h3>Empiricism & Agile Culture</h3>
+                <p>Transparency, inspection, adaptation, and fostering organizational agility</p>
+                <span className={styles.domainWeight}>20%</span>
+              </div>
+              <div className={styles.domainCard}>
+                <h3>Organizational Design & Change</h3>
+                <p>Systems thinking, value-driven delivery, leading transformation, and stakeholder management</p>
+                <span className={styles.domainWeight}>35%</span>
               </div>
             </div>
-            <button 
-              onClick={handleResetHistory}
-              className={styles.resetButton}
-            >
-              Reset Practice History
-            </button>
           </div>
 
           <div className={styles.examActions}>
-            <button className={styles.startButton} onClick={onStartQuiz}>
-              Start Practice Exam →
+            <button 
+              className={`${styles.actionButton} ${styles.primary}`}
+              data-testid="pali-start-quiz"
+              onClick={onStartQuiz}
+            >
+              🚀 Start Practice Exam
             </button>
-            {onGoToStudyMaterials && (
-              <button className={styles.studyButton} onClick={onGoToStudyMaterials}>
-                📚 Study Materials
-              </button>
-            )}
+            <button 
+              className={`${styles.actionButton} ${styles.secondary}`}
+              onClick={onGoToStudyMaterials}
+            >
+              📚 Study Materials
+            </button>
           </div>
+
+          <div className={styles.examTips}>
+            <h2>Exam Tips</h2>
+            <div className={styles.tipsGrid}>
+              <div className={styles.tipCard}>
+                <span className={styles.tipIcon}>💡</span>
+                <div>
+                  <h4>Focus on Leadership Mindset</h4>
+                  <p>PAL-I emphasizes leadership mindset over frameworks. Understand how leaders support organizational agility.</p>
+                </div>
+              </div>
+              <div className={styles.tipCard}>
+                <span className={styles.tipIcon}>⏰</span>
+                <div>
+                  <h4>Manage Your Time</h4>
+                  <p>
+                    {timerInfo.duration === "Unlimited" 
+                      ? "No time limit - take your time to study each question thoroughly."
+                      : `You have ${timerInfo.duration} for ${numberOfQuestions} questions. ${timerInfo.description}.`
+                    }
+                  </p>
+                </div>
+              </div>
+              <div className={styles.tipCard}>
+                <span className={styles.tipIcon}>🎯</span>
+                <div>
+                  <h4>Think Like an Agile Leader</h4>
+                  <p>Focus on empowering teams, removing impediments, and creating conditions for high performance.</p>
+                </div>
+              </div>
+              <div className={styles.tipCard}>
+                <span className={styles.tipIcon}>📖</span>
+                <div>
+                  <h4>Study Organizational Design</h4>
+                  <p>Understand systems thinking and how organizational structure impacts agility and value delivery.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {autoShowExplanation && (
+            <div className={styles.settingsInfo}>
+              <div className={styles.infoCard}>
+                <span className={styles.infoIcon}>ℹ️</span>
+                <div>
+                  <h4>Auto-Explanation Enabled</h4>
+                  <p>Detailed explanations will be automatically shown for each question during the exam.</p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
-
-        <aside className={styles.examSidebar}>
-          <div className={styles.infoCard}>
-            <h3>About PAL-I</h3>
-            <p>
-              The Professional Agile Leadership - Essentials (PAL-I) certification validates your understanding of Agile leadership mindset and how leaders can support organizational agility.
-            </p>
-          </div>
-
-          <div className={styles.infoCard}>
-            <h3>Focus Areas</h3>
-            <ul className={styles.topicList}>
-              <li>Agile Leadership Mindset</li>
-              <li>Creating High-Performing Teams</li>
-              <li>Empiricism and Agility</li>
-              <li>Agile Culture</li>
-              <li>Organizational Design</li>
-              <li>Value-Driven Delivery</li>
-              <li>Leading Change</li>
-              <li>Systems Thinking</li>
-            </ul>
-          </div>
-
-          <div className={styles.infoCard}>
-            <h3>Real Exam Details</h3>
-            <ul className={styles.examDetailsList}>
-              <li><strong>Questions:</strong> 36 multiple choice</li>
-              <li><strong>Duration:</strong> 60 minutes</li>
-              <li><strong>Passing:</strong> 85% (31 correct)</li>
-              <li><strong>Language:</strong> English only</li>
-              <li><strong>Format:</strong> Online, closed book</li>
-            </ul>
-          </div>
-
-          <div className={styles.infoCard}>
-            <h3>💡 Study Tips</h3>
-            <ul className={styles.tipsList}>
-              <li>Focus on leadership mindset over frameworks</li>
-              <li>Understand empiricism in leadership context</li>
-              <li>Study organizational design for agility</li>
-              <li>Practice with real-world scenarios</li>
-              <li>Review Scrum.org PAL reading list</li>
-            </ul>
-          </div>
-        </aside>
       </main>
-
-      <footer className={styles.examFooter}>
-        <p>
-          This is an unofficial practice exam. For official certification, visit{' '}
-          <a href="https://www.scrum.org/assessments/professional-agile-leadership-certification" target="_blank" rel="noopener noreferrer">
-            Scrum.org PAL-I
-          </a>
-        </p>
-      </footer>
     </div>
   );
 }
