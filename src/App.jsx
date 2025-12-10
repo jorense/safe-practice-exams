@@ -13,6 +13,8 @@ import PSM2Exam from './components/PSM2/PSM2Exam.jsx'
 import PSM2ExamQuiz from './components/PSM2/PSM2ExamQuiz.jsx'
 import PSPO1Exam from './components/PSPO1/PSPO1Exam.jsx'
 import PSPO1ExamQuiz from './components/PSPO1/PSPO1ExamQuiz.jsx'
+import PALIExam from './components/PALI/PALIExam.jsx'
+import PALIExamQuiz from './components/PALI/PALIExamQuiz.jsx'
 import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Achievements from './components/Achievements/Achievements.jsx'
 import SmartReview from './components/SmartReview/SmartReview.jsx'
@@ -121,6 +123,8 @@ function AppContent() {
       setCurrentPage('psm-2')
     } else if (examType === 'PSPO I') {
       setCurrentPage('pspo-1')
+    } else if (examType === 'PAL-I') {
+      setCurrentPage('pal-i')
     }
   }
 
@@ -138,6 +142,10 @@ function AppContent() {
 
   const startPSPO1Quiz = () => {
     setCurrentPage('pspo-1-quiz')
+  }
+
+  const startPALIQuiz = () => {
+    setCurrentPage('pal-i-quiz')
   }
 
   const goToStudyMaterials = (examType = 'Leading SAFe 6') => {
@@ -242,6 +250,10 @@ function AppContent() {
 
   const goBackToPSPO1 = () => {
     setCurrentPage('pspo-1')
+  }
+
+  const goBackToPALI = () => {
+    setCurrentPage('pal-i')
   }
 
   // Leading SAFe 6 Exam Page
@@ -368,6 +380,39 @@ function AppContent() {
       <PSPO1ExamQuiz 
         onGoHome={goHome} 
         onGoBackToExam={goBackToPSPO1} 
+        numberOfQuestions={numberOfQuestions} 
+        autoShowExplanation={autoShowExplanation} 
+        examMode={examMode}
+        includeSeenQuestions={includeSeenQuestions}
+      />
+    )
+  }
+
+  // PAL-I Exam Page
+  if (currentPage === 'pal-i') {
+    return (
+      <PALIExam 
+        onGoHome={goHome} 
+        onGoToStudyMaterials={() => goToStudyMaterials('PAL-I')} 
+        onStartQuiz={startPALIQuiz} 
+        numberOfQuestions={numberOfQuestions} 
+        autoShowExplanation={autoShowExplanation}
+        onNumberOfQuestionsChange={setNumberOfQuestions}
+        onAutoShowExplanationChange={setAutoShowExplanation}
+        examMode={examMode}
+        onExamModeChange={setExamMode}
+        includeSeenQuestions={includeSeenQuestions}
+        onIncludeSeenQuestionsChange={setIncludeSeenQuestions}
+      />
+    )
+  }
+
+  // PAL-I Quiz Page
+  if (currentPage === 'pal-i-quiz') {
+    return (
+      <PALIExamQuiz 
+        onGoHome={goHome} 
+        onGoBackToExam={goBackToPALI} 
         numberOfQuestions={numberOfQuestions} 
         autoShowExplanation={autoShowExplanation} 
         examMode={examMode}
@@ -681,6 +726,16 @@ function AppContent() {
                   >
                     <span className="button-content">
                       Start PSM II Practice Exam
+                      <span className="recommended-badge">Available</span>
+                    </span>
+                  </button>
+                  <button
+                    className="cta-button pal-i recommended"
+                    data-testid="start-pali-exams"
+                    onClick={() => startExam('PAL-I')}
+                  >
+                    <span className="button-content">
+                      Start PAL-I Practice Exam
                       <span className="recommended-badge">Available</span>
                     </span>
                   </button>

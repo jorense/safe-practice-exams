@@ -20,7 +20,7 @@ function auditQuestions(filePath, examName) {
     }
 
     // Parse questions using eval (safe in this context)
-    const questions = eval(match[1] || `[${match[1]}]`);
+    const questions = eval(`[${match[1]}]`);
     
     const issues = [];
     let correctAnswerPositions = [0, 0, 0, 0];
@@ -121,6 +121,7 @@ function auditQuestions(filePath, examName) {
 const exams = [
   { path: 'src/components/PSM2/PSM2Questions.js', name: 'PSM II' },
   { path: 'src/components/PSPO1/PSPO1Questions.js', name: 'PSPO I' },
+  { path: 'src/components/PALI/PALIQuestions.js', name: 'PAL-I' },
   { path: 'src/components/LeadingSAFe6/LeadingSAFe6Questions.js', name: 'Leading SAFe 6' },
   { path: 'src/components/SAFeTeams6/SAFeTeams6Questions.js', name: 'SAFe Teams 6' }
 ];
