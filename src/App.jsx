@@ -739,12 +739,6 @@ function AppContent() {
                       <span className="recommended-badge">Available</span>
                     </span>
                   </button>
-                </div>
-              </div>
-
-              <div className="exam-group coming-soon-group">
-                <h2 className="exam-group-title">Coming Soon</h2>
-                <div className="exam-buttons coming-soon-exams">
                   <button
                     className="cta-button pspo-1 recommended"
                     data-testid="start-pspo1-exams"
@@ -857,9 +851,9 @@ function AppContent() {
 
       <main className="main-content">
         <div className="hero-section">
-          <h1>Master Your SAFe Certifications</h1>
+          <h1>Master your Agile Certifications</h1>
           <p className="hero-subtitle">
-            Prepare for success with our comprehensive practice exams designed by SAFe experts
+            Prepare for success with our comprehensive practice exams designed by Agile experts
           </p>
 
           <div className="featured-exams-section">
@@ -909,12 +903,12 @@ function AppContent() {
 
                 <div className="featured-exam-item">
                   <button
-                    className="featured-exam-button pspo-1"
-                    onClick={() => startExam('PSPO I')}
+                    className="featured-exam-button pal-i"
+                    onClick={() => startExam('PAL-I')}
                   >
-                    <div className="featured-exam-content" data-testid="start-pspo1-home">
-                      <h3>PSPO I</h3>
-                      <p>Professional Scrum Product Owner I</p>
+                    <div className="featured-exam-content" data-testid="start-pali-home">
+                      <h3>PAL-I</h3>
+                      <p>Professional Agile Leadership I</p>
                       <span className="featured-badge available">Available</span>
                     </div>
                   </button>
