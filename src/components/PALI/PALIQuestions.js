@@ -4202,6 +4202,2106 @@ const paliQuestions = [
     explanation: "Leaders distinguish between occasional critical periods requiring extra effort and chronic overwork that burns people out. They acknowledge business reality—sometimes deadlines truly matter—while preventing crisis from becoming normal. After critical periods, they ensure teams recover. Sustainable pace is a strategic concern for long-term organizational capability, not a rigid rule preventing ever working hard.",
     domain: "Agile Culture",
     difficulty: "Intermediate"
+  },
+  {
+    id: 301,
+    question: "A senior leader insists teams follow identical processes for consistency. How should an Agile leader respond?",
+    options: [
+      "Help the leader understand the value of team autonomy and context-specific practices",
+      "Implement standardized processes immediately to maintain alignment",
+      "Allow complete process autonomy without organizational guidance",
+      "Create a compromise between standardization and flexibility"
+    ],
+    correctAnswer: 0,
+    explanation: "Agile leaders educate on empiricism and self-organization. While some standards may be necessary, rigid standardization contradicts Agile principles. Leaders help stakeholders understand that teams need autonomy to inspect and adapt based on context, while ensuring alignment on outcomes and values rather than processes.",
+    domain: "Leading Change",
+    difficulty: "Advanced"
+  },
+  {
+    id: 302,
+    question: "Multiple Agile teams work in complete isolation. What is the primary risk?",
+    options: [
+      "Inconsistent velocity across teams",
+      "Duplication of effort and conflicting priorities",
+      "Different team speeds",
+      "Lack of standardized ceremonies"
+    ],
+    correctAnswer: 1,
+    explanation: "Complete isolation creates waste through duplicated work, conflicting architecture, and misaligned priorities. Agile leaders facilitate coordination mechanisms (Scrum of Scrums, communities of practice) while preserving team autonomy for sustainable collaboration.",
+    domain: "Organizational Design",
+    difficulty: "Foundation"
+  },
+  {
+    id: 303,
+    question: "A team's velocity has declined for three sprints. What should an Agile leader focus on first?",
+    options: [
+      "Implement stricter accountability measures",
+      "Set velocity targets to motivate improvement",
+      "Understand underlying causes through conversation and observation",
+      "Replace underperforming members"
+    ],
+    correctAnswer: 2,
+    explanation: "Leaders seek to understand before acting. Declining velocity is a symptom with many potential causes: technical debt, team dynamics, unclear requirements, dependencies, or burnout. Discovery through coaching and observation reveals root issues before solutions.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 304,
+    question: "How should leaders help teams balance innovation with delivering committed work?",
+    options: [
+      "Mandate 20% innovation time regardless of commitments",
+      "Allow innovation only after committed work completes",
+      "Create separate innovation teams",
+      "Help teams build slack into capacity planning for exploration"
+    ],
+    correctAnswer: 3,
+    explanation: "Sustainable innovation requires built-in capacity. Rather than mandating percentages or creating separation, leaders help teams build slack for learning, experimentation, and improvement through buffer time, explicit improvement work, or dedicated innovation periods.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 305,
+    question: "An executive requests detailed Gantt charts from Agile teams. What should a leader do?",
+    options: [
+      "Understand underlying needs and propose alternative visualizations",
+      "Explain that Agile teams don't create project plans",
+      "Have teams create Gantt charts as requested",
+      "Escalate to senior leadership"
+    ],
+    correctAnswer: 0,
+    explanation: "Effective leaders understand the 'why' behind requests. Executives likely need visibility for business planning. Rather than refusing or complying, explore needs and offer Agile alternatives like release roadmaps, sized backlogs, or burn-up charts providing transparency without false precision.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 306,
+    question: "A team consistently over-commits and fails Sprint Goals. What is the most effective approach?",
+    options: [
+      "Reduce commitments by 30% for three sprints",
+      "Coach on realistic capacity planning and achievable goals",
+      "Implement mandatory buffer time",
+      "Replace the Scrum Master"
+    ],
+    correctAnswer: 1,
+    explanation: "Sustainable improvement comes through learning. Leaders coach teams to understand actual capacity, identify delivery factors, and develop solutions for achievable Sprint Goals. This builds capability and ownership rather than dependency.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 307,
+    question: "Teams want to skip retrospectives because they've 'figured out' their process. How should a leader respond?",
+    options: [
+      "Grant permission as it shows maturity",
+      "Reduce frequency to monthly",
+      "Help teams understand continuous improvement requires ongoing inspection",
+      "Mandate retrospectives as non-negotiable"
+    ],
+    correctAnswer: 2,
+    explanation: "Believing you've 'figured it out' signals complacency. Leaders coach that empiricism requires continuous adaptation—context changes, new challenges emerge, improvement opportunities exist. Rather than mandating or permitting, leaders help teams reconnect with reflection value.",
+    domain: "Agile Culture",
+    difficulty: "Advanced"
+  },
+  {
+    id: 308,
+    question: "An organization wants to measure productivity using story points per sprint. What should a leader do?",
+    options: [
+      "Support this metric as objective productivity data",
+      "Allow teams to game the metric",
+      "Implement but don't share with teams",
+      "Educate on velocity limitations and propose value-based alternatives"
+    ],
+    correctAnswer: 3,
+    explanation: "Velocity is a planning tool, not productivity measure. Using it for comparisons leads to gaming and output focus. Leaders educate on risks and shift to value metrics: customer satisfaction, business outcomes, time-to-market measuring impact over activity.",
+    domain: "Evidence-Based Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 309,
+    question: "A team member reports burnout from context switching between projects. How should a leader respond?",
+    options: [
+      "Work with leadership to reduce WIP and improve focus",
+      "Explain multi-tasking is required in modern work",
+      "Suggest working longer hours",
+      "Move to a different team"
+    ],
+    correctAnswer: 0,
+    explanation: "Burnout from context switching indicates systemic WIP and focus problems. Leaders address root causes by limiting work-in-progress, improving team focus, and creating sustainable conditions benefiting individuals and organizational effectiveness.",
+    domain: "Creating Conditions",
+    difficulty: "Foundation"
+  },
+  {
+    id: 310,
+    question: "What is the primary purpose of Communities of Practice?",
+    options: [
+      "Enforce standardized practices",
+      "Facilitate knowledge sharing and collective learning across boundaries",
+      "Create career progression paths",
+      "Resolve cross-team conflicts"
+    ],
+    correctAnswer: 1,
+    explanation: "CoPs facilitate learning and knowledge sharing among practitioners with common interests. While influencing standards and careers, core value is creating spaces for collective learning, experience sharing, and expertise development across boundaries while respecting autonomy.",
+    domain: "Organizational Design",
+    difficulty: "Foundation"
+  },
+  {
+    id: 311,
+    question: "After two years, teams still struggle with basic Scrum. What is the likely root cause?",
+    options: [
+      "Insufficient training and coaching",
+      "Scrum Masters not holding teams accountable",
+      "Unaddressed cultural and structural impediments",
+      "Teams resisting change"
+    ],
+    correctAnswer: 2,
+    explanation: "Struggling despite time and training indicates systemic issues: misaligned incentives, conflicting structures, lack of leadership support, or cultural impediments. Leaders focus on underlying conditions rather than blaming individuals or adding enforcement.",
+    domain: "Leading Change",
+    difficulty: "Advanced"
+  },
+  {
+    id: 312,
+    question: "How should leaders balance team autonomy with organizational alignment?",
+    options: [
+      "Provide detailed guidance for consistency",
+      "Let teams be fully autonomous",
+      "Create committees for all decisions",
+      "Allow autonomy within clear boundaries and strategic direction"
+    ],
+    correctAnswer: 3,
+    explanation: "Effective leadership provides clear boundaries (strategy, constraints, principles) with autonomy to self-organize. This 'freedom within framework' aligns teams with direction while enabling context adaptation. Leaders set context, not processes.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Advanced"
+  },
+  {
+    id: 313,
+    question: "A Product Owner says the team is 'too slow.' What should a leader do?",
+    options: [
+      "Explore what 'slow' means and address underlying concerns",
+      "Tell teams to increase velocity",
+      "Explain the pace is sustainable",
+      "Add more people"
+    ],
+    correctAnswer: 0,
+    explanation: "Leaders first understand what drives the concern: market pressure, stakeholder expectations, comparisons? Understanding allows addressing real issues—value delivery, stakeholder management, realistic planning—rather than unsustainably pressuring teams.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 314,
+    question: "What is most important for successful Agile adoption?",
+    options: [
+      "Comprehensive training programs",
+      "Leadership commitment to creating supporting conditions",
+      "Implementing the right framework",
+      "Hiring experienced coaches"
+    ],
+    correctAnswer: 1,
+    explanation: "While training, frameworks, and coaching help, the critical factor is leadership creating supporting conditions: changing incentives, providing autonomy, allowing learning from failure, removing impediments, and modeling Agile values. Without this, other investments struggle.",
+    domain: "Leading Change",
+    difficulty: "Foundation"
+  },
+  {
+    id: 315,
+    question: "An executive requests individual performance ratings. How should a leader respond?",
+    options: [
+      "Provide ratings to maintain relationships",
+      "Refuse as ratings conflict with team accountability",
+      "Discuss tensions and explore alternative approaches",
+      "Delegate to the Scrum Master"
+    ],
+    correctAnswer: 2,
+    explanation: "Rather than refusing or complying, leaders engage in dialogue about tensions between individual ratings and team-based work. They help leadership understand how individual metrics undermine collaboration, then develop approaches supporting both growth and team performance.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 316,
+    question: "A team wants to eliminate estimation. What should a leader consider?",
+    options: [
+      "Refuse as estimation is fundamental",
+      "Require proof before allowing change",
+      "Suggest simplified estimation instead",
+      "Support the experiment if forecasting remains effective"
+    ],
+    correctAnswer: 3,
+    explanation: "Leaders support team experimentation within boundaries. If teams can forecast, plan effectively, and provide transparency without specific techniques, the approach matters less than outcomes. Leaders help define success criteria and support learning.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 317,
+    question: "Different teams adopt conflicting technical practices. How should a leader respond?",
+    options: [
+      "Allow diversity while facilitating knowledge sharing",
+      "Mandate standardized practices immediately",
+      "Let each team work without coordination",
+      "Form governance committees"
+    ],
+    correctAnswer: 0,
+    explanation: "Practice diversity enables learning from approaches. However, isolation prevents organizational learning. Leaders facilitate communities, forums, or guilds where teams share experiences, trade-offs, and outcomes enabling collective learning while respecting context-appropriate choices.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 318,
+    question: "Teams deliver technically sound features that don't solve user problems. What should a leader do?",
+    options: [
+      "Bring in a new Product Owner",
+      "Help build user connections and focus on outcomes over outputs",
+      "Implement mandatory user testing",
+      "Create detailed requirements documentation"
+    ],
+    correctAnswer: 1,
+    explanation: "This indicates user need disconnect. Leaders help develop user empathy through direct engagement, shift focus to outcome achievement, and coach on assumption validation. The solution is building capability and connections, not adding roles or processes.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 319,
+    question: "How should leaders address organizational silos impeding effectiveness?",
+    options: [
+      "Restructure into cross-functional teams immediately",
+      "Escalate to executives for mandates",
+      "Create cross-silo working groups to improve collaboration",
+      "Accept silos as reality"
+    ],
+    correctAnswer: 2,
+    explanation: "While restructuring may be needed, leaders start by creating bridges: cross-functional groups, communities of practice, or improvement initiatives demonstrating collaboration value. This builds relationships, reveals impediments, and creates readiness for deeper structural change.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 320,
+    question: "A team wants a full sprint on technical debt but the PO objects. How should a leader facilitate?",
+    options: [
+      "Support technical judgment and override the PO",
+      "Side with the PO on backlog prioritization",
+      "Suggest addressing debt outside sprint time",
+      "Help both understand concerns and find sustainable approaches"
+    ],
+    correctAnswer: 3,
+    explanation: "This represents common tension between short-term delivery and long-term sustainability. Leaders facilitate dialogue helping both understand trade-offs: team explains debt impact, PO explains business pressures. Together they find approaches like incremental reduction or visible technical health.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 321,
+    question: "How should leaders measure Agile transformation success?",
+    options: [
+      "Improvements in outcomes, satisfaction, and time-to-market",
+      "Percentage following Scrum correctly",
+      "Number trained in Agile methods",
+      "Velocity increases across teams"
+    ],
+    correctAnswer: 0,
+    explanation: "Transformation success measures outcomes that matter: improved product outcomes, faster value delivery, higher engagement and satisfaction, better customer satisfaction, and adaptability. Process adherence and training are activities, not outcomes. Focus on results Agile enables.",
+    domain: "Evidence-Based Management",
+    difficulty: "Foundation"
+  },
+  {
+    id: 322,
+    question: "A stakeholder demands to attend all retrospectives. What should a leader do?",
+    options: [
+      "Allow it for transparency",
+      "Understand motivation and address needs differently",
+      "Deny as retrospectives are private",
+      "Suggest attending every other one"
+    ],
+    correctAnswer: 1,
+    explanation: "Retrospectives need psychological safety for honest reflection. Rather than granting or denying, leaders explore why: visibility into health, confidence in improvement, understanding challenges? Address needs through alternatives while protecting team safe space.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 323,
+    question: "What role should leaders play in difficult technical decisions?",
+    options: [
+      "Make decisions based on expertise",
+      "Escalate to architecture teams",
+      "Facilitate decision-making while providing context and constraints",
+      "Let teams decide independently"
+    ],
+    correctAnswer: 2,
+    explanation: "Leaders develop capability by facilitating rather than dictating. They ensure necessary context (constraints, principles, vision) and facilitate good processes (alternatives, trade-offs, involving right people) but allow teams to own decisions. This builds better decisions and capability.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Foundation"
+  },
+  {
+    id: 324,
+    question: "A team's Definition of Done is below industry standards. What should a leader do?",
+    options: [
+      "Mandate stronger DoD immediately",
+      "Accept current standards as team-owned",
+      "Replace members with experienced people",
+      "Coach on quality while strengthening DoD incrementally"
+    ],
+    correctAnswer: 3,
+    explanation: "While teams own DoD, leaders coach on professional standards. Rather than mandating or accepting low quality, leaders educate on practices, help understand consequences, and support incremental improvement as capability grows. Balance autonomy with professional accountability.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 325,
+    question: "A team wants to adopt a new practice they read about. How should a leader respond?",
+    options: [
+      "Support experiment with clear criteria and timeboxed trial",
+      "Research thoroughly before allowing",
+      "Allow only if others succeeded",
+      "Discourage to maintain stability"
+    ],
+    correctAnswer: 0,
+    explanation: "Leaders encourage empiricism and learning. Supporting experimentation bounded by success criteria and timeboxes enables growth and organizational learning. Leaders help define success, plan inspection, and support learning regardless of outcome building improvement culture.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 326,
+    question: "An organization implements Scrum but funds through annual project budgets. What problem does this create?",
+    options: [
+      "Teams can't plan without multi-year funding",
+      "Annual budgets conflict with iterative delivery and adaptability",
+      "Project budgets prevent self-organization",
+      "Budget cycles don't align with sprints"
+    ],
+    correctAnswer: 1,
+    explanation: "Annual project budgets create anti-patterns: up-front scope commitment pressure, difficulty adapting based on learning, completion focus over value, and team instability. Leaders work toward product-based funding providing stable teams with budget for iterative value delivery.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 327,
+    question: "High velocity but stakeholders complain about outcomes. What does this indicate?",
+    options: [
+      "Teams need better technical practices",
+      "Stakeholders have unrealistic expectations",
+      "Building wrong things—output without outcome focus",
+      "PO isn't communicating value effectively"
+    ],
+    correctAnswer: 2,
+    explanation: "High velocity with low satisfaction indicates output optimization (features delivered) over outcomes (problems solved, value created). Leaders shift focus to outcomes through user-centered thinking, outcome-based goals, validated learning, and measuring impact over activity.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 328,
+    question: "What is most important for psychological safety in Agile teams?",
+    options: [
+      "Everyone getting along and avoiding conflict",
+      "Regular social activities",
+      "Remote work flexibility",
+      "Feeling comfortable disagreeing and taking risks"
+    ],
+    correctAnswer: 3,
+    explanation: "Psychological safety means feeling safe taking interpersonal risks: voicing dissent, admitting mistakes, asking questions, challenging assumptions without negative consequences. This enables learning, innovation, and honest collaboration. It's not about comfort but conditions where healthy conflict and risk-taking drive improvement.",
+    domain: "Creating Conditions",
+    difficulty: "Foundation"
+  },
+  {
+    id: 329,
+    question: "Retrospective action items are rarely completed. What should a leader do first?",
+    options: [
+      "Help teams understand why they're not following through",
+      "Assign tracking and reporting",
+      "Reduce number of items",
+      "Make completion a performance metric"
+    ],
+    correctAnswer: 0,
+    explanation: "Incomplete actions signal deeper issues: actions aren't important, capacity unavailable, poorly defined, or change seems impossible. Leaders coach teams to understand root causes and develop solutions rather than adding tracking or metrics addressing symptoms.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 330,
+    question: "Product Owners across teams make conflicting decisions on shared components. How should a leader handle this?",
+    options: [
+      "Establish Chief Product Owner for final decisions",
+      "Facilitate PO collaboration to align decisions",
+      "Create architecture governance board",
+      "Let each team build their own version"
+    ],
+    correctAnswer: 1,
+    explanation: "Conflicting decisions indicate insufficient collaboration and dependency understanding. Leaders facilitate structures enabling PO collaboration: syncs, dependency mapping, shared backlogs, or roadmap alignment. The goal is enabling collective decision-making rather than imposing hierarchy or allowing chaos.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 331,
+    question: "A team wants to eliminate daily standups. What should a leader do?",
+    options: [
+      "Explain standups are mandatory",
+      "Allow only with replacement mechanism",
+      "Understand why and help achieve underlying goals",
+      "Reduce to three times weekly"
+    ],
+    correctAnswer: 2,
+    explanation: "Rather than defending practice or allowing change, understand motivation: feels wasteful, becoming status reporting, better synchronization? Leaders help teams understand purpose (daily planning and adaptation) and either fix current standup or find alternatives achieving same goals.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 332,
+    question: "What is the primary risk of leaders solving all team problems?",
+    options: [
+      "Leader becomes overwhelmed bottleneck",
+      "Decisions made without adequate input",
+      "Team feels micromanaged",
+      "Team becomes dependent without developing capability"
+    ],
+    correctAnswer: 3,
+    explanation: "Direct problem-solving creates dependency and prevents capability development. Leaders coach teams to identify and solve problems, providing support and removing systemic impediments rather than solving everything. This builds sustainable capability.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Foundation"
+  },
+  {
+    id: 333,
+    question: "An organization wants Agile with functional structure (separate dev, QA, UX). What should a leader advise?",
+    options: [
+      "Explain how silos create handoffs undermining agility",
+      "This is acceptable with Agile ceremonies",
+      "Implement Agile within each department",
+      "Wait until organization restructures"
+    ],
+    correctAnswer: 0,
+    explanation: "Functional structures conflict with Agile: handoffs, delayed feedback, diffused accountability, part optimization over whole. Leaders educate on impacts and work toward cross-functional teams while helping start where they are with incremental improvements.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 334,
+    question: "A team member dominates discussions preventing others from contributing. How should a leader respond?",
+    options: [
+      "Have private conversation about creating space",
+      "All above in sequence as needed",
+      "Implement round-robin formats",
+      "Coach team on self-managing interactions"
+    ],
+    correctAnswer: 1,
+    explanation: "Addressing dominance requires multiple levels. Start with team self-management coaching. If unsuccessful, introduce facilitation techniques. If needed, have private coaching conversations. Leaders use lightest touch necessary, building from self-management toward direct intervention only as required.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 335,
+    question: "A PO wants to maximize utilization with full backlog. What should a leader consider?",
+    options: [
+      "Support preventing idle time",
+      "Suggest working on debt during idle time",
+      "Help PO understand slack value for learning and improvement",
+      "Implement 100% utilization target"
+    ],
+    correctAnswer: 2,
+    explanation: "100% utilization leaves no capacity for variability, learning, improvement, or innovation creating fragile systems. Leaders help POs understand sustainable productivity requires slack—periods for learning, experimentation, improvement, and handling unexpected work without constant overtime.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 336,
+    question: "What most effectively demonstrates servant leadership?",
+    options: [
+      "Doing whatever teams ask",
+      "Making quick decisions to prevent blocking",
+      "Attending all meetings to stay informed",
+      "Removing impediments teams cannot remove themselves"
+    ],
+    correctAnswer: 3,
+    explanation: "Servant leadership serves team development and success, not servitude. Effective servant leaders focus on systemic impediments teams can't remove (policies, resources, stakeholders) while coaching teams to solve own problems. They empower rather than do for, develop capability rather than create dependency.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Foundation"
+  },
+  {
+    id: 337,
+    question: "Transformation improved practices but business outcomes unchanged. What does this suggest?",
+    options: [
+      "Not working on right things—process without strategy",
+      "Teams need more training",
+      "Outcome measurement is incorrect",
+      "Transformation hasn't run long enough"
+    ],
+    correctAnswer: 0,
+    explanation: "Better practices without better outcomes indicates activity-strategy disconnect. Teams may do Agile well but work on wrong things, or constraints prevent value delivery despite better practices. Leaders connect team practices to strategic objectives ensuring valuable problem solving.",
+    domain: "Evidence-Based Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 338,
+    question: "How should leaders balance architectural consistency with team autonomy?",
+    options: [
+      "Allow complete autonomy in all decisions",
+      "Establish guidelines and principles teams adapt to context",
+      "Create review board for all decisions",
+      "Mandate specific technologies and patterns"
+    ],
+    correctAnswer: 1,
+    explanation: "Effective governance provides principles and guidelines (security standards, integration patterns, technology rationale) with autonomy for contextual application. This balances organizational coherence with team empowerment. Leaders facilitate architectural communities collectively developing and evolving guidelines.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 339,
+    question: "A team has knowledge silos where only one person understands critical components. What should a leader do?",
+    options: [
+      "Document all knowledge in design docs",
+      "Hire additional people with component knowledge",
+      "Coach on pairing, mobbing, and knowledge sharing",
+      "Require training sessions"
+    ],
+    correctAnswer: 2,
+    explanation: "Knowledge silos are best addressed through organic shared understanding: pairing, mobbing, code reviews, collaborative problem-solving. These build collective ownership more effectively than documentation or training while improving quality and resilience. Leaders coach on practices rather than mandating solutions.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 340,
+    question: "An executive asks for fixed scope, date, and budget commitment for complex product. How should a leader respond?",
+    options: [
+      "Create estimates and commit",
+      "Refuse as conflicting with Agile",
+      "Add 50% buffer to estimates",
+      "Explain uncertainty and propose iterative funding with evaluation"
+    ],
+    correctAnswer: 3,
+    explanation: "Complex work has inherent uncertainty. Rather than refusing or unreliable commitments, leaders educate on uncertainty and propose risk management approaches: incremental funding, frequent reviews, MVP definition, or phased delivery providing control through adaptation aligned with how complex work unfolds.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 341,
+    question: "What is most important for creating learning organizations?",
+    options: [
+      "Psychological safety to experiment, fail, and share learnings",
+      "Comprehensive training and certifications",
+      "Conference and external learning access",
+      "Lessons learned documentation"
+    ],
+    correctAnswer: 0,
+    explanation: "While training and documentation have value, organizational learning happens through experimentation and reflection in psychologically safe environments. When people feel safe trying approaches, acknowledging failures, asking questions, and sharing learnings, continuous learning embeds in daily work rather than depending on formal programs.",
+    domain: "Creating Conditions",
+    difficulty: "Foundation"
+  },
+  {
+    id: 342,
+    question: "A team wants a new framework believing it solves all problems. What should a leader do?",
+    options: [
+      "Support adoption showing initiative",
+      "Help understand current problems before jumping to solutions",
+      "Research framework before allowing",
+      "Discourage and focus on principles"
+    ],
+    correctAnswer: 1,
+    explanation: "New frameworks promise silver bullets but rarely address root causes. Leaders coach teams to first deeply understand challenges, then evaluate whether frameworks actually address them. This develops diagnostic capability and prevents solution-jumping. Teams might still adopt but with clearer problem understanding.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 343,
+    question: "Teams complain organizational processes slow them down. How should a leader respond?",
+    options: [
+      "Tell teams to work within constraints",
+      "Encourage ignoring processes lacking value",
+      "Help identify specific impediments and work to remove or modify them",
+      "Create special Agile team exceptions"
+    ],
+    correctAnswer: 2,
+    explanation: "Rather than accepting constraints or encouraging circumvention, leaders systematically address impediments. They help teams identify specific problems, understand intent, and work with process owners to modify or remove impediments. This respects governance while continuously improving value delivery support.",
+    domain: "Leading Change",
+    difficulty: "Foundation"
+  },
+  {
+    id: 344,
+    question: "A PO is overwhelmed managing backlogs for multiple teams. What should a leader recommend?",
+    options: [
+      "Hire additional Product Owners",
+      "Have teams help manage backlog",
+      "Implement backlog tools for efficiency",
+      "Assess if product is too large for one PO needing restructuring"
+    ],
+    correctAnswer: 3,
+    explanation: "PO overwhelm often indicates product scope too large for one person. Leaders help assess whether splitting product (multiple POs for areas), reorganizing teams around smaller products, or coaching on focus and delegation addresses root cause rather than just adding capacity or tools.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 345,
+    question: "What role should leaders play in team member conflict resolution?",
+    options: [
+      "Coach teams to resolve conflicts, facilitating when needed",
+      "Immediately step in to resolve and restore harmony",
+      "Let conflicts play out naturally",
+      "Separate conflicting members"
+    ],
+    correctAnswer: 0,
+    explanation: "Healthy teams need capability for constructive conflict navigation. Leaders first support developing this capability, intervening to facilitate only when stuck. They teach resolution skills, model healthy disagreement, and create safety for constructive conflict building resilience and maturity rather than dependency.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 346,
+    question: "An organization measures Agile maturity by Scrum practice compliance. What issue does this create?",
+    options: [
+      "Teams focus on practices rather than outcomes",
+      "Both A and C",
+      "This appropriately indicates maturity",
+      "Teams game metrics appearing compliant"
+    ],
+    correctAnswer: 1,
+    explanation: "Measuring maturity by compliance creates problems: focuses teams on checkbox compliance rather than outcome enabling, and invites gaming appearing compliant without results. Leaders shift measurement toward outcomes (effectiveness, delivery, quality, satisfaction) indicating actual maturity over process adherence.",
+    domain: "Evidence-Based Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 347,
+    question: "How should leaders help teams balance technical excellence with delivery pressure?",
+    options: [
+      "Require quality standards regardless of deadlines",
+      "Allow quality corners when pressure is high",
+      "Help make conscious, transparent trade-offs understanding consequences",
+      "Remove all pressure for quality focus"
+    ],
+    correctAnswer: 2,
+    explanation: "Quality-delivery tensions require conscious trade-offs. Leaders help teams understand shortcut consequences (increased defects, slower delivery, frustration) and make trade-offs transparent to stakeholders. Teams might occasionally choose speed knowingly with debt plans rather than blindly cutting quality or rigidly refusing trade-offs.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 348,
+    question: "Sprint Reviews become routine demos with low stakeholder attendance. What should a leader do?",
+    options: [
+      "Make attendance mandatory",
+      "Cancel until interest returns",
+      "Convert to recorded videos",
+      "Help teams make reviews more engaging and valuable"
+    ],
+    correctAnswer: 3,
+    explanation: "Low attendance signals reviews aren't providing stakeholder value. Leaders coach teams on making reviews engaging: demonstrate value created not features built, facilitate next steps discussion, involve stakeholders in planning, or address specific concerns. The goal is creating genuine value rather than forcing attendance.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 349,
+    question: "What is the primary purpose of organizational transparency in Agile?",
+    options: [
+      "Enable informed decision-making and adaptation at all levels",
+      "Ensure everyone knows what others are doing",
+      "Hold teams accountable for commitments",
+      "Provide executive visibility into activities"
+    ],
+    correctAnswer: 0,
+    explanation: "Transparency supports empiricism: enabling people to inspect reality and make informed adaptations. While visibility and accountability are byproducts, primary purpose is creating shared understanding enabling better decisions at all levels—daily planning to organizational strategy. Leaders create transparency serving decision-making, not just reporting.",
+    domain: "Agile Culture",
+    difficulty: "Foundation"
+  },
+  {
+    id: 350,
+    question: "Teams celebrate finishing work but not solving user problems. What does this indicate?",
+    options: [
+      "Healthy delivery and completion focus",
+      "Output-focused rather than outcome-focused",
+      "DoD needs strengthening to include validation",
+      "POs not effectively communicating value"
+    ],
+    correctAnswer: 1,
+    explanation: "Celebrating completion rather than user problem solving indicates output orientation—measuring success by features delivered rather than value created. Leaders shift this mindset through outcome thinking coaching, celebrating user impact, making outcomes visible through metrics, and connecting work to user problems solved.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 351,
+    question: "Different stakeholders have conflicting priorities. How should a leader approach this?",
+    options: [
+      "Choose the most senior stakeholder's priorities",
+      "Let PO resolve all conflicts independently",
+      "Facilitate dialogue to align on shared goals and trade-offs",
+      "Implement voting to determine priorities"
+    ],
+    correctAnswer: 2,
+    explanation: "Stakeholder conflict stems from different value perspectives and limited trade-off understanding. Leaders facilitate conversations building shared strategic goal understanding, helping stakeholders see each other's perspectives, and making trade-offs transparent enabling collective prioritization based on shared strategy rather than positional power.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 352,
+    question: "A team wants to pair program on all work but management sees it as 50% waste. How should a leader respond?",
+    options: [
+      "Support management's concern and discourage pairing",
+      "Allow pairing only on complex work",
+      "Let teams pair without informing management",
+      "Help management understand value pairing creates through quality and knowledge"
+    ],
+    correctAnswer: 3,
+    explanation: "This represents common misunderstanding about sustainable delivery. Leaders educate management how pairing improves quality, shares knowledge, reduces defects, speeds onboarding, often delivering faster despite appearing less 'efficient.' Use data (defect rates, cycle time, velocity) demonstrating value shifting perspective from utilization to outcome delivery.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 353,
+    question: "What is most important when scaling Agile across multiple teams?",
+    options: [
+      "Maintaining team autonomy while enabling necessary coordination",
+      "Implementing standardized scaling framework",
+      "Creating centralized governance for alignment",
+      "Standardizing all practices for consistency"
+    ],
+    correctAnswer: 0,
+    explanation: "Successful scaling balances team autonomy (enabling context adaptation) with coordination (enabling alignment and integration). Rather than imposing standardization or frameworks, leaders facilitate minimum viable coordination—just enough structure enabling integration and alignment while preserving self-organization. Specific approach depends on context.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 354,
+    question: "A PO wants to add surprise items to Sprint Backlog mid-sprint. What should a leader do?",
+    options: [
+      "Explain Sprint Backlog cannot change after planning",
+      "Help PO and team converse about request and impact",
+      "Allow if items are high priority",
+      "Suggest waiting until next planning"
+    ],
+    correctAnswer: 1,
+    explanation: "While Developers own Sprint Backlog, they should collaborate with PO on changes. Leaders facilitate conversation about: Why suddenly urgent? What would be dropped? Impact on Sprint Goal? This helps both understand trade-offs and make informed decisions together balancing adaptability with commitment.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 355,
+    question: "An organization wants Agile but maintains annual performance reviews with individual goals. What tension does this create?",
+    options: [
+      "None—individual goals and team work are compatible",
+      "Annual reviews too infrequent for Agile pace",
+      "Individual goals can drive behaviors undermining collaboration and shared ownership",
+      "Reviews should be replaced with peer feedback only"
+    ],
+    correctAnswer: 2,
+    explanation: "Individual performance goals in team environments often create perverse incentives: individual optimization over team success, competition over collaboration, looking good over helping. Leaders evolve performance systems toward team outcomes, peer feedback, and contribution to team success while acknowledging individual growth.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 356,
+    question: "Teams request tools but organization has lengthy procurement. How should a leader respond?",
+    options: [
+      "Tell teams to work with available tools",
+      "Encourage personal credit cards and reimbursement",
+      "Escalate to executive leadership",
+      "Work to streamline procurement while helping optimize current tools"
+    ],
+    correctAnswer: 3,
+    explanation: "Leaders work at both levels: helping teams maximize current tool value while addressing systemic impediments like procurement delays. They work with procurement creating faster paths for low-cost tools, build business cases for important tools, and help teams understand constraints while advocating improvement addressing both immediate need and systemic problem.",
+    domain: "Leading Change",
+    difficulty: "Foundation"
+  },
+  {
+    id: 357,
+    question: "Teams achieve Sprint Goals but stakeholders feel progress is slow. What should a leader explore?",
+    options: [
+      "Both A and B",
+      "Whether goals are ambitious enough or focused on right outcomes",
+      "Why stakeholders have different pace perceptions",
+      "Whether teams are sandbagging with easy goals"
+    ],
+    correctAnswer: 0,
+    explanation: "Disconnect between goal achievement and stakeholder satisfaction requires exploring: are Sprint Goals focused on right outcomes and appropriately ambitious, and what drives stakeholder 'slow' perception? Understanding both helps address real issue—whether goal-setting, expectations, communication, or actual pace—rather than assuming one or other.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 358,
+    question: "What is most effective for building organizational agility?",
+    options: [
+      "Train everyone in Agile practices",
+      "Focus on leadership mindset and creating supporting conditions",
+      "Hire experienced practitioners replacing traditional managers",
+      "Implement practices team-by-team"
+    ],
+    correctAnswer: 1,
+    explanation: "Organizational agility requires leadership creating adaptation conditions: psychological safety, autonomy, clear purpose, feedback loops, and learning culture. While training and practices matter, they won't stick without supporting conditions. Leaders focus on developing leadership capability and evolving systems either enabling or preventing agility.",
+    domain: "Leading Change",
+    difficulty: "Advanced"
+  },
+  {
+    id: 359,
+    question: "A team wants to eliminate sprint planning as they 'know what needs doing.' What might this indicate?",
+    options: [
+      "Team is mature and self-organizing effectively",
+      "Sprint planning takes too long needing efficiency",
+      "Team may not be collaborating on Sprint Goals or adapting plans",
+      "Product Backlog is well-refined"
+    ],
+    correctAnswer: 2,
+    explanation: "Sprint Planning serves multiple purposes beyond selecting work: creating shared understanding, collaborative Sprint Goal formation, planning goal achievement, and team synchronization. Wanting elimination might signal the event isn't providing value—perhaps mechanical task assignment rather than collaborative planning. Leaders explore missing value and help restore it.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 360,
+    question: "How should leaders introduce Agile in hierarchical, command-and-control organizations?",
+    options: [
+      "Start team-level and gradually expand organizationally",
+      "Demand top-down restructuring before implementing",
+      "Focus on changing leadership mindset first",
+      "Implement in pockets and demonstrate success through results"
+    ],
+    correctAnswer: 3,
+    explanation: "In resistant environments, demonstrating value often creates more leverage than demanding change. Starting with willing teams, showing results, and using success to build organizational appetite can be more effective than fighting for permission. However, leaders must also work on leadership education and systemic impediments in parallel creating bottom-up momentum and top-down support.",
+    domain: "Leading Change",
+    difficulty: "Advanced"
+  },
+  {
+    id: 361,
+    question: "Team technical practices create increasing debt. What should a leader do?",
+    options: [
+      "Help team understand debt impact and coach on sustainable practices",
+      "Mandate practices like TDD, code review, refactoring",
+      "Hire technical coach teaching proper practices",
+      "Dedicate sprints to paying down debt"
+    ],
+    correctAnswer: 0,
+    explanation: "Sustainable technical excellence comes from understanding consequences and building capability, not mandates. Leaders help teams connect practices to outcomes (defects, delivery speed, frustration), coach on technical practices, and may bring expertise when needed. Teams should understand why practices matter and develop capability rather than just following rules.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 362,
+    question: "What is the primary purpose of creating product vision in Agile?",
+    options: [
+      "Provide detailed requirements for development",
+      "Create alignment and inspire teams toward shared future state",
+      "Satisfy stakeholder long-term planning demands",
+      "Enable accurate roadmap creation and deadline commitments"
+    ],
+    correctAnswer: 1,
+    explanation: "Product vision creates shared purpose and direction without prescribing solutions. It aligns stakeholders and teams on future state they're working toward, inspires and motivates, and provides decision-making context. It's not a detailed plan but a guiding star helping everyone understand how work contributes to meaningful outcomes.",
+    domain: "Product Value",
+    difficulty: "Foundation"
+  },
+  {
+    id: 363,
+    question: "Leaders notice teams working long hours consistently. What is most important?",
+    options: [
+      "Praise dedication and commitment",
+      "Implement mandatory time-off policies",
+      "Investigate root causes and address sustainability issues",
+      "Hire additional members to reduce workload"
+    ],
+    correctAnswer: 2,
+    explanation: "Consistent overtime indicates systemic problems: unrealistic commitments, external pressure, perfectionism, poor planning, or unclear priorities. Leaders investigate root causes and address them: helping teams commit sustainably, removing external pressure, coaching on 'done' criteria, or addressing organizational impediments. Sustainable pace is essential for long-term productivity and health.",
+    domain: "Creating Conditions",
+    difficulty: "Foundation"
+  },
+  {
+    id: 364,
+    question: "How should leaders measure their own effectiveness?",
+    options: [
+      "By impediments removed each sprint",
+      "By stakeholder satisfaction with leadership",
+      "By teams successfully implementing Agile practices",
+      "By improvements in team autonomy, capability, and outcomes"
+    ],
+    correctAnswer: 3,
+    explanation: "Leader effectiveness should be measured by team development: are teams becoming more autonomous, capable, and effective over time? Are they solving own problems? Are outcomes improving? The goal is building capability and creating success conditions, not personal heroics or checkbox compliance. Leader success reflects in team growth and sustainable results.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Advanced"
+  },
+  {
+    id: 365,
+    question: "A PO prioritizes only features from loudest stakeholders. What should a leader do?",
+    options: [
+      "Coach PO on balanced management and evidence-based prioritization",
+      "Accept as PO's stakeholder management prerogative",
+      "Encourage team to push back on poor decisions",
+      "Escalate that PO isn't effectively managing backlog"
+    ],
+    correctAnswer: 0,
+    explanation: "Squeaky wheel prioritization often leads to suboptimal value delivery. Leaders coach PO on stakeholder management techniques, evidence-based prioritization, understanding different perspectives, and making transparent trade-offs. Help PO develop capability balancing stakeholder demands with data-driven value decisions.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 366,
+    question: "An organization measures team success by comparing velocity across teams. What problems does this create?",
+    options: [
+      "Teams inflate estimates appearing productive",
+      "All of the above",
+      "Teams compete rather than collaborate",
+      "Focus shifts from value delivery to velocity gaming"
+    ],
+    correctAnswer: 1,
+    explanation: "Velocity comparison creates multiple dysfunctions: estimate inflation, competition, and metrics focus over outcomes. Velocity is relative to each team and meaningful only for that team's planning. Leaders educate on these problems and shift measurement toward value delivered, stakeholder satisfaction, or business outcomes actually mattering rather than gameable activity metrics.",
+    domain: "Evidence-Based Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 367,
+    question: "Teams say they don't have time for retrospectives. How should a leader respond?",
+    options: [
+      "Make retrospectives optional respecting capacity",
+      "Mandate retrospectives as non-negotiable",
+      "Investigate why teams feel they lack time and address root causes",
+      "Reduce frequency to monthly"
+    ],
+    correctAnswer: 2,
+    explanation: "Not having time usually signals deeper issues: over-commitment, unclear retrospective value, inefficient practices, or feeling improvement won't happen. Leaders explore root causes and address them—helping teams see reflection as investment not overhead, improving retrospective effectiveness, or addressing organizational impediments to change.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 368,
+    question: "Teams deliver technically sound features users don't use. What does a leader need to address?",
+    options: [
+      "Team's technical practices and quality standards",
+      "PO's requirements definition process",
+      "User training on feature usage",
+      "Disconnect between what's built and actual user needs"
+    ],
+    correctAnswer: 3,
+    explanation: "Building unused features indicates fundamental disconnect from user needs. Leaders help establish better user feedback loops: user research, usage analytics, direct engagement, outcome-based goals, and validated learning. The issue isn't technical quality or PO process but lack of user-centricity in how problems are defined and solutions validated.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 369,
+    question: "What is most important for successful Agile adoption?",
+    options: [
+      "Leadership commitment to supporting Agile values and principles",
+      "Selecting the right Agile framework",
+      "Comprehensive team member training",
+      "Hiring experienced coaches to guide transformation"
+    ],
+    correctAnswer: 0,
+    explanation: "While frameworks, training, and coaching help, they cannot overcome leadership not supporting Agile values. Leadership commitment manifests in creating autonomy, accepting failure as learning, removing impediments, changing incentives, and modeling Agile behaviors. Without this, other adoption investments struggle against organizational gravity pulling toward traditional practices.",
+    domain: "Leading Change",
+    difficulty: "Foundation"
+  },
+  {
+    id: 370,
+    question: "Sprint Reviews become status reports rather than collaborative sessions. What should leaders do?",
+    options: [
+      "Mandate interactive formats forcing engagement",
+      "Coach teams on facilitating engaging reviews focused on collaboration and next steps",
+      "Cancel until stakeholders commit to participation",
+      "Convert to executive summaries"
+    ],
+    correctAnswer: 1,
+    explanation: "Status-report Sprint Reviews waste valuable collaboration opportunity. Leaders coach teams on making reviews engaging: demonstrating value created not features built, facilitating results and next steps discussion, involving stakeholders in prioritization, and creating psychological safety for feedback. The goal is restoring collaborative purpose, not enforcing formats or giving up on practice.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 371,
+    question: "Teams struggle with estimation accuracy. How should leaders help?",
+    options: [
+      "Mandate specific techniques like Planning Poker",
+      "Implement estimation training programs",
+      "Help teams understand accuracy matters less than learning from variance",
+      "Switch to #NoEstimates eliminating accuracy problem"
+    ],
+    correctAnswer: 2,
+    explanation: "Estimates are forecasts, not commitments. Rather than pursuing perfect estimation, leaders help teams learn from variance: what causes estimates to be off, what patterns emerge, how can planning improve? The goal is better planning and forecasting over time, not perfect estimates. Teams should track actual vs. estimated to learn, not to be judged on accuracy.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 372,
+    question: "A senior stakeholder insists on traditional project status reports. What should a leader do?",
+    options: [
+      "Provide traditional reports maintaining relationships",
+      "Refuse and insist they attend Sprint Reviews",
+      "Have teams create reports in addition to Sprint Reviews",
+      "Understand what information stakeholder needs and propose Agile alternatives"
+    ],
+    correctAnswer: 3,
+    explanation: "Rather than refusing or blindly complying, understand stakeholder actual information needs: progress visibility, risk awareness, decision points? Then propose Agile alternatives providing this information: roadmap updates, release burn-up charts, or executive summaries from Sprint Reviews. Meet underlying need through Agile practices rather than adding traditional overhead or refusing to adapt.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 373,
+    question: "What is the primary leader role during organizational change?",
+    options: [
+      "Create safety, provide support, and facilitate learning during transition",
+      "Push teams to adopt new practices quickly",
+      "Enforce compliance with new Agile processes",
+      "Protect teams from any discomfort"
+    ],
+    correctAnswer: 0,
+    explanation: "Change is uncomfortable and uncertain. Leaders create psychological safety for people to try approaches, make mistakes, and learn. They provide support through coaching and removing impediments, facilitate learning from experiments, and help navigate ambiguity. The goal is supporting sustainable change through learning, not forcing compliance or eliminating all discomfort.",
+    domain: "Leading Change",
+    difficulty: "Foundation"
+  },
+  {
+    id: 374,
+    question: "Teams meet Sprint Goals but stakeholder satisfaction declines. What should a leader investigate?",
+    options: [
+      "Whether Sprint Goals align with stakeholder priorities and needs",
+      "All of the above",
+      "Why stakeholders have unrealistic expectations",
+      "Whether team communicates effectively with stakeholders"
+    ],
+    correctAnswer: 1,
+    explanation: "Disconnect between goal achievement and stakeholder satisfaction could have multiple causes: Sprint Goals focused on wrong priorities, misaligned stakeholder expectations, poor communication about progress and trade-offs, or stakeholders not understanding what's being delivered. Leaders investigate all possibilities to understand root cause and address it systemically.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 375,
+    question: "How should leaders build trust with skeptical teams that experienced failed change?",
+    options: [
+      "Promise this time will be different and ask for faith",
+      "Start fresh without discussing previous failures",
+      "Acknowledge past failures, focus on small wins, and demonstrate consistency over time",
+      "Bring in external success stories for confidence"
+    ],
+    correctAnswer: 2,
+    explanation: "Trust with burned teams is built through actions, not promises. Acknowledge past experiences validating skepticism, focus on small experiments with clear success criteria, celebrate wins, and demonstrate consistency between words and actions. Trust builds incrementally through reliable behavior over time, not through assurances or ignoring history.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Advanced"
+  },
+  {
+    id: 376,
+    question: "An organization standardizes all team tools for consistency. What should leaders consider?",
+    options: [
+      "Support standardization as it simplifies management and training",
+      "Allow complete tool autonomy regardless of organizational concerns",
+      "Implement standard tools but allow teams to use others additionally",
+      "Balance consistency benefits with teams' needs for context-appropriate tools"
+    ],
+    correctAnswer: 3,
+    explanation: "Tool standardization has legitimate benefits: easier collaboration, simpler support, consistent reporting. However, one size rarely fits all contexts. Leaders help find balance: standardize where meaningful (collaboration, security, compliance) while giving teams choice where context matters (development environments, testing tools). Engage teams in decisions rather than imposing or allowing chaos.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 377,
+    question: "A team wants to implement mob programming for all work. How should a leader respond?",
+    options: [
+      "Support the experiment with clear success criteria and review period",
+      "Discourage it due to apparent inefficiency",
+      "Allow it only for complex work to balance efficiency and collaboration",
+      "Require data from other teams before allowing the experiment"
+    ],
+    correctAnswer: 0,
+    explanation: "Leaders encourage empiricism. Mob programming can improve quality, knowledge sharing, and collaboration despite appearing inefficient. Support the experiment with defined success metrics (code quality, team satisfaction, delivery speed) and a timebox for evaluation. Focus on outcomes rather than assumptions about efficiency. Learning happens through experimentation.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 378,
+    question: "What is the primary indicator that an Agile transformation is creating sustainable change?",
+    options: [
+      "All teams are following Scrum by the book",
+      "Teams are adapting practices to their context and continuously improving",
+      "Velocity has increased across all teams",
+      "Management has adopted Agile terminology"
+    ],
+    correctAnswer: 1,
+    explanation: "Sustainable transformation is evident when teams understand principles deeply enough to adapt practices contextually and continuously improve. Following frameworks by rote or using terminology without mindset change indicates surface adoption. Leaders look for empiricism in action: teams inspecting, adapting, and owning their improvement.",
+    domain: "Leading Change",
+    difficulty: "Advanced"
+  },
+  {
+    id: 379,
+    question: "A leader notices teams avoid raising impediments in public forums. What does this suggest?",
+    options: [
+      "Teams are effectively solving their own problems",
+      "Teams don't have significant impediments",
+      "Lack of psychological safety to discuss challenges openly",
+      "The impediment tracking system is working well"
+    ],
+    correctAnswer: 2,
+    explanation: "Avoiding impediment discussion signals lack of psychological safety—fear of blame, appearing incompetent, or belief that nothing will change. Leaders investigate by creating safer spaces for conversation, demonstrating responsiveness to raised impediments, and modeling vulnerability by discussing their own challenges.",
+    domain: "Creating Conditions",
+    difficulty: "Foundation"
+  },
+  {
+    id: 380,
+    question: "How should leaders respond when teams request permission to fail?",
+    options: [
+      "Grant permission explicitly to encourage experimentation",
+      "Deny permission as failure should never be goal",
+      "Require detailed failure plans before granting permission",
+      "Create clear boundaries within which failure is acceptable learning"
+    ],
+    correctAnswer: 3,
+    explanation: "Leaders create clarity about where failure is acceptable learning (experiments, innovation, trying new approaches) versus where failure has unacceptable consequences (security, safety, compliance). This enables intelligent risk-taking rather than recklessness or paralysis. The request itself signals teams need more clarity about boundaries and safety.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 381,
+    question: "An executive measures team health solely through delivery metrics. What should leaders address?",
+    options: [
+      "Help executives understand that sustainable delivery requires healthy teams",
+      "This is appropriate as delivery reflects team health",
+      "Hide team health issues to maintain good delivery metrics",
+      "Focus team energy on improving delivery metrics"
+    ],
+    correctAnswer: 0,
+    explanation: "Delivery metrics are lagging indicators—teams can deliver short-term while burning out or creating technical debt. Leaders educate on leading indicators of health: team satisfaction, psychological safety, sustainable pace, learning, and collaboration. Healthy teams deliver sustainably; delivery pressure without health focus creates fragility.",
+    domain: "Evidence-Based Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 382,
+    question: "What is the most important leadership behavior for fostering organizational learning?",
+    options: [
+      "Mandating knowledge-sharing sessions",
+      "Modeling curiosity and publicly learning from mistakes",
+      "Creating detailed documentation standards",
+      "Implementing formal mentoring programs"
+    ],
+    correctAnswer: 1,
+    explanation: "Leaders shape culture through their behavior more than their words. When leaders openly share what they're learning, acknowledge mistakes, ask questions, and demonstrate curiosity, they create safety for others to do the same. Programs and mandates matter less than leaders modeling the learning behaviors they want to see.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Foundation"
+  },
+  {
+    id: 383,
+    question: "Teams deliver features but customer satisfaction is declining. What should leaders investigate?",
+    options: [
+      "Whether features align with actual customer needs and problems",
+      "Whether customer expectations are realistic",
+      "All of the above",
+      "Whether teams communicate feature benefits effectively"
+    ],
+    correctAnswer: 2,
+    explanation: "Declining satisfaction despite feature delivery could indicate: building wrong features, customer expectations misalignment, poor communication, or usability issues. Leaders investigate all possibilities using customer data, conversations, and usage analytics rather than assuming one cause.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 384,
+    question: "How should leaders balance team autonomy with organizational learning and sharing?",
+    options: [
+      "Mandate standard practices based on organizational learning",
+      "Let teams be autonomous without expecting knowledge sharing",
+      "Require teams to justify any deviation from organizational standards",
+      "Create optional communities of practice for voluntary knowledge sharing"
+    ],
+    correctAnswer: 3,
+    explanation: "Communities of practice, guilds, or forums allow teams to share learning voluntarily while maintaining autonomy to choose context-appropriate practices. Leaders facilitate these spaces without mandating participation or standardization, trusting that good practices spread through demonstrated value rather than mandate.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 385,
+    question: "A Product Owner consistently changes priorities mid-sprint. What should leaders do?",
+    options: [
+      "Understand what's driving the changes and address root causes",
+      "Enforce sprint commitment rules strictly",
+      "Replace the Product Owner with someone more stable",
+      "Implement change request processes for mid-sprint changes"
+    ],
+    correctAnswer: 0,
+    explanation: "Frequent priority changes signal deeper issues: volatile stakeholder demands, unclear product strategy, poor planning, or genuine market responsiveness need. Leaders coach the PO and investigate root causes rather than imposing rules or replacing people. The solution depends on what's actually driving the behavior.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 386,
+    question: "What is the primary risk of leaders solving all escalated technical decisions?",
+    options: [
+      "Leaders make suboptimal decisions without context",
+      "All of the above",
+      "Teams don't develop decision-making capability",
+      "Leaders become bottlenecks slowing delivery"
+    ],
+    correctAnswer: 1,
+    explanation: "When leaders solve all technical decisions, they lack team-level context for optimal decisions, prevent teams from developing capability, and create bottlenecks. Leaders should coach teams on decision-making processes, provide context and constraints, and enable teams to make most technical decisions themselves.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Foundation"
+  },
+  {
+    id: 387,
+    question: "How should leaders respond when teams cite organizational policies as impediments?",
+    options: [
+      "Tell teams to work within existing policies",
+      "Encourage teams to ignore policies that impede value delivery",
+      "Investigate whether policies need changing or teams need coaching on working within them",
+      "Create exceptions for Agile teams to bypass policies"
+    ],
+    correctAnswer: 2,
+    explanation: "Some policies genuinely impede value delivery and need changing; others exist for valid reasons and teams need coaching on working effectively within them. Leaders investigate each case: understand policy intent, assess actual impact, and either work to change harmful policies or help teams navigate necessary ones effectively.",
+    domain: "Leading Change",
+    difficulty: "Advanced"
+  },
+  {
+    id: 388,
+    question: "A team shows high engagement but low delivery. What should leaders explore?",
+    options: [
+      "Whether teams have necessary skills and capabilities",
+      "Whether external dependencies or organizational impediments block progress",
+      "Whether teams are working on the right things",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "High engagement with low delivery could indicate: skill gaps, organizational impediments, unclear priorities, technical debt, or working on low-value items. Leaders explore all possibilities through conversation and observation rather than assuming motivation is the issue.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 389,
+    question: "What is the most important factor in successful distributed team leadership?",
+    options: [
+      "Creating psychological safety and intentional communication practices",
+      "Implementing the right collaboration tools",
+      "Having all team members in the same time zone",
+      "Scheduling daily video calls for all team interactions"
+    ],
+    correctAnswer: 0,
+    explanation: "Distributed success requires intentional focus on psychological safety (harder to build remotely), explicit communication norms, and deliberate relationship building. Tools and time zones matter, but culture and practices matter more. Leaders create belonging and safety across distance through intentional actions.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 390,
+    question: "How should leaders respond when teams resist adopting industry best practices?",
+    options: [
+      "Mandate adoption as these are proven practices",
+      "Understand why teams resist and address underlying concerns",
+      "Accept team resistance as legitimate exercise of autonomy",
+      "Bring in external experts to convince teams"
+    ],
+    correctAnswer: 1,
+    explanation: "Resistance often signals legitimate concerns: practices may not fit context, teams don't understand value, implementation concerns, or past bad experiences. Leaders explore resistance through conversation, address concerns, and may need to coach on benefits while respecting that 'best practices' aren't universal.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 391,
+    question: "A leader inherits teams with significant technical debt. What should be the priority?",
+    options: [
+      "Immediately dedicate several sprints to paying down debt",
+      "Ignore debt and focus on new feature delivery",
+      "Help teams balance debt reduction with feature delivery sustainably",
+      "Rewrite the system from scratch to eliminate debt"
+    ],
+    correctAnswer: 2,
+    explanation: "Technical debt requires sustainable approach: some debt reduction each sprint, making debt visible, connecting it to business impact, and helping Product Owners understand trade-offs. Neither ignoring debt nor stopping all features is sustainable. Leaders facilitate ongoing conversations about balancing short and long-term needs.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 392,
+    question: "What role should leaders play in team conflict that's affecting delivery?",
+    options: [
+      "Immediately intervene to resolve the conflict",
+      "Ignore it as teams should self-organize conflict resolution",
+      "Separate conflicting individuals to prevent escalation",
+      "Assess whether teams can resolve it themselves with coaching"
+    ],
+    correctAnswer: 3,
+    explanation: "Leaders first assess whether teams can resolve conflict with coaching support. If conflict is healthy disagreement about work, coach the team. If it's interpersonal and affecting delivery, facilitate resolution. If it's beyond team capability or involves harmful behavior, intervene directly. Match intervention to situation severity.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 393,
+    question: "How should leaders measure the success of empowerment initiatives?",
+    options: [
+      "By improvements in team capability and outcomes over time",
+      "By number of decisions teams make autonomously",
+      "By reduction in escalations to leadership",
+      "By team satisfaction with autonomy levels"
+    ],
+    correctAnswer: 0,
+    explanation: "True empowerment shows in growing team capability (solving harder problems, making better decisions) and improving outcomes (delivery, quality, innovation). Decision counting or escalation reduction might indicate empowerment or abandonment. Leaders look for capability growth and sustainable results.",
+    domain: "Evidence-Based Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 394,
+    question: "A team wants to change their sprint length. What should leaders do?",
+    options: [
+      "Approve if they can justify the change with data",
+      "Support the experiment with clear success criteria",
+      "Deny it to maintain organizational consistency",
+      "Require executive approval for such fundamental changes"
+    ],
+    correctAnswer: 1,
+    explanation: "Sprint length is a team decision that affects their planning and rhythm. Leaders support experimentation: help teams define what success looks like, timebox the experiment, and plan how they'll inspect results. This builds team capability while enabling adaptation to their context.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 395,
+    question: "What is the primary purpose of leadership visibility in Agile organizations?",
+    options: [
+      "To monitor team productivity and hold people accountable",
+      "To ensure teams follow Agile practices correctly",
+      "To understand impediments, provide context, and offer support",
+      "To make strategic decisions about team work"
+    ],
+    correctAnswer: 2,
+    explanation: "Leadership visibility serves to understand team challenges, provide strategic context teams need for decisions, and offer support. It's not about monitoring or controlling but about creating conditions for team success. Leaders are present to serve team needs, not to supervise or direct team-level work.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Foundation"
+  },
+  {
+    id: 396,
+    question: "Teams achieve high velocity but quality issues are increasing. What should leaders address?",
+    options: [
+      "The Definition of Done and engineering practices",
+      "Team incentives that might reward speed over quality",
+      "External pressure for faster delivery",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "Quality issues despite high velocity suggest systemic problems: weak DoD, inadequate engineering practices, misaligned incentives rewarding output over outcomes, or external pressure encouraging shortcuts. Leaders investigate all factors and address root causes systemically rather than blaming teams.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 397,
+    question: "How should leaders balance the need for innovation with delivering current commitments?",
+    options: [
+      "Help teams build capacity for innovation into their sustainable delivery rhythm",
+      "Mandate 20% time for innovation across all teams",
+      "Create separate innovation teams to handle experimental work",
+      "Allow innovation only after commitments are fully met"
+    ],
+    correctAnswer: 0,
+    explanation: "Sustainable innovation requires building capacity for it into regular work rather than mandating percentages or creating separation. Leaders help teams understand that long-term success requires current delivery AND building future capability. The specific approach (slack time, innovation sprints, continuous experimentation) depends on context.",
+    domain: "Strategic Vision",
+    difficulty: "Advanced"
+  },
+  {
+    id: 398,
+    question: "A Product Owner struggles with stakeholder management. What should leaders do?",
+    options: [
+      "Provide stakeholder management training",
+      "Coach the PO while helping improve organizational stakeholder alignment",
+      "Take over difficult stakeholder relationships",
+      "Replace the PO with someone more experienced"
+    ],
+    correctAnswer: 1,
+    explanation: "PO stakeholder struggles often reflect both individual capability and organizational dysfunction (unclear strategy, conflicting stakeholder demands, lack of leadership support). Leaders coach the PO on skills while also working on organizational-level stakeholder alignment and support structures. Address both levels simultaneously.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 399,
+    question: "What is the most important leadership action when introducing Agile to a skeptical organization?",
+    options: [
+      "Mandate Agile adoption with executive support",
+      "Provide comprehensive Agile training to everyone first",
+      "Start with willing teams and demonstrate value through results",
+      "Hire external Agile consultants for credibility"
+    ],
+    correctAnswer: 2,
+    explanation: "In skeptical environments, demonstrated results create more leverage than mandates or training. Leaders find willing teams, help them succeed with Agile approaches, and use those successes to build organizational appetite. Combine this with education and removing impediments to create both grassroots momentum and top-down support.",
+    domain: "Leading Change",
+    difficulty: "Advanced"
+  },
+  {
+    id: 400,
+    question: "How should leaders respond when teams achieve goals but morale is declining?",
+    options: [
+      "Celebrate achievements to boost morale",
+      "Accept this as normal in high-performing environments",
+      "Implement team-building activities to improve morale",
+      "Investigate root causes of morale issues despite success"
+    ],
+    correctAnswer: 3,
+    explanation: "Achieving goals while morale declines suggests unsustainable practices: unrealistic goals, lack of autonomy, misaligned incentives, interpersonal issues, or insufficient learning time. Leaders investigate through conversation and observation, addressing root causes rather than treating symptoms with celebrations or activities.",
+    domain: "Creating Conditions",
+    difficulty: "Foundation"
+  },
+  {
+    id: 401,
+    question: "A team requests hiring specialists rather than cross-skilling existing members. What should leaders consider?",
+    options: [
+      "Explore whether cross-skilling is more sustainable than hiring",
+      "Approve hiring to quickly fill capability gaps",
+      "Deny hiring to force cross-skilling and reduce costs",
+      "Hire contractors temporarily while teams cross-skill"
+    ],
+    correctAnswer: 0,
+    explanation: "Leaders explore trade-offs: hiring adds capacity quickly but increases specialization and team size; cross-skilling builds resilience but takes time. The right choice depends on: urgency of need, current team capacity, growth opportunities for team members, and organizational context. Investigate rather than defaulting to either option.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 402,
+    question: "What is the primary benefit of leaders developing coaching skills over directive management?",
+    options: [
+      "Coaching saves leaders time by delegating problem-solving",
+      "Coaching builds team capability for sustainable performance",
+      "Coaching makes teams feel better about their work",
+      "Coaching aligns with Agile terminology and practices"
+    ],
+    correctAnswer: 1,
+    explanation: "Coaching develops team capability to solve problems, make decisions, and improve independently. While this requires more leader time initially, it creates sustainable team performance and reduces long-term dependency on leaders. The goal is capability building, not time saving or terminology alignment.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Foundation"
+  },
+  {
+    id: 403,
+    question: "Teams complain about too many meetings interfering with work. What should leaders do?",
+    options: [
+      "Mandate meeting-free days across all teams",
+      "Tell teams to decline meetings they find wasteful",
+      "Help teams assess which meetings provide value and eliminate or improve the rest",
+      "Implement strict meeting guidelines organization-wide"
+    ],
+    correctAnswer: 2,
+    explanation: "Meeting proliferation often indicates organizational dysfunction: unclear decision-making, poor communication, lack of trust, or misuse of collaborative time. Leaders help teams inspect their meetings for value, eliminate waste, and improve necessary meetings. Solutions should emerge from team context rather than blanket rules.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 404,
+    question: "How should leaders respond when different teams have incompatible technical approaches?",
+    options: [
+      "Mandate standard technical approaches across all teams",
+      "Let each team choose independently without coordination",
+      "Bring in architects to make technical decisions",
+      "Facilitate dialogue about trade-offs while allowing context-appropriate choices"
+    ],
+    correctAnswer: 3,
+    explanation: "Some technical diversity is healthy (teams learn from different approaches), but complete incompatibility creates integration problems. Leaders facilitate technical communities where teams share trade-offs and outcomes, enabling informed choices. Standardize only where integration requires it; allow diversity where contexts differ.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 405,
+    question: "A team shows excellent collaboration but individuals feel their contributions aren't recognized. What does this indicate?",
+    options: [
+      "Recognition systems may be misaligned with team-based work",
+      "Team collaboration is overemphasized at expense of individual growth",
+      "Individuals are overly focused on personal achievement",
+      "This is normal tension between team and individual needs"
+    ],
+    correctAnswer: 0,
+    explanation: "Feeling unrecognized despite team success often indicates recognition systems designed for individual heroics rather than collaboration. Leaders address this by recognizing contributions to team success, peer feedback, and individual growth within team context. Balance team achievement celebration with acknowledging individual contributions.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 406,
+    question: "What is the most important leadership focus during scaling Agile across an organization?",
+    options: [
+      "Selecting the right scaling framework",
+      "Maintaining team autonomy while enabling necessary coordination",
+      "Standardizing practices across all teams",
+      "Creating governance structures for alignment"
+    ],
+    correctAnswer: 1,
+    explanation: "Successful scaling balances team autonomy (enabling context-appropriate adaptation) with coordination (enabling alignment and integration). Rather than imposing frameworks or standardization, leaders facilitate minimum viable coordination—just enough structure for alignment while preserving team self-organization. Specific approaches depend on organizational context.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 407,
+    question: "How should leaders measure organizational agility?",
+    options: [
+      "By percentage of teams using Agile frameworks",
+      "By reduction in planning time and documentation",
+      "By ability to respond effectively to change and uncertainty",
+      "By increased velocity across all teams"
+    ],
+    correctAnswer: 2,
+    explanation: "Organizational agility is the capacity to sense and respond to change effectively. It's measured by: speed of adaptation, quality of response to uncertainty, innovation capability, and business outcomes in volatile environments. Framework adoption, velocity, or reduced planning are activities, not agility.",
+    domain: "Evidence-Based Management",
+    difficulty: "Foundation"
+  },
+  {
+    id: 408,
+    question: "A team wants to change their approach to retrospectives. What should leaders do?",
+    options: [
+      "Approve any format change to encourage team ownership",
+      "Deny changes to maintain consistency with Scrum framework",
+      "Require them to try standard formats first",
+      "Ensure they maintain the core purpose of inspection and adaptation"
+    ],
+    correctAnswer: 3,
+    explanation: "Leaders focus on outcomes over practices: retrospectives should enable inspection and adaptation. If teams want different formats that achieve this purpose, support experimentation. If proposed changes would undermine the core purpose (like eliminating retrospectives), coach on the value while supporting format innovation.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 409,
+    question: "What is the primary role of leadership in fostering innovation?",
+    options: [
+      "Creating conditions where experimentation and learning are safe and valued",
+      "Generating innovative ideas for teams to implement",
+      "Mandating innovation metrics and goals",
+      "Providing innovation tools and frameworks"
+    ],
+    correctAnswer: 0,
+    explanation: "Innovation flourishes in conditions of psychological safety, slack time for exploration, permission to fail, and valuing learning over perfect execution. Leaders create these conditions rather than generating ideas or mandating outcomes. They remove barriers and create space for innovation to emerge.",
+    domain: "Creating Conditions",
+    difficulty: "Foundation"
+  },
+  {
+    id: 410,
+    question: "Teams achieve Sprint Goals but technical debt is growing. What should leaders address?",
+    options: [
+      "Definition of Done that may not include technical sustainability",
+      "All of the above",
+      "Pressure for feature delivery that encourages cutting quality corners",
+      "Team capability with sustainable engineering practices"
+    ],
+    correctAnswer: 1,
+    explanation: "Growing technical debt despite goal achievement indicates systemic issues: weak DoD, pressure privileging features over sustainability, or capability gaps in engineering practices. Leaders address all contributing factors: strengthening DoD, adjusting incentives, coaching on practices, and managing stakeholder expectations about sustainable pace.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 411,
+    question: "How should leaders respond when organizational culture conflicts with Agile values?",
+    options: [
+      "Force Agile adoption to change culture",
+      "Wait until culture changes before implementing Agile",
+      "Work incrementally to evolve culture while adapting Agile to current reality",
+      "Create Agile islands isolated from organizational culture"
+    ],
+    correctAnswer: 2,
+    explanation: "Culture change happens incrementally through demonstrated success and leadership modeling. Leaders help teams start where they are, adapt Agile to work within current culture while gradually stretching it, and use successes to build organizational appetite for deeper change. Neither forcing nor waiting creates sustainable transformation.",
+    domain: "Leading Change",
+    difficulty: "Advanced"
+  },
+  {
+    id: 412,
+    question: "A Product Owner makes decisions without team input. What should leaders do?",
+    options: [
+      "Tell the team to assert themselves more in discussions",
+      "Replace the PO with someone more collaborative",
+      "Accept it as the PO's prerogative for product decisions",
+      "Coach the PO on the value of team collaboration in decision-making"
+    ],
+    correctAnswer: 3,
+    explanation: "While POs have decision authority, better decisions emerge from collaboration: teams have technical insights, user feedback, and implementation knowledge valuable for product decisions. Leaders coach POs on collaborative decision-making while respecting their accountability. The goal is better decisions, not democratic voting.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 413,
+    question: "What is the most important factor in successful remote work for Agile teams?",
+    options: [
+      "Intentional communication practices and psychological safety",
+      "Having the right video conferencing and collaboration tools",
+      "All team members working from the same time zone",
+      "Daily video calls for all team interactions"
+    ],
+    correctAnswer: 0,
+    explanation: "Remote success requires deliberate focus on communication practices (overcommunicating, async communication norms, intentional collaboration) and psychological safety (harder to build without in-person interaction). Tools and timezone overlap help, but culture and practices matter more. Leaders create explicit norms for remote collaboration.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 414,
+    question: "Teams request more autonomy but leaders observe poor decision-making. How should leaders respond?",
+    options: [
+      "Deny autonomy until teams demonstrate better judgment",
+      "Provide autonomy with coaching to develop decision-making capability",
+      "Grant full autonomy and let teams learn from mistakes",
+      "Create detailed guidelines for all team decisions"
+    ],
+    correctAnswer: 1,
+    explanation: "Capability develops through practice with coaching, not through waiting for competence or abandonment to sink or swim. Leaders provide bounded autonomy: clear constraints and principles, coaching on decision processes, and learning from outcomes. Incrementally expand autonomy as capability grows.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 415,
+    question: "How should leaders balance empathy for individuals with accountability for outcomes?",
+    options: [
+      "Prioritize empathy to create psychological safety",
+      "Prioritize accountability to ensure performance",
+      "Hold people accountable while understanding and addressing obstacles they face",
+      "Separate empathy (for people) from accountability (for outcomes)"
+    ],
+    correctAnswer: 2,
+    explanation: "Empathy and accountability are complementary, not opposing. Leaders hold people accountable for outcomes while being empathetic about challenges they face and helping address obstacles. Accountability without empathy creates fear; empathy without accountability enables poor performance. Both together create high-performing, sustainable teams.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Advanced"
+  },
+  {
+    id: 416,
+    question: "A team consistently underestimates work and misses Sprint Goals. What should leaders do?",
+    options: [
+      "Coach the team on more conservative estimation",
+      "Reduce their commitments by fixed percentage",
+      "Implement estimation training for the team",
+      "Help them understand why estimates are off and improve planning"
+    ],
+    correctAnswer: 3,
+    explanation: "Consistent underestimation signals deeper issues: optimism bias, external pressure, not accounting for interruptions, or poor understanding of work. Leaders coach teams to understand patterns: what's consistently missed? Why? This builds capability for better planning rather than imposing conservative estimates or reducing commitments arbitrarily.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 417,
+    question: "What is the primary purpose of transparency in Agile leadership?",
+    options: [
+      "To enable informed decision-making and adaptation at all levels",
+      "To enable monitoring of team productivity",
+      "To hold people accountable for commitments",
+      "To satisfy stakeholder demands for visibility"
+    ],
+    correctAnswer: 0,
+    explanation: "Transparency exists to support empiricism: enabling people to inspect reality and make informed adaptations. While monitoring and accountability are byproducts, the primary purpose is creating shared understanding that enables better decisions at all levels—from daily team planning to organizational strategy. Leaders create transparency that serves decision-making.",
+    domain: "Empiricism",
+    difficulty: "Foundation"
+  },
+  {
+    id: 418,
+    question: "Teams report spending excessive time in coordination meetings. What should leaders investigate?",
+    options: [
+      "Whether team boundaries and dependencies are well-designed",
+      "All of the above",
+      "Whether coordination is genuinely necessary or habitual",
+      "Whether async coordination could replace some meetings"
+    ],
+    correctAnswer: 1,
+    explanation: "Excessive coordination time may indicate: poorly designed team boundaries creating unnecessary dependencies, habitual meetings that no longer add value, or inefficient coordination mechanisms. Leaders investigate all possibilities and address root causes: potentially redesigning team boundaries, eliminating unnecessary coordination, or improving coordination efficiency.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 419,
+    question: "How should leaders respond when teams request eliminating planning in favor of continuous flow?",
+    options: [
+      "Deny it as planning is fundamental to Agile",
+      "Require data proving planning doesn't add value",
+      "Support the experiment if they can still forecast and commit to stakeholders",
+      "Allow it only for maintenance work, not new development"
+    ],
+    correctAnswer: 2,
+    explanation: "Leaders focus on outcomes over practices: teams need to forecast work, commit to goals, and provide transparency. If continuous flow achieves these outcomes, the specific practice (sprint planning vs continuous flow) matters less. Support experimentation with clear success criteria around stakeholder transparency and team effectiveness.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 420,
+    question: "A leader observes teams celebrating feature completion rather than user outcomes. What does this indicate?",
+    options: [
+      "Healthy focus on achievement and momentum",
+      "Output orientation rather than outcome focus",
+      "Teams don't have access to outcome data",
+      "Both B and C"
+    ],
+    correctAnswer: 3,
+    explanation: "Celebrating completion rather than user impact indicates output orientation, often because teams lack access to outcome data (user satisfaction, business results, problem resolution). Leaders help shift focus by making outcomes visible, celebrating impact on users, and connecting team work to value delivered rather than features completed.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 421,
+    question: "What is the most effective way for leaders to address organizational silos impeding agility?",
+    options: [
+      "Create bridges across silos while working toward structural change",
+      "Restructure into cross-functional teams immediately",
+      "Mandate better cross-silo cooperation",
+      "Accept silos as organizational reality"
+    ],
+    correctAnswer: 0,
+    explanation: "Restructuring might be necessary eventually, but leaders start by creating bridges: cross-functional working groups, communities of practice, or joint initiatives that demonstrate collaboration value. This builds relationships, reveals impediments, and creates readiness for structural change. Immediate restructuring often fails without cultural preparation.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 422,
+    question: "Teams want to stop tracking velocity. What should leaders consider?",
+    options: [
+      "Require velocity tracking for organizational reporting",
+      "Both B and C",
+      "Understand what teams want to use instead for planning and forecasting",
+      "Support stopping if it's being misused for productivity measurement"
+    ],
+    correctAnswer: 1,
+    explanation: "Velocity is a planning tool. If teams have better forecasting methods (cycle time, throughput, historical data) or if velocity is being misused to compare teams, support stopping. Leaders ensure teams can still forecast, plan sprints, and provide transparency to stakeholders while allowing evolution beyond velocity if better approaches exist.",
+    domain: "Evidence-Based Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 423,
+    question: "How should leaders measure their own effectiveness as Agile leaders?",
+    options: [
+      "By number of impediments removed",
+      "By stakeholder satisfaction with leadership",
+      "By team growth in autonomy, capability, and outcomes over time",
+      "By teams' adherence to Agile practices"
+    ],
+    correctAnswer: 2,
+    explanation: "Leader effectiveness shows in team development: Are teams becoming more capable, autonomous, and effective over time? Are they solving harder problems independently? Are outcomes improving sustainably? The measure is team growth and results, not personal activity, stakeholder satisfaction, or process compliance.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Advanced"
+  },
+  {
+    id: 424,
+    question: "A team experiences high turnover. What should leaders investigate first?",
+    options: [
+      "Compensation and benefits compared to market",
+      "Individual performance issues causing departures",
+      "Competition from other companies",
+      "Team culture, growth opportunities, and work sustainability"
+    ],
+    correctAnswer: 3,
+    explanation: "While compensation matters, turnover more often stems from: poor team culture, lack of growth opportunities, unsustainable pace, unclear purpose, or feeling undervalued. Leaders investigate team conditions and individual motivations through conversation. Compensation is part of the picture but rarely the full story.",
+    domain: "Creating Conditions",
+    difficulty: "Foundation"
+  },
+  {
+    id: 425,
+    question: "What is the primary benefit of leaders developing systems thinking capability?",
+    options: [
+      "Understanding how organizational elements interact and influence each other",
+      "Creating detailed process maps for improvement",
+      "Optimizing individual components for maximum efficiency",
+      "Designing comprehensive organizational frameworks"
+    ],
+    correctAnswer: 0,
+    explanation: "Systems thinking enables leaders to understand interdependencies: how changing one element affects others, where interventions create ripple effects, and how local optimization can harm overall performance. This prevents unintended consequences and enables more effective organizational improvements than optimizing parts in isolation.",
+    domain: "Systems Thinking",
+    difficulty: "Foundation"
+  },
+  {
+    id: 426,
+    question: "Teams struggle with unclear product direction. What should leaders do?",
+    options: [
+      "Help teams develop their own product direction",
+      "Work with Product Owners to clarify product vision and strategy",
+      "Bring in product management consultants",
+      "Create detailed product roadmaps for teams to follow"
+    ],
+    correctAnswer: 1,
+    explanation: "Unclear direction typically indicates Product Owner needs coaching or organizational strategy is unclear. Leaders work with POs to develop clear vision and strategy, ensuring teams understand how their work contributes to larger goals. They may also need to work at organizational level to clarify strategic direction that informs product strategy.",
+    domain: "Strategic Vision",
+    difficulty: "Advanced"
+  },
+  {
+    id: 427,
+    question: "How should leaders respond when teams want different working hours or schedules?",
+    options: [
+      "Mandate standard hours for consistency and collaboration",
+      "Allow complete autonomy in scheduling",
+      "Support flexibility while ensuring necessary collaboration time",
+      "Implement core hours for collaboration plus flexible additional hours"
+    ],
+    correctAnswer: 2,
+    explanation: "Leaders balance individual flexibility with team collaboration needs. This might mean core overlap hours for collaboration plus flexibility outside those hours, or different arrangements depending on work type. The goal is enabling both personal flexibility and effective teamwork, not imposing uniformity or allowing isolation.",
+    domain: "Creating Conditions",
+    difficulty: "Foundation"
+  },
+  {
+    id: 428,
+    question: "A Product Owner prioritizes technical debt work but stakeholders demand features. How should leaders help?",
+    options: [
+      "Support the PO's decision on technical sustainability",
+      "Side with stakeholders as they represent business needs",
+      "Create separate capacity for technical debt outside regular sprints",
+      "Facilitate dialogue to help both parties understand trade-offs"
+    ],
+    correctAnswer: 3,
+    explanation: "This represents tension between short-term delivery and long-term sustainability. Leaders facilitate conversation where PO explains technical debt impact, stakeholders explain business pressures, and together they make informed trade-offs. The goal is shared understanding enabling better decisions, not picking sides.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 429,
+    question: "What is the most important leadership action when team performance declines?",
+    options: [
+      "Understand systemic causes affecting team performance",
+      "Identify and address individual performance issues",
+      "Implement performance improvement plans",
+      "Bring in additional resources to support the team"
+    ],
+    correctAnswer: 0,
+    explanation: "Performance decline usually has systemic causes: changing requirements, technical debt, organizational impediments, team dynamics, or capability gaps. Leaders investigate root causes through conversation and observation before assuming individual performance problems. Address systems first; individual issues are often symptoms.",
+    domain: "Facilitating Growth",
+    difficulty: "Foundation"
+  },
+  {
+    id: 430,
+    question: "Teams want to adopt pair or mob programming but managers see it as wasteful. How should leaders respond?",
+    options: [
+      "Side with managers on efficiency concerns",
+      "Help managers understand value created through quality, knowledge sharing, and collaboration",
+      "Support teams and override management objections",
+      "Allow pairing only for critical or complex work as compromise"
+    ],
+    correctAnswer: 1,
+    explanation: "Leaders educate on how pairing/mobbing improve quality, share knowledge, reduce defects, and often deliver faster despite appearing less 'efficient.' Use data where available (defect rates, cycle time, team satisfaction) to demonstrate value. Help shift perspective from resource utilization to outcome delivery and sustainable performance.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 431,
+    question: "How should leaders balance short-term delivery pressure with long-term capability building?",
+    options: [
+      "Always prioritize delivery as capability builds through doing",
+      "Always prioritize capability building as it enables future delivery",
+      "Consciously balance both, making trade-offs explicit and strategic",
+      "Alternate focus between delivery and capability building by quarter"
+    ],
+    correctAnswer: 2,
+    explanation: "Both delivery and capability matter. Leaders make trade-offs consciously: some current delivery is necessary, but some investment in capability (learning, tooling, practices, technical health) is essential for sustainable performance. The balance depends on context, but both require attention. Make trade-offs explicit rather than defaulting to either extreme.",
+    domain: "Strategic Vision",
+    difficulty: "Advanced"
+  },
+  {
+    id: 432,
+    question: "A team shows high productivity but low innovation. What might leaders address?",
+    options: [
+      "Whether incentives reward execution over experimentation",
+      "Whether teams have slack time for innovation",
+      "Whether psychological safety exists for trying new approaches",
+      "All of the above"
+    ],
+    correctAnswer: 3,
+    explanation: "High productivity with low innovation suggests: incentives reward delivery over experimentation, no capacity for innovation (100% utilization), or lack of safety to try new things that might fail. Leaders investigate all factors and address systemically: creating slack time, rewarding learning, and building psychological safety for experimentation.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 433,
+    question: "What is the primary purpose of Agile ceremonies from a leadership perspective?",
+    options: [
+      "Creating opportunities for inspection, adaptation, and alignment",
+      "Providing structure and predictability for teams",
+      "Ensuring stakeholder visibility into team activities",
+      "Maintaining compliance with Agile frameworks"
+    ],
+    correctAnswer: 0,
+    explanation: "Ceremonies exist to enable empiricism: inspect reality (current state, progress, impediments), adapt plans and approaches, and create alignment. While structure and visibility are byproducts, the core purpose is supporting continuous inspection and adaptation. Leaders focus on outcomes these events should enable, not ritual compliance.",
+    domain: "Empiricism",
+    difficulty: "Foundation"
+  },
+  {
+    id: 434,
+    question: "Teams request permission to skip refinement sessions. What should leaders do?",
+    options: [
+      "Deny the request as refinement is essential for sprint planning",
+      "Understand why they want to skip and whether they have better approaches",
+      "Allow skipping only if velocity remains stable",
+      "Make refinement optional but monitor sprint planning effectiveness"
+    ],
+    correctAnswer: 1,
+    explanation: "Refinement serves a purpose: preparing work for sprint planning. If teams have better ways to achieve this (continuous refinement, just-in-time breakdown, extremely stable backlog), explore alternatives. If they want to skip because it feels wasteful, investigate why and improve refinement. Focus on outcome (prepared work) not practice (refinement sessions).",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 435,
+    question: "How should leaders respond to demands for detailed project plans and timelines?",
+    options: [
+      "Explain that Agile doesn't create detailed plans",
+      "Create detailed plans to satisfy stakeholder requests",
+      "Understand underlying needs and propose alternatives that provide visibility without false precision",
+      "Refer stakeholders to Product Owners for planning"
+    ],
+    correctAnswer: 2,
+    explanation: "Stakeholders wanting detailed plans usually need: progress visibility, confidence in delivery, or input for business planning. Rather than refusing or creating false precision, leaders explore underlying needs and offer Agile alternatives: roadmaps with confidence levels, release forecasts, or incremental funding with review points. Meet the need differently.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 436,
+    question: "A team has one critical specialist creating a bottleneck. What should leaders do?",
+    options: [
+      "Hire another specialist to remove the bottleneck",
+      "Accept the bottleneck as inevitable with specialized work",
+      "Have the specialist document their knowledge for others",
+      "Help the team cross-skill to reduce dependency on the specialist"
+    ],
+    correctAnswer: 3,
+    explanation: "Single points of knowledge create fragility and bottlenecks. Leaders help teams cross-skill through pairing, shadowing, and collaborative work rather than relying on documentation or hiring. This builds team resilience and career growth. Hiring might be necessary eventually, but cross-skilling addresses the fundamental dependency issue.",
+    domain: "Organizational Design",
+    difficulty: "Advanced"
+  },
+  {
+    id: 437,
+    question: "What is the most important factor in successful change leadership?",
+    options: [
+      "Demonstrating personal commitment through actions and modeling",
+      "Having a clear vision of the desired future state",
+      "Building coalition of support for the change",
+      "Creating detailed change management plans"
+    ],
+    correctAnswer: 0,
+    explanation: "While vision, coalition, and plans matter, leaders shape change most powerfully through their own behavior. When leaders model desired behaviors, invest time in change, and demonstrate commitment through actions, they create credibility for change. People follow what leaders do more than what they say.",
+    domain: "Leading Change",
+    difficulty: "Foundation"
+  },
+  {
+    id: 438,
+    question: "Teams achieve sprint goals but customer satisfaction declines. What should leaders investigate?",
+    options: [
+      "Whether sprint goals align with customer needs",
+      "All of the above",
+      "Whether quality issues affect customer experience",
+      "Whether communication and support are adequate"
+    ],
+    correctAnswer: 1,
+    explanation: "Achieving goals while satisfaction declines could indicate: sprint goals focused on wrong outcomes, quality issues in delivered features, inadequate customer communication or support, or misaligned expectations. Leaders investigate comprehensively using customer data and conversations rather than assuming one cause.",
+    domain: "Product Value",
+    difficulty: "Advanced"
+  },
+  {
+    id: 439,
+    question: "How should leaders balance individual coaching with team coaching?",
+    options: [
+      "Focus primarily on individual coaching as it aggregates to team performance",
+      "Focus primarily on team coaching as Agile emphasizes teams over individuals",
+      "Coach individuals on personal growth while coaching teams on collective capability",
+      "Delegate individual coaching to managers, focus on team coaching themselves"
+    ],
+    correctAnswer: 2,
+    explanation: "Both matter: individuals need growth opportunities and skill development; teams need collective capability building. Leaders coach individuals on personal development while coaching teams on collaboration, problem-solving, and team dynamics. The balance depends on situationbut both require attention for sustainable team performance.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 440,
+    question: "A Product Owner wants features delivered regardless of technical sustainability. What should leaders do?",
+    options: [
+      "Support the PO as they're accountable for value delivery",
+      "Override the PO to protect long-term technical health",
+      "Escalate to executive leadership for decision",
+      "Facilitate dialogue about trade-offs between short-term delivery and sustainability"
+    ],
+    correctAnswer: 3,
+    explanation: "This represents classic tension between short-term value and long-term sustainability. Leaders facilitate conversation where team explains technical consequences, PO explains business drivers, and together they make conscious trade-offs. Sustainable delivery requires balancing both perspectives, not choosing sides.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 441,
+    question: "What is the primary risk of measuring team success solely through business outcomes?",
+    options: [
+      "All of the above",
+      "Teams can't control all factors affecting outcomes",
+      "Outcomes are lagging indicators that don't guide improvement",
+      "Teams might optimize for measured outcomes at expense of other important factors"
+    ],
+    correctAnswer: 0,
+    explanation: "While outcomes matter, measuring only outcomes creates risks: teams don't control all outcome factors (market conditions, competitive actions), outcomes lag actions making improvement difficult, and focusing only on measured outcomes can neglect unmeasured important factors. Leaders balance outcome measurement with leading indicators and team health metrics.",
+    domain: "Evidence-Based Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 442,
+    question: "How should leaders respond when organizational structure conflicts with Agile team design?",
+    options: [
+      "Restructure immediately to support cross-functional teams",
+      "Work within existing structure while advocating for changes",
+      "Create Agile islands separate from organizational structure",
+      "Wait for restructuring before implementing Agile"
+    ],
+    correctAnswer: 1,
+    explanation: "Leaders help teams work effectively within current structure while building case for structural changes: demonstrate cross-functional collaboration benefits, create informal bridges across silos, and use success to build appetite for restructuring. Immediate restructuring often fails without demonstrated value; waiting prevents learning and progress.",
+    domain: "Leading Change",
+    difficulty: "Advanced"
+  },
+  {
+    id: 443,
+    question: "A team wants to completely rewrite a system rather than incrementally improve it. What should leaders consider?",
+    options: [
+      "Support the rewrite to address technical debt comprehensively",
+      "Deny the rewrite as it's risky and delays value delivery",
+      "Explore whether incremental improvement or rewrite better addresses actual problems",
+      "Allow partial rewrite as compromise"
+    ],
+    correctAnswer: 2,
+    explanation: "Rewrites are sometimes necessary but often fail. Leaders help teams assess: What problems are we solving? Can incremental improvement address them? What are rewrite risks (time, business continuity, scope creep)? The decision depends on actual problems, business context, and risk tolerance. Explore thoroughly before committing either way.",
+    domain: "Facilitating Growth",
+    difficulty: "Advanced"
+  },
+  {
+    id: 444,
+    question: "What is the most important leadership behavior for building trust?",
+    options: [
+      "Being vulnerable and admitting mistakes",
+      "Demonstrating competence in decision-making",
+      "Showing empathy and understanding for people",
+      "Keeping commitments and following through reliably"
+    ],
+    correctAnswer: 3,
+    explanation: "While all behaviors contribute to trust, reliability—doing what you say you'll do—is foundational. Leaders who consistently keep commitments, follow through on actions, and demonstrate consistency between words and deeds build trust over time. Other behaviors matter, but without reliability, trust remains fragile.",
+    domain: "Agile Leadership Mindset",
+    difficulty: "Foundation"
+  },
+  {
+    id: 445,
+    question: "Teams show strong technical skills but struggle with stakeholder communication. What should leaders do?",
+    options: [
+      "Coach teams on communication skills while potentially shielding them during skill development",
+      "Hire a dedicated liaison to handle stakeholder communication",
+      "Accept this as normal for technical teams",
+      "Replace team members with those who have better communication skills"
+    ],
+    correctAnswer: 0,
+    explanation: "Communication is a learnable skill. Leaders coach teams on stakeholder communication while potentially providing support during skill development. They might facilitate early interactions, provide feedback, or help prepare for stakeholder meetings. Building communication capability is more sustainable than hiring liaisons or accepting poor communication.",
+    domain: "Stakeholder Management",
+    difficulty: "Advanced"
+  },
+  {
+    id: 446,
+    question: "How should leaders balance encouraging experimentation with maintaining system stability?",
+    options: [
+      "Maximize experimentation without considering stability",
+      "Enable bounded experimentation while protecting critical capabilities",
+      "Avoid experimentation to ensure maximum stability",
+      "Allow experimentation only during designated innovation periods"
+    ],
+    correctAnswer: 1,
+    explanation: "Leaders create boundaries for safe experimentation: clear on what's open to experiment (process improvements, new tools), what requires careful consideration (architecture changes), and what's not negotiable (security, compliance). This enables innovation while maintaining stability of critical operations. Balance both needs rather than choosing one.",
+    domain: "Creating Conditions",
+    difficulty: "Advanced"
+  },
+  {
+    id: 447,
+    question: "A team consistently delivers but members report feeling burned out. What should leaders prioritize?",
+    options: [
+      "Praise their dedication while encouraging work-life balance",
+      "Add resources to the team to reduce individual workload",
+      "Investigate and address root causes of unsustainable pace",
+      "Implement mandatory time-off policies"
+    ],
+    correctAnswer: 2,
+    explanation: "Burnout indicates unsustainable practices that will eventually harm both people and delivery. Leaders investigate root causes: unrealistic commitments, external pressure, perfectionism, insufficient team size, or lack of recovery time. Address systemic causes rather than treating symptoms with time-off policies or adding resources without fixing underlying problems.",
+    domain: "Creating Conditions",
+    difficulty: "Foundation"
+  },
+  {
+    id: 448,
+    question: "What is the primary purpose of Definition of Done from a leadership perspective?",
+    options: [
+      "Ensuring consistent quality standards across teams",
+      "Preventing technical debt accumulation",
+      "Satisfying compliance and audit requirements",
+      "Creating shared understanding of what complete work means"
+    ],
+    correctAnswer: 3,
+    explanation: "DoD creates shared understanding between team, Product Owner, and stakeholders about what 'done' means, enabling transparency and trust. While it influences quality, prevents debt, and may support compliance, the core purpose is alignment on completion criteria. Leaders ensure DoD serves transparency and shared understanding.",
+    domain: "Empiricism",
+    difficulty: "Foundation"
+  },
+  {
+    id: 449,
+    question: "Teams want to work on innovation projects instead of maintenance. How should leaders respond?",
+    options: [
+      "Help teams balance necessary maintenance with innovation opportunities",
+      "Support innovation focus as it drives competitive advantage",
+      "Require teams to handle maintenance before innovation",
+      "Create separate teams for maintenance vs innovation"
+    ],
+    correctAnswer: 0,
+    explanation: "Both maintenance and innovation matter for sustainable success. Leaders help teams find balance: some time for keeping systems running well, some for innovation and improvement. The specific balance depends on system maturity and business needs. Separating maintenance and innovation often creates problematic dynamics; better to integrate both in team work.",
+    domain: "Strategic Vision",
+    difficulty: "Advanced"
+  },
+  {
+    id: 450,
+    question: "How should leaders measure the success of Agile transformation?",
+    options: [
+      "By percentage of teams following Agile practices correctly",
+      "By improvements in business outcomes, team effectiveness, and adaptability",
+      "By reduction in time spent on ceremonies and documentation",
+      "By stakeholder satisfaction with team collaboration"
+    ],
+    correctAnswer: 1,
+    explanation: "Transformation success shows in outcomes that matter: business results improving, teams becoming more effective and satisfied, organization adapting better to change, and faster value delivery. Practice adherence, ceremony time, or stakeholder satisfaction are activities or symptoms, not the transformation goals. Focus on results Agile should enable.",
+    domain: "Leading Change",
+    difficulty: "Foundation"
   }
 ];
 
