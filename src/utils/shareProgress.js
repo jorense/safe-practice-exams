@@ -66,17 +66,20 @@ export function generateShareLink() {
     console.error('Error reading session history:', err);
   }
 
-  // Collect question tracking data
-  const trackingKeys = ['psm2-seen', 'pspo1-seen', 'pali-seen', 'leadingsafe6-seen', 'safeteams6-seen'];
-  trackingKeys.forEach(key => {
-    try {
-      const data = localStorage.getItem(key);
-      if (data) {
-        exportData.questionTracking[key] = JSON.parse(data);
+  // Collect question tracking data - include seen, correct, and incorrect for each exam
+  const examTypes = ['psm2', 'pspo1', 'pali', 'leadingsafe6', 'safeteams6'];
+  examTypes.forEach(examType => {
+    ['seen', 'correct', 'incorrect'].forEach(suffix => {
+      const key = `${examType}-${suffix}`;
+      try {
+        const data = localStorage.getItem(key);
+        if (data) {
+          exportData.questionTracking[key] = JSON.parse(data);
+        }
+      } catch (err) {
+        console.error(`Error reading ${key}:`, err);
       }
-    } catch (err) {
-      console.error(`Error reading ${key}:`, err);
-    }
+    });
   });
 
   // Collect achievements
@@ -136,6 +139,12 @@ export function importFromShareLink(encodedData) {
           localStorage.setItem(key, JSON.stringify(value));
           imported = true;
         }
+      });
+      
+      // Force localStorage to flush by reading it back
+      // This ensures data is persisted before page reload
+      Object.keys(data.questionTracking).forEach(key => {
+        localStorage.getItem(key);
       });
     }
 

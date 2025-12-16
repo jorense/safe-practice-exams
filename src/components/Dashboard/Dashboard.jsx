@@ -203,6 +203,7 @@ function Dashboard({ onGoHome }) {
             <div className={styles.noDataIcon}>📊</div>
             <h2>No Performance Data Yet</h2>
             <p>Complete your first practice exam to see detailed analytics, progress tracking, and personalized insights.</p>
+            <p className={styles.importHint}>💡 If you have a share link from another device, paste it in your browser to import your progress.</p>
             <button className={styles.startButton} onClick={onGoHome}>
               Start Your First Exam
             </button>

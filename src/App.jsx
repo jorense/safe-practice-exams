@@ -70,31 +70,40 @@ function AppContent() {
     const importData = urlParams.get('import')
     
     if (importData) {
-      const result = importFromShareLink(importData)
+      // Show loading state
+      setImportNotification({
+        type: 'loading',
+        message: 'Importing your progress data...'
+      })
       
-      if (result.success) {
-        setImportNotification({
-          type: 'success',
-          message: result.message,
-          sessionCount: result.sessionCount
-        })
+      // Small delay to ensure message is visible
+      setTimeout(() => {
+        const result = importFromShareLink(importData)
         
-        // Clear URL parameter
-        window.history.replaceState({}, document.title, window.location.pathname)
-        
-        // Reload after showing message
-        setTimeout(() => {
-          window.location.reload()
-        }, 2000)
-      } else {
-        setImportNotification({
-          type: 'error',
-          message: result.message
-        })
-        
-        // Clear URL parameter
-        window.history.replaceState({}, document.title, window.location.pathname)
-      }
+        if (result.success) {
+          setImportNotification({
+            type: 'success',
+            message: result.message,
+            sessionCount: result.sessionCount
+          })
+          
+          // Clear URL parameter
+          window.history.replaceState({}, document.title, window.location.pathname)
+          
+          // Reload after showing success message to ensure fresh data
+          setTimeout(() => {
+            window.location.reload()
+          }, 1500)
+        } else {
+          setImportNotification({
+            type: 'error',
+            message: result.message
+          })
+          
+          // Clear URL parameter
+          window.history.replaceState({}, document.title, window.location.pathname)
+        }
+      }, 100)
     }
   }, [])
   
@@ -1004,7 +1013,7 @@ function AppContent() {
           top: '20px',
           right: '20px',
           zIndex: 10000,
-          background: importNotification.type === 'success' ? '#2ecc71' : '#e74c3c',
+          background: importNotification.type === 'success' ? '#2ecc71' : importNotification.type === 'loading' ? '#3498db' : '#e74c3c',
           color: 'white',
           padding: '1rem 1.5rem',
           borderRadius: '8px',
@@ -1013,7 +1022,7 @@ function AppContent() {
           animation: 'slideIn 0.3s ease-out'
         }}>
           <div style={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>
-            {importNotification.type === 'success' ? '✅ Import Successful' : '❌ Import Failed'}
+            {importNotification.type === 'success' ? '✅ Import Successful' : importNotification.type === 'loading' ? '⏳ Importing...' : '❌ Import Failed'}
           </div>
           <div style={{ fontSize: '0.9rem' }}>
             {importNotification.message}
@@ -1023,22 +1032,24 @@ function AppContent() {
               Imported {importNotification.sessionCount} session(s)
             </div>
           )}
-          <button
-            onClick={() => setImportNotification(null)}
-            style={{
-              position: 'absolute',
-              top: '8px',
-              right: '8px',
-              background: 'transparent',
-              border: 'none',
-              color: 'white',
-              cursor: 'pointer',
-              fontSize: '1.2rem',
-              padding: '0 0.5rem'
-            }}
-          >
-            ×
-          </button>
+          {importNotification.type !== 'loading' && (
+            <button
+              onClick={() => setImportNotification(null)}
+              style={{
+                position: 'absolute',
+                top: '8px',
+                right: '8px',
+                background: 'transparent',
+                border: 'none',
+                color: 'white',
+                cursor: 'pointer',
+                fontSize: '1.2rem',
+                padding: '0 0.5rem'
+              }}
+            >
+              ×
+            </button>
+          )}
         </div>
       )}
     </>
