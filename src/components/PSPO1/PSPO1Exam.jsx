@@ -1,6 +1,6 @@
 import { useTheme } from '../../contexts/ThemeContext.jsx';
 import { getExamStats, resetExamHistory } from '../../utils/questionHistory.js';
-import { pspo1Questions } from './PSPO1Questions.js';
+import pspo1Questions from './PSPO1Questions.js';
 import styles from './PSPO1Exam.module.css'
 
 function PSPO1Exam({ 

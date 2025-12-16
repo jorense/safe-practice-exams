@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import styles from './PSPO1ExamQuiz.module.css'
-import { pspo1Questions } from './PSPO1Questions'
+import pspo1Questions from './PSPO1Questions'
 import Results from '../shared/Results.jsx'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
 import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
