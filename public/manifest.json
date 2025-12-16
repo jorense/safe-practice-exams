@@ -1,6 +1,6 @@
 {
-  "name": "SAFe Practice Exams - AI Learning Companion",
-  "short_name": "SAFe Exams",
+  "name": "LACE Studio: Agile Practice Exams",
+  "short_name": "Agile Exams",
   "description": "Intelligent SAFe certification practice exams with AI-powered study companion, adaptive learning, and comprehensive analytics",
   "start_url": "./",
   "display": "standalone",

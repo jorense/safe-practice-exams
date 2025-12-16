@@ -5,6 +5,7 @@ import { StudyIntelligenceProvider } from './contexts/StudyIntelligenceContext.j
 import { NotificationProvider } from './contexts/NotificationContext.jsx'
 import { AutosaveProvider } from './contexts/AutosaveContext.jsx'
 import { AnalyticsProvider } from './contexts/AnalyticsContext.jsx'
+import { importFromShareLink } from './utils/shareProgress.js'
 import LeadingSAFe6Exam from './components/LeadingSAFe6/LeadingSAFe6Exam.jsx'
 import LeadingSAFe6ExamQuiz from './components/LeadingSAFe6/LeadingSAFe6ExamQuiz.jsx'
 import SAFeTeams6Exam from './components/SAFeTeams6/SAFeTeams6Exam.jsx'
@@ -55,12 +56,47 @@ function AppContent() {
   const [studyExamType, setStudyExamType] = useState('Leading SAFe 6')
   const [achievementNotification, setAchievementNotification] = useState(null)
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
+  const [importNotification, setImportNotification] = useState(null)
   const [numberOfQuestions, setNumberOfQuestions] = useState(() => {
     const savedQuestionCount = localStorage.getItem('lace-studio-question-count')
     const count = savedQuestionCount ? Number(savedQuestionCount) : 45
     // Migration: Update old default of 40 to new default of 45
     return count === 40 ? 45 : count
   })
+  
+  // Check for import URL parameter on load
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search)
+    const importData = urlParams.get('import')
+    
+    if (importData) {
+      const result = importFromShareLink(importData)
+      
+      if (result.success) {
+        setImportNotification({
+          type: 'success',
+          message: result.message,
+          sessionCount: result.sessionCount
+        })
+        
+        // Clear URL parameter
+        window.history.replaceState({}, document.title, window.location.pathname)
+        
+        // Reload after showing message
+        setTimeout(() => {
+          window.location.reload()
+        }, 2000)
+      } else {
+        setImportNotification({
+          type: 'error',
+          message: result.message
+        })
+        
+        // Clear URL parameter
+        window.history.replaceState({}, document.title, window.location.pathname)
+      }
+    }
+  }, [])
   
   // Add exam mode state management
   const [examMode, setExamMode] = useState(() => {
@@ -960,6 +996,51 @@ function AppContent() {
             onClose={() => setAchievementNotification(null)}
           />
         </div>
+
+      {/* Import Notification */}
+      {importNotification && (
+        <div style={{
+          position: 'fixed',
+          top: '20px',
+          right: '20px',
+          zIndex: 10000,
+          background: importNotification.type === 'success' ? '#2ecc71' : '#e74c3c',
+          color: 'white',
+          padding: '1rem 1.5rem',
+          borderRadius: '8px',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+          maxWidth: '400px',
+          animation: 'slideIn 0.3s ease-out'
+        }}>
+          <div style={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>
+            {importNotification.type === 'success' ? '✅ Import Successful' : '❌ Import Failed'}
+          </div>
+          <div style={{ fontSize: '0.9rem' }}>
+            {importNotification.message}
+          </div>
+          {importNotification.sessionCount > 0 && (
+            <div style={{ fontSize: '0.85rem', marginTop: '0.5rem', opacity: 0.9 }}>
+              Imported {importNotification.sessionCount} session(s)
+            </div>
+          )}
+          <button
+            onClick={() => setImportNotification(null)}
+            style={{
+              position: 'absolute',
+              top: '8px',
+              right: '8px',
+              background: 'transparent',
+              border: 'none',
+              color: 'white',
+              cursor: 'pointer',
+              fontSize: '1.2rem',
+              padding: '0 0.5rem'
+            }}
+          >
+            ×
+          </button>
+        </div>
+      )}
     </>
   )
 }

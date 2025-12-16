@@ -1,4 +1,4 @@
-// SAFe Practice Exams PWA Service Worker
+// LACE Studio: Agile Practice Exams PWA Service Worker
 // Enhanced offline functionality with intelligent caching strategies
 
 const CACHE_NAME = 'safe-exams-v1.0.0';
@@ -270,7 +270,7 @@ function getOfflineHTML() {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>SAFe Exams - Offline</title>
+      <title>LACE Studio: Agile Practice Exams - Offline</title>
       <style>
         body {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -329,7 +329,7 @@ function getOfflineHTML() {
         <div class="offline-icon">📚</div>
         <h1 class="offline-title">You're Offline</h1>
         <p class="offline-message">
-          SAFe Practice Exams is available offline! While you're not connected to the internet, 
+          LACE Studio: Agile Practice Exams is available offline! While you're not connected to the internet, 
           you can still access cached content and continue your learning journey.
         </p>
         <button class="retry-button" onclick="window.location.reload()">
@@ -433,7 +433,7 @@ self.addEventListener('push', (event) => {
       notificationData = event.data.json();
     } catch (error) {
       notificationData = {
-        title: 'SAFe Practice Exams',
+        title: 'LACE Studio: Agile Practice Exams',
         body: event.data.text() || 'New notification',
         icon: '/icon-192x192.png'
       };
@@ -467,7 +467,7 @@ self.addEventListener('push', (event) => {
   
   event.waitUntil(
     self.registration.showNotification(
-      notificationData.title || 'SAFe Practice Exams',
+      notificationData.title || 'LACE Studio: Agile Practice Exams',
       options
     )
   );

@@ -105,7 +105,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
             <span style="font-size: 18px;">📱</span>
             <button id="close-btn" style="background: none; border: none; color: rgba(255,255,255,0.7); font-size: 18px; cursor: pointer; padding: 0; line-height: 1;">×</button>
           </div>
-          <p style="margin: 0 0 6px; font-weight: 600; font-size: 13px;">Install SAFe Practice Exams</p>
+          <p style="margin: 0 0 6px; font-weight: 600; font-size: 13px;">Install LACE Studio: Agile Practice Exams</p>
           <p style="margin: 0 0 12px; font-size: 11px; opacity: 0.85; line-height: 1.3;">Quick access, offline practice, and better performance</p>
           <div style="display: flex; gap: 8px; justify-content: center;">
             <button id="install-btn" style="background: white; color: #667eea; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 12px; flex: 1; max-width: 80px;">Install</button>

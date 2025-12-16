@@ -119,7 +119,7 @@ const NotificationSettings = ({ onGoHome }) => {
                 <button 
                   className={styles.primaryButton}
                   onClick={() => {
-                    new Notification('SAFe Practice Exams', {
+                    new Notification('LACE Studio: Agile Practice Exams', {
                       body: 'Test notification! Your notifications are working perfectly. 🎉',
                       icon: '/icon-192x192.svg',
                       badge: '/favicon-32x32.svg'

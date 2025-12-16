@@ -97,7 +97,7 @@ export const NotificationProvider = ({ children }) => {
 
   const showWelcomeNotification = () => {
     if (permission === 'granted') {
-      new Notification('Welcome to SAFe Practice Exams!', {
+      new Notification('Welcome to LACE Studio: Agile Practice Exams!', {
         body: 'You\'ll now receive study reminders and achievement notifications.',
         icon: '/icon-192x192.svg',
         badge: '/favicon-32x32.svg',
