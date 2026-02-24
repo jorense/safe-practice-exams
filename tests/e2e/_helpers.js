@@ -1,11 +1,15 @@
 import { test } from '@playwright/test'
 
+const BASE_URL = process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:5173'
+const BASE_PATH = BASE_URL.endsWith('/') ? BASE_URL : `${BASE_URL}/`
+
 // Global beforeEach to seed localStorage (auto-dismiss help tour & panel) before any page navigation.
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => {
     try {
       window.__E2E__ = true
       localStorage.setItem('helpSystem.tour.seen.v1', 'true')
+      localStorage.setItem('e2e.suppressTour', 'true')
     } catch (_) {}
   })
 })
@@ -14,12 +18,13 @@ test.beforeEach(async ({ page }) => {
 export async function goToLeadingSafeExamSettings(page) {
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      await page.goto('/', { waitUntil: 'domcontentloaded', timeout: 10000 })
+      await page.goto(BASE_PATH, { waitUntil: 'domcontentloaded', timeout: 40000 })
       break
     } catch (e) {
       if (attempt === 2) throw e
     }
   }
+  await ensureNoOverlays(page)
   // Close any obstructive overlays (e.g., menu) before interacting
   const tryClick = async (locator) => {
     if (await locator.isVisible().catch(()=>false)) {
@@ -56,7 +61,7 @@ export async function goToLeadingSafeExamSettings(page) {
 }
 
 export async function startLeadingSafeQuiz(page, options = {}) {
-  const { mode, questionCount } = options
+  const { mode = 'exam', questionCount } = options
   if (mode) {
     await page.getByTestId('leading-safe-exam-mode-select').selectOption(mode)
   }
@@ -86,41 +91,117 @@ export async function startLeadingSafeQuiz(page, options = {}) {
     }
   }
   await waitForQuizReady(page)
+  await ensureNoOverlays(page)
 }
 
 export async function answerFirstNQuestions(page, n) {
   for (let i = 0; i < n; i++) {
     await ensureNoOverlays(page)
-    // Wait for at least one option
-    await page.getByTestId('quiz-option-0').waitFor({ state: 'visible' })
-    await page.getByTestId('quiz-option-0').click({ trial: false })
+    const questionCard = page.getByTestId('quiz-question-card')
+    await questionCard.waitFor({ state: 'visible', timeout: 5000 })
+    const prevId = await questionCard.getAttribute('data-question-id')
+
+    const answered = await answerCurrentQuestion(page)
+    if (!answered) break
+
     const next = page.getByTestId('quiz-next')
+    const nextVisible = await next.isVisible().catch(() => false)
+    if (!nextVisible) continue
+
+    await waitForButtonEnabled(page, 'quiz-next')
     if (await next.isDisabled().catch(()=>false)) break
-    const prevId = await page.getByTestId('quiz-question-card').getAttribute('data-question-id')
-    await next.click({ trial: false, force: true })
-    await page.waitForFunction((prev) => {
-      const el = document.querySelector('[data-testid="quiz-question-card"]')
-      return el && el.getAttribute('data-question-id') !== prev
-    }, prevId, { timeout: 5000 }).catch(async () => {
-      // Fallback: try selecting a different option to force state change
-      if (await page.getByTestId('quiz-option-1').isVisible().catch(()=>false)) {
-        await page.getByTestId('quiz-option-1').click({ force: true })
-      }
-    })
+
+    await next.click({ trial: false })
+    await waitForQuestionAdvance(page, prevId)
   }
+}
+
+async function answerCurrentQuestion(page) {
+  const multiRequirement = page.getByTestId('multi-select-requirement')
+  const isMulti = await multiRequirement.isVisible().catch(() => false)
+
+  if (isMulti) {
+    const selectText = await multiRequirement.textContent()
+    const countMatch = selectText && selectText.match(/(\d+)/)
+    const requiredSelections = countMatch ? parseInt(countMatch[1], 10) : 2
+    await selectMultipleOptions(page, requiredSelections)
+    await page.waitForFunction((required) => {
+      const el = document.querySelector('[data-testid="multi-select-progress"]')
+      if (!el) return false
+      const txt = el.textContent || ''
+      return txt.includes(`${required} of ${required}`)
+    }, requiredSelections, { timeout: 2000 }).catch(() => {})
+    return true
+  }
+
+  const singleOption = page.getByTestId('quiz-option-0')
+  await singleOption.waitFor({ state: 'visible', timeout: 4000 })
+  await singleOption.click({ trial: false })
+  return true
+}
+
+async function selectMultipleOptions(page, requiredSelections) {
+  await page.getByTestId('quiz-option-0').waitFor({ state: 'visible', timeout: 4000 })
+  const optionButtons = page.locator('[data-testid^="quiz-option-"]')
+  const totalOptions = await optionButtons.count()
+  let selected = 0
+
+  for (let idx = 0; idx < totalOptions && selected < requiredSelections; idx++) {
+    const option = optionButtons.nth(idx)
+    await option.waitFor({ state: 'visible', timeout: 4000 })
+    await option.click({ trial: false })
+    selected += 1
+  }
+}
+
+async function waitForButtonEnabled(page, testId) {
+  await page.waitForFunction((id) => {
+    const btn = document.querySelector(`[data-testid="${id}"]`)
+    return btn ? !btn.disabled : true
+  }, testId, { timeout: 2000 }).catch(() => {})
+}
+
+async function waitForQuestionAdvance(page, prevId) {
+  await page.waitForFunction((prev) => {
+    const el = document.querySelector('[data-testid="quiz-question-card"]')
+    return el && el.getAttribute('data-question-id') !== prev
+  }, prevId, { timeout: 5000 }).catch(() => {})
+}
+
+export async function dismissHelpOverlays(page) {
+  await ensureNoOverlays(page)
 }
 
 // Utility: remove obstructive overlays (help tour, leftover modals) if present
 async function ensureNoOverlays(page) {
   // Remove help tour overlay if it somehow rendered
-  const tourOverlay = await page.locator('[aria-label="Help tour"]').elementHandle().catch(()=>null)
-  if (tourOverlay) {
+  try {
     await page.evaluate(() => {
-      const tour = document.querySelector('[aria-label="Help tour"]')
-      if (tour && tour.parentElement) tour.parentElement.removeChild(tour)
-      try { localStorage.setItem('helpSystem.tour.seen.v1','true') } catch(_) {}
-      if (window) window.__E2E__ = true
+      try {
+        window.__E2E__ = true
+        localStorage.setItem('helpSystem.tour.seen.v1','true')
+        localStorage.setItem('e2e.suppressTour','true')
+      } catch(_) {}
     })
+    const overlayLocator = page.getByTestId('help-tour-overlay')
+    if (await overlayLocator.count() > 0) {
+      const closeButtons = [
+        page.getByTestId('help-tour-close'),
+        page.getByTestId('help-tour-dismiss'),
+        page.getByTestId('help-tour-open-panel')
+      ]
+      for (const btn of closeButtons) {
+        if (await btn.isVisible().catch(() => false)) {
+          await btn.click()
+          break
+        }
+      }
+      if (await overlayLocator.count() > 0) {
+        await page.keyboard.press('Escape').catch(() => {})
+      }
+    }
+  } catch (_) {
+    // overlay not found; ignore
   }
   // Dismiss session recovery if it appears mid-quiz
   if (await page.getByTestId('session-recovery-overlay').isVisible().catch(()=>false)) {

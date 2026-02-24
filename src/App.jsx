@@ -63,6 +63,7 @@ function AppContent() {
     // Migration: Update old default of 40 to new default of 45
     return count === 40 ? 45 : count
   })
+  const currentYear = new Date().getFullYear()
   
   // Check for import URL parameter on load
   useEffect(() => {
@@ -627,7 +628,7 @@ function AppContent() {
                   <option value={50}>50 Questions</option>
                   <option value={100}>100 Questions</option>
                   <option value={185}>185 Questions (SAFe Teams 6.0 Complete)</option>
-                  <option value={200}>200 Questions (Leading SAFe 6 Complete)</option>
+                  <option value={500}>500 Questions (Leading SAFe 6 Complete)</option>
                 </select>
               </div>
               <div className="settings-info">
@@ -801,7 +802,7 @@ function AppContent() {
         </main>
 
         <footer className="footer">
-          <p>&copy; 2025 LACE Studio Practice Exams. Empowering Agile professionals worldwide.</p>
+          <p>&copy; {currentYear} LACE Studio Practice Exams. Empowering Agile professionals worldwide.</p>
         </footer>
       </>
     )
@@ -992,7 +993,7 @@ function AppContent() {
       </main>
 
       <footer className="footer">
-        <p>&copy; 2025 LACE Studio Practice Exams. Empowering Agile professionals worldwide.</p>
+        <p>&copy; {currentYear} LACE Studio Practice Exams. Empowering Agile professionals worldwide.</p>
       </footer>
 
       {/* Migration Notice for Existing Users */}

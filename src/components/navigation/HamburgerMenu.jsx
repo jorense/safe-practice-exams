@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import styles from './HamburgerMenu.module.css'
 
 const HamburgerMenu = ({ 
@@ -9,6 +8,7 @@ const HamburgerMenu = ({
   onNavigate,
   onClose 
 }) => {
+  const currentYear = new Date().getFullYear()
   return (
     <div className={styles.hamburgerContainer}>
       {/* Hamburger Button */}
@@ -123,7 +123,7 @@ const HamburgerMenu = ({
             {/* Footer */}
             <div className={styles.menuFooter}>
               <p className={styles.footerText}>
-                © 2025 LACE Studio Practice Exams
+                © {currentYear} LACE Studio Practice Exams
               </p>
             </div>
           </nav>

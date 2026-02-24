@@ -1,17 +1,19 @@
 import { test, expect } from '@playwright/test'
-import { goToLeadingSafeExamSettings, startLeadingSafeQuiz } from './_helpers'
+import { goToLeadingSafeExamSettings, startLeadingSafeQuiz, dismissHelpOverlays } from './_helpers'
 
 test.describe('Multi-select validation', () => {
   test('enforces exact selection count', async ({ page }) => {
   await goToLeadingSafeExamSettings(page)
   // Switch to practice mode to include multi-select distribution
   await startLeadingSafeQuiz(page, { mode: 'practice' })
+  await dismissHelpOverlays(page)
 
     // Advance until we find a multi-select (badge contains Multiple Choice)
     for (let i = 0; i < 30; i++) {
       if (await page.locator('text=Multiple Choice').first().isVisible().catch(()=>false)) break
       const next = page.getByTestId('quiz-next')
       if (await next.isDisabled()) break
+      await dismissHelpOverlays(page)
       await next.click()
     }
 
@@ -22,6 +24,7 @@ test.describe('Multi-select validation', () => {
 
     // Click first (needed) options
     for (let i = 0; i < needed; i++) {
+      await dismissHelpOverlays(page)
       await page.getByTestId(`quiz-option-${i}`).click()
     }
 
@@ -29,6 +32,7 @@ test.describe('Multi-select validation', () => {
     await expect(page.getByTestId('multi-select-progress')).toContainText(`${needed} of ${needed} selected`)
 
     // Click one extra to trigger warning
+  await dismissHelpOverlays(page)
   await page.getByTestId(`quiz-option-${needed}`).click()
   // UI displays pattern: 'X of N selected (1 too many)'
   await expect(page.getByTestId('multi-select-progress')).toContainText('too many')

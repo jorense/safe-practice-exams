@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test'
+import { goToLeadingSafeExamSettings, startLeadingSafeQuiz } from './_helpers'
 
 // Single smoke test; run only in firefox/webkit via --project selection
 // Usage: npx playwright test tests/e2e/quiz-init-smoke.spec.js --project=firefox --project=webkit
@@ -7,27 +8,17 @@ test('quiz init smoke captures early errors', async ({ page }, testInfo) => {
   const consoleMessages = []
   page.on('console', msg => consoleMessages.push({ type: msg.type(), text: msg.text() }))
 
-  await page.goto('/')
-
-  // Navigate to exam start page deterministically
-  await page.getByTestId('nav-exams').click()
-  await page.getByTestId('start-leading-safe-exams').click()
-
-  // Sanity: exam settings visible
+  await goToLeadingSafeExamSettings(page)
   await expect(page.getByTestId('leading-safe-exam-settings')).toBeVisible()
 
-  // Start quiz
-  await page.getByTestId('leading-safe-start-quiz').click()
+  await startLeadingSafeQuiz(page)
 
-  // Wait a short time for either loading or root
   const quizRoot = page.getByTestId('quiz-root')
   const quizLoading = page.getByTestId('quiz-loading')
-
-  let sawElement = false
-  await Promise.race([
-    quizRoot.waitFor({ timeout: 4000 }).then(() => { sawElement = true }),
-    quizLoading.waitFor({ timeout: 4000 }).then(() => { sawElement = true })
-  ]).catch(() => {})
+  let sawElement = await quizRoot.isVisible().catch(() => false)
+  if (!sawElement) {
+    sawElement = await quizLoading.isVisible().catch(() => false)
+  }
 
   // Pull diagnostics from localStorage
   const diagnostics = await page.evaluate(() => ({

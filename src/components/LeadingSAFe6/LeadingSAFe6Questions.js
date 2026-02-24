@@ -3723,5 +3723,4024 @@ export const leadingSAFe6Questions = [
     "explanation": "Solution Trains coordinate multiple ARTs and manage complex integration. They don't eliminate dependencies or reduce ART diversity.",
     "domain": "Enterprise Solution Delivery",
     "difficulty": "Advanced"
+  },
+  {
+    "id": 241,
+    "question": "Which action best reflects servant leadership on an Agile Release Train?",
+    "options": [
+      "Assigning tasks to every team member to ensure even workload distribution for the iteration",
+      "Removing organizational obstacles so teams can self-organize around delivering value",
+      "Reviewing and approving every user story before work can begin to maintain control",
+      "Requiring daily written status reports from Scrum Masters to monitor progress"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Servant leaders focus on clearing impediments and enabling teams rather than directing tasks or instituting heavy controls.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 242,
+    "question": "How should Lean-Agile leaders respond when teams struggle with a new practice?",
+    "options": [
+      "Increase oversight and require leadership approval for every technical decision",
+      "Pause all delivery commitments until teams can demonstrate perfect practice adoption",
+      "Provide coaching, create safe experiments, and adjust the rollout without abandoning the intent",
+      "Replace the team members who resist the change with people who already know the practice"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Leaders enable learning by offering coaching and experimentation while keeping the improvement goal intact instead of resorting to control or replacement.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 243,
+    "question": "What is the primary objective of establishing a growth mindset across the ART?",
+    "options": [
+      "Ensure only high performers are assigned to critical value streams",
+      "Create a culture where learning is valued and experimentation is encouraged",
+      "Limit the amount of training budget spent on optional skill development",
+      "Guarantee that all improvements are approved by the transformation office"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A growth mindset promotes continuous learning and experimentation, which are essential for adaptive Lean-Agile organizations.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 244,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO traits are hallmarks of an effective Lean-Agile leader? (Select exactly 2 answers)",
+    "options": [
+      "Demonstrates humility and seeks feedback from teams",
+      "Makes all architectural and content decisions personally",
+      "Connects daily work to customer-centric outcomes",
+      "Relies on positional authority to resolve every conflict"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Lean-Agile leaders model humility, seek feedback, and continually connect work to customer value rather than relying on command-and-control behaviors.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 245,
+    "question": "Why is sharing a compelling vision vital during transformation?",
+    "options": [
+      "It eliminates the need for teams to estimate work because direction is fixed",
+      "It provides meaning, aligns decisions, and energizes people through purpose",
+      "It ensures compliance teams can audit all practices consistently",
+      "It allows leaders to dictate detailed implementation steps up front"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Vision aligns efforts and motivates people by clarifying purpose without dictating every implementation detail.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 246,
+    "question": "What is the intent of leader standard work such as cadence-based gemba walks?",
+    "options": [
+      "Inspect code for defects before developers commit changes",
+      "Provide predictable touchpoints to understand flow and remove impediments",
+      "Replace Scrum Master facilitation during iteration events",
+      "Document every decision team members make for traceability"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Leader standard work creates regular opportunities for leaders to observe flow, listen, and address systemic blockers.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 247,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE practices strengthen trust between leaders and teams? (Select exactly 3 answers)",
+    "options": [
+      "Following through on commitments made during Inspect and Adapt",
+      "Being transparent about constraints and trade-offs",
+      "Keeping performance data hidden to avoid tough conversations",
+      "Inviting teams into decision-making discussions",
+      "Issuing directives without context to accelerate execution",
+      "Admitting mistakes when experiments fail"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      5
+    ],
+    "explanation": "Trust grows when leaders keep promises, communicate transparently, involve teams, and show vulnerability rather than hiding information or dictating orders.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 248,
+    "question": "How can leaders create space for innovation while teams remain under delivery pressure?",
+    "options": [
+      "Schedule dedicated innovation capacity within the IP Iteration and protect it",
+      "Delay innovation work until all roadmap commitments are completed",
+      "Ask teams to work overtime when they want to prototype new ideas",
+      "Limit experimentation to architecture groups so delivery teams stay focused"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leaders protect timeΓÇöoften during the IP IterationΓÇöfor exploration so innovation is sustainable instead of ad-hoc overtime.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 249,
+    "question": "A team experiment failed to deliver expected results. What is the best leadership response?",
+    "options": [
+      "Stop future experiments until the team can prove success rates improve",
+      "Use the failure as a learning opportunity and help extract actionable insights",
+      "Escalate the team to HR for performance counseling",
+      "Reduce the team's autonomy to prevent future mistakes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Leaders reinforce a learning culture by treating failed experiments as data for improvement instead of punishing teams.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 250,
+    "question": "Why should leaders share their own learning journeys with the organization?",
+    "options": [
+      "It demonstrates vulnerability and normalizes continuous learning for everyone",
+      "It allows leaders to justify slower decision-making processes",
+      "It helps leaders retain control over all technical discussions",
+      "It reduces the need for formal training budgets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Modeling learning and vulnerability signals that experimentation and growth are expected across the enterprise.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 251,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices help leaders maintain alignment without micromanaging? (Select exactly 2 answers)",
+    "options": [
+      "Communicating clear guardrails such as OKRs and value hypotheses",
+      "Reviewing every backlog item personally before sprint planning",
+      "Holding regular alignment forums like ART Sync with two-way dialogue",
+      "Requiring teams to submit daily written progress justifications"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Leaders maintain alignment through clear guardrails and interactive forums, not through exhaustive approvals or daily reporting.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 252,
+    "question": "What is the purpose of a leader's gemba walk within SAFe?",
+    "options": [
+      "Audit adherence to documented procedures line by line",
+      "Observe work where it happens, listen to teams, and spot systemic issues",
+      "Deliver performance evaluations in real time to team members",
+      "Replace Scrum Masters in facilitating daily stand-ups"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gemba walks focus on understanding the real flow of work and impediments rather than policing compliance or performance.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 253,
+    "question": "How can leaders balance governance needs with empowerment?",
+    "options": [
+      "Set lightweight guardrails tied to outcomes while providing autonomy inside them",
+      "Centralize all investment approvals with executive committees",
+      "Mandate identical solution designs for every ART to reduce variation",
+      "Require detailed stage-gate reviews before teams start any work"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Effective governance uses outcome-based guardrails, allowing teams to decide how to deliver within those boundaries.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 254,
+    "question": "Which statement best describes empowerment boundaries?",
+    "options": [
+      "They restrict decision-making to executives only",
+      "They clarify where teams can decide independently versus when to escalate",
+      "They dictate the exact solution architecture teams must follow",
+      "They are optional guidelines that teams can ignore when convenient"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Boundaries define decision domains, enabling teams to act confidently while knowing when broader alignment is required.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 255,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE actions help leaders remove systemic impediments? (Select exactly 3 answers)",
+    "options": [
+      "Escalate chronic tooling constraints to enterprise teams for resolution",
+      "Adjust policies that slow flow, such as cumbersome approvals",
+      "Ask teams to work around issues without involving leadership",
+      "Provide staffing support when critical skills are missing",
+      "Wait for the next quarterly review to address problems",
+      "Facilitate cross-domain workshops to tackle shared risks"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Leaders resolve impediments by escalating constraints, fixing policies, supplying resources, and convening stakeholders instead of deferring action.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 256,
+    "question": "Which coaching stance is most useful when a team is capable but stuck on prioritization?",
+    "options": [
+      "Directive coaching that prescribes the backlog order",
+      "Facilitative coaching that guides the team to evaluate options against objectives",
+      "Hands-off coaching that ignores the situation to preserve autonomy",
+      "Corrective coaching that replaces the Product Owner temporarily"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Facilitative coaching helps teams reason about priorities themselves, reinforcing autonomy while addressing the blockage.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 257,
+    "question": "Why is emotional intelligence critical for Lean-Agile leaders?",
+    "options": [
+      "It helps leaders accurately sense team morale and respond constructively",
+      "It allows leaders to avoid making data-driven decisions",
+      "It enables leaders to deliver technical reviews without preparation",
+      "It guarantees that conflicts will never occur within teams"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Emotional intelligence lets leaders read situations, empathize, and respond in ways that maintain trust and motivation.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 258,
+    "question": "How do leaders reinforce SAFe principles after initial training finishes?",
+    "options": [
+      "By referencing the principles during decisions and explaining the rationale",
+      "By assuming the transformation office will handle all reminders",
+      "By limiting communication so teams can interpret practices independently",
+      "By reverting to prior project controls once delivery stabilizes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leaders keep principles alive by modeling them and explaining decisions through that lens instead of reverting to legacy habits.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 259,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO criteria signal that a decision should be decentralized? (Select exactly 2 answers)",
+    "options": [
+      "It requires local context and impacts only one team or ART",
+      "It has high economic impact across the portfolio",
+      "Delay would significantly reduce value if escalated",
+      "It sets enterprise-wide architectural guardrails"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Decentralization works when decisions are localized or time-sensitive; enterprise-level, high-impact choices usually stay centralized.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 260,
+    "question": "What is the leaderΓÇÖs role in sustaining transformation momentum after early wins?",
+    "options": [
+      "Celebrate progress, communicate results, and invest in the next improvement targets",
+      "Reduce communication to avoid overloading teams with information",
+      "Freeze additional changes so teams can coast on initial practices",
+      "Delegate momentum management entirely to Scrum Masters"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leaders sustain momentum by recognizing wins, sharing outcomes, and continually funding the next evolution of practices.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 261,
+    "question": "Why do high-performing teams favor T-shaped skill development?",
+    "options": [
+      "It enables teammates to swarm work and reduce bottlenecks when priorities shift",
+      "It eliminates the need for any role specialization within the team",
+      "It guarantees identical productivity for every team member",
+      "It allows the team to avoid pair programming entirely"
+    ],
+    "correctAnswer": 0,
+    "explanation": "T-shaped skills provide depth plus breadth, allowing teams to swarm work and keep flow despite changing priorities.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 262,
+    "question": "What is the primary benefit of establishing explicit WIP limits on Kanban boards?",
+    "options": [
+      "Increase multitasking so everyone stays busy at all times",
+      "Expose bottlenecks early and encourage teams to finish work before starting new items",
+      "Enable leaders to assign more stories per iteration",
+      "Replace the need for iteration reviews and demos"
+    ],
+    "correctAnswer": 1,
+    "explanation": "WIP limits surface flow constraints and drive completion focus, reducing multitasking and hidden queues.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 263,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices strengthen collective code ownership? (Select exactly 2 answers)",
+    "options": [
+      "Rotating pairing partners across features",
+      "Assigning permanent module owners to prevent overlap",
+      "Using automated tests that guard shared behavior",
+      "Restricting access to certain repositories"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Pair rotation and comprehensive automated tests spread knowledge and make shared ownership safe, unlike hard ownership boundaries.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 264,
+    "question": "Why should teams include definition-of-ready checks for enabler stories?",
+    "options": [
+      "Enabler work can skip refinement because it is internal",
+      "Clear readiness criteria ensure architectural tasks still deliver a testable outcome",
+      "It moves all architecture accountability to system teams",
+      "It guarantees velocity points remain stable across iterations"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Even enabler stories need clarity on desired outcomes to ensure they deliver demonstrable progress and integrate smoothly.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 265,
+    "question": "How does continuous integration support technical agility?",
+    "options": [
+      "By batching code merges for end-of-PI hardening",
+      "By providing rapid feedback on changes and reducing integration risk",
+      "By allowing teams to skip automated testing entirely",
+      "By centralizing ownership with a dedicated integration team"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Frequent integration surfaces defects early, reduces risk, and keeps the system deployable throughout the PI.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 266,
+    "question": "Which approach best mitigates cross-team dependency risk during PI execution?",
+    "options": [
+      "Document dependencies in PI Planning and revisit them in ART Sync to adjust sequencing",
+      "Assume dependencies will resolve naturally once development starts",
+      "Delay dependent stories until the final iteration to keep schedules flexible",
+      "Assign a single architect to manage every dependency decision"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Capturing dependencies in planning and reviewing them frequently allows proactive sequencing and impediment removal.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 267,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE practices improve automated test suites over time? (Select exactly 3 answers)",
+    "options": [
+      "Refactoring flaky tests as soon as they fail intermittently",
+      "Measuring coverage on critical paths and closing gaps intentionally",
+      "Quarantining failing tests indefinitely to keep pipelines green",
+      "Pairing testers and developers on complex scenario automation",
+      "Running the suite only before major releases to save compute cost",
+      "Reviewing test effectiveness during retrospectives"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "High-quality automation requires fixing flaky tests, targeting coverage strategically, pairing on complex scenarios, and inspecting effectiveness regularly rather than ignoring failures.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 268,
+    "question": "What is the primary goal of running architecture spikes?",
+    "options": [
+      "Produce fully documented solution blueprints before coding begins",
+      "Acquire knowledge through experiments that de-risk future implementation choices",
+      "Replace enabler stories with research tasks so velocity increases",
+      "Provide opportunities to reassign architects without impacting delivery"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Spikes create learning that reduces uncertainty for upcoming work; they are time-boxed experiments, not exhaustive designs.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 269,
+    "question": "Why should teams visualize both workflow states and policies on their boards?",
+    "options": [
+      "Policies remove the need for Scrum Masters",
+      "Visibility clarifies expectations for entry/exit criteria and reduces handoff confusion",
+      "It helps leaders micro-manage individual contributors",
+      "Workflow details should remain implicit to preserve flexibility"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Making policies explicit lets everyone understand when items move, reducing ambiguity and supporting smooth flow.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 270,
+    "question": "How do teams keep technical debt from overwhelming new feature capacity?",
+    "options": [
+      "Schedule recurring capacity allocation for refactoring and debt reduction",
+      "Ignore debt until the IP Iteration so velocity stays high",
+      "Move debt work to a separate maintenance backlog with no planning",
+      "Track debt but avoid acting on it to preserve customer focus"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Allocating capacity each iteration ensures debt is addressed continuously rather than ballooning into crises.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 271,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO behaviors keep daily stand-ups outcome focused? (Select exactly 2 answers)",
+    "options": [
+      "Discussing impediments and collaborating on plans to resolve them",
+      "Reading detailed status reports aloud to the group",
+      "Highlighting progress toward iteration goals rather than personal tasks",
+      "Escalating every issue directly to management instead of the team"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Stand-ups stay effective when they concentrate on goals and impediments, not on lengthy individual reports or escalation.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 272,
+    "question": "What is the advantage of feature toggles in a continuous delivery pipeline?",
+    "options": [
+      "They allow incomplete functionality to be merged safely while controlling exposure",
+      "They eliminate the need for regression testing across releases",
+      "They ensure architectural decisions remain centralized",
+      "They replace the requirement for integration environments"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Feature toggles decouple deployment from release by letting teams merge work and selectively expose it when ready.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 273,
+    "question": "Why should teams measure cycle time in addition to velocity?",
+    "options": [
+      "Cycle time shows far-future roadmap accuracy",
+      "It reveals how quickly items flow from start to finish, exposing delays that velocity hides",
+      "Cycle time replaces the need for burndown charts",
+      "It determines how many teams are needed for each ART"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cycle time captures flow efficiency and delays, providing insight velocity alone cannot.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 274,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE techniques support emergent design without sacrificing intent? (Select exactly 3 answers)",
+    "options": [
+      "Keeping architectural runway synced with near-term features",
+      "Running design spikes when uncertainty is high",
+      "Deferring all architectural thinking until after release",
+      "Collaborating regularly with system and solution architects",
+      "Locking designs to initial PI Planning assumptions",
+      "Using coding dojos to explore alternative patterns"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Emergent design thrives when teams maintain runway, collaborate with architects, and experiment through spikes and dojos rather than freezing early assumptions.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 275,
+    "question": "How can teams ensure backlog refinement sessions remain productive?",
+    "options": [
+      "Time-box discussions, focus on upcoming work, and leave with clear acceptance criteria",
+      "Review every item in the backlog regardless of priority",
+      "Avoid technical contributors so the meeting stays business-focused",
+      "Use refinement solely to assign tasks rather than clarify work"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Effective refinement is time-boxed, collaborative, and results in well-understood stories ready for planning.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 276,
+    "question": "What role does observability play in DevOps-oriented teams?",
+    "options": [
+      "It replaces the need for automated tests",
+      "It provides runtime insights so teams can detect issues quickly and learn from production behavior",
+      "It ensures only operations teams can access deployment pipelines",
+      "It allows teams to skip post-release validations"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Observability instruments systems for real-time insight, enabling quick detection, diagnosis, and learning.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 277,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO actions help teams maintain sustainable pace? (Select exactly 2 answers)",
+    "options": [
+      "Limit unplanned work by reserving buffer and renegotiating scope when needed",
+      "Encourage overtime whenever iteration goals are at risk",
+      "Monitor energy signals and address systemic causes of burnout",
+      "Increase WIP to keep everyone busy when dependencies occur"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Sustainable pace depends on managing unplanned work, monitoring team health, and addressing root causes rather than adding overtime or WIP.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 278,
+    "question": "Why is pairing product-focused metrics with engineering metrics important?",
+    "options": [
+      "Business metrics validate whether technical improvements deliver customer outcomes",
+      "It ensures finance can audit every code change",
+      "It allows teams to hide defects behind vanity metrics",
+      "It replaces the need for qualitative customer feedback"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linking product outcomes with engineering health ensures technical work translates into customer value.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 279,
+    "question": "How do communities of practice accelerate technical capability growth?",
+    "options": [
+      "They centralize all coding decisions in a governance body",
+      "They provide peer networks to share patterns, mentor others, and evolve standards collaboratively",
+      "They replace the need for teams to own their technical practices",
+      "They focus on enforcing compliance through audits"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Communities of practice enable shared learning and co-created standards without removing team ownership.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 280,
+    "question": "Which practice keeps retrospectives actionable?",
+    "options": [
+      "Limit improvements to one or two experiments and track them visibly until verified",
+      "Brainstorm as many ideas as possible without prioritizing them",
+      "Skip follow-up to avoid slowing down delivery",
+      "Hold retrospectives only when serious issues occur"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Selecting a small set of improvements and tracking them drives real change; huge lists without follow-up rarely stick.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 281,
+    "question": "What is the purpose of writing hypotheses in a feature or capability description?",
+    "options": [
+      "To define mandatory solution designs for every team",
+      "To clarify the expected outcome so teams can measure learning and value",
+      "To replace acceptance criteria with marketing statements",
+      "To satisfy compliance documentation requirements"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hypotheses articulate desired outcomes, enabling teams to test and measure whether the feature delivers expected value.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 282,
+    "question": "How does customer journey mapping improve backlog prioritization?",
+    "options": [
+      "It ranks technical debt by component complexity",
+      "It reveals pain points across touchpoints so teams focus on the highest-impact moments",
+      "It ensures every persona receives equal investment",
+      "It replaces the need for customer interviews"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Journey mapping surfaces friction points, helping teams prioritize work where it will affect customer outcomes most.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 283,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO actions strengthen customer centricity on an ART? (Select exactly 2 answers)",
+    "options": [
+      "Including real customer quotes and insights in PI Planning briefings",
+      "Limiting demos to internal stakeholders to control messaging",
+      "Shadowing users or support teams during IP Iteration activities",
+      "Outsourcing all customer research to a separate department"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Bringing authentic customer insights into events and observing users directly keeps teams focused on real needs.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 284,
+    "question": "Why should Product Management balance solution viability, desirability, and feasibility?",
+    "options": [
+      "Optimizing only one dimension often undermines business outcomes despite technical success",
+      "It ensures the same feature set can serve every market segment equally",
+      "It replaces the need for portfolio-level prioritization",
+      "It guarantees perfect forecast accuracy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Value emerges when customer desirability, technical feasibility, and economic viability are considered together.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 285,
+    "question": "How do outcome-based roadmaps differ from traditional feature roadmaps?",
+    "options": [
+      "They specify detailed release dates for every feature",
+      "They describe the customer or business results to achieve, leaving teams to experiment with solutions",
+      "They eliminate the need for prioritization entirely",
+      "They focus exclusively on technical enablers and architecture"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Outcome roadmaps emphasize desired results, giving teams flexibility to discover the best solution for each milestone.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 286,
+    "question": "What is the benefit of aligning feature prioritization with Weighted Shortest Job First (WSJF)?",
+    "options": [
+      "It ensures the smallest stories are always implemented first",
+      "It balances cost of delay against duration, leading to more economic sequencing",
+      "It mandates that architectural work is scheduled after customer features",
+      "It removes the need for product management involvement"
+    ],
+    "correctAnswer": 1,
+    "explanation": "WSJF helps teams prioritize items with the highest cost of delay relative to their size, optimizing economic outcomes.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 287,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE techniques help validate assumptions before large investments? (Select exactly 3 answers)",
+    "options": [
+      "Running lightweight experiments such as A/B tests or concierge trials",
+      "Building full production-grade features before gathering feedback",
+      "Using prototypes or wireframes in customer interviews",
+      "Analyzing telemetry and product analytics for behavioral signals",
+      "Waiting for annual budgeting cycles to approve research",
+      "Reviewing only internal stakeholder opinions"
+    ],
+    "correctAnswers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Experiments, prototypes, and telemetry validate assumptions early, unlike building full features or relying solely on internal opinions.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 288,
+    "question": "Why are release on demand capabilities central to Agile Product Delivery?",
+    "options": [
+      "They allow business stakeholders to choose optimal timing for value delivery independent of development cadence",
+      "They guarantee every release includes the entire backlog",
+      "They replace the need for PI Planning",
+      "They eliminate testing by using dark launches"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Release on demand decouples deployment from release so value can be delivered when the business or customers are ready.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 289,
+    "question": "How do story maps support incremental delivery planning?",
+    "options": [
+      "They sequence user activities, helping teams slice releases by workflows rather than technical layers",
+      "They act as detailed design specifications for developers",
+      "They replace backlog refinement and prioritization sessions",
+      "They ensure all stories are the same size"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Story maps visualize user journeys, enabling teams to plan vertical slices of value for progressive releases.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 290,
+    "question": "What is the advantage of shared OKRs between Product Management and teams?",
+    "options": [
+      "They create aligned outcomes and measurable success criteria for everyone involved",
+      "They eliminate the need for feature backlogs",
+      "They ensure velocity targets replace customer metrics",
+      "They keep objectives confidential until release"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Shared OKRs align the organization on outcomes, providing common measures of success alongside backlog work.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 291,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO behaviors make system demos valuable to customers? (Select exactly 2 answers)",
+    "options": [
+      "Show end-to-end scenarios that mirror real workflows",
+      "Discuss only technical implementation details",
+      "Invite business stakeholders to ask questions and provide feedback",
+      "Limit the demo to screenshots instead of working software"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "System demos should illustrate real workflows and invite stakeholder interaction, not just technical commentary or static visuals.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 292,
+    "question": "Why should backlog refinement include both Product Management and technical leads?",
+    "options": [
+      "It ensures business intent and technical feasibility are understood together before commitment",
+      "It allows Product Management to delegate prioritization to architects",
+      "It replaces the need for iteration planning",
+      "It limits transparency so decisions can happen faster"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Joint refinement aligns business intent with technical realities, reducing rework later in the PI.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 293,
+    "question": "How do guardrail budgets protect innovation while maintaining financial control?",
+    "options": [
+      "They allocate percentage targets (e.g., Run, Grow, Transform) so investments align with strategy without micromanaging every decision",
+      "They require detailed approvals for each feature before work starts",
+      "They restrict spending to operational maintenance only",
+      "They remove the need for portfolio visibility altogether"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Guardrail budgets give product leaders boundaries while leaving room for experimentation within strategic allocations.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 294,
+    "question": "Why is telemetry essential after releasing new functionality?",
+    "options": [
+      "It confirms whether users behave as expected, enabling rapid adjustments if outcomes differ",
+      "It replaces manual testing before deployment",
+      "It fulfills compliance reporting requirements automatically",
+      "It allows teams to disable analytics to reduce cost"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Telemetry shows real customer behavior, helping teams validate hypotheses and adapt quickly.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 295,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE inputs should influence PI Objectives? (Select exactly 3 answers)",
+    "options": [
+      "Business context briefing and customer insights",
+      "Team capacity and historical velocity data",
+      "Unverifiable assumptions with no supporting data",
+      "Cross-team dependency agreements",
+      "Unrelated pet projects requested during planning",
+      "Latest architectural runway updates"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "PI Objectives should reflect business context, realistic capacity, dependencies, and architectural insights rather than pet projects or unsupported assumptions.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 296,
+    "question": "What is the primary reason to use progressive disclosure in user experiences?",
+    "options": [
+      "It simplifies complex workflows by revealing information as needed, reducing cognitive load",
+      "It hides advanced features permanently from most users",
+      "It guarantees compliance with accessibility regulations",
+      "It ensures all navigation matches legacy systems"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Progressive disclosure keeps interfaces intuitive by revealing detail only when the user needs it.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 297,
+    "question": "How can teams avoid vanity metrics when measuring product success?",
+    "options": [
+      "Define metrics tied to user behavior or business value and review them with stakeholders frequently",
+      "Focus on data that is easy to collect even if it lacks meaning",
+      "Report only positive metrics to maintain morale",
+      "Use the same metric for every product regardless of context"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Meaningful metrics link to behavior or outcomes and are inspected with stakeholders to drive decisions, not just to show good news.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 298,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices support dependable release trains? (Select exactly 2 answers)",
+    "options": [
+      "Maintaining a healthy backlog of features ready for pull",
+      "Changing PI cadence frequently to match stakeholder preferences",
+      "Automating release readiness checks in the pipeline",
+      "Skipping Inspect and Adapt when delivery is on track"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Reliable release trains rely on prepared backlogs and automated readiness signals, not shifting cadence or skipping improvement events.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 299,
+    "question": "Why should customer support insights feed into product discovery?",
+    "options": [
+      "Support teams observe real issues in production and can highlight unmet needs or friction points",
+      "It reduces the need for analytics instrumentation",
+      "It allows Product Management to hand off prioritization to support leads",
+      "It guarantees every incident results in a new feature"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Support teams hear customers daily, offering concrete evidence about pain points that inform discovery decisions.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 300,
+    "question": "What distinguishes a feature from a capability in SAFe backlogs?",
+    "options": [
+      "Features deliver value within a single ART, whereas capabilities span multiple ARTs or Solution Trains",
+      "Capabilities are smaller than features and estimated in story points",
+      "Features are optional while capabilities are mandatory",
+      "Capabilities have no acceptance criteria"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Features are ART-scoped increments; capabilities are higher-level constructs used when multiple ARTs collaborate.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 301,
+    "question": "Why are Solution Trains necessary for certain SAFe implementations?",
+    "options": [
+      "They coordinate multiple ARTs building large, integrated solutions with complex dependencies",
+      "They replace the need for Agile Release Trains entirely",
+      "They eliminate all portfolio governance activities",
+      "They ensure every team uses identical tooling"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Solution Trains align multiple ARTs to deliver large-scale solutions that exceed a single ART's scope.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 302,
+    "question": "What is the role of the Solution Train Engineer (STE)?",
+    "options": [
+      "Serve as the chief Scrum Master across ARTs, facilitating solution-level events and removing multi-ART impediments",
+      "Approve all requirements and designs for the portfolio",
+      "Manage individual developer performance reviews",
+      "Determine funding allocations for value streams"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The STE orchestrates solution-level flow by facilitating events and clearing impediments spanning multiple ARTs.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 303,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO artifacts help coordinate capabilities across ARTs? (Select exactly 2 answers)",
+    "options": [
+      "Solution backlog",
+      "Program board from a single team",
+      "Solution roadmap",
+      "Individual team task list"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Solution backlogs and solution roadmaps align multi-ART capabilities, whereas single-team artifacts lack the enterprise view.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 304,
+    "question": "How do solution intents balance elaboration with flexibility?",
+    "options": [
+      "They capture the minimal necessary design information while allowing details to emerge through exploration",
+      "They are exhaustive documents that freeze requirements",
+      "They replace the need for feature backlogs",
+      "They allow teams to work without any architectural guidance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Solution intent stores evolving knowledge about what to build and how, supporting compliance while keeping options open.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 305,
+    "question": "Why is synchronized PI Planning across ARTs critical for large solutions?",
+    "options": [
+      "It reveals cross-ART dependencies and aligns commitments toward integrated solution objectives",
+      "It reduces the need for Solution Management engagement",
+      "It allows each ART to optimize independently without coordination",
+      "It eliminates the need for system demos"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Joint PI Planning surfaces dependencies and ensures ARTs commit to coherent solution outcomes.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 306,
+    "question": "What is the benefit of having a shared architectural runway across ARTs?",
+    "options": [
+      "It provides common technical capabilities enabling teams to deliver features without constant rework",
+      "It ensures each ART can ignore enterprise standards",
+      "It postpones technical investments until features finish",
+      "It limits experimentation with new patterns"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Shared runway offers foundational capabilities that multiple ARTs need, reducing duplication and rework.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 307,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE roles collaborate closely to define solution capabilities? (Select exactly 3 answers)",
+    "options": [
+      "Solution Management",
+      "System Architects/Engineering",
+      "Solution Train Engineer",
+      "Team-level Product Owners",
+      "Enterprise security auditors",
+      "Individual developers"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Solution Management, System Architects, and the STE align on capabilities; team-level roles execute against that guidance.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 308,
+    "question": "How does coordinated compliance fit into enterprise solution delivery?",
+    "options": [
+      "By embedding compliance activities within continuous delivery pipelines and definition of done",
+      "By waiting until final release testing to address regulations",
+      "By handling compliance only through annual audits",
+      "By isolating compliance to a single ART"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Integrating compliance into the flow ensures large solutions remain audit-ready without last-minute surprises.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 309,
+    "question": "Why are solution demos essential at the solution level?",
+    "options": [
+      "They validate integrated capabilities across ARTs with stakeholders and end users",
+      "They replace PI Objectives for each ART",
+      "They focus solely on backend services",
+      "They are optional if team demos already occur"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Solution demos show end-to-end value across ARTs, ensuring integration and alignment with customer needs.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 310,
+    "question": "What is the objective of pre-PI planning events?",
+    "options": [
+      "Align upcoming solution objectives, sequence capabilities, and prepare for synchronized PI Planning",
+      "Finalize all team-level stories for the next PI",
+      "Conduct detailed code reviews across ARTs",
+      "Replace Inspect and Adapt workshops"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pre-PI planning aligns ART leadership on priorities and dependencies before large-scale PI Planning occurs.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 311,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices help manage configuration items across large solutions? (Select exactly 2 answers)",
+    "options": [
+      "Using versioned solution intents and traceability to requirements",
+      "Allowing each team to store configuration data independently",
+      "Automating configuration validation in the pipeline",
+      "Performing manual reconciliations at the end of release only"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Versioned intents plus automated validation keep configuration synchronized; fragmented or manual approaches cause drift.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 312,
+    "question": "How does solution Kanban differ from program Kanban?",
+    "options": [
+      "It tracks the flow of capabilities and enablers across multiple ARTs rather than team-level features",
+      "It eliminates the need for WSJF",
+      "It manages individual tasks assigned to developers",
+      "It operates only during IP Iterations"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Solution Kanban visualizes capability flow spanning ARTs, extending program-level visibility to the solution scope.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 313,
+    "question": "Why is capacity allocation important at the solution level?",
+    "options": [
+      "It ensures the right mix of business features, enablers, and compliance work across ARTs to maintain long-term viability",
+      "It eliminates the need for feature prioritization",
+      "It guarantees each ART receives identical work types",
+      "It removes the need for architectural runway"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Balancing capacity for features, enablers, and compliance keeps large solutions sustainable.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 314,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE elements belong in a solution context document? (Select exactly 3 answers)",
+    "options": [
+      "Operating environment constraints",
+      "User personas and mission scenarios",
+      "Hardware, regulatory, or interface considerations",
+      "Individual developer vacation schedules",
+      "Daily stand-up talking points",
+      "Detailed task breakdowns for each story"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Solution context captures environment, personas, and constraints that shape solution design, not team scheduling details.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 315,
+    "question": "What value does the Agile Release Train self-assessment provide at the solution level?",
+    "options": [
+      "It offers aggregated insights into strengths and gaps so the Solution Train can focus improvement efforts",
+      "It replaces retrospectives for individual teams",
+      "It serves as compliance evidence for regulators",
+      "It determines individual bonuses"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Aggregated assessments highlight systemic improvement opportunities across ARTs supporting the solution.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 316,
+    "question": "Why is cross-domain DevSecOps critical for enterprise solutions?",
+    "options": [
+      "Security, operations, and development must collaborate early to keep integrated systems deployable and secure",
+      "It allows security reviews to happen after deployment",
+      "It centralizes operations so teams cannot release independently",
+      "It eliminates automated testing in favor of manual checks"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cross-domain collaboration embeds security and operations into the flow, essential for large integrated solutions.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 317,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices reduce integration risk across ARTs? (Select exactly 2 answers)",
+    "options": [
+      "Establishing shared integration environments with automated verification",
+      "Scheduling integration only at the end of the PI",
+      "Using solution-level definition of done criteria",
+      "Allowing each ART to define incompatible branching strategies"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Shared environments and solution-wide DoD enforce continuous integration, unlike sporadic or inconsistent approaches.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 318,
+    "question": "How does economic thinking influence solution-level trade-offs?",
+    "options": [
+      "Leaders weigh lifecycle costs, compliance risk, and opportunity costs when sequencing capabilities",
+      "Economic thinking is replaced by technical feasibility alone",
+      "Cost considerations are deferred to finance after delivery",
+      "Trade-offs are unnecessary once the solution intent is defined"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Applying economics ensures investment decisions consider total value and risk instead of focusing purely on technical aspects.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 319,
+    "question": "What is the purpose of post-PI planning at the solution level?",
+    "options": [
+      "Synchronize commitments across ARTs, address newly discovered risks, and communicate adjustments",
+      "Replan the PI from scratch with new objectives",
+      "Conduct compliance audits for each feature",
+      "Replace team-level iteration planning"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Post-PI planning confirms alignment after ART plans are finalized and adapts to emerging information.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 320,
+    "question": "Why should solution-level metrics include leading and lagging indicators?",
+    "options": [
+      "Leading indicators show early progress signals while lagging indicators confirm delivered business outcomes",
+      "Lagging indicators are sufficient because results speak for themselves",
+      "Leading indicators replace the need for Inspect and Adapt workshops",
+      "Metrics should focus solely on financial data"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Combining leading and lagging metrics provides a balanced view of progress and actual outcomes for large solutions.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 321,
+    "question": "What is the purpose of portfolio vision in SAFe?",
+    "options": [
+      "It articulates the future state the portfolio aims to achieve, guiding investment decisions and roadmaps",
+      "It defines the detailed backlog for every ART",
+      "It replaces value stream budgets",
+      "It serves as a compliance document for regulators"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Portfolio vision describes desired outcomes, providing direction for value streams and funding choices.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 322,
+    "question": "How does Lean Portfolio Management improve funding agility?",
+    "options": [
+      "By funding persistent value streams and adjusting allocations based on performance and strategy",
+      "By approving budgets only once per multi-year program",
+      "By tying funds to individual projects managed by PMOs",
+      "By centralizing all spending decisions with a finance committee"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Funding value streams rather than projects allows quicker reallocation as strategy evolves.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 323,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE guardrails help align portfolio investments? (Select exactly 3 answers)",
+    "options": [
+      "Participatory budgeting cadence",
+      "Run-Grow-Transform allocation targets",
+      "Approval of every team backlog item",
+      "Epics require lean business cases and hypothesis statements",
+      "Annual freeze on funding changes",
+      "Centralized task assignment from PMO"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Guardrails include participatory budgeting, investment allocation targets, and lean business cases, not micro-approvals or freezes.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 324,
+    "question": "Why is participatory budgeting more effective than traditional top-down allocation?",
+    "options": [
+      "It brings diverse stakeholders together to make transparent, data-informed trade-offs aligned with strategy",
+      "It guarantees every proposal receives equal funding",
+      "It replaces the need for financial controls",
+      "It limits discussion to senior executives only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Participatory budgeting creates shared understanding and collaborative decisions rooted in strategy and data.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 325,
+    "question": "What is the role of the Portfolio Kanban?",
+    "options": [
+      "Visualize epic flow from ideation through implementation and enforce WIP limits at the portfolio level",
+      "Manage daily tasks for Scrum teams",
+      "Replace program boards during PI Planning",
+      "Track individual developer utilization"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Portfolio Kanban provides transparency into epic status and policies, enabling prioritization and WIP control.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 326,
+    "question": "How do Lean business cases differ from traditional business cases?",
+    "options": [
+      "They focus on hypotheses, leading indicators, and lightweight economics rather than exhaustive documentation",
+      "They require full architectural designs and fixed ROI calculations",
+      "They are approved only after full implementation is complete",
+      "They remove the need for portfolio review"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lean business cases are concise, hypothesis-driven, and emphasize just enough analysis to support decisions.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 327,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO signals indicate an epic should be pivoted or stopped? (Select exactly 2 answers)",
+    "options": [
+      "Leading metrics show customer adoption is far below target despite iterations",
+      "Teams are ahead of schedule on feature delivery",
+      "Economic analysis reveals negative return even after experiments",
+      "Stakeholders request additional status meetings",
+      "The epic owner changes roles"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "If metrics show poor adoption or economics turn negative, pivot or stop decisions protect investment; schedule or org changes alone are insufficient.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 328,
+    "question": "Why should portfolio leaders monitor both flow efficiency and investment mix?",
+    "options": [
+      "Flow metrics reveal systemic delays, while investment mix ensures funds align with strategy and risk appetite",
+      "It guarantees all value streams receive identical funding",
+      "It allows leaders to bypass ART performance reviews",
+      "It eliminates the need for customer metrics"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Balanced oversight ensures work moves smoothly and money supports the intended strategic mix.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 329,
+    "question": "How does the portfolio sync support ongoing governance?",
+    "options": [
+      "It provides a regular forum to inspect epic progress, review KPIs, and make course corrections collaboratively",
+      "It replaces PI Planning for every ART",
+      "It focuses exclusively on financial compliance topics",
+      "It eliminates the need for any documentation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Portfolio syncs ensure transparency and collective adjustments without reverting to heavy stage gates.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 330,
+    "question": "What is the benefit of connecting OKRs to portfolio epics?",
+    "options": [
+      "It ties strategic objectives to investment outcomes, enabling clear measurement of epic impact",
+      "It allows OKRs to replace WSJF scoring",
+      "It prevents teams from proposing new ideas mid-PI",
+      "It guarantees epics will not change once approved"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linking OKRs and epics clarifies how investments advance strategic goals and how success is measured.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 331,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE practices reinforce Lean governance? (Select exactly 3 answers)",
+    "options": [
+      "Establish lightweight metrics focused on value and flow",
+      "Require stage-gate approvals for every feature",
+      "Use leading indicators to trigger guardrail reviews",
+      "Empower value stream leaders within spending boundaries",
+      "Centralize all decisions in a steering committee",
+      "Publish transparent portfolio dashboards"
+    ],
+    "correctAnswers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Lean governance relies on lightweight metrics, proactive guardrail triggers, empowered leaders, and transparencyΓÇönot heavy stage gates or centralization.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 332,
+    "question": "Why do value stream KPIs include both customer and financial measures?",
+    "options": [
+      "Customer metrics validate desirability while financial metrics confirm the business impact of value delivered",
+      "Financial metrics alone determine success in Lean portfolios",
+      "Customer metrics replace the need for audits",
+      "KPIs should focus only on operational efficiency"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Balanced KPIs ensure value streams deliver outcomes customers love and results the business needs.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 333,
+    "question": "How does the Portfolio Canvas help manage change?",
+    "options": [
+      "It visualizes value streams, customers, and differentiators, enabling leaders to assess alignment when strategy shifts",
+      "It lists the detailed tasks for each ART backlog",
+      "It serves as a financial ledger for actual costs",
+      "It replaces the need for portfolio syncs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Portfolio Canvas captures key strategic elements, assisting leaders in evaluating whether structure matches strategy.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 334,
+    "question": "What triggers an epic to move from the analysis state to the portfolio backlog?",
+    "options": [
+      "Approval of the lean business case and capacity availability to implement",
+      "Completion of all underlying features",
+      "A request from any stakeholder regardless of data",
+      "Expiration of the budgeting cycle"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Once analysis yields a validated business case and capacity exists, epics advance into the backlog for prioritization.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 335,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO actions keep portfolio WIP under control? (Select exactly 2 answers)",
+    "options": [
+      "Limit the number of epics in implementation using explicit policies",
+      "Approve new epics whenever stakeholders request them",
+      "Review aging items and retire those with no movement",
+      "Ignore economic sequencing and focus on political priorities"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Explicit WIP limits plus regular review of stagnant work keep the portfolio focused on the most valuable initiatives.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 336,
+    "question": "How do portfolio flow metrics support continuous improvement?",
+    "options": [
+      "They expose bottlenecks such as long analysis times, enabling targeted experiments to improve throughput",
+      "They guarantee on-time delivery of every epic",
+      "They replace qualitative feedback from stakeholders",
+      "They allow leaders to skip Inspect and Adapt"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Flow metrics highlight systemic delays, guiding improvement actions at the portfolio level.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 337,
+    "question": "Why are enabler epics important within Lean Portfolio Management?",
+    "options": [
+      "They fund cross-cutting architecture or infrastructure work required for future business epics",
+      "They only document technical debt that will never be funded",
+      "They are used to track training activities",
+      "They should be avoided because they produce no customer value"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Enabler epics provide the architectural runway and capabilities needed to support upcoming business value.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 338,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE data sources inform portfolio OKR reviews? (Select exactly 3 answers)",
+    "options": [
+      "Epic progress metrics and customer outcome data",
+      "Subjective opinions without supporting evidence",
+      "Value stream KPIs tied to the objectives",
+      "Learning from experiments and MVPs",
+      "Unrelated operational metrics from other portfolios",
+      "Rumors about competitor roadmaps"
+    ],
+    "correctAnswers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Objective OKR reviews rely on epic metrics, value stream KPIs, and experiment learnings, not unsupported opinions or unrelated data.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 339,
+    "question": "How do Lean Portfolio Leaders encourage innovation while maintaining fiscal responsibility?",
+    "options": [
+      "Dedicate a portion of the budget to exploratory work and require lightweight evidence of learning before scaling",
+      "Prohibit any spending on experiments until after annual reviews",
+      "Allow teams to use funds without transparency",
+      "Focus only on short-term ROI calculations"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Allocating innovation budgets with lightweight learning requirements balances exploration with accountability.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 340,
+    "question": "Why is transparency a core principle of Lean Portfolio Management?",
+    "options": [
+      "Visible strategies, investments, and metrics build trust and allow faster, evidence-based decisions",
+      "Transparency lets leaders bypass guardrails",
+      "It guarantees that no changes will occur mid-year",
+      "It replaces the need for governance forums"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Transparency underpins trust and rapid decision-making by giving stakeholders a shared view of strategy and results.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 341,
+    "question": "How do Lean-Agile leaders ensure teams understand the economic impact of their work?",
+    "options": [
+      "Translate strategy into customer-oriented objectives and discuss cost-of-delay during planning",
+      "Share financial data only with managers to avoid distraction",
+      "Assign monetary targets to individual developers",
+      "Focus solely on schedule adherence during reviews"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leaders connect strategy to economic context by sharing objectives and cost-of-delay so teams can make better trade-offs.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 342,
+    "question": "What is the most effective way to model SAFe Core Values for a new ART?",
+    "options": [
+      "Consistently demonstrate alignment, built-in quality, transparency, and execution focus in daily decisions",
+      "Create posters listing the values without changing behavior",
+      "Delegate value communication entirely to Scrum Masters",
+      "Mandate adherence through compliance audits"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leaders model core values through everyday choices, reinforcing them more effectively than slogans or mandates.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 343,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices help leaders build decision-making confidence in teams? (Select exactly 2 answers)",
+    "options": [
+      "Clarify decision domains and escalation paths",
+      "Provide real-time coaching when teams face trade-offs",
+      "Require executive approval for all backlog changes",
+      "Keep economic data confidential"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Clear decision boundaries plus supportive coaching give teams confidence to act without constant escalation.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 344,
+    "question": "Why should leaders simplify metrics dashboards for broad audiences?",
+    "options": [
+      "Concise visuals make trends understandable and actionable for everyone",
+      "Detailed spreadsheets prove teams are working hard",
+      "Complex dashboards discourage unwanted questions",
+      "Minimal transparency keeps stakeholders focused"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Simple, meaningful dashboards promote shared understanding and faster decision-making across roles.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 345,
+    "question": "How can leaders avoid creating learned helplessness in teams?",
+    "options": [
+      "Ask powerful questions and support experiments instead of prescribing solutions",
+      "Solve every impediment personally before teams attempt it",
+      "Review status daily to ensure compliance",
+      "Reward escalation over local problem solving"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leaders encourage ownership by coaching teams to solve problems themselves rather than providing answers immediately.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 346,
+    "question": "What is an effective way to embed continuous learning into leadership routines?",
+    "options": [
+      "Schedule regular retrospectives for the leadership team and act on identified improvements",
+      "Rely on informal hallway conversations for feedback",
+      "Wait for annual engagement surveys to surface learnings",
+      "Limit learning discussions to formal training events"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leaders that retrospect regularly and follow through on actions demonstrate commitment to continuous learning.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 347,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE behaviors illustrate authentic servant leadership? (Select exactly 3 answers)",
+    "options": [
+      "Listening deeply before responding",
+      "Sharing credit publicly while owning mistakes",
+      "Focusing on developing others",
+      "Concentrating authority at the top",
+      "Treating transparency as optional",
+      "Making decisions without input to save time"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Servant leaders listen, give credit, and grow others rather than hoarding authority or withholding information.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 348,
+    "question": "Why should leaders ensure psychological safety before launching bold experiments?",
+    "options": [
+      "People are more willing to surface risks and learn when they trust there will be no blame for honest mistakes",
+      "It guarantees experiments will succeed",
+      "It allows leaders to avoid communicating expectations",
+      "It eliminates the need for metrics"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Psychological safety encourages candid feedback and risk-taking necessary for innovation.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 349,
+    "question": "What leadership action accelerates adoption of decentralized decision-making?",
+    "options": [
+      "Celebrate examples where teams made timely local decisions aligned with guardrails",
+      "Ask teams to escalate all decisions for review",
+      "Delay feedback until quarterly business reviews",
+      "Tie bonuses exclusively to following instructions"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reinforcing positive examples shows that decentralized decisions are valued when they respect guardrails.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 350,
+    "question": "How can leaders make cultural values tangible for distributed teams?",
+    "options": [
+      "Share stories highlighting desired behaviors and recognize teams living the values",
+      "Rely solely on corporate handbooks",
+      "Limit culture discussions to annual all-hands",
+      "Assume values are understood without reinforcement"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Real stories and recognition translate abstract values into observable behaviors across locations.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 351,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO signals show that leadership empowerment boundaries need refinement? (Select exactly 2 answers)",
+    "options": [
+      "Teams frequently ask for clarification on who owns a decision",
+      "Escalations are rare and always justified",
+      "Decisions stall because multiple leaders assume others are responsible",
+      "Guardrails are reviewed and updated every PI"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Frequent confusion or stalled decisions indicate boundaries are unclear and should be revisited.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 352,
+    "question": "Why should leaders participate in Inspect and Adapt problem-solving workshops?",
+    "options": [
+      "They can address systemic impediments beyond team control and demonstrate commitment to improvement",
+      "They replace team retrospectives",
+      "Their presence ensures compliance audits are easier",
+      "They can approve budget requests in real time"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leader participation shows support and enables resolution of issues requiring organizational action.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 353,
+    "question": "How do leaders sustain transformation energy during plateaus?",
+    "options": [
+      "Revisit the vision, highlight incremental wins, and invest in the next capability uplift",
+      "Pause communication until major milestones return",
+      "Declare victory and stop improvement work",
+      "Focus solely on cost cutting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reconnecting to purpose and celebrating progress keeps teams motivated through plateaus.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 354,
+    "question": "What is an effective technique for leaders to understand frontline realities in remote settings?",
+    "options": [
+      "Host virtual ride-alongs or shadowing sessions with distributed teams",
+      "Rely solely on hierarchical reports",
+      "Ask for quarterly PowerPoint summaries",
+      "Visit only headquarters sites"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Remote ride-alongs provide direct exposure to challenges and customer feedback even when travel is limited.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 355,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE actions help leaders develop future Lean-Agile champions? (Select exactly 3 answers)",
+    "options": [
+      "Provide stretch assignments with coaching",
+      "Pair emerging leaders with experienced mentors",
+      "Normalize feedback and reflection within leadership circles",
+      "Limit development opportunities to senior titles",
+      "Keep decision-making opaque",
+      "Reward individual heroics over collaboration"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Stretch work, mentorship, and feedback loops build the next wave of Lean-Agile leaders.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 356,
+    "question": "Why should leaders treat transformation metrics as learning tools rather than scorecards?",
+    "options": [
+      "Learning-oriented metrics encourage experimentation and adjustment instead of fear-driven reporting",
+      "Scorecards eliminate the need for conversation",
+      "Learning metrics replace business KPIs",
+      "Scorecards guarantee compliance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Metrics framed for learning drive curiosity and improvement rather than punitive behavior.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 357,
+    "question": "How can leaders align geographically dispersed ARTs without increasing bureaucracy?",
+    "options": [
+      "Use synchronized virtual events with clear agendas and digital collaboration workspaces",
+      "Require extensive written approvals for every decision",
+      "Limit communication to email newsletters",
+      "Assign a central coordinator to distribute tasks"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Purposeful virtual events and shared tools create alignment without heavy process overhead.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 358,
+    "question": "What leadership approach maintains urgency without burnout?",
+    "options": [
+      "Set ambitious yet realistic goals, protect sustainable pace, and celebrate learning over perfection",
+      "Constantly increase scope to push teams harder",
+      "Avoid discussing goals to reduce stress",
+      "Tie recognition only to working overtime"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Balancing challenge with sustainable pace keeps urgency constructive instead of exhausting.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 359,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO techniques help leaders detect culture drift early? (Select exactly 2 answers)",
+    "options": [
+      "Run frequent pulse surveys and listening sessions",
+      "Wait for annual engagement results",
+      "Monitor leading indicators such as experiment volume or cross-team collaboration",
+      "Rely solely on formal HR reports"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Pulse data and leading indicators surface cultural shifts sooner than infrequent or indirect reports.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 360,
+    "question": "Why should leaders emphasize purpose over process when coaching teams?",
+    "options": [
+      "Understanding the 'why' enables teams to adapt practices intelligently when context changes",
+      "Process focus guarantees faster delivery",
+      "Purpose conversations replace the need for training",
+      "It absolves teams from following guardrails"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Purpose-driven coaching helps teams apply principles appropriately rather than blindly following steps.",
+    "domain": "Lean-Agile Leadership",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 361,
+    "question": "What is the main benefit of maintaining a working agreement within Agile teams?",
+    "options": [
+      "It sets shared expectations for collaboration, communication, and quality",
+      "It replaces the Definition of Done",
+      "It documents management policies for audits",
+      "It defines the release roadmap"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Working agreements clarify how the team collaborates, reducing friction and misalignment.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 362,
+    "question": "How does mob programming support knowledge sharing?",
+    "options": [
+      "All team members collaborate on the same problem, spreading context and improving quality in real time",
+      "It allows managers to monitor every keystroke",
+      "It eliminates the need for code reviews",
+      "It is primarily a training exercise for interns"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mob programming exposes everyone to the same code and reasoning, accelerating learning and quality.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 363,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices help maintain reliable CI pipelines? (Select exactly 2 answers)",
+    "options": [
+      "Fail builds fast when quality gates trip",
+      "Allow flaky tests to continue to keep pipelines green",
+      "Version infrastructure and pipeline definitions",
+      "Run CI only before big releases"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Rapid failure plus versioned pipelines keep CI trustworthy; ignoring flaky tests or infrequent runs erodes confidence.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 364,
+    "question": "Why should teams visualize blocked work separately from active WIP?",
+    "options": [
+      "It highlights systemic impediments quickly and prompts swarming to unblock",
+      "It keeps metrics artificially high",
+      "It allows blocked items to be ignored longer",
+      "It ensures Product Owners reprioritize every day"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Visible blocked columns surface issues fast so teams can act before delays cascade.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 365,
+    "question": "How does contract testing support microservice integration?",
+    "options": [
+      "Services publish consumer-driven expectations, enabling independent releases without breaking dependencies",
+      "It replaces end-to-end verification entirely",
+      "It ensures all services use identical schemas",
+      "It eliminates the need for monitoring"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Contract tests ensure service interactions remain compatible, reducing integration risk in distributed systems.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 366,
+    "question": "What is the advantage of story splitting by workflow step?",
+    "options": [
+      "It delivers vertical slices of value that keep features demonstrable",
+      "It maximizes story point totals",
+      "It delays testing until the final step",
+      "It ensures each iteration focuses on a single component"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Splitting by steps in the user journey keeps increments usable and testable each iteration.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 367,
+    "question": "Why is pairing developers with testers during backlog refinement valuable?",
+    "options": [
+      "It surfaces acceptance criteria and quality risks early, reducing rework",
+      "It allows testers to write code for developers",
+      "It eliminates the need for automated tests",
+      "It ensures testers own prioritization"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Joint refinement builds shared understanding of quality expectations before implementation.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 368,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE practices improve flow-based metrics accuracy? (Select exactly 3 answers)",
+    "options": [
+      "Track cycle time from commitment to done",
+      "Exclude blocked states from measurement",
+      "Define clear start/finish policies",
+      "Categorize items (feature, defect, debt) for context",
+      "Ignore work types to keep charts simple",
+      "Update metrics only at PI boundaries"
+    ],
+    "correctAnswers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Meaningful flow metrics require clear policies, type tagging, and full-cycle timing including wait states.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 369,
+    "question": "How does test data management influence continuous testing success?",
+    "options": [
+      "Stable, production-like datasets enable repeatable automated tests without brittle setup",
+      "It removes the need for synthetic data",
+      "It ensures all environments share a single database",
+      "It allows testers to skip security reviews"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reliable test data prevents flaky results and supports fast automation across environments.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 370,
+    "question": "What is the benefit of integrating accessibility testing into the Definition of Done?",
+    "options": [
+      "Quality is built in every iteration, preventing expensive retrofits and improving inclusivity",
+      "It replaces usability testing",
+      "It ensures compliance even without user feedback",
+      "It reduces the need for functional testing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Including accessibility in DoD ensures inclusive experiences are delivered continuously, not as afterthoughts.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 371,
+    "question": "Why should teams capture architecture decisions in lightweight records?",
+    "options": [
+      "ADR-style notes document context and reasoning for future teams without heavy documentation overhead",
+      "It satisfies detailed contract obligations",
+      "It prevents any architecture changes",
+      "It replaces automated testing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lightweight decision records preserve rationale, aiding future maintenance while staying agile.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 372,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO cues suggest feature toggles need cleanup? (Select exactly 2 answers)",
+    "options": [
+      "Toggles remain active long after release with no plan",
+      "Toggle inventory is reviewed each PI",
+      "Code paths multiply and slow testing",
+      "All toggles are documented with owners"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Stale toggles and proliferating code paths add risk; regular reviews and ownership prevent toggle debt.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 373,
+    "question": "How can teams incorporate chaos engineering safely?",
+    "options": [
+      "Run controlled experiments in lower environments first, define blast radius, and monitor closely",
+      "Introduce failures randomly in production without notice",
+      "Avoid documenting experiment hypotheses",
+      "Limit chaos testing to annual events"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Structured chaos experiments validate resilience while minimizing customer impact.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 374,
+    "question": "Why is backlog item aging an important metric?",
+    "options": [
+      "It identifies work that is stuck or at risk of expiring assumptions",
+      "It measures developer productivity",
+      "It determines PI length",
+      "It replaces velocity tracking"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Aging reveals stagnation so teams can swarm items before they lose relevance.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 375,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE practices improve remote pair programming effectiveness? (Select exactly 3 answers)",
+    "options": [
+      "Use low-latency screen sharing and shared IDE plugins",
+      "Rotate driver and navigator frequently",
+      "Agree on collaboration etiquette and break cadence",
+      "Disable cameras and audio to reduce bandwidth",
+      "Avoid retrospective discussions",
+      "Let one person code while the other multitasks"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Remote pairing thrives with good tooling, frequent role swaps, and shared etiquette rather than disengagement.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 376,
+    "question": "What is the goal of using canary releases?",
+    "options": [
+      "Expose new functionality to a small audience to validate behavior before full rollout",
+      "Deploy all features simultaneously to maximize impact",
+      "Replace automated regression testing",
+      "Avoid creating feature toggles"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Canaries limit blast radius and provide early feedback from real traffic.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 377,
+    "question": "Why should teams include security acceptance criteria in user stories?",
+    "options": [
+      "It ensures security requirements are validated alongside functionality",
+      "It moves security reviews to the end",
+      "It allows security teams to skip involvement",
+      "It replaces penetration testing entirely"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Security criteria integrated into stories drive built-in security, reducing late surprises.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 378,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO techniques help teams manage shared components effectively? (Select exactly 2 answers)",
+    "options": [
+      "Establish component guardians who coach rather than control",
+      "Schedule regular integration demos for component consumers",
+      "Keep component work invisible until release",
+      "Allow unreviewed changes to shared libraries"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Component guardianship and shared demos create visibility; hidden changes or lack of review cause defects.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 379,
+    "question": "How do telemetry-driven retrospectives enhance improvement?",
+    "options": [
+      "They bring objective flow and quality data into the conversation, focusing experiments on measurable outcomes",
+      "They eliminate the need for qualitative feedback",
+      "They ensure retrospectives become status meetings",
+      "They replace Inspect and Adapt workshops"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Data-informed retrospectives help teams target experiments that can be validated quantitatively.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 380,
+    "question": "Why should teams document service level objectives (SLOs)?",
+    "options": [
+      "SLOs define reliability targets that guide operational decisions and error budget policies",
+      "They guarantee zero downtime",
+      "They replace incident response plans",
+      "They eliminate the need for monitoring"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SLOs clarify acceptable reliability levels and inform how teams manage risk versus innovation.",
+    "domain": "Team and Technical Agility",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 381,
+    "question": "What is the benefit of framing features with problem statements instead of solution descriptions?",
+    "options": [
+      "It keeps the team focused on the outcome while exploring multiple implementation options",
+      "It eliminates the need for acceptance criteria",
+      "It ensures stakeholders cannot influence design",
+      "It speeds up coding by skipping discovery"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Problem statements emphasize the customer outcome, enabling creativity in how the team solves it.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 382,
+    "question": "Why should Product Owners maintain hypotheses for enabler work?",
+    "options": [
+      "It clarifies the expected benefit of technical investment and how success will be measured",
+      "It replaces architecture documentation",
+      "It guarantees stakeholder approval",
+      "It allows enablers to bypass prioritization"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hypotheses keep enablers value-focused, articulating why the investment matters.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 383,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices keep product discovery continuous? (Select exactly 2 answers)",
+    "options": [
+      "Schedule recurring customer interviews even during heavy delivery",
+      "Cluster insights in opportunity solution trees",
+      "Wait until backlog runs out to conduct research",
+      "Rely solely on support tickets"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Ongoing discovery through interviews and structured mapping prevents discovery from becoming a one-time event.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 384,
+    "question": "How do value stream KPIs influence feature prioritization?",
+    "options": [
+      "They indicate which outcomes lag behind targets, guiding backlog focus",
+      "They guarantee approval for any work tied to a KPI",
+      "They eliminate the need for WSJF",
+      "They replace qualitative feedback"
+    ],
+    "correctAnswer": 0,
+    "explanation": "KPIs highlight outcome gaps so teams prioritize the features most likely to move those metrics.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 385,
+    "question": "Why is it valuable to record customer quotes in backlog items?",
+    "options": [
+      "Direct quotes preserve context and empathy, aligning the team on the customer's voice",
+      "They replace technical requirements",
+      "They ensure legal compliance",
+      "They guarantee executive sponsorship"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Customer quotes keep the team's focus on real needs and provide evidence for prioritization.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 386,
+    "question": "What is the purpose of defining leading indicator metrics for features?",
+    "options": [
+      "They provide early signals of value realization before lagging outcomes move",
+      "They replace success criteria",
+      "They guarantee successful launches",
+      "They allow teams to skip release reviews"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leading indicators help teams decide quickly whether to persevere, pivot, or stop work.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 387,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE techniques make system demos resonate with business stakeholders? (Select exactly 3 answers)",
+    "options": [
+      "Tell a user-centric story spanning multiple teams",
+      "Show data on expected KPI impact",
+      "Use real or representative data sets",
+      "Dive into every code change for completeness",
+      "Avoid Q&A to stay on schedule",
+      "Limit attendance to the delivery team"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "User narratives, KPI context, and realistic data keep demos meaningful; excessive technical detail or closed Q&A reduces value.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 388,
+    "question": "Why should Product Management align release themes with persona goals?",
+    "options": [
+      "Persona alignment ensures each release tells a coherent story about who benefits and how",
+      "It reduces the need for portfolio governance",
+      "It guarantees equal investment across all personas",
+      "It replaces feature roadmaps"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Connecting releases to persona outcomes helps stakeholders see relevance and prioritizes real user value.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 389,
+    "question": "How does progressive validation reduce rework?",
+    "options": [
+      "Testing assumptions incrementally with prototypes or MVPs prevents large failures later",
+      "It guarantees the final product will not change",
+      "It eliminates the need for integration",
+      "It replaces analytics instrumentation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Continuous validation catches misaligned ideas early, avoiding costly rebuilds.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 390,
+    "question": "What is the benefit of capturing assumption logs during discovery?",
+    "options": [
+      "They make learning explicit and help teams prioritize which unknowns to test first",
+      "They serve as legal contracts",
+      "They replace design artifacts",
+      "They guarantee stakeholder buy-in"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Documented assumptions guide experimentation roadmaps and encourage evidence-based decisions.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 391,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices keep product increments releasable on demand? (Select exactly 2 answers)",
+    "options": [
+      "Automate deployment and rollback procedures",
+      "Bundle multiple PI increments before releasing",
+      "Monitor release health with real-time dashboards",
+      "Avoid business involvement until after deployment"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Automation and monitoring enable controlled, observable releases instead of large bundles with limited visibility.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 392,
+    "question": "Why should Product Managers include opportunity sizing in epic briefs?",
+    "options": [
+      "Sizing clarifies potential value and sets expectations for investment trade-offs",
+      "It guarantees funding approval",
+      "It replaces business cases",
+      "It eliminates the need for user research"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Understanding opportunity magnitude informs prioritization and appropriate investment levels.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 393,
+    "question": "How do service blueprints support complex experience design?",
+    "options": [
+      "They map customer actions to backstage processes, revealing dependencies and improvement opportunities",
+      "They define financial projections",
+      "They are only useful for physical services",
+      "They replace user stories"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Service blueprints expose frontstage/backstage touchpoints, enabling coordinated enhancements.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 394,
+    "question": "What is the purpose of maintaining a dual-track discovery and delivery cadence?",
+    "options": [
+      "Discovery continuously feeds validated ideas into delivery while delivery informs new hypotheses",
+      "It doubles documentation requirements",
+      "It ensures one team focuses only on discovery forever",
+      "It replaces PI Planning"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dual tracks keep discovery learning and delivery execution in sync, reducing gaps between insight and implementation.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 395,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE actions increase effectiveness of persona usage? (Select exactly 3 answers)",
+    "options": [
+      "Base personas on research and data",
+      "Reference personas in acceptance criteria and demos",
+      "Update personas when markets change",
+      "Limit persona access to Product Management",
+      "Use fictional names without insights",
+      "Keep personas static once created"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Research-backed, actively referenced, and updated personas keep teams aligned with real users.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 396,
+    "question": "Why align benefits hypothesis with measurable KPIs?",
+    "options": [
+      "It ensures success criteria are objective and traceable to business goals",
+      "It guarantees the solution chosen is correct",
+      "It removes the need for Inspect and Adapt",
+      "It prevents scope changes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linking hypotheses to KPIs clarifies what success looks like and how it will be evaluated.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 397,
+    "question": "How does behavioral analytics complement qualitative research?",
+    "options": [
+      "It reveals actual usage patterns that confirm or challenge interview insights",
+      "It replaces the need for user conversations",
+      "It focuses solely on system performance",
+      "It guarantees causation, not correlation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Observed behavior validates or refines qualitative findings, leading to better decisions.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 398,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO elements make a Minimum Viable Product effective? (Select exactly 2 answers)",
+    "options": [
+      "Focused scope tied to a single hypothesis",
+      "A comprehensive feature set resembling the final product",
+      "Instrumentation to capture learning",
+      "Large-scale marketing spend from day one"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "An MVP concentrates on testing one hypothesis with proper instrumentation rather than building the full solution or heavy marketing.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 399,
+    "question": "Why should release notes highlight customer outcomes rather than technical details alone?",
+    "options": [
+      "Outcome-focused notes explain why changes matter, improving adoption and stakeholder trust",
+      "Technical details satisfy legal requirements",
+      "It shortens documentation time",
+      "It ensures engineers own communication"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linking releases to customer value increases engagement and clarity for non-technical audiences.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 400,
+    "question": "How can teams prevent roadmap commitments from becoming rigid contracts?",
+    "options": [
+      "Express roadmaps as themes and intent, communicate assumptions, and revisit quarterly",
+      "Publish fixed feature lists two years out",
+      "Avoid discussing uncertainty",
+      "Tie roadmaps directly to individual bonuses"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Flexible, assumption-driven roadmaps set direction while allowing adaptation as learning occurs.",
+    "domain": "Agile Product Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 401,
+    "question": "Why is architectural runway forecasting more complex at the solution level?",
+    "options": [
+      "Multiple ARTs consume shared runway, requiring coordination of capacity and timing",
+      "Only single-team enablers use runway",
+      "Runway forecasting is done once per year",
+      "Solution-level runway ignores compliance needs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Coordinating runway across ARTs demands visibility into shared enablers, timing, and dependencies.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 402,
+    "question": "How does solution intent support regulated industries?",
+    "options": [
+      "It documents what will be built and how, preserving traceability for compliance while enabling change",
+      "It eliminates the need for audits",
+      "It locks requirements permanently",
+      "It replaces Definition of Done"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Solution intent maintains evolving requirements and design constraints required for regulatory evidence.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 403,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO roles own solution economic prioritization? (Select exactly 2 answers)",
+    "options": [
+      "Solution Management",
+      "Solution Train Engineer",
+      "Scrum Master",
+      "Enterprise architect"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Solution Management drives economic choices with facilitation from the STE; team-level roles execute the plan.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 404,
+    "question": "What is the purpose of solution-level WSJF?",
+    "options": [
+      "Sequence capabilities by cost of delay and duration across ARTs",
+      "Assign story points to team backlogs",
+      "Eliminate the need for portfolio input",
+      "Replace participatory budgeting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Applying WSJF at the solution level helps coordinate ART priorities economically.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 405,
+    "question": "How do solution-level dependency boards differ from program boards?",
+    "options": [
+      "They visualize cross-ART capability dependencies and milestones, not just team-level features",
+      "They track daily tasks for developers",
+      "They replace program boards entirely",
+      "They focus solely on budget approvals"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Solution dependency boards provide an aggregate view of capability sequencing across ARTs.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 406,
+    "question": "Why should Solution Architects collaborate with System Teams early?",
+    "options": [
+      "System Teams enable tooling, environments, and integration practices needed to realize architectural guidance",
+      "System Teams only focus on testing",
+      "Architects should remain independent to avoid bias",
+      "System Teams handle only documentation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Close collaboration ensures architectural intent is supported by infrastructure and automation from the start.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 407,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE practices help coordinate compliance across ARTs? (Select exactly 3 answers)",
+    "options": [
+      "Embed compliance steps into Definition of Done",
+      "Maintain traceability within solution intent",
+      "Run regular compliance syncs with stakeholders",
+      "Perform compliance only once before release",
+      "Isolate compliance to a single ART",
+      "Document evidence after go-live"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Built-in compliance, traceability, and frequent syncs keep large solutions audit-ready without last-minute rushes.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 408,
+    "question": "What value do solution spikes provide beyond team-level spikes?",
+    "options": [
+      "They explore architectural or compliance uncertainties impacting multiple ARTs",
+      "They replace PI Planning",
+      "They deliver completed customer features",
+      "They are optional documentation exercises"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Solution spikes tackle cross-ART uncertainties that need coordinated exploration before commitment.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 409,
+    "question": "How does solution train analytics support continuous improvement?",
+    "options": [
+      "Aggregated flow, quality, and predictability data reveal systemic constraints across ARTs",
+      "It replaces Inspect and Adapt workshops",
+      "It tracks individual performance",
+      "It eliminates the need for qualitative feedback"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Analytics provide evidence for improvement themes that span ART boundaries.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 410,
+    "question": "Why are multi-ART release trains useful for large hardware-software systems?",
+    "options": [
+      "They synchronize integrated solution increments so hardware, firmware, and software evolve together",
+      "They replace Lean Portfolio Management",
+      "They allow hardware to ship without testing",
+      "They remove the need for configuration management"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Coordinated release trains ensure cross-domain components remain aligned for complex systems.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 411,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO indicators show solution demos are effective? (Select exactly 2 answers)",
+    "options": [
+      "Stakeholders see integrated value and provide actionable feedback",
+      "ARTs present isolated team metrics only",
+      "Cross-domain risks are discussed and captured",
+      "Demo content rarely changes between PIs"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Effective solution demos showcase integrated value and drive discussions on risks and feedback.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 412,
+    "question": "How does solution configuration management protect large deployments?",
+    "options": [
+      "It tracks versions of hardware, software, and data artifacts to ensure compatible releases",
+      "It focuses only on team-level branches",
+      "It delays deployment to the end of the year",
+      "It eliminates automated testing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Managing versions across components avoids mismatches that could jeopardize integrated deployments.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 413,
+    "question": "What is the role of the Solution Train when ARTs use different cadences?",
+    "options": [
+      "Provide synchronization points and integration events that align cadences around shared objectives",
+      "Force every ART onto identical iterations immediately",
+      "Eliminate ART autonomy",
+      "Focus solely on budgeting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Solution Trains create cadence alignment mechanisms so ARTs with different rhythms still integrate predictably.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 414,
+    "question": "Why should solution-level OKRs cascade to ART objectives?",
+    "options": [
+      "Cascading OKRs ensures each ART understands how their work contributes to the broader solution outcomes",
+      "It replaces PI Objectives",
+      "It guarantees identical objectives per ART",
+      "It removes autonomy from Product Management"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Aligned OKRs connect ART commitments to solution success, improving coherence and measurement.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 415,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE elements belong in a solution roadmap? (Select exactly 3 answers)",
+    "options": [
+      "Major solution capabilities or milestones",
+      "Assumptions and risks for upcoming increments",
+      "High-level timing of releases",
+      "Detailed team tasks",
+      "Individual iteration plans",
+      "Daily stand-up notes"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Solution roadmaps highlight capability sequencing, timing, and assumptions rather than granular team tasks.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 416,
+    "question": "How do solution train sync meetings differ from ART syncs?",
+    "options": [
+      "They include representatives from multiple ARTs to discuss solution-level progress, risks, and dependencies",
+      "They review only team-level impediments",
+      "They replace Scrum of Scrums",
+      "They focus on financial reporting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Solution syncs provide cross-ART visibility beyond what ART-only forums cover.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 417,
+    "question": "Why is shared telemetry essential for solution trains?",
+    "options": [
+      "Common dashboards reveal integrated solution health, enabling swift response to systemic issues",
+      "Each ART should manage telemetry separately to avoid noise",
+      "Telemetry replaces user feedback",
+      "Telemetry guarantees zero defects"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Shared telemetry provides unified visibility of production health across the solution.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 418,
+    "question": "How do solution-level enabler epics differ from portfolio enabler epics?",
+    "options": [
+      "Solution enablers support specific large solutions and their ARTs, whereas portfolio enablers span multiple solutions or value streams",
+      "Solution enablers are optional",
+      "Portfolio enablers are smaller",
+      "Solution enablers replace features"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Scope distinguishes them: solution enablers focus on a single large solution; portfolio enablers serve broader needs.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 419,
+    "question": "What role do customer proxies play in enterprise solution delivery?",
+    "options": [
+      "They represent complex stakeholder groups during planning and demos when direct access is limited",
+      "They approve budgets",
+      "They define architectural runway",
+      "They manage individual team backlogs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Customer proxies ensure solution trains receive timely feedback from domains that may be hard to reach frequently.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 420,
+    "question": "Why should solution trains coordinate release readiness reviews?",
+    "options": [
+      "Integrated readiness checks verify that all ARTs meet quality, compliance, and deployment criteria before launch",
+      "They replace team-level acceptance",
+      "They delay deployment deliberately",
+      "They focus only on financial metrics"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Coordinated readiness ensures the end-to-end solution meets standards before reaching customers.",
+    "domain": "Enterprise Solution Delivery",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 421,
+    "question": "How do Lean Portfolio Leaders balance strategic bets with run-the-business work?",
+    "options": [
+      "Use capacity allocation guardrails and review them quarterly against outcomes",
+      "Shift all funding to innovation",
+      "Fund only maintenance because it is predictable",
+      "Let each value stream decide without guidance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Guardrails allocate investment mix so leaders can consciously balance innovation and operational work.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 422,
+    "question": "Why should epics include leading metrics before funding approval?",
+    "options": [
+      "They define how learning will be measured, enabling early pivot decisions if value is not emerging",
+      "They guarantee success",
+      "They satisfy audit requirements only",
+      "They replace business cases"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leading metrics clarify evidence needed to continue funding and support outcome accountability.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 423,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices improve portfolio transparency? (Select exactly 2 answers)",
+    "options": [
+      "Publish a living portfolio Kanban with policies",
+      "Provide regular OKR and financial updates to stakeholders",
+      "Limit visibility to senior executives",
+      "Delay reporting until year-end"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Open Kanban boards and frequent updates build trust and ensure alignment.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 424,
+    "question": "What is the main advantage of hypothesis-driven epics?",
+    "options": [
+      "They encourage experimentation and incremental funding based on validated learning",
+      "They replace WSJF",
+      "They guarantee on-time delivery",
+      "They focus solely on cost savings"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hypothesis-driven epics tie funding to learning milestones, reducing risk.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 425,
+    "question": "How does participatory budgeting foster alignment?",
+    "options": [
+      "Cross-functional stakeholders debate options together, ensuring shared understanding of trade-offs",
+      "It assigns budgets secretly",
+      "It removes financial accountability",
+      "It replaces guardrails"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Collaborative budgeting creates buy-in and transparency around funding decisions.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 426,
+    "question": "Why should Lean Portfolio Leaders track epic aging?",
+    "options": [
+      "Old epics may consume capacity without delivering value, signaling a need to pivot or stop",
+      "Aging guarantees success",
+      "It replaces metrics dashboards",
+      "It determines salary adjustments"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Monitoring age highlights stalled initiatives that may need intervention.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 427,
+    "question": "How does the LPM function ensure governance remains lightweight?",
+    "options": [
+      "Focus on outcomes, flow, and guardrails instead of heavy stage gates",
+      "Increase documentation requirements",
+      "Require executive approval for every story",
+      "Hold monthly detailed status reviews"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lean governance uses guardrails and metrics rather than process-heavy checkpoints.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 428,
+    "question": "Why is coordinating portfolio and enterprise strategy essential?",
+    "options": [
+      "It ensures value streams pursue initiatives that advance top-level goals rather than local optimizations",
+      "It eliminates autonomy for ARTs",
+      "It guarantees funding for every request",
+      "It replaces OKRs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Alignment prevents drift and ensures investments contribute to enterprise outcomes.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 429,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE inputs support effective WSJF scoring at the portfolio level? (Select exactly 3 answers)",
+    "options": [
+      "User-business value",
+      "Time criticality",
+      "Risk reduction and opportunity enablement",
+      "Team availability",
+      "Historical velocity",
+      "Developer preferences"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Portfolio WSJF uses the same economic factors as program level, ensuring consistent prioritization.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 430,
+    "question": "How can LPM ensure value stream budgets remain responsive?",
+    "options": [
+      "Review performance and strategic fit quarterly, reallocating as needed",
+      "Lock budgets for three years",
+      "Base budgets solely on historical spend",
+      "Avoid discussing budget adjustments with stakeholders"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Frequent reviews keep funding aligned with changing conditions and results.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 431,
+    "question": "Why should epics include exit criteria for the analysis state?",
+    "options": [
+      "Clear criteria determine when enough evidence exists to proceed or stop",
+      "It replaces guardrails",
+      "It guarantees approval",
+      "It eliminates experimentation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Defined exit criteria prevent indefinite analysis and drive timely decisions.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 432,
+    "question": "What is the role of the Agile Program Management Office (APMO) within LPM?",
+    "options": [
+      "Facilitate portfolio operations, metrics, and improvement initiatives",
+      "Own all feature prioritization",
+      "Control individual team staffing",
+      "Replace Scrum Masters"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The APMO supports LPM by coordinating operations and continuous improvement.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 433,
+    "question": "How does LPM evaluate innovation investments beyond ROI?",
+    "options": [
+      "Consider strategic options, learning, and market positioning alongside financial return",
+      "Ignore financial outcomes",
+      "Use only qualitative stories",
+      "Assume innovation always succeeds"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Innovation value includes learning and strategic positioning, not just near-term ROI.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 434,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO mechanisms keep portfolio flow limits effective? (Select exactly 2 answers)",
+    "options": [
+      "Visualize WIP by state and enforce explicit limits",
+      "Allow unlimited epics in process",
+      "Review breaches during portfolio syncs",
+      "Ignore blocked items"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ],
+    "explanation": "Visible WIP with regular reviews maintains discipline and reveals systemic overload.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 435,
+    "question": "Why are portfolio retrospectives important even when results look positive?",
+    "options": [
+      "They uncover hidden risks and reinforce behaviors that led to success",
+      "They replace Inspect and Adapt",
+      "They satisfy compliance only",
+      "They justify reducing transparency"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Retrospectives help sustain gains and identify early warning signs, not just fix problems.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 436,
+    "question": "How can OKRs and portfolio Kanban work together?",
+    "options": [
+      "OKRs define outcomes while Kanban tracks the flow of epics achieving them",
+      "Kanban replaces OKRs",
+      "OKRs remove the need for Kanban policies",
+      "They serve identical purposes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "OKRs set targets; Kanban visualizes progress toward those targets.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 437,
+    "question": "Why should portfolio reporting include qualitative insights along with metrics?",
+    "options": [
+      "Narratives explain context behind numbers, enabling better decisions",
+      "Qualitative input replaces metrics",
+      "Metrics alone ensure alignment",
+      "Qualitative insights slow down governance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Combining data with qualitative context paints a full picture of progress and risks.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 438,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE signals indicate a portfolio needs rebalancing? (Select exactly 3 answers)",
+    "options": [
+      "Persistent over-investment in run work with declining innovation",
+      "Multiple epics exceeding WIP limits",
+      "Strategic themes not reflected in funded initiatives",
+      "Stable flow times and balanced guardrails",
+      "Frequent OKR achievement across value streams",
+      "Regular participatory budgeting sessions"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Imbalanced investment, WIP breaches, and misalignment to strategy signal the need to adjust funding.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 439,
+    "question": "How does the guardrail review process maintain financial discipline?",
+    "options": [
+      "It evaluates whether spending still aligns with strategic intent and adjusts guardrails as evidence emerges",
+      "It approves every purchase order",
+      "It focuses on cost cutting only",
+      "It occurs only at fiscal year end"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Regular guardrail reviews ensure investments stay on track and guardrails remain relevant.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 440,
+    "question": "Why should portfolio leaders publicize learning from epic experiments?",
+    "options": [
+      "Sharing learning accelerates collective knowledge and prevents repeating unproductive approaches",
+      "It guarantees future funding",
+      "It replaces metrics dashboards",
+      "It keeps experimentation private"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Transparent learning promotes evidence-based culture and better investment decisions.",
+    "domain": "Lean Portfolio Management",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 441,
+    "question": "Why should business owners participate in value stream mapping workshops?",
+    "options": [
+      "They expose end-to-end bottlenecks and ensure improvement priorities reflect customer and business outcomes",
+      "They allow business owners to replace Agile Release Train leadership",
+      "They focus solely on accounting controls for the upcoming fiscal year",
+      "They guarantee quarterly bonus eligibility for all leaders"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Active participation keeps improvement work tied to customer results instead of local optimizations.",
+    "domain": "Organizational Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 442,
+    "question": "How do lean business operations teams sustain flow after removing major bottlenecks?",
+    "options": [
+      "By establishing visual flow metrics and adjusting standard work whenever demand shifts",
+      "By freezing processes for a full year to maintain the documented state",
+      "By routing all decisions through a centralized approval board",
+      "By limiting improvement reviews to annual audits"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Visual flow metrics and adaptable standard work keep operations responsive as demand changes.",
+    "domain": "Organizational Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 443,
+    "question": "What should trigger forming an Agile business team around a customer journey?",
+    "options": [
+      "When outcomes require coordinated changes across marketing, operations, and technology",
+      "When a single function wants more headcount",
+      "When systems need a hardware refresh",
+      "When procurement requests a new contract template"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Agile business teams exist to solve end-to-end problems that span traditional silos.",
+    "domain": "Organizational Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 444,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices build agility across shared services teams? (Select exactly 2 answers)",
+    "options": [
+      "Embed specialists in value streams while sustaining communities of practice",
+      "Measure wait times and use flow metrics to prioritize incoming work",
+      "Scale work intake through annual project queues",
+      "Route all improvement ideas through a command-and-control PMO"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Embedding talent and managing flow shorten response times without sacrificing expertise.",
+    "domain": "Organizational Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 445,
+    "question": "Why is decision latency a critical KPI for organizational agility?",
+    "options": [
+      "It shows how fast the enterprise converts information into action across business functions",
+      "It determines interest rates for capital projects",
+      "It replaces revenue forecasting",
+      "It is only relevant to software delivery teams"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Reducing decision latency keeps market opportunities from aging out while teams wait on approvals.",
+    "domain": "Organizational Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 446,
+    "question": "How should policy deployment support lean business operations?",
+    "options": [
+      "Translate strategy into a few measurable targets that teams can iterate toward",
+      "Publish exhaustive manuals that rarely change",
+      "Assign identical targets to every function regardless of context",
+      "Delay communication until the end of the fiscal year"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Strategy needs to become focused targets with feedback loops so teams can act quickly.",
+    "domain": "Organizational Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 447,
+    "question": "What role do enabling teams play in organizational agility?",
+    "options": [
+      "They accelerate adoption of new capabilities by coaching and removing cross-functional impediments",
+      "They own delivery of all operational work",
+      "They enforce compliance checklists for every department",
+      "They replace communities of practice"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Enabling teams coach others and focus on capability uplift, not on owning delivery outcomes.",
+    "domain": "Organizational Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 448,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE elements belong in a lean business case for operational change? (Select exactly 3 answers)",
+    "options": [
+      "Clear customer or employee outcome gap",
+      "Hypothesis with measurable leading indicators",
+      "Detailed staffing plan for every contributor",
+      "Economic sizing such as cost of delay or benefit estimate",
+      "Decade-long budget forecast",
+      "Mandatory steering committee roster"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Lean cases emphasize the problem, learning plan, and economics over exhaustive plans.",
+    "domain": "Organizational Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 449,
+    "question": "How do dynamic capacity allocation cells support agility in operations?",
+    "options": [
+      "They allow teams to shift people or funding among value streams based on current demand data",
+      "They freeze budgets for an entire year",
+      "They centralize every hiring decision in finance",
+      "They remove the need for guardrails"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dynamic allocations keep investment aligned with rapidly changing customer priorities.",
+    "domain": "Organizational Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 450,
+    "question": "When should organizations pivot from functional KPIs to value stream KPIs?",
+    "options": [
+      "When end-to-end outcomes matter more than localized efficiency metrics",
+      "Only after every team migrates to identical tooling",
+      "When finance mandates it for cost accounting",
+      "Whenever a single leader requests new dashboards"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Value stream KPIs prevent sub-optimization by focusing on the entire customer journey.",
+    "domain": "Organizational Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 451,
+    "question": "What is the primary objective of a lean business governance cadence?",
+    "options": [
+      "Inspect outcomes, unblock flow, and adjust investments without micromanaging teams",
+      "Approve every task completed by operational teams",
+      "Consolidate all reporting into annual steering reviews",
+      "Replace inspect-and-adapt events at the ART level"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lightweight governance focuses on value, flow, and investment alignment, not task control.",
+    "domain": "Organizational Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 452,
+    "question": "How do outcome-based partner contracts accelerate agility?",
+    "options": [
+      "They tie payments to measurable results, encouraging experimentation and shared accountability",
+      "They prioritize fixed-scope delivery regardless of learning",
+      "They require rigid change control boards",
+      "They remove the need for supplier collaboration"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Outcome contracts create aligned incentives and room to adjust scope as learning occurs.",
+    "domain": "Organizational Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 453,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO signals show that a shared service can operate as an Agile team? (Select exactly 2 answers)",
+    "options": [
+      "It delivers value increments within the same PI cadence as supported trains",
+      "Its backlog is prioritized through WSJF or similar economic logic",
+      "It measures success solely by utilization",
+      "It accepts work only by annual ticket quotas"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Cadence-based delivery and economic prioritization demonstrate agile ways of working.",
+    "domain": "Organizational Agility",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 454,
+    "question": "Why should enterprises schedule relentless improvement days for business functions?",
+    "options": [
+      "Dedicated time uncovers systemic waste and builds the habit of continuous experimentation",
+      "They provide a break from metrics reviews",
+      "They replace regular team retrospectives",
+      "They focus solely on updating policy documents"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Setting aside improvement time ensures that learning and experimentation do not get crowded out by daily operations.",
+    "domain": "Organizational Agility",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 455,
+    "question": "Why is a single source of truth for cross-functional workflow policies essential?",
+    "options": [
+      "It prevents conflicting guidance and helps teams adapt policies rapidly when conditions change",
+      "It ensures only one leader can approve work",
+      "It eliminates the need for communities of practice",
+      "It guarantees compliance certifications"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Shared, current policies reduce confusion and enable faster coordinated adjustments.",
+    "domain": "Organizational Agility",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 456,
+    "question": "What is the main purpose of a learning backlog?",
+    "options": [
+      "Prioritize skill-building and experimentation work alongside feature delivery",
+      "Log completed training hours for HR audits",
+      "Replace the product backlog",
+      "Document mandatory compliance courses"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Learning backlogs make capability growth visible and deliberately funded.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 457,
+    "question": "How do leaders model a continuous learning mindset?",
+    "options": [
+      "By sharing their own experiments, soliciting feedback, and celebrating learning over perfection",
+      "By delegating all learning to HR",
+      "By reviewing metrics only when something fails",
+      "By scheduling quarterly training compliance checks"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Visible curiosity from leaders signals that experimentation is safe and expected.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 458,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE indicators suggest a healthy learning culture? (Select exactly 3 answers)",
+    "options": [
+      "Frequent knowledge-sharing forums with wide participation",
+      "Psychological safety scores improving over time",
+      "Innovation accounting metrics reviewed with delivery metrics",
+      "Training tracked only for compliance",
+      "Ideas approved solely by hierarchy",
+      "Learning budgets cut first during planning"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Active sharing, safety, and data-informed learning investments mark strong learning cultures.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 459,
+    "question": "Why integrate learning objectives into PI Planning?",
+    "options": [
+      "They ensure improvement work receives capacity and visibility alongside features",
+      "They satisfy audit requirements",
+      "They replace iteration goals",
+      "They remove the need for innovation and planning iterations"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Planning learning work prevents capability gaps from becoming delivery bottlenecks.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 460,
+    "question": "What advantage do peer-led dojos provide?",
+    "options": [
+      "They align learning directly with real work while leveraging internal expertise",
+      "They eliminate the need for external communities",
+      "They guarantee certification for all participants",
+      "They focus solely on tooling tutorials"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Peer dojos keep learning practical and grounded in current delivery challenges.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 461,
+    "question": "How does an experiment charter reinforce psychological safety?",
+    "options": [
+      "It clarifies hypotheses, guardrails, and success measures so teams can learn without blame",
+      "It documents who is responsible when experiments fail",
+      "It replaces Inspect and Adapt workshops",
+      "It ensures leadership approval for every idea"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Explicit charters separate learning outcomes from personal performance judgments.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 462,
+    "question": "Why should organizations budget for innovation accounting?",
+    "options": [
+      "Measuring learning requires instrumentation, coaching, and time that must be deliberately funded",
+      "It replaces financial accounting",
+      "It guarantees every experiment succeeds",
+      "It is required only for start-ups"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dedicated investment keeps experimental learning from being treated as discretionary.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 463,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO practices accelerate knowledge sharing across ARTs? (Select exactly 2 answers)",
+    "options": [
+      "Lightning talks embedded in sync cadences",
+      "Internal open-source programs for reusable assets",
+      "Restricting access to experiment results",
+      "Limiting documentation to annual reports"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Structured sharing forums and reusable assets move learning faster than documents alone.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 464,
+    "question": "How do Communities of Practice (CoPs) stay relevant?",
+    "options": [
+      "By maintaining charters, rotating facilitation, and delivering tangible enablement backlogs",
+      "By focusing solely on social networking",
+      "By limiting membership to senior architects",
+      "By meeting only during annual summits"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Purposeful CoPs tie sharing to enablement outcomes rather than casual meetups.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 465,
+    "question": "What role do Inspect and Adapt problem-solving workshops play in learning culture?",
+    "options": [
+      "They convert systemic issues into experiments with owners, timelines, and follow-up",
+      "They finalize budgets",
+      "They replace team retrospectives",
+      "They focus on celebrating successes only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Problem-solving workshops turn reflection into actionable learning at scale.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 466,
+    "question": "Why capture learning KPIs alongside delivery metrics?",
+    "options": [
+      "Balanced dashboards show if the organization is improving its capability to deliver future value",
+      "Learning KPIs replace flow metrics",
+      "They only matter for HR",
+      "They are required solely for compliance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Learning metrics ensure capability building keeps pace with delivery commitments.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 467,
+    "question": "How do mentors avoid becoming bottlenecks in a learning culture?",
+    "options": [
+      "By coaching others to coach, documenting playbooks, and enabling self-service learning paths",
+      "By reviewing every code change",
+      "By authorizing all decisions",
+      "By limiting mentorship to the most senior talent"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mentors scale their impact by enabling others rather than owning every answer.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 468,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO mechanisms turn team retrospectives into organizational learning? (Select exactly 2 answers)",
+    "options": [
+      "Aggregating themes into inspect-and-adapt backlogs",
+      "Sharing successful experiments through communities of practice",
+      "Restricting outputs to the team room",
+      "Filing notes without follow-up"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Systematically sharing and acting on themes scales local learning across the enterprise.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 469,
+    "question": "Why maintain a transparent experiment library?",
+    "options": [
+      "It prevents duplicate efforts, surfaces insights, and accelerates evidence-based decisions",
+      "It satisfies legal discovery requirements",
+      "It replaces the product roadmap",
+      "It reduces the need for retrospectives"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Shared experiment repositories keep learning discoverable and reusable.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 470,
+    "question": "What differentiates growth-mindset communication from fixed-mindset messaging?",
+    "options": [
+      "It focuses on effort, strategies, and learning rather than innate talent",
+      "It emphasizes static capability rankings",
+      "It avoids discussing setbacks",
+      "It relies on seniority-based recognition only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Growth-mindset language keeps attention on improvement levers within the team's control.",
+    "domain": "Continuous Learning Culture",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 471,
+    "question": "What signals that an enterprise has reached a tipping point for SAFe adoption?",
+    "options": [
+      "Leaders agree that current ways of working cannot meet strategic goals and commit to change",
+      "Teams request a new tool license",
+      "Finance completes its annual forecast",
+      "Vendors offer discounted training"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A shared sense of urgency is required before investing in the implementation roadmap.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 472,
+    "question": "Why form a guiding coalition early in the roadmap?",
+    "options": [
+      "It provides cross-functional leadership sponsorship, decision velocity, and change capacity",
+      "It replaces the Lean-Agile Center of Excellence",
+      "It manages every team backlog",
+      "It eliminates the need for change agents"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A coalition aligns senior stakeholders so obstacles can be removed quickly.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 473,
+    "question": "How does value stream identification influence the first ART launch plan?",
+    "options": [
+      "It defines the customer-focused slice of the organization that will become the pilot",
+      "It determines the corporate branding strategy",
+      "It assigns developer job titles",
+      "It finalizes the portfolio budget"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mapping value streams ensures the first ART represents meaningful customer value flow.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 474,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO artifacts prepare the first ART launch? (Select exactly 2 answers)",
+    "options": [
+      "ART canvas capturing vision, people, and cadence",
+      "Transformation backlog prioritized by business outcomes",
+      "Detailed multi-year Gantt chart for every project",
+      "Traditional phase-gate sign-off document"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "A clear ART design and transformation backlog focus the pilot on measurable goals.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 475,
+    "question": "Why does the roadmap emphasize training executives and leaders first?",
+    "options": [
+      "Their behavior sets the system constraints; without alignment, teams cannot sustain change",
+      "Leaders need certification credits",
+      "It reduces the need for team training",
+      "It satisfies audit requirements"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leadership must understand and model Lean-Agile principles before expecting teams to adopt them.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 476,
+    "question": "What is the role of the Lean-Agile Center of Excellence (LACE) during implementation?",
+    "options": [
+      "Coordinate coaching capacity, curate practices, and steward the transformation backlog",
+      "Own every program board",
+      "Authorize code merges",
+      "Replace product management"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The LACE orchestrates change enablement so improvements scale beyond one ART.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 477,
+    "question": "Why treat the first Program Increment as a learning interval?",
+    "options": [
+      "It allows teams to practice events, inspect results, and adjust before scaling",
+      "It guarantees all objectives are met",
+      "It replaces future PIs",
+      "It delays delivery commitments"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Viewing PI1 as a learning cycle builds muscle memory and informs the rollout plan.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 478,
+    "question": "What is the objective of coaching ART execution before launching more ARTs?",
+    "options": [
+      "Stabilize events, roles, and flow metrics so lessons transfer to subsequent launches",
+      "Collect compliance evidence",
+      "Replace Scrum Masters",
+      "Finalize the technology stack"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A well-coached pilot prevents scaling immature practices across the enterprise.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 479,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE activities belong to the 'Launch more ARTs and value streams' step? (Select exactly 3 answers)",
+    "options": [
+      "Reuse playbooks and mentors from the pilot",
+      "Align launch sequencing to portfolio priorities",
+      "Expand DevOps platform enablement",
+      "Freeze further ART launches until every metric is perfect",
+      "Defer leadership engagement",
+      "Ignore lessons learned from earlier launches"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Scaling leverages pilot experience, prioritization, and platform support.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 480,
+    "question": "Why sync portfolio events with roadmap progress?",
+    "options": [
+      "Portfolio decisions must reflect the maturity and capacity of emerging ARTs",
+      "It eliminates the need for guardrails",
+      "It ensures finance can lock budgets",
+      "It replaces participatory budgeting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Portfolio cadence should adjust as more trains come online to avoid overload.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 481,
+    "question": "What prompts the roadmap to enter the 'Accelerate' stage?",
+    "options": [
+      "Multiple ARTs demonstrate predictable delivery and stakeholders demand broader impact",
+      "All backlogs are empty",
+      "Technology has been fully modernized",
+      "Every employee has been trained"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Acceleration occurs once the enterprise can confidently scale improvements beyond pilots.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 482,
+    "question": "How does measuring business outcomes influence the transformation backlog?",
+    "options": [
+      "Data reveals which change initiatives drive results so the backlog can be reprioritized",
+      "It replaces retrospectives",
+      "It guarantees additional funding",
+      "It removes the need for qualitative feedback"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Outcome data keeps transformation work focused on the most impactful impediments.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 483,
+    "question": "Why include suppliers in later implementation roadmap steps?",
+    "options": [
+      "Large solutions depend on synchronized partners, so suppliers must adopt similar cadences",
+      "Regulations require it",
+      "It replaces contract negotiations",
+      "It ensures suppliers control the roadmap"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Supplier alignment prevents integration delays and supports solution-level flow.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 484,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO roles typically own coaching communities after external consultants depart? (Select exactly 2 answers)",
+    "options": [
+      "Internal SPCs and LACE members",
+      "Portfolio leaders acting as sponsors",
+      "External auditors",
+      "Sales account managers"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Sustaining change requires internal SPC depth backed by executive sponsorship.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 485,
+    "question": "What is a major risk of skipping change readiness work before launches?",
+    "options": [
+      "Teams inherit conflicting processes and the transformation is dismissed as another initiative",
+      "Technology modernization completes too early",
+      "Leaders become too involved",
+      "Metrics improve faster than expected"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Without readiness, teams revert to old habits and credibility erodes quickly.",
+    "domain": "SAFe Implementation Roadmap",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 486,
+    "question": "What is the purpose of the Business Agility Assessment heatmap?",
+    "options": [
+      "Visualize competency strengths and gaps to target improvement investments",
+      "Provide a compliance score for audits",
+      "Rank teams against one another for rewards",
+      "Replace OKRs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Heatmaps guide where to focus coaching and funding for the next improvement cycles.",
+    "domain": "Measure and Grow",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 487,
+    "question": "How should leaders interpret Measure and Grow results?",
+    "options": [
+      "Look for systemic patterns, co-create experiments, and avoid using scores as punishment",
+      "Reward only the highest-scoring teams",
+      "Ignore low scores until the next assessment",
+      "Convert scores directly into performance ratings"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Assessments drive improvement conversations, not compliance enforcement.",
+    "domain": "Measure and Grow",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 488,
+    "question": "Why embed flow metrics into the continuous improvement backlog?",
+    "options": [
+      "They highlight bottlenecks so teams prioritize experiments that increase throughput and reliability",
+      "They replace qualitative feedback",
+      "They ensure utilization stays high",
+      "They eliminate the need for Inspect and Adapt events"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Flow metrics point to specific constraints the improvement backlog should address.",
+    "domain": "Measure and Grow",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 489,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE metrics belong to the Flow Performance dimension? (Select exactly 3 answers)",
+    "options": [
+      "Flow Time",
+      "Flow Load",
+      "Flow Efficiency",
+      "Employee retention",
+      "Cash burn",
+      "NPS"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Flow Performance centers on time, work-in-process, and efficiency of value delivery.",
+    "domain": "Measure and Grow",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 490,
+    "question": "How do leading indicators differ from outcome metrics within Measure and Grow?",
+    "options": [
+      "Leading indicators predict future results and guide experiments, while outcomes confirm realized value",
+      "Leading indicators are financial only",
+      "Outcome metrics are optional",
+      "They are interchangeable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Both types are needed to steer improvements and validate whether they worked.",
+    "domain": "Measure and Grow",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 491,
+    "question": "What benefit does a hypothesis backlog provide for improvement work?",
+    "options": [
+      "It forces each experiment to define expected impact, evidence, and pivot criteria",
+      "It replaces the team backlog",
+      "It guarantees budget approval",
+      "It eliminates the need for retrospectives"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hypothesis backlogs keep improvement efforts testable and outcome-focused.",
+    "domain": "Measure and Grow",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 492,
+    "question": "Why tie Measure and Grow outcomes to OKRs?",
+    "options": [
+      "It ensures improvement work advances strategic goals and is revisited each quarter",
+      "It simplifies executive scorecards",
+      "It replaces portfolio guardrails",
+      "It is required for compliance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linking to OKRs keeps improvements meaningful and time-bound.",
+    "domain": "Measure and Grow",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 493,
+    "question": "How can ART syncs reinforce Measure and Grow findings?",
+    "options": [
+      "By reviewing flow and competency trends together, highlighting shared impediments to escalate",
+      "By focusing solely on status updates",
+      "By replacing Inspect and Adapt events",
+      "By deferring all metrics discussion to quarterly reviews"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Regular ART syncs keep improvement data actionable between formal assessments.",
+    "domain": "Measure and Grow",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 494,
+    "questionType": "multiple",
+    "selectCount": 2,
+    "question": "Which TWO behaviors demonstrate psychological safety when reviewing metrics? (Select exactly 2 answers)",
+    "options": [
+      "Teams jointly explore causes without blaming individuals",
+      "Leaders share their own improvement commitments",
+      "Leaders compare teams publicly to spur competition",
+      "Teams hide data until they fix it"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Safety arises when data sparks collective problem-solving and leaders model vulnerability.",
+    "domain": "Measure and Grow",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 495,
+    "question": "Why baseline competencies before a large transformation?",
+    "options": [
+      "Without a baseline the enterprise cannot quantify progress or target coaching",
+      "It fulfills regulatory requirements",
+      "It replaces discovery workshops",
+      "It guarantees faster ROI"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Baselines make improvement measurable and highlight where to start.",
+    "domain": "Measure and Grow",
+    "difficulty": "Foundation"
+  },
+  {
+    "id": 496,
+    "question": "How do progress radiators maintain accountability for improvement actions?",
+    "options": [
+      "They keep commitments visible, update status frequently, and prompt conversations when stalled",
+      "They replace daily stand-ups",
+      "They track utilization",
+      "They are used only for executive dashboards"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Visible tracking of actions prevents improvement work from fading behind delivery.",
+    "domain": "Measure and Grow",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 497,
+    "question": "What role do value stream KPIs play during Inspect and Adapt?",
+    "options": [
+      "They connect team-level flow issues to enterprise outcomes, guiding the problem-solving workshop",
+      "They replace team confidence votes",
+      "They justify budget increases",
+      "They are optional if stories are complete"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Value stream KPIs ensure improvement targets are anchored to business results.",
+    "domain": "Measure and Grow",
+    "difficulty": "Applied"
+  },
+  {
+    "id": 498,
+    "question": "How should teams respond when metrics stall despite high effort?",
+    "options": [
+      "Revisit hypotheses, seek outside perspectives, and run smaller experiments to uncover hidden constraints",
+      "Increase reporting frequency only",
+      "Assign blame to individuals",
+      "Abandon measurement altogether"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Stalled metrics call for new learning approaches, not more pressure.",
+    "domain": "Measure and Grow",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 499,
+    "questionType": "multiple",
+    "selectCount": 3,
+    "question": "Which THREE anti-patterns distort Measure and Grow insights? (Select exactly 3 answers)",
+    "options": [
+      "Cherry-picking teams with favorable scores",
+      "Changing metrics mid-cycle to show progress",
+      "Punishing teams for surfacing low maturity",
+      "Publishing assessment methods",
+      "Combining qualitative interviews with surveys",
+      "Reviewing results with the whole value stream"
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Manipulating or weaponizing data destroys trust and invalidates improvement signals.",
+    "domain": "Measure and Grow",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 500,
+    "question": "Why pair quantitative and qualitative evidence in Measure and Grow reviews?",
+    "options": [
+      "Numbers show trends while stories reveal context, enabling better prioritization",
+      "Qualitative input replaces the need for metrics",
+      "Quantitative data is optional",
+      "It satisfies compliance requirements only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Blending data types prevents misinterpretation and uncovers root causes faster.",
+    "domain": "Measure and Grow",
+    "difficulty": "Applied"
   }
 ]

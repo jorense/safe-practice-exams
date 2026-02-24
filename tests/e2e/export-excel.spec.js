@@ -2,30 +2,12 @@
 // Verifies current attempt export (from results screen) and history-only export (from persistence notice)
 
 import { test, expect } from '@playwright/test'
+import { goToLeadingSafeExamSettings, startLeadingSafeQuiz, answerFirstNQuestions } from './_helpers'
 
-async function navigateToLeadingSafeExam(page) {
-  await page.addInitScript(() => {
-    try { localStorage.setItem('e2e.suppressTour', 'true'); } catch {}
-  })
-  await page.goto('/')
-  await page.getByTestId('start-leading-safe-home').click()
-  await page.getByTestId('leading-safe-exam-config').waitFor()
-}
-
-// Helper to start a minimal exam, answer a couple of questions, submit, then export
 async function completeExamAndExport(page) {
-  await navigateToLeadingSafeExam(page)
-  await page.getByTestId('leading-safe-start-quiz').click()
-  // Wait for quiz root
-  await page.getByTestId('quiz-root').waitFor()
-  // Answer first two questions (single-select assumption)
-  for (let i = 0; i < 2; i++) {
-    await page.getByTestId('quiz-option-0').first().click()
-    if (i === 0) {
-      await page.getByTestId('quiz-next').click()
-    }
-  }
-  // Submit
+  await goToLeadingSafeExamSettings(page)
+  await startLeadingSafeQuiz(page, { questionCount: 10 })
+  await answerFirstNQuestions(page, 2)
   await page.getByTestId('quiz-submit').click()
   await page.getByTestId('results-score-circle').waitFor()
   const [ download ] = await Promise.all([
@@ -34,10 +16,6 @@ async function completeExamAndExport(page) {
   ])
   expect(download.suggestedFilename()).toMatch(/exam-results-.*\.xlsx$/)
 }
-
-// Test exporting after completing an exam
-// Mark as serial to reduce flakiness across browsers
-// Using only Chromium in CI for now due to known Firefox/WebKit instability with full flows
 
 test.describe('Excel Export', () => {
   test('exports current attempt workbook from results page', async ({ page, browserName }) => {
@@ -54,14 +32,14 @@ test.describe('Excel Export', () => {
           examType: 'Leading SAFe 6',
           score: 82,
           correctAnswers: 37,
-            totalQuestions: 45,
+          totalQuestions: 45,
           timeUsed: 1200
         }]
         localStorage.setItem('progress.sessions', JSON.stringify(sample))
         localStorage.setItem('e2e.suppressTour','true')
       } catch {}
     })
-    await navigateToLeadingSafeExam(page)
+    await goToLeadingSafeExamSettings(page)
     const exportBtn = page.getByTestId('data-persistence-export')
     await exportBtn.scrollIntoViewIfNeeded()
     const [ download ] = await Promise.all([

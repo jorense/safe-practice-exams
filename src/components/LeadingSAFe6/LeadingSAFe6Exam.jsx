@@ -112,7 +112,7 @@ function LeadingSAFe6Exam({
                   <option value={45}>45 Questions (Default)</option>
                   <option value={50}>50 Questions</option>
                   <option value={100}>100 Questions</option>
-                  <option value={200}>200 Questions (Complete Bank)</option>
+                  <option value={500}>500 Questions (Complete Bank)</option>
                 </select>
                 <p className={styles.settingDescription}>
                   Choose how many questions you want to practice with
