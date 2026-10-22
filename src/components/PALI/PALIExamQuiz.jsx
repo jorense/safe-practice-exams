@@ -5,12 +5,12 @@ import Results from '../shared/Results.jsx'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
 import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
-function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoShowExplanation = false, examMode = 'exam', includeSeenQuestions = true }) {
+function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 36, autoShowExplanation = false, examMode = 'exam', includeSeenQuestions = true }) {
   const { recordSession } = useProgress()
 
   // Adaptive timer calculation function
   const calculateTimerDuration = (questionCount) => {
-    if (questionCount <= 30) {
+    if (questionCount <= 36) {
       // Certification mode: 60 minutes (3600 seconds)
       return 3600
     } else if (questionCount <= 50) {
@@ -81,12 +81,7 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
   useEffect(() => {
     let availableQuestions = paliQuestions
     
-    // Filter questions based on exam mode
-    if (examMode === 'exam') {
-      // Exam mode: only single-select questions (filter out multi-select)
-      availableQuestions = paliQuestions.filter(q => !q.questionType || q.questionType !== 'multiple')
-    }
-    // Practice mode: include all questions (single-select + multi-select)
+    // Both modes use the complete format mix. Practice mode differs only by feedback behavior.
     
     // Filter based on seen/unseen preference
     const filteredQuestions = filterQuestions(availableQuestions, 'pali', includeSeenQuestions)
@@ -282,7 +277,7 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
         
         // Store per-question timings in localStorage for analysis
         const examTimingData = {
-          examType: 'PSM II',
+          examType: 'PAL I',
           date: new Date().toISOString(),
           totalTimeUsed: timeUsed,
           questionTimings: finalTimings,
@@ -366,7 +361,7 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
 
     // Record the session
     recordSession({
-      examType: 'PSM II',
+      examType: 'PAL I',
       score: score,
       totalQuestions: shuffledQuestions.length,
       correctAnswers: effectiveCorrectAnswers,
@@ -416,12 +411,12 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
   if (examSubmitted) {
     return (
       <Results
-        title="Professional Scrum Master II Results"
+        title="Professional Agile Leadership I Results"
         questions={shuffledQuestions}
         selectedAnswers={selectedAnswers}
         totalTimeSec={totalTimeUsed}
         timeLimitSec={3600}
-        passThreshold={70}
+        passThreshold={85}
         onGoHome={onGoHome}
         onStudyMore={onGoBackToExam}
         onRetakeIncorrect={() => {
@@ -431,7 +426,7 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
           setSelectedAnswers({})
           setRevealedAnswers({})
           setCollapsedExplanations({})
-          setTimeRemaining(5400)
+          setTimeRemaining(3600)
           setTotalTimeUsed(0)
           // Reset timing states
           setQuestionTimings({})
@@ -456,7 +451,7 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
       <header className={styles.quizHeader}>
         <div className={styles.quizHeaderContent}>
           <div className={styles.quizInfo}>
-            <div className={styles.examTitle}>PSM II Practice Exam</div>
+            <div className={styles.examTitle}>PAL I Practice Exam</div>
             <div className={styles.questionCounter}>
               Question {currentQuestion + 1} of {shuffledQuestions.length}
             </div>
@@ -466,7 +461,7 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
             {hasTimer ? (
               <div className={styles.timer}>
                 <span className={styles.timerLabel}>
-                  {numberOfQuestions <= 45 ? 'Certification Mode:' : 'Practice Mode:'} Time Remaining:
+                  {numberOfQuestions <= 36 ? 'Certification Mode:' : 'Practice Mode:'} Time Remaining:
                 </span>
                 <span className={`${styles.timerValue} ${timeRemaining < 600 ? styles.timerWarning : ''}`}>
                   {formatTime(timeRemaining)}

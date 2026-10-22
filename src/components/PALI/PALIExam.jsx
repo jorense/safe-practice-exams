@@ -7,7 +7,7 @@ function PALIExam({
   onGoHome, 
   onGoToStudyMaterials, 
   onStartQuiz, 
-  numberOfQuestions = 30,
+  numberOfQuestions = 36,
   autoShowExplanation = false,
   onNumberOfQuestionsChange,
   onAutoShowExplanationChange,
@@ -30,7 +30,7 @@ function PALIExam({
 
   // Calculate timer info for display
   const getTimerInfo = () => {
-    if (numberOfQuestions <= 30) {
+    if (numberOfQuestions <= 36) {
       return {
         duration: "60 minutes",
         mode: "Certification Mode",
@@ -108,13 +108,14 @@ function PALIExam({
                 >
                   <option value={10}>10 Questions</option>
                   <option value={20}>20 Questions</option>
-                  <option value={30}>30 Questions (Certification)</option>
+                  <option value={36}>36 Questions (Certification)</option>
                   <option value={50}>50 Questions</option>
                   <option value={75}>75 Questions</option>
                   <option value={100}>100 Questions</option>
                   <option value={150}>150 Questions</option>
                   <option value={200}>200 Questions</option>
-                  <option value={300}>300 Questions (All)</option>
+                  <option value={300}>300 Questions</option>
+                  <option value={500}>500 Questions (All)</option>
                 </select>
                 <p className={styles.settingDescription}>
                   Choose how many questions you want to practice with
@@ -132,7 +133,7 @@ function PALIExam({
                 </select>
                 <p className={styles.settingDescription}>
                   {examMode === 'exam' 
-                    ? 'Single-select questions only. No feedback until you check your answer.' 
+                    ? 'Certification-style mix of single-answer, multiple-answer, and true/false questions. No feedback until submission.'
                     : 'Instant feedback when you select an answer. Explanation shown immediately for enhanced learning.'}
                 </p>
               </div>

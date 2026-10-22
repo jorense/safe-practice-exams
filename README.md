@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Master Your SAFe Certifications - Advanced Learning Platform 🚀
 
 A comprehensive, modern web application for **mastering SAFe (Scaled Agile Framework) certifications** with advanced learning features, progress tracking, and personalized study tools. This platform provides high-quality practice questions, adaptive learning systems, and detailed analytics to help you achieve certification success.
@@ -712,6 +711,3 @@ This is a private educational project. For questions or suggestions, please reac
 **Experience the future of intelligent SAFe certification preparation! 🎉🧠📱**
 
 **Share with colleagues**: https://jorense.github.io/safe-practice-exams/
-=======
-# safe-practice-exams
->>>>>>> dcc17ff (Initial commit)

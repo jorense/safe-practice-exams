@@ -173,8 +173,6 @@ const Tooltip = ({
     return `${styles.arrow} ${styles[`arrow${actualPosition.charAt(0).toUpperCase() + actualPosition.slice(1)}`]}`
   }, [actualPosition, styles])
 
-  if (!content) return children
-
   // Memoized trigger props to prevent unnecessary re-renders
   const triggerProps = useMemo(() => ({
     ref: triggerRef,
@@ -192,6 +190,8 @@ const Tooltip = ({
     'aria-describedby': isVisible ? 'tooltip' : undefined,
     tabIndex: trigger === 'click' ? 0 : undefined
   }), [trigger, handleKeyDown, showTooltip, hideTooltip, toggleTooltip, isVisible])
+
+  if (!content) return children
 
   return (
     <div className={styles.tooltipContainer}>

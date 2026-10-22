@@ -1,26 +1,33 @@
 import '@testing-library/jest-dom';
 
-// Mock localStorage
-const localStorageMock = {
-  getItem: jest.fn(),
-  setItem: jest.fn(),
-  removeItem: jest.fn(),
-  clear: jest.fn(),
-  key: jest.fn(),
-  length: 0
+const createStorageMock = () => {
+  let store = {};
+
+  return {
+    getItem: jest.fn(key => Object.prototype.hasOwnProperty.call(store, key) ? store[key] : null),
+    setItem: jest.fn((key, value) => { store[key] = String(value); }),
+    removeItem: jest.fn(key => { delete store[key]; }),
+    clear: jest.fn(() => { store = {}; }),
+    key: jest.fn(index => Object.keys(store)[index] ?? null),
+    get length() { return Object.keys(store).length; }
+  };
 };
-global.localStorage = localStorageMock;
+
+// Stateful storage mocks preserve browser behavior while retaining mock assertions.
+const localStorageMock = createStorageMock();
+Object.defineProperty(globalThis, 'localStorage', {
+  configurable: true,
+  writable: true,
+  value: localStorageMock
+});
 
 // Mock sessionStorage
-const sessionStorageMock = {
-  getItem: jest.fn(),
-  setItem: jest.fn(),
-  removeItem: jest.fn(),
-  clear: jest.fn(),
-  key: jest.fn(),
-  length: 0
-};
-global.sessionStorage = sessionStorageMock;
+const sessionStorageMock = createStorageMock();
+Object.defineProperty(globalThis, 'sessionStorage', {
+  configurable: true,
+  writable: true,
+  value: sessionStorageMock
+});
 
 // Mock window.matchMedia
 Object.defineProperty(window, 'matchMedia', {
