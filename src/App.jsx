@@ -119,17 +119,17 @@ function AppContent() {
 
   // Add question filtering state management
   const [includeSeenQuestions, setIncludeSeenQuestions] = useState(() => {
+    const repeatPreferenceMigrated = localStorage.getItem('lace-studio-include-seen-v2')
     const savedPreference = localStorage.getItem('lace-studio-include-seen')
-    
-    // If user has explicitly set a preference, respect it
-    if (savedPreference !== null) {
+
+    // Reset the legacy default once. Earlier versions saved `true`
+    // automatically for existing users, even when they never opted in.
+    if (repeatPreferenceMigrated === 'true' && savedPreference !== null) {
       return savedPreference === 'true'
     }
     
-    // For new users (no history): default to false (exclude seen questions)
-    // For existing users (has history): default to true (preserve old behavior)
-    const hasExistingHistory = localStorage.getItem('practice-exam-history')
-    return hasExistingHistory ? true : false
+    // Avoid repeating completed questions unless the user explicitly opts in.
+    return false
   })
 
   // Save numberOfQuestions to localStorage whenever it changes
@@ -145,6 +145,7 @@ function AppContent() {
   // Save includeSeenQuestions to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('lace-studio-include-seen', includeSeenQuestions.toString())
+    localStorage.setItem('lace-studio-include-seen-v2', 'true')
   }, [includeSeenQuestions])
 
   // One-time migration effect to update localStorage for migrated users

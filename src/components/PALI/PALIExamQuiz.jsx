@@ -194,6 +194,7 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 36, autoSh
     
     const question = shuffledQuestions[currentQuestion]
     const isMultiSelect = question.questionType === 'multiple'
+    let selectionComplete = !isMultiSelect
     
     if (isMultiSelect) {
       // Handle multi-select questions
@@ -218,6 +219,7 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 36, autoSh
         ...prev,
         [question.id]: newSelections
       }))
+      selectionComplete = newSelections.length === question.selectCount
     } else {
       // Handle single-select questions (existing behavior)
       setSelectedAnswers(prev => ({
@@ -231,17 +233,19 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 36, autoSh
     if (examMode === 'practice') {
       setRevealedAnswers(prev => ({
         ...prev,
-        [question.id]: true
+        [question.id]: selectionComplete
       }))
       
       // Auto-expand explanation in practice mode
-      setCollapsedExplanations(prev => ({
-        ...prev,
-        [question.id]: false
-      }))
+      if (selectionComplete) {
+        setCollapsedExplanations(prev => ({
+          ...prev,
+          [question.id]: false
+        }))
+      }
     } else if (examMode === 'exam') {
       // Exam mode: Only reveal if autoShowExplanation is enabled
-      if (autoShowExplanation) {
+      if (autoShowExplanation && selectionComplete) {
         setRevealedAnswers(prev => ({
           ...prev,
           [question.id]: true

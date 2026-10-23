@@ -48,4 +48,16 @@ describe('question-count selection', () => {
 
     expect(await screen.findByText('Question 1 of 10')).toBeInTheDocument()
   })
+
+  test('migrates the legacy repeat-question default to exclude seen questions', async () => {
+    localStorage.setItem('lace-studio-include-seen', 'true')
+    localStorage.removeItem('lace-studio-include-seen-v2')
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByTestId('start-pali-home'))
+
+    expect(screen.getByRole('checkbox', { name: /Include previously seen questions/i })).not.toBeChecked()
+    expect(localStorage.getItem('lace-studio-include-seen-v2')).toBe('true')
+  })
 })

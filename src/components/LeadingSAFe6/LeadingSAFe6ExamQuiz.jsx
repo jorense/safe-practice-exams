@@ -297,18 +297,21 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
     
     const question = shuffledQuestions[currentQuestion]
     const isMultiSelect = question.questionType === 'multiple'
+    let selectionComplete = !isMultiSelect
     
     if (isMultiSelect) {
-      // Multi-select: allow temporary over-selection to surface explicit warning state
       const currentSelections = selectedAnswers[question.id] || []
       const isAlreadySelected = currentSelections.includes(optionIndex)
       let newSelections
       if (isAlreadySelected) {
         newSelections = currentSelections.filter(i => i !== optionIndex)
-      } else {
+      } else if (currentSelections.length < question.selectCount) {
         newSelections = [...currentSelections, optionIndex].sort()
+      } else {
+        newSelections = [...currentSelections.slice(0, -1), optionIndex].sort()
       }
       setSelectedAnswers(prev => ({ ...prev, [question.id]: newSelections }))
+      selectionComplete = newSelections.length === question.selectCount
     } else {
       // Handle single-select questions (existing behavior)
       setSelectedAnswers(prev => ({
@@ -317,12 +320,13 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
       }))
     }
     
+    const shouldReveal = selectionComplete && (examMode === 'practice' || autoShowExplanation)
     setRevealedAnswers(prev => ({
       ...prev,
-      [question.id]: true
+      [question.id]: shouldReveal
     }))
 
-    if (autoShowExplanation) {
+    if (shouldReveal) {
       setCollapsedExplanations(prev => ({
         ...prev,
         [question.id]: false

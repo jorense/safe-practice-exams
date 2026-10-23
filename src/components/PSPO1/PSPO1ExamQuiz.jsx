@@ -199,6 +199,7 @@ function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoS
     
     const question = shuffledQuestions[currentQuestion]
     const isMultiSelect = question.questionType === 'multiple'
+    let selectionComplete = !isMultiSelect
     
     if (isMultiSelect) {
       // Handle multi-select questions
@@ -223,6 +224,7 @@ function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoS
         ...prev,
         [question.id]: newSelections
       }))
+      selectionComplete = newSelections.length === question.selectCount
     } else {
       // Handle single-select questions (existing behavior)
       setSelectedAnswers(prev => ({
@@ -236,17 +238,19 @@ function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoS
     if (examMode === 'practice') {
       setRevealedAnswers(prev => ({
         ...prev,
-        [question.id]: true
+        [question.id]: selectionComplete
       }))
       
       // Auto-expand explanation in practice mode
-      setCollapsedExplanations(prev => ({
-        ...prev,
-        [question.id]: false
-      }))
+      if (selectionComplete) {
+        setCollapsedExplanations(prev => ({
+          ...prev,
+          [question.id]: false
+        }))
+      }
     } else if (examMode === 'exam') {
       // Exam mode: Only reveal if autoShowExplanation is enabled
-      if (autoShowExplanation) {
+      if (autoShowExplanation && selectionComplete) {
         setRevealedAnswers(prev => ({
           ...prev,
           [question.id]: true

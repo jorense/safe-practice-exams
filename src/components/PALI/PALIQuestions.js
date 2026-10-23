@@ -9,7 +9,7 @@ const paliQuestions = [
       "Creating conditions where people and teams can thrive and deliver value",
       "Managing project timelines and ensuring deliverables are completed on schedule",
       "Making all important technical and business decisions for the teams",
-      "Eliminating all conflict and ensuring teams always agree on approaches"
+      "minimizing all conflict and ensuring teams generally agree on approaches"
     ],
     "correctAnswer": 0,
     "explanation": "Agile leaders create the environment and conditions for success. They don't micromanage or make all decisions, but instead enable teams to be effective through psychological safety, clear goals, and removing impediments.",
@@ -21,10 +21,10 @@ const paliQuestions = [
     "id": 2,
     "question": "An organization wants to 'become Agile.' What should leadership focus on first?",
     "options": [
-      "Mandate specific Agile practices and frameworks across all teams",
+      "Mandate specific Agile practices and frameworks across each team",
       "Understanding and embracing Agile values and principles in their own behavior",
       "Hire external Agile consultants to implement the transformation",
-      "Send all employees to Agile certification training programs"
+      "Send employees to Agile certification training programs"
     ],
     "correctAnswer": 1,
     "explanation": "Agile transformation starts with leadership. Leaders must model Agile values and principles themselves before expecting others to adopt them. The change must begin at the top with genuine understanding and behavioral change.",
@@ -37,8 +37,8 @@ const paliQuestions = [
     "question": "How should Agile leaders approach decision-making in complex domains?",
     "options": [
       "Make quick decisions based on past experience to maintain momentum",
-      "Delegate all decisions to teams since they are self-organizing",
-      "Use experiments, gather feedback, and adapt based on what is learned",
+      "Delegate most decisions to teams since they are self-organizing",
+      "Use experiments, gather feedback, and adapt using what is learned",
       "Conduct extensive analysis upfront to ensure the right decision is made"
     ],
     "correctAnswer": 2,
@@ -51,7 +51,7 @@ const paliQuestions = [
     "id": 4,
     "question": "What does it mean for leaders to 'be Agile' rather than 'do Agile'?",
     "options": [
-      "Attending all Scrum ceremonies and following the process strictly",
+      "Attending all Scrum ceremonies and following the process consistently",
       "Using Agile terminology in all communications and meetings",
       "Implementing all Agile practices exactly as prescribed in frameworks",
       "Embodying Agile values in their behavior, decisions, and interactions"
@@ -66,7 +66,7 @@ const paliQuestions = [
     "id": 5,
     "question": "A team consistently fails to meet Sprint Goals. What should leadership do?",
     "options": [
-      "Investigate systemic impediments and work with the team to address root causes",
+      "Investigate systemic impediments and help the team address root causes",
       "Replace team members with more experienced developers",
       "Reduce Sprint Goals to ensure the team experiences success",
       "Implement stricter monitoring and reporting requirements"
@@ -81,7 +81,7 @@ const paliQuestions = [
     "id": 6,
     "question": "How can leadership best support organizational agility?",
     "options": [
-      "Establish detailed processes and procedures that all teams must follow consistently",
+      "Establish detailed processes and procedures that each team should follow consistently",
       "Create autonomous teams with clear purpose and minimize dependencies between them",
       "Centralize decision-making to ensure alignment and prevent mistakes",
       "Focus on individual performance metrics and incentivize high achievers"
@@ -97,9 +97,9 @@ const paliQuestions = [
     "question": "What role does psychological safety play in Agile organizations?",
     "options": [
       "It ensures no one feels uncomfortable or challenged in their work",
-      "It guarantees job security regardless of performance or outcomes",
+      "It supports job security with limited regard for performance or outcomes",
       "It enables people to take interpersonal risks without fear of negative consequences",
-      "It eliminates the need for accountability and performance standards"
+      "It minimizes the need for accountability and performance standards"
     ],
     "correctAnswer": 2,
     "explanation": "Psychological safety means people can speak up, share ideas, admit mistakes, and challenge thinking without fear of humiliation or punishment. This is essential for learning, innovation, and effective empiricism. It doesn't eliminate accountability.",
@@ -128,7 +128,7 @@ const paliQuestions = [
     "options": [
       "Failures are learning opportunities when approached with transparency and reflection",
       "Failures should be minimized through careful planning and risk avoidance",
-      "Failures are acceptable only if they don't impact delivery timelines",
+      "Failures are acceptable primarily if they don't impact delivery timelines",
       "Failures indicate poor performance and should result in consequences"
     ],
     "correctAnswer": 0,
@@ -204,7 +204,7 @@ const paliQuestions = [
       "Make decisions to resolve conflicts quickly and move forward",
       "Facilitate teams finding their own solutions through collaboration",
       "Escalate to a central governance board for resolution",
-      "Separate teams completely to eliminate sources of conflict"
+      "Separate teams substantially to minimize sources of conflict"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders should facilitate conflict resolution, not dictate solutions. This builds collaboration skills and team maturity. Leaders provide guidance and ensure healthy conflict resolution, but teams should work through differences themselves when possible.",
@@ -217,7 +217,7 @@ const paliQuestions = [
     "question": "What is the relationship between autonomy and alignment in Agile organizations?",
     "options": [
       "Autonomy and alignment are opposites - more of one means less of the other",
-      "Autonomy is only possible after teams prove they can maintain alignment",
+      "Autonomy is primarily possible after teams prove they can maintain alignment",
       "Teams need both strong alignment on goals and autonomy in how they achieve them",
       "Alignment should be prioritized over autonomy to ensure organizational coherence"
     ],
@@ -246,7 +246,7 @@ const paliQuestions = [
     "id": 17,
     "question": "How should Agile leaders approach long-term planning?",
     "options": [
-      "Set strategic direction while accepting plans will evolve based on learning",
+      "Set strategic direction while accepting plans will evolve using learning",
       "Create detailed multi-year plans and hold teams accountable to them",
       "Avoid long-term planning entirely since it conflicts with Agile principles",
       "Let teams determine their own direction without leadership guidance"
@@ -276,7 +276,7 @@ const paliQuestions = [
     "id": 19,
     "question": "How can leaders foster innovation in their organization?",
     "options": [
-      "Mandate innovation time and specific innovation processes for all teams",
+      "Mandate innovation time and specific innovation processes for each team",
       "Hire innovation consultants to generate new ideas for the organization",
       "Create psychological safety and allow time for experimentation and learning",
       "Set innovation targets and reward teams that achieve them"
@@ -291,7 +291,7 @@ const paliQuestions = [
     "id": 20,
     "question": "What should leadership do when organizational policies conflict with Agile principles?",
     "options": [
-      "Require teams to follow organizational policies regardless of the conflict",
+      "Require teams to follow organizational policies with limited regard for the conflict",
       "Allow teams to ignore policies that conflict with Agile principles",
       "Maintain policies until the Agile transformation is complete",
       "Examine policies and work to evolve those that impede organizational agility"
@@ -308,7 +308,7 @@ const paliQuestions = [
     "options": [
       "Organize around value streams and products rather than functions or projects",
       "Maintain traditional hierarchies but rename roles to Agile terminology",
-      "Eliminate all hierarchy and create completely flat organizations",
+      "minimize all hierarchy and create substantially flat organizations",
       "Keep existing structures but add Agile practices within them"
     ],
     "correctAnswer": 0,
@@ -337,7 +337,7 @@ const paliQuestions = [
     "question": "A team wants to experiment with a new practice that deviates from organizational standards. What should leadership do?",
     "options": [
       "Deny the request to maintain consistency across the organization",
-      "Allow it only if other teams also want to try the same approach",
+      "Allow it primarily if other teams also want to try the same approach",
       "Support the experiment with clear hypotheses and review the results",
       "Require extensive documentation justifying the experiment before approval"
     ],
@@ -367,9 +367,9 @@ const paliQuestions = [
     "question": "What does 'respect for people' mean in Agile leadership?",
     "options": [
       "Trusting people's capabilities while providing support and challenging growth",
-      "Always agreeing with team decisions and never challenging their thinking",
+      "generally agreeing with team decisions and rarely challenging their thinking",
       "Being polite and avoiding difficult conversations to maintain relationships",
-      "Giving everyone equal say regardless of expertise or context"
+      "Giving everyone equal say with limited regard for expertise or context"
     ],
     "correctAnswer": 0,
     "explanation": "Respect means trusting people as professionals, valuing their input, and treating them as capable adults. It also means caring enough to challenge thinking, provide honest feedback, and expect high standards. Respect isn't the same as permissiveness.",
@@ -427,9 +427,9 @@ const paliQuestions = [
     "question": "What is the relationship between Agile leadership and command-and-control management?",
     "options": [
       "Agile leadership adapts style to context but default to enabling over controlling",
-      "They are completely incompatible and cannot coexist in any form",
+      "They are substantially incompatible and cannot coexist in any form",
       "Command-and-control is appropriate for Agile teams when deadlines are tight",
-      "Agile leadership means never providing direction or making decisions"
+      "Agile leadership means rarely providing direction or making decisions"
     ],
     "correctAnswer": 0,
     "explanation": "Effective leaders understand when different approaches are needed. In true emergencies or very simple contexts, directive leadership may be appropriate. However, the default for complex knowledge work should be enabling, coaching, and facilitating rather than controlling.",
@@ -459,7 +459,7 @@ const paliQuestions = [
       "Continue providing coaches indefinitely to ensure Agile success",
       "Remove coaches immediately to force teams to become self-sufficient",
       "Develop internal coaching capability and gradually reduce external dependency",
-      "Use coaches to enforce Agile compliance across all teams"
+      "Use coaches to enforce Agile compliance across each team"
     ],
     "correctAnswer": 2,
     "explanation": "External coaches are valuable for initial transformation, but long-term dependency is unhealthy. Leaders should develop internal capability, enable teams to become self-improving, and view coaching as a temporary accelerator rather than a permanent need.",
@@ -516,9 +516,9 @@ const paliQuestions = [
     "id": 35,
     "question": "What does 'empirical process control' mean for leadership decision-making?",
     "options": [
-      "All decisions should be based on historical data and past experience",
-      "Defer all decisions until sufficient data is available to ensure correctness",
-      "Make decisions based on observation, experimentation, and adaptation",
+      "most decisions should be based on historical data and past experience",
+      "Defer most decisions until sufficient data is available to ensure correctness",
+      "Make decisions using observation, experimentation, and adaptation",
       "Use statistical models and predictions to make all important decisions"
     ],
     "correctAnswer": 2,
@@ -607,8 +607,8 @@ const paliQuestions = [
     "question": "What is the relationship between leadership and self-organization in Agile teams?",
     "options": [
       "Leaders set direction and boundaries while teams self-organize within them",
-      "Leaders should step back completely to allow true self-organization",
-      "Self-organization means teams make all decisions without leadership input",
+      "Leaders should step back substantially to allow true self-organization",
+      "Self-organization means teams make most decisions without leadership input",
       "Leaders guide self-organization by assigning work to team members"
     ],
     "correctAnswer": 0,
@@ -623,7 +623,7 @@ const paliQuestions = [
     "options": [
       "Maintain individual metrics to ensure accountability and identify top performers",
       "Focus on team performance and outcomes rather than individual metrics",
-      "Eliminate all performance evaluation in favor of team-based assessment only",
+      "minimize all performance evaluation in favor of team-based assessment primarily",
       "Use peer reviews exclusively to determine individual performance"
     ],
     "correctAnswer": 1,
@@ -741,7 +741,7 @@ const paliQuestions = [
     "id": 50,
     "question": "How should leaders handle pressure to show detailed progress to senior stakeholders?",
     "options": [
-      "Create comprehensive status reports showing all work across all teams",
+      "Create comprehensive status reports showing all work across each team",
       "Focus on demonstrating working product increments and business outcomes",
       "Implement project tracking tools that provide real-time dashboards",
       "Have teams provide detailed status updates in regular review meetings"
@@ -771,7 +771,7 @@ const paliQuestions = [
     "id": 52,
     "question": "How should Agile leaders think about planning and predictability?",
     "options": [
-      "Eliminate planning since Agile is about responding to change",
+      "minimize planning since Agile is about responding to change",
       "Create detailed plans upfront and track variance as a quality metric",
       "Accept that complex work is unpredictable and avoid making commitments",
       "Use empirical evidence and frequent delivery to improve forecasting"
@@ -801,7 +801,7 @@ const paliQuestions = [
     "id": 54,
     "question": "How can leaders support collaboration between distributed teams?",
     "options": [
-      "Require all teams to work from offices to enable face-to-face collaboration",
+      "Require each team to work from offices to enable face-to-face collaboration",
       "Invest in collaboration tools, practices, and intentional communication rhythms",
       "Minimize distributed work by co-locating all team members when possible",
       "Accept reduced collaboration as an inevitable cost of distributed teams"
@@ -847,9 +847,9 @@ const paliQuestions = [
     "question": "What should leadership prioritize when scaling Agile across the organization?",
     "options": [
       "Focus on leadership mindset and culture before adding coordination mechanisms",
-      "Implement a standardized framework consistently across all teams",
+      "Implement a standardized framework consistently across each team",
       "Add coordination roles and processes to manage dependencies",
-      "Ensure all teams are trained and certified before scaling further"
+      "Ensure each team are trained and certified before scaling further"
     ],
     "correctAnswer": 0,
     "explanation": "Scaling frameworks and coordination mechanisms don't create agility - leadership and culture do. Before adding coordination layers, leaders should ensure they and other leaders embody Agile values. Culture and mindset enable scaling; frameworks alone don't.",
@@ -936,7 +936,7 @@ const paliQuestions = [
     "id": 63,
     "question": "What is the relationship between Agile leadership and trust?",
     "options": [
-      "Trust must be earned before leaders can delegate decisions to teams",
+      "Trust should be earned before leaders can delegate decisions to teams",
       "Trust takes years to develop and cannot be accelerated",
       "Leaders should extend trust first and create conditions where trust can grow",
       "Trust is less important than clear processes and accountability"
@@ -952,8 +952,8 @@ const paliQuestions = [
     "question": "How should leaders handle requests to add more people to speed up delivery?",
     "options": [
       "Add people immediately since more people means more capacity",
-      "Never add people once teams are formed to maintain stability",
-      "Add people only if teams specifically request additional members",
+      "rarely add people once teams are formed to maintain stability",
+      "Add people primarily if teams specifically request additional members",
       "Understand constraints and consider whether adding people will help or hurt"
     ],
     "correctAnswer": 3,
@@ -1059,7 +1059,7 @@ const paliQuestions = [
       "Standardize on one approach to ensure consistency across the organization",
       "Allow complete autonomy without any organizational standards or guidance",
       "Support teams choosing approaches that fit their context while ensuring alignment",
-      "Have teams justify their approach and approve only those that meet standards"
+      "Have teams justify their approach and approve primarily those that meet standards"
     ],
     "correctAnswer": 2,
     "explanation": "Context matters - different teams may benefit from different approaches. Leaders should support contextual adaptation while ensuring some alignment on principles, values, and how teams work together. Variety in approaches is healthy; variance in values is not.",
@@ -1104,7 +1104,7 @@ const paliQuestions = [
       "Manage vendors through detailed contracts and scope specifications",
       "Build collaborative partnerships focused on outcomes rather than outputs",
       "Avoid outsourcing entirely since it conflicts with Agile principles",
-      "Use vendors only for non-critical work that doesn't require collaboration"
+      "Use vendors primarily for non-critical work that doesn't require collaboration"
     ],
     "correctAnswer": 1,
     "explanation": "Agile vendor relationships should be collaborative partnerships focused on outcomes, with frequent feedback and adaptation. Traditional fixed-scope contracts create impediments. Leaders should structure vendor relationships to enable agility, not prevent it.",
@@ -1147,9 +1147,9 @@ const paliQuestions = [
     "question": "What does 'working software over comprehensive documentation' mean for leadership priorities?",
     "options": [
       "Focus investment on delivering working products rather than on planning and documentation processes",
-      "Leaders should eliminate all documentation requirements from teams",
-      "Documentation should only be created after software is completely finished",
-      "Leaders should never ask teams to document their work"
+      "Leaders should minimize all documentation requirements from teams",
+      "Documentation should primarily be created after software is substantially finished",
+      "Leaders should rarely ask teams to document their work"
     ],
     "correctAnswer": 0,
     "explanation": "The value statement doesn't eliminate documentation—it prioritizes working software. Leaders should focus resources and attention on value delivery while ensuring documentation serves a real purpose and is 'just enough' to be useful.",
@@ -1176,7 +1176,7 @@ const paliQuestions = [
     "id": 79,
     "question": "What role should leaders play in team conflicts about technical approaches?",
     "options": [
-      "Stay completely out of technical discussions—teams must resolve these independently",
+      "Stay substantially out of technical discussions—teams should resolve these independently",
       "Make the final technical decisions when teams cannot agree quickly",
       "Ensure teams have skills and practices to resolve technical disagreements productively",
       "Bring in external experts to settle all technical disputes"
@@ -1192,7 +1192,7 @@ const paliQuestions = [
     "question": "How should leaders respond when Agile practices seem to be slowing teams down?",
     "options": [
       "Immediately remove the practices causing friction",
-      "Tell teams they must follow all practices exactly as prescribed in frameworks",
+      "Tell teams they should follow all practices exactly as prescribed in frameworks",
       "Replace the current framework with a different Agile approach",
       "Investigate the underlying problems and adapt practices to serve their intended purpose"
     ],
@@ -1206,7 +1206,7 @@ const paliQuestions = [
     "id": 81,
     "question": "What is the primary purpose of organizational transparency in Agile environments?",
     "options": [
-      "Enable informed decision-making and continuous improvement throughout the organization",
+      "Enable informed decision-making and continuous improvement organization-wide",
       "To identify and punish teams that are underperforming",
       "To satisfy compliance and regulatory reporting requirements",
       "Create competition between teams by making all metrics public"
@@ -1237,7 +1237,7 @@ const paliQuestions = [
     "question": "What does 'sustainable pace' mean for leadership decisions?",
     "options": [
       "Teams should work exactly 40 hours per week with no exceptions",
-      "Never ask teams to work extra hours under any circumstances",
+      "rarely ask teams to work extra hours under any circumstances",
       "Make decisions that enable long-term value delivery without burning out people",
       "Allow teams to work as many hours as they choose without leadership involvement"
     ],
@@ -1251,7 +1251,7 @@ const paliQuestions = [
     "id": 84,
     "question": "How should leaders approach skill gaps in Agile teams?",
     "options": [
-      "Only hire people who already have all the skills needed",
+      "primarily hire people who already have all the skills needed",
       "Send people to training courses but don't allocate time for applying new skills",
       "Replace team members who lack skills with more qualified people",
       "Create environments where learning is valued and supported as part of delivery work"
@@ -1267,9 +1267,9 @@ const paliQuestions = [
     "question": "What is the leadership role in establishing Definition of Done?",
     "options": [
       "Support teams in creating appropriate standards while ensuring organizational needs are met",
-      "Leaders should define the Definition of Done for all teams to ensure consistency",
+      "Leaders should define the Definition of Done for each team to ensure consistency",
       "Let teams define Done however they want without any leadership input",
-      "Enforce the industry standard Definition of Done across all teams"
+      "Enforce the industry standard Definition of Done across each team"
     ],
     "correctAnswer": 0,
     "explanation": "Leaders ensure teams understand organizational quality expectations and stakeholder needs, but teams define their specific Definition of Done. Leaders remove impediments to meeting high standards (like access to test environments) and address teams whose standards are insufficient.",
@@ -1297,9 +1297,9 @@ const paliQuestions = [
     "question": "What does 'lead by example' mean in Agile leadership?",
     "options": [
       "Leaders should do the technical work alongside team members",
-      "Leaders must have been Scrum Masters or coaches before leading",
+      "Leaders should have been Scrum Masters or coaches before leading",
       "Demonstrate Agile values and principles in your own leadership behavior",
-      "Always attend every team ceremony to show commitment"
+      "generally attend every team ceremony to show commitment"
     ],
     "correctAnswer": 2,
     "explanation": "Leading by example means embodying the values you want to see: being transparent about challenges, adapting based on feedback, respecting people's expertise, focusing on outcomes over process compliance. Your behavior sets culture more powerfully than your words or policies.",
@@ -1313,8 +1313,8 @@ const paliQuestions = [
     "options": [
       "Return to traditional waterfall planning to provide detailed long-term plans",
       "Refuse all requests for forecasting since Agile means embracing uncertainty",
-      "Pressure teams to commit to specific dates and deliverables regardless of uncertainty",
-      "Help stakeholders understand probabilistic forecasting based on empirical data"
+      "Pressure teams to commit to specific dates and deliverables with limited regard for uncertainty",
+      "Help stakeholders understand probabilistic forecasting using empirical data"
     ],
     "correctAnswer": 3,
     "explanation": "Leaders help stakeholders understand that predictability in complex work comes from empirical forecasting (using actual delivery data, not wishful thinking) and from frequent delivery that allows course correction. They educate on working with uncertainty rather than creating false confidence.",
@@ -1343,7 +1343,7 @@ const paliQuestions = [
     "options": [
       "Create separate innovation teams disconnected from delivery teams",
       "Build innovation into regular work through experimentation and learning cycles",
-      "Only allow innovation after all planned features are delivered",
+      "primarily allow innovation after all planned features are delivered",
       "Mandate specific percentages of time for innovation projects"
     ],
     "correctAnswer": 1,
@@ -1356,8 +1356,8 @@ const paliQuestions = [
     "id": 91,
     "question": "What is the relationship between Agile leadership and budgeting?",
     "options": [
-      "Traditional annual budgeting cycles are incompatible with Agile and must be eliminated",
-      "Budgeting should be completely decentralized to individual teams",
+      "Traditional annual budgeting cycles are incompatible with Agile and should be eliminated",
+      "Budgeting should be substantially decentralized to individual teams",
       "Leaders adapt funding models to enable flexibility and faster value delivery",
       "Agile organizations don't need budgets since they embrace change"
     ],
@@ -1371,10 +1371,10 @@ const paliQuestions = [
     "id": 92,
     "question": "How should leaders address different maturity levels across teams?",
     "options": [
-      "Require all teams to advance at the same pace through standardized maturity levels",
-      "Focus resources only on the most advanced teams to maximize ROI",
+      "Require each team to advance at the same pace through standardized maturity levels",
+      "Focus resources primarily on the most advanced teams to maximize ROI",
       "Force struggling teams to adopt practices from high-performing teams",
-      "Provide differentiated support based on each team's context and needs"
+      "Provide differentiated support using each team's context and needs"
     ],
     "correctAnswer": 3,
     "explanation": "Teams have different contexts, challenges, and starting points. Leaders provide coaching and resources appropriate to each team's situation while sharing learnings across teams. Cookie-cutter approaches ignore context; neglecting struggling teams creates systemic weakness.",
@@ -1386,8 +1386,8 @@ const paliQuestions = [
     "id": 93,
     "question": "What does 'inspect and adapt' mean for leadership practices?",
     "options": [
-      "Regularly examine leadership effectiveness and evolve based on feedback and outcomes",
-      "Leaders should only inspect and adapt team-level practices, not their own",
+      "Regularly examine leadership effectiveness and evolve using feedback and outcomes",
+      "Leaders should primarily inspect and adapt team-level practices, not their own",
       "Inspect team performance weekly and adapt resource allocation accordingly",
       "Leadership practices should remain stable to provide consistency for teams"
     ],
@@ -1403,8 +1403,8 @@ const paliQuestions = [
     "options": [
       "Require the same delivery cadence and metrics as feature development teams",
       "Provide autonomy with clear learning goals and appropriate evaluation of progress",
-      "Separate research completely from delivery teams to avoid slowing down features",
-      "Only allow research work after all feature commitments are met"
+      "Separate research substantially from delivery teams to avoid slowing down features",
+      "primarily allow research work after all feature commitments are met"
     ],
     "correctAnswer": 1,
     "explanation": "Exploratory work requires different measures than feature delivery. Leaders define clear learning objectives and evaluation criteria appropriate to the work, provide needed autonomy, and integrate learning back into delivery. Forcing inappropriate metrics distorts behavior without improving outcomes.",
@@ -1433,7 +1433,7 @@ const paliQuestions = [
     "options": [
       "Standardize all tools across the organization for consistency and cost savings",
       "Let teams use any tools they want without any organizational coordination",
-      "Always choose the most popular or newest Agile tools in the market",
+      "generally choose the most popular or newest Agile tools in the market",
       "Support teams in selecting tools that serve their work while managing integration needs"
     ],
     "correctAnswer": 3,
@@ -1447,9 +1447,9 @@ const paliQuestions = [
     "question": "What does 'customer collaboration over contract negotiation' mean for leadership?",
     "options": [
       "Focus on building partnerships and mutual success rather than just protecting legal interests",
-      "Leaders should eliminate all contracts and formal agreements",
+      "Leaders should minimize all contracts and formal agreements",
       "Contracts are unnecessary in Agile organizations since requirements change",
-      "Always give customers everything they ask for without negotiation"
+      "generally give customers everything they ask for without negotiation"
     ],
     "correctAnswer": 0,
     "explanation": "The value statement recognizes that contracts are necessary but shouldn't define the relationship. Leaders create contract structures that enable collaboration and adaptation while protecting both parties. The focus is on shared success, not adversarial protection.",
@@ -1477,7 +1477,7 @@ const paliQuestions = [
     "question": "What is the leadership role in fostering a learning culture?",
     "options": [
       "Send people to training courses but don't change work practices or time allocation",
-      "Only reward successful outcomes, never failed experiments or learning attempts",
+      "primarily reward successful outcomes, rarely failed experiments or learning attempts",
       "Create safety for experimentation, time for learning, and celebration of knowledge sharing",
       "Require everyone to spend a fixed percentage of time on learning activities"
     ],
@@ -1491,7 +1491,7 @@ const paliQuestions = [
     "id": 100,
     "question": "How should leaders balance team stability with organizational needs for flexibility?",
     "options": [
-      "Never change team composition once teams are formed",
+      "rarely change team composition once teams are formed",
       "Frequently rotate people between teams to maximize organizational flexibility",
       "Let individuals choose which team to join whenever they want",
       "Maintain team stability while making thoughtful changes when clearly beneficial"
@@ -1506,8 +1506,8 @@ const paliQuestions = [
     "id": 101,
     "question": "What does 'value-driven delivery' mean for prioritization decisions?",
     "options": [
-      "Make prioritization decisions based on holistic value including risk, learning, and outcomes",
-      "Always work on the highest revenue-generating features first",
+      "Make prioritization decisions using holistic value including risk, learning, and outcomes",
+      "generally work on the highest revenue-generating features first",
       "Let teams decide all prioritization based on technical considerations",
       "Prioritize based on which stakeholder has the most organizational influence"
     ],
@@ -1521,10 +1521,10 @@ const paliQuestions = [
     "id": 102,
     "question": "How should leaders support distributed or remote Agile teams?",
     "options": [
-      "Require all teams to be co-located to enable true Agile practices",
+      "Require each team to be co-located to enable true Agile practices",
       "Adapt practices and provide tools that enable effective distributed collaboration",
       "Treat distributed teams exactly the same as co-located teams without adaptation",
-      "Only allow asynchronous communication to accommodate all time zones"
+      "primarily allow asynchronous communication to accommodate all time zones"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders acknowledge that distribution adds complexity but doesn't prevent agility. They invest in collaboration tools, adapt practices for distributed work (like ceremony timing and documentation), and focus on outcomes. They don't pretend distribution doesn't matter or give up on synchronous collaboration entirely.",
@@ -1537,9 +1537,9 @@ const paliQuestions = [
     "question": "What is the role of leadership in technical excellence?",
     "options": [
       "Make all technical decisions to ensure consistent quality standards",
-      "Stay completely out of technical matters since leaders aren't developers",
+      "Stay substantially out of technical matters since leaders aren't developers",
       "Create conditions and expectations that enable teams to maintain technical excellence",
-      "Focus only on delivery speed and let teams manage quality on their own"
+      "Focus primarily on delivery speed and let teams manage quality on their own"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders set expectations for technical quality, provide time and resources for excellence, and remove impediments (like inadequate test environments). They don't need to make technical decisions but must understand that technical excellence enables speed and that cutting corners creates future slowness.",
@@ -1551,8 +1551,8 @@ const paliQuestions = [
     "id": 104,
     "question": "How should leaders approach failure in Agile organizations?",
     "options": [
-      "Eliminate all failure through careful planning and risk management",
-      "Never accept failure—hold individuals accountable for all negative outcomes",
+      "minimize all failure through careful planning and risk management",
+      "rarely accept failure—hold individuals accountable for all negative outcomes",
       "Celebrate all failures equally since they represent learning opportunities",
       "Distinguish between intelligent experiments and careless mistakes in response"
     ],
@@ -1567,9 +1567,9 @@ const paliQuestions = [
     "question": "What does Systems Thinking mean for leadership decision-making?",
     "options": [
       "Understand how decisions impact the whole system, not just local optimization",
-      "Only make decisions after analyzing every possible system interaction",
+      "primarily make decisions after analyzing every possible system interaction",
       "Focus on optimizing individual team performance above all other concerns",
-      "Delay all decisions until complete system information is available"
+      "Delay most decisions until complete system information is available"
     ],
     "correctAnswer": 0,
     "explanation": "Systems thinking means seeing the organization as interconnected parts where local optimization often creates global problems. Leaders consider ripple effects of decisions, look for root causes rather than treating symptoms, and optimize for whole-system value flow rather than individual metrics.",
@@ -1597,7 +1597,7 @@ const paliQuestions = [
     "question": "What is the leadership role in dependency management across teams?",
     "options": [
       "Create detailed plans and schedules to coordinate all dependencies",
-      "Eliminate all dependencies by making teams completely independent",
+      "minimize all dependencies by making teams substantially independent",
       "Make dependencies visible and help teams navigate them while reducing unnecessary coupling",
       "Assign a project manager to handle all cross-team dependencies"
     ],
@@ -1626,10 +1626,10 @@ const paliQuestions = [
     "id": 109,
     "question": "What does 'responding to change over following a plan' mean for leadership commitments?",
     "options": [
-      "Make commitments but adapt them based on learning and changing circumstances",
-      "Never make any commitments since everything might change",
+      "Make commitments but adapt them using learning and changing circumstances",
+      "rarely make any commitments since everything might change",
       "Once you commit to a plan, changing it shows weak leadership",
-      "Only commit to very short-term plans to avoid ever changing commitments"
+      "primarily commit to very short-term plans to avoid ever changing commitments"
     ],
     "correctAnswer": 0,
     "explanation": "Leaders make meaningful commitments while acknowledging they're based on current understanding. As the organization learns or circumstances change, leaders transparently adapt commitments when appropriate. The value is in delivering the right outcomes, not following an outdated plan.",
@@ -1644,7 +1644,7 @@ const paliQuestions = [
       "Require all stakeholders to attend Agile training before engaging with teams",
       "Educate stakeholders on Agile value through involvement, transparency, and delivered outcomes",
       "Hide Agile practices from stakeholders and just deliver results",
-      "Tell stakeholders they must trust the process without needing to understand it"
+      "Tell stakeholders they should trust the process without needing to understand it"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders help stakeholders experience Agile benefits: frequent value delivery, visibility of progress, ability to influence direction. They explain the 'why' behind practices when it affects stakeholders, invite participation in reviews, and demonstrate value. Understanding comes from experience and results.",
@@ -1671,9 +1671,9 @@ const paliQuestions = [
     "id": 112,
     "question": "How should leaders approach individual performance management in Agile environments?",
     "options": [
-      "Eliminate all individual performance assessment since Agile focuses on teams",
+      "minimize all individual performance assessment since Agile focuses on teams",
       "Rank individuals against each other to identify top and bottom performers",
-      "Only assess individuals based on their output velocity or story points completed",
+      "primarily assess individuals based on their output velocity or story points completed",
       "Measure individual contribution while recognizing collaboration and team success"
     ],
     "correctAnswer": 3,
@@ -1688,7 +1688,7 @@ const paliQuestions = [
     "options": [
       "Attend when invited, focus on listening, and act on systemic issues raised",
       "Attend all retrospectives to stay informed about team challenges",
-      "Never attend retrospectives since they're team-owned activities",
+      "rarely attend retrospectives since they're team-owned activities",
       "Direct retrospectives to ensure teams identify the right improvement areas"
     ],
     "correctAnswer": 0,
@@ -1703,7 +1703,7 @@ const paliQuestions = [
     "options": [
       "Pass the pressure directly to teams to motivate faster delivery",
       "Share the context, shield teams from destructive pressure, and address systemic constraints",
-      "Shield teams completely from any awareness of business urgency",
+      "Shield teams substantially from any awareness of business urgency",
       "Promise faster delivery without understanding what's possible or changing conditions"
     ],
     "correctAnswer": 1,
@@ -1716,7 +1716,7 @@ const paliQuestions = [
     "id": 115,
     "question": "What does Evidence-Based Management mean for measuring success?",
     "options": [
-      "Only measure what can be precisely quantified and numerically tracked",
+      "primarily measure what can be precisely quantified and numerically tracked",
       "Success should be measured purely by stakeholder satisfaction surveys",
       "Use multiple indicators including outcomes, capabilities, and value delivered",
       "Avoid measuring success since it creates unhealthy competition"
@@ -1732,7 +1732,7 @@ const paliQuestions = [
     "question": "How should leaders support teams facing unclear or conflicting requirements?",
     "options": [
       "Tell teams to make their best guess and start building immediately",
-      "Halt all work until requirements are completely clear and stable",
+      "Halt all work until requirements are substantially clear and stable",
       "Assign business analysts to translate all stakeholder needs for teams",
       "Help teams engage directly with stakeholders to clarify through incremental delivery"
     ],
@@ -1749,7 +1749,7 @@ const paliQuestions = [
       "Servant leadership is one valuable model aligned with Agile values but not the only approach",
       "They are identical concepts with no meaningful difference",
       "Agile leadership is a modern term replacing the outdated servant leadership concept",
-      "Servant leadership contradicts Agile because leaders must also provide direction"
+      "Servant leadership contradicts Agile because leaders should also provide direction"
     ],
     "correctAnswer": 0,
     "explanation": "Servant leadership—prioritizing the growth and well-being of people and communities—aligns well with Agile values. But Agile leadership can incorporate multiple leadership styles. The key is leading in ways that enable empowerment, learning, and value delivery, which can include servant leadership and other approaches.",
@@ -1761,10 +1761,10 @@ const paliQuestions = [
     "id": 118,
     "question": "How should leaders respond when teams request additional resources or people?",
     "options": [
-      "Always approve resource requests to show support for teams",
+      "generally approve resource requests to show support for teams",
       "Investigate whether additional resources address root causes or mask systemic issues",
-      "Always deny resource requests to maintain cost discipline",
-      "Grant resources only to teams with the highest current performance metrics"
+      "generally deny resource requests to maintain cost discipline",
+      "Grant resources primarily to teams with the highest current performance metrics"
     ],
     "correctAnswer": 1,
     "explanation": "Adding people often doesn't solve underlying problems and can make communication and coordination worse. Leaders investigate root causes: Are there skill gaps? Process bottlenecks? Unclear priorities? Too much work in progress? Address systemic issues before adding resources, which should be a deliberate strategic decision.",
@@ -1776,10 +1776,10 @@ const paliQuestions = [
     "id": 119,
     "question": "What does 'continuous attention to technical excellence' require from leadership?",
     "options": [
-      "Leaders must have deep technical expertise in the technologies teams use",
+      "Leaders should have deep technical expertise in the technologies teams use",
       "Technical excellence is the team's responsibility; leaders focus on business outcomes",
       "Create time, resources, and expectations that enable teams to maintain high technical standards",
-      "Mandate specific technical practices that all teams must follow uniformly"
+      "Mandate specific technical practices that each team should follow uniformly"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders may not be technical experts but must understand that technical excellence enables sustainable speed and quality. They ensure teams have time for practices like refactoring, automated testing, and continuous integration. They understand technical debt as a business concern affecting future value delivery.",
@@ -1791,10 +1791,10 @@ const paliQuestions = [
     "id": 120,
     "question": "How should leaders approach organizational silos that impede agility?",
     "options": [
-      "Immediately restructure to eliminate all functional departments and silos",
+      "Immediately restructure to minimize all functional departments and silos",
       "Accept silos as inevitable in large organizations and work within them",
       "Fire managers who maintain silo boundaries and resist collaboration",
-      "Create cross-functional collaboration and gradually evolve structures based on learning"
+      "Create cross-functional collaboration and gradually evolve structures using learning"
     ],
     "correctAnswer": 3,
     "explanation": "Silos often reflect legitimate specialization but create handoffs and delays. Leaders foster cross-functional collaboration through team composition, physical/virtual proximity, shared goals, and by addressing organizational incentives that reinforce silos. Structural change should be thoughtful, not reactive reorganization.",
@@ -1824,7 +1824,7 @@ const paliQuestions = [
       "Replace all legacy systems before attempting Agile practices",
       "Acknowledge constraints while supporting incremental improvement and strategic modernization",
       "Ignore technical constraints and expect teams to deliver at the same pace as greenfield projects",
-      "Only allow Agile practices on new projects without legacy constraints"
+      "primarily allow Agile practices on new projects without legacy constraints"
     ],
     "correctAnswer": 1,
     "explanation": "Legacy systems are reality for most organizations. Leaders acknowledge constraints while investing in incremental improvement (refactoring, automated testing, API layers) and strategic modernization where it delivers value. They set realistic expectations while refusing to accept learned helplessness about technical debt.",
@@ -1884,7 +1884,7 @@ const paliQuestions = [
       "Mandate a single framework and set of practices for everyone to follow",
       "Provide lightweight principles and practices while allowing contextual adaptation",
       "Let every team invent their own practices from scratch without guidance",
-      "Implement industry best practices regardless of organizational context"
+      "Implement industry best practices with limited regard for organizational context"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders establish shared principles and minimum viable practices while empowering teams to adapt to their context. Too much standardization kills learning and adaptation; too little creates chaos and prevents scaling. Share practices through community of practice, not mandates.",
@@ -1913,7 +1913,7 @@ const paliQuestions = [
     "options": [
       "Add more metrics and controls to prevent gaming behavior",
       "Immediately discipline team members who manipulate metrics",
-      "Eliminate all metrics since they drive dysfunctional behavior",
+      "minimize all metrics since they drive dysfunctional behavior",
       "Investigate why gaming is happening and address underlying incentives and fears"
     ],
     "correctAnswer": 3,
@@ -1941,10 +1941,10 @@ const paliQuestions = [
     "id": 130,
     "question": "How should leaders support cross-functional collaboration across organizational boundaries?",
     "options": [
-      "Require all teams to include representatives from every organizational function",
+      "Require each team to include representatives from every organizational function",
       "Remove barriers, create forums for collaboration, and reward cross-boundary cooperation",
       "Maintain clear functional boundaries and use formal processes for cross-functional work",
-      "Reorganize to eliminate all functional specialization and boundaries"
+      "Reorganize to minimize all functional specialization and boundaries"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders make collaboration easier than working in silos: co-locate or create virtual spaces for teams, address conflicting incentives across functions, create communities of practice, and celebrate cross-functional success. They reduce barriers without necessarily eliminating all organizational structure.",
@@ -1956,8 +1956,8 @@ const paliQuestions = [
     "id": 131,
     "question": "What is the leadership role in establishing team working agreements?",
     "options": [
-      "Define standard working agreements that all teams must adopt",
-      "Stay completely uninvolved—working agreements are purely team-owned",
+      "Define standard working agreements that each team should adopt",
+      "Stay substantially uninvolved—working agreements are purely team-owned",
       "Support teams in creating their own agreements while ensuring alignment with organizational values",
       "Approve each team's working agreements before they can be implemented"
     ],
@@ -1971,8 +1971,8 @@ const paliQuestions = [
     "id": 132,
     "question": "How should leaders approach competition between teams?",
     "options": [
-      "Foster healthy competition to drive higher performance from all teams",
-      "Eliminate all competition by making team metrics private and confidential",
+      "Foster healthy competition to drive higher performance from each team",
+      "minimize all competition by making team metrics private and confidential",
       "Publicly rank teams against each other to identify best performers",
       "Create focus on shared organizational goals rather than team-versus-team competition"
     ],
@@ -1987,8 +1987,8 @@ const paliQuestions = [
     "question": "What does 'simplicity—the art of maximizing work not done' require from leaders?",
     "options": [
       "Create space for teams to find simple solutions rather than rushing to build everything",
-      "Leaders must become technical experts to identify unnecessary complexity",
-      "Always choose the simplest possible solution regardless of long-term implications",
+      "Leaders should become technical experts to identify unnecessary complexity",
+      "generally choose the simplest possible solution with limited regard for long-term implications",
       "Reduce work by cutting quality standards and testing activities"
     ],
     "correctAnswer": 0,
@@ -2017,7 +2017,7 @@ const paliQuestions = [
     "question": "What is the impact of leadership communication style in Agile organizations?",
     "options": [
       "Communication style doesn't matter as long as leaders make good decisions",
-      "Leaders should use only inspirational, positive communication to maintain morale",
+      "Leaders should use primarily inspirational, positive communication to maintain morale",
       "Transparent, two-way communication builds trust and enables adaptation",
       "Minimize communication to avoid influencing team autonomy"
     ],
@@ -2047,7 +2047,7 @@ const paliQuestions = [
     "question": "What does 'building projects around motivated individuals' mean for hiring and team formation?",
     "options": [
       "Find people with the right skills and create conditions where they can be motivated",
-      "Only hire people who are already passionate about your specific domain",
+      "primarily hire people who are already passionate about your specific domain",
       "Motivation is individual responsibility; leaders focus on outcomes not motivation",
       "Pay premium salaries to ensure all team members are highly motivated"
     ],
@@ -2061,8 +2061,8 @@ const paliQuestions = [
     "id": 138,
     "question": "How should leaders balance local optimization with global optimization?",
     "options": [
-      "Always prioritize global optimization even if it harms individual teams",
-      "Make optimization trade-offs visible and strategic based on organizational goals",
+      "generally prioritize global optimization even if it harms individual teams",
+      "Make optimization trade-offs visible and strategic using organizational goals",
       "Let teams optimize locally; global optimization will emerge naturally",
       "Alternate focus between local and global optimization quarterly"
     ],
@@ -2091,9 +2091,9 @@ const paliQuestions = [
     "id": 140,
     "question": "How should leaders respond when Agile practices conflict with existing organizational policies?",
     "options": [
-      "Always follow organizational policies regardless of impact on agility",
+      "generally follow organizational policies with limited regard for impact on agility",
       "Tell teams to violate policies that interfere with Agile practices",
-      "Immediately eliminate any policy that creates friction with Agile practices",
+      "Immediately minimize any policy that creates friction with Agile practices",
       "Work to evolve policies while finding interim approaches that balance compliance and agility"
     ],
     "correctAnswer": 3,
@@ -2107,7 +2107,7 @@ const paliQuestions = [
     "question": "What does 'at regular intervals, the team reflects' mean for leadership support?",
     "options": [
       "Protect time for reflection and act on systemic issues teams identify",
-      "Leaders should mandate specific reflection practices for all teams",
+      "Leaders should mandate specific reflection practices for each team",
       "Reflection is a team activity that doesn't require leadership support",
       "Attend all team reflections to ensure they're productive"
     ],
@@ -2137,7 +2137,7 @@ const paliQuestions = [
     "question": "What is the leadership role in technical architecture decisions for Agile teams?",
     "options": [
       "Make all architecture decisions to ensure consistency across teams",
-      "Stay completely out of architecture—teams have full authority over all technical decisions",
+      "Stay substantially out of architecture—teams have full authority over all technical decisions",
       "Ensure architectural vision and constraints while empowering team-level technical decisions",
       "Hire an architecture team separate from delivery teams to make all technical decisions"
     ],
@@ -2152,8 +2152,8 @@ const paliQuestions = [
     "question": "How should leaders approach organizational change fatigue from continuous transformation?",
     "options": [
       "Pause all changes until people recover from previous transformation efforts",
-      "Push through fatigue—organizations must continuously evolve to survive",
-      "Only make changes when absolutely necessary to minimize disruption",
+      "Push through fatigue—organizations should continuously evolve to survive",
+      "primarily make changes when absolutely necessary to minimize disruption",
       "Balance transformation pace with organizational capacity while maintaining improvement momentum"
     ],
     "correctAnswer": 3,
@@ -2167,9 +2167,9 @@ const paliQuestions = [
     "question": "What does servant leadership mean for decision-making authority?",
     "options": [
       "Leaders make strategic decisions while empowering teams to make execution decisions",
-      "Leaders should never make decisions—always defer to team consensus",
+      "Leaders should rarely make decisions—generally defer to team consensus",
       "Serve teams by making all difficult decisions so they can focus on delivery",
-      "Put all decisions to a vote and follow majority rule"
+      "Put most decisions to a vote and follow majority rule"
     ],
     "correctAnswer": 0,
     "explanation": "Servant leadership doesn't mean abdication of leadership responsibility. Leaders make decisions appropriate to their role (strategy, resource allocation, organizational design) while empowering teams on execution. Serving others includes providing clear direction when needed and making difficult calls when appropriate.",
@@ -2184,7 +2184,7 @@ const paliQuestions = [
       "Mandate increasingly strict Definition of Done standards on a fixed schedule",
       "Encourage continuous improvement of standards while addressing impediments to higher quality",
       "Accept whatever Definition of Done teams propose without question",
-      "Define the organizational Definition of Done and require all teams to adopt it immediately"
+      "Define the organizational Definition of Done and require each team to adopt it immediately"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders set expectations that Definition of Done should continuously improve as teams build capability and remove impediments. They support improvement by addressing organizational barriers (like access to production-like test environments) while respecting that teams need to build capability over time.",
@@ -2242,7 +2242,7 @@ const paliQuestions = [
     "question": "How should leaders sustain Agile transformation momentum after initial enthusiasm fades?",
     "options": [
       "Launch new transformation initiatives to regenerate excitement",
-      "Connect Agile practices to business results, celebrate wins, and address impediments consistently",
+      "Sustain momentum through outcomes, wins, and impediment removal",
       "Accept that momentum naturally fades and reduced enthusiasm is inevitable",
       "Bring in new consultants to re-energize the transformation"
     ],
@@ -2256,10 +2256,10 @@ const paliQuestions = [
     "id": 151,
     "question": "How should leaders respond when teams request specific tools or technologies?",
     "options": [
-      "Always approve tool requests to show trust in team judgment",
+      "generally approve tool requests to show trust in team judgment",
       "Deny all tool requests to maintain cost control and standardization",
       "Understand the problem and assess options against team needs and organizational context",
-      "Only approve tools that are already used by other teams in the organization"
+      "primarily approve tools that are already used by other teams in the organization"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders should understand what problem the team is trying to solve with new tools. Sometimes the tool request is valid; sometimes there are better alternatives or existing solutions. Leaders consider team productivity, integration needs, security, support costs, and organizational context when evaluating requests.",
@@ -2288,8 +2288,8 @@ const paliQuestions = [
     "options": [
       "Build diverse teams and inclusive culture as enablers of innovation and better outcomes",
       "Diversity initiatives should be separate from Agile transformation efforts",
-      "Focus only on diversity of Agile experience and technical skills",
-      "Mandate diversity quotas for all teams regardless of context"
+      "Focus primarily on diversity of Agile experience and technical skills",
+      "Mandate diversity quotas for each team with limited regard for context"
     ],
     "correctAnswer": 0,
     "explanation": "Diverse perspectives enable better problem-solving, innovation, and decision-making—critical for Agile success. Leaders build inclusive cultures where diverse voices are heard and valued, not just present. Diversity of thought, background, and experience strengthens teams when inclusion is genuine.",
@@ -2301,8 +2301,8 @@ const paliQuestions = [
     "id": 154,
     "question": "What is the leadership role in managing organizational risk in Agile environments?",
     "options": [
-      "Eliminate risk by returning to more predictable waterfall approaches",
-      "Make risk visible and manage it through frequent inspection, adaptation, and incremental delivery",
+      "minimize risk by returning to more predictable waterfall approaches",
+      "Manage visible risk through incremental inspection and adaptation",
       "Transfer all risk management responsibility to teams",
       "Accept all risks as unavoidable since Agile embraces uncertainty"
     ],
@@ -2317,8 +2317,8 @@ const paliQuestions = [
     "question": "How should leaders support Product Owners in their role?",
     "options": [
       "Make product decisions for Product Owners to speed up the process",
-      "Leave Product Owners completely alone to figure out their role independently",
-      "Provide strategic context, remove impediments, and ensure Product Owners have necessary authority",
+      "Leave Product Owners substantially alone to figure out their role independently",
+      "Provide strategic context, remove impediments, and ensure Product Owners have needed authority",
       "Assign multiple Product Owners to each team to share the workload"
     ],
     "correctAnswer": 2,
@@ -2331,9 +2331,9 @@ const paliQuestions = [
     "id": 156,
     "question": "What does 'empirical process control' mean for long-term planning?",
     "options": [
-      "Eliminate all long-term planning since you cannot predict the future",
-      "Create detailed long-term plans and commit to executing them regardless of learning",
-      "Plan in detail only for the next iteration with no forward-looking planning",
+      "minimize all long-term planning since you cannot predict the future",
+      "Create detailed long-term plans and commit to executing them with limited regard for learning",
+      "Plan in detail primarily for the next iteration with no forward-looking planning",
       "Develop long-term vision with increasingly lighter planning as time horizon extends"
     ],
     "correctAnswer": 3,
@@ -2348,8 +2348,8 @@ const paliQuestions = [
     "options": [
       "Set clear communication norms and use tools that support distributed collaboration",
       "Require all stakeholders to be in the same location as teams",
-      "Use only asynchronous communication to accommodate all time zones",
-      "Have teams work stakeholder time zones regardless of team location"
+      "Use primarily asynchronous communication to accommodate all time zones",
+      "Have teams work stakeholder time zones with limited regard for team location"
     ],
     "correctAnswer": 0,
     "explanation": "Leaders acknowledge that distribution adds complexity but work to minimize its impact through clear communication norms, appropriate tools (video conferencing, shared workspaces), thoughtful meeting scheduling, and documentation where it adds value. They don't pretend distribution doesn't matter or make it impossible through poor planning.",
@@ -2376,10 +2376,10 @@ const paliQuestions = [
     "id": 159,
     "question": "How should leaders approach continuous improvement across the organization?",
     "options": [
-      "Mandate specific improvement initiatives for all teams to implement",
+      "Mandate specific improvement initiatives for each team to implement",
       "Leave all improvement to individual teams without organizational coordination",
       "Create systems for learning and sharing while empowering local improvement",
-      "Focus improvement efforts only on underperforming teams"
+      "Focus improvement efforts primarily on underperforming teams"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders create environments where improvement is expected and supported: time for retrospectives, communities of practice for sharing learnings, celebration of improvement, and resources for experimentation. They enable coordination without mandating uniform solutions, and they help spread effective practices discovered by teams.",
@@ -2391,7 +2391,7 @@ const paliQuestions = [
     "id": 160,
     "question": "What does 'outcome over output' mean for how leaders evaluate success?",
     "options": [
-      "Only measure business outcomes, never measure team output or velocity",
+      "primarily measure business outcomes, rarely measure team output or velocity",
       "Output metrics are sufficient since outcomes take too long to measure",
       "Outcomes and outputs are interchangeable terms for measuring success",
       "Focus on whether delivered work achieves desired business and customer outcomes"
@@ -2421,7 +2421,7 @@ const paliQuestions = [
     "id": 162,
     "question": "What is the leadership role in establishing team size and composition?",
     "options": [
-      "Always maintain teams of exactly 7-9 people as prescribed by frameworks",
+      "generally maintain teams of exactly 7-9 people as prescribed by frameworks",
       "Guide team design considering communication overhead, skills needed, and team dynamics",
       "Let teams grow or shrink organically based on workload",
       "Maximize team size to increase total capacity and throughput"
@@ -2437,9 +2437,9 @@ const paliQuestions = [
     "question": "How should leaders respond to teams reporting impediments that leadership doesn't see as priorities?",
     "options": [
       "Tell teams the impediments aren't important and to focus on delivery",
-      "Immediately address every impediment teams report regardless of impact",
+      "Immediately address every impediment teams report with limited regard for impact",
       "Engage in dialogue to understand impact and make transparent prioritization decisions",
-      "Add all impediments to a backlog but never actually address them"
+      "Add all impediments to a backlog but rarely actually address them"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders should understand why teams see something as an impediment and its impact on delivery. Sometimes leaders need to explain why certain impediments won't be addressed immediately. Transparent prioritization and genuine dialogue build trust even when leaders can't address everything teams request.",
@@ -2467,8 +2467,8 @@ const paliQuestions = [
     "question": "How should leaders balance speed and quality in delivery?",
     "options": [
       "Understand that sustainable speed requires quality; cutting quality slows future delivery",
-      "Always prioritize speed—quality can be addressed later through bug fixes",
-      "Always prioritize quality—deliver only when everything is perfect",
+      "generally prioritize speed—quality can be addressed later through bug fixes",
+      "generally prioritize quality—deliver primarily when everything is perfect",
       "Alternate between speed and quality focus on different releases"
     ],
     "correctAnswer": 0,
@@ -2481,10 +2481,10 @@ const paliQuestions = [
     "id": 166,
     "question": "What is the leadership role when teams have conflicts about ways of working?",
     "options": [
-      "Impose standard ways of working to eliminate conflicts",
-      "Ensure teams have skills and support to resolve conflicts productively while intervening if needed",
-      "Stay completely uninvolved—teams must resolve all conflicts independently",
-      "Rotate team members to eliminate conflicting perspectives"
+      "Impose standard ways of working to minimize conflicts",
+      "Build conflict-resolution skills and support teams when needed",
+      "Stay substantially uninvolved—teams should resolve all conflicts independently",
+      "Rotate team members to minimize conflicting perspectives"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders create conditions for healthy conflict resolution: psychological safety, facilitation skills, conflict resolution practices. Most conflicts teams resolve themselves. Leaders intervene when conflicts become destructive or unresolvable, or when teams need new skills to navigate disagreements productively.",
@@ -2496,10 +2496,10 @@ const paliQuestions = [
     "id": 167,
     "question": "How should leaders approach standardization of reporting and metrics?",
     "options": [
-      "Require identical metrics and reporting formats from all teams for easy comparison",
+      "Require identical metrics and reporting formats from each team for easy comparison",
       "Let each team report whatever they choose in any format",
-      "Define essential organizational metrics while allowing teams flexibility in how they track and report",
-      "Eliminate all reporting since it contradicts Agile values"
+      "Set essential metrics and let teams adapt their reporting",
+      "minimize all reporting since it contradicts Agile values"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders identify what information the organization genuinely needs for decision-making and ensure it's available, but avoid over-prescribing how teams track work or creating reporting overhead that doesn't serve a purpose. Balance organizational needs with team autonomy and minimize waste in reporting.",
@@ -2512,8 +2512,8 @@ const paliQuestions = [
     "question": "What does 'self-organizing teams' mean for leadership accountability?",
     "options": [
       "Leaders are no longer accountable once teams become self-organizing",
-      "Self-organizing teams mean leaders should never provide direction or make decisions",
-      "Teams become accountable only to themselves, not to leadership or stakeholders",
+      "Self-organizing teams mean leaders should rarely provide direction or make decisions",
+      "Teams become accountable primarily to themselves, not to leadership or stakeholders",
       "Leaders remain accountable for outcomes while teams self-organize around execution"
     ],
     "correctAnswer": 3,
@@ -2541,7 +2541,7 @@ const paliQuestions = [
     "id": 170,
     "question": "What is the impact of leadership micromanagement on Agile teams?",
     "options": [
-      "Increases quality by ensuring leaders review all decisions",
+      "Increases quality by ensuring leaders review most decisions",
       "Undermines autonomy, slows decision-making, and damages trust and engagement",
       "Has no impact since teams are self-organizing and can ignore leadership interference",
       "Is necessary during early stages of Agile adoption until teams prove themselves"
@@ -2556,7 +2556,7 @@ const paliQuestions = [
     "id": 171,
     "question": "How should leaders approach organizational metrics and KPIs in Agile environments?",
     "options": [
-      "Eliminate all metrics and KPIs since they drive dysfunctional behavior",
+      "minimize all metrics and KPIs since they drive dysfunctional behavior",
       "Maintain traditional project management metrics like planned vs actual dates",
       "Use metrics focused on outcomes, flow, quality, and learning rather than just activity",
       "Implement extensive metrics tracking for all team activities to maximize transparency"
@@ -2569,15 +2569,15 @@ const paliQuestions = [
   },
   {
     "id": 172,
-    "question": "What does 'customer collaboration over contract negotiation' mean for internal stakeholders?",
+    "question": "A strategic customer insists on approving every Product Backlog change. What should leaders do?",
     "options": [
-      "Internal stakeholders are not customers so this principle doesn't apply",
-      "Create formal internal contracts and SLAs to manage internal stakeholder relationships",
-      "Give internal stakeholders whatever they request without negotiation",
-      "Build collaborative partnerships with internal stakeholders focused on shared success"
+      "Give the customer direct control of backlog ordering",
+      "Clarify decision rights and create frequent feedback opportunities",
+      "Freeze the backlog after quarterly planning",
+      "Require the team to obtain approval before each refinement"
     ],
-    "correctAnswer": 3,
-    "explanation": "Internal stakeholders are customers of internal teams' work. Leaders foster collaborative relationships focused on shared organizational success rather than adversarial dynamics where each side protects their interests. Collaboration, trust, and adaptation serve the organization better than rigid internal contracts.",
+    "correctAnswer": 1,
+    "explanation": "Leaders protect clear product accountability while ensuring strategic customers have frequent, meaningful opportunities to provide feedback.",
     "domain": "Stakeholder Management",
     "difficulty": "Intermediate",
     "focusArea": "Managing Products with Agility"
@@ -2631,8 +2631,8 @@ const paliQuestions = [
     "id": 176,
     "question": "What does 'pull-based work' mean for leadership work assignment?",
     "options": [
-      "Leaders should never assign work—only allow teams to pull from backlog",
-      "Pull-based systems don't apply to leadership, only to team-level work",
+      "Leaders should rarely assign work—primarily allow teams to pull from backlog",
+      "Pull-based systems don't apply to leadership, primarily to team-level work",
       "Have teams constantly pull more work to maximize throughput",
       "Limit work in progress and enable teams to pull new work when they have capacity"
     ],
@@ -2647,7 +2647,7 @@ const paliQuestions = [
     "question": "How should leaders approach team dependencies on external vendors or partners?",
     "options": [
       "Make dependencies visible, work to improve collaboration, and reduce unnecessary coupling",
-      "Eliminate all vendor dependencies before starting Agile practices",
+      "minimize all vendor dependencies before starting Agile practices",
       "Ignore vendor dependencies and expect teams to work around them",
       "Add long lead times to all plans to accommodate vendor delays"
     ],
@@ -2674,10 +2674,10 @@ const paliQuestions = [
     "id": 179,
     "question": "How should leaders respond to stakeholder requests to bypass teams for quick changes?",
     "options": [
-      "Always accommodate urgent stakeholder requests even if it disrupts team work",
-      "Never allow any work that wasn't planned in advance",
+      "generally accommodate urgent stakeholder requests even if it disrupts team work",
+      "rarely allow any work that wasn't planned in advance",
       "Help stakeholders understand impact while having clear processes for urgent requests",
-      "Tell stakeholders they must wait for the next planning cycle regardless of urgency"
+      "Tell stakeholders they should wait for the next planning cycle with limited regard for urgency"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders balance stakeholder urgency with team stability. They ensure there's a way to handle genuinely urgent work while protecting teams from constant interruption. They help stakeholders understand the cost of disruption and work to reduce 'false urgency' while acknowledging some work genuinely cannot wait.",
@@ -2691,7 +2691,7 @@ const paliQuestions = [
     "options": [
       "Have separate QA teams inspect quality into products after development",
       "Quality is expensive so accept lower quality to maintain delivery speed",
-      "Only focus on quality after achieving target velocity levels",
+      "primarily focus on quality after achieving target velocity levels",
       "Expect teams to build quality through practices like TDD, continuous integration, and refactoring"
     ],
     "correctAnswer": 3,
@@ -2706,7 +2706,7 @@ const paliQuestions = [
     "options": [
       "Create safety to examine failures for learning while maintaining appropriate accountability",
       "Focus on identifying and holding individuals accountable for failures",
-      "Skip retrospectives when things go well—only examine failures",
+      "Skip retrospectives when things go well—primarily examine failures",
       "Celebrate all failures equally without distinguishing between types"
     ],
     "correctAnswer": 0,
@@ -2720,8 +2720,8 @@ const paliQuestions = [
     "question": "What is the leadership role in scaling Agile beyond a single team?",
     "options": [
       "Implement a specific scaling framework exactly as prescribed",
-      "Apply Agile principles at scale while enabling necessary coordination and maintaining team autonomy",
-      "Keep teams completely independent with no cross-team coordination",
+      "Apply Agile principles at scale while enabling needed coordination and maintaining team autonomy",
+      "Keep teams substantially independent with no cross-team coordination",
       "Add layers of management and control to coordinate multiple teams"
     ],
     "correctAnswer": 1,
@@ -2737,7 +2737,7 @@ const paliQuestions = [
       "Wait until people are fully trained before attempting new technologies",
       "Expect teams to learn entirely on their own time outside work hours",
       "Allocate time for learning, provide resources, and accept initial slower velocity",
-      "Only allow proven technologies that teams already know"
+      "primarily allow proven technologies that teams already know"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders who want teams to adopt new capabilities must provide time for learning within work hours, accept that velocity may temporarily drop as people learn, and provide resources like training, books, or expert coaching. Learning new skills takes time and effort that must be explicitly allocated.",
@@ -2747,26 +2747,26 @@ const paliQuestions = [
   },
   {
     "id": 184,
-    "question": "What does 'responding to change over following a plan' mean for quarterly or annual commitments?",
+    "question": "A regulatory deadline is fixed, but the solution remains uncertain. How should leaders guide planning?",
     "options": [
-      "Never make any commitments beyond a single iteration",
-      "Once quarterly or annual commitments are made, never change them",
-      "Only make vague commitments that can't be held accountable",
-      "Make commitments but adapt them transparently as circumstances and learning dictate"
+      "Fix every feature early to demonstrate control",
+      "Delay development until requirements become stable",
+      "Use short learning cycles and adjust scope while protecting the deadline",
+      "Ask teams to commit to both fixed scope and fixed date"
     ],
-    "correctAnswer": 3,
-    "explanation": "Leaders make meaningful commitments at appropriate time horizons while acknowledging they're based on current understanding. When significant changes occur or when the organization learns something important, leaders transparently adapt commitments in collaboration with stakeholders. The goal is achieving the right outcomes, not blind adherence to outdated plans.",
-    "domain": "Agile Leadership Mindset",
+    "correctAnswer": 2,
+    "explanation": "A fixed date does not remove uncertainty. Short cycles expose evidence early so scope and approach can adapt while the constraint remains transparent.",
+    "domain": "Empiricism and Agility",
     "difficulty": "Advanced",
-    "focusArea": "Developing People and Teams"
+    "focusArea": "Understanding and Applying Scrum"
   },
   {
     "id": 185,
     "question": "How should leaders address uneven capability levels across teams?",
     "options": [
-      "Share knowledge across teams while providing differentiated support based on needs",
+      "Share knowledge across teams while providing differentiated support using needs",
       "Move all high performers to the same teams to create centers of excellence",
-      "Ignore capability differences and treat all teams identically",
+      "Ignore capability differences and treat each team identically",
       "Rank teams publicly to shame lower performers into improving"
     ],
     "correctAnswer": 0,
@@ -2779,10 +2779,10 @@ const paliQuestions = [
     "id": 186,
     "question": "What is the leadership role in establishing organizational rhythm and cadence?",
     "options": [
-      "Mandate identical sprint lengths and schedules for all teams",
+      "Mandate identical sprint lengths and schedules for each team",
       "Enable team autonomy while establishing coordinating cadences where beneficial",
-      "Let each team establish completely independent cadences without coordination",
-      "Eliminate all fixed cadences since Agile means continuous flow"
+      "Let each team establish substantially independent cadences without coordination",
+      "minimize all fixed cadences since Agile means continuous flow"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders allow teams to choose iteration lengths that suit their context while establishing organizational rhythms for planning, reviews, and coordination where it helps. Some synchronization enables cross-team planning and stakeholder engagement without forcing all teams into identical patterns.",
@@ -2810,8 +2810,8 @@ const paliQuestions = [
     "question": "What does 'collective ownership' mean for leadership accountability?",
     "options": [
       "No individual is accountable when ownership is collective",
-      "Leaders should avoid collective ownership and always assign individual accountability",
-      "Collective ownership only applies to code, not to business outcomes",
+      "Leaders should avoid collective ownership and generally assign individual accountability",
+      "Collective ownership primarily applies to code, not to business outcomes",
       "Teams collectively own their work while individuals contribute and can be held accountable"
     ],
     "correctAnswer": 3,
@@ -2825,7 +2825,7 @@ const paliQuestions = [
     "question": "How should leaders support teams in establishing sustainable pace?",
     "options": [
       "Monitor for chronic overwork, address systemic causes, and model healthy boundaries",
-      "Strictly enforce 40-hour weeks regardless of business needs",
+      "consistently enforce 40-hour weeks with limited regard for business needs",
       "Allow unlimited overtime—sustainable pace is each person's individual responsibility",
       "Accept occasional overtime as inevitable in software development"
     ],
@@ -2854,7 +2854,7 @@ const paliQuestions = [
     "id": 191,
     "question": "How should leaders approach team member performance issues in Agile environments?",
     "options": [
-      "Always address performance issues through the team without direct leadership involvement",
+      "generally address performance issues through the team without direct leadership involvement",
       "Use traditional performance management processes unchanged from waterfall environments",
       "Address performance issues directly while considering team dynamics and coaching needs",
       "Wait for annual reviews to address any performance concerns"
@@ -2869,8 +2869,8 @@ const paliQuestions = [
     "id": 192,
     "question": "What does 'maximize the work not done' mean for leadership scope decisions?",
     "options": [
-      "Always choose the smallest possible scope regardless of business value",
-      "Eliminate work to minimize costs and effort for the organization",
+      "generally choose the smallest possible scope with limited regard for business value",
+      "minimize work to minimize costs and effort for the organization",
       "Reduce team workload to prevent burnout",
       "Ruthlessly prioritize and eliminate low-value work to focus on highest impact"
     ],
@@ -2886,7 +2886,7 @@ const paliQuestions = [
     "options": [
       "Work to evolve processes while finding interim approaches that balance agility and governance needs",
       "Grant teams complete exemption from all legacy processes and governance",
-      "Require full compliance with all existing processes regardless of impact",
+      "Require full compliance with all existing processes with limited regard for impact",
       "Wait for complete process modernization before attempting Agile practices"
     ],
     "correctAnswer": 0,
@@ -2929,9 +2929,9 @@ const paliQuestions = [
     "id": 196,
     "question": "What does 'trust and support' mean for leadership intervention?",
     "options": [
-      "Never intervene in team activities or decisions",
+      "rarely intervene in team activities or decisions",
       "Constantly monitor and correct team decisions to ensure success",
-      "Trust teams completely until they fail, then take over",
+      "Trust teams substantially until they fail, then take over",
       "Provide support when needed while trusting teams to make most decisions"
     ],
     "correctAnswer": 3,
@@ -2946,8 +2946,8 @@ const paliQuestions = [
     "options": [
       "Build exploration and innovation into regular work as part of sustainable delivery",
       "Create separate innovation teams disconnected from delivery work",
-      "Only allow innovation after all committed features are delivered",
-      "Mandate fixed percentages of time for innovation regardless of context"
+      "primarily allow innovation after all committed features are delivered",
+      "Mandate fixed percentages of time for innovation with limited regard for context"
     ],
     "correctAnswer": 0,
     "explanation": "Leaders create space for exploration and innovation as part of normal work: trying new approaches, investigating emerging technologies, exploring solution alternatives. Innovation thrives when integrated with delivery, not separated. Leaders ensure teams have slack time for learning and experimentation without mandating rigid time allocations.",
@@ -2957,25 +2957,25 @@ const paliQuestions = [
   },
   {
     "id": 198,
-    "question": "What is the leadership role in establishing team working environments?",
+    "question": "Several teams use working agreements, but cross-team handoffs still fail. What should leaders encourage?",
     "options": [
-      "Provide identical facilities for all teams without customization",
-      "Understand team needs and provide environments that enable effective collaboration",
-      "Let teams arrange their own space without any organizational support",
-      "Always provide private offices to maximize individual productivity"
+      "Replace team agreements with one enterprise procedure",
+      "Add managers to approve every handoff",
+      "Create shared agreements for cross-team interactions",
+      "Measure each team independently and publish rankings"
     ],
-    "correctAnswer": 1,
-    "explanation": "Leaders ensure teams have environments that enable their work: appropriate space for collaboration, tools for distributed work, quiet space for focus work, and whiteboards or digital collaboration tools. They understand environment affects team effectiveness and invest in conditions that enable high performance.",
-    "domain": "Creating High-Performing Teams",
+    "correctAnswer": 2,
+    "explanation": "Team agreements cannot resolve system-level gaps alone. The affected teams should inspect their interactions and agree how they will collaborate.",
+    "domain": "Systems Thinking",
     "difficulty": "Intermediate",
-    "focusArea": "Developing People and Teams"
+    "focusArea": "Evolving the Agile Organization"
   },
   {
     "id": 199,
     "question": "How should leaders support teams in saying no to stakeholders?",
     "options": [
-      "Teams should never say no to stakeholders—leaders say no on their behalf",
-      "Teams must accept all stakeholder requests to maintain relationships",
+      "Teams should rarely say no to stakeholders—leaders say no on their behalf",
+      "Teams should accept all stakeholder requests to maintain relationships",
       "Enable honest capacity and priority discussions, with leadership support when needed",
       "Shield teams from all stakeholder interaction to protect their focus"
     ],
@@ -2991,7 +2991,7 @@ const paliQuestions = [
     "options": [
       "Leaders should not plan since solutions and approaches emerge organically",
       "Emergence means accepting whatever happens without strategic direction",
-      "Create comprehensive long-term plans and allow only small tactical emergence",
+      "Create comprehensive long-term plans and allow primarily small tactical emergence",
       "Plan in detail for the short term while allowing longer-term plans to emerge through learning"
     ],
     "correctAnswer": 3,
@@ -3019,8 +3019,8 @@ const paliQuestions = [
     "id": 202,
     "question": "What is the leadership role in managing organizational dependencies?",
     "options": [
-      "Eliminate all dependencies before starting Agile delivery",
-      "Make dependencies visible, reduce unnecessary ones, and help teams navigate remaining dependencies",
+      "minimize all dependencies before starting Agile delivery",
+      "Expose dependencies, remove avoidable ones, and manage the rest",
       "Create detailed project plans to coordinate all dependencies",
       "Ignore dependencies and expect teams to work around them independently"
     ],
@@ -3034,7 +3034,7 @@ const paliQuestions = [
     "id": 203,
     "question": "How should leaders approach organizational change resistance?",
     "options": [
-      "Force change through regardless of resistance",
+      "Force change through with limited regard for resistance",
       "Abandon changes when people resist",
       "Involve people and address valid concerns",
       "Replace resistant people with change-ready employees"
@@ -3047,24 +3047,24 @@ const paliQuestions = [
   },
   {
     "id": 204,
-    "question": "What does 'inspect and adapt' mean for leadership decisions?",
+    "question": "A leadership experiment produces mixed evidence. What is the most useful next step?",
     "options": [
-      "Leaders should constantly change direction based on any new information",
-      "Leadership decisions should remain stable to provide consistency",
-      "Only inspect and adapt team-level decisions, not strategic leadership decisions",
-      "Regularly examine results of leadership decisions and adapt based on learning"
+      "Declare success using the most favorable measure",
+      "Return immediately to the previous approach",
+      "Inspect the evidence and run a focused follow-up experiment",
+      "Expand the experiment before discussing the results"
     ],
-    "correctAnswer": 3,
-    "explanation": "Leaders apply empiricism to their own decisions: set direction, observe results, learn, adapt approach. This means examining whether leadership decisions are achieving intended outcomes and changing course when they're not. Balance adaptation with appropriate strategic consistency.",
+    "correctAnswer": 2,
+    "explanation": "Mixed results are information. Leaders make measures transparent, refine what they are trying to learn, and design the next small test.",
     "domain": "Empiricism and Agility",
-    "difficulty": "Intermediate",
+    "difficulty": "Advanced",
     "focusArea": "Understanding and Applying Scrum"
   },
   {
     "id": 205,
     "question": "How should leaders support Product Owners in stakeholder management?",
     "options": [
-      "Ensure Product Owners have authority, remove impediments, and support them when stakeholders undermine decisions",
+      "Give Product Owners authority and protect their decisions",
       "Make all stakeholder decisions to protect Product Owners from pressure",
       "Leave Product Owners to manage all stakeholder relationships independently",
       "Have Product Owners report all stakeholder interactions to leaders for approval"
@@ -3079,9 +3079,9 @@ const paliQuestions = [
     "id": 206,
     "question": "What is the leadership role in technical excellence and engineering practices?",
     "options": [
-      "Technical excellence is team responsibility; leaders focus only on business outcomes",
+      "Technical excellence is team responsibility; leaders focus primarily on business outcomes",
       "Set expectations for technical quality, enable teams to maintain excellence, and invest in capability building",
-      "Mandate specific technical practices for all teams to follow uniformly",
+      "Mandate specific technical practices for each team to follow uniformly",
       "Accept whatever technical quality teams deliver to maximize feature velocity"
     ],
     "correctAnswer": 1,
@@ -3095,7 +3095,7 @@ const paliQuestions = [
     "question": "How should leaders balance team autonomy with organizational alignment?",
     "options": [
       "Maximize autonomy even if it means teams work at cross-purposes",
-      "Eliminate autonomy to ensure perfect organizational alignment",
+      "minimize autonomy to ensure perfect organizational alignment",
       "Create clear strategic direction and constraints while empowering teams on execution decisions",
       "Alternate between tight control and full autonomy based on performance"
     ],
@@ -3109,9 +3109,9 @@ const paliQuestions = [
     "id": 208,
     "question": "What does 'people over process' mean for when processes aren't working?",
     "options": [
-      "Never change processes since people matter more than process",
-      "Always blame the people, never the process, when things go wrong",
-      "Eliminate all processes to maximize focus on people",
+      "rarely change processes since people matter more than process",
+      "generally blame the people, rarely the process, when things go wrong",
+      "minimize all processes to maximize focus on people",
       "Examine whether process serves people's effectiveness or creates unnecessary obstacles"
     ],
     "correctAnswer": 3,
@@ -3125,9 +3125,9 @@ const paliQuestions = [
     "question": "How should leaders approach continuous delivery and deployment capabilities?",
     "options": [
       "Support incremental improvement in deployment frequency and automation as strategic capability",
-      "Mandate that all teams achieve continuous deployment immediately",
-      "Focus only on features and ignore deployment capabilities",
-      "Continuous deployment only matters for web applications, not other software"
+      "Mandate that each team achieve continuous deployment immediately",
+      "Focus primarily on features and ignore deployment capabilities",
+      "Continuous deployment primarily matters for web applications, not other software"
     ],
     "correctAnswer": 0,
     "explanation": "Leaders understand that deployment frequency and automation are strategic capabilities that reduce risk and enable faster feedback. They support teams in incrementally improving these capabilities through automation, reduced batch size, and better practices. They invest in infrastructure and skills that enable more frequent, safer deployment.",
@@ -3155,7 +3155,7 @@ const paliQuestions = [
     "question": "How should leaders respond when multiple teams need the same specialized expertise?",
     "options": [
       "Assign specialists to multiple teams simultaneously to maximize utilization",
-      "Create a separate shared services team that all teams depend on",
+      "Create a separate shared services team that each team depend on",
       "Build capability within teams while providing temporary expert support during transitions",
       "Have teams wait in queue for shared specialists to become available"
     ],
@@ -3169,8 +3169,8 @@ const paliQuestions = [
     "id": 212,
     "question": "What does 'value-driven' mean for prioritizing technical work versus features?",
     "options": [
-      "Always prioritize customer features over technical work since features deliver value",
-      "Only do technical work when there's slack time after feature commitments",
+      "generally prioritize customer features over technical work since features deliver value",
+      "primarily do technical work when there's slack time after feature commitments",
       "Alternate iterations between feature work and technical work",
       "Technical work and features deliver different types of value and need balanced prioritization"
     ],
@@ -3185,7 +3185,7 @@ const paliQuestions = [
     "question": "How should leaders support teams in establishing healthy relationships with operations and support teams?",
     "options": [
       "Foster collaboration and shared responsibility while respecting needed specialization",
-      "Keep development and operations completely separate with formal handoffs",
+      "Keep development and operations substantially separate with formal handoffs",
       "Merge all operations responsibilities into development teams immediately",
       "Have operations teams report to development managers to ensure alignment"
     ],
@@ -3199,7 +3199,7 @@ const paliQuestions = [
     "id": 214,
     "question": "What is the leadership role when teams identify that organizational policies create waste?",
     "options": [
-      "Enforce compliance with all policies regardless of waste they create",
+      "Enforce compliance with all policies with limited regard for waste they create",
       "Review each policy and evolve those that create waste without serving a valid need",
       "Grant teams exemptions from any policies they find problematic",
       "Tell teams to work around wasteful policies without formally changing them"
@@ -3214,8 +3214,8 @@ const paliQuestions = [
     "id": 215,
     "question": "How should leaders approach team celebration and recognition?",
     "options": [
-      "Only recognize individual achievements to maintain accountability",
-      "Only recognize team achievements to reinforce collective ownership",
+      "primarily recognize individual achievements to maintain accountability",
+      "primarily recognize team achievements to reinforce collective ownership",
       "Recognize both individual contributions and team successes appropriately",
       "Avoid all recognition since it creates competition and status differences"
     ],
@@ -3229,9 +3229,9 @@ const paliQuestions = [
     "id": 216,
     "question": "What does 'empirical process control' mean for governance and oversight?",
     "options": [
-      "Eliminate all governance since empiricism means adapting without controls",
+      "minimize all governance since empiricism means adapting without controls",
       "Maintain traditional phase-gate governance with detailed upfront approval",
-      "Only perform governance reviews at the end of work when it's complete",
+      "primarily perform governance reviews at the end of work when it's complete",
       "Shift governance to focus on outcomes and learning through frequent inspection of working product"
     ],
     "correctAnswer": 3,
@@ -3242,16 +3242,16 @@ const paliQuestions = [
   },
   {
     "id": 217,
-    "question": "How should leaders support teams dealing with unclear or conflicting stakeholder requests?",
+    "question": "Two stakeholder groups give a Product Owner incompatible outcome targets. What should leaders do?",
     "options": [
-      "Facilitate stakeholder alignment while empowering Product Owners to make final priority decisions",
-      "Make all priority decisions to protect teams from stakeholder conflicts",
-      "Have teams implement all requests from all stakeholders regardless of conflicts",
-      "Tell teams to ignore stakeholder requests and focus on technical priorities"
+      "Tell the Product Owner to satisfy both targets",
+      "Escalate every backlog decision to executives",
+      "Expose the conflict and align on one product direction",
+      "Let each stakeholder reserve part of every Sprint"
     ],
-    "correctAnswer": 0,
-    "explanation": "Leaders help stakeholders align on priorities and resolve conflicts, ensuring Product Owners have authority to make final decisions. They don't make all product decisions themselves or let teams be whipsawed by conflicting stakeholder demands. They enable the conversations and decisions that create clarity and alignment.",
-    "domain": "Stakeholder Management",
+    "correctAnswer": 2,
+    "explanation": "Conflicting outcome targets require strategic alignment. Leaders help stakeholders expose trade-offs and establish coherent product direction.",
+    "domain": "Strategic Vision",
     "difficulty": "Intermediate",
     "focusArea": "Managing Products with Agility"
   },
@@ -3262,7 +3262,7 @@ const paliQuestions = [
       "Learning is individual responsibility; leaders focus on delivery results",
       "Create systems, time, and culture that enable and value continuous learning",
       "Mandate specific learning activities and training for everyone",
-      "Only invest in learning for high-potential employees"
+      "primarily invest in learning for high-potential employees"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders build learning organizations by creating psychological safety for experimentation, allocating time for learning, providing resources (training, books, conferences), establishing communities of practice, and celebrating learning and knowledge sharing. They make learning a valued part of work, not separate from it.",
@@ -3274,7 +3274,7 @@ const paliQuestions = [
     "id": 219,
     "question": "How should leaders balance short-term delivery pressure with long-term organizational capability?",
     "options": [
-      "Always prioritize long-term capability even at the expense of near-term delivery",
+      "generally prioritize long-term capability even at the expense of near-term delivery",
       "Focus exclusively on short-term delivery and worry about capability later",
       "Make conscious trade-offs between short-term needs and building sustainable capability",
       "Alternate quarters between delivery focus and capability building focus"
@@ -3287,16 +3287,16 @@ const paliQuestions = [
   },
   {
     "id": 220,
-    "question": "What does 'sustainable pace' mean for leadership commitment decisions?",
+    "question": "A team repeatedly works nights before releases. What leadership response best supports sustainability?",
     "options": [
-      "Never commit to deadlines since sustainable pace is the only priority",
-      "Make whatever commitments stakeholders want and pressure teams to deliver",
-      "Always pad commitments by 50% to ensure sustainable pace",
-      "Make commitments that the organization can meet without chronic overwork"
+      "Celebrate the extra effort and retain the release process",
+      "Reduce transparency about overtime to protect morale",
+      "Inspect demand, quality, and release constraints and address the systemic causes",
+      "Rotate overtime among team members to distribute it fairly"
     ],
-    "correctAnswer": 3,
-    "explanation": "Leaders make realistic commitments based on empirical capacity rather than wishful thinking or stakeholder pressure. They understand that commitments requiring chronic overtime aren't sustainable and damage long-term capability. They negotiate what's possible within sustainable pace or adjust scope/timeline to match real capacity.",
-    "domain": "Agile Culture",
+    "correctAnswer": 2,
+    "explanation": "Recurring overtime is a system signal. Leaders address demand, technical quality, and release constraints rather than normalizing heroics.",
+    "domain": "Creating High-Performing Teams",
     "difficulty": "Intermediate",
     "focusArea": "Developing People and Teams"
   },
@@ -3305,7 +3305,7 @@ const paliQuestions = [
     "question": "How should leaders approach cross-team knowledge sharing?",
     "options": [
       "Create forums and practices for teams to share learnings and coordinate where valuable",
-      "Mandate that all teams document and share every decision and learning",
+      "Mandate that each team document and share every decision and learning",
       "Let teams work independently without any knowledge sharing mechanisms",
       "Assign knowledge management roles to document and distribute all information"
     ],
@@ -3321,7 +3321,7 @@ const paliQuestions = [
     "options": [
       "Abandon Agile since it doesn't fit the culture",
       "Work to evolve both practices and culture, recognizing they must align for success",
-      "Force Agile practices regardless of cultural fit",
+      "Force Agile practices with limited regard for cultural fit",
       "Implement Agile practices identically and wait for culture to automatically change"
     ],
     "correctAnswer": 1,
@@ -3334,8 +3334,8 @@ const paliQuestions = [
     "id": 223,
     "question": "How should leaders support teams in establishing working agreements?",
     "options": [
-      "Provide standard working agreements that all teams must adopt",
-      "Stay completely uninvolved since working agreements are purely team-owned",
+      "Provide standard working agreements that each team should adopt",
+      "Stay substantially uninvolved since working agreements are purely team-owned",
       "Ensure team agreements support the work and align with organizational values",
       "Require formal approval of all team working agreements"
     ],
@@ -3351,8 +3351,8 @@ const paliQuestions = [
     "options": [
       "Invest primarily in separate QA teams to ensure quality",
       "Quality is free so no specific investment is needed",
-      "Only invest in quality improvement after velocity targets are met",
-      "Invest in practices, tools, and skills that enable teams to build quality into their work"
+      "primarily invest in quality improvement after velocity targets are met",
+      "Invest in the skills and practices needed to build in quality"
     ],
     "correctAnswer": 3,
     "explanation": "Leaders invest in capabilities that enable built-in quality: test automation tools and skills, continuous integration systems, adequate test environments, time for refactoring and technical excellence, and quality-focused engineering practices. Quality isn't free but investing in built-in quality is more effective than inspection-based quality.",
@@ -3364,7 +3364,7 @@ const paliQuestions = [
     "id": 225,
     "question": "How should leaders approach the tension between standardization and innovation?",
     "options": [
-      "Balance necessary standardization with space for innovation and experimentation",
+      "Balance needed standardization with space for innovation and experimentation",
       "Maximize standardization to achieve efficiency and reduce costs",
       "Maximize innovation by avoiding all standards and constraints",
       "Separate teams into standardization-focused and innovation-focused groups"
@@ -3380,7 +3380,7 @@ const paliQuestions = [
     "question": "What is the leadership responsibility when organizational structure impedes value delivery?",
     "options": [
       "Work within existing structure—organizational design is not a leadership concern",
-      "Examine structure empirically and evolve it thoughtfully based on value flow",
+      "Examine structure empirically and evolve it thoughtfully using value flow",
       "Immediately restructure the entire organization to fix impediments",
       "Wait for executive leadership to mandate structural changes"
     ],
@@ -3397,7 +3397,7 @@ const paliQuestions = [
       "Make everything transparent with no exceptions for true organizational agility",
       "Minimize transparency to protect sensitive information and maintain control",
       "Default to transparency while protecting legitimately confidential information",
-      "Only share information on a strict need-to-know basis"
+      "primarily share information on a strict need-to-know basis"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders maximize transparency as it enables inspection, adaptation, and trust. Some information requires confidentiality (personal data, pending acquisitions, security details). The default is transparency; confidentiality is the exception with clear reasoning. Excessive secrecy damages trust and agility more than it protects.",
@@ -3409,9 +3409,9 @@ const paliQuestions = [
     "id": 228,
     "question": "What does 'pull system' mean for leadership resource allocation?",
     "options": [
-      "Leaders should never allocate resources—teams pull whatever they need",
-      "Pull systems only apply to manufacturing, not knowledge work",
-      "Leadership assigns work to teams regardless of current workload",
+      "Leaders should rarely allocate resources—teams pull whatever they need",
+      "Pull systems primarily apply to manufacturing, not knowledge work",
+      "Leadership assigns work to teams with limited regard for current workload",
       "Teams pull work when they have capacity rather than having work pushed onto them"
     ],
     "correctAnswer": 3,
@@ -3439,10 +3439,10 @@ const paliQuestions = [
     "id": 230,
     "question": "What is the leadership role in establishing Definition of Ready?",
     "options": [
-      "Leaders should mandate specific Definition of Ready criteria for all teams",
+      "Leaders should mandate specific Definition of Ready criteria for each team",
       "Support teams in creating appropriate readiness criteria while avoiding excessive ceremony",
       "Definition of Ready is unnecessary bureaucracy that slows Agile teams",
-      "Only Product Owners should define readiness without team or leadership input"
+      "primarily Product Owners should define readiness without team or leadership input"
     ],
     "correctAnswer": 1,
     "explanation": "Definition of Ready helps ensure work is understood before teams commit to it. Leaders ensure teams don't create excessive ceremony (20 checkboxes) or skip readiness entirely (pulling poorly understood work). The balance is having enough clarity to start effectively without delaying work unnecessarily.",
@@ -3457,7 +3457,7 @@ const paliQuestions = [
       "Implement comprehensive time tracking for all activities to maximize visibility",
       "Refuse all resource tracking as it contradicts Agile values",
       "Focus on outcome delivery and flow efficiency rather than individual utilization",
-      "Track utilization only for the lowest-performing team members"
+      "Track utilization primarily for the lowest-performing team members"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders help organizations understand that optimizing for 100% utilization creates bottlenecks and slows delivery. They shift focus to outcomes achieved, flow time, and quality rather than how busy people are. High utilization often correlates with poor flow and lower value delivery. Slack time enables learning and responding to urgent needs.",
@@ -3470,7 +3470,7 @@ const paliQuestions = [
     "question": "What does 'empiricism' mean for how leaders should respond to failure?",
     "options": [
       "Immediately identify and punish those responsible for failures",
-      "Ignore failures and focus only on successes to maintain team morale",
+      "Ignore failures and focus primarily on successes to maintain team morale",
       "Document failures but take no action to avoid disrupting ongoing work",
       "Examine failures transparently to understand causes and adapt to prevent recurrence"
     ],
@@ -3485,7 +3485,7 @@ const paliQuestions = [
     "question": "How should leaders support Product Owners in dealing with technical constraints?",
     "options": [
       "Enable collaboration where teams explain constraints and Product Owners make informed trade-offs",
-      "Shield Product Owners from technical details so they focus only on business value",
+      "Shield Product Owners from technical details so they focus primarily on business value",
       "Expect Product Owners to become technical experts in all implementation details",
       "Have technical leaders override Product Owner decisions when constraints exist"
     ],
@@ -3499,10 +3499,10 @@ const paliQuestions = [
     "id": 234,
     "question": "What is the leadership role when teams report unrealistic stakeholder expectations?",
     "options": [
-      "Tell teams to meet expectations regardless of feasibility",
+      "Tell teams to meet expectations with limited regard for feasibility",
       "Facilitate transparent conversations about capacity, trade-offs, and realistic outcomes",
       "Tell stakeholders their expectations are wrong without understanding context",
-      "Always side with teams over stakeholders to maintain team morale"
+      "generally side with teams over stakeholders to maintain team morale"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders enable honest conversations between teams and stakeholders about what's realistic. They help make capacity visible, clarify priorities, discuss trade-offs (scope, quality, timeline), and find mutually acceptable outcomes. They don't simply transmit pressure or completely shield teams from business reality.",
@@ -3514,7 +3514,7 @@ const paliQuestions = [
     "id": 235,
     "question": "How should leaders approach the concept of 'technical debt' with business stakeholders?",
     "options": [
-      "Never mention technical debt—it's a technical concern not relevant to stakeholders",
+      "rarely mention technical debt—it's a technical concern not relevant to stakeholders",
       "Use fear about system collapse to justify unlimited technical debt reduction",
       "Help stakeholders understand technical debt as business risk and cost affecting future delivery",
       "Tell stakeholders technical debt will be addressed without involving them in prioritization"
@@ -3530,8 +3530,8 @@ const paliQuestions = [
     "question": "What does 'self-organization' mean for accountability to external stakeholders?",
     "options": [
       "Self-organizing teams are not accountable to anyone outside the team",
-      "Self-organization eliminates the need for any external accountability",
-      "Only individual team members are accountable, not leaders or the team collectively",
+      "Self-organization minimizes the need for any external accountability",
+      "primarily individual team members are accountable, not leaders or the team collectively",
       "Leaders remain accountable to stakeholders while teams self-organize their work approach"
     ],
     "correctAnswer": 3,
@@ -3545,8 +3545,8 @@ const paliQuestions = [
     "question": "How should leaders support Scrum Masters who face organizational impediments beyond their influence?",
     "options": [
       "Own and actively work to resolve organizational impediments that Scrum Masters surface",
-      "Tell Scrum Masters to focus only on team-level impediments they can resolve",
-      "Expect Scrum Masters to resolve all impediments regardless of their organizational level",
+      "Tell Scrum Masters to focus primarily on team-level impediments they can resolve",
+      "Expect Scrum Masters to resolve all impediments with limited regard for their organizational level",
       "Document impediments for future consideration but maintain current organizational state"
     ],
     "correctAnswer": 0,
@@ -3562,7 +3562,7 @@ const paliQuestions = [
       "Consistency doesn't matter as long as decisions are well-intentioned",
       "Consistent behavior and decisions build trust and reinforce cultural values",
       "Leaders should constantly change approaches to stay adaptive",
-      "Consistency only matters for low-level decisions, not strategic choices"
+      "Consistency primarily matters for low-level decisions, not strategic choices"
     ],
     "correctAnswer": 1,
     "explanation": "Consistent leadership behavior builds trust and makes values real. When leaders consistently demonstrate transparency, adaptation, respect, and focus on value, these become cultural norms. Inconsistency—saying one thing and doing another—damages trust and creates cynicism about transformation. People watch what leaders do consistently, not what they say occasionally.",
@@ -3576,8 +3576,8 @@ const paliQuestions = [
     "options": [
       "Plan for 100% capacity utilization to maximize productivity",
       "Don't plan capacity at all—let teams self-organize their commitments",
-      "Plan for sustainable capacity with slack time for learning, innovation, and handling urgent issues",
-      "Only plan capacity for billable or customer-facing work"
+      "Reserve sustainable capacity for learning and urgent work",
+      "primarily plan capacity for billable or customer-facing work"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders understand that planning for 100% utilization creates rigidity and bottlenecks. Healthy capacity planning includes slack for learning, technical debt reduction, innovation, handling urgent issues, and preventing burnout. Sustainable capacity enables both delivery and continuous improvement.",
@@ -3590,8 +3590,8 @@ const paliQuestions = [
     "question": "What does 'responding to change' mean for leadership stability and vision?",
     "options": [
       "Leaders should constantly change direction to remain responsive",
-      "Never change strategic direction once it's set to provide stability",
-      "Only change direction when forced by external factors",
+      "rarely change strategic direction once it's set to provide stability",
+      "primarily change direction when forced by external factors",
       "Maintain strategic vision while adapting approach as learning and circumstances evolve"
     ],
     "correctAnswer": 3,
@@ -3605,7 +3605,7 @@ const paliQuestions = [
     "question": "How should leaders support teams in managing external dependencies?",
     "options": [
       "Make dependencies visible, reduce unnecessary coupling, and help navigate remaining dependencies",
-      "Eliminate all external dependencies before teams can start work",
+      "minimize all external dependencies before teams can start work",
       "Expect teams to manage all dependencies independently without leadership support",
       "Create detailed project plans that coordinate all external dependencies"
     ],
@@ -3622,7 +3622,7 @@ const paliQuestions = [
       "Measure everything possible to maximize transparency and control",
       "Choose metrics that enable learning and improvement while driving desired behaviors",
       "Avoid all metrics since they drive gaming and dysfunctional behavior",
-      "Implement industry-standard metrics regardless of organizational context"
+      "Implement industry-standard metrics with limited regard for organizational context"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders select metrics that provide insight for improvement decisions: outcome achievement, flow efficiency, quality, customer satisfaction, team health. They avoid metrics that drive wrong behaviors (local optimization, gaming, activity over value). Metrics should serve learning and improvement, not just monitoring and control.",
@@ -3637,7 +3637,7 @@ const paliQuestions = [
       "Approve all training requests to show support for team development",
       "Deny requests due to cost and time away from delivery",
       "Balance capability development with current delivery needs",
-      "Only provide training to high-performing teams as a reward"
+      "primarily provide training to high-performing teams as a reward"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders invest in capability development as it builds organizational capacity. They evaluate training requests considering relevance, timing, and delivery impact. They find ways to enable learning (internal knowledge sharing, online courses, conference attendance) while balancing immediate delivery needs. Growing capabilities is a strategic investment, not an optional perk.",
@@ -3649,7 +3649,7 @@ const paliQuestions = [
     "id": 244,
     "question": "What does 'emergent requirements' mean for leadership commitment to stakeholders?",
     "options": [
-      "Never commit to anything since requirements constantly emerge",
+      "rarely commit to anything since requirements constantly emerge",
       "Commit to detailed requirements upfront despite the principle of emergence",
       "Use emergence as an excuse for lack of planning or direction",
       "Commit to high-level outcomes while allowing detailed requirements to emerge through delivery"
@@ -3667,7 +3667,7 @@ const paliQuestions = [
       "Balance recognition of individual contribution with team collaboration and outcomes",
       "Compensate purely based on individual performance metrics",
       "Provide identical compensation to all team members to reinforce equality",
-      "Only reward team performance, never individual contributions"
+      "primarily reward team performance, rarely individual contributions"
     ],
     "correctAnswer": 0,
     "explanation": "Leaders design compensation that recognizes both individual contributions and team success. They avoid forced rankings or individual metrics that undermine collaboration. They acknowledge that individuals contribute at different levels while valuing collaboration and team outcomes. Balance individual recognition with avoiding competition that damages teamwork.",
@@ -3680,8 +3680,8 @@ const paliQuestions = [
     "question": "What is the leadership role when Agile practices create tension with existing organizational norms?",
     "options": [
       "Abandon Agile practices that conflict with existing norms",
-      "Address tensions by examining both practices and norms, evolving what doesn't serve outcomes",
-      "Force Agile practices regardless of organizational impact",
+      "Inspect practices and norms, then evolve those harming outcomes",
+      "Force Agile practices with limited regard for organizational impact",
       "Ignore the tension and hope it resolves naturally over time"
     ],
     "correctAnswer": 1,
@@ -3692,26 +3692,26 @@ const paliQuestions = [
   },
   {
     "id": 247,
-    "question": "How should leaders support teams dealing with ambiguous or changing requirements?",
+    "question": "A team receives frequent customer feedback but rarely changes its Product Backlog. What should leaders explore?",
     "options": [
-      "Stop all work until requirements are completely clear and stable",
-      "Pressure stakeholders to commit to fixed requirements upfront",
-      "Enable iterative delivery and frequent feedback to clarify requirements through building",
-      "Have teams build everything stakeholders mention to avoid missing requirements"
+      "Whether feedback is translated into product decisions and learning",
+      "Whether customers should provide feedback less often",
+      "Whether the team needs a longer Sprint to process comments",
+      "Whether managers should order the Product Backlog directly"
     ],
-    "correctAnswer": 2,
-    "explanation": "Leaders help teams and stakeholders embrace that clarity emerges through building and feedback in complex domains. They enable short iterations, frequent stakeholder engagement, and learning from working software rather than detailed upfront requirements. They educate stakeholders that this approach manages risk better than exhaustive planning.",
-    "domain": "Empiricism and Agility",
+    "correctAnswer": 0,
+    "explanation": "Feedback creates value only when it informs decisions. Leaders explore the learning loop and obstacles preventing evidence from shaping the backlog.",
+    "domain": "Product Value",
     "difficulty": "Intermediate",
-    "focusArea": "Understanding and Applying Scrum"
+    "focusArea": "Managing Products with Agility"
   },
   {
     "id": 248,
     "question": "What does 'swarming' on impediments mean for leadership resource allocation?",
     "options": [
-      "Always assign multiple people to every task regardless of need",
-      "Never allow multiple people on the same work to maintain individual accountability",
-      "Swarming only applies to bugs, not to other types of work",
+      "generally assign multiple people to every task with limited regard for need",
+      "rarely allow multiple people on the same work to maintain individual accountability",
+      "Swarming primarily applies to bugs, not to other types of work",
       "Enable teams to temporarily focus multiple people on critical impediments to resolve them quickly"
     ],
     "correctAnswer": 3,
@@ -3724,9 +3724,9 @@ const paliQuestions = [
     "id": 249,
     "question": "How should leaders approach the balance between team autonomy and organizational standards?",
     "options": [
-      "Define minimum necessary standards while maximizing team autonomy within those guardrails",
+      "Define minimum needed standards while maximizing team autonomy within those guardrails",
       "Maximize autonomy with no organizational standards or constraints",
-      "Establish comprehensive standards that all teams must follow uniformly",
+      "Establish comprehensive standards that each team should follow uniformly",
       "Let the most senior technical people decide all standards for everyone"
     ],
     "correctAnswer": 0,
@@ -3739,9 +3739,9 @@ const paliQuestions = [
     "id": 250,
     "question": "What is the leadership responsibility when teams identify waste in organizational processes?",
     "options": [
-      "Require compliance with all processes regardless of waste",
+      "Require compliance with all processes with limited regard for waste",
       "Investigate the waste and evolve processes that no longer serve their purpose",
-      "Immediately eliminate any process teams identify as wasteful",
+      "Immediately minimize any process teams identify as wasteful",
       "Tell teams to document waste but take no action to change processes"
     ],
     "correctAnswer": 1,
@@ -3754,7 +3754,7 @@ const paliQuestions = [
     "id": 251,
     "question": "How should leaders support teams in establishing coding standards and technical practices?",
     "options": [
-      "Mandate identical coding standards and practices for all teams",
+      "Mandate identical coding standards and practices for each team",
       "Leave all technical decisions entirely to individual developers",
       "Enable teams to establish appropriate standards while sharing practices across teams",
       "Have architects define all technical standards without team input"
@@ -3769,7 +3769,7 @@ const paliQuestions = [
     "id": 252,
     "question": "What does 'working software is the primary measure of progress' mean for leadership reporting?",
     "options": [
-      "Never report anything except completed features",
+      "rarely report anything except completed features",
       "Working software is sufficient; no other progress measures are needed",
       "Create comprehensive reports of all team activities in addition to working software",
       "Focus on delivery of valuable working software over activity reports and phase completion"
@@ -3786,7 +3786,7 @@ const paliQuestions = [
     "options": [
       "Help stakeholders understand how Agile delivery provides better visibility while reducing report burden",
       "Refuse all traditional reporting since it contradicts Agile values",
-      "Provide whatever reports stakeholders request regardless of value",
+      "Provide whatever reports stakeholders request with limited regard for value",
       "Create parallel traditional reports in addition to Agile practices"
     ],
     "correctAnswer": 0,
@@ -3801,7 +3801,7 @@ const paliQuestions = [
     "options": [
       "Psychological safety is a team responsibility; leaders shouldn't interfere",
       "Model vulnerability, respond constructively to failure and disagreement, and address toxic behavior",
-      "Eliminate all conflict and challenge to ensure people feel comfortable",
+      "minimize all conflict and challenge to ensure people feel comfortable",
       "Psychological safety naturally emerges without specific leadership action"
     ],
     "correctAnswer": 1,
@@ -3831,8 +3831,8 @@ const paliQuestions = [
     "options": [
       "Leadership practices should remain stable to provide consistency for teams",
       "Leaders should constantly change their approaches to stay adaptive",
-      "Continuous improvement only applies to teams, not to leadership",
-      "Leaders regularly examine and improve their own practices based on feedback and outcomes"
+      "Continuous improvement primarily applies to teams, not to leadership",
+      "Leaders regularly examine and improve their own practices using feedback and outcomes"
     ],
     "correctAnswer": 3,
     "explanation": "Leaders apply continuous improvement to their own practices: seeking feedback on leadership effectiveness, examining outcomes of decisions, trying new approaches, and evolving based on learning. They model the improvement mindset they expect from teams. Leadership practices should evolve as the organization learns, not remain static or thrash constantly.",
@@ -3845,9 +3845,9 @@ const paliQuestions = [
     "question": "How should leaders support teams dealing with distributed or asynchronous collaboration challenges?",
     "options": [
       "Invest in tools, practices, and norms that enable effective distributed collaboration",
-      "Require all teams to be co-located to avoid distribution challenges",
+      "Require each team to be co-located to avoid distribution challenges",
       "Accept reduced effectiveness as inevitable with distributed teams",
-      "Only allow synchronous communication to maintain team cohesion"
+      "primarily allow synchronous communication to maintain team cohesion"
     ],
     "correctAnswer": 0,
     "explanation": "Leaders acknowledge distribution adds complexity but invest in making it work: collaboration tools, thoughtful meeting scheduling, documentation practices, clear communication norms, and team-building activities. They don't pretend distribution doesn't matter or give up on synchronous collaboration. They adapt practices to the reality of how teams work.",
@@ -3875,7 +3875,7 @@ const paliQuestions = [
     "question": "How should leaders approach the concept of 'failure' in Agile environments?",
     "options": [
       "Celebrate all failures equally as learning opportunities",
-      "Never accept failure; hold people accountable for all negative outcomes",
+      "rarely accept failure; hold people accountable for all negative outcomes",
       "Distinguish between intelligent experiments and careless mistakes in response",
       "Hide failures to maintain stakeholder confidence and team morale"
     ],
@@ -3891,7 +3891,7 @@ const paliQuestions = [
     "options": [
       "Make strategic decisions based purely on data without considering intuition or experience",
       "Avoid strategic planning since empiricism means adapting without long-term direction",
-      "Strategic decisions are too important for experimentation; only tactical decisions should be empirical",
+      "Strategic decisions are too important for experimentation; primarily tactical decisions should be empirical",
       "Make strategic decisions informed by data and learning while acknowledging uncertainty"
     ],
     "correctAnswer": 3,
@@ -3907,7 +3907,7 @@ const paliQuestions = [
       "Enable collaboration where teams make technical debt visible and Product Owners balance it with feature work",
       "Technical debt decisions should be made by technical teams without Product Owner involvement",
       "Product Owners should prioritize all features over technical debt reduction",
-      "Mandate fixed percentages of capacity for technical debt across all teams"
+      "Mandate fixed percentages of capacity for technical debt across each team"
     ],
     "correctAnswer": 0,
     "explanation": "Leaders ensure technical debt is visible to Product Owners in business terms (slower delivery, more bugs, higher costs). They enable collaboration where teams explain technical debt impact and Product Owners make informed trade-offs between paying down debt and delivering features. Neither technical teams nor Product Owners own this decision alone.",
@@ -3920,7 +3920,7 @@ const paliQuestions = [
     "question": "What is the leadership responsibility when teams consistently miss their commitments?",
     "options": [
       "Pressure teams to work harder and commit to less to ensure they meet targets",
-      "Investigate root causes: planning issues, external impediments, skills gaps, or unrealistic pressure",
+      "Investigate planning, skills, impediments, and external pressure",
       "Accept missed commitments as normal in uncertain environments",
       "Replace team members who fail to deliver on commitments"
     ],
@@ -3950,7 +3950,7 @@ const paliQuestions = [
     "question": "What does 'inspect and adapt' mean for leadership decision-making velocity?",
     "options": [
       "Make decisions as quickly as possible to demonstrate agility",
-      "Delay all decisions until complete information is available",
+      "Delay most decisions until complete information is available",
       "Use committees to slow down decision-making and increase deliberation",
       "Make decisions at the right pace considering reversibility, risk, and available information"
     ],
@@ -3965,8 +3965,8 @@ const paliQuestions = [
     "question": "How should leaders support teams in establishing healthy boundaries with stakeholders?",
     "options": [
       "Enable teams to have transparent conversations about capacity and sustainable pace",
-      "Teams should accommodate all stakeholder requests regardless of impact",
-      "Shield teams completely from all stakeholder interaction",
+      "Teams should accommodate all stakeholder requests with limited regard for impact",
+      "Shield teams substantially from all stakeholder interaction",
       "Leaders should make all stakeholder commitments without team input"
     ],
     "correctAnswer": 0,
@@ -3994,8 +3994,8 @@ const paliQuestions = [
     "id": 267,
     "question": "How should leaders approach the tension between speed and learning?",
     "options": [
-      "Always maximize speed; learning happens naturally through delivery",
-      "Always prioritize learning over speed to build long-term capability",
+      "generally maximize speed; learning happens naturally through delivery",
+      "generally prioritize learning over speed to build long-term capability",
       "Understand that sustainable speed requires building in time for reflection and learning",
       "Alternate between speed-focused and learning-focused periods"
     ],
@@ -4010,9 +4010,9 @@ const paliQuestions = [
     "question": "What does 'servant leadership' mean for difficult decisions and accountability?",
     "options": [
       "Servant leaders avoid making difficult decisions to serve team harmony",
-      "Servant leadership means always doing what teams want",
+      "Servant leadership means generally doing what teams want",
       "Servant leadership and accountability are incompatible concepts",
-      "Servant leaders make difficult decisions when needed while prioritizing team growth and success"
+      "Make needed decisions while prioritizing team growth"
     ],
     "correctAnswer": 3,
     "explanation": "Servant leadership doesn't mean avoiding difficult decisions or abdicating accountability. Servant leaders prioritize enabling others' success, but this includes making tough calls, holding people accountable, providing clear direction, and having difficult conversations when needed. Serving others sometimes means challenging them or making unpopular decisions.",
@@ -4056,7 +4056,7 @@ const paliQuestions = [
     "options": [
       "Maximize consistency through standardization of all work approaches",
       "Maximize autonomy without any organizational standards or constraints",
-      "Define clear outcomes and necessary constraints while empowering people on approach",
+      "Define clear outcomes and needed constraints while empowering people on approach",
       "Rotate between periods of autonomy and periods of standardization"
     ],
     "correctAnswer": 2,
@@ -4099,7 +4099,7 @@ const paliQuestions = [
     "id": 274,
     "question": "What is the leadership responsibility when teams identify organizational policies that contradict Agile values?",
     "options": [
-      "Enforce all existing policies regardless of contradiction with Agile values",
+      "Enforce all existing policies with limited regard for contradiction with Agile values",
       "Examine policy purpose and evolve policies to better serve organizational needs and Agile values",
       "Grant Agile teams exemptions from all contradicting policies",
       "Tell teams to follow contradicting policies while also implementing Agile practices"
@@ -4114,7 +4114,7 @@ const paliQuestions = [
     "id": 275,
     "question": "How should leaders approach the balance between team stability and organizational flexibility?",
     "options": [
-      "Never change team membership once teams are formed",
+      "rarely change team membership once teams are formed",
       "Frequently reorganize teams to maintain organizational flexibility",
       "Protect team stability and change membership only when benefits outweigh disruption",
       "Let individuals freely move between teams whenever they choose"
@@ -4129,9 +4129,9 @@ const paliQuestions = [
     "id": 276,
     "question": "What does 'transparency' mean for how leaders should communicate challenges and setbacks?",
     "options": [
-      "Leaders should always present a positive view to maintain stakeholder confidence",
+      "Leaders should generally present a positive view to maintain stakeholder confidence",
       "Share all problems and challenges immediately without filtering or context",
-      "Only communicate challenges after they've been completely resolved",
+      "primarily communicate challenges after they've been substantially resolved",
       "Communicate challenges honestly with context and plans for addressing them"
     ],
     "correctAnswer": 3,
@@ -4145,7 +4145,7 @@ const paliQuestions = [
     "question": "How should leaders support teams in establishing appropriate documentation practices?",
     "options": [
       "Enable teams to create just-enough documentation that serves real needs",
-      "Mandate comprehensive documentation of all decisions and work",
+      "Mandate comprehensive documentation of most decisions and work",
       "Minimize all documentation to maximize working software focus",
       "Have separate documentation specialists create all documentation"
     ],
@@ -4159,7 +4159,7 @@ const paliQuestions = [
     "id": 278,
     "question": "What is the leadership role in managing dependencies between products or value streams?",
     "options": [
-      "Eliminate all cross-product dependencies before implementing Agile practices",
+      "minimize all cross-product dependencies before implementing Agile practices",
       "Make dependencies visible, reduce unnecessary coupling, and enable direct coordination",
       "Create detailed cross-product project plans to manage all dependencies",
       "Ignore dependencies and expect each product team to work independently"
@@ -4189,9 +4189,9 @@ const paliQuestions = [
     "id": 280,
     "question": "What does 'Built on a foundation of respect for people' mean for leadership decisions affecting employees?",
     "options": [
-      "Never make decisions that anyone disagrees with to maintain respect",
-      "Respect means always choosing what's most comfortable for employees",
-      "Respect is separate from decision-making; focus only on business outcomes",
+      "rarely make decisions that anyone disagrees with to maintain respect",
+      "Respect means generally choosing what's most comfortable for employees",
+      "Respect is separate from decision-making; focus primarily on business outcomes",
       "Make decisions considering people's well-being while balancing organizational needs"
     ],
     "correctAnswer": 3,
@@ -4206,8 +4206,8 @@ const paliQuestions = [
     "options": [
       "MVP is the smallest product that enables validated learning about customer needs and value",
       "MVP means the lowest quality product that can ship to minimize investment",
-      "MVP is always the smallest possible feature set regardless of user needs",
-      "MVP should always be built by separate teams from the main product"
+      "MVP is generally the smallest possible feature set with limited regard for user needs",
+      "MVP should generally be built by separate teams from the main product"
     ],
     "correctAnswer": 0,
     "explanation": "Leaders understand MVP as a learning tool—the smallest product that enables validating hypotheses about customer needs and value. Quality should be appropriate; scope should be minimal for learning. MVP isn't about cutting corners or shipping incomplete products—it's about learning efficiently before investing in features that might not deliver value.",
@@ -4219,10 +4219,10 @@ const paliQuestions = [
     "id": 282,
     "question": "What is the leadership role when teams have different working styles or practices?",
     "options": [
-      "Mandate uniform practices across all teams for consistency",
+      "Mandate uniform practices across each team for consistency",
       "Enable practice diversity while facilitating knowledge sharing and coordination where needed",
       "Allow complete diversity with no organizational coordination",
-      "Force all teams to adopt practices from the highest-performing team"
+      "Force each team to adopt practices from the highest-performing team"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders allow teams to adapt practices to their context while creating forums for sharing what works (communities of practice, guilds, demos). Some coordination enables integration and learning. Total standardization kills innovation and context appropriateness; complete independence prevents learning. Balance enabling diversity with facilitating coordination and knowledge sharing.",
@@ -4235,7 +4235,7 @@ const paliQuestions = [
     "question": "How should leaders support teams dealing with unclear product vision?",
     "options": [
       "Tell teams to proceed with implementation despite unclear vision",
-      "Wait to start any work until vision is completely clear and documented",
+      "Wait to start any work until vision is substantially clear and documented",
       "Work with Product Owners and stakeholders to clarify and communicate product vision",
       "Have teams define product vision themselves without stakeholder input"
     ],
@@ -4249,8 +4249,8 @@ const paliQuestions = [
     "id": 284,
     "question": "What does 'individuals over processes' mean when individuals are creating problems?",
     "options": [
-      "Always side with individuals over process concerns regardless of impact",
-      "Individuals cannot be the problem; it's always the process",
+      "generally side with individuals over process concerns with limited regard for impact",
+      "Individuals cannot be the problem; it's generally the process",
       "Focus entirely on fixing processes and ignore individual contributions to problems",
       "Address individual behavior and performance issues while also examining systemic factors"
     ],
@@ -4265,7 +4265,7 @@ const paliQuestions = [
     "question": "How should leaders measure the health and effectiveness of Agile teams?",
     "options": [
       "Use multiple indicators: value delivered, quality, team health, and capability growth",
-      "Measure only velocity and output metrics to track team productivity",
+      "Measure primarily velocity and output metrics to track team productivity",
       "Health and effectiveness are subjective and cannot be measured",
       "Compare teams against each other and rank performance"
     ],
@@ -4294,8 +4294,8 @@ const paliQuestions = [
     "id": 287,
     "question": "How should leaders approach the balance between delivering current commitments and investing in future capabilities?",
     "options": [
-      "Always prioritize current commitments; future capability builds naturally",
-      "Always invest in future capability even at the expense of current commitments",
+      "generally prioritize current commitments; future capability builds naturally",
+      "generally invest in future capability even at the expense of current commitments",
       "Make explicit trade-offs ensuring some investment in capability while meeting commitments",
       "Separate teams into delivery-focused and capability-focused groups"
     ],
@@ -4311,7 +4311,7 @@ const paliQuestions = [
     "options": [
       "Customer collaboration is Product Owner responsibility; leaders focus on other concerns",
       "Leaders should make all customer engagement decisions to maintain control",
-      "Only allow customer interaction through formal requirements and contracts",
+      "primarily allow customer interaction through formal requirements and contracts",
       "Enable and encourage direct team-customer interaction while ensuring strategic customer relationships"
     ],
     "correctAnswer": 3,
@@ -4324,7 +4324,7 @@ const paliQuestions = [
     "id": 289,
     "question": "How should leaders support teams in managing quality in short iterations?",
     "options": [
-      "Ensure teams have practices and skills that enable built-in quality within iteration timeframes",
+      "Build the skills and practices for quality within each iteration",
       "Accept lower quality to maintain delivery speed in short iterations",
       "Extend iterations to ensure sufficient time for quality",
       "Add separate QA phases after iterations to ensure quality"
@@ -4341,7 +4341,7 @@ const paliQuestions = [
     "options": [
       "Take over decision-making until teams prove they can self-organize",
       "Provide coaching and clear boundaries while teams develop self-management skills",
-      "Leave teams to figure out self-organization completely independently",
+      "Leave teams to figure out self-organization substantially independently",
       "Replace team members who cannot self-organize effectively"
     ],
     "correctAnswer": 1,
@@ -4357,7 +4357,7 @@ const paliQuestions = [
       "Succession planning is unnecessary since Agile teams are self-organizing",
       "Identify and develop successors in secret to avoid disrupting current performance",
       "Develop organizational bench strength through knowledge sharing and growth opportunities",
-      "Only focus on succession planning for executive positions"
+      "primarily focus on succession planning for executive positions"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders build organizational resilience by developing people's capabilities, ensuring knowledge sharing, creating growth opportunities, and avoiding single points of failure. This isn't secret succession planning but organizational capability development. They rotate responsibilities, support learning, and ensure multiple people can handle critical roles. This benefits both individuals and organizational sustainability.",
@@ -4369,10 +4369,10 @@ const paliQuestions = [
     "id": 292,
     "question": "What does 'responding to change over following a plan' mean for annual budget cycles?",
     "options": [
-      "Eliminate annual budgets entirely since they represent plans",
+      "minimize annual budgets entirely since they represent plans",
       "Ignore budget constraints and spend based on emerging needs",
       "Maintain traditional annual budgets unchanged despite Agile adoption",
-      "Evolve budgeting to enable more frequent reallocation and adaptation within fiscal constraints"
+      "Enable frequent funding changes within fiscal constraints"
     ],
     "correctAnswer": 3,
     "explanation": "Leaders work to evolve budgeting from rigid annual project budgets to more adaptive funding: product-based funding, review points for reallocation, ability to pivot investments based on learning. They work within fiscal realities while enabling more flexibility than traditional budgeting. Complete budget elimination isn't realistic; total rigidity prevents agility.",
@@ -4385,8 +4385,8 @@ const paliQuestions = [
     "question": "How should leaders support Product Owners in balancing short-term stakeholder demands with long-term product health?",
     "options": [
       "Enable Product Owners to make visible trade-offs between short-term delivery and long-term sustainability",
-      "Always prioritize short-term stakeholder demands to maintain relationships",
-      "Always prioritize long-term health even if stakeholders are dissatisfied",
+      "generally prioritize short-term stakeholder demands to maintain relationships",
+      "generally prioritize long-term health even if stakeholders are dissatisfied",
       "Make all prioritization decisions for Product Owners to protect them from pressure"
     ],
     "correctAnswer": 0,
@@ -4414,7 +4414,7 @@ const paliQuestions = [
     "id": 295,
     "question": "How should leaders approach the integration of Agile teams with traditional project management organizations?",
     "options": [
-      "Keep Agile teams completely separate from traditional project management",
+      "Keep Agile teams substantially separate from traditional project management",
       "Force all project management to adopt Agile practices immediately",
       "Create interfaces and translation between approaches while working toward organizational alignment",
       "Have Agile teams comply with all traditional project management processes"
@@ -4445,7 +4445,7 @@ const paliQuestions = [
     "question": "How should leaders support teams in establishing effective collaboration practices?",
     "options": [
       "Provide frameworks and support while enabling teams to adapt practices to their context",
-      "Mandate specific collaboration practices all teams must follow",
+      "Mandate specific collaboration practices each team should follow",
       "Let teams figure out collaboration practices without any guidance",
       "Hire external facilitators to manage all team collaboration"
     ],
@@ -4460,7 +4460,7 @@ const paliQuestions = [
     "question": "What is the leadership responsibility when teams identify impediments that require investment to resolve?",
     "options": [
       "Tell teams to work around impediments that require investment",
-      "Prioritize impediment investments based on impact and work to fund high-value improvements",
+      "Prioritize impediment investments using impact and work to fund high-value improvements",
       "Immediately fund all impediment resolutions teams identify",
       "Document all impediments but make no commitments to address them"
     ],
@@ -4477,7 +4477,7 @@ const paliQuestions = [
       "Maximize experimentation without considering organizational stability",
       "Avoid all experimentation to maintain maximum stability",
       "Enable bounded experimentation while protecting critical organizational capabilities",
-      "Only allow experimentation in designated innovation timeslots"
+      "primarily allow experimentation in designated innovation timeslots"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders enable experimentation within appropriate boundaries: clear on what's safe to experiment with, what requires more careful consideration, and what's not open to experimentation (critical security, regulatory compliance). They create safety for intelligent experiments while maintaining stability of essential operations. Balance enables both innovation and reliability.",
@@ -4489,7 +4489,7 @@ const paliQuestions = [
     "id": 300,
     "question": "What does 'sustainable pace' mean for leadership expectations during crisis or critical deadlines?",
     "options": [
-      "Never ask for extra effort regardless of business criticality",
+      "rarely ask for extra effort with limited regard for business criticality",
       "Crisis mode is the normal operating mode in competitive environments",
       "Sustainable pace means teams decide their hours without leadership visibility",
       "Occasional intensity for critical situations is acceptable; chronic overwork is not sustainable"
@@ -4520,7 +4520,7 @@ const paliQuestions = [
     "question": "Multiple Agile teams work in complete isolation. What is the primary risk?",
     "options": [
       "Inconsistent velocity across teams",
-      "Duplicated effort and conflicting priorities",
+      "Duplicated work and conflicting priorities",
       "Different team speeds",
       "Lack of standardized ceremonies"
     ],
@@ -4549,8 +4549,8 @@ const paliQuestions = [
     "id": 304,
     "question": "How should leaders help teams balance innovation with delivering committed work?",
     "options": [
-      "Mandate 20% innovation time regardless of commitments",
-      "Allow innovation only after committed work completes",
+      "Mandate 20% innovation time with limited regard for commitments",
+      "Allow innovation primarily after committed work completes",
       "Create separate innovation teams",
       "Help teams build slack into capacity planning for exploration"
     ],
@@ -4564,7 +4564,7 @@ const paliQuestions = [
     "id": 305,
     "question": "An executive requests detailed Gantt charts from Agile teams. What should a leader do?",
     "options": [
-      "Understand underlying needs and propose alternative visualizations",
+      "Understand the need and offer better visualizations",
       "Explain that Agile teams don't create project plans",
       "Have teams create Gantt charts as requested",
       "Escalate to senior leadership"
@@ -4624,7 +4624,7 @@ const paliQuestions = [
     "id": 309,
     "question": "A team member reports burnout from context switching between projects. How should a leader respond?",
     "options": [
-      "Work with leadership to reduce WIP and improve focus",
+      "Reduce work in progress with leadership support",
       "Explain multi-tasking is required in modern work",
       "Suggest working longer hours",
       "Move to a different team"
@@ -4730,7 +4730,7 @@ const paliQuestions = [
       "Refuse as estimation is fundamental",
       "Require proof before allowing change",
       "Suggest simplified estimation instead",
-      "Support the experiment if forecasting remains effective"
+      "Support it if forecasting remains effective"
     ],
     "correctAnswer": 3,
     "explanation": "Leaders support team experimentation within boundaries. If teams can forecast, plan effectively, and provide transparency without specific techniques, the approach matters less than outcomes. Leaders help define success criteria and support learning.",
@@ -4774,7 +4774,7 @@ const paliQuestions = [
     "options": [
       "Restructure into cross-functional teams immediately",
       "Escalate to executives for mandates",
-      "Create cross-silo working groups to improve collaboration",
+      "Use cross-silo groups to improve collaboration",
       "Accept silos as reality"
     ],
     "correctAnswer": 2,
@@ -4800,17 +4800,17 @@ const paliQuestions = [
   },
   {
     "id": 321,
-    "question": "How should leaders measure Agile transformation success?",
+    "question": "An Agile initiative improves delivery speed but customer outcomes decline. How should leaders interpret this?",
     "options": [
+      "The transformation is successful because output increased",
+      "The teams need higher velocity targets",
       "Better outcomes, satisfaction, and time to market",
-      "Percentage following Scrum correctly",
-      "Number trained in Agile methods",
-      "Velocity increases across teams"
+      "Customer outcomes should be reviewed after the transformation ends"
     ],
-    "correctAnswer": 0,
-    "explanation": "Transformation success measures outcomes that matter: improved product outcomes, faster value delivery, higher engagement and satisfaction, better customer satisfaction, and adaptability. Process adherence and training are activities, not outcomes. Focus on results Agile enables.",
+    "correctAnswer": 2,
+    "explanation": "Faster delivery is useful only when it improves outcomes or learning. Leaders inspect value evidence rather than treating output as success.",
     "domain": "Evidence-Based Management",
-    "difficulty": "Foundation",
+    "difficulty": "Intermediate",
     "focusArea": "Managing Products with Agility"
   },
   {
@@ -4864,7 +4864,7 @@ const paliQuestions = [
     "options": [
       "Run a timeboxed experiment with clear criteria",
       "Research thoroughly before allowing",
-      "Allow only if others succeeded",
+      "Allow primarily if others succeeded",
       "Discourage to maintain stability"
     ],
     "correctAnswer": 0,
@@ -4878,7 +4878,7 @@ const paliQuestions = [
     "question": "An organization implements Scrum but funds through annual project budgets. What problem does this create?",
     "options": [
       "Teams can't plan without multi-year funding",
-      "Annual budgets conflict with iterative delivery and adaptability",
+      "Annual budgets constrain iterative delivery and adaptation",
       "Project budgets prevent self-organization",
       "Budget cycles don't align with sprints"
     ],
@@ -4910,7 +4910,7 @@ const paliQuestions = [
       "Everyone getting along and avoiding conflict",
       "Regular social activities",
       "Remote work flexibility",
-      "Feeling comfortable disagreeing and taking risks"
+      "Safety to disagree and take risks"
     ],
     "correctAnswer": 3,
     "explanation": "Psychological safety means feeling safe taking interpersonal risks: voicing dissent, admitting mistakes, asking questions, challenging assumptions without negative consequences. This enables learning, innovation, and honest collaboration. It's not about comfort but conditions where healthy conflict and risk-taking drive improvement.",
@@ -4953,7 +4953,7 @@ const paliQuestions = [
     "question": "A team wants to eliminate daily standups. What should a leader do?",
     "options": [
       "Explain standups are mandatory",
-      "Allow only with replacement mechanism",
+      "Allow primarily with replacement mechanism",
       "Understand why and help achieve underlying goals",
       "Reduce to three times weekly"
     ],
@@ -4970,7 +4970,7 @@ const paliQuestions = [
       "Leader becomes overwhelmed bottleneck",
       "Decisions made without adequate input",
       "Team feels micromanaged",
-      "Team becomes dependent without developing capability"
+      "Team dependence replaces capability"
     ],
     "correctAnswer": 3,
     "explanation": "Direct problem-solving creates dependency and prevents capability development. Leaders coach teams to identify and solve problems, providing support and removing systemic impediments rather than solving everything. This builds sustainable capability.",
@@ -5014,7 +5014,7 @@ const paliQuestions = [
     "options": [
       "Support preventing idle time",
       "Suggest working on debt during idle time",
-      "Explain how slack supports learning and improvement",
+      "Show how slack enables learning and improvement",
       "Implement 100% utilization target"
     ],
     "correctAnswer": 2,
@@ -5057,9 +5057,9 @@ const paliQuestions = [
     "id": 338,
     "question": "How should leaders balance architectural consistency with team autonomy?",
     "options": [
-      "Allow complete autonomy in all decisions",
+      "Allow complete autonomy in most decisions",
       "Establish guidelines and principles teams adapt to context",
-      "Create review board for all decisions",
+      "Create review board for most decisions",
       "Mandate specific technologies and patterns"
     ],
     "correctAnswer": 1,
@@ -5090,7 +5090,7 @@ const paliQuestions = [
       "Create estimates and commit",
       "Refuse as conflicting with Agile",
       "Add 50% buffer to estimates",
-      "Use iterative funding and regular evaluation"
+      "Fund iteratively and evaluate regularly"
     ],
     "correctAnswer": 3,
     "explanation": "Complex work has inherent uncertainty. Rather than refusing or unreliable commitments, leaders educate on uncertainty and propose risk management approaches: incremental funding, frequent reviews, MVP definition, or phased delivery providing control through adaptation aligned with how complex work unfolds.",
@@ -5118,7 +5118,7 @@ const paliQuestions = [
     "question": "A team wants a new framework believing it solves all problems. What should a leader do?",
     "options": [
       "Support adoption showing initiative",
-      "Clarify the current problem before selecting a solution",
+      "Clarify the problem before choosing a solution",
       "Research framework before allowing",
       "Discourage and focus on principles"
     ],
@@ -5134,7 +5134,7 @@ const paliQuestions = [
     "options": [
       "Tell teams to work within constraints",
       "Encourage ignoring processes lacking value",
-      "Identify specific impediments and help remove or change them",
+      "Find specific impediments and help remove them",
       "Create special Agile team exceptions"
     ],
     "correctAnswer": 2,
@@ -5162,7 +5162,7 @@ const paliQuestions = [
     "id": 345,
     "question": "What role should leaders play in team member conflict resolution?",
     "options": [
-      "Coach teams to resolve conflicts, facilitating when needed",
+      "Coach conflict resolution and facilitate when needed",
       "Immediately step in to resolve and restore harmony",
       "Let conflicts play out naturally",
       "Separate conflicting members"
@@ -5196,7 +5196,7 @@ const paliQuestions = [
     "id": 347,
     "question": "How should leaders help teams balance technical excellence with delivery pressure?",
     "options": [
-      "Require quality standards regardless of deadlines",
+      "Require quality standards with limited regard for deadlines",
       "Allow quality corners when pressure is high",
       "Make transparent trade-offs with a clear view of their consequences",
       "Remove all pressure for quality focus"
@@ -5214,7 +5214,7 @@ const paliQuestions = [
       "Make attendance mandatory",
       "Cancel until interest returns",
       "Convert to recorded videos",
-      "Make Sprint Reviews engaging and valuable"
+      "Make Sprint Reviews useful and engaging"
     ],
     "correctAnswer": 3,
     "explanation": "Low attendance signals reviews aren't providing stakeholder value. Leaders coach teams on making reviews engaging: demonstrate value created not features built, facilitate next steps discussion, involve stakeholders in planning, or address specific concerns. The goal is creating genuine value rather than forcing attendance.",
@@ -5224,17 +5224,17 @@ const paliQuestions = [
   },
   {
     "id": 349,
-    "question": "What is the primary purpose of organizational transparency in Agile?",
+    "question": "A transparency dashboard causes teams to hide early risks. What should leaders change?",
     "options": [
-      "Enable informed decision-making and adaptation at all levels",
-      "Ensure everyone knows what others are doing",
-      "Hold teams accountable for commitments",
-      "Provide executive visibility into activities"
+      "Increase the number of mandatory dashboard fields",
+      "Use risk information for learning and constructive action",
+      "Publish individual rankings to reinforce accountability",
+      "Limit dashboard access until risks are resolved"
     ],
-    "correctAnswer": 0,
-    "explanation": "Transparency supports empiricism: enabling people to inspect reality and make informed adaptations. While visibility and accountability are byproducts, primary purpose is creating shared understanding enabling better decisions at all levels—daily planning to organizational strategy. Leaders create transparency serving decision-making, not just reporting.",
+    "correctAnswer": 1,
+    "explanation": "Transparency depends on how information is used. Constructive responses make it safer to expose risks early and enable timely adaptation.",
     "domain": "Agile Culture",
-    "difficulty": "Foundation",
+    "difficulty": "Advanced",
     "focusArea": "Developing People and Teams"
   },
   {
@@ -5272,7 +5272,7 @@ const paliQuestions = [
     "question": "A team wants to pair program on all work but management sees it as 50% waste. How should a leader respond?",
     "options": [
       "Support management's concern and discourage pairing",
-      "Allow pairing only on complex work",
+      "Allow pairing primarily on complex work",
       "Let teams pair without informing management",
       "Explain how pairing improves quality and spreads knowledge"
     ],
@@ -5286,7 +5286,7 @@ const paliQuestions = [
     "id": 353,
     "question": "What is most important when scaling Agile across multiple teams?",
     "options": [
-      "Maintaining team autonomy while enabling necessary coordination",
+      "Maintaining team autonomy while enabling needed coordination",
       "Implementing standardized scaling framework",
       "Creating centralized governance for alignment",
       "Standardizing all practices for consistency"
@@ -5319,7 +5319,7 @@ const paliQuestions = [
       "None—individual goals and team work are compatible",
       "Annual reviews too infrequent for Agile pace",
       "Individual goals can undermine collaboration and shared ownership",
-      "Reviews should be replaced with peer feedback only"
+      "Reviews should be replaced with peer feedback primarily"
     ],
     "correctAnswer": 2,
     "explanation": "Individual performance goals in team environments often create perverse incentives: individual optimization over team success, competition over collaboration, looking good over helping. Leaders evolve performance systems toward team outcomes, peer feedback, and contribution to team success while acknowledging individual growth.",
@@ -5334,7 +5334,7 @@ const paliQuestions = [
       "Tell teams to work with available tools",
       "Encourage personal credit cards and reimbursement",
       "Escalate to executive leadership",
-      "Streamline procurement while teams optimize the tools they have"
+      "Streamline procurement while teams improve current tools"
     ],
     "correctAnswer": 3,
     "explanation": "Leaders work at both levels: helping teams maximize current tool value while addressing systemic impediments like procurement delays. They work with procurement creating faster paths for low-cost tools, build business cases for important tools, and help teams understand constraints while advocating improvement addressing both immediate need and systemic problem.",
@@ -5441,7 +5441,7 @@ const paliQuestions = [
     "options": [
       "Praise dedication and commitment",
       "Implement mandatory time-off policies",
-      "Investigate root causes and address sustainability issues",
+      "Find root causes and restore sustainable work",
       "Hire additional members to reduce workload"
     ],
     "correctAnswer": 2,
@@ -5564,8 +5564,8 @@ const paliQuestions = [
     "options": [
       "Mandate specific techniques like Planning Poker",
       "Implement estimation training programs",
-      "Help teams understand accuracy matters less than learning from variance",
-      "Switch to #NoEstimates eliminating accuracy problem"
+      "Use estimate variance for learning, not false precision",
+      "Switch to #NoEstimates minimizing accuracy problem"
     ],
     "correctAnswer": 2,
     "explanation": "Estimates are forecasts, not commitments. Rather than pursuing perfect estimation, leaders help teams learn from variance: what causes estimates to be off, what patterns emerge, how can planning improve? The goal is better planning and forecasting over time, not perfect estimates. Teams should track actual vs. estimated to learn, not to be judged on accuracy.",
@@ -5592,7 +5592,7 @@ const paliQuestions = [
     "id": 373,
     "question": "What is the primary leader role during organizational change?",
     "options": [
-      "Create safety and support learning throughout the transition",
+      "Create safety and support learning during the transition",
       "Push teams to adopt new practices quickly",
       "Enforce compliance with new Agile processes",
       "Protect teams from any discomfort"
@@ -5643,7 +5643,7 @@ const paliQuestions = [
     "question": "An organization standardizes all team tools for consistency. What should leaders consider?",
     "options": [
       "Support standardization as it simplifies management and training",
-      "Allow complete tool autonomy regardless of organizational concerns",
+      "Allow complete tool autonomy with limited regard for organizational concerns",
       "Implement standard tools but allow teams to use others additionally",
       "Balance consistency benefits with teams' needs for context-appropriate tools"
     ],
@@ -5659,7 +5659,7 @@ const paliQuestions = [
     "options": [
       "Support the experiment with clear success criteria and review period",
       "Discourage it due to apparent inefficiency",
-      "Allow it only for complex work to balance efficiency and collaboration",
+      "Allow it primarily for complex work to balance efficiency and collaboration",
       "Require data from other teams before allowing the experiment"
     ],
     "correctAnswer": 0,
@@ -5672,9 +5672,9 @@ const paliQuestions = [
     "id": 378,
     "question": "What is the primary indicator that an Agile transformation is creating sustainable change?",
     "options": [
-      "All teams are following Scrum by the book",
+      "each team are following Scrum by the book",
       "Teams adapt practices to context and continuously improve",
-      "Velocity has increased across all teams",
+      "Velocity has increased across each team",
       "Management has adopted Agile terminology"
     ],
     "correctAnswer": 1,
@@ -5703,7 +5703,7 @@ const paliQuestions = [
     "question": "How should leaders respond when teams request permission to fail?",
     "options": [
       "Grant permission explicitly to encourage experimentation",
-      "Deny permission as failure should never be goal",
+      "Deny permission as failure should rarely be goal",
       "Require detailed failure plans before granting permission",
       "Create clear boundaries within which failure is acceptable learning"
     ],
@@ -5783,7 +5783,7 @@ const paliQuestions = [
     "question": "A Product Owner consistently changes priorities mid-sprint. What should leaders do?",
     "options": [
       "Understand what's driving the changes and address root causes",
-      "Enforce sprint commitment rules strictly",
+      "Enforce sprint commitment rules consistently",
       "Replace the Product Owner with someone more stable",
       "Implement change request processes for mid-sprint changes"
     ],
@@ -5832,7 +5832,7 @@ const paliQuestions = [
     "id": 388,
     "question": "A team shows high engagement but low delivery. What should leaders explore?",
     "options": [
-      "Whether teams have necessary skills and capabilities",
+      "Whether teams have needed skills and capabilities",
       "Whether external dependencies or organizational impediments block progress",
       "Whether teams are working on the right things"
     ],
@@ -5885,7 +5885,7 @@ const paliQuestions = [
       "Immediately dedicate several sprints to paying down debt",
       "Ignore debt and focus on new feature delivery",
       "Help teams balance debt reduction with feature delivery sustainably",
-      "Rewrite the system from scratch to eliminate debt"
+      "Rewrite the system from scratch to minimize debt"
     ],
     "correctAnswer": 2,
     "explanation": "Technical debt requires sustainable approach: some debt reduction each sprint, making debt visible, connecting it to business impact, and helping Product Owners understand trade-offs. Neither ignoring debt nor stopping all features is sustainable. Leaders facilitate ongoing conversations about balancing short and long-term needs.",
@@ -5978,9 +5978,9 @@ const paliQuestions = [
     "question": "How should leaders balance the need for innovation with delivering current commitments?",
     "options": [
       "Help teams build capacity for innovation into their sustainable delivery rhythm",
-      "Mandate 20% time for innovation across all teams",
+      "Mandate 20% time for innovation across each team",
       "Create separate innovation teams to handle experimental work",
-      "Allow innovation only after commitments are fully met"
+      "Allow innovation primarily after commitments are fully met"
     ],
     "correctAnswer": 0,
     "explanation": "Sustainable innovation requires building capacity for it into regular work rather than mandating percentages or creating separation. Leaders help teams understand that long-term success requires current delivery AND building future capability. The specific approach (slack time, innovation sprints, continuous experimentation) depends on context.",
@@ -6067,7 +6067,7 @@ const paliQuestions = [
     "id": 403,
     "question": "Teams complain about too many meetings interfering with work. What should leaders do?",
     "options": [
-      "Mandate meeting-free days across all teams",
+      "Mandate meeting-free days across each team",
       "Tell teams to decline meetings they find wasteful",
       "Assess meeting value, then remove or improve low-value meetings",
       "Implement strict meeting guidelines organization-wide"
@@ -6082,10 +6082,10 @@ const paliQuestions = [
     "id": 404,
     "question": "How should leaders respond when different teams have incompatible technical approaches?",
     "options": [
-      "Mandate standard technical approaches across all teams",
+      "Mandate standard technical approaches across each team",
       "Let each team choose independently without coordination",
       "Bring in architects to make technical decisions",
-      "Facilitate dialogue about trade-offs while allowing context-appropriate choices"
+      "Discuss trade-offs and allow context-specific choices"
     ],
     "correctAnswer": 3,
     "explanation": "Some technical diversity is healthy (teams learn from different approaches), but complete incompatibility creates integration problems. Leaders facilitate technical communities where teams share trade-offs and outcomes, enabling informed choices. Standardize only where integration requires it; allow diversity where contexts differ.",
@@ -6113,8 +6113,8 @@ const paliQuestions = [
     "question": "What is the most important leadership focus during scaling Agile across an organization?",
     "options": [
       "Selecting the right scaling framework",
-      "Maintaining team autonomy while enabling necessary coordination",
-      "Standardizing practices across all teams",
+      "Maintaining team autonomy while enabling needed coordination",
+      "Standardizing practices across each team",
       "Creating governance structures for alignment"
     ],
     "correctAnswer": 1,
@@ -6130,7 +6130,7 @@ const paliQuestions = [
       "By percentage of teams using Agile frameworks",
       "By reduction in planning time and documentation",
       "By ability to respond effectively to change and uncertainty",
-      "By increased velocity across all teams"
+      "By increased velocity across each team"
     ],
     "correctAnswer": 2,
     "explanation": "Organizational agility is the capacity to sense and respond to change effectively. It's measured by: speed of adaptation, quality of response to uncertainty, innovation capability, and business outcomes in volatile environments. Framework adoption, velocity, or reduced planning are activities, not agility.",
@@ -6194,7 +6194,7 @@ const paliQuestions = [
     "options": [
       "Force Agile adoption to change culture",
       "Wait until culture changes before implementing Agile",
-      "Work incrementally to evolve culture while adapting Agile to current reality",
+      "Evolve culture incrementally while adapting to reality",
       "Create Agile islands isolated from organizational culture"
     ],
     "correctAnswer": 2,
@@ -6298,7 +6298,7 @@ const paliQuestions = [
     "question": "Teams report spending excessive time in coordination meetings. What should leaders investigate?",
     "options": [
       "Whether team boundaries and dependencies are well-designed",
-      "Whether coordination is genuinely necessary or habitual",
+      "Whether coordination is genuinely needed or habitual",
       "Whether async coordination could replace some meetings"
     ],
     "explanation": "Excessive coordination time may indicate: poorly designed team boundaries creating unnecessary dependencies, habitual meetings that no longer add value, or inefficient coordination mechanisms. Leaders investigate all possibilities and address root causes: potentially redesigning team boundaries, eliminating unnecessary coordination, or improving coordination efficiency.",
@@ -6319,8 +6319,8 @@ const paliQuestions = [
     "options": [
       "Deny it as planning is fundamental to Agile",
       "Require data proving planning doesn't add value",
-      "Support the experiment if they can still forecast and commit to stakeholders",
-      "Allow it only for maintenance work, not new development"
+      "Support the experiment if forecasting still works",
+      "Allow it primarily for maintenance work, not new development"
     ],
     "correctAnswer": 2,
     "explanation": "Leaders focus on outcomes over practices: teams need to forecast work, commit to goals, and provide transparency. If continuous flow achieves these outcomes, the specific practice (sprint planning vs continuous flow) matters less. Support experimentation with clear success criteria around stakeholder transparency and team effectiveness.",
@@ -6351,7 +6351,7 @@ const paliQuestions = [
     "id": 421,
     "question": "What is the most effective way for leaders to address organizational silos impeding agility?",
     "options": [
-      "Create bridges across silos while working toward structural change",
+      "Bridge silos while pursuing structural change",
       "Restructure into cross-functional teams immediately",
       "Mandate better cross-silo cooperation",
       "Accept silos as organizational reality"
@@ -6382,17 +6382,17 @@ const paliQuestions = [
   },
   {
     "id": 423,
-    "question": "How should leaders measure their own effectiveness as Agile leaders?",
+    "question": "A leader delegates decisions but regularly reverses them without discussion. What effect should they expect?",
     "options": [
-      "By number of impediments removed",
-      "By stakeholder satisfaction with leadership",
+      "Faster development of team autonomy",
+      "Stronger alignment through executive oversight",
       "Track growth in team autonomy, capability, and outcomes",
-      "By teams' adherence to Agile practices"
+      "More experimentation because boundaries are flexible"
     ],
     "correctAnswer": 2,
-    "explanation": "Leader effectiveness shows in team development: Are teams becoming more capable, autonomous, and effective over time? Are they solving harder problems independently? Are outcomes improving sustainably? The measure is team growth and results, not personal activity, stakeholder satisfaction, or process compliance.",
+    "explanation": "Delegation without reliable decision boundaries undermines trust. Teams stop taking ownership when their decisions are unpredictably reversed.",
     "domain": "Agile Leadership Mindset",
-    "difficulty": "Advanced",
+    "difficulty": "Intermediate",
     "focusArea": "Developing People and Teams"
   },
   {
@@ -6446,7 +6446,7 @@ const paliQuestions = [
     "options": [
       "Mandate standard hours for consistency and collaboration",
       "Allow complete autonomy in scheduling",
-      "Support flexibility while ensuring necessary collaboration time",
+      "Support flexibility while ensuring needed collaboration time",
       "Implement core hours for collaboration plus flexible additional hours"
     ],
     "correctAnswer": 2,
@@ -6492,7 +6492,7 @@ const paliQuestions = [
       "Side with managers on efficiency concerns",
       "Explain the gains in quality, knowledge sharing, and collaboration",
       "Support teams and override management objections",
-      "Allow pairing only for critical or complex work as compromise"
+      "Allow pairing primarily for critical or complex work as compromise"
     ],
     "correctAnswer": 1,
     "explanation": "Leaders educate on how pairing/mobbing improve quality, share knowledge, reduce defects, and often deliver faster despite appearing less 'efficient.' Use data where available (defect rates, cycle time, team satisfaction) to demonstrate value. Help shift perspective from resource utilization to outcome delivery and sustainable performance.",
@@ -6502,18 +6502,18 @@ const paliQuestions = [
   },
   {
     "id": 431,
-    "question": "How should leaders balance short-term delivery pressure with long-term capability building?",
+    "question": "Which investment best improves an organization’s ability to respond to future change?",
     "options": [
-      "Always prioritize delivery as capability builds through doing",
-      "Always prioritize capability building as it enables future delivery",
-      "Consciously balance both, making trade-offs explicit and strategic",
-      "Alternate focus between delivery and capability building by quarter"
+      "Maximizing utilization of every specialist",
+      "Building adaptable teams, technical quality, and fast feedback loops",
+      "Expanding approval layers for high-impact decisions",
+      "Creating detailed multi-year feature commitments"
     ],
-    "correctAnswer": 2,
-    "explanation": "Both delivery and capability matter. Leaders make trade-offs consciously: some current delivery is necessary, but some investment in capability (learning, tooling, practices, technical health) is essential for sustainable performance. The balance depends on context, but both require attention. Make trade-offs explicit rather than defaulting to either extreme.",
-    "domain": "Strategic Vision",
-    "difficulty": "Advanced",
-    "focusArea": "Managing Products with Agility"
+    "correctAnswer": 1,
+    "explanation": "Adaptable capability comes from people, technical health, and rapid learning—not maximum utilization or speculative commitments.",
+    "domain": "Organizational Design",
+    "difficulty": "Intermediate",
+    "focusArea": "Evolving the Agile Organization"
   },
   {
     "id": 432,
@@ -6556,7 +6556,7 @@ const paliQuestions = [
     "options": [
       "Deny the request as refinement is essential for sprint planning",
       "Understand why they want to skip and whether they have better approaches",
-      "Allow skipping only if velocity remains stable",
+      "Allow skipping primarily if velocity remains stable",
       "Make refinement optional but monitor sprint planning effectiveness"
     ],
     "correctAnswer": 1,
@@ -6742,15 +6742,15 @@ const paliQuestions = [
   },
   {
     "id": 446,
-    "question": "How should leaders balance encouraging experimentation with maintaining system stability?",
+    "question": "An experiment could disrupt a critical service. How should leaders enable learning responsibly?",
     "options": [
-      "Maximize experimentation without considering stability",
-      "Enable bounded experimentation while protecting critical capabilities",
-      "Avoid experimentation to ensure maximum stability",
-      "Allow experimentation only during designated innovation periods"
+      "Avoid experiments involving important services",
+      "Run the full experiment quickly to maximize evidence",
+      "Use guardrails, observability, and a limited blast radius",
+      "Transfer the experiment risk entirely to the delivery team"
     ],
-    "correctAnswer": 1,
-    "explanation": "Leaders create boundaries for safe experimentation: clear on what's open to experiment (process improvements, new tools), what requires careful consideration (architecture changes), and what's not negotiable (security, compliance). This enables innovation while maintaining stability of critical operations. Balance both needs rather than choosing one.",
+    "correctAnswer": 2,
+    "explanation": "Responsible experimentation uses explicit guardrails, strong observation, and limited exposure so learning does not create unmanaged harm.",
     "domain": "Creating Conditions",
     "difficulty": "Advanced",
     "focusArea": "Developing People and Teams"
@@ -6789,7 +6789,7 @@ const paliQuestions = [
     "id": 449,
     "question": "Teams want to work on innovation projects instead of maintenance. How should leaders respond?",
     "options": [
-      "Help teams balance necessary maintenance with innovation opportunities",
+      "Help teams balance needed maintenance with innovation opportunities",
       "Support innovation focus as it drives competitive advantage",
       "Require teams to handle maintenance before innovation",
       "Create separate teams for maintenance vs innovation"
@@ -6819,7 +6819,7 @@ const paliQuestions = [
     "options": [
       "Mandate performance testing inclusion in DoD immediately",
       "Accept it as team's decision about their quality standards",
-      "Coach the team on quality implications while letting them own their DoD evolution",
+      "Coach quality while the team evolves its Definition of Done",
       "Escalate to architecture team for enforcement"
     ],
     "correctAnswer": 2,
@@ -6832,7 +6832,7 @@ const paliQuestions = [
     "id": 452,
     "question": "What is the primary leadership challenge in maintaining agility as organizations grow?",
     "options": [
-      "Keeping all teams aligned on same practices and frameworks",
+      "Keeping each team aligned on same practices and frameworks",
       "Maintaining consistent velocity across increasing number of teams",
       "Ensuring all leaders adopt identical management approaches",
       "Preserving team autonomy while enabling coordination and alignment"
@@ -6915,7 +6915,7 @@ const paliQuestions = [
       "Support if async approach maintains daily planning and coordination",
       "Deny as standups are non-negotiable Scrum practice",
       "Require daily synchronous meetings to maintain team cohesion",
-      "Allow async only for distributed teams in different timezones"
+      "Allow async primarily for distributed teams in different timezones"
     ],
     "correctAnswer": 0,
     "explanation": "The purpose is daily coordination and planning, not the specific practice. If async updates achieve the same outcomes (coordination, impediment identification, planning adaptation), support the experiment. Leaders focus on outcomes over practices while helping teams define success criteria and evaluate whether async actually maintains necessary coordination.",
@@ -6928,7 +6928,7 @@ const paliQuestions = [
     "question": "How should leaders balance transparency with protecting team psychological safety?",
     "options": [
       "Prioritize transparency as it's fundamental to empiricism",
-      "Create transparency that enables decisions without exposing individuals to harm",
+      "Enable decisions without exposing individuals to harm",
       "Prioritize safety as teams won't be honest without it",
       "Separate safe spaces from transparent spaces"
     ],
@@ -6955,17 +6955,17 @@ const paliQuestions = [
   },
   {
     "id": 460,
-    "question": "What is the most important leadership behavior for fostering continuous learning?",
+    "question": "A leader publicly shares lessons from a failed decision but privately blames the team. What is the likely result?",
     "options": [
-      "Providing comprehensive training budgets and programs",
-      "Setting learning objectives in performance reviews",
-      "Creating formal knowledge management systems",
-      "Modeling curiosity, learning from failure, and sharing what you're learning"
+      "Greater trust because the failure was discussed",
+      "Lower psychological safety because actions contradict the message",
+      "Faster learning because accountability remains private",
+      "Improved transparency through separate public and private responses"
     ],
-    "correctAnswer": 3,
-    "explanation": "Learning culture is shaped more by leader behavior than programs. When leaders openly share what they're learning, ask questions, acknowledge not knowing, and treat failures as learning opportunities, they create safety for others to learn openly. Programs and budgets support learning, but leader modeling creates the culture where learning flourishes.",
-    "domain": "Agile Leadership Mindset",
-    "difficulty": "Foundation",
+    "correctAnswer": 1,
+    "explanation": "People learn culture from consistent behavior. Public learning language cannot offset private blame and will reduce candor and trust.",
+    "domain": "Agile Culture",
+    "difficulty": "Intermediate",
     "focusArea": "Developing People and Teams"
   },
   {
@@ -6989,7 +6989,7 @@ const paliQuestions = [
     "options": [
       "Tell teams to ignore metrics and focus on collaboration",
       "Work to change metrics while coaching teams on navigating current system",
-      "Accept metrics as organizational reality teams must adapt to",
+      "Accept metrics as organizational reality teams should adapt to",
       "Create separate metrics for Agile teams"
     ],
     "correctAnswer": 1,
@@ -7020,7 +7020,7 @@ const paliQuestions = [
       "Demonstrating completed work to satisfy stakeholder visibility needs",
       "Holding teams accountable for sprint commitments",
       "Providing progress updates for organizational reporting",
-      "Creating feedback loops that enable product adaptation based on stakeholder input"
+      "Creating feedback loops that enable product adaptation using stakeholder input"
     ],
     "correctAnswer": 3,
     "explanation": "Sprint Reviews exist to enable empiricism: inspect what's been built, gather stakeholder feedback, and adapt the product backlog based on learning. While visibility and accountability are byproducts, the core purpose is creating feedback loops that improve the product. Leaders ensure Reviews serve adaptation, not just reporting or demonstration.",
@@ -7063,7 +7063,7 @@ const paliQuestions = [
     "question": "A team wants to change their sprint cadence frequently based on work type. What should leaders do?",
     "options": [
       "Support variable sprint length if team can maintain stakeholder predictability",
-      "Allow changes only quarterly to limit disruption",
+      "Allow changes primarily quarterly to limit disruption",
       "Require consistent sprint length for planning stability",
       "Create separate tracks for different work types"
     ],
@@ -7075,17 +7075,17 @@ const paliQuestions = [
   },
   {
     "id": 468,
-    "question": "What is the most important factor in successful leadership of distributed teams?",
+    "question": "A distributed team has clear communication rules but weak personal connection. What should leaders support?",
     "options": [
-      "Implementing comprehensive collaboration tools",
-      "Ensuring all team members are in compatible timezones",
-      "Requiring video presence for all interactions",
-      "Set explicit communication norms and intentional connection practices"
+      "More status reports to increase interaction frequency",
+      "Set explicit communication norms and intentional connection practices",
+      "A return to individual assignments with fewer dependencies",
+      "Communication limited to formal team events"
     ],
-    "correctAnswer": 3,
-    "explanation": "Distributed success requires explicit norms: how we communicate, when to use sync vs async, how we build relationships, how we handle conflict. These often emerge naturally co-located but need intentional design remotely. Leaders facilitate these conversations and model practices. Tools and timezone help but culture and norms matter more for distributed team effectiveness.",
-    "domain": "Creating Conditions",
-    "difficulty": "Advanced",
+    "correctAnswer": 1,
+    "explanation": "Working agreements help coordination, while intentional relationship-building supports trust and cohesion across distance.",
+    "domain": "Creating High-Performing Teams",
+    "difficulty": "Intermediate",
     "focusArea": "Developing People and Teams"
   },
   {
@@ -7164,7 +7164,7 @@ const paliQuestions = [
     "options": [
       "Support if teams can still forecast capacity and plan sprints effectively",
       "Require estimation as it's fundamental to Agile planning",
-      "Allow only if teams have multiple sprints of stable velocity",
+      "Allow primarily if teams have multiple sprints of stable velocity",
       "Mandate lightweight estimation as compromise"
     ],
     "correctAnswer": 0,
@@ -7247,8 +7247,8 @@ const paliQuestions = [
     "question": "How should leaders respond when team members have conflicting work styles?",
     "options": [
       "Let the team resolve conflicts themselves without intervention",
-      "Help team develop norms that accommodate different styles while enabling collaboration",
-      "Establish standard work style all team members must follow",
+      "Build inclusive norms that still enable collaboration",
+      "Establish standard work style all team members should follow",
       "Restructure team to separate conflicting styles"
     ],
     "correctAnswer": 1,
@@ -7259,32 +7259,32 @@ const paliQuestions = [
   },
   {
     "id": 479,
-    "question": "A Product Owner consistently changes priorities without explanation. What should leaders do?",
+    "question": "A Product Owner changes priorities after new market evidence appears. How should leaders respond?",
     "options": [
-      "Implement change control process to stabilize priorities",
-      "Accept this as appropriate product ownership in volatile markets",
-      "Coach the PO on transparent decision-making and stakeholder communication",
-      "Have team push back on unexplained changes"
+      "Prevent changes until the next annual planning cycle",
+      "Ask whether the evidence supports adaptation and make impacts transparent",
+      "Treat every priority change as a failure of planning",
+      "Require stakeholders to approve the revised ordering"
     ],
-    "correctAnswer": 2,
-    "explanation": "While POs need flexibility to reprioritize, transparency about why changes occur builds team trust and understanding. Leaders coach POs on explaining priority changes: what's driving them, what we've learned, how this serves product goals. This maintains PO authority while building team buy-in and shared understanding. Process controls often create different problems than they solve.",
-    "domain": "Facilitating Growth",
-    "difficulty": "Advanced",
-    "focusArea": "Developing People and Teams"
+    "correctAnswer": 1,
+    "explanation": "Evidence-based reprioritization is appropriate when the rationale and consequences are transparent. Leaders distinguish learning from arbitrary churn.",
+    "domain": "Managing Products with Agility",
+    "difficulty": "Intermediate",
+    "focusArea": "Evolving the Agile Organization"
   },
   {
     "id": 480,
-    "question": "What is the primary benefit of leaders developing coaching capability over directive management?",
+    "question": "A manager asks coaching questions but supplies the expected answer immediately afterward. What should they improve?",
     "options": [
-      "Coaching saves leader time by delegating decision-making",
-      "Coaching aligns with Agile terminology and values",
-      "Coaching makes teams feel more empowered and satisfied",
-      "Coaching develops sustainable team capability for long-term performance"
+      "Ask more detailed questions before giving the answer",
+      "Allow space for others to think, decide, and learn",
+      "Use written instructions so the answer is clearer",
+      "Reserve coaching conversations for performance reviews"
     ],
-    "correctAnswer": 3,
-    "explanation": "The primary benefit is building team capability to solve problems, make decisions, and improve independently. While this requires more initial leader time than directing, it creates sustainable performance and reduces long-term dependency. Satisfaction and alignment with values are beneficial byproducts, but capability building is the core purpose of coaching.",
-    "domain": "Agile Leadership Mindset",
-    "difficulty": "Foundation",
+    "correctAnswer": 1,
+    "explanation": "Coaching develops capability only when people have genuine space to think and own decisions. Leading questions followed by answers preserve dependence.",
+    "domain": "Facilitating Growth",
+    "difficulty": "Intermediate",
     "focusArea": "Developing People and Teams"
   },
   {
@@ -7294,7 +7294,7 @@ const paliQuestions = [
       "Help both parties understand trade-offs and find sustainable balance",
       "Side with stakeholders as features deliver immediate business value",
       "Side with teams as improvement enables sustainable delivery",
-      "Mandate percentage of time for improvement across all teams"
+      "Mandate percentage of time for improvement across each team"
     ],
     "correctAnswer": 0,
     "explanation": "This represents tension between short-term delivery and long-term sustainability. Leaders facilitate dialogue where teams explain improvement benefits, stakeholders explain business pressures, and together they find balance appropriate to context. Neither all features nor all improvement serves well. Conscious trade-offs beat imposed solutions from either side.",
@@ -7307,7 +7307,7 @@ const paliQuestions = [
     "question": "How should leaders measure team health?",
     "options": [
       "Through team satisfaction surveys and engagement scores",
-      "Use several indicators: satisfaction, turnover, collaboration, and sustainable pace",
+      "Use satisfaction, retention, collaboration, and pace",
       "Through delivery metrics as healthy teams deliver well",
       "Through stakeholder feedback about team interactions"
     ],
@@ -7323,7 +7323,7 @@ const paliQuestions = [
     "options": [
       "Whether goals are realistic given team capacity and context",
       "Whether external dependencies or impediments are blocking progress",
-      "Whether team has necessary skills and capabilities"
+      "Whether team has needed skills and capabilities"
     ],
     "explanation": "Consistent goal misses despite effort indicate systemic issues that could include: unrealistic goal setting, external blockers, capability gaps, unclear requirements, or technical debt. Leaders investigate all possibilities through conversation and observation rather than assuming low performance or poor estimation. Address root causes based on actual findings.",
     "domain": "Facilitating Growth",
@@ -7354,14 +7354,15 @@ const paliQuestions = [
   },
   {
     "id": 485,
-    "question": "Teams report spending excessive time in dependency coordination. What should leaders investigate?",
+    "question": "Cross-team coordination meetings identify dependencies but never remove them. What should leaders do?",
     "options": [
-      "Whether team boundaries should be redesigned to reduce dependencies",
-      "Whether coordination mechanisms are efficient",
-      "Whether some coordination is unnecessary or could be async"
+      "Increase meeting frequency to track dependencies closely",
+      "Assign one coordinator to manage every dependency",
+      "Use the evidence to redesign boundaries and reduce structural coupling",
+      "Require more detailed dependency documentation"
     ],
-    "explanation": "Excessive coordination time may indicate: poor team boundaries creating unnecessary dependencies, inefficient coordination mechanisms, or habitual coordination that's no longer needed. Leaders investigate all possibilities and address root causes: potentially redesigning team boundaries, improving coordination efficiency, or eliminating unnecessary coordination. Different causes require different solutions.",
-    "domain": "Organizational Design",
+    "explanation": "Coordination can manage dependencies temporarily, but leaders should use recurring patterns to improve organizational and technical boundaries.",
+    "domain": "Systems Thinking",
     "difficulty": "Advanced",
     "correctAnswers": [
       0,
@@ -7370,14 +7371,15 @@ const paliQuestions = [
     ],
     "questionType": "multiple",
     "selectCount": 3,
-    "focusArea": "Evolving the Agile Organization"
+    "focusArea": "Evolving the Agile Organization",
+    "correctAnswer": 2
   },
   {
     "id": 486,
     "question": "How should leaders balance standardization for efficiency with customization for team context?",
     "options": [
       "Maximize standardization to reduce complexity and cost",
-      "Standardize where integration requires it; customize where context matters",
+      "Standardize integration needs and adapt the rest",
       "Maximize customization to enable team optimization",
       "Let each team decide what to standardize"
     ],
@@ -7422,7 +7424,7 @@ const paliQuestions = [
       "Support if teams can still forecast and provide stakeholder transparency",
       "Deny as planning is fundamental to predictability",
       "Require maintaining sprint structure even with flow-based work",
-      "Allow only for support/maintenance work, not development"
+      "Allow primarily for support/maintenance work, not development"
     ],
     "correctAnswer": 0,
     "explanation": "Planning serves purposes: forecasting, stakeholder transparency, coordination. If flow-based approaches achieve these outcomes (cycle time data enables forecasting, regular cadence provides transparency), support the experiment. Leaders focus on outcomes needed rather than specific practices. Help teams define success criteria around forecasting and transparency, then evaluate results.",
@@ -7470,7 +7472,7 @@ const paliQuestions = [
       "Comprehensive documentation systems",
       "Mandatory knowledge sharing sessions",
       "Centralized expertise repositories",
-      "Communities of practice and forums for voluntary sharing"
+      "Voluntary communities of practice and sharing forums"
     ],
     "correctAnswer": 3,
     "explanation": "Knowledge sharing happens most effectively through voluntary communities where people share learning because they find value, not because it's mandated. Communities of practice, guilds, or informal forums enable organic sharing. Leaders facilitate these spaces and model participation but don't mandate or centralize. Documentation and repositories support sharing but don't replace human connection and voluntary exchange.",
@@ -7565,16 +7567,16 @@ const paliQuestions = [
   },
   {
     "id": 498,
-    "question": "How should leaders balance short-term firefighting with long-term capability building?",
+    "question": "Operational emergencies repeatedly interrupt improvement work. What should leaders make transparent?",
     "options": [
-      "Prioritize firefighting as immediate needs must be addressed",
-      "Consciously balance both while working to reduce firefighting over time",
-      "Prioritize capability building as it prevents future fires",
-      "Delegate firefighting to teams while leaders focus on capability"
+      "primarily the number of incidents resolved each month",
+      "The cost of recurring emergencies and the capacity needed to remove causes",
+      "Individual ownership for every production incident",
+      "A separate delivery target that excludes emergency work"
     ],
     "correctAnswer": 1,
-    "explanation": "Both matter but require conscious balance. Some firefighting is necessary to address immediate issues; some capability investment prevents future problems. Leaders balance both while working to reduce firefighting need over time through capability building, process improvement, and addressing root causes. The balance shifts with context but both need attention.",
-    "domain": "Strategic Vision",
+    "explanation": "Making the cost and capacity trade-off visible supports an informed decision to address root causes instead of accepting permanent firefighting.",
+    "domain": "Value-Driven Delivery",
     "difficulty": "Advanced",
     "focusArea": "Managing Products with Agility"
   },
@@ -7600,7 +7602,7 @@ const paliQuestions = [
       "Successful delivery of products and projects",
       "Organizational processes and frameworks implemented",
       "Positive team morale and satisfaction",
-      "Teams improve and adapt continuously without depending on the leader"
+      "Teams improve continuously without leader dependence"
     ],
     "correctAnswer": 3,
     "explanation": "The ultimate measure of leadership is what persists after the leader moves on. Leaders who build team capability for continuous improvement, problem-solving, and adaptation create sustainable success. Delivery, processes, and morale are important but temporary. Capability building creates teams that continue improving and adapting long after the leader's involvement, multiplying impact far beyond the leader's direct actions.",

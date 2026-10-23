@@ -207,21 +207,20 @@ describe('Multi-Select Questions Tests', () => {
         expect(optionB.textContent).toContain('☑');
       });
 
-      // Try to select third option - component allows temporary over-selection to show warning
+      // Selecting another option at the limit replaces the most recent selection.
       const optionC = optionButtons.find(btn => btn.textContent?.includes('Option C'));
       await user.click(optionC);
 
-      // All three should appear selected with a warning indicator
+      // The required selection count is never exceeded.
       await waitFor(() => {
         const selectedOptions = within(optionsContainer)
           .getAllByRole('button')
           .filter(btn => btn.textContent.includes('☑'));
-        expect(selectedOptions).toHaveLength(3);
+        expect(selectedOptions).toHaveLength(2);
       });
 
       const progressIndicator = await screen.findByTestId('multi-select-progress');
-      expect(progressIndicator.textContent).toMatch(/3\s+of\s+2/i);
-      expect(progressIndicator.textContent).toMatch(/too many/i);
+      expect(progressIndicator.textContent).toMatch(/2\s+of\s+2/i);
     });
 
     test('should allow deselecting answers in multi-select', async () => {
@@ -428,6 +427,54 @@ describe('Multi-Select Questions Tests', () => {
   });
 
   describe('Multi-Select Visual Feedback', () => {
+    test('waits for all required answers before showing feedback', async () => {
+      const user = userEvent.setup();
+
+      render(
+        <LeadingSAFe6ExamQuiz
+          onGoHome={mockOnGoHome}
+          onGoBackToExam={mockOnGoBackToExam}
+          numberOfQuestions={3}
+          examMode="practice"
+        />
+      );
+
+      await screen.findByText(/Choose exactly 2 answers/);
+      let optionsContainer = screen.getByTestId('quiz-options-container');
+      let options = within(optionsContainer).getAllByRole('button');
+
+      await user.click(options[0]);
+      expect(screen.queryByText(/Incorrect Answer/i)).not.toBeInTheDocument();
+      expect(screen.queryByText(/Correct Answer!/i)).not.toBeInTheDocument();
+
+      await user.click(options[2]);
+      await waitFor(() => {
+        expect(
+          screen.queryByText(/Correct Answer!/i) || screen.queryByText(/Incorrect Answer/i)
+        ).toBeInTheDocument();
+      });
+
+      await user.click(screen.getByRole('button', { name: /Next →/ }));
+      if (!screen.queryByText(/Choose exactly 3 answers/)) {
+        await user.click(screen.getByRole('button', { name: /Next →/ }));
+      }
+      await screen.findByText(/Choose exactly 3 answers/);
+      optionsContainer = screen.getByTestId('quiz-options-container');
+      options = within(optionsContainer).getAllByRole('button');
+
+      await user.click(options[1]);
+      await user.click(options[2]);
+      expect(screen.queryByText(/Incorrect Answer/i)).not.toBeInTheDocument();
+      expect(screen.queryByText(/Correct Answer!/i)).not.toBeInTheDocument();
+
+      await user.click(options[4]);
+      await waitFor(() => {
+        expect(
+          screen.queryByText(/Correct Answer!/i) || screen.queryByText(/Incorrect Answer/i)
+        ).toBeInTheDocument();
+      });
+    });
+
     test('should show correct/incorrect indicators after answer submission', async () => {
       const user = userEvent.setup();
       
