@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import styles from './SAFeTeams6ExamQuiz.module.css'
 import { safeTeams6Questions } from './SAFeTeams6Questions'
 import Results from '../shared/Results.jsx'
+import { CERTIFICATIONS } from '../../config/certifications.js'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
 import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
@@ -394,7 +395,7 @@ function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, 
   if (examSubmitted) {
     return (
       <Results
-        title="SAFe for Teams 6.0 Results"
+        title={CERTIFICATIONS.safeTeams6.resultsTitle}
         questions={shuffledQuestions}
         selectedAnswers={selectedAnswers}
         totalTimeSec={totalTimeUsed}

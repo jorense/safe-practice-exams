@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import styles from './PALIExamQuiz.module.css'
 import { paliQuestions } from './PALIQuestions'
 import Results from '../shared/Results.jsx'
+import { CERTIFICATIONS } from '../../config/certifications.js'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
 import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
@@ -411,7 +412,7 @@ function PALIExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 36, autoSh
   if (examSubmitted) {
     return (
       <Results
-        title="Professional Agile Leadership I Results"
+        title={CERTIFICATIONS.pali.resultsTitle}
         questions={shuffledQuestions}
         selectedAnswers={selectedAnswers}
         totalTimeSec={totalTimeUsed}

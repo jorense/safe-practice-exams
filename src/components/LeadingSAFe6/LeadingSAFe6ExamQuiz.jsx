@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import styles from './LeadingSAFe6ExamQuiz.module.css'
 import { leadingSAFe6Questions } from './LeadingSAFe6Questions.js'
 import Results from '../shared/Results.jsx'
+import { CERTIFICATIONS } from '../../config/certifications.js'
 import ProgressIndicator from '../exam/ProgressIndicator.jsx'
 
 import SessionRecovery from '../autosave/SessionRecovery.jsx'
@@ -477,7 +478,7 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
   if (examSubmitted) {
     return (
       <Results
-        title="Leading SAFe 6 Exam Results"
+        title={CERTIFICATIONS.leadingSafe6.resultsTitle}
         questions={shuffledQuestions}
         selectedAnswers={selectedAnswers}
         totalTimeSec={totalTimeUsed}

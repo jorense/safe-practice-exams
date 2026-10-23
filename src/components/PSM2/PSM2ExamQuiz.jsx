@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import styles from './PSM2ExamQuiz.module.css'
 import { psm2Questions } from './PSM2Questions'
 import Results from '../shared/Results.jsx'
+import { CERTIFICATIONS } from '../../config/certifications.js'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
 import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
@@ -416,7 +417,7 @@ function PSM2ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 30, autoSh
   if (examSubmitted) {
     return (
       <Results
-        title="Professional Scrum Master II Results"
+        title={CERTIFICATIONS.psm2.resultsTitle}
         questions={shuffledQuestions}
         selectedAnswers={selectedAnswers}
         totalTimeSec={totalTimeUsed}

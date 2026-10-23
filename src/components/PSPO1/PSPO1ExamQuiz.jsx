@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import styles from './PSPO1ExamQuiz.module.css'
 import pspo1Questions from './PSPO1Questions'
 import Results from '../shared/Results.jsx'
+import { CERTIFICATIONS } from '../../config/certifications.js'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
 import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
@@ -282,7 +283,7 @@ function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoS
         
         // Store per-question timings in localStorage for analysis
         const examTimingData = {
-          examType: 'PSM II',
+          examType: CERTIFICATIONS.pspo1.shortTitle,
           date: new Date().toISOString(),
           totalTimeUsed: timeUsed,
           questionTimings: finalTimings,
@@ -416,7 +417,7 @@ function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoS
   if (examSubmitted) {
     return (
       <Results
-        title="Professional Scrum Master II Results"
+        title={CERTIFICATIONS.pspo1.resultsTitle}
         questions={shuffledQuestions}
         selectedAnswers={selectedAnswers}
         totalTimeSec={totalTimeUsed}
@@ -456,7 +457,7 @@ function PSPO1ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 40, autoS
       <header className={styles.quizHeader}>
         <div className={styles.quizHeaderContent}>
           <div className={styles.quizInfo}>
-            <div className={styles.examTitle}>PSM II Practice Exam</div>
+            <div className={styles.examTitle}>{CERTIFICATIONS.pspo1.shortTitle} Practice Exam</div>
             <div className={styles.questionCounter}>
               Question {currentQuestion + 1} of {shuffledQuestions.length}
             </div>
