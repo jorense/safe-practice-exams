@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import styles from './HamburgerMenu.module.css'
 
 const HamburgerMenu = ({ 
@@ -9,14 +10,57 @@ const HamburgerMenu = ({
   onClose 
 }) => {
   const currentYear = new Date().getFullYear()
+  const toggleRef = useRef(null)
+  const menuRef = useRef(null)
+  const closeRef = useRef(null)
+
+  useEffect(() => {
+    if (!isOpen) return undefined
+
+    const previouslyFocused = document.activeElement
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    closeRef.current?.focus()
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        event.preventDefault()
+        onClose()
+        return
+      }
+
+      if (event.key !== 'Tab' || !menuRef.current) return
+      const focusable = [...menuRef.current.querySelectorAll('button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])')]
+      if (focusable.length === 0) return
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+      document.body.style.overflow = previousOverflow
+      if (previouslyFocused instanceof HTMLElement) previouslyFocused.focus()
+    }
+  }, [isOpen, onClose])
+
   return (
     <div className={styles.hamburgerContainer}>
       {/* Hamburger Button */}
       <button 
+        ref={toggleRef}
         className={`${styles.hamburgerButton} ${isOpen ? styles.open : ''}`}
         onClick={onToggle}
         aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
         aria-expanded={isOpen}
+        aria-controls="mobile-navigation-menu"
         data-testid="nav-hamburger-toggle"
       >
         <span className={styles.hamburgerLine}></span>
@@ -28,6 +72,8 @@ const HamburgerMenu = ({
       {isOpen && (
         <div className={styles.menuOverlay} onClick={onClose}>
           <nav 
+            id="mobile-navigation-menu"
+            ref={menuRef}
             className={styles.mobileMenu}
             onClick={(e) => e.stopPropagation()}
             role="navigation"
@@ -40,6 +86,7 @@ const HamburgerMenu = ({
                 <span className={styles.menuTagline}>Practice Exams</span>
               </div>
               <button 
+                ref={closeRef}
                 className={styles.closeButton}
                 onClick={onClose}
                 aria-label="Close menu"

@@ -4,13 +4,16 @@ import { leadingSAFe6Questions } from './LeadingSAFe6Questions.js'
 import Results from '../shared/Results.jsx'
 import { CERTIFICATIONS } from '../../config/certifications.js'
 import ProgressIndicator from '../exam/ProgressIndicator.jsx'
+import ExamActions from '../exam/ExamActions.jsx'
 
 import SessionRecovery from '../autosave/SessionRecovery.jsx'
+import AutosaveIndicator from '../autosave/AutosaveIndicator.jsx'
 import HelpSystem, { MultiSelectHelp } from '../help/HelpSystem.jsx'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
 import { useStudyIntelligence } from '../../contexts/StudyIntelligenceContext.jsx'
 import { useAutosave } from '../../contexts/AutosaveContext.jsx'
 import { useExamTiming } from '../../hooks/useExamTiming.js'
+import { useQuestionBookmarks } from '../../hooks/useQuestionBookmarks.js'
 import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
 function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, autoShowExplanation = false, examMode = 'exam', scheduler, includeSeenQuestions = true }) {
@@ -44,7 +47,7 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
   const [totalTimeUsed, setTotalTimeUsed] = useState(0)
   const [examSubmitted, setExamSubmitted] = useState(false)
   const [shuffledQuestions, setShuffledQuestions] = useState([])
-  const [bookmarkedQuestions, setBookmarkedQuestions] = useState(new Set())
+  const { bookmarkedQuestions, toggleBookmark, restoreBookmarks, clearBookmarks } = useQuestionBookmarks(shuffledQuestions)
   const [sessionId] = useState(() => `session-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`)
   const [showSessionRecovery, setShowSessionRecovery] = useState(true)
   const [lastAutosave, setLastAutosave] = useState(Date.now())
@@ -161,7 +164,7 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
       setSelectedAnswers(savedSession.selectedAnswers || {})
       setRevealedAnswers(savedSession.revealedAnswers || {})
       setCollapsedExplanations(savedSession.collapsedExplanations || {})
-      setBookmarkedQuestions(new Set(savedSession.bookmarkedQuestions || []))
+      restoreBookmarks(savedSession.bookmarkedQuestions || [])
       // timing restoration: we restore historical timings only; current question elapsed restarts
       // (Hook does not currently accept hydration for in-progress question)
       // questionTimings is immutable from hook consumer side so can't directly set; skip for now.
@@ -334,10 +337,6 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
     }))
   }
 
-  const goToQuestion = (index) => {
-    setCurrentQuestion(index)
-  }
-
   const nextQuestion = () => {
     if (currentQuestion < shuffledQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1)
@@ -493,24 +492,12 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
           setSelectedAnswers({})
           setRevealedAnswers({})
           setCollapsedExplanations({})
+          clearBookmarks()
           setTotalTimeUsed(0)
           setTimingResetToken(token => token + 1)
         }}
       />
     )
-  }
-
-  const handleBookmarkToggle = (questionIndex) => {
-    const questionId = shuffledQuestions[questionIndex].id
-    setBookmarkedQuestions(prev => {
-      const newBookmarks = new Set(prev)
-      if (newBookmarks.has(questionId)) {
-        newBookmarks.delete(questionId)
-      } else {
-        newBookmarks.add(questionId)
-      }
-      return newBookmarks
-    })
   }
 
   const handleQuestionJump = (questionIndex) => {
@@ -526,7 +513,7 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
       setSelectedAnswers(savedState.selectedAnswers || {})
       setRevealedAnswers(savedState.revealedAnswers || {})
       setCollapsedExplanations(savedState.collapsedExplanations || {})
-      setBookmarkedQuestions(new Set(savedState.bookmarkedQuestions || []))
+      restoreBookmarks(savedState.bookmarkedQuestions || [])
       // Cannot hydrate in-progress timing; historical timings already stored inside hook internal state only if we extend it.
       setTotalTimeUsed(savedState.totalTimeUsed || 0)
 
@@ -546,7 +533,6 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
   const isExplanationCollapsed = collapsedExplanations[currentQ.id] !== false
 
   const answeredCount = Object.keys(selectedAnswers).length
-  const progressPercent = (answeredCount / shuffledQuestions.length) * 100
 
   return (
     <>
@@ -582,33 +568,18 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
           )}
 
           <div className={styles.headerActions}>
-            <button onClick={onGoHome} className={styles.backButton} data-testid="quiz-back-home">
-              ← Back to Home
-            </button>
-            <button 
-              onClick={handleSubmitExam} 
-              className={styles.submitButton}
-              data-testid="quiz-submit"
-              disabled={answeredCount === 0}
-            >
-              Submit Exam ({answeredCount}/{shuffledQuestions.length})
-            </button>
+            <ExamActions onExit={onGoHome} onSubmit={handleSubmitExam} answeredCount={answeredCount} totalQuestions={shuffledQuestions.length} backClassName={styles.backButton} submitClassName={styles.submitButton} />
           </div>
         </div>
       </header>
 
       <ProgressIndicator
         currentQuestion={currentQuestion}
-        totalQuestions={shuffledQuestions.length}
-        answeredQuestions={Object.keys(selectedAnswers).length}
-        questions={shuffledQuestions.map((q, index) => ({
-          id: q.id,
-          number: index + 1,
-          answered: selectedAnswers[q.id] !== undefined,
-          bookmarked: bookmarkedQuestions.has(q.id)
-        }))}
-        onQuestionJump={handleQuestionJump}
-        onBookmarkToggle={handleBookmarkToggle}
+        questions={shuffledQuestions}
+        selectedAnswers={selectedAnswers}
+        bookmarkedQuestions={bookmarkedQuestions}
+        onQuestionClick={handleQuestionJump}
+        onBookmarkToggle={toggleBookmark}
       />
 
       <main className={styles.quizContent}>
@@ -815,26 +786,6 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
             </button>
           </div>
 
-          <div className={styles.questionGrid}>
-            {shuffledQuestions.map((_, index) => {
-              const questionId = shuffledQuestions[index].id
-              const isAnswered = selectedAnswers[questionId] !== undefined
-              const isCurrent = index === currentQuestion
-              
-              return (
-                <button
-                  key={index}
-                  className={`${styles.questionNumber} ${
-                    isCurrent ? styles.current : ''
-                  } ${isAnswered ? styles.answered : ''}`}
-                  data-testid={`quiz-jump-${index+1}`}
-                  onClick={() => goToQuestion(index)}
-                >
-                  {index + 1}
-                </button>
-              )
-            })}
-          </div>
         </div>
       </main>
       
@@ -846,6 +797,7 @@ function LeadingSAFe6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45
           onDismiss={handleSessionDismiss}
         />
       )}
+      <AutosaveIndicator />
       
   {/* Contextual Help System restored (lightweight panel + tour) */}
   <HelpSystem isEnabled={true} examContext="exam" />

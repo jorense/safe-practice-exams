@@ -3,6 +3,13 @@ import styles from './SAFeTeams6ExamQuiz.module.css'
 import { safeTeams6Questions } from './SAFeTeams6Questions'
 import Results from '../shared/Results.jsx'
 import { CERTIFICATIONS } from '../../config/certifications.js'
+import ProgressIndicator from '../exam/ProgressIndicator.jsx'
+import ExamActions from '../exam/ExamActions.jsx'
+import { useQuestionBookmarks } from '../../hooks/useQuestionBookmarks.js'
+import { useExamAutosave } from '../../hooks/useExamAutosave.js'
+import AutosaveIndicator from '../autosave/AutosaveIndicator.jsx'
+import SessionRecovery from '../autosave/SessionRecovery.jsx'
+import HelpSystem from '../help/HelpSystem.jsx'
 import { useProgress } from '../../contexts/ProgressContext.jsx'
 import { filterQuestions, prioritizeQuestions, isQuestionSeen, recordQuestionAttempts } from '../../utils/questionHistory.js'
 
@@ -35,11 +42,20 @@ function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, 
   const [totalTimeUsed, setTotalTimeUsed] = useState(0)
   const [examSubmitted, setExamSubmitted] = useState(false)
   const [shuffledQuestions, setShuffledQuestions] = useState([])
+  const { bookmarkedQuestions, toggleBookmark, restoreBookmarks } = useQuestionBookmarks(shuffledQuestions)
   
   // Per-question timing states
   const [questionTimings, setQuestionTimings] = useState({}) // { questionId: totalTimeSpent }
   const [questionStartTime, setQuestionStartTime] = useState(null)
   const [currentQuestionTime, setCurrentQuestionTime] = useState(0)
+
+  const autosave = useExamAutosave({
+    examType: 'safeteams6', examSubmitted,
+    examState: { currentQuestion, selectedAnswers, revealedAnswers, collapsedExplanations, bookmarkedQuestions: [...bookmarkedQuestions], questionTimings, currentQuestionTime, totalTimeUsed, timeRemaining, shuffledQuestions, totalQuestions: shuffledQuestions.length, examMode, numberOfQuestions },
+    onRestoreState: saved => {
+      setCurrentQuestion(saved.currentQuestion || 0); setSelectedAnswers(saved.selectedAnswers || {}); setRevealedAnswers(saved.revealedAnswers || {}); setCollapsedExplanations(saved.collapsedExplanations || {}); restoreBookmarks(saved.bookmarkedQuestions || []); setQuestionTimings(saved.questionTimings || {}); setCurrentQuestionTime(saved.currentQuestionTime || 0); setTotalTimeUsed(saved.totalTimeUsed || 0); setTimeRemaining(saved.timeRemaining ?? initialTimer); if (saved.shuffledQuestions?.length) setShuffledQuestions(saved.shuffledQuestions)
+    },
+  })
 
   // Utility function to shuffle array
   const shuffleArray = (array) => {
@@ -428,7 +444,6 @@ function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, 
   const isExplanationCollapsed = collapsedExplanations[currentQ.id] !== false
 
   const answeredCount = Object.keys(selectedAnswers).length
-  const progressPercent = (answeredCount / shuffledQuestions.length) * 100
 
   return (
     <div className={styles.quizContainer}>
@@ -460,26 +475,12 @@ function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, 
           </div>
 
           <div className={styles.headerActions}>
-            <button onClick={onGoHome} className={styles.backButton}>
-              ← Back to Home
-            </button>
-            <button 
-              onClick={handleSubmitExam} 
-              className={styles.submitButton}
-              disabled={answeredCount === 0}
-            >
-              Submit Exam ({answeredCount}/{shuffledQuestions.length})
-            </button>
+            <ExamActions onExit={onGoHome} onSubmit={handleSubmitExam} answeredCount={answeredCount} totalQuestions={shuffledQuestions.length} backClassName={styles.backButton} submitClassName={styles.submitButton} />
           </div>
         </div>
       </header>
 
-      <div className={styles.progressBar}>
-        <div 
-          className={styles.progressFill} 
-          style={{ width: `${progressPercent}%` }}
-        ></div>
-      </div>
+      <ProgressIndicator currentQuestion={currentQuestion} questions={shuffledQuestions} selectedAnswers={selectedAnswers} bookmarkedQuestions={bookmarkedQuestions} onQuestionClick={goToQuestion} onBookmarkToggle={toggleBookmark} />
 
       <main className={styles.quizContent}>
         <div className={styles.questionSection}>
@@ -649,27 +650,11 @@ function SAFeTeams6ExamQuiz({ onGoHome, onGoBackToExam, numberOfQuestions = 45, 
             </button>
           </div>
 
-          <div className={styles.questionGrid}>
-            {shuffledQuestions.map((_, index) => {
-              const questionId = shuffledQuestions[index].id
-              const isAnswered = selectedAnswers[questionId] !== undefined
-              const isCurrent = index === currentQuestion
-              
-              return (
-                <button
-                  key={index}
-                  className={`${styles.questionNumber} ${
-                    isCurrent ? styles.current : ''
-                  } ${isAnswered ? styles.answered : ''}`}
-                  onClick={() => goToQuestion(index)}
-                >
-                  {index + 1}
-                </button>
-              )
-            })}
-          </div>
         </div>
       </main>
+      <AutosaveIndicator />
+      {autosave.showSessionRecovery && <SessionRecovery examType="safeteams6" onRestore={autosave.restoreSession} onDismiss={autosave.dismissRecovery} />}
+      <HelpSystem isEnabled examContext="exam" />
     </div>
   )
 }

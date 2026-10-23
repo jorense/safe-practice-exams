@@ -342,6 +342,7 @@ describe('Multi-Select Questions Tests', () => {
       // Submit exam
       const submitButton = screen.getByRole('button', { name: /Submit Exam/ });
       await user.click(submitButton);
+      await user.click(screen.getByRole('button', { name: 'Submit exam' }));
 
       // Check that recordSession was called with proper scoring
       await waitFor(() => {
@@ -379,6 +380,7 @@ describe('Multi-Select Questions Tests', () => {
       // Submit exam
       const submitButton = screen.getByRole('button', { name: /Submit Exam/ });
       await user.click(submitButton);
+      await user.click(screen.getByRole('button', { name: 'Submit exam' }));
 
       // Should get 100% score
       await waitFor(() => {
@@ -414,6 +416,7 @@ describe('Multi-Select Questions Tests', () => {
       // Submit exam
       const submitButton = screen.getByRole('button', { name: /Submit Exam/ });
       await user.click(submitButton);
+      await user.click(screen.getByRole('button', { name: 'Submit exam' }));
 
       // Should get 0% score
       await waitFor(() => {

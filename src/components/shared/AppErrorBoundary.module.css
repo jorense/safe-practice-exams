@@ -1,0 +1,33 @@
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: var(--background-gray);
+}
+
+.card {
+  width: min(100%, 34rem);
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  background: var(--background-light);
+  color: var(--text-primary);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.icon { font-size: 2.5rem; }
+.card h1 { margin: 0.75rem 0; }
+.card p { color: var(--text-secondary); line-height: 1.6; }
+.card button {
+  min-height: 44px;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  border-radius: var(--border-radius-md);
+  background: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}

@@ -20,3 +20,15 @@ export const CERTIFICATIONS = Object.freeze({
     resultsTitle: 'SAFe for Teams 6.0 Results',
   },
 })
+
+export const DEFAULT_QUESTION_COUNTS = Object.freeze({
+  'Leading SAFe 6': 45,
+  'SAFe for Teams 6.0': 45,
+  'PSM II': 30,
+  'PSPO I': 40,
+  'PAL-I': 36,
+})
+
+export const SESSION_CERTIFICATION_TITLES = Object.freeze(
+  Object.values(CERTIFICATIONS).map(({ shortTitle }) => shortTitle),
+)

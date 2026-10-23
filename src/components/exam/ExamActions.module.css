@@ -1,0 +1,45 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(15, 23, 42, 0.72);
+}
+
+.dialog {
+  width: min(100%, 30rem);
+  padding: 1.5rem;
+  border-radius: var(--border-radius-lg);
+  background: var(--background-light);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.dialog h2 { margin: 0 0 0.75rem; }
+.dialog p { color: var(--text-secondary); line-height: 1.6; }
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.actions button {
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius-md);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancelButton { border: 1px solid var(--border-color); background: var(--background-light); color: var(--text-primary); }
+.submitButton { border: 1px solid var(--success-color); background: var(--success-color); color: white; }
+.leaveButton { border: 1px solid var(--danger-color); background: var(--danger-color); color: white; }
+
+@media (max-width: 480px) {
+  .actions { flex-direction: column-reverse; }
+  .actions button { width: 100%; }
+}

@@ -54,6 +54,12 @@ const SessionRecovery = ({ examType, onRestore, onDismiss }) => {
         return 'Leading SAFe 6'
       case 'safeteams6':
         return 'SAFe for Teams 6.0'
+      case 'psm2':
+        return 'PSM II'
+      case 'pspo1':
+        return 'PSPO I'
+      case 'pali':
+        return 'PAL I'
       default:
         return type
     }

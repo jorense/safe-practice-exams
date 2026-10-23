@@ -27,6 +27,8 @@ import AdvancedDashboard from './components/analytics/AdvancedDashboard.jsx'
 import StudyMaterials from './StudyMaterials.jsx'
 import HamburgerMenu from './components/navigation/HamburgerMenu.jsx'
 import MigrationNotice from './components/shared/MigrationNotice.jsx'
+import AppErrorBoundary from './components/shared/AppErrorBoundary.jsx'
+import { DEFAULT_QUESTION_COUNTS } from './config/certifications.js'
 import './App.css'
 import './pwa-styles.css'
 
@@ -39,7 +41,9 @@ function App() {
           <StudyIntelligenceProvider>
             <AutosaveProvider>
               <AnalyticsProvider>
-                <AppContent />
+                <AppErrorBoundary>
+                  <AppContent />
+                </AppErrorBoundary>
               </AnalyticsProvider>
             </AutosaveProvider>
           </StudyIntelligenceProvider>
@@ -161,6 +165,7 @@ function AppContent() {
   }, [achievements, getNewAchievements])
 
   const startExam = (examType) => {
+    setNumberOfQuestions(DEFAULT_QUESTION_COUNTS[examType] || 45)
     if (examType === 'Leading SAFe 6') {
       setCurrentPage('leading-safe-6')
     } else if (examType === 'SAFe for Teams 6.0') {

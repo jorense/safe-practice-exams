@@ -512,6 +512,7 @@ describe('Exam Mode Filtering Tests', () => {
       // Submit exam
       const submitButton = screen.getByRole('button', { name: /Submit Exam/ });
       await user.click(submitButton);
+      await user.click(screen.getByRole('button', { name: 'Submit exam' }));
 
       // Verify scoring was calculated
       await waitFor(() => {

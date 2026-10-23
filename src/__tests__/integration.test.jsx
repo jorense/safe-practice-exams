@@ -217,6 +217,7 @@ describe('Quiz Integration Tests', () => {
         // Submit exam
         const submitButton = screen.getByRole('button', { name: /Submit Exam/ });
         await user.click(submitButton);
+        await user.click(screen.getByRole('button', { name: 'Submit exam' }));
 
         // Should show results with timing
         await waitFor(() => {

@@ -3,10 +3,11 @@ import { useProgress } from '../../contexts/ProgressContext';
 import { exportResultsToExcel } from '../../utils/exportResultsToExcel.js';
 import { exportDataJSON, downloadJSON } from '../../utils/exportDataJSON.js';
 import { generateShareLink, copyToClipboard, getTimeRemaining } from '../../utils/shareProgress.js';
+import { SESSION_CERTIFICATION_TITLES } from '../../config/certifications.js';
 import styles from './Dashboard.module.css';
 
 function Dashboard({ onGoHome }) {
-  const { sessionHistory, streakData, achievements, getAnalytics } = useProgress();
+  const { sessionHistory, streakData, achievements, getAnalytics, updateSessionExamType } = useProgress();
   const analytics = getAnalytics();
   const [isExporting, setIsExporting] = useState(false);
   const [exportError, setExportError] = useState(null);
@@ -459,7 +460,22 @@ function Dashboard({ onGoHome }) {
             {sessionHistory.slice(0, 5).map(session => (
               <div key={session.id} className={styles.sessionItem}>
                 <div className={styles.sessionInfo}>
-                  <div className={styles.sessionTitle}>{session.examType}</div>
+                  <label className={styles.sessionTitle}>
+                    <span className={styles.visuallyHidden}>Certification for this session</span>
+                    <select
+                      className={styles.sessionTitleSelect}
+                      value={session.examType}
+                      onChange={(event) => updateSessionExamType(session.id, event.target.value)}
+                      aria-label={`Certification for session on ${new Date(session.timestamp).toLocaleDateString()}`}
+                    >
+                      {!SESSION_CERTIFICATION_TITLES.includes(session.examType) && (
+                        <option value={session.examType}>{session.examType}</option>
+                      )}
+                      {SESSION_CERTIFICATION_TITLES.map(title => (
+                        <option key={title} value={title}>{title}</option>
+                      ))}
+                    </select>
+                  </label>
                   <div className={styles.sessionMeta}>
                     {new Date(session.timestamp).toLocaleDateString()} • 
                     {session.correctAnswers}/{session.totalQuestions} correct • 

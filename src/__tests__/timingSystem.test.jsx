@@ -210,6 +210,7 @@ describe('Timing System Tests', () => {
 
       // Submit exam
       await user.click(submitButton);
+      await user.click(screen.getByRole('button', { name: 'Submit exam' }));
 
       // Check if timing data was stored
       const storageKeys = Array.from({ length: localStorage.length }, (_, i) => localStorage.key(i));
@@ -247,6 +248,7 @@ describe('Timing System Tests', () => {
       advanceTime(3);
 
       await user.click(submitButton);
+      await user.click(screen.getByRole('button', { name: 'Submit exam' }));
 
       const keys = Array.from({ length: localStorage.length }, (_, i) => localStorage.key(i));
       const timingKey = keys.find(key => key && key.startsWith('examTiming_'));
@@ -357,6 +359,7 @@ describe('Timing System Tests', () => {
         expect(submitButton).not.toBeDisabled();
       });
       await user.click(submitButton);
+      await user.click(screen.getByRole('button', { name: 'Submit exam' }));
 
       // Should show results page
       await waitFor(() => {

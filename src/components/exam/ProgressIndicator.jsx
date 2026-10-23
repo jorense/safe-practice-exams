@@ -1,142 +1,91 @@
 import { useMemo } from 'react'
 import styles from './ProgressIndicator.module.css'
 
-const ProgressIndicator = ({ 
-  currentQuestion, 
-  totalQuestions, 
-  answeredQuestions = {},
-  bookmarkedQuestions = {},
-  showQuestionGrid = true,
+const ProgressIndicator = ({
+  currentQuestion,
+  questions,
+  selectedAnswers = {},
+  bookmarkedQuestions = new Set(),
   onQuestionClick,
-  className = ''
+  onBookmarkToggle,
+  showQuestionGrid = true,
+  className = '',
 }) => {
-  const progressData = useMemo(() => {
-    const answeredCount = Object.keys(answeredQuestions).length
-    const bookmarkedCount = Object.keys(bookmarkedQuestions).length
-    const progressPercent = (answeredCount / totalQuestions) * 100
-    
-    return {
-      answeredCount,
-      bookmarkedCount,
-      progressPercent,
-      remainingCount: totalQuestions - answeredCount
-    }
-  }, [answeredQuestions, bookmarkedQuestions, totalQuestions])
+  const bookmarked = bookmarkedQuestions instanceof Set ? bookmarkedQuestions : new Set(bookmarkedQuestions)
+  const totalQuestions = questions.length
+  const answeredCount = useMemo(
+    () => questions.filter(question => selectedAnswers[question.id] !== undefined).length,
+    [questions, selectedAnswers],
+  )
+  const progressPercent = totalQuestions ? (answeredCount / totalQuestions) * 100 : 0
+  const current = questions[currentQuestion]
+  const currentBookmarked = current ? bookmarked.has(current.id) : false
 
   return (
-    <div className={`${styles.progressContainer} ${className}`}>
-      {/* Progress Bar */}
+    <section className={`${styles.progressContainer} ${className}`} aria-label="Exam progress">
       <div className={styles.progressSection}>
         <div className={styles.progressHeader}>
           <div className={styles.progressStats}>
-            <span className={styles.currentProgress}>
-              {progressData.answeredCount} of {totalQuestions}
-            </span>
-            <span className={styles.progressPercent}>
-              {Math.round(progressData.progressPercent)}% Complete
-            </span>
+            <span className={styles.currentProgress}>{answeredCount} of {totalQuestions} answered</span>
+            <span className={styles.progressPercent}>{Math.round(progressPercent)}% Complete</span>
           </div>
-        </div>
-        
-        <div className={styles.progressBarContainer}>
-          <div 
-            className={styles.progressBar}
-            role="progressbar"
-            aria-valuenow={progressData.progressPercent}
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-label={`${progressData.answeredCount} of ${totalQuestions} questions answered`}
-          >
-            <div 
-              className={styles.progressFill}
-              style={{ width: `${progressData.progressPercent}%` }}
-            />
-          </div>
-        </div>
-        
-        <div className={styles.progressLabels}>
-          <div className={styles.progressLabel}>
-            <span className={styles.labelIcon}>✓</span>
-            <span className={styles.labelText}>
-              {progressData.answeredCount} Answered
-            </span>
-          </div>
-          {progressData.bookmarkedCount > 0 && (
-            <div className={styles.progressLabel}>
-              <span className={styles.labelIcon}>🔖</span>
-              <span className={styles.labelText}>
-                {progressData.bookmarkedCount} Bookmarked
-              </span>
-            </div>
+          {current && (
+            <button
+              type="button"
+              className={`${styles.bookmarkButton} ${currentBookmarked ? styles.bookmarkActive : ''}`}
+              onClick={() => onBookmarkToggle?.(currentQuestion)}
+              aria-pressed={currentBookmarked}
+              aria-label={`${currentBookmarked ? 'Remove bookmark from' : 'Bookmark'} question ${currentQuestion + 1}`}
+            >
+              <span aria-hidden="true">{currentBookmarked ? '🔖' : '☆'}</span>
+              {currentBookmarked ? 'Bookmarked' : 'Bookmark'}
+            </button>
           )}
-          <div className={styles.progressLabel}>
-            <span className={styles.labelIcon}>⏳</span>
-            <span className={styles.labelText}>
-              {progressData.remainingCount} Remaining
-            </span>
+        </div>
+
+        <div className={styles.progressBarContainer}>
+          <div className={styles.progressBar} role="progressbar" aria-valuenow={Math.round(progressPercent)} aria-valuemin="0" aria-valuemax="100" aria-label={`${answeredCount} of ${totalQuestions} questions answered`}>
+            <div className={styles.progressFill} style={{ width: `${progressPercent}%` }} />
           </div>
+        </div>
+
+        <div className={styles.progressLabels}>
+          <span className={styles.progressLabel}>✓ {answeredCount} Answered</span>
+          <span className={styles.progressLabel}>🔖 {bookmarked.size} Bookmarked</span>
+          <span className={styles.progressLabel}>⏳ {totalQuestions - answeredCount} Remaining</span>
         </div>
       </div>
 
-      {/* Question Grid */}
       {showQuestionGrid && (
         <div className={styles.questionGrid}>
           <div className={styles.gridHeader}>
-            <h4 className={styles.gridTitle}>Question Navigator</h4>
-            <div className={styles.gridLegend}>
-              <div className={styles.legendItem}>
-                <div className={`${styles.legendDot} ${styles.current}`}></div>
-                <span>Current</span>
-              </div>
-              <div className={styles.legendItem}>
-                <div className={`${styles.legendDot} ${styles.answered}`}></div>
-                <span>Answered</span>
-              </div>
-              <div className={styles.legendItem}>
-                <div className={`${styles.legendDot} ${styles.bookmarked}`}></div>
-                <span>Bookmarked</span>
-              </div>
-              <div className={styles.legendItem}>
-                <div className={`${styles.legendDot} ${styles.unanswered}`}></div>
-                <span>Unanswered</span>
-              </div>
-            </div>
+            <h2 className={styles.gridTitle}>Question navigator</h2>
+            <span className={styles.navigatorHint}>Select a number to jump to that question</span>
           </div>
-          
           <div className={styles.gridContainer}>
-            {Array.from({ length: totalQuestions }, (_, index) => {
-              const questionNumber = index + 1
-              const isAnswered = answeredQuestions[questionNumber] !== undefined
-              const isBookmarked = bookmarkedQuestions[questionNumber]
+            {questions.map((question, index) => {
+              const isAnswered = selectedAnswers[question.id] !== undefined
+              const isBookmarked = bookmarked.has(question.id)
               const isCurrent = currentQuestion === index
-              
-              let questionClass = styles.questionDot
-              if (isCurrent) {
-                questionClass += ` ${styles.current}`
-              } else if (isBookmarked) {
-                questionClass += ` ${styles.bookmarked}`
-              } else if (isAnswered) {
-                questionClass += ` ${styles.answered}`
-              } else {
-                questionClass += ` ${styles.unanswered}`
-              }
-              
+              const stateClass = isCurrent ? styles.current : isBookmarked ? styles.bookmarked : isAnswered ? styles.answered : styles.unanswered
+
               return (
                 <button
-                  key={index}
-                  className={questionClass}
-                  onClick={() => onQuestionClick && onQuestionClick(index)}
-                  aria-label={`Go to question ${questionNumber}${isCurrent ? ' (current)' : ''}${isAnswered ? ' (answered)' : ''}${isBookmarked ? ' (bookmarked)' : ''}`}
-                  title={`Question ${questionNumber}${isCurrent ? ' - Current' : ''}${isAnswered ? ' - Answered' : ''}${isBookmarked ? ' - Bookmarked' : ''}`}
+                  type="button"
+                  key={question.id}
+                  className={`${styles.questionDot} ${stateClass}`}
+                  onClick={() => onQuestionClick?.(index)}
+                  aria-current={isCurrent ? 'step' : undefined}
+                  aria-label={`Question ${index + 1}${isCurrent ? ', current' : ''}${isAnswered ? ', answered' : ''}${isBookmarked ? ', bookmarked' : ''}`}
                 >
-                  {questionNumber}
+                  {index + 1}
                 </button>
               )
             })}
           </div>
         </div>
       )}
-    </div>
+    </section>
   )
 }
 

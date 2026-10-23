@@ -106,6 +106,14 @@ export const ProgressProvider = ({ children }) => {
     checkAchievements(session);
   };
 
+  // Historical sessions are stored in the browser. Allow a user to correct
+  // records created before certification-specific titles were introduced.
+  const updateSessionExamType = (sessionId, examType) => {
+    setSessionHistory(prev => prev.map(session => (
+      session.id === sessionId ? { ...session, examType } : session
+    )));
+  };
+
   // Update study streaks
   const updateStreaks = () => {
     const today = new Date().toDateString();
@@ -388,6 +396,7 @@ export const ProgressProvider = ({ children }) => {
     
     // Functions
     recordSession,
+    updateSessionExamType,
     getAnalytics,
     getReviewQuestions,
     getNewAchievements,

@@ -408,6 +408,37 @@
   margin-bottom: 0.25rem;
 }
 
+.sessionTitleSelect {
+  max-width: 100%;
+  padding: 0.2rem 1.75rem 0.2rem 0.35rem;
+  border: 1px solid transparent;
+  border-radius: 0.35rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.sessionTitleSelect:hover,
+.sessionTitleSelect:focus-visible {
+  border-color: var(--border-color);
+  background: var(--background-light);
+  outline: none;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .sessionMeta {
   font-size: 0.875rem;
   color: var(--text-secondary);
